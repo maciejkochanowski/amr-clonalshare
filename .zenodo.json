@@ -44,7 +44,7 @@
       "scheme": "doi"
     },
     {
-      "identifier": "https://github.com/ElsevierSoftwareX/SOFTX-D-26-XXXXXX",
+      "identifier": "https://github.com/maciejkochanowski/amr-clonalshare",
       "relation": "isSupplementTo",
       "resource_type": "software",
       "scheme": "url"

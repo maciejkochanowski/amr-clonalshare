@@ -22,7 +22,7 @@ python -m pip install "amr-clonalshare[phylo,plot]"
 ## From the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/maciejkochanowski/amr-clonalshare.git
 cd amr-clonalshare
 python -m pip install -e ".[dev]"
 pytest -q

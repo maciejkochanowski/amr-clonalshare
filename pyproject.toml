@@ -48,6 +48,13 @@ dev = [
     "build>=1.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/maciejkochanowski/amr-clonalshare"
+Documentation = "https://maciejkochanowski.github.io/amr-clonalshare/"
+Repository = "https://github.com/maciejkochanowski/amr-clonalshare"
+Issues = "https://github.com/maciejkochanowski/amr-clonalshare/issues"
+Changelog = "https://github.com/maciejkochanowski/amr-clonalshare/blob/main/CHANGELOG.md"
+
 [project.scripts]
 amr-clonalshare = "amr_clonalshare.cli:main"
 

@@ -43,6 +43,8 @@ authors:
     affiliation: "National Veterinary Research Institute (PIWet-PIB), Pulawy, Poland"
 version: "1.0.0"
 license: MIT
+repository-code: "https://github.com/maciejkochanowski/amr-clonalshare"
+url: "https://maciejkochanowski.github.io/amr-clonalshare/"
 keywords:
   - bioinformatics
   - antimicrobial resistance
