@@ -27,3 +27,4 @@ venv/
 # directory is excluded.
 !release/*/dist/
 !release/*/source/*.egg-info/
+site/

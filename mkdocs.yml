@@ -34,8 +34,12 @@ nav:
       - 4. Run: manual/04-run.md
       - 5. Read the results: manual/05-results.md
       - 6. The clonal share, agent by agent: manual/06-clonal-share.md
-      - 7. Mix or rate: two collections: manual/07-decomposition.md
+      - "7. Mix or rate: two collections": manual/07-decomposition.md
       - 8. Container and reproducibility: manual/08-container.md
       - 9. Exit codes and troubleshooting: manual/09-troubleshooting.md
   - Methods: methodology.md
   - Code metadata: CODE_METADATA.md
+
+exclude_docs: |
+  novelty_search.py
+  novelty_search_results.json
