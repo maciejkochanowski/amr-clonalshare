@@ -41,6 +41,7 @@ authors:
   - family-names: Kochanowski
     given-names: M.
     affiliation: "National Veterinary Research Institute (PIWet-PIB), Pulawy, Poland"
+    email: "maciej.kochanowski@piwet.pulawy.pl"
 version: "1.0.0"
 license: MIT
 repository-code: "https://github.com/maciejkochanowski/amr-clonalshare"

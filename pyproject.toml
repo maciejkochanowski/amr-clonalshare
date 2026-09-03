@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE", "Licence.txt"]
-authors = [{ name = "M. Kochanowski" }]
+authors = [{ name = "M. Kochanowski", email = "maciej.kochanowski@piwet.pulawy.pl" }]
 keywords = ["bioinformatics", "antimicrobial-resistance", "veterinary-surveillance", "prevalence-decomposition", "kitagawa-decomposition", "population-structure", "trait-clustering", "similarity-network-fusion", "selective-inference", "statistics"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
