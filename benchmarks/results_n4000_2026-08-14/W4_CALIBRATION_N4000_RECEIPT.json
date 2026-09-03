@@ -1,0 +1,446 @@
+{
+ "campaign": "W4 calibration: experiments B and G recomputed from n_sim=120 to n_sim=4000",
+ "date": "2026-08-14",
+ "preregistration": {
+  "path": "audyt/PREREGISTRACJA_W4.md",
+  "sha256": "9bd10b40e207c57799c0d9cb9cba1c2ae5dff1ef683a9c0353834ae220846d64",
+  "written_before_any_run": true,
+  "rule_changed_after_result": false
+ },
+ "generator": {
+  "path": "benchmarks/calibration_study.py",
+  "sha256": "729d3a2707f27e559f38de440c628faaf047d3281f9c4608bffe1bafa0d3fb68",
+  "modified": false,
+  "invocation": "exp_b_feature_split and exp_g_block_threshold imported and called with a different n_sim; main() untouched"
+ },
+ "gates": {
+  "reproduction_gate": "PASS: exp_b_feature_split(120) reproduces all 12 values in benchmarks/results/calibration.json bit for bit",
+  "read_rule": "two-sided Clopper-Pearson 95 %, upper limit against a ceiling of 0.05",
+  "decisive_cell": "typeI_independent_features.block_aware_split",
+  "decisive_result": {
+   "numerator": 100,
+   "denominator": 4000,
+   "point": 0.025,
+   "raw_rate": 0.025,
+   "cp95_lower": 0.02038619798299893,
+   "cp95_upper": 0.030324144021519346,
+   "cp95_upper_exceeds_0.05": false
+  },
+  "verdict": "upper limit 0.03032 <= 0.05, so the abstract sentence STANDS"
+ },
+ "runs": [
+  {
+   "experiment": "B_feature_splitting",
+   "file": "B_feature_splitting_n4000.json",
+   "sha256": "ffdba371d5cf63ce898d0e927b5798575fa0ea2faa170330521636f8c2a3381a",
+   "runtime_seconds": 1794.1502537800116,
+   "cpu_hours": 0.4983750704944477
+  },
+  {
+   "experiment": "G_block_threshold",
+   "file": "G_block_threshold_n4000.json",
+   "sha256": "d024067b7d461a5b01d142b281405ae61527ebd52818cf101c208d36ecd36bf7",
+   "runtime_seconds": 1140.906515550043,
+   "cpu_hours": 0.3169184765416786,
+   "thresholds": [
+    0.0,
+    0.5,
+    0.7,
+    0.85
+   ],
+   "note": "thresholds taken from Table 2b of the manuscript (none/0.5/0.7/0.85), not from the generator's default tuple (0.0/0.3/0.5/0.7/0.9)"
+  },
+  {
+   "experiment": "A_merging_rules_cp95",
+   "file": "A_merging_rules_cp95.json",
+   "sha256": "5408cc0e4125ddf07d4c49999b33a041add0f8cdc6c5d2d9f6eb63f69fec31aa",
+   "runtime_seconds": 0.0,
+   "cpu_hours": 0.0,
+   "note": "arithmetic, not a campaign"
+  }
+ ],
+ "cpu_hours_total": 0.8152935470361262,
+ "cpu_hours_forecast_before_run": 0.805,
+ "aborted_run": {
+  "reason": "the first start was multi-threaded: numpy was imported before calibration_study, so the module's OMP_NUM_THREADS=1 took effect too late, and KMeans on a 200x15 matrix loses time to threads. Killed after 35 minutes; results discarded and not written.",
+  "results_used": false
+ },
+ "environment": {
+  "python": "3.11.5",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "sklearn": "1.9.0",
+  "threads": "OMP/OPENBLAS/MKL/NUMEXPR/VECLIB = 1",
+  "host_cores": 20
+ },
+ "git_rev": "56439d55c383fcda7e1a6188ff0c2ddc09921204",
+ "shipped_calibration_json_overwritten": false,
+ "not_reproducible_from_this_generator": [
+  "Tabela 2b, kolumna 'power (planted, overlap 0.05)' - exp_g_block_threshold nie liczy mocy; zwraca type_I_at_0.05, mean_n_split_units, mean_max_abs_corr_between_units, n_usable. Nie podstawiono zadnej innej wielkosci."
+ ],
+ "known_caveat": "exp_g_block_threshold creates one RNG stream before the loop over thresholds, so the result for a threshold depends on the composition of the threshold tuple. The run (0.0,0.5,0.7,0.85) does not reproduce the draws of the run (0.0,0.3,0.5,0.7,0.9). Recorded in the preregistration before the run.",
+ "manuscript_edits_applied": [
+  "section 4, provenance sentence: names which table reads which file",
+  "Tabela 1: liczniki/4000 + CP95 we wszystkich 12 komorkach",
+  "Tabela 2: podniesiona do 4000, wiersz independent scalony, z jawnym uzasadnieniem",
+  "Table 2b: type I and split units raised to 4000, the power column removed, and a caveat about the shared RNG stream added",
+  "abstrakt: liczby zaktualizowane, wniosek zachowany",
+  "sekcja 4: 'rejects every time' -> 'rejected in 3999 of 4000 replicates'; single unmerged split 0.87 -> 0.895 [0.885; 0.904]; krzywa mocy na 2000 replikacji",
+  "section 5.3: type I at threshold 0.7 and the all-singleton arm updated",
+  "sekcja Limitations: akapit o domyslnosci stanu 'gen nieobecny'",
+  "Data availability, blok Numeric audit: przeliczony po zmianach",
+  "section 4, Table 2b: the default threshold of 0.7 is now justified through the split_design_adequate gate (inference.py: MIN_SPLIT_UNITS, MAX_FRAC_IN_ONE_UNIT; CHANGELOG.md 2.2.0; review/ROUND5_findings.md), with an explicit statement that this is a structural condition and not a power measurement",
+  "sekcja 4: usuniete zdanie 'An earlier independent run at a within-block correlation of 0.5 gave 1.000 against 0.042' - brak pliku wynikow, inna sila zaleznosci",
+  "section 4: the split_design_adequate paragraph corrected. The unverified claim that 0.5 is rejected and 0.7 accepted on the planted control was removed, and it now states that no artifact in the package separates 0.5 from 0.7 and that 0.7 is a convention rather than a measured optimum",
+  "sekcja 4: 'calibrated rather than asserted' zdjete z opisu progu",
+  "section 4: a scope sentence added. The correlated row was measured at one within-block dependence strength (deviation probability 0.1 in _binary_null; strongest pairwise correlation 0.8987)",
+  "sekcja 6: dodany akapit 'One question we leave open on purpose' o swiadomie nierozstrzygnietym progu",
+  "sekcja 4: dodany akapit 'Where 0.7 comes from' z pasmem dopuszczalnym z krzywej adekwatnosci",
+  "section 4: replacement chaining example, the planted control with 48 features in one unit between 0.30 and 0.51",
+  "sekcja 4: usuniete '0.7 is the shipped convention rather than a measured optimum'",
+  "sekcja 6: przeredagowany akapit 'One question we leave open on purpose' - otwarta pozostaje wylacznie moc"
+ ],
+ "commit": null,
+ "tag": null,
+ "push": null,
+ "sbatch": null,
+ "feeds_manuscript": {
+  "direction": "one direction only: result file to manuscript. No number entered the manuscript without a file in this directory.",
+  "manuscript": "paper/manuscript.md",
+  "map": [
+   {
+    "target": "Tabela 1 (sekcja 4, reguly scalania)",
+    "source_file": "A_merging_rules_cp95.json",
+    "fed": "12 komorek: licznik/4000 i dwustronny CP95 dla czterech regul x trzech rho",
+    "note": "arytmetyka na benchmarks/results/calibration.json -> A_merging_rules; zadnej kampanii nie uruchamiano"
+   },
+   {
+    "target": "Tabela 2 (sekcja 4, feature splitting)",
+    "source_file": "B_feature_splitting_n4000.json",
+    "fed": "6 cells raised from 120 to 4000 replicates; the 'independent' row merged to one value because both columns are the same procedure (groups=None in both arms)"
+   },
+   {
+    "target": "Tabela 2b (sekcja 4, prog blokowania)",
+    "source_file": "G_block_threshold_n4000.json",
+    "fed": "type I and mean split unit columns for thresholds none/0.5/0.7/0.85 at 4000 replicates",
+    "removed": "the column 'power (planted, overlap 0.05)' was removed from the manuscript: exp_g_block_threshold does not compute power and the four values had no source file"
+   },
+   {
+    "target": "sekcja 4, zdanie o mocy scalania (merged vs single-split, cztery delta_p)",
+    "source_file": "B_feature_splitting_n4000.json",
+    "fed": "8 wartosci, mianownik 2000 na efekt"
+   },
+   {
+    "target": "Abstrakt, zdanie o feature splittingu",
+    "source_file": "B_feature_splitting_n4000.json",
+    "fed": "3999/4000 oraz poziomy 0.020 [0.015; 0.024] i 0.025 [0.020; 0.030]",
+    "note": "the sentence's conclusion stands under the preregistration rule; only the numbers changed"
+   },
+   {
+    "target": "sekcja 1 i sekcja 5.3, odwolania do ramienia all-singleton",
+    "source_file": "B_feature_splitting_n4000.json",
+    "fed": "1.000 -> 0.9998"
+   },
+   {
+    "target": "sekcja 5.3, prog 0.7 wobec obserwowanej korelacji 0.698",
+    "source_file": "G_block_threshold_n4000.json",
+    "fed": "type-I 0.000 -> 0.0195 [0.0154; 0.0243]"
+   }
+  ],
+  "not_fed_from_here": [
+   "Tabela 2c (eksperyment F) i Tabela 3 (eksperyment C) - nadal z benchmarks/results/calibration.json, nieprzeliczane"
+  ]
+ },
+ "numeric_audit_after_changes": {
+  "tool": "Habilitacja7sierpnia/AUDIT/REPAIR/audit_manuscript_numbers.py",
+  "before": {
+   "checked": 678,
+   "pass": 640,
+   "untraced": 38,
+   "weak": 329,
+   "strong": 311,
+   "strong_pct": 46,
+   "source_files": 175
+  },
+  "after": {
+   "checked": 787,
+   "pass": 749,
+   "untraced": 38,
+   "weak": 365,
+   "strong": 384,
+   "strong_pct": 49,
+   "source_files": 179
+  },
+  "tier1": "PASS",
+  "note": "the 38 untraced values are exactly the same entries as before the changes (28 in section 5.6, 4 in the abstract, 4 in section 4, 2 in section 5.3). No number added in this session is untraced."
+ },
+ "open_for_author": [
+  {
+   "item": "liczby 60/4/57 - ZAMKNIETE, nie przywracane",
+   "note": "sources exist in code comments and review records but contradict each other and every artifact in the tree; the example was withdrawn from the docstrings as well as from the manuscript",
+   "verdict": "nie da sie ustalic, ze dotycza p=60; patrz p60_verdict"
+  },
+  {
+   "item": "porownanie mocy 0.5 wobec 0.7 - SWIADOMIE OTWARTE, nie planowane",
+   "decision": "nie piszemy generatora mocy",
+   "rationale": "defending the default does not require a power comparison. What protects the analysis is the structural condition split_design_adequate: it is checkable without simulation, computed on the design the user's own data produce, enforced in cli.py, and it rejects a design flattened by chaining whichever threshold flattened it. A power comparison would buy a better motivated default, not a safer analysis.",
+   "recorded_in_manuscript": "sekcja 6, akapit 'One question we leave open on purpose'",
+   "cost_if_ever_done": {
+    "work_hours": "3-4",
+    "cpu_hours_one_effect_size": 0.32,
+    "cpu_hours_three_effect_sizes": 0.95
+   }
+  },
+  {
+   "item": "the shipped planted control exits with code 3 and withheld inference",
+   "measured": {
+    "exit_code": 3,
+    "inference_status": "withheld_inadequate_split_design",
+    "command": "amr-clonalshare --config examples/synthetic/planted.yaml --results-dir out/planted"
+   },
+   "manuscript_says": "sekcja 5.1, tabela kontroli: struktura p = 3 x 10^-39, exit 0",
+   "mechanism": "the planted panel has 48 features, and no threshold between 0.30 and 0.99 produces an adequate split design: 0.30 to 0.55 gives one unit holding 100 % of features, 0.56 to 0.79 gives only 3 units where 4 are required, and from 0.80 the between-unit correlation reaches 0.7",
+   "not_fixable_by_threshold": true,
+   "what_it_would_take": "szerszy panel planted w examples/synthetic/make_data.py, czyli decyzja o projekcie danych",
+   "why_it_matters": "README kaze recenzentowi uruchomic wlasnie to jako kontrole dodatnia",
+   "status": "ZGLOSZONE, nie naprawiane - poza zakresem zlecenia"
+  },
+  {
+   "item": "wariant A (poszerzenie panelu planted o cechy niezalezne od archetypow) - ROZWAZONY I ODRZUCONY",
+   "what_it_would_have_been": "two independent features suffice: 48+2 gives 5 split units and an adequate design at the default threshold, at a cost of half an hour to an hour of work and about 0.1 CPU-hours",
+   "why_rejected": "two of the three section 5.1 discrepancies (p = 3e-39 and exit 0) NEVER matched any version of the code in the tree, so widening the panel does not repair them; only rewriting the text does. After variant B the panel is no longer needed for anything substantive: the path from an adequate design to released inference is shown by the clonal control (split_design_adequate=true, status ok, p = 1.008e-14), and the refusal on the planted control is now reported as a demonstration of the gate.",
+   "cost_avoided": {
+    "work_hours": "0.5-1",
+    "cpu_hours": 0.1,
+    "plus": "regeneracja trzech katalogow expected_* i ponowna weryfikacja pieciu liczb pochodnych"
+   },
+   "status": "ZAMKNIETE decyzja autora z 2026-08-14"
+  }
+ ],
+ "code_comment_edits_applied": {
+  "scope": "comments and docstrings only; no execution path changed; 113 tests passed after the change",
+  "files": [
+   {
+    "file": "src/amr_clonalshare/inference.py",
+    "where": "blok przy BLOCK_ADEQUACY_MAX_CROSS_CORR",
+    "was": "type I 1.000 / 0.067 / 0.000 / 0.900 with power 0.00 at 0.5 and 1.00 at 0.7; '0.7 is the only value tested that is both valid and powerful'",
+    "now": "type I 0.9998 / 0.0163 / 0.0195 / 0.7897 at n=4000, a pointer to benchmarks/results_n4000_2026-08-14/, power claims withdrawn, and an explicit statement that the sweep does not separate 0.5 from 0.7 and that 0.7 is a convention"
+   },
+   {
+    "file": "src/amr_clonalshare/config.py",
+    "where": "komentarz przy block_threshold",
+    "was": "'0.7 is calibrated in experiment G: type-I 0.000 and power 1.00, against 0.067 / 0.00 at 0.5'",
+    "now": "3999/4000 for the per-feature split, type I 0.0163 / 0.0195 / 0.7897, no power claims, 0.7 named as a convention, and a pointer to the receipt"
+   },
+   {
+    "file": "src/amr_clonalshare/inference.py",
+    "where": "docstring _block_report",
+    "was": "'at threshold 0.5 on the planted control it collapses 60 features into 4 units, one holding 57 of them, and the test's power drops to 0.00 (calibration study, experiment G)'",
+    "now": "description based on the shipped planted control, which at the default threshold gives 3 units and is refused (inference_status = withheld_inadequate_split_design), plus an explicit withdrawal of the 60/4/57 example"
+   },
+   {
+    "file": "src/amr_clonalshare/inference.py",
+    "where": "komentarz przy MAX_FRAC_IN_ONE_UNIT",
+    "was": "'at threshold 0.5 on the planted control, 57 of 60 features land in one unit and power falls to 0.00'",
+    "now": "warunek opisany jako geometryczny na jednostkach, bez twierdzenia o mocy"
+   },
+   {
+    "file": "src/amr_clonalshare/inference.py",
+    "where": "blok przy BLOCK_ADEQUACY_MAX_CROSS_CORR",
+    "was": "'The value 0.7 itself is the shipped convention; no result file in this package separates it from 0.5'",
+    "now": "opis wyboru przez krzywa adekwatnosci na dostarczonych kohortach; jedyna nierozstrzygnieta os to moc"
+   },
+   {
+    "file": "src/amr_clonalshare/config.py",
+    "where": "komentarz przy block_threshold",
+    "was": "'0.7 is the shipped convention, not a measured optimum'",
+    "now": "bands 0.30 to 0.75 and 0.49 to 0.72, with the choice in the intersection made by unit count and margin"
+   }
+  ]
+ },
+ "p60_verdict": {
+  "question": "whether the records unambiguously establish that the chaining example of 60 features into 4 units, 57 in one, refers to p=60",
+  "verdict": "No; the numbers were not restored to the manuscript",
+  "evidence_against": [
+   "exp_g_block_threshold runs at p=30 and does not return power",
+   "review/ROUND4_findings.md carries the same table with the 'units' column at 6 for threshold 0.5, while the sentence below it speaks of 4 units",
+   "dostarczona kontrola planted ma 48 kolumn (examples/synthetic/make_data.py: p_amr=18, p_vir=30), nie 60",
+   "expected_planted/summary.json raportuje n_split_units=3, largest_unit_size=16, split_design_adequate=false przy progu DOMYSLNYM 0.7 - czyli odwrotnie niz twierdzil zapis ('0.7 accepted')",
+   "tests/conftest.py mowi 'the shipped planted example, with 60 columns, validates 48 defining features'; przyklad ma 48 kolumn, a 48 to n_defining_validated - komentarz mylil te dwie wielkosci",
+   "a grep for p=60 or 60 features across the whole module returns no generator, fixture or result file"
+  ],
+  "consequence": "the version of the threshold justification given in the request, that the gate rejects 0.5 at p=60 and is enforced in the CLI, was not written into the code or the manuscript in that form. What was written is the verifiable part: the gate exists, it is enforced in cli.py at lines 132 and 170, and it does fire on the shipped planted control. There is no artifact in which it separates 0.5 from 0.7."
+ },
+ "companion_artifacts": [
+  {
+   "path": "benchmarks/results_adequacy_2026-08-14/SPLIT_ADEQUACY_CURVE.json",
+   "sha256": "234e1bfaf1b85626f6b70b980b90b1cc87e99565f473032d89d009f27a303256",
+   "what": "split_design_adequate jako funkcja block_threshold na danych dostarczonych; deterministyczne, 0.77 s",
+   "feeds_manuscript": "nic w tej sesji"
+  }
+ ],
+ "planted_control_history_verdict": {
+  "question": "czy sekcja 5.1 opisuje aktualny przyklad planted, czy wersje sprzed bramki adekwatnosci",
+  "method": "porownanie czterech kopii expected_planted/summary.json w drzewie (git ma jeden commit dla tej sciezki)",
+  "copies_compared": {
+   "AUDIT/CYCLE/v1_maximal/M7_trait-cluster": {
+    "version": "2.2.0",
+    "status": "ok",
+    "p_value_structure": 5.42502208600954e-13,
+    "structure_detected": true,
+    "split_design_adequate": false,
+    "n_split_units": 3,
+    "_apply_release_gates_present": false
+   },
+   "AUDIT/CYCLE/v2_safe/W4_amr-clonalshare": {
+    "version": "2.2.0",
+    "status": "ok",
+    "p_value_structure": 5.42502208600954e-13,
+    "structure_detected": true,
+    "split_design_adequate": false,
+    "n_split_units": 3,
+    "_apply_release_gates_present": false
+   },
+   "amr-clonalshare/amr-clonalshare_1cowork": {
+    "version": "2.2.0",
+    "status": "ok",
+    "p_value_structure": 5.42502208600954e-13,
+    "structure_detected": true,
+    "split_design_adequate": false,
+    "n_split_units": 3,
+    "_apply_release_gates_present": false
+   },
+   "AUDIT/REPAIR/W4_trait_cluster (kanoniczny)": {
+    "version": "Unreleased",
+    "status": "withheld_inadequate_split_design",
+    "p_value_structure": null,
+    "diagnostic": 5.42502208600954e-13,
+    "structure_detected": false,
+    "split_design_adequate": false,
+    "n_split_units": 3,
+    "_apply_release_gates_present": true
+   }
+  },
+  "verdict_per_column": {
+   "wstrzymanie wnioskowania": "(a) Out of date against a change in the code. Up to 2.2.0 the run returned status=ok and structure_detected=True, exactly as section 5.1 describes. _apply_release_gates, introduced in [Unreleased], changed that.",
+   "p = 3 x 10^-39": "(b) Never matched. All four copies, archival and canonical, give 5.42502208600954e-13. No version in the tree produced 3e-39 for this control.",
+   "exit 0": "(b) Never. Already in 2.2.0 _gates contained the clause 'status==ok and split_design_adequate is False' (cli.py:138) and returned 3. After [Unreleased] the exit code is the same for a different reason."
+  },
+  "key_fact": "split_design_adequate=False and n_split_units=3 appear in every version. The split-design defect on the positive control existed from the start; [Unreleased] did not create it, it stopped passing over it in silence.",
+  "changelog_note": "[Unreleased] deklaruje 'The shipped planted-control summary and manuscript follow the same contract'. Summary zaktualizowano, sekcji 5.1 manuskryptu nie."
+ },
+ "planted_control_options": {
+  "measured_before_costing": "the number of split units is structurally bounded by the generator's k_true: synth_cluster_archetypes gives each archetype a disjoint block of features, so at k_true=3 there are exactly 3 units whatever the panel size. Measured: 48 features gives 3 units, 96 gives 3, 240 gives 3, always 33.3 % in the largest.",
+  "variant_A_widen_the_panel": {
+   "co_naprawde_trzeba": "NIE wiecej cech archetypowych, tylko cechy NIEZALEZNE od archetypow albo wyzsze k_true",
+   "smallest_measured_change": "2 independent features (Bernoulli 0.30) suffice: 48+2 gives 5 units, largest 32.0 %, maximum correlation 0.523, ADEQUATE at the default threshold of 0.7",
+   "variants": {
+    "+2 niezalezne": "5 jedn., ADEKW",
+    "+4": "7 jedn., ADEKW",
+    "+8": "11 jedn., ADEKW",
+    "k_true=4": "4 units, adequate, but the control then tests 4 archetypes and selected_k changes from 3 to 4"
+   },
+   "cost_in_working_time": "half an hour to an hour to change make_data.py and regenerate the three expected_* directories",
+   "cost_in_cpu": "3 pipeline runs of about 2 minutes each, about 0.1 CPU-hours",
+   "risk_to_reported_numbers": {
+    "pewne_do_zmiany": [
+     "inference_status: withheld -> ok",
+     "structure_detected: false -> true",
+     "p_value_structure: null -> liczba",
+     "kod wyjscia: 3 -> 0"
+    ],
+    "niezweryfikowane": [
+     "n_defining_validated 48",
+     "mdl_gain_fraction_of_null_code 0.631",
+     "lineage_concordance_z -5.8",
+     "discreteness_p_value 0.01",
+     "continuum_latent_dimension 2"
+    ],
+    "note": "the geometries were measured, the derived numbers were not; each candidate needs one run"
+   },
+   "what_is_not_a_cost": "no test reads examples/, so regenerating expected_* does not break the suite"
+  },
+  "variant_B_rewrite_section_5_1": {
+   "cost_in_working_time": "one to two hours, text only",
+   "cost_in_cpu": 0,
+   "change": "the planted row of the control table: structure withheld with a diagnostic p = 5.4e-13, exit 3, plus a sentence saying that the positive control meets its own fail-closed gate",
+   "ryzyko": "brak - opis zgadza sie wtedy z tym, co recenzent zobaczy"
+  },
+  "recommendation": "wariant B jako obowiazkowy i natychmiastowy, wariant A jako opcjonalny osobno"
+ },
+ "section_5_1_rewrite": {
+  "date": "2026-08-14",
+  "decision": "wariant B wykonany",
+  "rule": "every number in the control row comes from examples/synthetic/expected_*/summary.json; the exit codes were measured by running the three commands in the README",
+  "measured_exit_codes": {
+   "planted": 3,
+   "null": 0,
+   "clonal": 3
+  },
+  "discrepancies_found": [
+   {
+    "cell": "planted / structure",
+    "was": "p = 3 x 10^-39",
+    "is": "withheld_inadequate_split_design; diagnostyczne 5.42502208600954e-13",
+    "type": "wartosc NIGDY nie odpowiadala + status nieaktualny"
+   },
+   {
+    "cell": "planted / exit",
+    "was": 0,
+    "is": 3,
+    "type": "never matched; already in 2.2.0 _gates returned 3"
+   },
+   {
+    "cell": "clonal / structure p",
+    "was": "p = 2 x 10^-46",
+    "is": "1.0080421503076936e-14",
+    "type": "wartosc"
+   },
+   {
+    "cell": "clonal / defining",
+    "was": 31,
+    "is": 26,
+    "type": "wartosc (n_defining_validated)"
+   },
+   {
+    "cell": "clonal / discrete?",
+    "was": "yes, p = 0.01",
+    "is": "discrete_beyond_a_gradient=false, continuum_null_under_dimensioned=true -> werdykt WSTRZYMANY",
+    "type": "werdykt odwrocony"
+   },
+   {
+    "cell": "proza pod tabela",
+    "was": "'the continuum null agrees the structure is discrete, and it is'",
+    "is": "null jest pod-wymiarowany (3 wymiary na krawedzi), werdykt wstrzymany",
+    "type": "twierdzenie sprzeczne z artefaktem"
+   },
+   {
+    "cell": "clonal / truth",
+    "was": "25 lineages",
+    "is": "25 zazadanych w make_data.py, 16 zrealizowanych (lineage_concordance.n_lineages)",
+    "type": "doprecyzowanie, nie blad"
+   }
+  ],
+  "verified_unchanged": [
+   "planted k=3",
+   "planted ARI 1.00 vs truth (external_agreement/planted_cluster/ari=1.0)",
+   "planted 48 defining",
+   "planted discrete yes p=0.01",
+   "planted MDL 0.631",
+   "planted lineage z -5.8",
+   "null k=1",
+   "null not run",
+   "null MDL -0.00001",
+   "null exit 0",
+   "clonal k=5",
+   "clonal MDL 0.437",
+   "clonal lineage z +26.4",
+   "clonal exit 3",
+   "clonal concordance 1.000 vs null 0.407",
+   "clonal ARI 0.977 vs lineage"
+  ],
+  "side_finding": "examples/synthetic/expected_clonal/ and expected_null/ were not regenerated after the reporting change in [Unreleased]: they carry the old key p_value_structure instead of p_value_structure_report and diagnostic_p_value_structure_exact. The numeric values are identical and only the schema differs. Only expected_planted/ was regenerated. Not repaired: examples/ was left untouched by instruction.",
+  "dangling_references_check": "none. After the rewrite the manuscript no longer contains '3 x 10^-39', '2 x 10^-46', '31 defining' or 'exit 0'. The reference in section 5.5 to an ARI against planted truth of 1.000 remains true. The README describes planted as a positive control with 3 planted archetypes, which is a label for the data rather than a promise about the result and so is not false, but it does not warn that the run ends with exit code 3."
+ },
+ "language_note": "descriptive text translated from Polish to English on 2026-08-31; no numeric value, key path or recorded digest was changed"
+}

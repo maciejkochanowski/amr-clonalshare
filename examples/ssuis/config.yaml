@@ -1,0 +1,131 @@
+# Streptococcus suis, n = 677, 13 antimicrobials.
+#
+# Data: examples/ssuis/data/, derived from the cohort shipped as ssuiscohort.zip.
+# The wild-type matrix reproduces exactly from the raw MICs and the ECOFFinder
+# cut-offs: 0 mismatches of 8,801 cells, as tests/test_ssuis_provenance.py
+# asserts by rebuilding every cell. NOTE the cohort's coding
+# convention: in wildtype_matrix.csv 0 = wild type and 1 = NON-wild type. The layer
+# files built here keep 1 = non-wild type, i.e. 1 = the resistant/acquired state,
+# which is the orientation the clustering treats as feature presence.
+#
+#   amr-clonalshare --config examples/ssuis/config.yaml --results-dir out/
+#
+# FIVE DECISIONS, each of which changes the answer, each therefore stated with the
+# measurement on THIS cohort that drove it rather than left to a default.
+#
+#  * TWO LAYERS SPLIT BY MOLECULAR TARGET SITE, not by antimicrobial class. The
+#    method fuses layers; a single 13-column block would make fusion a no-op and
+#    the run would measure nothing. Measured on this cohort, phi correlation is
+#    0.717 (median) within an antimicrobial class against 0.190 between classes,
+#    so class is the wrong grain: it would give seven layers, five of them with
+#    one or two columns. Target site gives two layers whose effective dimensions
+#    are 2.93 (ribosome, 8 columns) and 2.66 (cell wall + folate, 5 columns) --
+#    balanced, so neither dominates the fused graph. This is the criterion the
+#    Klebsiella config used to REJECT the K locus layer (76 against 5.2).
+#
+#  * LINCOMYCIN AND TIAMULIN SIT IN THE RIBOSOMAL LAYER. Lincosamide-macrolide
+#    correlation is the strongest cross-class signal in the cohort (lincomycin x
+#    tylosin 0.795, x tilmicosin 0.790, x erythromycin 0.783) and is the expected
+#    MLS_B cross-resistance phenotype: erm methylation of 23S rRNA removes binding
+#    for macrolides, lincosamides and streptogramin B together. Pleuromutilins
+#    bind the same peptidyl transferase centre. Placing them by target site rather
+#    than by class puts one mechanism in one layer instead of splitting it.
+#
+#  * NO PREVALENCE FLOOR (lo 0.0, min_count 2). Non-wild-type prevalence spans
+#    3.8% (cefquinome) to 84.8% (tetracycline) here. A 5% floor would delete
+#    cefquinome (3.8%) and nearly delete amoxicillin (5.5%) -- the cephalosporin
+#    and aminopenicillin signals are exactly what veterinary S. suis surveillance
+#    watches. Features in fewer than two isolates cannot inform a distance and are
+#    reported in layer_reports.gated_out rather than silently dropped.
+#
+#  * THE LINEAGE COLUMN IS THE hierBAPS CLUSTER, NOT MLST, AND IS NOT CLUSTERED ON.
+#    The reason is the cohort's own numbers. MLST is
+#    present for 458 of 677 isolates (67.7%) across 108 sequence types, and the
+#    32.3% that are missing are missing INFORMATIVELY: 40% of the later United
+#    Kingdom period carries a sequence type against 97% of the earlier one, and
+#    untyped isolates carry about two more non-wild-type results out of thirteen.
+#    The Kitagawa half of this package already refuses a contrast under those
+#    labels for exactly that reason, and it made no sense to keep feeding the same
+#    labels to the population-structure diagnostic on the other half. The source
+#    study's hierBAPS cluster is present for all 677 (30 clusters, support 0.996)
+#    and is the variable the decomposition already uses, so both halves now answer
+#    to one definition of a lineage.
+#
+#    The choice moves the numbers and the direction is documented rather than
+#    hidden: same-lineage concordance z rises from 10.3 to 22.2, because the
+#    complete labels supply more same-lineage pairs, while the lineage-attributable
+#    share of the partition moves from 0.32 to 0.30, i.e. hardly at all. That
+#    contrast is itself the argument of section 3.4 of the manuscript. Both MLST
+#    variants are reported there as a sensitivity analysis, and
+#    `config_contrast.yaml` retains MLST where the point is to show the refusal.
+#
+#    Country is declared as an external column for the same reason MLST is not a
+#    feature (3 levels, 62% United Kingdom): it is a confounder to test against,
+#    not a trait.
+#
+#  * THE RECORDED MIC IS READ AS AN INTERVAL, NOT AS A POINT. The cohort carries
+#    10,832 MIC readings, 677 isolates for each of 16 antimicrobials, and none of
+#    them carries a censoring sign. On this panel that matters: for tetracycline
+#    84.8% of isolates sit above the epidemiological cut-off and the readings run
+#    to the top tested well, so a value written as 128 mg/L is a statement that
+#    the true concentration is at least 128, not that it is 128. The censored
+#    reading treats a value on an end well as censored and reports the share both
+#    ways, so the width of that bracket is visible next to the bootstrap interval
+#    rather than buried in an assumption. Thirteen of the 16 agents enter the
+#    binary layers because the ECOFF derivation resolved a cut-off for those
+#    thirteen; the MIC panel keeps all 16, since the censored share needs a
+#    dilution ladder and not a cut-off.
+
+dataset:
+  name: streptococcus_suis_n677
+  strain_id_column: genome_id
+  data_dir: data
+  strain_alignment_policy: intersect_core
+  expected_n: 677
+  metadata: metadata.csv
+  lineage_column: baps_cluster
+  external_columns: [serovar, isolation_country, collection_year, host_name, mlst]
+  mic: mic_panel.csv
+  mic_id_column: genome_id
+  mic_antibiotic_column: antibiotic
+  mic_value_column: measurement
+
+files:
+  ribo:
+    path: ribo.csv
+    kind: wide_binary
+  cell:
+    path: cell.csv
+    kind: wide_binary
+
+distance:
+  metric: jaccard
+  undefined_pair: identical     # stated, not assumed; see docs/methodology.md
+
+snf:
+  K: 20                         # ~n/34; the Klebsiella run used 30 at n=1500
+  mu: 0.5
+  T: 20
+  alpha: 0.5
+  tie_policy: inclusive         # order-invariant neighbour selection
+
+trait_cluster:
+  layers: [ribo, cell]
+  k_range: [2, 3, 4, 5]
+  k_select_primary: mdl
+  prevalence_gate: { lo: 0.0, hi: 1.0, min_count: 2 }
+  defining: { min_abs_cohens_h: 0.5, q_fdr: 0.05, min_support: 3 }
+  stability: { tau_robust: 0.4, tau_fragile: 0.1 }
+
+tva:
+  enabled: true
+  n_splits: 25
+  n_boot_continuum: 99
+  continuum_q_max: 4
+  merge: exchangeable_ruger
+  dispersion: mom
+
+influence:
+  enabled: true
+  n_perm: 10
+  collapse_threshold: 1.5

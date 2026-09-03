@@ -1,0 +1,111 @@
+{
+  "description": "size of each ArchePhy-CS null on traits simulated under independent two-state CTMCs on birth-death trees, i.e. with the null true by construction",
+  "n_sim": 60,
+  "alpha": 0.05,
+  "cells": {
+    "n_taxa=60/rate=3.0/k=2/clock=strict": {
+      "n_taxa": 60,
+      "rate": 3.0,
+      "k": 2,
+      "n_mc": 200,
+      "clock": "strict",
+      "n_usable": {
+        "ctmc": 60,
+        "exact": 600,
+        "poisson": 600,
+        "weighted": 60
+      },
+      "size_at_0.05": {
+        "ctmc": 0.016666666666666666,
+        "exact": 0.07166666666666667,
+        "poisson": 0.04833333333333333,
+        "weighted": 0.0
+      },
+      "standard_error": {
+        "ctmc": 0.01652719420071502,
+        "exact": 0.010530159507778563,
+        "poisson": 0.008755685983236096,
+        "weighted": 0.0
+      },
+      "mean_m_obs": 3.25
+    },
+    "n_taxa=60/rate=1.0/k=2/clock=strict": {
+      "n_taxa": 60,
+      "rate": 1.0,
+      "k": 2,
+      "n_mc": 200,
+      "clock": "strict",
+      "n_usable": {
+        "ctmc": 60,
+        "exact": 600,
+        "poisson": 600,
+        "weighted": 60
+      },
+      "size_at_0.05": {
+        "ctmc": 0.016666666666666666,
+        "exact": 0.07833333333333334,
+        "poisson": 0.041666666666666664,
+        "weighted": 0.0
+      },
+      "standard_error": {
+        "ctmc": 0.01652719420071502,
+        "exact": 0.010969444092737958,
+        "poisson": 0.008157875086438006,
+        "weighted": 0.0
+      },
+      "mean_m_obs": 2.316666666666667
+    },
+    "n_taxa=30/rate=3.0/k=2/clock=strict": {
+      "n_taxa": 30,
+      "rate": 3.0,
+      "k": 2,
+      "n_mc": 200,
+      "clock": "strict",
+      "n_usable": {
+        "ctmc": 60,
+        "exact": 600,
+        "poisson": 600,
+        "weighted": 60
+      },
+      "size_at_0.05": {
+        "ctmc": 0.03333333333333333,
+        "exact": 0.041666666666666664,
+        "poisson": 0.021666666666666667,
+        "weighted": 0.0
+      },
+      "standard_error": {
+        "ctmc": 0.023174059571793568,
+        "exact": 0.008157875086438006,
+        "poisson": 0.005943795395511499,
+        "weighted": 0.0
+      },
+      "mean_m_obs": 1.55
+    },
+    "n_taxa=60/rate=3.0/k=2/clock=relaxed": {
+      "n_taxa": 60,
+      "rate": 3.0,
+      "k": 2,
+      "n_mc": 200,
+      "clock": "relaxed",
+      "n_usable": {
+        "ctmc": 60,
+        "exact": 600,
+        "poisson": 600,
+        "weighted": 60
+      },
+      "size_at_0.05": {
+        "ctmc": 0.08333333333333333,
+        "exact": 0.14,
+        "poisson": 0.085,
+        "weighted": 0.03333333333333333
+      },
+      "standard_error": {
+        "ctmc": 0.03568120160740314,
+        "exact": 0.014165686240583852,
+        "poisson": 0.0113852975367357,
+        "weighted": 0.023174059571793568
+      },
+      "mean_m_obs": 2.9
+    }
+  }
+}

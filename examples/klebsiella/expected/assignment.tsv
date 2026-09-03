@@ -1,0 +1,1501 @@
+isolate_id	cluster	confidence	stability	fragility	positive_layers	n_informative_layers	layer_conflict	discordant_layer	ST	Country	Region	Year	Source	K_locus	O_type	virulence_score	resistance_score	Convergence_event
+16703_5_23	1	0.95890329754102	robust	0.0		0			ST185	Australia	Oceania	2013	human	KL130	unknown	0	0	
+16703_7_9	1	0.9644158707139063	robust	0.0		0			ST3043	Australia	Oceania	2013	human	KL10	unknown	0	0	
+16780_6_28	1	0.9624832131813447	robust	0.0		0			ST537	Australia	Oceania	2013	human	KL136	unknown	0	0	
+16870_7_32	0	0.8156548892066661	robust	0.0	vir	1			ST1393	Australia	Oceania	2013	human	KL8	O1	1	0	
+16870_7_48	0	0.6995724419653608	robust	0.0	vir	1			ST215	Australia	Oceania	2013	human	KL16	O1	1	0	
+16870_7_72	0	0.5158398911738395	robust	0.0	vir	1			ST882	Australia	Oceania	2013	human	KL16	O1	1	0	
+16870_7_75	1	0.9600371174531808	robust	0.0		0			ST1322	Australia	Oceania	2013	human	KL139	O1	0	0	
+16703_5_4	1	0.9644160050912612	robust	0.0		0			ST607	Australia	Oceania	2013	human	KL48	O1	0	0	
+16703_5_34	1	0.9591076074910535	robust	0.0	vir	1			ST133	Australia	Oceania	2013	human	KL116	O1	2	0	
+16703_5_71	1	0.9625106712995077	robust	0.0		0			ST458	Australia	Oceania	2013	human	KL142	O1	0	0	
+16870_8_40	1	0.9646697330621283	robust	0.0		0			ST1010	Australia	Oceania	2013	human	KL142	O1	0	0	
+16870_8_74	0	0.6569241032757899	robust	0.0	vir	1			ST180	Australia	Oceania	2013	human	KL55	O1	1	0	
+16703_7_24	1	0.9636285282077828	robust	0.0		0			ST500	Australia	Oceania	2013	human	KL34	O1	0	0	
+16703_7_59	0	0.5595045645599814	robust	0.0	vir	1			ST3057	Australia	Oceania	2014	human	KL30	O1	1	0	
+Klebsiella_pneumoniae_INF319	0	0.9615259237607936	robust	0.10526315789473684	amr	1			ST461	Australia	Oceania	2014	human	KL25	O1	0	0	
+16780_6_4	1	0.9676945854252595	robust	0.0	vir	1			ST3051	Australia	Oceania	2014	human	KL20	O1	4	0	
+CH0031R_C4PNMANXX_TAGGCATG-GTAAGGAG_L006	0	0.2824098761526463	intermediate	0.47368421052631576	amr	1			ST1213	Australia	Oceania	2013	human	KL103	O1	0	1	
+16780_6_39	1	0.9635375121569073	robust	0.0		0			ST128	Australia	Oceania	2013	human	KL6	O1	0	0	
+16780_6_32	1	0.9741705010904771	robust	0.0		0			ST3169	Australia	Oceania	2013	human	KL31	O1	0	0	
+16852_1_61	1	0.9569571502459358	robust	0.0		0			ST215	Australia	Oceania	2014	human	KL16	O1	0	0	
+16852_1_69	1	0.966551470441224	robust	0.0		0			ST310	Australia	Oceania	2014	human	KL1	O1	0	0	
+AH0620_C4PNMANXX_GGACTCCT-CTAAGCCT_L006	1	0.9655715954087589	robust	0.0	vir	1			ST1049	Australia	Oceania	2014	human	KL5	O1	4	0	
+16870_7_83	1	0.9576165049514368	robust	0.0		0			ST110	Australia	Oceania	2013	human	KL108	O1	0	0	
+16703_5_15	1	0.9648542032559498	robust	0.0		0			ST3041	Australia	Oceania	2013	human	KL30	O1	0	0	
+16703_5_40	1	0.9699144798361079	robust	0.0		0			ST3064	Australia	Oceania	2013	human	KL54	O1	0	0	
+16870_8_13	1	0.9598002622140139	robust	0.0		0			ST2116	Australia	Oceania	2013	human	KL28	O1	0	0	
+Klebsiella_pneumoniae_INF171	0	0.9594841951013613	robust	0.0	amr+vir	2	0.0	fused	ST711	Australia	Oceania	2013	human	KL54	O1	1	1	
+16780_6_25	1	0.9628693676063458	robust	0.0		0			ST2116	Australia	Oceania	2013	human	KL28	O1	0	0	
+16852_1_38	1	0.9577524333393592	robust	0.0		0			ST252	Australia	Oceania	2014	human	KL81	O1	0	0	
+16852_1_6	1	0.9593361554371227	robust	0.0		0			ST359	Australia	Oceania	2013	human	KL10	O1	0	0	
+16870_7_51	0	0.9738144313832339	robust	0.0	amr	1			ST3038	Australia	Oceania	2013	human	KL24	O2	0	0	
+16703_5_62	1	0.9633485056035211	robust	0.0		0			ST1193	Australia	Oceania	2013	human	KL22	O2	0	0	
+16703_5_65	1	0.9642538247386946	robust	0.0		0			ST3075	Australia	Oceania	2013	human	KL133	O2	0	0	
+16703_5_74	0	0.6477080894331724	robust	0.0	vir	1			ST268	Australia	Oceania	2013	human	KL20	O2	1	0	
+Klebsiella_pneumoniae_INF151	1	0.962971211787156	robust	0.0	vir	1			ST93	Australia	Oceania	2013	human	KL4	O2	4	0	
+16870_8_80	0	0.8192266897494472	robust	0.0	vir	1			ST564	Australia	Oceania	2013	human	KL28	O2	1	0	
+16870_8_82	0	0.5145513798545005	robust	0.0	vir	1			ST3072	Australia	Oceania	2013	human	KL39	O2	1	0	
+Klebsiella_pneumoniae_INF242	0	0.6352319053579182	robust	0.0	vir	1			ST3072	Australia	Oceania	2013	human	KL39	O2	1	0	
+16703_7_2	1	0.965334506117694	robust	0.0		0			ST3063	Australia	Oceania	2013	human	KL20	O2	0	0	
+16703_7_6	0	0.9578655048652246	robust	0.0	amr	1			ST485	Australia	Oceania	2013	human	KL28	O2	0	0	
+16703_7_33	1	0.9630899561379108	robust	0.0		0			ST3072	Australia	Oceania	2014	human	KL39	O2	0	0	
+16703_7_54	1	0.9636178328682602	robust	0.0		0			ST1997	Australia	Oceania	2014	human	KL28	O2	0	0	
+Klebsiella_pneumoniae_INF358	0	0.5369782624584888	robust	0.0	vir	1			ST2513	Australia	Oceania	2014	human	KL62	O2	1	0	
+16780_6_40	1	0.9630589990624102	robust	0.0		0			ST2136	Australia	Oceania	2013	human	KL102	O2	0	0	
+Klebsiella_pneumoniae_KSB1_6F	0	0.7396557893904577	robust	0.0	vir	1			ST116	Australia	Oceania	2013	human	KL6	O2	1	0	
+16852_1_62	1	0.970211789241893	robust	0.0		0			ST1731	Australia	Oceania	2014	human	KL43	O2	0	0	
+18090_3_27	1	0.9572861801007747	robust	0.0		0			ST643	Australia	Oceania	2014	human	KL38	O2	0	0	
+16870_7_34	1	0.9593225612399179	robust	0.0		0			ST1583	Australia	Oceania	2013	human	KL102	O2	0	0	
+18090_3_1	1	0.9593847640207885	robust	0.0		0			ST27	Australia	Oceania	2013	human	KL109	O2	0	0	
+16703_5_32	1	0.9595743641185911	robust	0.0		0			ST1583	Australia	Oceania	2013	human	KL102	O2	0	0	
+16703_5_46	1	0.9551395860867284	robust	0.0		0			ST321	Australia	Oceania	2013	human	KL3	O2	0	0	
+AUSMDU00003494_S13_L001	0	0.5948782258275358	robust	0.0	vir	1			ST280	Australia	Oceania	2013	human	KL23	O2	1	0	
+16870_8_5	1	0.9658116818107515	robust	0.0		0			ST12	Australia	Oceania	2013	human	KL122	O2	0	0	
+16870_8_8	1	0.9646330272050224	robust	0.0		0			ST20	Australia	Oceania	2013	human	KL28	O2	0	0	
+Klebsiella_pneumoniae_INF177	0	0.6356536586789767	robust	0.0	vir	1			ST3061	Australia	Oceania	2013	human	KL8	O2	1	0	
+16870_8_42	1	0.9672720864691652	robust	0.0		0			ST292	Australia	Oceania	2013	human	KL143	O2	0	0	
+16870_8_44	1	0.9655214434123415	robust	0.0		0			ST3052	Australia	Oceania	2013	human	KL112	O2	0	0	
+16703_7_78	1	0.9582732171359684	robust	0.0		0			ST27	Australia	Oceania	2014	human	KL109	O2	0	0	
+16852_1_25	1	0.9610340996059732	robust	0.0		0			ST1800	Australia	Oceania	2014	human	KL30	O2	0	0	
+16852_1_39	1	0.9655862920256916	robust	0.0		0			ST127	Australia	Oceania	2014	human	KL30	O2	0	0	
+16852_1_56	1	0.9609130005025823	robust	0.0		0			ST463	Australia	Oceania	2014	human	KL117	O2	0	0	
+16870_7_60	1	0.9694439740437162	robust	0.0		0			ST2931	Australia	Oceania	2013	human	KL22	O3/O3a	0	0	
+16870_7_62	0	0.9678565449352137	robust	0.0	amr	1			ST1263	Australia	Oceania	2013	human	KL10	O3/O3a	0	0	
+16870_8_41	1	0.9618273813487184	robust	0.0		0			ST629	Australia	Oceania	2013	human	KL10	O3/O3a	0	0	
+16703_7_61	1	0.9625676085816841	robust	0.0	vir	1			ST792	Australia	Oceania	2014	human	KL25	O3/O3a	2	0	
+Klebsiella_pneumoniae_INF341	1	0.9668139640863469	robust	0.0	vir	1			ST792	Australia	Oceania	2014	human	KL25	O3/O3a	2	0	
+16870_7_81	1	0.9581510699278009	robust	0.0		0			ST603	Australia	Oceania	2013	human	KL22	O3b	0	0	
+16703_5_1	1	0.9712573816109228	robust	0.0		0			ST584	Australia	Oceania	2013	human	KL60	O3b	0	0	
+16703_5_16	1	0.9650253221642139	robust	0.0		0			ST3046	Australia	Oceania	2013	human	KL22	O3b	0	0	
+16703_5_29	0	0.6357919832451663	robust	0.0	vir	1			ST603	Australia	Oceania	2013	human	KL22	O3b	1	0	
+16703_5_31	1	0.9544509028972755	robust	0.0		0			ST611	Australia	Oceania	2013	human	KL71	O3b	0	0	
+16703_5_54	0	0.9695426842026524	robust	0.0	amr	1			ST221	Australia	Oceania	2013	human	KL39	O3b	0	1	
+16703_5_59	1	0.9630958866706543	robust	0.0		0			ST1621	Australia	Oceania	2013	human	KL46	O3b	0	0	
+16703_5_63	1	0.9653856598968334	robust	0.0		0			ST1441	Australia	Oceania	2013	human	KL10	O3b	0	0	
+16703_5_79	0	0.6419401450153431	robust	0.0	vir	1			ST412	Australia	Oceania	2013	human	KL57	O3b	1	0	
+16703_5_82	1	0.9650298833718743	robust	0.0		0			ST176	Australia	Oceania	2013	human	KL13	O3b	0	0	
+16870_8_9	1	0.9687310297931945	robust	0.0		0			ST54	Australia	Oceania	2013	human	KL14	O3b	0	0	
+Klebsiella_pneumoniae_INF182	1	0.9632624984914004	robust	0.0		0			ST412	Australia	Oceania	2013	human	KL57	O3b	0	0	
+Klebsiella_pneumoniae_INF192	0	0.681890351472918	robust	0.0	vir	1			ST3067	Australia	Oceania	2013	human	KL63	O3b	1	0	
+16703_7_11	1	0.9587705256469572	robust	0.0		0			ST3074	Australia	Oceania	2013	human	KL13	O3b	0	0	
+16703_7_15	1	0.957646023853193	robust	0.0		0			ST221	Australia	Oceania	2013	human	KL39	O3b	0	0	
+16703_7_16	1	0.9656649896721347	robust	0.0		0			ST1017	Australia	Oceania	2013	human	KL58	O3b	0	0	
+16703_7_35	0	0.9657498192566046	robust	0.0	amr	1			ST3096	Australia	Oceania	2014	human	KL58	O3b	0	0	
+AUSMDU00003502_S14_L001	1	0.9618039637716036	robust	0.0		0			ST3040	Australia	Oceania	2014	human	KL38	O3b	0	0	
+16703_7_50	1	0.9734872436237298	robust	0.0		0			ST3054	Australia	Oceania	2014	human	KL46	O3b	0	0	
+Klebsiella_pneumoniae_INF329	0	0.9675643633717439	robust	0.0	amr	1			ST323	Australia	Oceania	2014	human	KL21	O3b	0	1	
+16703_7_79	1	0.9571501237979041	robust	0.0		0			ST34	Australia	Oceania	2014	human	KL38	O3b	0	0	
+16780_6_37	1	0.9678217328246894	robust	0.0		0			ST1966	Australia	Oceania	2013	human	KL58	O3b	0	0	
+16780_6_17	1	0.9646065113130953	robust	0.0		0			ST2800-1LV	Australia	Oceania	2013	human	KL27	O3b	0	0	
+AH0297_C4PNMANXX_CGAGGCTG-AAGGAGTA_L006	1	0.9628395990597853	robust	0.0		0			ST3040	Australia	Oceania	2014	human	KL38	O3b	0	0	
+16852_1_3	1	0.9664035452109835	robust	0.0		0			ST1243-1LV	Australia	Oceania	2013	human	KL14	O3b	0	0	
+AH0360_C4PNMANXX_GTAGAGGA-AAGGAGTA_L006	0	0.5921334980966334	robust	0.0	vir	1			ST34-1LV	Australia	Oceania	2014	human	KL111	O3b	1	0	
+16852_1_40	0	0.5521920138396131	robust	0.0	vir	1			ST34-1LV	Australia	Oceania	2014	human	KL111	O3b	1	0	
+16870_7_26	1	0.9681425644498897	robust	0.0		0			ST345	Australia	Oceania	2013	human	KL15	O4	0	0	
+16703_5_20	0	0.9606150329680087	robust	0.0	amr	1			ST3050	Australia	Oceania	2013	human	KL36	O4	0	0	
+16870_8_10	0	0.6360268020045469	robust	0.0	vir	1			ST2370	Australia	Oceania	2013	human	KL15	O4	1	0	
+Klebsiella_pneumoniae_INF188	0	0.9632388021017045	robust	0.0	amr	1			ST17-1LV	Australia	Oceania	2013	human	KL141	O4	0	1	
+16870_8_68	1	0.9627247895143813	robust	0.0		0			ST3068	Australia	Oceania	2013	human	KL119	O4	0	0	
+16852_1_33	1	0.9671667423772007	robust	0.0		0			ST345	Australia	Oceania	2014	human	KL15	O4	0	0	
+Klebsiella_pneumoniae_KSB1_9A	1	0.9600483577734782	robust	0.0		0			ST2999	Australia	Oceania	2013	human	KL141	O4	0	0	
+16870_8_75	1	0.967074821370039	robust	0.0		0			ST134	Australia	Oceania	2013	human	KL25	O5	0	0	
+Klebsiella_pneumoniae_INF359	0	0.9657608096005755	robust	0.0	amr+vir	2	0.0	fused	ST17	Australia	Oceania	2014	human	KL25	O5	1	1	
+16703_5_30	0	0.6352697040866846	robust	0.0	vir	1			ST1307	Australia	Oceania	2013	human	KL127	OL101	1	0	
+16870_8_16	1	0.9659050756205806	robust	0.0		0			ST256	Australia	Oceania	2013	human	KL47	OL101	0	0	
+Klebsiella_pneumoniae_INF355	0	0.9675647500555652	robust	0.0	amr	1			ST491	Australia	Oceania	2014	human	KL118	OL101	0	1	
+AH0225_C4PNMANXX_CTCTCTAC-AAGGAGTA_L006	1	0.9682377988967673	robust	0.0		0			ST1464	Australia	Oceania	2013	human	KL109	OL101	0	0	
+16852_1_72	1	0.9712066548352524	robust	0.0		0			ST2267	Australia	Oceania	2014	human	KL127	OL101	0	0	
+16870_7_44	1	0.9588100494046815	robust	0.0		0			ST2997	Australia	Oceania	2013	human	KL158	OL102	0	0	
+16703_5_25	1	0.9576612037191293	robust	0.0		0			ST2415	Australia	Oceania	2013	human	KL131	O4	0	0	
+AS14_C4PNMANXX_GTAGAGGA-AGAGTAGA_L006	1	0.9637294366805669	robust	0.0	vir	1			ST2039	Australia	Oceania	2008	human	KL2	O1	5	0	
+AS6_C4PNMANXX_TCCTGAGC-AGAGTAGA_L006	1	0.9559245694201959	robust	0.0		0			ST1065	Australia	Oceania	2009	human	KL35	O3/O3a	0	0	
+AS18_C4PNMANXX_TCCTGAGC-GTAAGGAG_L006	1	0.9613311199531064	robust	0.0		0			ST1345-2LV	Australia	Oceania	unknown	human	KL60	O3/O3a	0	0	
+AS8_C4PNMANXX_TAGGCATG-AGAGTAGA_L006	0	0.6829732532928552	robust	0.0	vir	1			ST2459	Australia	Oceania	2008	human	KL61	O3b	1	0	
+AS11_C4PNMANXX_GCTACGCT-AGAGTAGA_L006	1	0.9670336671956423	robust	0.0		0			ST322	Australia	Oceania	unknown	human	KL17	O4	0	0	
+SB4386	1	0.9621533705445209	robust	0.0	vir	1			ST380-1LV	France	Europe_western	2008	human	KL2	O1	5	0	
+ERR560516	1	0.9610645382610091	robust	0.0	vir	1			ST380	France	Europe_western	2010	human	KL2	O1	5	0	
+ERR560517	1	0.9631568309849474	robust	0.0	vir	1			ST380	France	Europe_western	2010	human	KL2	O1	5	0	
+ERR560501	1	0.9649748394067553	robust	0.0	vir	1			ST57-1LV	France	Europe_western	unknown	human	KL1	O1	5	0	
+ERR562353	1	0.9695327755243089	robust	0.0	vir	1			ST23	Taiwan	Asia_eastern	unknown	human	KL1	O1	4	0	
+ERR560515	0	0.9664056829989989	robust	0.0	amr	1			ST520	France	Europe_western	unknown	human	KL2	O1	0	1	
+ERR560518	1	0.9674212748593677	robust	0.0		0			ST375	France	Europe_western	2008	human	KL2	O1	0	0	
+ERR562359	1	0.9649960581949181	robust	0.0	vir	1			ST57	France	Europe_western	2011	human	KL1	O1	5	0	
+ERR560513	1	0.9612210711858938	robust	0.0	vir	1			ST65	France	Europe_western	1987	lemur	KL2	O1	3	0	
+ERR560499	0	0.5662499416692405	robust	0.0	vir	1			ST86	unknown	unknown	unknown	unknown	KL2	O2	1	0	
+SB2803	0	0.556232524597064	robust	0.0	vir	1			ST163	Netherlands	Europe_western	1999	equine	KL35	O3b	1	0	
+SRR1561230	0	0.9583813933929329	robust	0.0	amr	1			ST43	India	Asia_southern	2007	human	KL30	O1	0	2	
+SRR1561321	0	0.9636487428287143	robust	0.0	amr+vir	2	0.0	fused	ST14-1LV	USA	America_northern	2011	human	KL2	O1	1	2	
+SRR1561358	0	0.9596425169947556	robust	0.0	amr+vir	2	0.0	fused	ST39	USA	America_northern	2011	human	KL2	O1	1	1	
+SRR1561338	0	0.9553603451011657	robust	0.0	amr	1			ST42	USA	America_northern	2004	human	KL106	O1	0	2	
+SRR1561357	1	0.9579499675937344	robust	0.0		0			ST1978	USA	America_northern	2001	human	KL64	O2	0	0	
+SRR1561337	0	0.9621614996113345	robust	0.0	amr	1			ST2983	USA	America_northern	2004	human	KL140	O2	0	2	
+SRR1561208	0	0.9648973749897155	robust	0.0	amr+vir	2	0.0	fused	ST855-1LV	Brazil	America_Latin_Caribbean	2010	human	KL10	O3/O3a	1	3	
+SRR1561209	0	0.9593170591429167	robust	0.0	amr	1			ST855	Brazil	America_Latin_Caribbean	2010	human	KL10	O3/O3a	0	2	
+SRR1561236	0	0.9638688661696532	robust	0.0	amr	1			ST277	Israel	Asia_western	2007	human	KL46	O3b	0	2	
+SRR1561304	0	0.9734989097302221	robust	0.0	amr	1			ST2457	USA	America_northern	2008	human	KL21	O3b	0	2	
+ERR349784	0	0.9605978894759178	robust	0.0	amr	1			ST1	Nepal	Asia_southern	2012	human	KL17	O1	0	1	
+ERR349828	0	0.9631431151284413	robust	0.0	amr+vir	2	0.0	fused	ST15	Nepal	Asia_southern	2012	human	KL112	O1	1	1	
+ERR349769	0	0.9654398406510986	robust	0.0	amr	1			ST1787	Nepal	Asia_southern	2012	human	KL148	O1	0	1	
+ERR349818	0	0.8860835126995588	robust	0.3157894736842105	amr	1			ST716	Nepal	Asia_southern	2012	human	KL110	O2	0	1	
+ERR349773	0	0.9614064856379428	robust	0.0	amr	1			ST307	Nepal	Asia_southern	2012	human	KL102	O2	0	1	
+ERR349813	0	0.965960929200647	robust	0.0	amr+vir	2	0.0	fused	ST3395	Nepal	Asia_southern	2012	human	KL14	O3b	1	1	
+ERR349835	0	0.9741294464332262	robust	0.0	amr+vir	2	0.0	fused	ST3395	Nepal	Asia_southern	2012	human	KL14	O3b	1	1	
+ERR349811	0	0.9636806542425648	robust	0.0	amr	1			ST628	Nepal	Asia_southern	2012	human	KL15	O4	0	1	
+ERR349846	0	0.9624231368890127	robust	0.0	amr	1			ST152	Nepal	Asia_southern	2012	human	KL149	O4	0	1	
+SRR2098701	0	0.5355025931196449	robust	0.0	vir	1			ST6	USA	America_northern	2012	food	KL7	O1	1	0	
+SRR2098694	1	0.9691190106145321	robust	0.0		0			ST1780	USA	America_northern	2012	food	KL17	O1	0	0	
+SRR2098700	1	0.9565689334326021	robust	0.0		0			ST1686-1LV	USA	America_northern	2011	human	KL113	O1	0	0	
+SRR2098764	1	0.9604040472252527	robust	0.42105263157894735	amr+vir	2	0.0	fused	ST435	USA	America_northern	2012	food	KL17	O1	3	0	
+SRR2098698	1	0.9575603719596687	robust	0.0		0			ST44	USA	America_northern	2012	food	KL57	O1	0	0	
+SRR2098775	1	0.9688601071173865	robust	0.0		0			ST1692	USA	America_northern	2012	food	KL30	O1	0	0	
+SRR2098814	1	0.9672801414069696	robust	0.0		0			ST220-1LV	USA	America_northern	2012	food	KL114	O1	0	0	
+SRR2098769	1	0.9621373393322439	robust	0.0		0			ST1694	USA	America_northern	2012	food	KL63	O1	0	0	
+SRR2098785	1	0.9657507080057367	robust	0.0		0			ST1691	USA	America_northern	2012	human	KL110	O2	0	0	
+SRR2098760	1	0.9570876886534315	robust	0.0		0			ST487-1LV	USA	America_northern	2012	food	KL8	O2	0	0	
+SRR2098693	1	0.9698560095875155	robust	0.0		0			ST188	USA	America_northern	2012	human	KL51	O2	0	0	
+SRR2098755	1	0.9613014352928742	robust	0.0		0			ST896	USA	America_northern	2012	human	KL3	O2	0	0	
+SRR2098690	0	0.8744145006056946	robust	0.10526315789473684	amr	1			ST629	USA	America_northern	2012	food	KL10	O3/O3a	0	0	
+SRR2098687	1	0.9597326938919887	robust	0.0		0			ST76	USA	America_northern	2012	food	KL21	O3/O3a	0	0	
+SRR2098691	1	0.9609479918159961	robust	0.0		0			ST188	USA	America_northern	2012	food	KL31	O3b	0	0	
+SRR2098758	1	0.9697840413722595	robust	0.0		0			ST1296	USA	America_northern	2012	human	KL105	O3b	0	0	
+SRR2098794	1	0.9680378898024278	robust	0.0		0			ST17-1LV	USA	America_northern	2012	human	KL15	O4	0	0	
+SRR2098787	1	0.9630804882814612	robust	0.0		0			ST134	USA	America_northern	2012	food	KL25	O5	0	0	
+SRR2098759	0	0.8849188630063175	robust	0.0	amr	1			ST1613	USA	America_northern	2012	food	KL12	OL103	0	0	
+SRR1166947	0	0.8885013374281131	robust	0.0	amr+vir	2	0.0	fused	ST258-1LV	USA	America_northern	2004	human	KL107	O2	2	1	
+SRR1166954	0	0.963894259663219	robust	0.0	amr	1			ST418	USA	America_northern	2007	human	KL107	O2	0	2	
+SRR1166966	0	0.9660774764437664	robust	0.0	amr	1			ST379	USA	America_northern	2009	human	KL107	O2	0	2	
+SRR1167000	0	0.8843030266259252	robust	0.0	amr+vir	2	0.0	fused	ST11-1LV	USA	America_northern	2011	human	KL107	O2	2	2	
+SRR1167020	0	0.9560277525848958	robust	0.0	amr	1			ST258-1LV	Canada	America_northern	2012	human	KL106	O2	0	2	
+ERR257675	1	0.9660932874680579	robust	0.0		0			ST253	UK	Europe_northern	2010	human	KL133	O1	0	0	
+ERR314415	0	0.9665127576613199	robust	0.0	amr+vir	2	0.0	fused	ST449-1LV	UK	Europe_northern	2012	human	KL22	O1	1	1	
+ERR314501	0	0.9589341902073738	robust	0.0	amr	1			ST3713	UK	Europe_northern	2012	human	KL10	O1	0	1	
+ERR257688	0	0.9612673192997163	robust	0.0	amr+vir	2	0.0	fused	ST101-1LV	UK	Europe_northern	unknown	human	KL17	O1	1	1	
+ERR257614	0	0.9585889401213629	robust	0.0	amr	1			ST874	UK	Europe_northern	2006	human	KL45	O1	0	1	
+ERR257627	0	0.9639174074542513	robust	0.0	amr	1			ST171	UK	Europe_northern	2010	human	KL122	O1	0	1	
+ERR257636	0	0.9607596984321016	robust	0.5263157894736842	amr+vir	2	0.0	fused	ST13	UK	Europe_northern	2010	human	KL3	O1	1	0	
+ERR257621	0	0.9631047091162609	robust	0.0	amr+vir	2	0.0	fused	ST70-1LV	UK	Europe_northern	2011	human	KL136	O1	1	1	
+ERR314400	0	0.9609202670404119	robust	0.5263157894736842	amr+vir	2	0.0	fused	ST25-1LV	UK	Europe_northern	2012	human	KL2	O1	1	0	
+ERR257655	0	0.960946997222765	robust	0.0	amr	1			ST874	UK	Europe_northern	unknown	human	KL45	O1	0	1	
+ERR257666	1	0.9655492979395325	robust	0.0		0			ST22-1LV	UK	Europe_northern	2009	human	KL6	O2	0	0	
+ERR311483	0	0.9561957350564142	robust	0.0	amr	1			ST1193	UK	Europe_northern	2012	human	KL22	O2	0	1	
+ERR314535	0	0.9624387462860602	robust	0.0	amr+vir	2	0.0	fused	ST268-1LV	UK	Europe_northern	2012	human	KL20	O2	1	1	
+ERR257626	1	0.9626596041963886	robust	0.0		0			ST158	UK	Europe_northern	unknown	human	KL62	O2	0	0	
+ERR314500	0	0.9628561368723	robust	0.0	amr	1			ST280-1LV	UK	Europe_northern	2012	human	KL23	O2	0	1	
+ERR314527	0	0.9611313619115791	robust	0.0	amr	1			ST471	UK	Europe_northern	2012	human	KL57	O2	0	1	
+ERR314532	0	0.9608820352601484	robust	0.0	amr	1			ST280	UK	Europe_northern	2012	human	KL23	O2	0	1	
+ERR257679	0	0.9614120865824476	robust	0.0	amr	1			ST54	UK	Europe_northern	2006	human	KL14	O3b	0	0	
+ERR314553	0	0.9750480293670022	robust	0.0	amr+vir	2	0.0	fused	ST353	UK	Europe_northern	unknown	human	KL110	O3b	1	1	
+ERR314564	1	0.9659883870221863	robust	0.0		0			ST378	UK	Europe_northern	2007	human	KL125	O5	0	0	
+ERR304790	1	0.958811068181762	robust	0.0		0			ST17-1LV	UK	Europe_northern	2008	human	KL25	O5	0	0	
+ERR314467	0	0.9661937135560718	robust	0.0	amr	1			ST485	UK	Europe_northern	2012	human	KL25	O5	0	0	
+ERR314563	1	0.9634534723871381	robust	0.0		0			ST378	UK	Europe_northern	unknown	human	KL125	O5	0	0	
+ERR315125	0	0.9617150636644121	robust	0.0	amr	1			ST2810	Kenya	Africa_sub_saharan	2009	human	KL13	O1	0	0	
+ERR315126	0	0.957811806593088	robust	0.0	amr+vir	2	0.0	fused	ST831	Kenya	Africa_sub_saharan	2009	human	KL18	O1	1	0	
+ERR315146	1	0.9672019742622762	robust	0.0		0			ST964	Kenya	Africa_sub_saharan	2010	human	KL103	O1	0	0	
+ERR315147	0	0.9597573459943568	robust	0.0	amr	1			ST297	Kenya	Africa_sub_saharan	2010	human	KL10	O1	0	0	
+ERR315156	0	0.9597884952061159	robust	0.10526315789473684	amr+vir	2	0.0	fused	ST831	Kenya	Africa_sub_saharan	2010	human	KL18	O1	1	0	
+ERR315157	1	0.9576997225325176	robust	0.0	vir	1			ST3	Kenya	Africa_sub_saharan	2010	human	KL3	O1	2	0	
+ERR315186	0	0.9629059198055607	robust	0.0	amr	1			ST789	Kenya	Africa_sub_saharan	2011	human	KL18	O1	0	1	
+ERR319521	0	0.9678420243692876	robust	0.0	amr	1			ST1726	Kenya	Africa_sub_saharan	2002	human	KL81	O1	0	0	
+ERR319526	0	0.9621153108636326	robust	0.42105263157894735	amr	1			ST500	Kenya	Africa_sub_saharan	2002	human	KL34	O1	0	0	
+ERR319527	1	0.9659263896331728	robust	0.0		0			ST2807	Kenya	Africa_sub_saharan	2002	human	KL64	O1	0	0	
+ERR319546	0	0.9621917199643436	robust	0.0	amr	1			ST397	Kenya	Africa_sub_saharan	2004	human	KL158	O1	0	0	
+ERR319568	0	0.9580288405402424	robust	0.0	amr	1			ST2798	Kenya	Africa_sub_saharan	2006	human	KL16	O1	0	0	
+ERR319572	0	0.9620535600644087	robust	0.0	amr+vir	2	0.0	fused	ST831	Kenya	Africa_sub_saharan	2007	human	KL18	O1	1	0	
+ERR319573	0	0.9743302158203618	robust	0.0	amr	1			ST290	Kenya	Africa_sub_saharan	2007	human	KL21	O1	0	1	
+ERR319576	0	0.9612607276939459	robust	0.0	amr	1			ST2816	Kenya	Africa_sub_saharan	2007	human	KL30	O1	0	0	
+ERR319578	0	0.9557734165333995	robust	0.0	amr	1			ST2800	Kenya	Africa_sub_saharan	unknown	human	KL47	O1	0	1	
+ERR319506	0	0.9614588768882665	robust	0.0	amr	1			ST290	Kenya	Africa_sub_saharan	2008	human	KL21	O1	0	1	
+ERR323225	0	0.9589448186937807	robust	0.0	amr	1			ST2808	Kenya	Africa_sub_saharan	2011	human	KL122	O1	0	1	
+ERR323226	0	0.9603025746333349	robust	0.0	amr	1			ST2808	Kenya	Africa_sub_saharan	2011	human	KL122	O1	0	1	
+ERR315148	0	0.9616036213814397	robust	0.0	amr	1			ST1557	Kenya	Africa_sub_saharan	2010	human	KL3	O1	0	1	
+ERR315109	0	0.9624277534247954	robust	0.0	amr+vir	2	0.0	fused	ST391	Kenya	Africa_sub_saharan	2008	human	KL30	O1	1	1	
+ERR315174	0	0.966229484289585	robust	0.0	amr+vir	2	0.0	fused	ST70	Kenya	Africa_sub_saharan	2011	human	KL136	O1	1	1	
+ERR315184	0	0.9641419804710059	robust	0.0	amr	1			ST1927	Kenya	Africa_sub_saharan	unknown	human	KL2	O1	0	0	
+ERR319513	0	0.9618062949086084	robust	0.0	amr	1			ST234	Kenya	Africa_sub_saharan	2001	human	KL30	O1	0	1	
+ERR319560	0	0.9605387081903366	robust	0.10526315789473684	amr	1			ST140	Kenya	Africa_sub_saharan	2005	human	KL55	O1	0	0	
+ERR315129	0	0.9598765566851956	robust	0.0	amr	1			ST2805	Kenya	Africa_sub_saharan	2009	human	KL110	O2	0	0	
+ERR319509	1	0.9693868903261331	robust	0.0		0			ST337	Kenya	Africa_sub_saharan	2001	human	KL110	O2	0	0	
+ERR319579	0	0.9633531818548771	robust	0.0	amr	1			ST2805	Kenya	Africa_sub_saharan	2008	human	KL110	O2	0	1	
+ERR315115	1	0.9603391937000737	robust	0.0		0			ST584	Kenya	Africa_sub_saharan	2009	human	KL23	O2	0	0	
+ERR315162	0	0.9578947499319157	robust	0.0	amr+vir	2	0.0	fused	ST471	Kenya	Africa_sub_saharan	2010	human	KL57	O2	1	1	
+ERR315170	0	0.9613982711122951	robust	0.0	amr	1			ST280	Kenya	Africa_sub_saharan	2011	human	KL23	O2	0	1	
+ERR319530	1	0.9648536504835119	robust	0.0		0			ST1408	Kenya	Africa_sub_saharan	2002	human	KL102	O2	0	0	
+ERR319555	0	0.8854804493513783	robust	0.47368421052631576	amr	1			ST2136	Kenya	Africa_sub_saharan	2005	human	KL2	O2	0	0	
+ERR319590	0	0.9544240849665729	robust	0.0	amr	1			ST1693	Kenya	Africa_sub_saharan	2008	human	KL23	O2	0	1	
+ERR319552	0	0.9652626334515416	robust	0.0	amr	1			ST2812	Kenya	Africa_sub_saharan	2004	human	KL55	O3/O3a	0	0	
+ERR315121	0	0.9676781018166808	robust	0.0	amr+vir	2	0.0	fused	ST37	Kenya	Africa_sub_saharan	2009	human	KL14	O3b	1	0	
+ERR315140	0	0.9615303066264362	robust	0.0	amr	1			ST54	Kenya	Africa_sub_saharan	2009	human	KL14	O3b	0	1	
+ERR319548	0	0.9710113498249396	robust	0.0	amr	1			ST323	Kenya	Africa_sub_saharan	2004	human	KL21	O3b	0	0	
+ERR319551	1	0.9638402478331605	robust	0.0		0			ST1051	Kenya	Africa_sub_saharan	2004	human	KL105	O3b	0	0	
+ERR319554	1	0.9646648829872745	robust	0.0		0			ST605	Kenya	Africa_sub_saharan	2004	human	KL58	O3b	0	0	
+ERR319565	0	-0.5393161061618321	fragile	0.0	amr	1			ST788	Kenya	Africa_sub_saharan	2005	human	KL31	O3b	0	0	
+ERR319504	1	0.9643679739878007	robust	0.0		0			ST2811	Kenya	Africa_sub_saharan	2007	human	KL2	O3b	0	0	
+ERR319571	1	0.9622567184581355	robust	0.0		0			ST2703	Kenya	Africa_sub_saharan	2007	human	KL149	O3b	0	0	
+ERR319584	1	0.9575533429219514	robust	0.0		0			ST1962	Kenya	Africa_sub_saharan	2008	human	KL14	O3b	0	0	
+ERR319512	1	0.967038635866843	robust	0.0		0			ST2803	Kenya	Africa_sub_saharan	2001	human	KL109	OL101	0	0	
+ERR319503	0	0.9587867051255882	robust	0.0	amr	1			ST2802	Kenya	Africa_sub_saharan	unknown	human	KL109	OL101	0	0	
+ERR319558	0	0.9630109901323266	robust	0.0	amr	1			ST2802	Kenya	Africa_sub_saharan	2005	human	KL109	OL101	0	0	
+ERR319562	0	0.9651842766071669	robust	0.0	amr	1			ST38	Kenya	Africa_sub_saharan	2005	human	KL52	OL101	0	1	
+5299_1_1	1	0.9632087694773271	robust	0.0		0			ST186-1LV	USA	America_northern	2006	bovine	KL114	unknown	0	0	
+5151_3_10	0	0.5149039334079315	robust	0.0	vir	1			ST198	USA	America_northern	2005	bovine	KL30	O1	1	0	
+5151_3_11	1	0.9635482173765627	robust	0.0		0			ST180	USA	America_northern	2005	bovine	KL55	O1	0	0	
+5151_6_3	1	0.9560742396213351	robust	0.0		0			ST2140	USA	America_northern	2005	bovine	KL18	O1	0	0	
+5151_5_1	1	0.9749386064669089	robust	0.0		0			ST35	USA	America_northern	2005	bovine	KL22	O1	0	0	
+5151_5_3	1	0.9583355680441591	robust	0.0		0			ST227	USA	America_northern	2005	bovine	KL64	O1	0	0	
+5235_3_4	1	0.961433654883558	robust	0.0		0			ST295	USA	America_northern	2007	bovine	KL30	O1	0	0	
+5235_7_2	0	0.9609452937214963	robust	0.0	amr	1			ST43-1LV	Indonesia	Asia_SE	2005	human	KL30	O1	0	1	
+5299_7_5	0	0.3024227754959394	intermediate	0.47368421052631576	amr	1			ST482	Indonesia	Asia_SE	2005	human	KL18	O1	0	1	
+5235_8_6	0	0.9667478600188099	robust	0.2631578947368421	amr+vir	2	0.0	fused	ST219-1LV	Vietnam	Asia_SE	2008	human	KL121	O1	1	0	
+5193_1_5	0	0.9606597273352295	robust	0.0	amr+vir	2	0.0	fused	ST231	Vietnam	Asia_SE	2009	human	KL64	O1	1	1	
+5235_5_5	1	0.9635295926468765	robust	0.0	vir	1			ST828-1LV	Vietnam	Asia_SE	2009	human	KL5	O1	4	0	
+5150_1_10	0	0.963195274005457	robust	0.0	amr	1			ST2278-2LV	Australia	Oceania	2001	human	KL81	O1	0	1	
+5150_1_3	0	0.9601639999023193	robust	0.0	amr	1			ST30	Australia	Oceania	2001	human	KL64	O1	0	1	
+5150_2_12	1	0.9604920124587509	robust	0.0		0			ST294	Australia	Oceania	2002	human	KL30	O1	0	0	
+5150_3_10	0	0.9599514593321685	robust	0.5263157894736842	amr	1			ST310	Australia	Oceania	2002	human	KL1	O1	0	0	
+5151_2_3	1	0.9589908221888144	robust	0.0	vir	1			ST828	Singapore	Asia_SE	2004	human	KL5	O1	4	0	
+5193_8_12	1	0.9625067789205427	robust	0.0	vir	1			ST2039	Singapore	Asia_SE	2002	human	KL2	O1	5	0	
+5193_5_10	0	0.9576460537739391	robust	0.0	amr	1			ST2129-1LV	Vietnam	Asia_SE	2006	human	KL64	O1	0	1	
+5197_2_3	0	0.9616289694403958	robust	0.0	amr	1			ST540	Vietnam	Asia_SE	2004	human	KL13	O1	0	1	
+5197_7_2	0	0.9583149448818153	robust	0.0	amr+vir	2	0.0	fused	ST791-1LV	Laos	Asia_SE	2007	human	KL62	O1	1	0	
+5193_7_6	0	0.9635121072912204	robust	0.6842105263157895	amr+vir	2	0.0	fused	ST1948	Laos	Asia_SE	2002	human	KL24	O1	4	0	
+5193_2_6	0	0.9602069777676795	robust	0.15789473684210525	amr	1			ST2054	Vietnam	Asia_SE	2007	human	KL81	O1	0	1	
+5235_8_7	1	0.9651628383874596	robust	0.0	vir	1			ST65-1LV	USA	America_northern	2006	bovine	KL2	O1	5	0	
+5151_5_4	0	0.8975528543345368	robust	0.3157894736842105	amr	1			ST228	USA	America_northern	2005	bovine	KL57	O1	0	0	
+5299_1_3	0	0.9578060883948843	robust	0.2631578947368421	amr	1			ST185-1LV	USA	America_northern	2006	bovine	KL130	O1	0	0	
+5299_7_7	1	0.9715202469648739	robust	0.0		0			ST194	USA	America_northern	2006	bovine	KL120	O1	0	0	
+5299_7_3	0	0.9588034013526153	robust	0.0	amr	1			ST503-1LV	Indonesia	Asia_SE	2005	human	KL2	O1	0	1	
+5235_8_3	1	0.9637465531847614	robust	0.42105263157894735	amr+vir	2	0.0	fused	ST806-2LV	Vietnam	Asia_SE	2008	human	KL108	O1	1	0	
+5193_3_12	0	0.9581837701438433	robust	0.0	amr	1			ST2126	Vietnam	Asia_SE	2005	human	KL54	O1	0	0	
+5193_3_6	0	0.9594246500350858	robust	0.0	amr	1			ST1	Vietnam	Asia_SE	2005	human	KL19	O1	0	1	
+5193_2_9	0	0.9613445246634028	robust	0.0	amr	1			ST416	Vietnam	Asia_SE	2004	human	KL23	O1	0	1	
+5193_2_11	0	0.9603499724228003	robust	0.0	amr	1			ST416	Vietnam	Asia_SE	2004	human	KL23	O1	0	1	
+5193_6_10	1	0.97069408377287	robust	0.0	vir	1			ST2058	USA	America_northern	2008	human	KL108	O1	5	0	
+5197_7_3	1	0.973680686230543	robust	0.0	vir	1			ST23-1LV	Laos	Asia_SE	2008	human	KL1	O1	5	0	
+5193_1_12	0	0.9639117080576087	robust	0.0	amr	1			ST20	Vietnam	Asia_SE	2003	human	KL101	O1	0	1	
+5151_2_11	1	0.9639691661354	robust	0.0		0			ST245	USA	America_northern	2006	bovine	KL43	O2	0	0	
+5150_3_9	1	0.9590024952433057	robust	0.0		0			ST1007-2LV	Australia	Oceania	2002	human	KL5	O2	0	0	
+5150_5_3	1	0.961547561888531	robust	0.0		0			ST2123	Australia	Oceania	2002	human	KL28	O2	0	0	
+5151_5_12	0	0.897059123869874	robust	0.47368421052631576	amr	1			ST2141	USA	America_northern	2006	human	KL120	O2	0	0	
+5197_8_1	0	0.9622215167879036	robust	0.0	amr	1			ST515	Laos	Asia_SE	2005	human	KL18	O2	0	0	
+5150_3_5	0	0.959807925914552	robust	0.0	amr	1			ST1454	Australia	Oceania	2002	human	KL25	O2	0	1	
+5193_8_10	0	0.9662647645426378	robust	0.0	amr+vir	2	0.0	fused	ST11	Singapore	Asia_SE	2005	human	KL105	O2	1	1	
+5193_8_3	0	0.9605164058513878	robust	0.0	amr+vir	2	0.0	fused	ST11-1LV	Singapore	Asia_SE	2004	human	KL105	O2	1	0	
+5299_1_7	1	0.9638133729860101	robust	0.0		0			ST225-1LV	USA	America_northern	2007	human	KL3	O2	0	0	
+5235_1_11	0	0.960714282338108	robust	0.3157894736842105	amr	1			ST278-1LV	USA	America_northern	2007	human	KL136	O2	0	0	
+5235_2_2	1	0.95896821962696	robust	0.0		0			ST1201-1LV	USA	America_northern	2007	human	KL23	O2	0	0	
+5193_2_7	0	0.5526456090183007	robust	0.0	vir	1			ST610	USA	America_northern	2006	bovine	KL55	O3/O3a	1	0	
+5299_1_2	1	0.9656706837859621	robust	0.0		0			ST246	USA	America_northern	2006	bovine	KL25	O3/O3a	0	0	
+5235_3_12	0	0.9640685479406255	robust	0.3157894736842105	amr	1			ST629-1LV	USA	America_northern	2006	bovine	KL10	O3/O3a	0	0	
+5235_7_3	0	0.9630574846026873	robust	0.0	amr	1			ST495-1LV	Indonesia	Asia_SE	2005	human	KL27	O3/O3a	0	1	
+5235_7_4	0	0.9601089772006046	robust	0.0	amr	1			ST495	Indonesia	Asia_SE	2005	human	KL27	O3/O3a	0	1	
+5299_7_6	0	0.9682213594328719	robust	0.0	amr	1			ST1411	Indonesia	Asia_SE	2005	human	KL125	O3/O3a	0	1	
+5151_6_9	1	0.9628451079983656	robust	0.0		0			ST237	USA	America_northern	2005	environmental	KL31	O3b	0	0	
+5235_6_12	0	0.9644462008325589	robust	0.0	amr	1			ST54-1LV	Indonesia	Asia_SE	2005	human	KL14	O3b	0	1	
+5235_5_2	1	0.9613268199970949	robust	0.0	vir	1			ST592-1LV	Vietnam	Asia_SE	2009	human	KL57	O3b	3	0	
+5235_8_9	0	0.9595145562766124	robust	0.2631578947368421	amr+vir	2	0.0	fused	ST499	Vietnam	Asia_SE	2009	human	KL33	O3b	1	0	
+5150_1_9	1	0.960285769703816	robust	0.0		0			ST2118	Australia	Oceania	2001	human	KL46	O3b	0	0	
+5150_2_5	0	0.583688245307269	robust	0.0	vir	1			ST483-2LV	Australia	Oceania	2001	human	KL49	O3b	1	0	
+5150_2_3	0	0.9615855395878498	robust	0.10526315789473684	amr	1			ST292	Australia	Oceania	2002	human	KL51	O3b	0	0	
+5150_5_7	1	0.961037019183552	robust	0.0		0			ST1777	Australia	Oceania	2002	human	KL111	O3b	0	0	
+5193_3_10	0	0.8890106584145283	robust	0.0	amr	1			ST2124	Vietnam	Asia_SE	2005	human	KL11	O3b	0	0	
+5193_8_5	0	0.9596529137289969	robust	0.0	amr	1			ST11-1LV	Singapore	Asia_SE	2005	human	KL38	O3b	0	0	
+5193_6_2	0	0.9600128757071793	robust	0.0	amr	1			ST2132	Vietnam	Asia_SE	2006	human	KL115	O3b	0	1	
+5299_1_10	0	0.9688680802551082	robust	0.0	amr	1			ST189	USA	America_northern	2007	human	KL128	O3b	0	0	
+5193_7_2	0	0.9580527180609254	robust	0.0	amr	1			ST273	Laos	Asia_SE	2009	human	KL74	O3b	0	1	
+5299_7_1	0	0.9671324920459036	robust	0.0	amr	1			ST2113	Indonesia	Asia_SE	2005	human	KL119	O4	0	0	
+5150_5_1	1	0.9571357239337064	robust	0.0		0			ST2120	Australia	Oceania	2002	human	KL119	O4	0	0	
+5151_6_4	0	0.9630061245318216	robust	0.0	amr	1			ST183	USA	America_northern	2005	bovine	KL125	O5	0	0	
+5151_5_8	1	0.9592999405039246	robust	0.0		0			ST22	USA	America_northern	2006	bovine	KL123	O5	0	0	
+5193_5_2	0	0.9593060851337879	robust	0.0	amr	1			ST2108	Vietnam	Asia_SE	2007	human	KL31	O5	0	0	
+5193_5_9	0	0.9632357996700318	robust	0.0	amr	1			ST76	Vietnam	Asia_SE	2006	human	KL35	O5	0	1	
+5197_8_2	0	0.9671030591535282	robust	0.0	amr+vir	2	0.0	fused	ST17	Laos	Asia_SE	2005	human	KL25	O5	1	0	
+5197_7_7	1	0.9602999986203876	robust	0.0		0			ST177	USA	America_northern	2006	bovine	KL12	OL103	0	0	
+ERR3415970	0	0.9624899936866811	robust	0.0	amr	1			ST964	Madagascar	Africa_sub_saharan	2016	human	KL103	O1	0	0	
+ERR3416056	1	0.9616058478487465	robust	0.0		0			ST2556	Madagascar	Africa_sub_saharan	2016	human	KL53	O1	0	0	
+ERR3416138	1	0.9602358934543203	robust	0.0	vir	1			ST60	Madagascar	Africa_sub_saharan	2016	human	KL5	O1	4	0	
+ERR3416391	0	0.9704126265856088	robust	0.3157894736842105	amr	1			ST3106	Madagascar	Africa_sub_saharan	2016	human	KL113	O1	0	0	
+ERR3415947	0	0.9641979211409061	robust	0.0	amr	1			ST629	Madagascar	Africa_sub_saharan	unknown	human	KL10	O3/O3a	0	0	
+ERR3415941	1	0.9662093765027552	robust	0.0		0			ST2467	Madagascar	Africa_sub_saharan	2015	human	KL111	O3b	0	0	
+ERR3416361	1	0.9591198493464139	robust	0.0		0			ST3293	Senegal	Africa_sub_saharan	2016	human	KL60	O3b	0	0	
+ERR3416366	1	0.961468110509123	robust	0.0		0			ST3297	Senegal	Africa_sub_saharan	2016	human	KL39	O3b	0	0	
+NUH26_S15_L001	1	0.9644841650767496	robust	0.0	vir	1			ST1049	Singapore	Asia_SE	unknown	human	KL5	O1	4	0	
+SGH07_S22_L001	1	0.9692261400523313	robust	0.0	vir	1			ST60	Singapore	Asia_SE	unknown	human	KL5	O1	1	0	
+TTSH18_S27_L001	1	0.9668248122400439	robust	0.0	vir	1			ST828	Singapore	Asia_SE	unknown	human	KL5	O1	4	0	
+NUH36_S19_L001	1	0.9621440802206822	robust	0.0	vir	1			ST2973	Singapore	Asia_SE	unknown	human	KL63	O1	1	0	
+ERR971964	0	0.9620707476038294	robust	0.0	amr	1			ST664	Malawi	Africa_sub_saharan	1998	human	KL62	O1	0	0	
+ERR926439	0	0.9703997745991364	robust	0.10526315789473684	amr	1			ST4073	Malawi	Africa_sub_saharan	2011	human	KL5	O1	0	0	
+ERR926443	0	0.3358794327767179	intermediate	0.47368421052631576	amr	1			ST106-1LV	Malawi	Africa_sub_saharan	2012	human	KL43	O1	0	1	
+ERR926371	1	0.9579880281382966	robust	0.0		0			ST609-1LV	Malawi	Africa_sub_saharan	2013	human	KL114	O1	0	0	
+ERR972022	0	0.9641806499345775	robust	0.0	amr	1			ST1916	Malawi	Africa_sub_saharan	2009	human	KL27	O1	0	1	
+ERR972001	0	0.8768175161967977	robust	0.47368421052631576	amr	1			ST3132	Malawi	Africa_sub_saharan	2004	human	KL142	O1	0	0	
+ERR972005	0	0.9645578014599023	robust	0.0	amr	1			ST664	Malawi	Africa_sub_saharan	2005	human	KL62	O1	0	0	
+ERR971948	0	0.9576281159185801	robust	0.0	amr	1			ST664	Malawi	Africa_sub_saharan	2006	human	KL62	O1	0	0	
+ERR971999	0	0.9610979536840784	robust	0.0	amr	1			ST297	Malawi	Africa_sub_saharan	2006	human	KL10	O1	0	0	
+ERR972026	0	0.9668265891816136	robust	0.0	amr	1			ST14	Malawi	Africa_sub_saharan	2006	human	KL2	O1	0	1	
+ERR972012	0	0.966071132571039	robust	0.0	amr	1			ST4	Malawi	Africa_sub_saharan	2008	human	KL13	O1	0	1	
+ERR971972	0	0.9580536334027399	robust	0.0	amr	1			ST4228	Malawi	Africa_sub_saharan	2008	human	KL103	O1	0	1	
+ERR971985	0	0.9612245145036872	robust	0.0	amr	1			ST198	Malawi	Africa_sub_saharan	2009	human	KL30	O1	0	1	
+ERR971998	0	0.9601529540144775	robust	0.0	amr+vir	2	0.0	fused	ST73	Malawi	Africa_sub_saharan	2000	human	KL25	O1	4	0	
+ERR971953	0	0.8900455168420331	robust	0.3157894736842105	amr	1			ST111	Malawi	Africa_sub_saharan	1996	human	KL63	O1	0	0	
+ERR972006	1	0.9615289982013132	robust	0.0		0			ST881	Malawi	Africa_sub_saharan	2005	human	KL2	O1	0	0	
+ERR972031	0	0.95921554760904	robust	0.0	amr+vir	2	0.0	fused	ST896	Malawi	Africa_sub_saharan	2012	human	KL3	O2	1	1	
+ERR971955	0	0.8804349241170114	robust	0.10526315789473684	amr	1			ST18	Malawi	Africa_sub_saharan	2007	human	KL23	O2	0	0	
+ERR972007	1	0.9621754352028711	robust	0.3157894736842105	amr+vir	2	0.0	fused	ST218	Malawi	Africa_sub_saharan	1999	human	KL57	O2	3	0	
+ERR972011	0	0.9609050203319293	robust	0.0	amr	1			ST560	Malawi	Africa_sub_saharan	2005	human	KL9	O2	0	0	
+ERR972018	0	0.9672461065132006	robust	0.0	amr	1			ST276-2LV	Malawi	Africa_sub_saharan	2008	human	KL43	O2	0	0	
+ERR971949	0	0.9617038701207216	robust	0.0	amr	1			ST478	Malawi	Africa_sub_saharan	2007	human	KL125	O5	0	1	
+ERR971967	0	0.9666230405184106	robust	0.0	amr	1			ST2280	Malawi	Africa_sub_saharan	2007	human	KL127	OL101	0	0	
+GCF_003830175.1	0	0.9667861051285068	robust	0.10526315789473684	amr+vir	2	0.0	fused	ST43	Thailand	Asia_SE	2015	Chrysomya sp. (blowfly)	KL61	unknown	3	0	
+GCF_002182145.1	0	0.9648878917741032	robust	0.0	amr	1			ST299	USA	America_northern	2013	human	KL7	unknown	0	3	
+GCF_900774835.1	1	0.9611785246465174	robust	0.0		0			ST34	Caribbean	America_Latin_Caribbean	unknown	human	KL118	unknown	0	0	
+GCF_900776315.1	0	0.9648407610454103	robust	0.0	amr	1			ST219	Caribbean	America_Latin_Caribbean	unknown	human	KL114	unknown	0	1	
+GCF_900451755.1	1	0.9600442987408129	robust	0.0	vir	1			ST3	Netherlands	Europe_western	1937	human	KL3	unknown	2	0	
+GCF_900452235.1	0	0.8960242025493051	robust	0.47368421052631576	amr	1			ST500	unknown	unknown	unknown	not available	KL34	unknown	0	0	
+GCF_900451575.1	1	0.9649942508584516	robust	0.0		0			ST505	unknown	unknown	unknown	unknown	KL64	unknown	0	0	
+GCF_003954505.1	0	0.5225520471507368	robust	0.0	amr+vir	2	0.0	fused	ST789	unknown	unknown	unknown	unknown	KL18	unknown	2	2	
+GCF_900172715.1	1	0.9595967912042932	robust	0.0		0			ST3014	UK	Europe_northern	2014	environmental	KL158	unknown	0	0	
+GCF_001056275.1	1	0.9594226653662938	robust	0.0	vir	1			ST3804	USA	America_northern	2012	human	KL2	unknown	3	0	
+GCF_900775505.1	0	0.9643196331439615	robust	0.0	amr+vir	2	0.0	fused	ST391	Caribbean	America_Latin_Caribbean	unknown	human	KL30	unknown	1	1	
+GCF_900085665.1	1	0.9596738568471341	robust	0.0		0			ST1380	UK	Europe_northern	2010	human	KL2	unknown	0	0	
+GCF_900085705.1	0	-0.41127732682417517	fragile	0.0	amr	1			ST460	UK	Europe_northern	2010	human	KL140	unknown	0	0	
+GCF_011008895.1	0	0.9644808806090202	robust	0.0	amr+vir	2	0.0	fused	ST25	Chile	America_Latin_Caribbean	2013	human	KL2	unknown	1	1	
+GCF_003195145.1	1	0.961404140076612	robust	0.0		0			ST3842	USA	America_northern	2017	human	KL2	unknown	0	0	
+GCF_900084385.1	1	0.9639217991359685	robust	0.0		0			ST3700	UK	Europe_northern	2006	human	KL38	O12	0	0	
+GCF_900173235.1	0	0.9581623138076715	robust	0.0	amr	1			ST1999	UK	Europe_northern	2015	human	KL38	O12	0	0	
+GCF_004320595.1	0	0.9654549476956763	robust	0.0	amr	1			ST2582	China	Asia_eastern	2016	Migratory bird	KL82	O12	0	2	
+GCF_004320625.1	0	0.9588178783821827	robust	0.0	amr	1			ST2582	China	Asia_eastern	2016	Migratory bird	KL82	O12	0	3	
+GCF_900635125.1	1	0.9646638821021518	robust	0.0		0			ST507	UK	Europe_northern	unknown	unknown	KL82	O12	0	0	
+GCF_003664765.1	0	0.9669254329035647	robust	0.0	amr	1			ST3801	China	Asia_eastern	2015	animal manure	KL34	O1	0	1	
+GCF_012167075.1	1	0.9589659733274679	robust	0.0		0			ST889	China	Asia_eastern	2018	bovine	KL54	O1	0	0	
+GCF_004127835.1	0	0.9683472252188177	robust	0.0	amr	1			ST15-1LV	China	Asia_eastern	2014	chicken	KL24	O1	0	1	
+GCF_003830245.1	0	0.9561085937047213	robust	0.3157894736842105	amr+vir	2	0.0	fused	ST43	Thailand	Asia_SE	2015	Chrysomya sp. (blowfly)	KL61	O1	3	0	
+GCF_009646185.1	0	0.9603963456393602	robust	0.0	amr+vir	2	0.0	fused	ST219	Romania	Europe_eastern	unknown	environmental	KL114	O1	1	2	
+GCF_003063145.1	0	0.9651523381029411	robust	0.0	amr	1			ST3128	Germany	Europe_western	2014	environmental	KL21	O1	0	0	
+GCF_003062765.1	0	0.9603619841832199	robust	0.0	amr	1			ST3128	Germany	Europe_western	2014	environmental	KL21	O1	0	1	
+GCF_003062805.1	0	0.9585613671298109	robust	0.0	amr	1			ST3128	Germany	Europe_western	2014	environmental	KL21	O1	0	0	
+GCF_003062585.1	0	0.9691365647589579	robust	0.0	amr	1			ST3128	Germany	Europe_western	2014	environmental	KL21	O1	0	0	
+GCF_001720645.1	1	0.964657718012476	robust	0.0	vir	1			ST1544	Russia	Europe_eastern	2011	environmental	KL20	O1	4	0	
+GCF_003346685.1	0	0.960580281324343	robust	0.0	amr	1			ST219	Algeria	Africa_northern	2013	food	KL114	O1	0	1	
+GCF_002411735.1	0	0.9636727308315288	robust	0.0	amr+vir	2	0.0	fused	ST397	Ghana	Africa_sub_saharan	2015	human	KL158	O1	1	1	
+GCF_000747055.1	1	0.9690223268315511	robust	0.0	vir	1			ST3583	Malaysia	Asia_SE	2013	human	KL2	O1	5	0	
+GCF_003598825.1	0	0.9586852459911893	robust	0.0	amr	1			ST188	Belgium	Europe_western	2015	human	KL116	O1	0	3	
+GCF_008572955.1	1	0.9645892534438838	robust	0.0	amr+vir	2	0.0	fused	ST420	Singapore	Asia_SE	2014	human	KL20	O1	4	2	event_131_ST420 KPC-2 Singapore
+GCF_002173955.1	0	0.6404167239178438	robust	0.0	vir	1			ST1117	China	Asia_eastern	2012	human	KL117	O1	1	0	
+GCF_011044535.1	0	0.9613691240940216	robust	0.0	amr+vir	2	0.0	fused	ST395	Russia	Europe_eastern	2018	human	KL39	O1	4	2	event_126_ST395 iuc1 multicountry 
+GCF_000788025.1	1	0.9651804808400737	robust	0.0	vir	1			ST3	USA	America_northern	unknown	human	KL3	O1	2	0	
+GCF_008830605.1	0	0.96596406981856	robust	0.3157894736842105	amr+vir	2	0.0	fused	ST660	China	Asia_eastern	2015	human	KL16	O1	4	2	event_154_ST660 KPC-2 China
+GCF_002182205.1	0	0.964006527933356	robust	0.0	amr	1			ST219	USA	America_northern	2013	human	KL114	O1	0	1	
+GCF_002182235.1	0	0.9660629715557274	robust	0.0	amr+vir	2	0.0	fused	ST327	USA	America_northern	2013	human	KL39	O1	1	1	
+GCF_001060895.1	1	0.966243740709919	robust	0.0		0			ST253	USA	America_northern	2013	human	KL60	O1	0	0	
+GCF_001060495.1	1	0.9666734985280806	robust	0.0		0			ST327	USA	America_northern	2013	human	KL39	O1	0	0	
+GCF_001062915.1	1	0.9586321809422385	robust	0.0		0			ST3580	USA	America_northern	2012	human	KL117	O1	0	0	
+GCF_900083665.1	1	0.9581778987820491	robust	0.0		0			ST1536	UK	Europe_northern	2002	human	KL61	O1	0	0	
+GCF_900181355.1	0	0.9605586219173142	robust	0.0	amr+vir	2	0.0	fused	ST15	Pakistan	Asia_southern	unknown	human	KL112	O1	3	1	event_29_ST15 iuc1 Pakistan
+GCF_900182215.1	0	0.962622650221465	robust	0.0	amr+vir	2	0.0	fused	ST3806	Pakistan	Asia_southern	unknown	human	KL2	O1	1	1	
+GCF_900181115.1	0	0.9673138228763308	robust	0.0	amr	1			ST15-1LV	Pakistan	Asia_southern	unknown	human	KL112	O1	0	2	
+GCF_900181455.1	0	0.9668926620722295	robust	0.0	amr+vir	2	0.0	fused	ST48	Pakistan	Asia_southern	unknown	human	KL62	O1	4	1	event_141_ST48 iuc1 Pakistan
+GCF_900493815.1	1	0.9639653408378852	robust	0.0	amr+vir	2	0.0	fused	ST60	Thailand	Asia_SE	2016	human	KL5	O1	1	2	
+GCF_900493885.1	1	0.9620921928570518	robust	0.0	vir	1			ST3588	Thailand	Asia_SE	2016	human	KL2	O1	3	0	
+GCF_900494115.1	1	0.7977964831884503	robust	0.0	amr	1			ST791	Thailand	Asia_SE	2016	human	KL62	O1	0	2	
+GCF_900494185.1	1	0.964383179031114	robust	0.0	amr+vir	2	0.0	fused	ST420	Thailand	Asia_SE	2016	human	KL20	O1	1	2	
+GCF_900494335.1	1	0.9611216923858309	robust	0.0	amr+vir	2	0.0	fused	ST420	Thailand	Asia_SE	2016	human	KL20	O1	4	2	event_133_ST420 OXA-232 Thailand
+GCF_900493515.1	1	0.6139572700297962	robust	0.5263157894736842	amr	1			ST3596	Thailand	Asia_SE	2016	human	KL13	O1	0	2	
+GCF_900492885.1	1	0.9705897291352754	robust	0.0		0			ST964	Thailand	Asia_SE	2016	human	KL103	O1	0	0	
+GCF_900492965.1	0	0.9648173744300045	robust	0.0	amr	1			ST163	Thailand	Asia_SE	2016	human	KL12	O1	0	1	
+GCF_902161365.1	1	0.9621375715352255	robust	0.0		0			ST922	UK	Europe_northern	2018	human	KL24	O1	0	0	
+GCF_902166475.1	1	0.9669793821382593	robust	0.0		0			ST2990	UK	Europe_northern	2018	human	KL8	O1	0	0	
+GCF_902163245.1	0	0.6820587779905986	robust	0.0	vir	1			ST2990	UK	Europe_northern	2018	human	KL8	O1	1	0	
+GCF_902165145.1	0	0.9584643623085498	robust	0.21052631578947367	amr+vir	2	0.0	fused	ST4387	UK	Europe_northern	2018	human	KL24	O1	1	0	
+GCF_902165045.1	0	0.6254269495873553	robust	0.0	vir	1			ST4387	UK	Europe_northern	2018	human	KL24	O1	1	0	
+GCF_900775605.1	1	0.9671894633468904	robust	0.0		0			ST327	Caribbean	America_Latin_Caribbean	unknown	human	KL39	O1	0	0	
+GCF_900775585.1	1	0.9575098241060915	robust	0.0	vir	1			ST299	Caribbean	America_Latin_Caribbean	unknown	human	KL7	O1	2	0	
+GCF_900774145.1	0	0.9665115570235125	robust	0.10526315789473684	amr	1			ST1536	Caribbean	America_Latin_Caribbean	unknown	human	KL61	O1	0	0	
+GCF_900774115.1	1	0.9591060650397418	robust	0.0	vir	1			ST294	Caribbean	America_Latin_Caribbean	unknown	human	KL30	O1	2	0	
+GCF_900774415.1	1	0.9662472217214386	robust	0.0		0			ST133	Caribbean	America_Latin_Caribbean	unknown	human	KL116	O1	0	0	
+GCF_900774625.1	1	0.9670245104585291	robust	0.0		0			ST133	Caribbean	America_Latin_Caribbean	unknown	human	KL116	O1	0	0	
+GCF_900774695.1	1	0.9659469763346731	robust	0.0		0			ST1049-1LV	Caribbean	America_Latin_Caribbean	unknown	human	KL5	O1	0	0	
+GCF_900774715.1	0	0.962587362428811	robust	0.3157894736842105	amr	1			ST2390	Caribbean	America_Latin_Caribbean	unknown	human	KL16	O1	0	0	
+GCF_900775775.1	1	0.9616554613697816	robust	0.0		0			ST3109	Caribbean	America_Latin_Caribbean	unknown	human	KL124	O1	0	0	
+GCF_900775795.1	1	0.9589752155942298	robust	0.0		0			ST3132	Caribbean	America_Latin_Caribbean	unknown	human	KL142	O1	0	0	
+GCF_900775825.1	0	0.9640144984801878	robust	0.0	amr	1			ST2390	Caribbean	America_Latin_Caribbean	unknown	human	KL16	O1	0	1	
+GCF_900775955.1	0	0.967269450804524	robust	0.5263157894736842	amr+vir	2	0.0	fused	ST836	Caribbean	America_Latin_Caribbean	unknown	human	KL30	O1	1	0	
+GCF_900776225.1	1	0.9643595065760451	robust	0.0		0			ST882	Caribbean	America_Latin_Caribbean	unknown	human	KL16	O1	0	0	
+GCF_900776215.1	1	0.9659861503220104	robust	0.0		0			ST160	Caribbean	America_Latin_Caribbean	unknown	human	KL62	O1	0	0	
+GCF_010590705.1	1	0.9620802485189512	robust	0.0	vir	1			ST380	USA	America_northern	2016	human	KL2	O1	4	0	
+GCF_010597245.1	1	0.9621294617040542	robust	0.0		0			ST20	USA	America_northern	2016	human	KL61	O1	0	0	
+GCF_001929345.1	0	0.5811143187279061	robust	0.0	vir	1			ST6	unknown	unknown	unknown	human	KL7	O1	1	0	
+GCF_002866585.1	0	0.9698654009388717	robust	0.5789473684210527	amr+vir	2	0.0	fused	ST1799	Lebanon	Asia_western	2013	human	KL16	O1	1	3	
+GCF_002866675.1	0	0.9651217969403162	robust	0.5789473684210527	amr+vir	2	0.0	fused	ST1799	Lebanon	Asia_western	2013	human	KL16	O1	1	3	
+GCF_002775555.1	1	0.82883646384407	robust	0.0	amr	1			ST500	Lebanon	Asia_western	2015	human	KL34	O1	0	2	
+GCF_001441295.1	0	0.9615884202513848	robust	0.0	amr+vir	2	0.0	fused	ST327	Israel	Asia_western	2005	human	KL39	O1	1	1	
+GCF_902506915.1	1	0.9600353458957421	robust	0.0	vir	1			ST86	China	Asia_eastern	2009	human	KL2	O1	3	0	
+GCF_011742195.1	0	0.9657584964707454	robust	0.0	amr+vir	2	0.0	fused	ST2096	India	Asia_southern	2019	human	KL64	O1	4	3	event_37_ST2096 iuc1 India
+GCF_011742585.2	0	0.9688710949172088	robust	0.0	amr+vir	2	0.0	fused	ST2096	India	Asia_southern	2019	human	KL64	O1	4	2	event_37_ST2096 iuc1 India
+GCF_011759445.1	0	0.9677296852991529	robust	0.0	amr+vir	2	0.0	fused	ST2096	India	Asia_southern	2019	human	KL64	O1	4	1	event_37_ST2096 iuc1 India
+GCF_011742075.1	0	0.9673065145573478	robust	0.0	amr+vir	2	0.0	fused	ST2096	India	Asia_southern	2019	human	KL64	O1	4	2	event_37_ST2096 iuc1 India
+GCF_000764635.1	0	0.9635340745288608	robust	0.0	amr	1			ST3611	USA	America_northern	2012	human	KL24	O1	0	1	
+GCF_002188175.1	0	0.9646705593461211	robust	0.0	amr+vir	2	0.0	fused	ST831	Nigeria	Africa_sub_saharan	2015	human	KL18	O1	1	1	
+GCF_001034055.1	0	0.9566890484052362	robust	0.0	amr	1			ST3616	unknown	unknown	2014	human	KL157	O1	0	2	
+GCF_011742415.2	0	0.9636653494324909	robust	0.0	amr+vir	2	0.0	fused	ST2096	India	Asia_southern	2019	human	KL64	O1	4	2	event_37_ST2096 iuc1 India
+GCF_000492735.1	1	0.9633301003727814	robust	0.0	vir	1			ST133	USA	America_northern	2012	human	KL116	O1	2	0	
+GCF_013169065.1	0	0.9632379140372074	robust	0.21052631578947367	amr	1			ST964	Colombia	America_Latin_Caribbean	2013	human	KL103	O1	0	2	
+GCF_001720905.1	0	0.9616533019289097	robust	0.0	amr+vir	2	0.0	fused	ST3622	Pakistan	Asia_southern	2013	human	KL112	O1	1	3	
+GCF_002851245.1	0	0.9618183433417894	robust	0.0	amr	1			ST2310	Colombia	America_Latin_Caribbean	2003	human	KL39	O1	0	1	
+GCF_002853815.1	0	0.9648384154487496	robust	0.10526315789473684	amr	1			ST20	Colombia	America_Latin_Caribbean	2002	human	KL24	O1	0	1	
+GCF_002851055.1	0	0.966718992202503	robust	0.0	amr	1			ST789	Colombia	America_Latin_Caribbean	2006	human	KL18	O1	0	1	
+GCF_002851015.1	0	0.9666981925125155	robust	0.10526315789473684	amr	1			ST15	Colombia	America_Latin_Caribbean	2006	human	KL24	O1	0	0	
+GCF_002855015.1	0	0.9658402853031745	robust	0.0	amr	1			ST505	Colombia	America_Latin_Caribbean	2011	human	KL64	O1	0	2	
+GCF_009661195.1	0	0.9591092498900301	robust	0.0	amr+vir	2	0.0	fused	ST395	Russia	Europe_eastern	2018	human	KL39	O1	1	2	
+GCF_002184745.2	1	0.9577349070515461	robust	0.0		0			ST1746	USA	America_northern	2015	human	KL142	O1	0	0	
+GCF_002936165.2	0	0.967734103918012	robust	0.0	amr	1			ST14	USA	America_northern	2016	human	KL16	O1	0	2	
+GCF_002935445.2	0	0.9640114136618045	robust	0.0	amr+vir	2	0.0	fused	ST1496	USA	America_northern	2013	human	KL62	O1	1	2	
+GCF_902507105.1	1	0.968134252297345	robust	0.0	vir	1			ST380	China	Asia_eastern	2011	human	KL2	O1	5	0	
+GCF_003227135.1	0	0.9549179113322456	robust	0.10526315789473684	amr	1			ST2502	Italy	Europe_southern	2016	human	KL17	O1	0	2	
+GCF_003227305.1	0	0.9653470479048449	robust	0.0	amr+vir	2	0.0	fused	ST2502	Italy	Europe_southern	2016	human	KL17	O1	1	2	
+GCF_003227275.1	0	0.9711359906045967	robust	0.0	amr+vir	2	0.0	fused	ST2502	Italy	Europe_southern	2016	human	KL17	O1	1	2	
+GCF_003226945.1	0	0.9633664465251714	robust	0.0	amr+vir	2	0.0	fused	ST35	Italy	Europe_southern	2016	human	KL22	O1	1	2	
+GCF_003226905.1	0	0.9665281815645489	robust	0.0	amr+vir	2	0.0	fused	ST2502	Italy	Europe_southern	2016	human	KL17	O1	1	2	
+GCF_000281755.1	1	0.9620929102192606	robust	0.0	vir	1			ST3	unknown	unknown	1955	human	KL3	O1	2	0	
+GCF_902507245.1	1	0.9597069688881026	robust	0.0	vir	1			ST1049	China	Asia_eastern	2012	human	KL5	O1	4	0	
+GCF_902507285.1	1	0.9716441028921563	robust	0.0	vir	1			ST1764	China	Asia_eastern	2012	human	KL64	O1	3	0	
+GCF_004120155.1	1	0.9673048109536181	robust	0.0	vir	1			ST3685	China	Asia_eastern	2014	human	KL64	O1	3	0	
+GCF_008087375.1	0	0.9626613774346439	robust	0.0	amr+vir	2	0.0	fused	ST660	China	Asia_eastern	2016	human	KL16	O1	4	1	event_153_ST660 SHV-5^ China
+GCF_002187385.1	0	0.965708077300082	robust	0.0	amr+vir	2	0.0	fused	ST73	Nigeria	Africa_sub_saharan	2014	human	KL25	O1	1	0	
+GCF_002239965.1	0	0.9640361386134337	robust	0.0	amr+vir	2	0.0	fused	ST4	Nigeria	Africa_sub_saharan	2012	human	KL13	O1	1	1	
+GCF_003977495.1	0	0.9617480913737781	robust	0.0	amr+vir	2	0.0	fused	ST870	Egypt	Africa_northern	unknown	human	KL17	O1	1	0	
+GCF_002157345.1	0	0.9642802838159876	robust	0.0	amr+vir	2	0.0	fused	ST198	Brazil	America_Latin_Caribbean	2013	human	KL30	O1	1	1	
+GCF_002241035.1	0	0.969975039259753	robust	0.0	amr+vir	2	0.0	fused	ST198	Brazil	America_Latin_Caribbean	2013	human	KL30	O1	1	0	
+GCF_900498355.1	0	0.5766385310832727	robust	0.0	vir	1			ST1801	Germany	Europe_western	2014	human	KL35	O1	1	0	
+GCF_900498885.1	1	0.9692341832895298	robust	0.0		0			ST540	Germany	Europe_western	2014	human	KL13	O1	0	0	
+GCF_900498695.1	0	0.5770901436493006	robust	0.0	vir	1			ST1013	Germany	Europe_western	2014	human	KL39	O1	1	0	
+GCF_900498645.1	0	0.9583729552331511	robust	0.10526315789473684	amr	1			ST14	Germany	Europe_western	2014	human	KL16	O1	0	1	
+GCF_900498445.1	0	0.5927054466607865	robust	0.0	vir	1			ST3694	Germany	Europe_western	2014	human	KL35	O1	1	0	
+GCF_002795445.1	0	0.5144728700495078	robust	0.0	vir	1			ST664	Austria	Europe_western	2016	human	KL62	O1	1	0	
+GCF_002795625.1	0	0.6417244066783868	robust	0.0	vir	1			ST664	Austria	Europe_western	2016	human	KL62	O1	1	0	
+GCF_900086015.1	1	0.9624474121777271	robust	0.0		0			ST985	UK	Europe_northern	2005	human	KL31	O1	0	0	
+GCF_900084085.1	1	0.9563174820211283	robust	0.0		0			ST1686	UK	Europe_northern	2006	human	KL113	O1	0	0	
+GCF_900085385.1	0	0.9597380994695335	robust	0.0	amr+vir	2	0.0	fused	ST3704	UK	Europe_northern	2009	human	KL16	O1	1	1	
+GCF_900085575.1	0	0.9654310579780201	robust	0.0	amr	1			ST15-1LV	UK	Europe_northern	2010	human	KL24	O1	0	1	
+GCF_900085645.1	0	0.9630005268836485	robust	0.0	amr	1			ST215	UK	Europe_northern	2010	human	KL16	O1	0	1	
+GCF_900085745.1	0	0.9718255498920352	robust	0.0	amr+vir	2	0.0	fused	ST1236	UK	Europe_northern	2011	human	KL62	O1	1	1	
+GCF_900086005.1	0	0.05350615892926475	fragile	0.2631578947368421	amr	1			ST3705	UK	Europe_northern	2002	human	KL60	O1	0	0	
+GCF_900084815.1	0	0.9703741233675378	robust	0.0	amr	1			ST3709	UK	Europe_northern	2002	human	KL46	O1	0	0	
+GCF_003034445.1	0	0.9634526827187079	robust	0.0	amr+vir	2	0.0	fused	ST101	Greece	Europe_southern	2015	human	KL17	O1	1	3	
+GCF_002269865.1	0	0.9629588749790645	robust	0.0	amr+vir	2	0.0	fused	ST3712	China	Asia_eastern	2016	human	KL16	O1	3	0	
+GCF_900084975.1	0	0.9588484177949794	robust	0.0	amr	1			ST3713	UK	Europe_northern	2004	human	KL10	O1	0	1	
+GCF_900407195.1	0	0.9591146496254673	robust	0.0	amr+vir	2	0.0	fused	ST348	Tanzania	Africa_sub_saharan	2013	human	KL23	O1	1	1	
+GCF_900407275.1	0	0.961880590008689	robust	0.0	amr+vir	2	0.0	fused	ST348	Tanzania	Africa_sub_saharan	2015	human	KL23	O1	1	1	
+GCF_900407265.1	0	0.9615778130554018	robust	0.0	amr	1			ST297	Tanzania	Africa_sub_saharan	2013	human	KL10	O1	0	1	
+GCF_012952385.1	0	0.9641232958215075	robust	0.0	amr	1			ST348	USA	America_northern	2017	human	KL62	O1	0	1	
+GCF_003861425.1	0	0.9621658005823212	robust	0.0	amr	1			ST551	USA	America_northern	2017	human	KL10	O1	0	1	
+GCF_003860845.1	1	0.9656092858720615	robust	0.0	vir	1			ST299	USA	America_northern	2017	human	KL7	O1	2	0	
+GCF_903171865.1	1	0.9593533286303777	robust	0.0	amr+vir	2	0.0	fused	ST48	Portugal	Europe_southern	2008	human	KL62	O1	0	1	
+GCF_903171875.1	0	0.9630178548167897	robust	0.0	amr+vir	2	0.0	fused	ST133	Portugal	Europe_southern	2008	human	KL116	O1	1	1	
+GCF_003226095.1	0	0.8760985257934456	robust	0.3157894736842105	amr	1			ST297	Spain	Europe_southern	2007	human	KL10	O1	0	1	
+GCF_002872205.1	1	0.9627678268029205	robust	0.0		0			ST1948	India	Asia_southern	2013	human	KL24	O1	0	0	
+GCF_003057345.1	0	0.969085081598652	robust	0.0	amr	1			ST3483	Lebanon	Asia_western	2017	human	KL18	O1	0	1	
+GCF_012944055.1	1	0.9693355142150694	robust	0.0	vir	1			ST660	China	Asia_eastern	2016	human	KL16	O1	4	0	
+GCF_012027195.1	0	0.9606400878026907	robust	0.0	amr+vir	2	0.0	fused	ST14-1LV	South Korea	Asia_eastern	2013	human	KL2	O1	1	1	
+GCF_902704635.1	0	0.9639367133892341	robust	0.0	amr	1			ST253	Italy	Europe_southern	2016	human	KL64	O1	0	2	
+GCF_902703695.1	0	0.9697064733839875	robust	0.21052631578947367	amr+vir	2	0.0	fused	ST101	Italy	Europe_southern	2016	human	KL17	O1	1	3	
+GCF_902703855.1	0	0.96250310847215	robust	0.0	amr+vir	2	0.0	fused	ST395	Italy	Europe_southern	2016	human	KL2	O1	4	2	event_126_ST395 iuc1 multicountry 
+GCF_902704645.1	0	0.965648327331971	robust	0.0	amr+vir	2	0.0	fused	ST3499	Italy	Europe_southern	2016	human	KL48	O1	1	3	
+GCF_000695935.1	0	0.9628158155336953	robust	0.0	amr	1			ST34	USA	America_northern	2012	human	KL37	O1	0	2	
+GCF_003363735.1	1	0.9746479484911211	robust	0.0	amr+vir	2	0.0	fused	ST101	UK	Europe_northern	2018	human	KL62	O1	1	2	
+GCF_013375185.1	0	0.9645264563668234	robust	0.0	amr	1			ST551-1LV	Argentina	America_Latin_Caribbean	2014	human	KL10	O1	0	2	
+GCF_003428845.1	0	0.9596337359242652	robust	0.0	amr+vir	2	0.0	fused	ST14	South Korea	Asia_eastern	2015	human	KL64	O1	1	2	
+GCF_001033755.1	0	0.961908829318636	robust	0.0	amr+vir	2	0.0	fused	ST2147	unknown	unknown	2014	human	KL24	O1	1	1	
+GCF_001033975.1	0	0.964049063545773	robust	0.10526315789473684	amr	1			ST607	unknown	unknown	2014	human	KL48	O1	0	0	
+GCF_003115155.1	0	0.9609354270445686	robust	0.0	amr+vir	2	0.0	fused	ST656	Vietnam	Asia_SE	2017	human	KL64	O1	1	2	
+GCF_009937845.1	0	0.9655574367361458	robust	0.0	amr+vir	2	0.0	fused	ST14	India	Asia_southern	2018	human	KL2	O1	1	2	
+GCF_000981955.1	0	0.9546670746447794	robust	0.0	amr	1			ST48	USA	America_northern	2009	human	KL62	O1	0	1	
+GCF_000982215.1	0	0.9640635169821905	robust	0.0	amr+vir	2	0.0	fused	ST48	USA	America_northern	2011	human	KL62	O1	1	1	
+GCF_008082915.1	1	0.9633616089589577	robust	0.0		0			ST34	USA	America_northern	unknown	human	KL48	O1	0	0	
+GCF_900451595.1	1	0.9590123021580944	robust	0.0	vir	1			ST3764	unknown	unknown	1935	human	KL1	O1	3	0	
+GCF_900451605.1	1	0.9595538171600569	robust	0.0	vir	1			ST3764	unknown	unknown	1940	human	KL1	O1	3	0	
+GCF_900451355.1	1	0.9642240916380157	robust	0.0	vir	1			ST3	unknown	unknown	1940	human	KL3	O1	5	0	
+GCF_900461475.1	1	0.9623148030849308	robust	0.0	vir	1			ST3764	unknown	unknown	1935	human	KL1	O1	3	0	
+GCF_900452365.1	1	0.9586323389559164	robust	0.0		0			ST163	Denmark	Europe_northern	1952	human	KL12	O1	0	0	
+GCF_900452445.1	1	0.9632130384752755	robust	0.0		0			ST504	Denmark	Europe_northern	1952	human	KL13	O1	0	0	
+GCF_900452095.1	0	0.7413723246747237	robust	0.0	vir	1			ST566	Denmark	Europe_northern	1952	human	KL46	O1	4	0	
+GCF_011682815.1	0	0.959083232150709	robust	0.0	amr	1			ST464	Israel	Asia_western	2017	human	KL17	O1	0	1	
+GCF_006130485.1	0	0.9700847321738353	robust	0.0	amr+vir	2	0.0	fused	ST290	China	Asia_eastern	unknown	human	KL21	O1	1	2	
+GCF_006937825.1	0	0.9626955549000916	robust	0.0	amr+vir	2	0.0	fused	ST785	Norway	Europe_northern	2012	human	KL103	O1	1	0	
+GCF_006937755.1	0	0.9709429357383655	robust	0.0	amr+vir	2	0.0	fused	ST48	Norway	Europe_northern	2012	human	KL62	O1	1	0	
+GCF_002944845.1	1	0.9602520785227395	robust	0.0	amr+vir	2	0.0	fused	ST86	China	Asia_eastern	2016	human	KL2	O1	3	2	event_160_ST86 KPC-2 NDM-1 China
+GCF_008120365.1	1	0.9644193121943435	robust	0.0		0			ST1401	UK	Europe_northern	2016	human	KL38	O1	0	0	
+GCF_900092795.1	0	0.9574312015664282	robust	0.0	amr	1			ST1530	Thailand	Asia_SE	2015	human	KL117	O1	0	0	
+GCF_003006495.1	0	0.9679732942287106	robust	0.2631578947368421	amr+vir	2	0.0	fused	ST43	India	Asia_southern	2017	human	KL30	O1	4	3	event_134_ST43 iuc1 India
+GCF_001530015.1	1	0.9627076587086721	robust	0.0	vir	1			ST374	China	Asia_eastern	2014	human	KL2	O1	4	0	
+GCF_000821665.1	1	0.9694396363904907	robust	0.0		0			ST1631	Italy	Europe_southern	2012	human	KL142	O1	0	0	
+GCF_000821905.1	0	0.6370882159360838	robust	0.0	vir	1			ST466	Italy	Europe_southern	2013	human	KL22	O1	1	0	
+GCF_900978065.1	1	0.9580425637961241	robust	0.0	vir	1			ST380	France	Europe_western	2011	human	KL2	O1	2	0	
+GCF_003194955.1	1	0.9611290627135427	robust	0.05263157894736842	amr+vir	2	0.0	fused	ST2174	Russia	Europe_eastern	2015	human	KL2	O1	3	0	
+GCF_001701575.1	0	0.9600998215669881	robust	0.0	amr	1			ST2316	China	Asia_eastern	2012	human	KL2	O1	0	1	
+GCF_001701755.1	0	0.966875251948219	robust	0.0	amr+vir	2	0.0	fused	ST875	China	Asia_eastern	2011	human	KL25	O1	1	1	
+GCF_002417075.1	0	0.9692933280577345	robust	0.0	amr	1			ST1414	South Africa	Africa_sub_saharan	2013	human	KL8	O1	0	1	
+GCF_002417305.1	0	0.9581654871022962	robust	0.0	amr	1			ST1552	South Africa	Africa_sub_saharan	2013	human	KL25	O1	0	1	
+GCF_002417105.1	0	0.9605566041291975	robust	0.0	amr	1			ST1552	South Africa	Africa_sub_saharan	2013	human	KL25	O1	0	1	
+GCF_008081905.1	1	0.9647737482850621	robust	0.0		0			ST12-2LV	USA	America_northern	unknown	human	KL157	O1	0	0	
+GCF_008082105.1	1	0.9607530466220239	robust	0.0		0			ST6	USA	America_northern	unknown	human	KL7	O1	0	0	
+GCF_003437295.1	1	0.9670187690606511	robust	0.0		0			ST875	China	Asia_eastern	2013	human	KL25	O1	0	0	
+GCF_004312045.1	1	0.9635423883654589	robust	0.0		0			ST1824	Japan	Asia_eastern	2013	human	KL16	O1	0	0	
+GCF_004312465.1	1	0.9667703102683158	robust	0.0	vir	1			ST1266	Japan	Asia_eastern	2013	human	KL35	O1	1	0	
+GCF_004312525.1	1	0.9628500607902544	robust	0.0		0			ST215	Japan	Asia_eastern	2013	human	KL16	O1	0	0	
+GCF_004313005.1	1	0.9617620368270646	robust	0.0		0			ST107	Japan	Asia_eastern	2014	human	KL103	O1	0	0	
+GCF_900173395.1	0	0.5668971632459113	robust	0.0	vir	1			ST6	UK	Europe_northern	2015	human	KL7	O1	1	0	
+GCF_003312145.1	0	0.9607487754822454	robust	0.0	amr	1			ST290	China	Asia_eastern	2017	human	KL21	O1	0	2	
+GCF_013283935.1	1	0.9606134875942606	robust	0.0	vir	1			ST1764	China	Asia_eastern	2019	human	KL64	O1	3	0	
+GCF_003196295.1	1	0.9574343755806363	robust	0.0		0			ST27	USA	America_northern	2017	human	KL37	O1	0	0	
+GCF_003196935.1	0	0.9567691464443466	robust	0.0	amr	1			ST551	USA	America_northern	2017	human	KL10	O1	0	1	
+GCF_003195655.1	0	0.9561883996873793	robust	0.0	amr	1			ST3847	USA	America_northern	2017	human	KL10	O1	0	1	
+GCF_902508555.1	1	0.9603058386246555	robust	0.0	vir	1			ST660	China	Asia_eastern	2017	human	KL16	O1	4	0	
+GCF_902508735.1	1	0.9582062509091899	robust	0.0	vir	1			ST1049	China	Asia_eastern	2017	human	KL5	O1	4	0	
+GCF_902508845.1	1	0.9581239159864882	robust	0.0	vir	1			ST86	China	Asia_eastern	2017	human	KL2	O1	4	0	
+GCF_902509265.1	1	0.9691693055702815	robust	0.0	vir	1			ST60	China	Asia_eastern	2017	human	KL5	O1	1	0	
+GCF_902509185.1	1	0.9697537684653625	robust	0.0	vir	1			ST505	China	Asia_eastern	2017	human	KL64	O1	1	0	
+GCF_902509385.1	1	0.960325831090708	robust	0.0	vir	1			ST1764	China	Asia_eastern	2017	human	KL64	O1	3	0	
+GCF_902509425.1	0	0.5985726429028917	robust	0.0	amr+vir	2	0.0	fused	ST219	China	Asia_eastern	2017	human	KL114	O1	1	1	
+GCF_902508285.1	0	0.9604752047617138	robust	0.0	amr	1			ST180	China	Asia_eastern	2017	human	KL54	O1	0	0	
+GCF_901421045.1	1	0.9618292862513379	robust	0.0		0			ST561	Denmark	Europe_northern	unknown	not available	KL16	O1	0	0	
+GCF_901420605.1	1	0.963889323828025	robust	0.0		0			ST155	unknown	unknown	unknown	not available	KL22	O1	0	0	
+GCF_901420465.1	1	0.9643912058091642	robust	0.0		0			ST43	unknown	unknown	unknown	not available	KL30	O1	0	0	
+GCF_901422065.1	1	0.9653827604550977	robust	0.0		0			ST171	Denmark	Europe_northern	1952	not available	KL37	O1	0	0	
+GCF_009822605.1	0	0.9678549365054736	robust	0.0	amr+vir	2	0.0	fused	ST107	unknown	unknown	unknown	pig	KL102	O1	4	0	
+GCF_900171745.1	0	0.9605894408628165	robust	0.0	amr	1			ST2585	UK	Europe_northern	2015	turkey	KL45	O1	0	1	
+GCF_900171755.1	0	0.9610542360939781	robust	0.0	amr	1			ST3010	UK	Europe_northern	2015	turkey	KL45	O1	0	1	
+GCF_900172055.1	0	0.9612802603920416	robust	0.0	amr	1			ST3010	UK	Europe_northern	2015	turkey	KL45	O1	0	1	
+GCF_900171855.1	0	0.9697779443701665	robust	0.0	amr	1			ST3010	UK	Europe_northern	2015	turkey	KL45	O1	0	1	
+GCF_002180255.1	0	0.9654256669800533	robust	0.0	amr	1			ST163	unknown	unknown	unknown	unknown	KL12	O1	0	2	
+GCF_001720695.1	1	0.9704114435283788	robust	0.0	vir	1			ST493	Netherlands	Europe_western	1985	unknown	KL2	O1	1	0	
+GCF_900451615.1	1	0.9586158916269095	robust	0.0	vir	1			ST82	unknown	unknown	1940	unknown	KL1	O1	3	0	
+GCF_901420755.1	1	0.9678854330893354	robust	0.0	vir	1			ST82	Netherlands	Europe_western	1937	unknown	KL1	O1	0	0	
+GCF_900452505.1	1	0.9608459020251601	robust	0.0		0			ST505	USA	America_northern	1953	unknown	KL64	O1	0	0	
+GCF_900451885.1	1	0.9651533302891674	robust	0.0	vir	1			ST3	USA 	America_northern	1955	unknown	KL3	O1	5	0	
+GCF_900451185.1	1	0.9627064116763496	robust	0.0	vir	1			ST3	unknown	unknown	1955	unknown	KL3	O1	5	0	
+GCF_003339395.1	0	0.9622180463173376	robust	0.0	amr+vir	2	0.0	fused	ST3366	Italy	Europe_southern	unknown	unknown	KL17	O1	1	2	
+GCF_012102535.1	0	0.9624146997520509	robust	0.10526315789473684	amr	1			ST2121	Brazil	America_Latin_Caribbean	2019	African bush elephant	KL113	O1	0	0	
+GCF_012167385.1	1	0.9578750523519876	robust	0.0		0			ST228	China	Asia_eastern	2018	bovine	KL57	O1	0	0	
+GCF_012113635.1	0	0.8857661779080039	robust	0.47368421052631576	amr	1			ST107	China	Asia_eastern	2018	bovine	KL148	O1	0	0	
+GCF_900707015.1	0	0.9653641603641289	robust	0.42105263157894735	amr	1			ST692	unknown	unknown	unknown	bovine	KL147	O1	0	0	
+GCF_001308905.1	1	0.9554241369482347	robust	0.0	amr+vir	2	0.0	fused	ST375	China	Asia_eastern	2012	environmental	KL2	O1	3	0	
+GCF_003121425.1	1	0.9655844651157981	robust	0.0		0			ST3901	Malaysia	Asia_SE	2016	environmental	KL30	O1	0	0	
+GCF_003965135.1	0	0.9609874138810105	robust	0.0	amr	1			ST337	Pakistan	Asia_southern	2016	environmental	KL8	O1	0	1	
+GCF_003936515.1	0	0.9717793244664482	robust	0.0	amr	1			ST337	Pakistan	Asia_southern	2016	environmental	KL8	O1	0	1	
+GCF_003937235.1	0	0.9609485377142098	robust	0.0	amr	1			ST337	Pakistan	Asia_southern	2016	environmental	KL8	O1	0	1	
+GCF_003936425.1	0	0.9602337895346353	robust	0.0	amr	1			ST337	Pakistan	Asia_southern	2016	environmental	KL8	O1	0	1	
+GCF_003936375.1	0	0.9615892453419711	robust	0.0	amr	1			ST391	Pakistan	Asia_southern	2016	environmental	KL30	O1	0	1	
+GCF_002935085.1	0	0.9703720572341251	robust	0.0	amr	1			ST252	USA	America_northern	2016	environmental	KL81	O1	0	2	
+GCF_002903005.1	0	0.9695446877170955	robust	0.21052631578947367	amr	1			ST252	USA	America_northern	2016	environmental	KL81	O1	0	3	
+GCF_902754115.1	1	0.9651805311721168	robust	0.0		0			ST784	UK	Europe_northern	unknown	environmental	KL146	O1	0	0	
+GCF_003664865.1	0	0.967363909409023	robust	0.0	amr	1			ST967	China	Asia_eastern	2015	environmental	KL18	O1	0	1	
+GCF_900172665.1	1	0.9631396368133236	robust	0.0		0			ST26	UK	Europe_northern	2014	environmental	KL25	O1	0	0	
+GCF_900172865.1	0	0.9564297519738485	robust	0.0	amr	1			ST874	UK	Europe_northern	2015	environmental	KL45	O1	0	1	
+GCF_009925405.1	0	0.9640496532448938	robust	0.3157894736842105	amr	1			ST1741	Tanzania	Africa_sub_saharan	2018	food	KL104	O1	0	1	
+GCF_004803085.1	0	0.9568233371279898	robust	0.0	amr	1			ST383	Egypt	Africa_northern	unknown	human	KL30	O1	0	2	
+GCF_003382225.1	0	0.9634904079749469	robust	0.0	amr+vir	2	0.0	fused	ST1788	Ghana	Africa_sub_saharan	2015	human	KL2	O1	1	1	
+GCF_009935695.1	1	0.9678624265469157	robust	0.42105263157894735	amr+vir	2	0.0	fused	ST1660	China	Asia_eastern	2015	human	KL1	O1	5	2	event_35_ST1660 KPC-2 China
+GCF_011044835.1	1	0.8034769185699321	robust	0.0	amr+vir	2	0.0	fused	ST874	Russia	Europe_eastern	2019	human	KL45	O1	3	2	event_170_ST874 iuc1 Russia
+GCF_009497755.1	1	0.9602929529732298	robust	0.0	amr+vir	2	0.0	fused	ST1265	China	Asia_eastern	2014	human	KL1	O1	5	2	event_16_ST1265 KPC-2 China
+GCF_008830645.1	1	0.9568173775695661	robust	0.42105263157894735	amr+vir	2	0.0	fused	ST1660	China	Asia_eastern	2015	human	KL1	O1	5	2	event_35_ST1660 KPC-2 China
+GCF_002180685.1	1	0.24868364763109746	intermediate	0.5789473684210527	amr	1			ST3584	USA	America_northern	2013	human	KL63	O1	0	2	
+GCF_001647465.1	0	0.9620200015899476	robust	0.0	amr	1			ST44	USA	America_northern	2008	human	KL57	O1	0	1	
+GCF_008867865.1	0	0.9614378795569545	robust	0.0	amr	1			ST3360	Spain	Europe_southern	2018	human	KL19	O1	0	2	
+GCF_001462885.1	0	0.9602008842767156	robust	0.0	amr	1			ST525	Norway	Europe_northern	2011	human	KL45	O1	0	2	
+GCF_001062535.1	1	0.9697864111761133	robust	0.0		0			ST184	USA	America_northern	2013	human	KL113	O1	0	0	
+GCF_900181205.1	0	0.9635445417902904	robust	0.0	amr	1			ST13	Pakistan	Asia_southern	unknown	human	KL3	O1	0	1	
+GCF_900494205.1	0	0.9653262494282399	robust	0.0	amr	1			ST530	Thailand	Asia_SE	2016	human	KL54	O1	0	2	
+GCF_900494315.1	0	0.9655488870670522	robust	0.0	amr	1			ST656	Thailand	Asia_SE	2016	human	KL105	O1	0	1	
+GCF_900494275.1	0	0.9642559433129155	robust	0.0	amr	1			ST8	Thailand	Asia_SE	2016	human	KL3	O1	0	2	
+GCF_902161355.1	1	0.9634494565926159	robust	0.0		0			ST359	UK	Europe_northern	2018	human	KL10	O1	0	0	
+GCF_902161315.1	1	0.9623987491969609	robust	0.0		0			ST359	UK	Europe_northern	2018	human	KL10	O1	0	0	
+GCF_902161675.1	1	0.9598925953844815	robust	0.0		0			ST461	UK	Europe_northern	2018	human	KL10	O1	0	0	
+GCF_902165195.1	0	0.9647021556852011	robust	0.3157894736842105	amr	1			ST643-1LV	UK	Europe_northern	2018	human	KL62	O1	0	0	
+GCF_001701985.1	0	0.9613341547776204	robust	0.0	amr	1			ST383	Greece	Europe_southern	2013	human	KL30	O1	0	3	
+GCF_900775105.1	0	0.8841016786560816	robust	0.3157894736842105	amr	1			ST13	Caribbean	America_Latin_Caribbean	unknown	human	KL3	O1	0	0	
+GCF_900774955.1	1	0.961507698188819	robust	0.0		0			ST784	Caribbean	America_Latin_Caribbean	unknown	human	KL146	O1	0	0	
+GCF_900774985.1	0	0.9667968792709546	robust	0.3157894736842105	amr	1			ST140	Caribbean	America_Latin_Caribbean	unknown	human	KL49	O1	0	0	
+GCF_900774375.1	0	0.9647347727321681	robust	0.0	amr+vir	2	0.0	fused	ST391	Caribbean	America_Latin_Caribbean	unknown	human	KL30	O1	1	1	
+GCF_900775915.1	1	0.9631150757620949	robust	0.0	amr+vir	2	0.0	fused	ST65	Caribbean	America_Latin_Caribbean	unknown	human	KL2	O1	3	0	
+GCF_900776175.1	1	0.9549923880833906	robust	0.0		0			ST1886	Caribbean	America_Latin_Caribbean	unknown	human	KL58	O1	0	0	
+GCF_900776245.1	0	0.9703774422069543	robust	0.0	amr+vir	2	0.0	fused	ST39	Caribbean	America_Latin_Caribbean	unknown	human	KL149	O1	1	1	
+GCF_900776335.1	0	0.6613224714539399	robust	0.0	vir	1			ST111	Caribbean	America_Latin_Caribbean	unknown	human	KL63	O1	1	0	
+GCF_900775665.1	0	0.9630638352045567	robust	0.10526315789473684	amr+vir	2	0.0	fused	ST39	Caribbean	America_Latin_Caribbean	unknown	human	KL149	O1	1	0	
+GCF_001065795.1	1	0.9600255760211541	robust	0.0		0			ST643-1LV	USA	America_northern	2013	human	KL62	O1	0	0	
+GCF_003469885.1	1	0.9584320110537131	robust	0.0		0			ST2054	China	Asia_eastern	2013	human	KL109	O1	0	0	
+GCF_010590345.1	1	0.9622217700610652	robust	0.0		0			ST1401	USA	America_northern	2015	human	KL102	O1	0	0	
+GCF_010590265.1	1	0.96456155486395	robust	0.0		0			ST193	USA	America_northern	2015	human	KL30	O1	0	0	
+GCF_002300775.1	0	0.9573424009553186	robust	0.21052631578947367	amr	1			ST443	Brazil	America_Latin_Caribbean	2010	human	KL146	O1	0	2	
+GCF_902506815.1	1	0.9590999467733687	robust	0.0	vir	1			ST65	China	Asia_eastern	2009	human	KL2	O1	5	0	
+GCF_001033995.1	1	0.9619398755061871	robust	0.0	vir	1			ST23	unknown	unknown	2013	human	KL1	O1	5	0	
+GCF_001033445.1	1	0.9580664936625323	robust	0.0	vir	1			ST25	USA	America_northern	2014	human	KL2	O1	3	0	
+GCF_013170505.1	0	0.9620450471901271	robust	0.21052631578947367	amr	1			ST140	Colombia	America_Latin_Caribbean	2014	human	KL55	O1	0	2	
+GCF_008931565.1	0	0.9620561701801295	robust	0.0	amr	1			ST1109	Australia	Oceania	2007	human	KL54	O1	0	2	
+GCF_001032845.1	0	0.5108985080231203	robust	0.5263157894736842	amr	1			ST2121	USA	America_northern	2014	human	KL113	O1	0	2	
+GCF_002854055.1	1	0.8133988466447621	robust	0.0	amr	1			ST979	Colombia	America_Latin_Caribbean	2010	human	KL122	O1	0	2	
+GCF_002854745.1	0	0.9736344572111458	robust	0.15789473684210525	amr	1			ST252	Colombia	America_Latin_Caribbean	2003	human	KL81	O1	0	0	
+GCF_002853725.1	0	0.96195360192204	robust	0.6842105263157895	amr	1			ST8	Colombia	America_Latin_Caribbean	2002	human	KL3	O1	0	0	
+GCF_002851195.1	1	0.2567163945925744	intermediate	0.6842105263157895	amr+vir	2	0.0	fused	ST13	Colombia	America_Latin_Caribbean	2004	human	KL3	O1	2	0	
+GCF_002851475.1	0	0.96029917925363	robust	0.0	amr	1			ST1271	Colombia	America_Latin_Caribbean	2006	human	KL28	O1	0	0	
+GCF_002850795.1	0	0.9683278285387937	robust	0.2631578947368421	amr	1			ST1303	Colombia	America_Latin_Caribbean	2006	human	KL58	O1	0	0	
+GCF_002935325.2	0	0.96401021649182	robust	0.0	amr	1			ST461	USA	America_northern	2012	human	KL62	O1	0	2	
+GCF_902506985.1	1	0.9713834132362387	robust	0.0	vir	1			ST700	China	Asia_eastern	2011	human	KL1	O1	1	0	
+GCF_902507155.1	1	0.9617773626415616	robust	0.0	vir	1			ST23-1LV	China	Asia_eastern	2012	human	KL1	O1	4	0	
+GCF_001534855.2	1	0.9576933174973364	robust	0.0		0			ST359	USA	America_northern	2013	human	KL10	O1	0	0	
+GCF_002188075.1	0	0.9594699736973624	robust	0.0	amr+vir	2	0.0	fused	ST1788	Nigeria	Africa_sub_saharan	2012	human	KL2	O1	1	1	
+GCF_002187395.1	0	0.9601655063439001	robust	0.0	amr+vir	2	0.0	fused	ST1788	Nigeria	Africa_sub_saharan	2014	human	KL2	O1	1	2	
+GCF_008756815.1	1	0.9687064051253684	robust	0.631578947368421	amr+vir	2	0.0	fused	ST700	China	Asia_eastern	2016	human	KL1	O1	4	0	
+GCF_013187705.1	1	0.9629440978774703	robust	0.0		0			ST501	Nigeria	Africa_sub_saharan	2019	human	KL8	O1	0	0	
+GCF_009898185.1	0	0.9601683110152297	robust	0.0	amr	1			ST460	Brazil	America_Latin_Caribbean	2019	human	KL140	O1	0	3	
+GCF_003312195.1	0	0.960436977452066	robust	0.0	amr+vir	2	0.0	fused	ST1	China	Asia_eastern	2017	human	KL19	O1	1	2	
+GCF_900085225.1	0	0.9688668461300016	robust	0.0	amr	1			ST3697	UK	Europe_northern	2005	human	KL45	O1	0	1	
+GCF_900084435.1	0	0.9588237805057114	robust	0.0	amr	1			ST3697	UK	Europe_northern	2005	human	KL45	O1	0	1	
+GCF_900084185.1	0	0.5919381730730839	robust	0.0	vir	1			ST3698	UK	Europe_northern	2006	human	KL63	O1	1	0	
+GCF_900084115.1	0	0.9615098485376672	robust	0.0	amr	1			ST103-1LV	UK	Europe_northern	2006	human	KL45	O1	0	1	
+GCF_900085955.1	0	0.9635213107359883	robust	0.6842105263157895	amr	1			ST26	UK	Europe_northern	2006	human	KL10	O1	0	0	
+GCF_900086345.1	0	0.9683821868256725	robust	0.0	amr	1			ST3697	UK	Europe_northern	2007	human	KL45	O1	0	1	
+GCF_900084545.1	0	0.9656356711414025	robust	0.0	amr	1			ST874	UK	Europe_northern	2007	human	KL45	O1	0	1	
+GCF_900085245.1	0	0.968434335779246	robust	0.0	amr	1			ST3697	UK	Europe_northern	2009	human	KL45	O1	0	1	
+GCF_900085515.1	1	0.9655407329500123	robust	0.0		0			ST465	UK	Europe_northern	2010	human	KL54	O1	0	0	
+GCF_900084715.1	1	0.9582913528163111	robust	0.0		0			ST163	UK	Europe_northern	2002	human	KL28	O1	0	0	
+GCF_900085685.1	1	0.9642887055116549	robust	0.0		0			ST252	UK	Europe_northern	2011	human	KL51	O1	0	0	
+GCF_900084735.1	0	0.9621725741000704	robust	0.0	amr	1			ST42	UK	Europe_northern	2002	human	KL106	O1	0	1	
+GCF_900084785.1	1	0.9553964375530652	robust	0.0		0			ST448-1LV	UK	Europe_northern	2002	human	KL54	O1	0	0	
+GCF_002264435.1	0	0.2978295020177416	intermediate	0.0	amr+vir	2	0.0	fused	ST23	China	Asia_eastern	2015	human	KL1	O1	5	2	event_47_ST23 KPC-2 China
+GCF_900086075.1	0	0.9631034255706346	robust	0.0	amr	1			ST3697	UK	Europe_northern	2003	human	KL45	O1	0	1	
+GCF_900085055.1	0	0.9595884551463367	robust	0.0	amr	1			ST42	UK	Europe_northern	2003	human	KL106	O1	0	0	
+GCF_900085865.1	0	0.9638209167335955	robust	0.0	amr	1			ST253	UK	Europe_northern	2003	human	KL2	O1	0	1	
+GCF_002887675.1	1	0.9661366477165003	robust	0.0	vir	1			ST375	China	Asia_eastern	2015	human	KL2	O1	3	0	
+GCF_900084955.1	0	0.9654503696679752	robust	0.0	amr	1			ST3697	UK	Europe_northern	2004	human	KL45	O1	0	1	
+GCF_900086125.1	1	0.9638406621316087	robust	0.0		0			ST1	UK	Europe_northern	2004	human	KL45	O1	0	0	
+GCF_900085205.1	1	0.9584023286247028	robust	0.0		0			ST359	UK	Europe_northern	2004	human	KL10	O1	0	0	
+GCF_900407035.1	0	0.9589250444837841	robust	0.0	amr+vir	2	0.0	fused	ST231	Tanzania	Africa_sub_saharan	2013	human	KL51	O1	1	1	
+GCF_900407155.1	0	0.9643851980850917	robust	0.0	amr+vir	2	0.0	fused	ST29	Tanzania	Africa_sub_saharan	2014	human	KL19	O1	1	1	
+GCF_900407175.1	0	0.9670770681711947	robust	0.0	amr	1			ST3717	Tanzania	Africa_sub_saharan	2014	human	KL57	O1	0	1	
+GCF_900407315.1	0	0.9609402260193839	robust	0.0	amr	1			ST193	Tanzania	Africa_sub_saharan	2015	human	KL63	O1	0	1	
+GCF_012952405.1	0	0.9626440419060486	robust	0.0	amr	1			ST231	USA	America_northern	2017	human	KL51	O1	0	0	
+GCF_003865115.1	1	0.9681569853775556	robust	0.0		0			ST1245	Japan	Asia_eastern	2016	human	KL3	O1	0	0	
+GCF_003225795.1	0	0.9635894413766394	robust	0.0	amr+vir	2	0.0	fused	ST151	Spain	Europe_southern	2013	human	KL30	O1	1	2	
+GCF_002845885.1	1	0.9623099299365773	robust	0.0	vir	1			ST700-1LV	China	Asia_eastern	2009	human	KL1	O1	1	0	
+GCF_002248115.2	0	0.9536530191972058	robust	0.0	amr	1			ST1	Thailand	Asia_SE	2016	human	KL45	O1	0	1	
+GCF_001033675.1	0	0.9614242420319051	robust	0.0	amr+vir	2	0.0	fused	ST70	unknown	unknown	2014	human	KL136	O1	1	1	
+GCF_012056395.1	0	0.9731801207586058	robust	0.0	amr+vir	2	0.0	fused	ST29	Vietnam	Asia_SE	2015	human	KL19	O1	1	1	
+GCF_001546515.1	1	0.962764739231168	robust	0.0	vir	1			ST29	unknown	unknown	unknown	human	KL30	O1	2	0	
+GCF_000982205.1	0	0.7493767171321055	robust	0.0	vir	1			ST111	USA	America_northern	2011	human	KL63	O1	1	0	
+GCF_011682845.1	0	0.9646351927937266	robust	0.0	amr+vir	2	0.0	fused	ST985	Israel	Asia_western	2017	human	KL39	O1	1	1	
+GCF_008120645.1	0	0.6067948881042304	robust	0.0	vir	1			ST461	UK	Europe_northern	2016	human	KL10	O1	1	0	
+GCF_008120605.1	1	0.9697719876758611	robust	0.0		0			ST253	UK	Europe_northern	2016	human	KL62	O1	0	0	
+GCF_008120045.1	1	0.9644285713113623	robust	0.0		0			ST2211	UK	Europe_northern	2016	human	KL10	O1	0	0	
+GCF_008119815.1	1	0.9622139236177767	robust	0.0		0			ST253	UK	Europe_northern	2016	human	KL35	O1	0	0	
+GCF_008630225.1	0	0.9585992467712271	robust	0.0	amr	1			ST20-1LV	China	Asia_eastern	2013	human	KL28	O1	0	2	
+GCF_008630125.1	0	0.9769896478285033	robust	0.0	amr+vir	2	0.0	fused	ST25	China	Asia_eastern	2013	human	KL2	O1	3	2	event_90_ST25 NDM-1 China
+GCF_002186895.1	0	0.9636464392999293	robust	0.0	amr	1			ST1035	Nigeria	Africa_sub_saharan	2010	human	KL57	O1	0	0	
+GCF_002186705.1	0	0.9666774763783236	robust	0.0	amr	1			ST25	Nigeria	Africa_sub_saharan	2010	human	KL2	O1	0	1	
+GCF_000822965.1	1	0.9650284573377121	robust	0.0		0			ST70-1LV	Italy	Europe_southern	2012	human	KL122	O1	0	0	
+GCF_003286995.1	1	0.9619206091082222	robust	0.0	amr+vir	2	0.0	fused	ST1660	China	Asia_eastern	2015	human	KL1	O1	5	2	event_34_ST1660 KPC-2 China
+GCF_001720625.1	1	0.9625426495951306	robust	0.0	vir	1			ST3798	Russia	Europe_eastern	2013	human	KL2	O1	3	0	
+GCF_003194965.1	1	0.9613878544680171	robust	0.0	vir	1			ST65	Russia	Europe_eastern	2014	human	KL2	O1	5	0	
+GCF_004924315.1	1	0.9668495405659148	robust	0.0	amr+vir	2	0.0	fused	ST23	USA	America_northern	2016	human	KL1	O1	5	2	event_75_ST23 KPC-2 USA
+GCF_003569855.1	0	0.9663768076164863	robust	0.0	amr+vir	2	0.0	fused	ST2237	China	Asia_eastern	2018	human	KL19	O1	4	2	event_42_ST2237 iuc1 China
+GCF_003569845.1	0	0.9598520626729088	robust	0.0	amr+vir	2	0.0	fused	ST2237	China	Asia_eastern	2018	human	KL19	O1	4	2	event_42_ST2237 iuc1 China
+GCF_000710805.1	1	0.9696580863000268	robust	0.0	vir	1			ST65	Malaysia	Asia_SE	unknown	human	KL2	O1	3	0	
+GCF_001611095.1	0	0.962109407795729	robust	0.0	amr	1			ST383	Greece	Europe_southern	2013	human	KL30	O1	0	0	
+GCF_001611055.1	1	0.961089471436772	robust	0.0		0			ST383	Greece	Europe_southern	2011	human	KL30	O1	0	0	
+GCF_004311145.1	1	0.9595606614880912	robust	0.0		0			ST220	Japan	Asia_eastern	2014	human	KL114	O1	0	0	
+GCF_004311865.1	1	0.9642533907324471	robust	0.0		0			ST1109	Japan	Asia_eastern	2014	human	KL54	O1	0	0	
+GCF_002186435.1	0	0.9596919289626545	robust	0.0	amr	1			ST530	Nigeria	Africa_sub_saharan	2013	human	KL62	O1	0	1	
+GCF_003196555.1	0	0.372147722131169	intermediate	0.47368421052631576	amr	1			ST70	USA	America_northern	2017	human	KL122	O1	0	1	
+GCF_902508605.1	1	0.9637953813969007	robust	0.0		0			ST784-1LV	China	Asia_eastern	2017	human	KL1	O1	0	0	
+GCF_902508635.1	1	0.9656882150932762	robust	0.631578947368421	amr+vir	2	0.0	fused	ST700	China	Asia_eastern	2017	human	KL1	O1	4	0	
+GCF_902508795.1	1	0.9602457219663406	robust	0.0	vir	1			ST65	China	Asia_eastern	2017	human	KL2	O1	3	0	
+GCF_902509275.1	1	0.9637499840505795	robust	0.3157894736842105	amr+vir	2	0.0	fused	ST896-1LV	China	Asia_eastern	2017	human	KL3	O1	3	0	
+GCF_902508465.1	1	0.9618788026967728	robust	0.0	amr+vir	2	0.0	fused	ST1660	China	Asia_eastern	2017	human	KL1	O1	5	0	
+GCF_010586985.1	0	0.9681455335248597	robust	0.0	amr	1			ST10	USA	America_northern	unknown	lab strain	KL10	O1	0	0	
+GCF_004402035.1	0	0.9686901953362883	robust	0.10526315789473684	amr	1			ST2121	Uganda	Africa_sub_saharan	unknown	unknown	KL113	O1	0	0	
+GCF_002202275.1	0	0.9687831236864397	robust	0.0	amr	1			ST1161	unknown	unknown	unknown	unknown	KL19	O1	0	1	
+GCF_000949515.1	1	0.9594743452828687	robust	0.0	vir	1			ST375	Germany	Europe_western	2014	unknown	KL2	O1	3	0	
+GCF_004023985.1	0	0.9615155598033458	robust	0.0	amr	1			ST2793	USA	America_northern	2017	unknown	KL55	O1	0	2	
+GCF_900451655.1	1	0.9571431197254934	robust	0.0	vir	1			ST3765	unknown	unknown	1932	unknown	KL1	O1	3	0	
+GCF_004127495.1	0	0.9621330525740751	robust	0.0	amr	1			ST256	China	Asia_eastern	2014	chicken	KL28	O2	0	2	
+GCF_009184445.1	0	0.9634194526704183	robust	0.3157894736842105	amr	1			ST661	Brazil	America_Latin_Caribbean	2018	environmental	KL132	O2	0	0	
+GCF_009184435.1	0	0.9629419889897973	robust	0.3157894736842105	amr	1			ST4416	Brazil	America_Latin_Caribbean	2018	environmental	KL142	O2	0	0	
+GCF_003937465.1	0	0.9654774059847474	robust	0.0	amr+vir	2	0.0	fused	ST3741	Pakistan	Asia_southern	2016	environmental	KL64	O2	1	2	
+GCF_003937005.1	0	0.9664866375152471	robust	0.0	amr+vir	2	0.0	fused	ST3742	Pakistan	Asia_southern	2016	environmental	KL64	O2	1	2	
+GCF_900172185.1	1	0.9616624834812815	robust	0.0		0			ST1919	UK	Europe_northern	2014	environmental	KL28	O2	0	0	
+GCF_900171905.1	1	0.9609922891969449	robust	0.0		0			ST3008	UK	Europe_northern	2014	environmental	KL22	O2	0	0	
+GCF_900092865.1	0	0.9576343436404401	robust	0.0	amr	1			ST1966	Thailand	Asia_SE	2015	environmental	KL43	O2	0	1	
+GCF_002182575.1	0	0.9583907763237226	robust	0.10526315789473684	amr	1			ST3586	USA	America_northern	2013	human	KL102	O2	0	1	
+GCF_008867725.1	0	0.9604811991871668	robust	0.0	amr	1			ST464	Spain	Europe_southern	2018	human	KL53	O2	0	2	
+GCF_900084005.1	0	0.5665797639207195	robust	0.0	vir	1			ST3574	UK	Europe_northern	2006	human	KL48	O2	1	0	
+GCF_900494675.1	1	0.8791069084458227	robust	0.0	amr	1			ST1545	Thailand	Asia_SE	2016	human	KL55	O2	0	2	
+GCF_900494145.1	1	0.9659281474498576	robust	0.0		0			ST3591	Thailand	Asia_SE	2016	human	KL22	O2	0	0	
+GCF_900494305.1	1	0.8055972137740264	robust	0.0	amr	1			ST3593	Thailand	Asia_SE	2016	human	KL28	O2	0	2	
+GCF_900493325.1	0	0.6404975197337776	robust	0.0	vir	1			ST661	Thailand	Asia_SE	2016	human	KL24	O2	1	0	
+GCF_902165635.1	0	0.9624716708165783	robust	0.21052631578947367	amr+vir	2	0.0	fused	ST2805	UK	Europe_northern	2018	human	KL110	O2	1	0	
+GCF_900774895.1	1	0.9622183352901834	robust	0.0		0			ST556	Caribbean	America_Latin_Caribbean	unknown	human	KL62	O2	0	0	
+GCF_900775375.1	0	0.9607881516768167	robust	0.5263157894736842	amr+vir	2	0.0	fused	ST268	Caribbean	America_Latin_Caribbean	unknown	human	KL20	O2	1	0	
+GCF_900775805.1	0	0.9569074830928943	robust	0.0	amr	1			ST147	Caribbean	America_Latin_Caribbean	unknown	human	KL64	O2	0	1	
+GCF_002187735.1	0	0.9578790086907709	robust	0.0	amr+vir	2	0.0	fused	ST716	Nigeria	Africa_sub_saharan	2016	human	KL110	O2	1	1	
+GCF_002108275.1	0	0.9554663450632133	robust	0.0	amr+vir	2	0.0	fused	ST147	Philippines	Asia_SE	2013	human	KL64	O2	1	1	
+GCF_002776395.1	0	0.9635018219039959	robust	0.0	amr+vir	2	0.0	fused	ST45	Lebanon	Asia_western	2015	human	KL24	O2	1	2	
+GCF_007993545.1	0	0.9695641508685414	robust	0.0	amr+vir	2	0.0	fused	ST348	Portugal	Europe_southern	2012	human	KL62	O2	1	1	
+GCF_001031245.1	0	0.960423003889851	robust	0.0	amr	1			ST432	USA	America_northern	2014	human	KL62	O2	0	1	
+GCF_001032125.1	1	0.9582702901494919	robust	0.0		0			ST158	USA	America_northern	2014	human	KL62	O2	0	0	
+GCF_002854585.1	0	0.9626639334208381	robust	0.0	amr+vir	2	0.0	fused	ST45-1LV	Colombia	America_Latin_Caribbean	2007	human	KL24	O2	1	1	
+GCF_900498995.1	0	0.9650399676751373	robust	0.0	amr+vir	2	0.0	fused	ST704	Germany	Europe_western	2014	human	KL31	O2	1	1	
+GCF_900086265.1	0	0.9594029987074094	robust	0.0	amr	1			ST158	UK	Europe_northern	2006	human	KL62	O2	0	1	
+GCF_900086365.1	0	0.9721532925118084	robust	0.0	amr	1			ST27	UK	Europe_northern	2007	human	KL117	O2	0	0	
+GCF_900084595.1	0	0.9626401382692892	robust	0.0	amr	1			ST1380	UK	Europe_northern	2008	human	KL31	O2	0	1	
+GCF_900086155.1	0	0.9590014955317082	robust	0.0	amr	1			ST147-1LV	UK	Europe_northern	2004	human	KL64	O2	0	1	
+GCF_001460505.1	0	0.9639564654214245	robust	0.0	amr	1			ST1782	Netherlands	Europe_western	2012	human	KL62	O2	0	1	
+GCF_001693715.1	0	0.9704078708487701	robust	0.0	amr	1			ST301	Denmark	Europe_northern	2012	human	KL7	O2	0	1	
+GCF_003123945.1	0	0.9642217845426492	robust	0.0	amr+vir	2	0.0	fused	ST147	France	Europe_western	2017	human	KL64	O2	1	2	
+GCF_003432145.1	0	0.5336367990757667	robust	0.0	vir	1			ST661	Australia	Oceania	2014	human	KL24	O2	1	0	
+GCF_002903965.1	0	0.9666519870699124	robust	0.0	amr+vir	2	0.0	fused	ST3751	Spain	Europe_southern	2016	human	KL24	O2	1	3	
+GCF_000694515.1	1	0.9540713900021809	robust	0.0		0			ST35	USA	America_northern	2013	human	KL110	O2	0	0	
+GCF_000773875.1	0	0.9602930029359623	robust	0.0	amr	1			ST199	USA	America_northern	2009	human	KL154	O2	0	2	
+GCF_008083005.1	1	0.963732198666485	robust	0.0		0			ST117-1LV	USA	America_northern	unknown	human	KL163	O2	0	0	
+GCF_900451425.1	1	0.9649832358592112	robust	0.0	vir	1			ST90 (subsp. ozanae)	unknown	unknown	1940	human	KL5	O2	3	0	
+GCF_900451395.1	1	0.9570762887918154	robust	0.0		0			ST3767	unknown	unknown	1940	human	KL43	O2	0	0	
+GCF_006131185.1	1	0.8905509352390557	robust	0.0	amr+vir	2	0.0	fused	ST268	China	Asia_eastern	unknown	human	KL20	O2	5	2	event_95_ST268 KPC-2 China
+GCF_900092705.1	0	0.9645232814771337	robust	0.0	amr	1			ST199	Thailand	Asia_SE	2015	human	KL154	O2	0	0	
+GCF_000822245.1	1	0.9602947264270149	robust	0.0		0			ST268	Italy	Europe_southern	2006	human	KL20	O2	0	0	
+GCF_000823005.1	0	0.9645930633948805	robust	0.5263157894736842	amr+vir	2	0.0	fused	ST45	Italy	Europe_southern	2012	human	KL24	O2	1	0	
+GCF_003363555.1	0	0.9573594860391118	robust	0.0	amr+vir	2	0.0	fused	ST147	Sri Lanka	Asia_southern	2015	human	KL64	O2	1	2	
+GCF_009746245.1	1	0.8126685849158634	robust	0.0	amr	1			ST13	Spain	Europe_southern	unknown	human	KL30	O2	0	2	
+GCF_008081755.1	1	0.9580377547233578	robust	0.0		0			ST267-1LV	USA	America_northern	unknown	human	KL22	O2	0	0	
+GCF_004311125.1	1	0.9621840295238002	robust	0.0		0			ST3822	Japan	Asia_eastern	2014	human	KL102	O2	0	0	
+GCF_004311605.1	1	0.969694146791075	robust	0.0		0			ST3824	Japan	Asia_eastern	2014	human	KL28	O2	0	0	
+GCF_004311625.1	1	0.9644411221878946	robust	0.0		0			ST1164	Japan	Asia_eastern	2014	human	KL62	O2	0	0	
+GCF_004313185.1	1	0.9564679984701759	robust	0.0		0			ST3829	Japan	Asia_eastern	unknown	human	KL7	O2	0	0	
+GCF_004313665.1	1	0.9610357037468656	robust	0.0		0			ST997	Japan	Asia_eastern	2014	human	KL102	O2	0	0	
+GCF_900173825.1	1	0.9582516328400986	robust	0.0		0			ST1189	UK	Europe_northern	2015	human	KL28	O2	0	0	
+GCF_002851905.1	0	0.9650594726425744	robust	0.0	amr+vir	2	0.0	fused	ST1640	China	Asia_eastern	2017	human	KL64	O2	1	2	
+GCF_003262545.1	0	0.9628726012239643	robust	0.0	amr+vir	2	0.0	fused	ST1640	China	Asia_eastern	2017	human	KL64	O2	1	2	
+GCF_002257975.1	0	0.9633393072297055	robust	0.0	amr	1			ST3822	China	Asia_eastern	2015	human	KL102	O2	0	2	
+GCF_002257935.3	1	0.9663969877394903	robust	0.0	amr+vir	2	0.0	fused	ST36	China	Asia_eastern	2015	human	KL62	O2	5	2	event_116_ST36 KPC-2 China
+GCF_002258175.1	0	0.9596103688446624	robust	0.0	amr	1			ST1213	China	Asia_eastern	2014	human	KL103	O2	0	2	
+GCF_902508935.1	1	0.9645114329517599	robust	0.0	vir	1			ST268	China	Asia_eastern	2017	human	KL20	O2	5	0	
+GCF_900451495.1	1	0.9669056530666902	robust	0.0	vir	1			ST3768	unknown	unknown	1955	unknown	KL4	O2	4	0	
+GCF_900451765.1	1	0.9612184038422038	robust	0.0	vir	1			ST91	unknown	unknown	unknown	unknown	KL6	O2	4	0	
+GCF_003664915.1	0	0.9706593838734856	robust	0.0	amr	1			ST1967	China	Asia_eastern	2015	animal manure	KL57	O2	0	1	
+GCF_012167215.1	1	0.9614786587841957	robust	0.0		0			ST4327	China	Asia_eastern	2018	bovine	KL3	O2	0	0	
+GCF_000812525.1	1	0.9692546492511085	robust	0.0		0			ST490	Malaysia	Asia_SE	2014	environmental	KL3	O2	0	0	
+GCF_003937145.1	0	0.9646703734802086	robust	0.0	amr	1			ST617	Pakistan	Asia_southern	2016	environmental	KL122	O2	0	1	
+GCF_003937075.1	0	0.9613205130959227	robust	0.0	amr	1			ST617	Pakistan	Asia_southern	2016	environmental	KL122	O2	0	1	
+GCF_003937475.1	0	0.969212277824634	robust	0.0	amr	1			ST584	Pakistan	Asia_southern	2016	environmental	KL9	O2	0	1	
+GCF_001884465.1	0	0.96145699677381	robust	0.0	amr	1			ST278	Canada	America_northern	2013	environmental	KL136	O2	0	2	
+GCF_001884485.1	0	0.9677713519854106	robust	0.0	amr	1			ST278	Canada	America_northern	2011	environmental	KL136	O2	0	2	
+GCF_013282295.1	0	0.8937398432768165	robust	0.3157894736842105	amr	1			ST659	Norway	Europe_northern	2018	environmental	KL107	O2	0	1	
+GCF_900093285.1	0	0.9582584429003486	robust	0.0	amr+vir	2	0.0	fused	ST394	Thailand	Asia_SE	2015	environmental	KL3	O2	1	1	
+GCF_002104635.1	0	0.9585970711027425	robust	0.0	amr	1			ST2646	Brazil	America_Latin_Caribbean	2016	food	KL102	O2	0	1	
+GCF_002235765.1	0	0.9606198336393174	robust	0.0	amr	1			ST1519	Italy	Europe_southern	2013	human	KL107	O2	0	2	
+GCF_000807395.2	0	0.9689077877594635	robust	0.0	amr	1			ST258	USA	America_northern	2010	human	KL106	O2	0	2	
+GCF_002182245.1	0	0.9601253007829949	robust	0.0	amr	1			ST3587	USA	America_northern	2013	human	KL106	O2	0	2	
+GCF_009826095.1	0	0.968969276663916	robust	0.0	amr	1			ST258-1LV	USA	America_northern	2006	human	KL107	O2	0	2	
+GCF_009825475.1	0	0.96145699677381	robust	0.0	amr	1			ST379	USA	America_northern	2010	human	KL107	O2	0	2	
+GCF_008867705.1	0	0.9609454087898756	robust	0.0	amr	1			ST321	Spain	Europe_southern	2018	human	KL3	O2	0	2	
+GCF_001061605.1	0	0.9677016034821513	robust	0.10526315789473684	amr	1			ST278	USA	America_northern	2013	human	KL136	O2	0	0	
+GCF_002738115.1	0	0.9576671185393274	robust	0.10526315789473684	amr+vir	2	0.0	fused	ST3579	Romania	Europe_eastern	2013	human	KL102	O2	3	2	event_106_ST307/LV iuc1 Romania
+GCF_001701555.1	0	0.9643692875673417	robust	0.0	amr+vir	2	0.0	fused	ST258	Greece	Europe_southern	2012	human	KL106	O2	1	2	
+GCF_900181725.1	0	0.9619409477175925	robust	0.0	amr+vir	2	0.0	fused	ST3805	Pakistan	Asia_southern	unknown	human	KL8	O2	1	2	
+GCF_900181985.1	0	0.8882318986359519	robust	0.3157894736842105	amr	1			ST442	Pakistan	Asia_southern	unknown	human	KL107	O2	0	1	
+GCF_900180845.1	0	0.9569314660553302	robust	0.0	amr+vir	2	0.0	fused	ST3805	Pakistan	Asia_southern	unknown	human	KL8	O2	1	2	
+GCF_900474465.1	0	0.9597188675109354	robust	0.0	amr	1			ST278	Pakistan	Asia_southern	unknown	human	KL136	O2	0	1	
+GCF_900494085.1	0	0.9652612730212138	robust	0.0	amr+vir	2	0.0	fused	ST2426	Thailand	Asia_SE	2016	human	KL117	O2	1	2	
+GCF_900493295.1	0	0.9609009291242442	robust	0.0	amr	1			ST617	Thailand	Asia_SE	2016	human	KL122	O2	0	1	
+GCF_000699325.1	0	0.9641169301360527	robust	0.0	amr	1			ST1125	USA	America_northern	2003	human	KL102	O2	0	1	
+GCF_902161835.1	0	0.5662602102583347	robust	0.0	vir	1			ST1412	UK	Europe_northern	2018	human	KL7	O2	1	0	
+GCF_900775565.1	1	0.9623364232944339	robust	0.0		0			ST298	Caribbean	America_Latin_Caribbean	unknown	human	KL27	O2	0	0	
+GCF_900774445.1	1	0.9678831307498735	robust	0.0		0			ST36-1LV	Caribbean	America_Latin_Caribbean	unknown	human	KL102	O2	0	0	
+GCF_900774535.1	0	0.5499122909168659	robust	0.0	vir	1			ST1583	Caribbean	America_Latin_Caribbean	unknown	human	KL102	O2	1	0	
+GCF_900775855.1	0	0.9671834602492193	robust	0.0	amr+vir	2	0.0	fused	ST462	Caribbean	America_Latin_Caribbean	unknown	human	KL9	O2	1	1	
+GCF_900776055.1	0	0.9591023594208647	robust	0.0	amr	1			ST307-1LV	Caribbean	America_Latin_Caribbean	unknown	human	KL102	O2	0	1	
+GCF_900776085.1	0	0.9562799805428366	robust	0.0	amr	1			ST307-1LV	Caribbean	America_Latin_Caribbean	unknown	human	KL102	O2	0	1	
+GCF_900776305.1	0	0.961893645361906	robust	0.0	amr	1			ST307	Caribbean	America_Latin_Caribbean	unknown	human	KL102	O2	0	1	
+GCF_900776515.1	1	0.9540426782377307	robust	0.0		0			ST4090	Caribbean	America_Latin_Caribbean	unknown	human	KL112	O2	0	0	
+GCF_003325525.1	0	0.9669612995265897	robust	0.0	amr	1			ST442	Brazil	America_Latin_Caribbean	2011	human	KL107	O2	0	1	
+GCF_002269895.1	0	0.9652399053564851	robust	0.0	amr	1			ST258-1LV	USA	America_northern	2010	human	KL106	O2	0	3	
+GCF_900465375.1	0	0.9638342877226753	robust	0.0	amr	1			ST1519	Italy	Europe_southern	2017	human	KL107	O2	0	2	
+GCF_900465335.1	0	0.9618298701224836	robust	0.0	amr	1			ST1519	Italy	Europe_southern	2017	human	KL107	O2	0	0	
+GCF_013395175.1	1	0.967681347965234	robust	0.0		0			ST225	Tanzania	Africa_sub_saharan	2019	human	KL3	O2	0	0	
+GCF_013170325.1	0	0.9642225067911875	robust	0.21052631578947367	amr	1			ST36	Colombia	America_Latin_Caribbean	2014	human	KL153	O2	0	2	
+GCF_001456135.1	0	0.9654850449025237	robust	0.0	amr	1			ST941	USA	America_northern	2010	human	KL25	O2	0	3	
+GCF_002751475.1	0	0.9662273913786255	robust	0.0	amr	1			ST471	China	Asia_eastern	2015	human	KL57	O2	0	1	
+GCF_002751515.1	0	0.9603160169713416	robust	0.0	amr	1			ST471	China	Asia_eastern	2015	human	KL57	O2	0	1	
+GCF_002853955.1	0	0.9685803152351697	robust	0.0	amr+vir	2	0.0	fused	ST560	Colombia	America_Latin_Caribbean	2013	human	KL9	O2	1	2	
+GCF_002851155.1	0	0.962842191781099	robust	0.0	amr	1			ST442	Colombia	America_Latin_Caribbean	2005	human	KL107	O2	0	0	
+GCF_002851615.1	0	0.8892672890666002	robust	0.3157894736842105	amr	1			ST999	Colombia	America_Latin_Caribbean	2002	human	KL22	O2	0	0	
+GCF_002854285.1	0	0.9625518342748381	robust	0.0	amr	1			ST1440	Colombia	America_Latin_Caribbean	2011	human	KL19	O2	0	2	
+GCF_009661265.1	0	0.9594105059732264	robust	0.0	amr	1			ST377	Russia	Europe_eastern	2017	human	KL102	O2	0	2	
+GCF_009661675.1	0	0.9672934332294224	robust	0.0	amr	1			ST377	Russia	Europe_eastern	2017	human	KL102	O2	0	2	
+GCF_002184415.2	0	0.9569086499188898	robust	0.0	amr	1			ST258	USA	America_northern	2015	human	KL107	O2	0	2	
+GCF_002185465.2	0	0.6615999521898431	robust	0.0	amr+vir	2	0.0	fused	ST258	USA	America_northern	2014	human	KL107	O2	2	2	
+GCF_002185515.2	0	0.9610924431739949	robust	0.0	amr	1			ST3631	USA	America_northern	2014	human	KL107	O2	0	2	
+GCF_002970515.2	0	0.9633741275131795	robust	0.0	amr	1			ST418	USA	America_northern	2013	human	KL106	O2	0	2	
+GCF_002970785.2	0	0.9681183069307857	robust	0.0	amr	1			ST3631	USA	America_northern	2014	human	KL107	O2	0	2	
+GCF_002970835.2	0	0.9639869614154861	robust	0.0	amr	1			ST418	USA	America_northern	2014	human	KL106	O2	0	2	
+GCF_002936615.2	1	0.8712636330033174	robust	0.0	amr	1			ST941	USA	America_northern	2014	human	KL102	O2	0	2	
+GCF_002936645.2	0	0.9635847188032143	robust	0.0	amr	1			ST36	USA	America_northern	2015	human	KL27	O2	0	2	
+GCF_013180385.1	0	0.8889461939721596	robust	0.0	amr+vir	2	0.0	fused	ST11-1LV	Brazil	America_Latin_Caribbean	2005	human	KL27	O2	2	1	
+GCF_001704235.1	0	0.9621237847197976	robust	0.0	amr	1			ST34	USA	America_northern	2010	human	KL57	O2	0	2	
+GCF_004120135.1	1	0.9660077620110442	robust	0.0		0			ST3686	China	Asia_eastern	2014	human	KL27	O2	0	0	
+GCF_002187255.1	0	0.96183606770674	robust	0.0	amr	1			ST108	Nigeria	Africa_sub_saharan	2015	human	KL112	O2	0	1	
+GCF_003183925.1	0	0.9776262533244888	robust	0.0	amr+vir	2	0.0	fused	ST377	Turkey	Asia_western	2017	human	KL102	O2	1	3	
+GCF_003183935.1	0	0.9608048550244516	robust	0.0	amr	1			ST22	Turkey	Asia_western	2017	human	KL9	O2	0	2	
+GCF_002761515.1	1	0.9588525129115955	robust	0.0		0			ST659	China	Asia_eastern	2010	human	KL107	O2	0	0	
+GCF_002174075.1	0	0.9581673235301453	robust	0.0	amr	1			ST462	China	Asia_eastern	2012	human	KL9	O2	0	0	
+GCF_002167115.1	0	0.9648531106725129	robust	0.0	amr+vir	2	0.0	fused	ST307-1LV	UK	Europe_northern	2015	human	KL102	O2	1	3	
+GCF_002167105.1	0	0.9621348374461811	robust	0.0	amr	1			ST2975	UK	Europe_northern	2015	human	KL102	O2	0	2	
+GCF_013187465.1	0	0.9764956394180603	robust	0.10526315789473684	amr	1			ST36	Nigeria	Africa_sub_saharan	2019	human	KL102	O2	0	0	
+GCF_900498435.1	1	0.9629640368668263	robust	0.0		0			ST3692	Germany	Europe_western	2014	human	KL8	O2	0	0	
+GCF_003660185.1	1	0.9618888744169547	robust	0.0	vir	1			ST105	Australia	Oceania	2013	human	KL102	O2	1	0	
+GCF_900085805.1	1	0.9660995507310703	robust	0.0		0			ST2599-1LV	UK	Europe_northern	2006	human	KL27	O2	0	0	
+GCF_900086415.1	0	0.9636962006748825	robust	0.0	amr	1			ST560	UK	Europe_northern	2007	human	KL12	O2	0	1	
+GCF_900086445.1	0	0.885399939302306	robust	0.3157894736842105	amr	1			ST280	UK	Europe_northern	2008	human	KL23	O2	0	0	
+GCF_900084635.1	1	0.9521105930769971	robust	0.0		0			ST225-1LV	UK	Europe_northern	2008	human	KL3	O2	0	0	
+GCF_900086055.1	0	0.28931527029485693	intermediate	0.47368421052631576	amr	1			ST423	UK	Europe_northern	2001	human	KL8	O2	0	1	
+GCF_003006555.1	0	0.610559066015759	robust	0.0	vir	1			ST1419	Malaysia	Asia_SE	2014	human	KL136	O2	1	0	
+GCF_900084945.1	1	0.959902727688625	robust	0.0		0			ST490	UK	Europe_northern	2003	human	KL3	O2	0	0	
+GCF_900085135.1	1	0.9653373952740861	robust	0.0		0			ST3715	UK	Europe_northern	2004	human	KL8	O2	0	0	
+GCF_900407225.1	1	0.9666716002054088	robust	0.0		0			ST3718	Tanzania	Africa_sub_saharan	2015	human	KL23	O2	0	0	
+GCF_002166965.1	0	0.9620642854768947	robust	0.0	amr	1			ST307	Colombia	America_Latin_Caribbean	2014	human	KL102	O2	0	1	
+GCF_002120065.1	0	0.9622815468264811	robust	0.0	amr	1			ST868	Colombia	America_Latin_Caribbean	2014	human	KL107	O2	0	2	
+GCF_013056105.1	0	0.9630957529549827	robust	0.0	amr	1			ST512	Italy	Europe_southern	2013	human	KL107	O2	0	2	
+GCF_001678695.1	1	0.962174299381493	robust	0.0		0			ST3586	Denmark	Europe_northern	2012	human	KL102	O2	0	0	
+GCF_000512165.1	0	0.96399649436572	robust	0.0	amr+vir	2	0.0	fused	ST442	Brazil	America_Latin_Caribbean	2009	human	KL107	O2	1	3	
+GCF_002631045.1	0	0.9576076405644456	robust	0.0	amr	1			ST442	Brazil	America_Latin_Caribbean	2003	human	KL107	O2	0	2	
+GCF_002744555.1	0	0.9680457732510546	robust	0.0	amr	1			ST1015	Thailand	Asia_SE	2015	human	KL17	O2	0	1	
+GCF_011029935.1	0	0.9643385991198479	robust	0.0	amr	1			ST394	Lebanon	Asia_western	2016	human	KL3	O2	0	2	
+GCF_900608415.1	0	0.9632055098536859	robust	0.0	amr	1			ST512	Switzerland	Europe_western	2014	human	KL107	O2	0	2	
+GCF_902703655.1	0	0.9598854817779923	robust	0.0	amr	1			ST745	Italy	Europe_southern	2016	human	KL107	O2	0	3	
+GCF_000784945.1	0	0.9623986118870971	robust	0.0	amr	1			ST1518	USA	America_northern	2013	human	KL64	O2	0	2	
+GCF_002248635.1	0	0.9630602709884117	robust	0.0	amr+vir	2	0.0	fused	ST105	Thailand	Asia_SE	2016	human	KL102	O2	1	1	
+GCF_001182565.1	0	0.9607344601250981	robust	0.0	amr	1			ST512	Italy	Europe_southern	2013	human	KL107	O2	0	3	
+GCF_002261615.1	0	0.9624488058275427	robust	0.21052631578947367	amr+vir	2	0.0	fused	ST11-1LV	China	Asia_eastern	2016	human	KL105	O2	1	2	
+GCF_009387915.1	0	0.9683564369679476	robust	0.0	amr	1			ST1315	Laos	Asia_SE	2012	human	KL64	O2	0	0	
+GCF_003095615.1	0	0.965731937777143	robust	0.0	amr+vir	2	0.0	fused	ST442	Brazil	America_Latin_Caribbean	2011	human	KL107	O2	1	3	
+GCF_013305325.1	0	0.9629593967234722	robust	0.0	amr+vir	2	0.0	fused	ST515	Australia	Oceania	2016	human	KL102	O2	1	1	
+GCF_008082855.1	1	0.9570329893914411	robust	0.0		0			ST188	USA	America_northern	unknown	human	KL51	O2	0	0	
+GCF_900451725.1	1	0.9660339669837592	robust	0.0	vir	1			ST67 (subsp. rhinoscleromatis)	Netherlands	Europe_western	unknown	human	KL3	O2	4	0	
+GCF_008632745.1	0	0.95902240459374	robust	0.0	amr	1			ST4298	China	Asia_eastern	2018	human	KL122	O2	0	2	
+GCF_008630085.1	0	0.9653219852562004	robust	0.0	amr+vir	2	0.0	fused	ST105	China	Asia_eastern	2016	human	KL102	O2	1	2	
+GCF_005239285.1	0	0.965948075667434	robust	0.0	amr	1			ST3795	USA	America_northern	2016	human	KL107	O2	0	2	
+GCF_009710025.1	0	0.9650345135547301	robust	0.0	amr	1			ST307	Romania	Europe_eastern	unknown	human	KL102	O2	0	1	
+GCF_000822485.1	0	0.5957723510664876	robust	0.0	vir	1			ST1628	Italy	Europe_southern	2013	human	KL7	O2	1	0	
+GCF_003037695.1	0	0.961983616499233	robust	0.0	amr	1			ST490	China	Asia_eastern	2016	human	KL3	O2	0	2	
+GCF_002852895.1	0	-0.1716104236600165	fragile	0.5263157894736842	amr	1			ST3817	China	Asia_eastern	2016	human	KL102	O2	0	2	
+GCF_001701695.1	0	0.9571917075474496	robust	0.0	amr	1			ST896	China	Asia_eastern	2011	human	KL3	O2	0	1	
+GCF_004311245.1	0	0.551856657055109	robust	0.0	vir	1			ST105-1LV	Japan	Asia_eastern	2013	human	KL102	O2	1	0	
+GCF_004311765.1	1	0.9662139787855394	robust	0.0		0			ST896	Japan	Asia_eastern	2014	human	KL3	O2	0	0	
+GCF_004311785.1	1	0.9594055370588286	robust	0.0		0			ST1419	Japan	Asia_eastern	2014	human	KL136	O2	0	0	
+GCF_004311845.1	0	0.8780704748392663	robust	0.2631578947368421	amr	1			ST883	Japan	Asia_eastern	2014	human	KL109	O2	0	0	
+GCF_004312025.1	1	0.9628955345395038	robust	0.0	vir	1			ST218	Japan	Asia_eastern	2014	human	KL57	O2	4	0	
+GCF_004312665.1	0	0.7141575004805834	robust	0.0	vir	1			ST3826	Japan	Asia_eastern	2013	human	KL27	O2	1	0	
+GCF_004312785.1	1	0.968353146048009	robust	0.0		0			ST1245	Japan	Asia_eastern	2013	human	KL3	O2	0	0	
+GCF_004313245.1	1	0.9621673230249939	robust	0.0		0			ST433	Japan	Asia_eastern	2013	human	KL102	O2	0	0	
+GCF_000566845.1	1	0.9667240514274245	robust	0.0		0			ST1444	USA	America_northern	unknown	human	KL10	O2	0	0	
+GCF_000492515.1	0	0.962864992071872	robust	0.0	amr	1			ST1198	USA	America_northern	unknown	human	KL8	O2	0	0	
+GCF_000827775.2	1	0.9654085542393646	robust	0.0	vir	1			ST67 (subsp. rhinoscleromatis)	Indonesia	Asia_SE	1973	human	KL3	O2	4	0	
+GCF_002257965.1	0	0.9649835875125387	robust	0.0	amr	1			ST2004	China	Asia_eastern	2015	human	KL28	O2	0	2	
+GCF_002258085.1	0	0.9601669783574145	robust	0.0	amr	1			ST394	China	Asia_eastern	2014	human	KL3	O2	0	2	
+GCF_003195915.1	0	0.8849871208559775	robust	0.0	amr+vir	2	0.0	fused	ST3843	USA	America_northern	2017	human	KL107	O2	2	2	
+GCF_003195395.1	1	0.9607933141591675	robust	0.0		0			ST12	USA	America_northern	2017	human	KL122	O2	0	0	
+GCF_003195315.1	1	0.9636018342903306	robust	0.0		0			ST3850	USA	America_northern	2017	human	KL140	O2	0	0	
+GCF_003196695.1	1	0.9575429139609918	robust	0.0		0			ST433	USA	America_northern	2017	human	KL102	O2	0	0	
+GCF_902508645.1	1	0.9635389300771435	robust	0.0		0			ST2668	China	Asia_eastern	2017	human	KL143	O2	0	0	
+GCF_902509155.1	1	0.958286084528063	robust	0.0	amr+vir	2	0.0	fused	ST218	China	Asia_eastern	2017	human	KL57	O2	3	1	event_41_ST218 CTX-M-14 China
+GCF_902509015.1	0	0.7504672309485498	robust	0.0	amr+vir	2	0.0	fused	ST659	China	Asia_eastern	2017	human	KL3	O2	3	0	
+GCF_902509255.1	1	0.9633242035005362	robust	0.0	vir	1			ST1037	China	Asia_eastern	2017	human	KL7	O2	1	0	
+GCF_002910085.1	0	0.9666929475280379	robust	0.0	amr+vir	2	0.0	fused	ST3792	Australia	Oceania	2015	lab strain	KL106	O2	1	2	
+GCF_005048725.1	0	0.9692354802862445	robust	0.0	amr	1			ST1165	USA	America_northern	2018	Mus musculus	KL45	O2	0	0	
+GCF_005048785.1	0	0.9611738618401181	robust	0.0	amr	1			ST1165	USA	America_northern	2018	Mus musculus	KL45	O2	0	0	
+GCF_005048095.1	0	0.9607294699199369	robust	0.0	amr	1			ST1165	USA	America_northern	2018	Mus musculus	KL45	O2	0	0	
+GCF_005047295.1	0	0.9695080869191567	robust	0.0	amr	1			ST1165	USA	America_northern	2018	Mus musculus	KL45	O2	0	0	
+GCF_013407825.1	0	0.7978947049874303	robust	0.0	vir	1			ST1519	Italy	Europe_southern	2017	object	KL107	O2	1	0	
+GCF_001874875.1	0	0.9635159053930834	robust	0.0	amr	1			ST34	unknown	unknown	unknown	unknown	KL57	O2	0	2	
+GCF_901670045.1	0	0.9618166747826401	robust	0.0	amr+vir	2	0.0	fused	ST37-1LV	unknown	unknown	unknown	unknown	KL23	O2	1	3	
+GCF_901421925.1	0	0.9601145881029225	robust	0.42105263157894735	amr	1			ST321	unknown	unknown	1984	unknown	KL3	O2	0	0	
+GCF_900451795.1	1	0.9619280050028266	robust	0.0	vir	1			ST3772	UK	Europe_northern	unknown	unknown	KL3	O2	4	0	
+GCF_004137665.1	1	0.9658936889436918	robust	0.0		0			ST20	China	Asia_eastern	2015	unknown	KL28	O2	0	0	
+GCF_000967845.1	1	0.9614819515697175	robust	0.0	vir	1			ST67 (subsp. rhinoscleromatis)	unknown	unknown	unknown	unknown	KL3	O2	3	0	
+GCF_012113655.1	1	0.9675686355782558	robust	0.0		0			ST629	China	Asia_eastern	2019	bovine	KL134	O3/O3a	0	0	
+GCF_001463525.1	0	0.9708817101041642	robust	0.0	amr	1			ST855	Norway	Europe_northern	2014	human	KL10	O3/O3a	0	2	
+GCF_900493075.1	0	0.9628485315207299	robust	0.0	amr	1			ST629	Thailand	Asia_SE	2016	human	KL10	O3/O3a	0	1	
+GCF_902166265.1	1	0.9674923019257434	robust	0.0		0			ST2452	UK	Europe_northern	2018	human	KL11	O3/O3a	0	0	
+GCF_900774965.1	0	0.9602059588476881	robust	0.10526315789473684	amr	1			ST3639	Caribbean	America_Latin_Caribbean	unknown	human	KL22	O3/O3a	0	0	
+GCF_900774505.1	1	0.9675817302818169	robust	0.0		0			ST1607	Caribbean	America_Latin_Caribbean	unknown	human	KL55	O3/O3a	0	0	
+GCF_900776445.1	1	0.9689803341044655	robust	0.0		0			ST528	Caribbean	America_Latin_Caribbean	unknown	human	KL10	O3/O3a	0	0	
+GCF_001066095.1	1	0.9619083307612379	robust	0.0		0			ST3601	USA	America_northern	2013	human	KL151	O3/O3a	0	0	
+GCF_001721565.1	1	0.9610388457574655	robust	0.0		0			ST3607	India	Asia_southern	2015	human	KL25	O3/O3a	0	0	
+GCF_000567605.1	0	0.9638820377761443	robust	0.0	amr	1			ST113	USA	America_northern	2012	human	KL114	O3/O3a	0	2	
+GCF_001720345.1	0	0.9568903075236516	robust	0.0	amr	1			ST855	Brazil	America_Latin_Caribbean	2010	human	KL10	O3/O3a	0	3	
+GCF_002854035.1	0	0.9626348395777443	robust	0.0	amr	1			ST629	Colombia	America_Latin_Caribbean	2014	human	KL10	O3/O3a	0	2	
+GCF_002851495.1	1	0.9662901969780209	robust	0.0	amr+vir	2	0.0	fused	ST77	Colombia	America_Latin_Caribbean	2005	human	KL55	O3/O3a	1	1	
+GCF_002936255.2	0	0.9601970041870873	robust	0.0	amr	1			ST2167	USA	America_northern	2012	human	KL10	O3/O3a	0	2	
+GCF_000783515.2	0	0.9641715314944779	robust	0.47368421052631576	amr	1			ST1263	USA	America_northern	2013	human	KL10	O3/O3a	0	0	
+GCF_002188105.1	1	0.9663126277064978	robust	0.0		0			ST3687	Nigeria	Africa_sub_saharan	2013	human	KL55	O3/O3a	0	0	
+GCF_900085875.1	0	0.8700738236334165	robust	0.3157894736842105	amr	1			ST1180	UK	Europe_northern	2008	human	KL125	O3/O3a	0	1	
+GCF_011006575.1	0	0.9644972568767403	robust	0.0	amr+vir	2	0.0	fused	ST1027	China	Asia_eastern	2012	human	KL20	O3/O3a	4	1	event_2_ST1027 China unresolvable
+GCF_900084745.1	0	0.9575274229929525	robust	0.0	amr	1			ST776	UK	Europe_northern	2002	human	KL57	O3/O3a	0	0	
+GCF_002251875.2	0	0.9634936425826526	robust	0.0	amr+vir	2	0.0	fused	ST3541	Thailand	Asia_SE	2016	human	KL123	O3/O3a	3	1	event_114_ST3541 CTX-M-14 Thailand
+GCF_902705025.1	1	0.9603921099441918	robust	0.0	amr	1			ST2185	Italy	Europe_southern	2016	human	KL11	O3/O3a	0	2	
+GCF_001950655.1	0	0.9643380583960145	robust	0.0	amr	1			ST485	Japan	Asia_eastern	unknown	human	KL10	O3/O3a	0	0	
+GCF_900461405.1	1	0.9654412954664555	robust	0.0		0			ST116	unknown	unknown	unknown	human	KL11	O3/O3a	0	0	
+GCF_900451965.1	0	0.8884172557036003	robust	0.2631578947368421	amr	1			ST150	UK	Europe_northern	unknown	human	KL25	O3/O3a	0	0	
+GCF_003196815.1	1	0.9679503612247785	robust	0.0		0			ST116	USA	America_northern	2017	human	KL11	O3/O3a	0	0	
+GCF_003571035.1	0	0.4337646186895347	robust	0.0	vir	1			ST2843	New Zealand	Oceania	2014	Phocarctos hookeri	KL114	O3/O3a	3	0	
+GCF_003573795.1	0	0.5599425735874806	robust	0.0	vir	1			ST2843	New Zealand	Oceania	2015	Stercorarius antarcticus	KL114	O3/O3a	3	0	
+GCF_003010735.1	0	0.9589372155439336	robust	0.0	amr	1			ST2167	unknown	unknown	unknown	unknown	KL10	O3/O3a	0	2	
+GCF_003571645.1	0	0.9623491064432796	robust	0.0	amr	1			ST3603	unknown	unknown	unknown	unknown	KL10	O3/O3a	0	2	
+GCF_009184455.1	0	0.9640140790643251	robust	0.3157894736842105	amr	1			ST4415	Brazil	America_Latin_Caribbean	2018	environmental	KL14	O3b	0	0	
+GCF_003173515.1	1	0.9690895161561258	robust	0.0		0			ST2701	India	Asia_southern	2016	environmental	KL5	O3b	0	0	
+GCF_003583115.1	0	0.9653708381171725	robust	0.0	amr	1			ST323	Austria	Europe_western	2016	environmental	KL21	O3b	0	1	
+GCF_003664955.1	0	0.9629540446052058	robust	0.0	amr+vir	2	0.0	fused	ST1738	China	Asia_eastern	2015	environmental	KL38	O3b	1	1	
+GCF_900172065.1	1	0.9589216363930386	robust	0.0		0			ST346	UK	Europe_northern	2014	environmental	KL111	O3b	0	0	
+GCF_900172115.1	0	0.9692556240912468	robust	0.0	amr	1			ST1436	UK	Europe_northern	2014	environmental	KL128	O3b	0	1	
+GCF_900172965.1	0	0.9631021854557271	robust	0.0	amr	1			ST1436	UK	Europe_northern	2015	environmental	KL128	O3b	0	1	
+GCF_900172985.1	0	0.9629560679930838	robust	0.0	amr	1			ST1436	UK	Europe_northern	2015	environmental	KL128	O3b	0	1	
+GCF_900171845.1	0	0.9657709288124238	robust	0.10526315789473684	amr	1			ST277-1LV	UK	Europe_northern	2014	environmental	KL163	O3b	0	1	
+GCF_900171705.1	0	0.9621371532043176	robust	0.10526315789473684	amr	1			ST277	UK	Europe_northern	2014	environmental	KL163	O3b	0	1	
+GCF_011684055.1	0	0.962791699335322	robust	0.0	amr	1			ST3827	Brazil	America_Latin_Caribbean	2019	food	KL111	O3b	0	1	
+GCF_002181635.1	1	0.6799610890000413	robust	0.5263157894736842	amr	1			ST3585	USA	America_northern	2013	human	KL111	O3b	0	2	
+GCF_009826295.1	0	0.9603584980298565	robust	0.0	amr	1			ST21	USA	America_northern	2004	human	KL58	O3b	0	0	
+GCF_009825885.1	0	0.9662470585426801	robust	0.6842105263157895	amr	1			ST584	South Korea	Asia_eastern	2014	human	KL38	O3b	0	0	
+GCF_001060105.1	1	0.9581349150510765	robust	0.0		0			ST846	USA	America_northern	2013	human	KL60	O3b	0	0	
+GCF_900493755.1	1	0.8757974310956476	robust	0.0	amr	1			ST469	Thailand	Asia_SE	2016	human	KL12	O3b	0	2	
+GCF_900494725.1	1	0.9624936099669887	robust	0.0		0			ST1779	Thailand	Asia_SE	2016	human	KL38	O3b	0	0	
+GCF_900494545.1	1	0.9652207593930601	robust	0.0	amr+vir	2	0.0	fused	ST592	Thailand	Asia_SE	2016	human	KL57	O3b	3	2	event_144_ST592 OXA-232 Thailand
+GCF_900494165.1	0	0.9603597093683494	robust	0.21052631578947367	amr+vir	2	0.0	fused	ST353	Thailand	Asia_SE	2016	human	KL110	O3b	1	2	
+GCF_900493345.1	0	0.9575664985394038	robust	0.0	amr	1			ST323	Thailand	Asia_SE	2016	human	KL21	O3b	0	1	
+GCF_900496885.1	1	0.9605119370464145	robust	0.0	vir	1			ST45	Thailand	Asia_SE	2016	human	KL5	O3b	1	0	
+GCF_902159615.1	0	0.6416921338675889	robust	0.0	vir	1			ST104-1LV	UK	Europe_northern	2018	human	KL31	O3b	1	0	
+GCF_902159635.1	1	0.9606962056685537	robust	0.0		0			ST1877	UK	Europe_northern	2018	human	KL14	O3b	0	0	
+GCF_902161325.1	1	0.9636804008804761	robust	0.0		0			ST188	UK	Europe_northern	2018	human	KL31	O3b	0	0	
+GCF_902164535.1	1	0.9618597976697402	robust	0.0		0			ST1877	UK	Europe_northern	2018	human	KL14	O3b	0	0	
+GCF_900774655.1	1	0.9614323084822662	robust	0.0		0			ST528	Caribbean	America_Latin_Caribbean	unknown	human	KL128	O3b	0	0	
+GCF_900775085.1	0	0.49498318224135995	robust	0.0	vir	1			ST1294-3LV	Caribbean	America_Latin_Caribbean	unknown	human	KL13	O3b	1	0	
+GCF_900775295.1	0	0.9576931853625361	robust	0.0	amr	1			ST277	Caribbean	America_Latin_Caribbean	unknown	human	KL46	O3b	0	0	
+GCF_900775425.1	0	0.9570122943057109	robust	0.42105263157894735	amr	1			ST251	Caribbean	America_Latin_Caribbean	unknown	human	KL13	O3b	0	0	
+GCF_900775385.1	1	0.9603077391208793	robust	0.0		0			ST189	Caribbean	America_Latin_Caribbean	unknown	human	KL128	O3b	0	0	
+GCF_900775345.1	1	0.9643422053122227	robust	0.0		0			ST412	Caribbean	America_Latin_Caribbean	unknown	human	KL142	O3b	0	0	
+GCF_900775495.1	1	0.9669659969666421	robust	0.0		0			ST528	Caribbean	America_Latin_Caribbean	unknown	human	KL128	O3b	0	0	
+GCF_900774475.1	0	0.27511338367233495	intermediate	0.2631578947368421	amr	1			ST1569	Caribbean	America_Latin_Caribbean	unknown	human	KL25	O3b	0	0	
+GCF_900775815.1	1	0.9644382796911906	robust	0.0		0			ST1665	Caribbean	America_Latin_Caribbean	unknown	human	KL38	O3b	0	0	
+GCF_900775925.1	0	0.9653223399485643	robust	0.0	amr+vir	2	0.0	fused	ST26-1LV	Caribbean	America_Latin_Caribbean	unknown	human	KL21	O3b	1	1	
+GCF_900775995.1	1	0.9690998218247507	robust	0.0		0			ST742	Caribbean	America_Latin_Caribbean	unknown	human	KL51	O3b	0	0	
+GCF_900776195.1	1	0.9628318316090243	robust	0.0	vir	1			ST592-1LV	Caribbean	America_Latin_Caribbean	unknown	human	KL57	O3b	3	0	
+GCF_001068035.1	1	0.9603523986213778	robust	0.0	vir	1			ST592-1LV	USA	America_northern	2012	human	KL57	O3b	3	0	
+GCF_002188255.1	1	0.9649123664523654	robust	0.0		0			ST1658	Nigeria	Africa_sub_saharan	2016	human	KL19	O3b	0	0	
+GCF_010602565.1	1	0.9670643395340137	robust	0.0		0			ST628	USA	America_northern	2016	human	KL123	O3b	0	0	
+GCF_002775575.1	0	0.636404164614625	robust	0.0	vir	1			ST1593	Lebanon	Asia_western	2014	human	KL137	O3b	1	0	
+GCF_002187615.1	1	0.9640511786974966	robust	0.0		0			ST3612	Nigeria	Africa_sub_saharan	2015	human	KL151	O3b	0	0	
+GCF_000492335.1	1	0.965781454243179	robust	0.0		0			ST1430	USA	America_northern	2012	human	KL122	O3b	0	0	
+GCF_000567145.1	1	0.9641931625812827	robust	0.0		0			ST3614	USA	America_northern	2013	human	KL21	O3b	0	0	
+GCF_000567065.1	0	0.5512399446816358	robust	0.0	vir	1			ST3615	USA	America_northern	2013	human	KL2	O3b	1	0	
+GCF_013392195.1	0	0.9626559418350772	robust	0.5263157894736842	amr+vir	2	0.0	fused	ST560-1LV	Switzerland	Europe_western	2019	human	KL46	O3b	1	1	
+GCF_010183705.1	0	0.9630897128621808	robust	0.0	amr	1			ST3493	China	Asia_eastern	2017	human	KL140	O3b	0	2	
+GCF_001902535.1	0	0.9641657893007829	robust	0.0	amr	1			ST340	USA	America_northern	2011	human	KL55	O3b	0	2	
+GCF_000805735.1	0	0.9610514574903332	robust	0.0	amr	1			ST323	Brazil	America_Latin_Caribbean	2013	human	KL21	O3b	0	3	
+GCF_001032775.1	1	0.07393262388564997	fragile	0.5789473684210527	amr	1			ST3626	USA	America_northern	2014	human	KL8	O3b	0	2	
+GCF_002854855.1	0	0.5935664614289454	robust	0.3157894736842105	amr	1			ST584	Colombia	America_Latin_Caribbean	2004	human	KL38	O3b	0	0	
+GCF_002853895.1	0	0.9665450034290018	robust	0.0	amr	1			ST834	Colombia	America_Latin_Caribbean	2003	human	KL123	O3b	0	0	
+GCF_002851135.1	0	0.9595024765259936	robust	0.0	amr+vir	2	0.0	fused	ST353	Colombia	America_Latin_Caribbean	2005	human	KL110	O3b	1	2	
+GCF_003400915.1	0	0.9630363879553834	robust	0.0	amr	1			ST628	USA	America_northern	2014	human	KL2	O3b	0	1	
+GCF_002185975.2	1	0.7933494297038501	robust	0.5263157894736842	amr	1			ST247	USA	America_northern	2015	human	KL10	O3b	0	2	
+GCF_002936875.2	0	0.9616912268021327	robust	0.21052631578947367	amr	1			ST2891	USA	America_northern	2015	human	KL31	O3b	0	2	
+GCF_002935555.2	0	0.024705144008167368	fragile	0.5263157894736842	amr	1			ST1140	USA	America_northern	2013	human	KL125	O3b	0	2	
+GCF_002935705.2	0	0.9602939998497376	robust	0.0	amr	1			ST846	USA	America_northern	2014	human	KL110	O3b	0	2	
+GCF_003316235.1	0	0.5745106012460082	robust	0.0	vir	1			ST221	Australia	Oceania	2015	human	KL39	O3b	1	0	
+GCF_013280475.1	0	0.9632951399225348	robust	0.0	amr	1			ST987	Lebanon	Asia_western	2019	human	KL46	O3b	0	2	
+GCF_008756915.1	1	0.9622072986342852	robust	0.0	vir	1			ST412	China	Asia_eastern	2016	human	KL57	O3b	3	0	
+GCF_900498575.1	0	0.6716484170678104	robust	0.0	vir	1			ST1630	Germany	Europe_western	2014	human	KL21	O3b	1	0	
+GCF_900498635.1	1	0.9709241561341275	robust	0.0		0			ST37	Germany	Europe_western	2014	human	KL14	O3b	0	0	
+GCF_900498665.1	0	0.6951836324889933	robust	0.0	vir	1			ST966	Germany	Europe_western	2014	human	KL123	O3b	1	0	
+GCF_900498875.1	1	0.9626792054696673	robust	0.0		0			ST611	Germany	Europe_western	2014	human	KL49	O3b	0	0	
+GCF_900498905.1	0	0.9605520481923783	robust	0.42105263157894735	amr	1			ST1877	Germany	Europe_western	2014	human	KL14	O3b	0	0	
+GCF_900085345.1	0	0.9637110790690403	robust	0.0	amr	1			ST16	UK	Europe_northern	2005	human	KL51	O3b	0	1	
+GCF_900085355.1	1	0.9602322330116714	robust	0.0		0			ST1658	UK	Europe_northern	2006	human	KL60	O3b	0	0	
+GCF_900086255.1	0	0.9571527057256219	robust	0.0	amr	1			ST834	UK	Europe_northern	2006	human	KL123	O3b	0	1	
+GCF_900085315.1	1	0.6638787252743912	robust	0.0	amr+vir	2	0.0	fused	ST292	UK	Europe_northern	2008	human	KL38	O3b	2	1	
+GCF_900085465.1	0	0.9666630007368978	robust	0.0	amr	1			ST54	UK	Europe_northern	2010	human	KL14	O3b	0	1	
+GCF_900085655.1	1	0.9621060763131362	robust	0.0		0			ST188	UK	Europe_northern	2010	human	KL8	O3b	0	0	
+GCF_900085735.1	0	0.9618874563515556	robust	0.0	amr	1			ST221	UK	Europe_northern	2011	human	KL39	O3b	0	2	
+GCF_001483725.1	0	0.9603321833196693	robust	0.0	amr	1			ST273	Norway	Europe_northern	2007	human	KL74	O3b	0	2	
+GCF_900084865.1	0	0.9589271596723152	robust	0.0	amr	1			ST1967	UK	Europe_northern	2003	human	KL21	O3b	0	0	
+GCF_003693325.1	0	0.9716313798064319	robust	0.0	amr+vir	2	0.0	fused	ST3720	Italy	Europe_southern	2016	human	KL51	O3b	1	2	
+GCF_001938035.1	0	0.9615562417505595	robust	0.0	amr+vir	2	0.0	fused	ST3721	Lebanon	Asia_western	2016	human	KL51	O3b	1	1	
+GCF_003225815.1	0	0.958607822451565	robust	0.5789473684210527	amr+vir	2	0.0	fused	ST54	Spain	Europe_southern	2014	human	KL14	O3b	1	2	
+GCF_003429065.3	0	0.9608817804958959	robust	0.0	amr	1			ST719	China	Asia_eastern	2014	human	KL9	O3b	0	2	
+GCF_006152055.2	1	0.9592868113498304	robust	0.0		0			ST1639-1LV	Brazil	America_Latin_Caribbean	2017	human	KL111	O3b	0	0	
+GCF_003225855.1	0	0.9622111519509405	robust	0.0	amr+vir	2	0.0	fused	ST628	Spain	Europe_southern	2012	human	KL2	O3b	1	2	
+GCF_002246835.1	0	0.9609362765599265	robust	0.0	amr	1			ST37	Thailand	Asia_SE	2016	human	KL38	O3b	0	0	
+GCF_002248135.1	0	0.9664194058446662	robust	0.0	amr+vir	2	0.0	fused	ST1867	Thailand	Asia_SE	2016	human	KL123	O3b	3	1	event_36_ST1867 Thailand unresolvable
+GCF_002247885.1	0	0.9604111336725311	robust	0.0	amr	1			ST2555	Thailand	Asia_SE	2014	human	KL150	O3b	0	1	
+GCF_011029745.1	0	0.9653120327694046	robust	0.0	amr+vir	2	0.0	fused	ST16	Lebanon	Asia_western	2017	human	KL51	O3b	1	2	
+GCF_902704295.1	1	0.6268723971716396	robust	0.5263157894736842	amr	1			ST3500	Italy	Europe_southern	2016	human	KL111	O3b	0	2	
+GCF_002753375.1	1	0.9630305302405316	robust	0.0		0			ST37	Australia	Oceania	2014	human	KL14	O3b	0	0	
+GCF_000492755.1	1	0.9641074948026196	robust	0.0		0			ST1436	USA	America_northern	2012	human	KL128	O3b	0	0	
+GCF_002186935.1	1	0.959480572753443	robust	0.0		0			ST1658	Nigeria	Africa_sub_saharan	2014	human	KL19	O3b	0	0	
+GCF_003408615.1	0	0.9640615418579972	robust	0.0	amr	1			ST422	unknown	unknown	2015	human	KL111	O3b	0	2	
+GCF_006131015.1	0	0.9651859171264054	robust	0.0	amr	1			ST1779	China	Asia_eastern	2015	human	KL38	O3b	0	2	
+GCF_007197815.1	0	0.9628343780193009	robust	0.3684210526315789	amr+vir	2	0.0	fused	ST1779	China	Asia_eastern	2018	human	KL38	O3b	1	0	
+GCF_002187745.1	0	0.9590063220918348	robust	0.0	amr	1			ST873	Nigeria	Africa_sub_saharan	2009	human	KL38	O3b	0	1	
+GCF_003592205.1	1	0.96272084820018	robust	0.0		0			ST1274	Russia	Europe_eastern	2013	human	KL111	O3b	0	0	
+GCF_000822665.1	1	0.9600012761237964	robust	0.0		0			ST1243	Italy	Europe_southern	2012	human	KL14	O3b	0	0	
+GCF_004832105.1	0	0.9674903272706528	robust	0.0	amr+vir	2	0.0	fused	ST16	Thailand	Asia_SE	2018	human	KL51	O3b	1	2	
+GCF_004833395.1	0	0.9620200729832623	robust	0.0	amr+vir	2	0.0	fused	ST16	Thailand	Asia_SE	2018	human	KL51	O3b	1	2	
+GCF_004833685.1	0	0.9661653381068903	robust	0.0	amr+vir	2	0.0	fused	ST16	Thailand	Asia_SE	2018	human	KL51	O3b	1	2	
+GCF_001701625.1	0	0.9619309575494382	robust	0.0	amr	1			ST1798	China	Asia_eastern	2011	human	KL58	O3b	0	1	
+GCF_004311105.1	1	0.9669529622378623	robust	0.0	vir	1			ST412	Japan	Asia_eastern	2014	human	KL57	O3b	4	0	
+GCF_004311205.1	1	0.9659220063373712	robust	0.0		0			ST3823	Japan	Asia_eastern	2014	human	KL139	O3b	0	0	
+GCF_004311705.1	1	0.9682929184066099	robust	0.0		0			ST247	Japan	Asia_eastern	2014	human	KL10	O3b	0	0	
+GCF_004312125.1	0	0.884985794786877	robust	0.3157894736842105	amr	1			ST3825	Japan	Asia_eastern	2014	human	KL60	O3b	0	0	
+GCF_004312185.1	1	0.9619071010637368	robust	0.0		0			ST200	Japan	Asia_eastern	2014	human	KL123	O3b	0	0	
+GCF_004312245.1	1	0.9630175977479749	robust	0.0		0			ST692	Japan	Asia_eastern	2014	human	KL58	O3b	0	0	
+GCF_004312905.1	1	0.9603704996441234	robust	0.0		0			ST1731	Japan	Asia_eastern	2014	human	KL71	O3b	0	0	
+GCF_004313145.1	1	0.9617340653557207	robust	0.0		0			ST3828	Japan	Asia_eastern	2014	human	KL123	O3b	0	0	
+GCF_004313505.1	1	0.9615611381940085	robust	0.0		0			ST54	Japan	Asia_eastern	2014	human	KL14	O3b	0	0	
+GCF_000566905.1	0	0.9600347170238301	robust	0.0	amr	1			ST873	USA	America_northern	unknown	human	KL38	O3b	0	1	
+GCF_000566885.1	1	0.9600536405550639	robust	0.0		0			ST3833	USA	America_northern	unknown	human	KL30	O3b	0	0	
+GCF_001034305.1	1	0.9587553880749654	robust	0.0		0			ST277	unknown	unknown	2014	human	KL46	O3b	0	0	
+GCF_900173495.1	0	0.962564167955828	robust	0.0	amr	1			ST37	UK	Europe_northern	2015	human	KL38	O3b	0	0	
+GCF_900173795.1	0	0.8953418730746349	robust	0.2631578947368421	amr	1			ST54	UK	Europe_northern	2015	human	KL14	O3b	0	0	
+GCF_900173985.1	0	0.9577384602376894	robust	0.0	amr	1			ST3020	UK	Europe_northern	2015	human	KL111	O3b	0	0	
+GCF_003261795.1	0	0.9632387452339932	robust	0.0	amr	1			ST292	China	Asia_eastern	2017	human	KL38	O3b	0	1	
+GCF_002852615.1	1	0.9543088738609822	robust	0.0	vir	1			ST412	China	Asia_eastern	2017	human	KL57	O3b	0	0	
+GCF_002258155.1	0	0.960152570121453	robust	0.0	amr	1			ST726	China	Asia_eastern	2016	human	KL14	O3b	0	2	
+GCF_003195735.1	0	0.9592878300905809	robust	0.0	amr	1			ST788	USA	America_northern	2017	human	KL39	O3b	0	1	
+GCF_003195695.1	0	0.2766362457067258	intermediate	0.2631578947368421	amr	1			ST3846	USA	America_northern	2017	human	KL11	O3b	0	0	
+GCF_003253855.1	1	0.9648865740683892	robust	0.0		0			ST1689	USA	America_northern	2017	human	KL13	O3b	0	0	
+GCF_902508345.1	0	0.6262737822845809	robust	0.0	vir	1			ST996-1LV	China	Asia_eastern	2017	human	KL123	O3b	1	0	
+GCF_007955295.1	0	0.9600474147269056	robust	0.0	amr+vir	2	0.0	fused	ST983-1LV	Russia	Europe_eastern	2017	human sapiens	KL39	O3b	1	0	
+GCF_004138665.1	0	0.9625552902704018	robust	0.0	amr	1			ST726	China	Asia_eastern	2018	pneumoniae	KL14	O3b	0	0	
+GCF_004208475.1	0	0.9676165366025989	robust	0.0	amr+vir	2	0.0	fused	ST3796	China	Asia_eastern	2015	rabbit	KL14	O3b	3	1	event_122_ST3796 China unresolvable
+GCF_010374875.1	0	0.9618868272970948	robust	0.10526315789473684	amr	1			ST1235	unknown	unknown	2004	unknown	KL14	O3b	0	1	
+GCF_900451405.1	1	0.9579192849167621	robust	0.0		0			ST3756	unknown	unknown	unknown	unknown	KL149	O3b	0	0	
+GCF_900451545.1	0	0.964285955435093	robust	0.0	amr	1			ST3761	unknown	unknown	unknown	unknown	KL14	O3b	0	2	
+GCF_900093445.1	0	0.9623685838038973	robust	0.0	amr	1			ST322	Thailand	Asia_SE	2015	environmental	KL17	O4	0	1	
+GCF_013389225.1	0	0.9597543195858474	robust	0.0	amr	1			ST3559	South Africa	Africa_sub_saharan	2017	environmental	KL27	O4	0	1	
+GCF_900172625.1	1	0.9657742413539275	robust	0.0		0			ST322	UK	Europe_northern	2014	environmental	KL17	O4	0	0	
+GCF_900093155.1	0	0.9668365277330071	robust	0.0	amr	1			ST462	Thailand	Asia_SE	2015	environmental	KL149	O4	0	0	
+GCF_002411675.1	0	0.9632919873878514	robust	0.0	amr	1			ST2171	Ghana	Africa_sub_saharan	2015	human	KL15	O4	0	1	
+GCF_004801235.1	0	0.9621489928163932	robust	0.0	amr	1			ST2570	China	Asia_eastern	2018	human	KL131	O4	0	1	
+GCF_002180725.1	0	0.9619531971703148	robust	0.0	amr	1			ST392	USA	America_northern	2013	human	KL27	O4	0	2	
+GCF_900182225.1	0	0.9627874886135044	robust	0.0	amr	1			ST474	Pakistan	Asia_southern	unknown	human	KL17	O4	0	1	
+GCF_900493255.1	1	0.9642973893069079	robust	0.0		0			ST659	Thailand	Asia_SE	2016	human	KL15	O4	0	0	
+GCF_900493155.1	0	0.9610255251645533	robust	0.0	amr	1			ST502	Thailand	Asia_SE	2016	human	KL15	O4	0	1	
+GCF_900774995.1	0	0.9699428130717099	robust	0.47368421052631576	amr	1			ST244	Caribbean	America_Latin_Caribbean	unknown	human	KL15	O4	0	0	
+GCF_900775515.1	0	0.20739916080654047	intermediate	0.2631578947368421	amr	1			ST502	Caribbean	America_Latin_Caribbean	unknown	human	KL15	O4	0	0	
+GCF_900774205.1	0	0.9563771195312145	robust	0.0	amr	1			ST392	Caribbean	America_Latin_Caribbean	unknown	human	KL27	O4	0	1	
+GCF_900774095.1	1	0.9624550382259561	robust	0.0		0			ST309	Caribbean	America_Latin_Caribbean	unknown	human	KL42	O4	0	0	
+GCF_900774565.1	1	0.9593266976947699	robust	0.0		0			ST322	Caribbean	America_Latin_Caribbean	unknown	human	KL17	O4	0	0	
+GCF_900776255.1	0	0.9647982202304307	robust	0.0	amr+vir	2	0.0	fused	ST152	Caribbean	America_Latin_Caribbean	unknown	human	KL149	O4	1	1	
+GCF_900776435.1	0	0.9588971022003482	robust	0.0	amr+vir	2	0.0	fused	ST405	Caribbean	America_Latin_Caribbean	unknown	human	KL151	O4	1	1	
+GCF_001034085.1	0	0.9607194745160967	robust	0.0	amr	1			ST16	unknown	unknown	2014	human	KL149	O4	0	1	
+GCF_013170445.1	0	0.9606381221903257	robust	0.21052631578947367	amr	1			ST502	Colombia	America_Latin_Caribbean	2014	human	KL15	O4	0	2	
+GCF_001908515.1	0	0.9656266019647513	robust	0.0	amr	1			ST244	USA	America_northern	2008	human	KL15	O4	0	2	
+GCF_001952875.1	0	0.962928008272432	robust	0.0	amr	1			ST392	USA	America_northern	unknown	human	KL27	O4	0	2	
+GCF_002851575.1	0	0.8847657251331582	robust	0.2631578947368421	amr	1			ST552	Colombia	America_Latin_Caribbean	2003	human	KL131	O4	0	0	
+GCF_004212555.1	0	0.965048227643984	robust	0.0	amr+vir	2	0.0	fused	ST152	South Africa	Africa_sub_saharan	2017	human	KL149	O4	1	1	
+GCF_007655035.1	0	0.9678669834162517	robust	0.0	amr+vir	2	0.0	fused	ST345	China	Asia_eastern	2018	human	KL15	O4	1	1	
+GCF_002636095.1	0	0.9669757975668686	robust	0.0	amr	1			ST340	Canada	America_northern	2014	human	KL15	O4	0	2	
+GCF_002187185.1	0	0.9594946843914856	robust	0.0	amr	1			ST429	Nigeria	Africa_sub_saharan	2016	human	KL27	O4	0	1	
+GCF_003590665.1	1	0.9684060290993384	robust	0.0		0			ST253	Australia	Oceania	2013	human	KL15	O4	0	0	
+GCF_900085335.1	1	0.9589761499814978	robust	0.0		0			ST108-2LV	UK	Europe_northern	2005	human	KL17	O4	0	0	
+GCF_900084575.1	0	0.9654819312456424	robust	0.0	amr	1			ST340-1LV	UK	Europe_northern	2008	human	KL15	O4	0	1	
+GCF_900407015.1	0	0.9590022975876294	robust	0.0	amr	1			ST392	Tanzania	Africa_sub_saharan	2014	human	KL27	O4	0	1	
+GCF_009928575.1	0	0.9616056825248241	robust	0.0	amr	1			ST309	Argentina	America_Latin_Caribbean	2009	human	KL42	O4	0	2	
+GCF_008704045.1	0	0.957067020979223	robust	0.0	amr	1			ST3559	South Africa	Africa_sub_saharan	2018	human	KL27	O4	0	2	
+GCF_001665995.1	1	0.9602943959728368	robust	0.0	amr	1			ST37	USA	America_northern	2013	human	KL15	O4	0	2	
+GCF_002248425.1	0	0.9637243550600475	robust	0.0	amr+vir	2	0.0	fused	ST3810	Thailand	Asia_SE	2016	human	KL15	O4	1	1	
+GCF_000567745.1	0	0.958000952423833	robust	0.0	amr	1			ST392	USA	America_northern	2012	human	KL27	O4	0	1	
+GCF_002153165.1	1	0.9657787823935278	robust	0.0		0			ST3321	USA	America_northern	2015	human	KL17	O4	0	0	
+GCF_001185665.1	0	0.9606322410277036	robust	0.21052631578947367	amr	1			ST309	unknown	unknown	2014	human	KL42	O4	0	2	
+GCF_003965875.1	0	0.9685622557824697	robust	0.0	amr	1			ST3050	Egypt	Africa_northern	2012	human	KL36	O4	0	1	
+GCF_002417015.1	0	0.9643215588770132	robust	0.0	amr+vir	2	0.0	fused	ST152	South Africa	Africa_sub_saharan	2013	human	KL149	O4	1	1	
+GCF_009746265.1	0	0.9627151399153079	robust	0.0	amr	1			ST340	Spain	Europe_southern	unknown	human	KL15	O4	0	2	
+GCF_004312265.1	0	0.5317717433303829	robust	0.0	vir	1			ST2370	Japan	Asia_eastern	2014	human	KL36	O4	1	0	
+GCF_004312965.1	1	0.9552479002532127	robust	0.0		0			ST502	Japan	Asia_eastern	2014	human	KL15	O4	0	0	
+GCF_000694935.1	1	0.9569166914867105	robust	0.0		0			ST37	USA	America_northern	2013	human	KL15	O4	0	0	
+GCF_003195215.1	1	0.9589454801081485	robust	0.0		0			ST3840	USA	America_northern	2017	human	KL15	O4	0	0	
+GCF_003197035.1	1	0.9657069760059968	robust	0.0		0			ST1451	USA	America_northern	2017	human	KL131	O4	0	0	
+GCF_003195755.1	0	0.9605718898960495	robust	0.0	amr+vir	2	0.0	fused	ST3845	USA	America_northern	2017	human	KL151	O4	1	1	
+GCF_901420865.1	1	0.9697852969117737	robust	0.0		0			ST322	Denmark	Europe_northern	unknown	not available	KL17	O4	0	0	
+GCF_009822395.1	0	0.9620976315896845	robust	0.0	amr	1			ST462	unknown	unknown	unknown	pig	KL149	O4	0	1	
+GCF_000521985.1	1	0.9609463328112837	robust	0.0		0			ST502	unknown	unknown	2012	unknown	KL15	O4	0	0	
+GCF_003171755.1	1	0.9609206682264938	robust	0.0		0			ST3689	India	Asia_southern	2016	environmental	KL16	O5	0	0	
+GCF_900172095.1	0	0.9603308299796167	robust	0.0	amr	1			ST902	UK	Europe_northern	2014	environmental	KL125	O5	0	1	
+GCF_002811525.1	0	0.9595828324444668	robust	0.0	amr	1			ST2867	China	Asia_eastern	2017	environmental	KL35	O5	0	2	
+GCF_002181225.1	1	0.8011394053400589	robust	0.0	amr	1			ST1502	USA	America_northern	2013	human	KL125	O5	0	2	
+GCF_001463215.1	0	0.9644447025206976	robust	0.0	amr+vir	2	0.0	fused	ST336	Norway	Europe_northern	2012	human	KL25	O5	1	2	
+GCF_001463295.1	0	0.9672260943566088	robust	0.0	amr+vir	2	0.0	fused	ST187	Norway	Europe_northern	2013	human	KL10	O5	1	2	
+GCF_900181555.1	0	0.9566337141129431	robust	0.0	amr+vir	2	0.0	fused	ST336	Pakistan	Asia_southern	unknown	human	KL25	O5	1	1	
+GCF_900180625.1	0	0.9581840543067632	robust	0.0	amr	1			ST3278	Pakistan	Asia_southern	unknown	human	KL125	O5	0	1	
+GCF_900493945.1	0	0.9627573969559599	robust	0.0	amr	1			ST17	Thailand	Asia_SE	2016	human	KL25	O5	0	2	
+GCF_900493115.1	0	0.9634159364683735	robust	0.0	amr	1			ST378	Thailand	Asia_SE	2016	human	KL125	O5	0	1	
+GCF_900775285.1	0	0.9583919391847066	robust	0.0	amr	1			ST1626	Caribbean	America_Latin_Caribbean	unknown	human	KL151	O5	0	0	
+GCF_900775315.1	0	0.9651171874645949	robust	0.0	amr	1			ST1626	Caribbean	America_Latin_Caribbean	unknown	human	KL151	O5	0	0	
+GCF_900774735.1	0	0.9646616720989803	robust	0.42105263157894735	amr	1			ST1229	Caribbean	America_Latin_Caribbean	unknown	human	KL125	O5	0	0	
+GCF_900775785.1	1	0.959315382196773	robust	0.0		0			ST495-1LV	Caribbean	America_Latin_Caribbean	unknown	human	KL14	O5	0	0	
+GCF_900776145.1	1	0.9576837285473152	robust	0.0		0			ST134	Caribbean	America_Latin_Caribbean	unknown	human	KL25	O5	0	0	
+GCF_001034135.1	0	0.9612162742484982	robust	0.0	amr	1			ST3618	unknown	unknown	2014	human	KL125	O5	0	1	
+GCF_002853935.1	0	0.9633223360623401	robust	0.0	amr	1			ST378	Colombia	America_Latin_Caribbean	2005	human	KL125	O5	0	0	
+GCF_009661105.1	0	0.9665658503745173	robust	0.0	amr+vir	2	0.0	fused	ST336	Russia	Europe_eastern	2018	human	KL25	O5	4	2	event_109_ST336 iuc1 Russia
+GCF_008693425.1	1	0.8892838067201456	robust	0.15789473684210525	amr	1			ST1833-1LV	USA	America_northern	unknown	human	KL61	O5	0	2	
+GCF_900498625.1	1	0.9648546495422509	robust	0.0		0			ST1944	Germany	Europe_western	2014	human	KL10	O5	0	0	
+GCF_900498675.1	1	0.9633650708642192	robust	0.0		0			ST1878	Germany	Europe_western	2014	human	KL125	O5	0	0	
+GCF_900084225.1	0	0.9577823994407335	robust	0.0	amr+vir	2	0.0	fused	ST336-1LV	UK	Europe_northern	2005	human	KL25	O5	1	0	
+GCF_900086275.1	0	0.9615463910328104	robust	0.0	amr+vir	2	0.0	fused	ST336	UK	Europe_northern	2006	human	KL25	O5	1	1	
+GCF_900084305.1	1	0.9648660087639512	robust	0.0		0			ST3702	UK	Europe_northern	2007	human	KL60	O5	0	0	
+GCF_002152435.1	1	0.9628120364147568	robust	0.0		0			ST478	USA	America_northern	2015	human	KL125	O5	0	0	
+GCF_900093125.1	0	0.96032829138021	robust	0.0	amr	1			ST336	Thailand	Asia_SE	2015	human	KL25	O5	0	1	
+GCF_000822225.1	0	-0.4486786567989025	fragile	0.0	amr	1			ST1626	Italy	Europe_southern	2007	human	KL151	O5	0	0	
+GCF_002853395.1	0	0.9683879463846717	robust	0.0	amr+vir	2	0.0	fused	ST2407	China	Asia_eastern	2017	human	KL25	O5	1	2	
+GCF_004313645.1	0	0.9625016264575835	robust	0.0	amr	1			ST715	Japan	Asia_eastern	2014	human	KL25	O5	0	1	
+GCF_002853095.1	0	0.9731326149790738	robust	0.42105263157894735	amr	1			ST1229	China	Asia_eastern	2016	human	KL125	O5	0	0	
+GCF_003195795.1	0	0.8925324506654787	robust	0.3157894736842105	amr	1			ST478	USA	America_northern	2017	human	KL125	O5	0	1	
+GCF_009822365.1	0	0.9632475481091961	robust	0.0	amr	1			ST273-2LV	unknown	unknown	unknown	pig	KL35	O5	0	1	
+GCF_009822565.1	0	0.9664048465015322	robust	0.0	amr	1			ST273-2LV	unknown	unknown	unknown	pig	KL35	O5	0	1	
+GCF_009822505.1	0	0.9620691667777129	robust	0.0	amr	1			ST273-2LV	unknown	unknown	unknown	pig	KL35	O5	0	0	
+GCF_002856455.1	1	0.965036037620539	robust	0.0		0			ST3633	USA	America_northern	2017	bovine	KL127	OL101	0	0	
+GCF_001460975.1	0	0.9594313984315418	robust	0.0	amr	1			ST1427	Netherlands	Europe_western	2012	environmental	KL67	OL101	0	1	
+GCF_900093335.1	0	0.9592966840951495	robust	0.10526315789473684	amr+vir	2	0.0	fused	ST3172	Thailand	Asia_SE	2015	environmental	KL137	OL101	1	1	
+GCF_003186535.1	0	0.9622534080668226	robust	0.0	amr	1			ST983	USA	America_northern	2016	human	KL127	OL101	0	1	
+GCF_005504265.1	0	0.9692664182257529	robust	0.631578947368421	amr+vir	2	0.0	fused	ST4496	China	Asia_eastern	2017	human	KL47	OL101	1	2	
+GCF_001060275.1	0	0.6224408466273281	robust	0.0	vir	1			ST3578	USA	America_northern	2013	human	KL127	OL101	1	0	
+GCF_900180675.1	0	0.9559480505164714	robust	0.0	amr	1			ST38-1LV	Pakistan	Asia_southern	unknown	human	KL52	OL101	0	2	
+GCF_900774855.1	0	0.9616429874078034	robust	0.0	amr	1			ST1427	Caribbean	America_Latin_Caribbean	unknown	human	KL67	OL101	0	1	
+GCF_900775555.1	1	0.9605342137943416	robust	0.0		0			ST491	Caribbean	America_Latin_Caribbean	unknown	human	KL118	OL101	0	0	
+GCF_900775895.1	0	0.9703237739197796	robust	0.0	amr	1			ST40	Caribbean	America_Latin_Caribbean	unknown	human	KL155	OL101	0	1	
+GCF_002845345.1	0	0.9637340170809432	robust	0.0	amr+vir	2	0.0	fused	ST11	China	Asia_eastern	2015	human	KL47	OL101	1	2	
+GCF_002866665.1	1	0.8859916497441105	robust	0.0	amr	1			ST2719	Lebanon	Asia_western	2013	human	KL81	OL101	0	2	
+GCF_004212455.1	0	0.9615430879224814	robust	0.0	amr	1			ST983	South Africa	Africa_sub_saharan	2017	human	KL127	OL101	0	1	
+GCF_004120075.1	0	0.9596001809472925	robust	0.0	amr+vir	2	0.0	fused	ST3684	China	Asia_eastern	2014	human	KL47	OL101	1	2	
+GCF_002845095.1	0	0.9651221218235605	robust	0.0	amr+vir	2	0.0	fused	ST11	China	Asia_eastern	2015	human	KL47	OL101	1	2	
+GCF_002264905.1	0	0.9645875302342212	robust	0.21052631578947367	amr+vir	2	0.0	fused	ST3348	China	Asia_eastern	2014	human	KL47	OL101	1	2	
+GCF_900407025.1	1	0.9612549068272295	robust	0.0		0			ST491	Tanzania	Africa_sub_saharan	2015	human	KL118	OL101	0	0	
+GCF_002248815.1	0	0.9638667202918275	robust	0.0	amr	1			ST914	Thailand	Asia_SE	2014	human	KL81	OL101	0	1	
+GCF_001457335.1	0	0.9673203929893572	robust	0.0	amr	1			ST1427	Netherlands	Europe_western	2012	human	KL67	OL101	0	1	
+GCF_001460475.1	0	0.9702151756859299	robust	0.0	amr	1			ST1427	Netherlands	Europe_western	2012	human	KL67	OL101	0	1	
+GCF_006130695.1	0	0.9603267173886343	robust	0.0	amr+vir	2	0.0	fused	ST11	China	Asia_eastern	2015	human	KL47	OL101	1	2	
+GCF_006131045.1	0	0.9666302647886611	robust	0.0	amr+vir	2	0.0	fused	ST11	China	Asia_eastern	unknown	human	KL47	OL101	1	2	
+GCF_900093035.1	0	0.9591760226294711	robust	0.0	amr	1			ST895	Thailand	Asia_SE	2015	human	KL155	OL101	0	1	
+GCF_009710195.1	0	0.9674054283537277	robust	0.0	amr	1			ST1564	Romania	Europe_eastern	unknown	human	KL126	OL101	0	1	
+GCF_902509145.1	0	0.9635857573314965	robust	0.0	amr+vir	2	0.0	fused	ST4496	China	Asia_eastern	2017	human	KL47	OL101	1	2	
+GCF_902507425.1	0	0.961803426688816	robust	0.631578947368421	amr+vir	2	0.0	fused	ST4496	China	Asia_eastern	2017	human	KL47	OL101	1	2	
+GCF_902507495.1	0	0.9595936085051918	robust	0.631578947368421	amr+vir	2	0.0	fused	ST4496	China	Asia_eastern	2017	human	KL47	OL101	1	2	
+GCF_902507755.1	0	0.9631771479359442	robust	0.631578947368421	amr+vir	2	0.0	fused	ST4496	China	Asia_eastern	2017	human	KL47	OL101	1	2	
+GCF_003195325.1	1	0.9591947030517651	robust	0.0		0			ST1427	USA	America_northern	2017	human	KL155	OL101	0	0	
+GCF_011077815.1	0	0.9570571370872163	robust	0.0	amr	1			ST1086	China	Asia_eastern	2017	Swine	KL126	OL101	0	1	
+GCF_009821955.1	0	0.9608122738901234	robust	0.0	amr	1			ST534	unknown	unknown	unknown	chicken	KL164	OL102	0	0	
+GCF_002184985.2	0	0.9617575175157973	robust	0.3157894736842105	amr	1			ST2623	USA	America_northern	2014	human	KL52	OL103	0	0	
+GCF_003318315.1	0	0.9694283824098645	robust	0.0	amr	1			ST37-1LV	Brazil	America_Latin_Caribbean	2015	human	KL12	OL103	0	2	
+GCF_001663455.1	0	0.9616578843420377	robust	0.6842105263157895	amr	1			ST2623	USA	America_northern	2014	unknown	KL52	OL103	0	0	
+GCF_002854115.1	1	0.9580468808529347	robust	0.0		0			ST528	Colombia	America_Latin_Caribbean	2013	human	KL46	OL104	0	0	
+GCF_002854655.1	0	0.9658983398730726	robust	0.0	amr	1			ST273	Colombia	America_Latin_Caribbean	2007	human	KL74	OL104	0	0	
+GCF_900501705.1	1	0.9688394863102845	robust	0.0		0			ST308	Greece	Europe_southern	2014	human	KL157	unknown	0	0	
+GCF_900510445.1	1	0.9660405983150784	robust	0.0		0			ST3147	France	Europe_western	2014	human	KL38	O12	0	0	
+GCF_900506485.1	1	0.9637714855113035	robust	0.0		0			ST3636	Belgium	Europe_western	2013	human	KL121	O1	0	0	
+GCF_900507185.1	0	0.8879210629789773	robust	0.3157894736842105	amr	1			ST3638	Belgium	Europe_western	2014	human	KL61	O1	0	0	
+GCF_900506655.1	1	0.9610601760649105	robust	0.0		0			ST1145	Belgium	Europe_western	2014	human	KL30	O1	0	0	
+GCF_900507525.1	0	0.9580221958184318	robust	0.0	amr+vir	2	0.0	fused	ST4	Belgium	Europe_western	2014	human	KL10	O1	1	1	
+GCF_900516735.1	0	0.6689484423530605	robust	0.0	vir	1			ST889	Bulgaria	Europe_eastern	2014	human	KL54	O1	1	0	
+GCF_900511085.1	0	0.9611679818818096	robust	0.0	amr	1			ST525	Czech Republic	Europe_eastern	2014	human	KL45	O1	0	0	
+GCF_900511875.1	1	0.9588334019625696	robust	0.0		0			ST3640	Germany	Europe_western	2014	human	KL64	O1	0	0	
+GCF_900512115.1	1	0.9613232335356049	robust	0.0		0			ST299	Germany	Europe_western	2014	human	KL7	O1	0	0	
+GCF_900512425.1	0	0.6595755123473366	robust	0.0	vir	1			ST6	Germany	Europe_western	2013	human	KL7	O1	1	0	
+GCF_900512695.1	0	0.6217148214319926	robust	0.0	vir	1			ST3643	Germany	Europe_western	2014	human	KL64	O1	1	0	
+GCF_900512735.1	1	0.9722067139420437	robust	0.0	vir	1			ST542	Germany	Europe_western	2014	human	KL8	O1	1	0	
+GCF_900516365.1	0	0.9601061728699594	robust	0.0	amr	1			ST1961	Spain	Europe_southern	2013	human	KL48	O1	0	2	
+GCF_900516525.1	0	0.9616489178981634	robust	0.0	amr+vir	2	0.0	fused	ST15	Spain	Europe_southern	2013	human	KL112	O1	1	2	
+GCF_900517175.1	0	0.9621045321141113	robust	0.3157894736842105	amr	1			ST542	Spain	Europe_southern	2014	human	KL8	O1	0	0	
+GCF_900517245.1	0	0.968139116742203	robust	0.0	amr+vir	2	0.0	fused	ST449	Spain	Europe_southern	2014	human	KL22	O1	1	0	
+GCF_900517505.1	0	0.9585091697729329	robust	0.0	amr	1			ST326	Spain	Europe_southern	2014	human	KL25	O1	0	2	
+GCF_900517545.1	0	0.9595738907515524	robust	0.0	amr	1			ST326	Spain	Europe_southern	2014	human	KL25	O1	0	2	
+GCF_900501405.1	0	0.9653046755809065	robust	0.3157894736842105	amr	1			ST1916	Greece	Europe_southern	2013	human	KL27	O1	0	0	
+GCF_900501425.1	0	0.9598600546694804	robust	0.0	amr+vir	2	0.0	fused	ST882	Greece	Europe_southern	2013	human	KL16	O1	1	0	
+GCF_900502245.1	1	0.9659300717522806	robust	0.0		0			ST461	Greece	Europe_southern	2013	human	KL64	O1	0	0	
+GCF_902156795.1	1	0.9596821704909515	robust	0.0	amr+vir	2	0.0	fused	ST420	Greece	Europe_southern	2014	human	KL20	O1	4	2	event_129_ST420 KPC-2 Greece
+GCF_900506205.1	1	0.9636995724860815	robust	0.0		0			ST1010	Croatia	Europe_southern	2014	human	KL142	O1	0	0	
+GCF_900503365.1	1	0.9666215892341458	robust	0.0		0			ST3132	Croatia	Europe_southern	2014	human	KL142	O1	0	0	
+GCF_900505015.1	1	0.968457632709827	robust	0.0		0			ST870	Croatia	Europe_southern	2013	human	KL17	O1	0	0	
+GCF_900516975.1	1	0.9680226225596217	robust	0.0		0			ST253	Hungary	Europe_eastern	2013	human	KL37	O1	0	0	
+GCF_900517035.1	1	0.963567392604139	robust	0.0		0			ST3640	Hungary	Europe_eastern	2013	human	KL64	O1	0	0	
+GCF_900506295.1	0	0.9619003059265879	robust	0.0	amr	1			ST133	Ireland	Europe_northern	2013	human	KL116	O1	0	2	
+GCF_900506325.1	0	0.963438098457245	robust	0.0	amr+vir	2	0.0	fused	ST5	Ireland	Europe_northern	2014	human	KL39	O1	2	2	
+GCF_900512145.1	1	0.9663344174090112	robust	0.0		0			ST1269	Israel	Asia_western	2014	human	KL139	O1	0	0	
+GCF_900512265.1	1	0.960478179820355	robust	0.0	vir	1			ST290	Israel	Asia_western	2014	human	KL21	O1	1	0	
+GCF_900512955.1	1	0.970860014311655	robust	0.0		0			ST1536	Israel	Asia_western	2013	human	KL61	O1	0	0	
+GCF_900513175.1	1	0.962733712800721	robust	0.0		0			ST4063	Israel	Asia_western	2013	human	KL24	O1	0	0	
+GCF_900513655.1	0	0.9604361070198982	robust	0.0	amr+vir	2	0.0	fused	ST4	Israel	Asia_western	2014	human	KL13	O1	1	0	
+GCF_900513145.1	1	0.8310094469062637	robust	0.0	amr	1			ST107	Italy	Europe_southern	2013	human	KL47	O1	0	2	
+GCF_900514375.1	0	0.6422001764247995	robust	0.0	vir	1			ST180	Italy	Europe_southern	2014	human	KL55	O1	1	0	
+GCF_900514595.1	1	0.956306754364775	robust	0.0		0			ST3660	Italy	Europe_southern	2014	human	KL25	O1	0	0	
+GCF_900515865.1	0	0.6229832868610097	robust	0.0	vir	1			ST466	Italy	Europe_southern	2014	human	KL22	O1	1	0	
+GCF_900516105.1	0	0.7958134673414673	robust	0.0	amr	1			ST3661	Italy	Europe_southern	2013	human	KL21	O1	0	0	
+GCF_900516245.1	0	0.9671264559258291	robust	0.0	amr+vir	2	0.0	fused	ST1685	Italy	Europe_southern	2014	human	KL17	O1	1	3	
+GCF_900516215.1	0	0.9651010656333896	robust	0.0	amr	1			ST889	Italy	Europe_southern	2013	human	KL54	O1	0	0	
+GCF_900512825.1	1	0.9631647697893465	robust	0.0		0			ST107	Norway	Europe_northern	2013	human	KL103	O1	0	0	
+GCF_900502655.1	0	0.9630720613556413	robust	0.0	amr	1			ST3650	Portugal	Europe_southern	2013	human	KL110	O1	0	2	
+GCF_900502805.1	0	0.9634380443377055	robust	0.0	amr	1			ST3650	Portugal	Europe_southern	2014	human	KL110	O1	0	2	
+GCF_900502185.1	0	0.9625608396542907	robust	0.0	amr	1			ST152	Portugal	Europe_southern	2014	human	KL163	O1	0	1	
+GCF_900504335.1	0	0.9719444800798813	robust	0.0	amr+vir	2	0.0	fused	ST101	Romania	Europe_eastern	2014	human	KL17	O1	1	2	
+GCF_900503325.1	0	0.5503390552378429	robust	0.0	vir	1			ST889	Romania	Europe_eastern	2013	human	KL54	O1	1	0	
+GCF_900505445.1	0	0.9651952509858501	robust	0.0	amr+vir	2	0.0	fused	ST101	Serbia	Europe_southern	2014	human	KL17	O1	1	1	
+GCF_900505495.1	0	0.9684899702319838	robust	0.0	amr+vir	2	0.0	fused	ST3671	Serbia	Europe_southern	2013	human	KL30	O1	4	1	event_118_ST3671 Serbia unresolvable
+GCF_900503005.1	1	0.9634174428363825	robust	0.0	amr+vir	2	0.0	fused	ST5	Slovenia	Europe_southern	2014	human	KL39	O1	4	0	
+GCF_900503105.1	0	0.6693704323924785	robust	0.0	vir	1			ST343	Slovenia	Europe_southern	2013	human	KL30	O1	1	0	
+GCF_900503385.1	0	0.959210513703245	robust	0.0	amr	1			ST295	Slovenia	Europe_southern	2013	human	KL30	O1	0	0	
+GCF_900508005.1	1	0.9621905445553071	robust	0.0		0			ST3677	Turkey	Asia_western	2013	human	KL18	O1	0	0	
+GCF_900508035.1	0	0.6563188623799188	robust	0.0	vir	1			ST3679	Turkey	Asia_western	2014	human	KL25	O1	1	0	
+GCF_900507555.1	0	0.9560619234054618	robust	0.0	amr	1			ST160	Turkey	Asia_western	2014	human	KL62	O1	0	0	
+GCF_900508135.1	0	0.966774159726677	robust	0.3157894736842105	amr	1			ST420	Turkey	Asia_western	2014	human	KL20	O1	0	0	
+GCF_900508795.1	0	0.657158865703199	robust	0.0	vir	1			ST504	Turkey	Asia_western	2014	human	KL62	O1	1	0	
+GCF_900509025.1	0	0.9592842340006497	robust	0.0	amr+vir	2	0.0	fused	ST107	Turkey	Asia_western	2013	human	KL10	O1	1	2	
+GCF_900508165.1	0	0.9702294137528917	robust	0.0	amr+vir	2	0.0	fused	ST48	Turkey	Asia_western	2014	human	KL62	O1	1	0	
+GCF_900508285.1	0	0.7476838514896772	robust	0.0	vir	1			ST882	Turkey	Asia_western	2013	human	KL16	O1	1	0	
+GCF_900503985.1	0	0.9650944624925009	robust	0.42105263157894735	amr	1			ST3682	UK	Europe_northern	2013	human	KL30	O1	0	0	
+GCF_900503145.1	0	0.5321636582354436	robust	0.0	vir	1			ST327	UK	Europe_northern	2013	human	KL39	O1	1	0	
+GCF_900503225.1	0	0.9703908619206951	robust	0.42105263157894735	amr	1			ST3682	UK	Europe_northern	2014	human	KL30	O1	0	0	
+GCF_900506335.1	1	0.9583832446044056	robust	0.0		0			ST416	Belgium	Europe_western	2014	human	KL30	O1	0	0	
+GCF_900506685.1	1	0.9589657969637414	robust	0.0	vir	1			ST234	Belgium	Europe_western	2013	human	KL30	O1	2	0	
+GCF_900511325.1	1	0.8279787055871295	robust	0.0	amr	1			ST461	Czech Republic	Europe_eastern	2014	human	KL62	O1	0	2	
+GCF_902156035.1	0	0.9668570197451557	robust	0.0	amr+vir	2	0.0	fused	ST530	Germany	Europe_western	2013	human	KL54	O1	1	2	
+GCF_900502595.1	0	0.871794290369555	robust	0.0	amr	1			ST39	Denmark	Europe_northern	2014	human	KL51	O1	0	0	
+GCF_900516355.1	0	0.8800029823349081	robust	0.3157894736842105	amr	1			ST163	Spain	Europe_southern	2013	human	KL28	O1	0	1	
+GCF_900501015.1	0	0.9601859012668754	robust	0.42105263157894735	amr	1			ST1823	Spain	Europe_southern	2014	human	KL113	O1	0	0	
+GCF_900501025.1	0	0.6719551390715032	robust	0.0	vir	1			ST234	Spain	Europe_southern	2014	human	KL30	O1	1	0	
+GCF_900511265.1	0	0.9585523515591844	robust	0.0	amr	1			ST3650	France	Europe_western	2013	human	KL62	O1	0	1	
+GCF_900501505.1	0	0.6080699435558058	robust	0.0	vir	1			ST111	Greece	Europe_southern	2014	human	KL63	O1	1	0	
+GCF_900504925.1	0	0.8804868691299841	robust	0.10526315789473684	amr	1			ST525	Croatia	Europe_southern	2013	human	KL45	O1	0	0	
+GCF_900513745.1	0	0.9597731893456914	robust	0.0	amr+vir	2	0.0	fused	ST111	Israel	Asia_western	2014	human	KL63	O1	1	1	
+GCF_900508515.1	0	0.5733510844671196	robust	0.0	vir	1			ST186	Italy	Europe_southern	2013	human	KL114	O1	1	0	
+GCF_900513075.1	1	0.9617789319334104	robust	0.0		0			ST3656	Italy	Europe_southern	2013	human	KL146	O1	0	0	
+GCF_900513275.1	1	0.9615067356478849	robust	0.0		0			ST416	Italy	Europe_southern	2013	human	KL30	O1	0	0	
+GCF_900514985.1	1	0.9589901563933008	robust	0.0		0			ST985	Italy	Europe_southern	2014	human	KL39	O1	0	0	
+GCF_900514705.1	0	0.960735557917708	robust	0.0	amr+vir	2	0.0	fused	ST881	Italy	Europe_southern	2014	human	KL2	O1	3	0	
+GCF_900504425.1	0	0.9577650984249211	robust	0.0	amr	1			ST383	Romania	Europe_eastern	2014	human	KL30	O1	0	2	
+GCF_900504475.1	1	0.9661000185645354	robust	0.0	vir	1			ST8	Romania	Europe_eastern	2014	human	KL3	O1	2	0	
+GCF_900510725.1	1	0.9638511708335569	robust	0.0		0			ST234	Slovakia	Europe_eastern	2014	human	KL30	O1	0	0	
+GCF_900507715.1	0	0.5674279574027574	robust	0.0	vir	1			ST110	Turkey	Asia_western	2014	human	KL2	O1	1	0	
+GCF_900507735.1	0	0.9664444586435869	robust	0.0	amr+vir	2	0.0	fused	ST530	Turkey	Asia_western	2013	human	KL54	O1	1	2	
+GCF_900507475.1	0	0.9658376598839981	robust	0.0	amr+vir	2	0.0	fused	ST985	Turkey	Asia_western	2013	human	KL39	O1	1	1	
+GCF_900508635.1	0	0.969365406529223	robust	0.0	amr+vir	2	0.0	fused	ST530	Turkey	Asia_western	2014	human	KL54	O1	1	2	
+GCF_900508735.1	0	0.9647581914179121	robust	0.0	amr	1			ST525	Turkey	Asia_western	2014	human	KL45	O1	0	3	
+GCF_900508715.1	0	0.9586308633434006	robust	0.0	amr	1			ST525	Turkey	Asia_western	2014	human	KL45	O1	0	3	
+GCF_900508745.1	0	0.9645163304578391	robust	0.0	amr	1			ST525	Turkey	Asia_western	2014	human	KL45	O1	0	3	
+GCF_900509115.1	0	0.9731988074703237	robust	0.0	amr+vir	2	0.0	fused	ST985	Turkey	Asia_western	2014	human	KL39	O1	1	1	
+GCF_900508255.1	0	0.960431671994156	robust	0.0	amr+vir	2	0.0	fused	ST185	Turkey	Asia_western	2013	human	KL130	O1	1	0	
+GCF_900503065.1	0	0.9677534880507384	robust	0.631578947368421	amr+vir	2	0.0	fused	ST13	UK	Europe_northern	2014	human	KL3	O1	1	2	
+GCF_900503205.1	1	0.9736698260316734	robust	0.0		0			ST922	UK	Europe_northern	2014	human	KL2	O1	0	0	
+GCF_900511335.1	0	0.8664486645664059	robust	0.10526315789473684	amr	1			ST3635	Austria	Europe_western	2014	human	KL132	O2	0	0	
+GCF_900506625.1	0	0.9652291730399598	robust	0.0	amr+vir	2	0.0	fused	ST485	Belgium	Europe_western	2013	human	KL28	O2	1	0	
+GCF_900517355.1	1	0.965139140300408	robust	0.0		0			ST3646	Spain	Europe_southern	2014	human	KL22	O2	0	0	
+GCF_900510395.1	0	0.5215405735043052	robust	0.0	vir	1			ST3649	France	Europe_western	2013	human	KL24	O2	3	0	
+GCF_900502405.1	1	0.9623049376100358	robust	0.0		0			ST3652	Greece	Europe_southern	2014	human	KL47	O2	0	0	
+GCF_900512985.1	1	0.9661036880737917	robust	0.0		0			ST2938	Italy	Europe_southern	2013	human	KL62	O2	0	0	
+GCF_900515105.1	1	0.9669812022001009	robust	0.0		0			ST268	Italy	Europe_southern	2014	human	KL20	O2	0	0	
+GCF_900511455.1	1	0.9633398809641136	robust	0.0		0			ST3665	Poland	Europe_eastern	2014	human	KL7	O2	0	0	
+GCF_900502625.1	0	0.9669228297489563	robust	0.0	amr+vir	2	0.0	fused	ST45	Portugal	Europe_southern	2013	human	KL24	O2	1	2	
+GCF_900504245.1	1	0.9639939780901133	robust	0.0		0			ST1408	Romania	Europe_eastern	2014	human	KL24	O2	0	0	
+GCF_900510665.1	1	0.9573179838899272	robust	0.0		0			ST3674	Slovakia	Europe_eastern	2014	human	KL39	O2	0	0	
+GCF_900507845.1	0	0.9615143390562777	robust	0.0	amr	1			ST1731	Turkey	Asia_western	2013	human	KL43	O2	0	2	
+GCF_900507905.1	0	0.9598415465559493	robust	0.0	amr+vir	2	0.0	fused	ST294	Turkey	Asia_western	2014	human	KL30	O2	1	2	
+GCF_900507965.1	0	0.964595913272814	robust	0.0	amr+vir	2	0.0	fused	ST294	Turkey	Asia_western	2013	human	KL30	O2	1	2	
+GCF_900507985.1	0	0.970322302239203	robust	0.0	amr+vir	2	0.0	fused	ST294	Turkey	Asia_western	2014	human	KL30	O2	1	2	
+GCF_900508845.1	0	0.9608025649840197	robust	0.0	amr	1			ST1193	Turkey	Asia_western	2014	human	KL22	O2	0	1	
+GCF_900504745.1	1	0.8867055723030093	robust	0.0	amr	1			ST2333	UK	Europe_northern	2013	human	KL28	O2	0	2	
+GCF_900512705.1	1	0.962556798935538	robust	0.0		0			ST867	Germany	Europe_western	2014	human	KL3	O2	0	0	
+GCF_900501135.1	0	0.9638759326466256	robust	0.0	amr	1			ST307	Spain	Europe_southern	2014	human	KL102	O2	0	2	
+GCF_900517285.1	1	0.962773956834632	robust	0.0		0			ST278	Spain	Europe_southern	2014	human	KL136	O2	0	0	
+GCF_900517595.1	0	0.9665792805462985	robust	0.3157894736842105	amr	1			ST278	Spain	Europe_southern	2014	human	KL136	O2	0	0	
+GCF_900517605.1	1	0.9655495284376104	robust	0.0		0			ST453	Spain	Europe_southern	2014	human	KL8	O2	0	0	
+GCF_900517765.1	0	0.8886109901066495	robust	0.47368421052631576	amr	1			ST433	Spain	Europe_southern	2014	human	KL102	O2	0	0	
+GCF_900510425.1	0	0.961793719852327	robust	0.0	amr+vir	2	0.0	fused	ST307	France	Europe_western	2013	human	KL102	O2	1	2	
+GCF_900511615.1	0	0.9664166140293098	robust	0.15789473684210525	amr	1			ST34	France	Europe_western	2014	human	KL122	O2	0	0	
+GCF_900511695.1	0	0.9680049388852255	robust	0.0	amr+vir	2	0.0	fused	ST218	France	Europe_western	2014	human	KL57	O2	4	2	event_40_ST218 OXA-48 France
+GCF_902156155.1	0	0.9552825350822851	robust	0.0	amr	1			ST1709	France	Europe_western	2014	human	KL122	O2	0	2	
+GCF_900501385.1	0	0.9599408820469385	robust	0.0	amr+vir	2	0.0	fused	ST258	Greece	Europe_southern	2014	human	KL106	O2	1	3	
+GCF_900502275.1	1	0.9655985419764428	robust	0.0		0			ST3651	Greece	Europe_southern	2013	human	KL28	O2	0	0	
+GCF_900505965.1	1	0.9702439696169782	robust	0.0	vir	1			ST218	Croatia	Europe_southern	2014	human	KL57	O2	3	0	
+GCF_900516955.1	0	0.95911217294695	robust	0.10526315789473684	amr	1			ST4065	Hungary	Europe_eastern	2013	human	KL23	O2	0	0	
+GCF_900513555.1	0	0.9654186456376712	robust	0.0	amr	1			ST1412	Israel	Asia_western	2013	human	KL107	O2	0	1	
+GCF_900512865.1	1	0.968314239247287	robust	0.0		0			ST3655	Italy	Europe_southern	2013	human	KL140	O2	0	0	
+GCF_900512875.1	0	0.9627580700187762	robust	0.0	amr	1			ST512	Italy	Europe_southern	2013	human	KL107	O2	0	2	
+GCF_900512945.1	0	0.960194908341735	robust	0.0	amr	1			ST280	Italy	Europe_southern	2013	human	KL23	O2	0	1	
+GCF_900513115.1	1	0.9605416755775646	robust	0.0		0			ST20	Italy	Europe_southern	2013	human	KL28	O2	0	0	
+GCF_900508545.1	1	0.9647548847266519	robust	0.0		0			ST896	Italy	Europe_southern	2013	human	KL3	O2	0	0	
+GCF_900515245.1	1	0.9634499296667078	robust	0.0		0			ST463	Italy	Europe_southern	2014	human	KL117	O2	0	0	
+GCF_900514665.1	0	0.9602514355561913	robust	0.0	amr	1			ST471	Italy	Europe_southern	2013	human	KL57	O2	0	1	
+GCF_900515995.1	1	0.9641016104015673	robust	0.0		0			ST433	Italy	Europe_southern	2014	human	KL102	O2	0	0	
+GCF_900516125.1	0	0.6366447803684757	robust	0.0	vir	1			ST1628	Italy	Europe_southern	2013	human	KL7	O2	1	0	
+GCF_900502115.1	1	0.9591134124050379	robust	0.0		0			ST2599	Portugal	Europe_southern	2014	human	KL27	O2	0	0	
+GCF_900503965.1	0	0.9689926083175145	robust	0.0	amr	1			ST3668	Romania	Europe_eastern	2013	human	KL8	O2	0	1	
+GCF_900507685.1	0	0.961930620009476	robust	0.0	amr+vir	2	0.0	fused	ST105	Turkey	Asia_western	2014	human	KL102	O2	1	1	
+GCF_900507705.1	0	0.9592909222642917	robust	0.0	amr	1			ST1015	Turkey	Asia_western	2014	human	KL17	O2	0	1	
+GCF_900507775.1	0	0.9636885240771352	robust	0.0	amr+vir	2	0.0	fused	ST377	Turkey	Asia_western	2013	human	KL102	O2	1	2	
+GCF_900507505.1	0	0.9649073441169234	robust	0.0	amr	1			ST17	Turkey	Asia_western	2014	human	KL122	O2	0	2	
+GCF_900508985.1	0	0.9603634369505587	robust	0.0	amr+vir	2	0.0	fused	ST1207	Turkey	Asia_western	2013	human	KL136	O2	1	1	
+GCF_900504715.1	1	0.7409493929702263	robust	0.5263157894736842	amr	1			ST661	UK	Europe_northern	2013	human	KL140	O2	0	2	
+GCF_900503925.1	0	0.9599345582584182	robust	0.0	amr	1			ST915	UK	Europe_northern	2014	human	KL62	O2	0	2	
+GCF_900512475.1	1	0.9667147794934501	robust	0.0		0			ST3641	Germany	Europe_western	2014	human	KL39	O3/O3a	0	0	
+GCF_900517495.1	1	0.4887130386652046	robust	0.0	amr+vir	2	0.0	fused	ST792	Spain	Europe_southern	2013	human	KL25	O3/O3a	2	1	
+GCF_900500865.1	0	0.6561183052469857	robust	0.0	vir	1			ST610	Greece	Europe_southern	2013	human	KL55	O3/O3a	1	0	
+GCF_900510115.1	0	0.5352036164913005	robust	0.0	vir	1			ST2447	Poland	Europe_eastern	2014	human	KL35	O3/O3a	1	0	
+GCF_900511165.1	1	0.9657504963916049	robust	0.0		0			ST2428	Austria	Europe_western	2014	human	KL46	O3b	0	0	
+GCF_900510465.1	1	0.9629511882144013	robust	0.0		0			ST1243	Austria	Europe_western	2014	human	KL14	O3b	0	0	
+GCF_900509905.1	1	0.9556900530030945	robust	0.0		0			ST323	Austria	Europe_western	2014	human	KL21	O3b	0	0	
+GCF_900512405.1	0	0.8887512265335858	robust	0.3157894736842105	amr	1			ST1804	Germany	Europe_western	2014	human	KL38	O3b	0	1	
+GCF_900512575.1	0	0.9598679339382821	robust	0.0	amr	1			ST3642	Germany	Europe_western	2014	human	KL46	O3b	0	1	
+GCF_900502615.1	0	0.9603874891432094	robust	0.0	amr	1			ST1890	Denmark	Europe_northern	2014	human	KL22	O3b	0	3	
+GCF_900501055.1	1	0.9649059805231439	robust	0.0		0			ST605	Spain	Europe_southern	2013	human	KL58	O3b	0	0	
+GCF_900517435.1	1	0.9630945916056588	robust	0.0		0			ST33	Spain	Europe_southern	2013	human	KL13	O3b	0	0	
+GCF_900517575.1	0	0.9622362571827388	robust	0.21052631578947367	amr+vir	2	0.0	fused	ST104	Spain	Europe_southern	2014	human	KL31	O3b	1	2	
+GCF_900517755.1	0	0.9632455628041962	robust	0.0	amr+vir	2	0.0	fused	ST104	Spain	Europe_southern	2014	human	KL31	O3b	1	2	
+GCF_900500755.1	0	0.9628509101019008	robust	0.0	amr+vir	2	0.0	fused	ST104	Spain	Europe_southern	2014	human	KL31	O3b	1	1	
+GCF_900501905.1	1	0.7235580282582528	robust	0.5263157894736842	amr	1			ST1486	Greece	Europe_southern	2013	human	KL38	O3b	0	2	
+GCF_900502375.1	1	0.9562252908149038	robust	0.0		0			ST774	Greece	Europe_southern	2014	human	KL105	O3b	0	0	
+GCF_900505865.1	0	0.9611153120419337	robust	0.15789473684210525	amr	1			ST1574	Croatia	Europe_southern	2013	human	KL114	O3b	0	0	
+GCF_900506195.1	1	0.962914654884558	robust	0.0		0			ST49	Croatia	Europe_southern	2013	human	KL39	O3b	0	0	
+GCF_900517105.1	1	0.9630976591978153	robust	0.0		0			ST200	Hungary	Europe_eastern	2014	human	KL22	O3b	0	0	
+GCF_900512095.1	1	0.9644110464993556	robust	0.0		0			ST2703	Israel	Asia_western	2014	human	KL16	O3b	0	0	
+GCF_900512135.1	1	0.9576581858761802	robust	0.0		0			ST3653	Israel	Asia_western	2014	human	KL14	O3b	0	0	
+GCF_900512205.1	0	0.7259943631924517	robust	0.0	vir	1			ST168	Israel	Asia_western	2013	human	KL39	O3b	1	0	
+GCF_900512225.1	1	0.9603886840109828	robust	0.0		0			ST3654	Israel	Asia_western	2014	human	KL13	O3b	0	0	
+GCF_900513415.1	0	0.6598179157769076	robust	0.0	vir	1			ST4064	Israel	Asia_western	2013	human	KL46	O3b	1	0	
+GCF_900514105.1	1	0.9633806648941999	robust	0.0		0			ST3155	Italy	Europe_southern	2013	human	KL139	O3b	0	0	
+GCF_900514155.1	1	0.9560765642468555	robust	0.0		0			ST628	Italy	Europe_southern	2013	human	KL9	O3b	0	0	
+GCF_900513125.1	0	0.5508472008480368	robust	0.0	vir	1			ST1418	Italy	Europe_southern	2013	human	KL13	O3b	1	0	
+GCF_900514415.1	0	0.9652060916776719	robust	0.47368421052631576	amr+vir	2	0.0	fused	ST3659	Italy	Europe_southern	2014	human	KL111	O3b	1	0	
+GCF_900514425.1	1	0.9635829806941847	robust	0.0		0			ST432	Italy	Europe_southern	2014	human	KL46	O3b	0	0	
+GCF_900516165.1	0	0.9610057894390156	robust	0.0	amr	1			ST2217	Italy	Europe_southern	2014	human	KL13	O3b	0	2	
+GCF_900515705.1	0	0.9575970438347748	robust	0.0	amr	1			ST2217	Italy	Europe_southern	2014	human	KL13	O3b	0	2	
+GCF_900516075.1	0	0.8806875503908147	robust	0.3157894736842105	amr	1			ST1471	Italy	Europe_southern	2014	human	KL110	O3b	0	0	
+GCF_900508465.1	0	0.9604822114023248	robust	0.0	amr	1			ST1243	Lithuania	Europe_northern	2014	human	KL14	O3b	0	1	
+GCF_900503585.1	0	0.9671553320331175	robust	0.0	amr	1			ST584	Luxembourg	Europe_western	2014	human	KL38	O3b	0	1	
+GCF_900503715.1	0	0.9678916566775758	robust	0.0	amr	1			ST427	Luxembourg	Europe_western	2014	human	KL31	O3b	0	1	
+GCF_900513825.1	0	0.9614434590133469	robust	0.0	amr+vir	2	0.0	fused	ST274	Montenegro	Europe_southern	2014	human	KL14	O3b	1	3	
+GCF_900513935.1	0	0.9633383720682138	robust	0.0	amr+vir	2	0.0	fused	ST274	Montenegro	Europe_southern	2014	human	KL14	O3b	1	3	
+GCF_900513965.1	0	0.9595664169074855	robust	0.0	amr+vir	2	0.0	fused	ST274	Montenegro	Europe_southern	2014	human	KL14	O3b	1	0	
+GCF_900514035.1	0	0.9662511290982689	robust	0.0	amr+vir	2	0.0	fused	ST274	Montenegro	Europe_southern	2013	human	KL14	O3b	1	3	
+GCF_900511995.1	1	0.9677882621934606	robust	0.0		0			ST200	Malta	Europe_southern	2013	human	KL61	O3b	0	0	
+GCF_900512045.1	1	0.9586817910589627	robust	0.0		0			ST292	Malta	Europe_southern	2013	human	KL38	O3b	0	0	
+GCF_900501935.1	0	0.9655420195488049	robust	0.0	amr+vir	2	0.0	fused	ST104	Portugal	Europe_southern	2014	human	KL31	O3b	1	2	
+GCF_900502005.1	1	0.9600989191821534	robust	0.0		0			ST2428	Portugal	Europe_southern	2014	human	KL46	O3b	0	0	
+GCF_900502035.1	0	0.892552637236243	robust	0.3157894736842105	amr	1			ST277	Portugal	Europe_southern	2014	human	KL46	O3b	0	0	
+GCF_900504265.1	0	0.9629775019467186	robust	0.5263157894736842	amr+vir	2	0.0	fused	ST189	Romania	Europe_eastern	2014	human	KL128	O3b	1	0	
+GCF_900503465.1	0	0.9667870337491097	robust	0.0	amr+vir	2	0.0	fused	ST274	Serbia	Europe_southern	2013	human	KL14	O3b	1	3	
+GCF_900503525.1	0	0.9619475437334254	robust	0.0	amr+vir	2	0.0	fused	ST353	Serbia	Europe_southern	2013	human	KL110	O3b	1	1	
+GCF_900507785.1	1	0.9658332880507142	robust	0.0		0			ST3676	Turkey	Asia_western	2013	human	KL14	O3b	0	0	
+GCF_900507425.1	0	0.9668187626270444	robust	0.0	amr	1			ST11	Turkey	Asia_western	2013	human	KL125	O3b	0	3	
+GCF_900508665.1	1	0.9634674274921092	robust	0.0		0			ST1228	Turkey	Asia_western	2014	human	KL38	O3b	0	0	
+GCF_900504675.1	0	0.9613901606456775	robust	0.0	amr	1			ST1593	UK	Europe_northern	2013	human	KL137	O3b	0	1	
+GCF_900503125.1	0	0.9640265792991863	robust	0.0	amr	1			ST1593	UK	Europe_northern	2014	human	KL137	O3b	0	1	
+GCF_900506555.1	0	0.9613708779947466	robust	0.0	amr+vir	2	0.0	fused	ST405	Belgium	Europe_western	2014	human	KL151	O4	1	1	
+GCF_900507065.1	0	0.9654044796432686	robust	0.0	amr+vir	2	0.0	fused	ST405	Belgium	Europe_western	2014	human	KL151	O4	1	2	
+GCF_900516405.1	0	0.9640984555932375	robust	0.0	amr+vir	2	0.0	fused	ST405	Spain	Europe_southern	2013	human	KL151	O4	1	1	
+GCF_900516655.1	0	0.9690133925275733	robust	0.0	amr+vir	2	0.0	fused	ST405	Spain	Europe_southern	2013	human	KL151	O4	1	0	
+GCF_900517205.1	1	0.963253707256482	robust	0.0		0			ST163	Spain	Europe_southern	2013	human	KL139	O4	0	0	
+GCF_900505705.1	0	0.8691333063822394	robust	0.47368421052631576	amr	1			ST322	Croatia	Europe_southern	2014	human	KL17	O4	0	0	
+GCF_900505755.1	0	0.9620022126840502	robust	0.0	amr	1			ST437	Croatia	Europe_southern	2014	human	KL36	O4	0	0	
+GCF_900505815.1	0	0.9626116638501364	robust	0.3157894736842105	amr	1			ST437	Croatia	Europe_southern	2014	human	KL36	O4	0	0	
+GCF_900503375.1	0	0.6685020211456989	robust	0.0	vir	1			ST502	Croatia	Europe_southern	2014	human	KL15	O4	1	0	
+GCF_900506175.1	0	0.9626955915514579	robust	0.0	amr	1			ST437	Croatia	Europe_southern	2014	human	KL36	O4	0	1	
+GCF_900517825.1	0	0.9620891340594454	robust	0.0	amr	1			ST437	Croatia	Europe_southern	2014	human	KL36	O4	0	1	
+GCF_900504485.1	1	0.9582205729329335	robust	0.0		0			ST2286	Romania	Europe_eastern	2013	human	KL45	O4	0	0	
+GCF_900505585.1	0	0.962165800582321	robust	0.0	amr	1			ST340	Serbia	Europe_southern	2013	human	KL15	O4	0	2	
+GCF_900507765.1	0	0.8802303446674514	robust	0.47368421052631576	amr	1			ST345	Turkey	Asia_western	2013	human	KL15	O4	0	0	
+GCF_900506955.1	0	0.962563696542881	robust	0.5263157894736842	amr+vir	2	0.0	fused	ST788	Belgium	Europe_western	2014	human	KL25	O5	1	2	
+GCF_900509985.1	0	0.6548831664047393	robust	0.0	vir	1			ST17	Estonia	Europe_northern	2014	human	KL25	O5	1	0	
+GCF_900510015.1	0	0.5358404479974562	robust	0.0	vir	1			ST17	Estonia	Europe_northern	2014	human	KL25	O5	1	0	
+GCF_900511675.1	0	0.9636568881102643	robust	0.0	amr	1			ST902	France	Europe_western	2014	human	KL125	O5	0	1	
+GCF_900512035.1	0	0.9664919830702782	robust	0.0	amr	1			ST1626	Lithuania	Europe_northern	2014	human	KL151	O5	0	1	
+GCF_900507245.1	0	0.970661403835732	robust	0.0	amr+vir	2	0.0	fused	ST336	Turkey	Asia_western	2013	human	KL25	O5	1	0	
+GCF_900507295.1	1	0.9622171877669066	robust	0.0		0			ST636	Turkey	Asia_western	2013	human	KL61	O5	0	0	
+GCF_900506415.1	0	0.9673548556100743	robust	0.0	amr+vir	2	0.0	fused	ST230	Belgium	Europe_western	2014	human	KL127	OL101	1	0	
+GCF_900512665.1	1	0.962001169050412	robust	0.0	amr+vir	2	0.0	fused	ST1307	Germany	Europe_western	2013	human	KL127	OL101	4	2	event_17_ST1307 Germany unresolvable
+GCF_900512085.1	1	0.9571620748542184	robust	0.0		0			ST873	Lithuania	Europe_northern	2013	human	KL52	OL101	0	0	
+GCF_900507155.1	0	0.8841206702065837	robust	0.10526315789473684	amr	1			ST999	Serbia	Europe_southern	2013	human	KL127	OL101	0	0	
+GCF_900509125.1	0	0.9577702037149487	robust	0.0	amr	1			ST1634	Turkey	Asia_western	2014	human	KL151	OL102	0	0	
+GCF_900508695.1	1	0.9616031695662611	robust	0.0		0			ST940	Turkey	Asia_western	2014	human	KL48	OL103	0	0	
+SRR5877463	0	0.9646879789878912	robust	0.0	amr	1			ST252	Cambodia	Asia_SE	2013	human	KL8	O1	0	1	
+SRR5877473	0	0.9606220467465533	robust	0.0	amr	1			ST29	Cambodia	Asia_SE	2013	human	KL54	O1	0	1	
+SRR5877521	0	0.9609411681726763	robust	0.0	amr	1			ST409	Cambodia	Asia_SE	2013	human	KL9	O3b	0	1	
+SRR5877514	0	0.9633711454070463	robust	0.0	amr	1			ST409	Cambodia	Asia_SE	2013	human	KL9	O3b	0	1	
+SRR5877500	0	0.964867023691806	robust	0.0	amr	1			ST502-1LV	Cambodia	Asia_SE	2013	human	KL15	O4	0	0	
+ERR276929	0	0.6347808883130842	robust	0.0	vir	1			ST3042	UK	Europe_northern	2011	human	KL18	O1	1	0	
+ERR276937	0	0.9660087070125294	robust	0.0	amr+vir	2	0.0	fused	ST45	UK	Europe_northern	2011	human	KL24	O2	1	0	
+ERR276942	0	0.9614037356487303	robust	0.0	amr	1			ST490	UK	Europe_northern	2011	human	KL3	O2	0	1	
+ERR276948	0	0.9603385697492857	robust	0.0	amr	1			ST490	UK	Europe_northern	2011	human	KL3	O2	0	1	
+ERR276955	0	0.9630589589883033	robust	0.0	amr	1			ST490	UK	Europe_northern	2011	human	KL3	O2	0	1	
+ERR276960	0	0.9610620445208578	robust	0.0	amr	1			ST490	UK	Europe_northern	2011	human	KL3	O2	0	1	
+ERR276970	1	0.9619877229142433	robust	0.0		0			ST883-2LV	UK	Europe_northern	2011	human	KL61	O3/O3a	0	0	
+ERR276932	0	0.5927771472959869	robust	0.0	vir	1			ST473-3LV	UK	Europe_northern	2011	human	KL39	O3b	1	0	
+ERR276972	1	0.9666007627086521	robust	0.0		0			ST432	UK	Europe_northern	2011	human	KL57	O3b	0	0	
+ERR276939	1	0.9620512244779753	robust	0.0		0			ST940	UK	Europe_northern	2011	human	KL18	O4	0	0	
+ERR276989	0	0.9614462921160848	robust	0.0	amr	1			ST309	UK	Europe_northern	2011	human	KL42	O4	0	0	
+SRR1508882	0	0.9626445905384188	robust	0.0	amr	1			ST340	Nepal	Asia_southern	2008	human	KL15	O4	0	1	
+SRR1508865	1	0.9673949475979029	robust	0.0		0			ST478	Nepal	Asia_southern	2012	human	KL125	O5	0	0	
+SRR1508820	0	0.9588106327762729	robust	0.0	amr	1			ST1626	Nepal	Asia_southern	2011	human	KL151	O5	0	1	
+ERR713641	1	0.9615423315371792	robust	0.0	vir	1			ST23	USA	America_northern	2006	human	KL1	unknown	5	0	
+ERR713647	0	0.8053791177486591	robust	0.0	amr	1			ST249	Denmark	Europe_northern	unknown	human	KL1	O1	0	0	
+ERR713523	1	0.9579033558704275	robust	0.0	vir	1			ST260	Taiwan	Asia_eastern	1996	human	KL1	O1	5	0	
+ERR712625	1	0.9697097945580813	robust	0.0	vir	1			ST23-1LV	USA	America_northern	2007	human	KL1	O1	5	0	
+ERR713642	1	0.9637794666219085	robust	0.0	vir	1			ST23-1LV	Sweden	Europe_northern	2008	human	KL1	O1	5	0	
+ERR720259	0	0.9683094305527109	robust	0.3157894736842105	amr	1			ST375	USA	America_northern	unknown	unknown	KL2	O1	0	0	
+ERR732775	1	0.9536268678889837	robust	0.0		0			ST2498	USA	America_northern	2006	human	KL24	O2	0	0	
+ERR720244	0	0.9585308098654819	robust	0.0	amr	1			ST340-1LV	USA	America_northern	2005	human	KL15	O4	0	1	
+ERR279216	1	0.9594513936303501	robust	0.0	vir	1			ST82	unknown	unknown	1932	unknown	KL1	O1	3	0	
+ERR279267	1	0.9619990951402105	robust	0.0	vir	1			ST3764	unknown	unknown	1940	unknown	KL1	O1	3	0	
+ERR314344	1	0.9606596026579748	robust	0.0	vir	1			ST90 (subsp. ozanae)	unknown	unknown	1940	unknown	KL5	O2	3	0	
+ERR279244	1	0.9664299694859748	robust	0.0	vir	1			ST90 (subsp. ozanae)	unknown	unknown	1940	unknown	KL5	O2	3	0	
+ERR314347	1	0.9645972735585185	robust	0.0		0			ST3767	unknown	unknown	1940	unknown	KL43	O2	0	0	
+ERR314350	1	0.9607529198255401	robust	0.0	vir	1			ST93	unknown	unknown	1940	unknown	KL4	O2	4	0	
+24042_7_269	0	0.971122737522354	robust	0.0	amr+vir	2	0.0	fused	ST7-1LV	Laos	Asia_SE	2015	human	KL54	O1	3	0	
+49	0	0.9598071772125415	robust	0.0	amr	1			ST709	Vietnam	Asia_SE	2011	human	KL163	O1	0	0	
+89	0	0.9612530511783913	robust	0.0	amr	1			ST2156-2LV	Vietnam	Asia_SE	2012	human	KL142	O1	0	0	
+24042_7_258	1	0.9656452115152071	robust	0.0		0			ST500	Thailand	Asia_SE	2015	human	KL34	O1	0	0	
+103	0	0.9607380501251085	robust	0.0	amr+vir	2	0.0	fused	ST15	Vietnam	Asia_SE	2011	human	KL10	O1	1	0	
+24042_7_259	0	0.5690282322067599	robust	0.0	vir	1			ST889	Thailand	Asia_SE	2016	human	KL54	O1	1	0	
+24042_7_260	0	0.9667881890641988	robust	0.0	amr	1			ST3132	Thailand	Asia_SE	2017	human	KL142	O1	0	1	
+172	1	0.9620106619584726	robust	0.0	amr+vir	2	0.0	fused	ST828	Vietnam	Asia_SE	2010	human	KL5	O1	4	0	
+BP2189	0	0.9579036689429573	robust	0.0	amr	1			ST3609	India	Asia_southern	2017	human	KL117	O1	0	2	
+24042_7_231	1	0.9606060685704042	robust	0.0		0			ST950	Cambodia	Asia_SE	2014	human	KL7	O1	0	0	
+24042_7_256	0	0.9614608414150724	robust	0.0	amr	1			ST540	Cambodia	Asia_SE	2017	human	KL21	O1	0	1	
+24042_7_338	1	0.9691522026957664	robust	0.0		0			ST180	Hong Kong	Asia_eastern	2016	human	KL54	O1	0	0	
+24042_7_340	1	0.9634079819255479	robust	0.0		0			ST86	Hong Kong	Asia_eastern	2016	human	KL2	O1	0	0	
+24042_7_346	0	0.9594311910156794	robust	0.15789473684210525	amr+vir	2	0.0	fused	ST35	Hong Kong	Asia_eastern	2016	human	KL62	O1	4	0	
+24042_7_351	1	0.9668012966083899	robust	0.0	vir	1			ST1049	Hong Kong	Asia_eastern	2016	human	KL5	O1	1	0	
+24042_7_334	0	0.5164582957788584	robust	0.0	vir	1			ST1117	Hong Kong	Asia_eastern	2016	human	KL117	O1	1	0	
+24042_7_274	1	0.9556623570334878	robust	0.0	vir	1			ST65	Laos	Asia_SE	2015	human	KL2	O1	5	0	
+24042_7_276	0	0.9624138840705874	robust	0.0	amr+vir	2	0.0	fused	ST1787	Laos	Asia_SE	2015	human	KL148	O1	1	1	
+24042_7_222	0	0.9564675671729806	robust	0.0	amr	1			ST17-1LV	Cambodia	Asia_SE	2014	human	KL122	O1	0	1	
+24042_7_215	0	0.9567944904307344	robust	0.0	amr	1			ST1104	Cambodia	Asia_SE	2014	human	KL54	O1	0	0	
+24042_7_308	0	0.9615109553596912	robust	0.0	amr	1			ST966	Laos	Asia_SE	2016	human	KL102	O2	0	0	
+24042_7_236	1	0.9642553844455695	robust	0.0		0			ST29-1LV	Cambodia	Asia_SE	2015	human	KL24	O2	0	0	
+2481	0	0.9595620582770351	robust	0.0	amr+vir	2	0.0	fused	ST394	Nepal	Asia_southern	2016	human	KL3	O2	1	1	
+24042_7_320	1	0.9629809473489713	robust	0.0		0			ST2188	Laos	Asia_SE	2016	human	KL136	O2	0	0	
+2	1	0.9615521237359963	robust	0.0	vir	1			ST17	Vietnam	Asia_SE	2012	human	KL23	O2	1	0	
+41	0	0.9604539476709172	robust	0.0	amr	1			ST394	Vietnam	Asia_SE	2012	human	KL3	O2	0	1	
+117	1	0.9663712298782722	robust	0.0	vir	1			ST218	Vietnam	Asia_SE	2011	human	KL57	O2	4	0	
+256	1	0.9584937987752102	robust	0.0		0			ST2797	Vietnam	Asia_SE	2014	human	KL23	O2	0	0	
+KPN238	0	0.9641243865222302	robust	0.0	amr	1			ST17-1LV	Cambodia	Asia_SE	2014	human	KL122	O2	0	1	
+24042_7_342	1	0.9692772311305158	robust	0.0		0			ST1317	Hong Kong	Asia_eastern	2016	human	KL9	O2	0	0	
+24042_7_337	0	0.9660343364443555	robust	0.0	amr	1			ST896	Hong Kong	Asia_eastern	2016	human	KL3	O2	0	1	
+24042_7_266	0	0.9605158379148792	robust	0.2631578947368421	amr+vir	2	0.0	fused	ST945-2LV	Laos	Asia_SE	2015	human	KL125	O3/O3a	3	0	
+167	0	0.9606420436126555	robust	0.15789473684210525	amr	1			ST1263	Vietnam	Asia_SE	2010	human	KL10	O3/O3a	0	1	
+21	1	0.9665844010404088	robust	0.0	vir	1			ST592	Vietnam	Asia_SE	2012	human	KL57	O3b	3	0	
+24042_7_221	0	0.9644771152016215	robust	0.0	amr	1			ST667	Cambodia	Asia_SE	2014	human	KL135	O3b	0	1	
+24042_7_230	0	0.9613422635220157	robust	0.0	amr	1			ST1777	Cambodia	Asia_SE	2014	human	KL111	O3b	0	0	
+24042_7_217	0	0.9704394856903095	robust	0.0	amr	1			ST685	Cambodia	Asia_SE	2014	human	KL13	O3b	0	0	
+24042_7_330	1	0.9617077374458753	robust	0.0		0			ST1569	Hong Kong	Asia_eastern	2016	human	KL114	O3b	0	0	
+24042_7_241	0	0.965289926160176	robust	0.0	amr	1			ST2459	Cambodia	Asia_SE	2016	human	KL15	O4	0	1	
+24042_7_332	1	0.9643791704127227	robust	0.0		0			ST152	Hong Kong	Asia_eastern	2016	human	KL149	O4	0	0	
+51	1	0.9649038886914405	robust	0.0		0			ST29-3LV	Vietnam	Asia_SE	2013	human	KL103	O5	0	0	
+24042_7_341	0	0.9626648949495733	robust	0.47368421052631576	amr	1			ST4081	Hong Kong	Asia_eastern	2016	human	KL125	O5	0	0	
+24042_7_248	0	0.9645677535606895	robust	0.0	amr	1			ST3658	Cambodia	Asia_SE	2016	human	KL52	OL101	0	0	
+93	0	0.9588014296377483	robust	0.0	amr	1			ST534	Vietnam	Asia_SE	2011	human	KL164	OL102	0	0	
+24042_7_348	1	0.9634167556769355	robust	0.0		0			ST1613	Hong Kong	Asia_eastern	2016	human	KL12	OL103	0	0	

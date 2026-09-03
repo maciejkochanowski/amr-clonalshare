@@ -1,0 +1,31 @@
+{
+ "generated_utc": "2026-08-31T18:34:45.765572Z",
+ "source": "Hadjirin et al. 2021 BMC Biology 19:191, Additional file 1",
+ "join": "longest source Strain identifier contained in BV-BRC genome_name",
+ "validated_by": [
+  "collection year",
+  "sixteen-agent MIC vector"
+ ],
+ "n_clusters": 30,
+ "validation": {
+  "n_isolates": 677,
+  "n_matched": 677,
+  "match_rate": 1.0,
+  "n_distinct_strains_claimed": 677,
+  "n_agents_compared": 16,
+  "n_mic_cells_compared": 10832,
+  "mic_agreement": 1.0,
+  "n_year_comparable": 651,
+  "year_agreement": 1.0,
+  "n_with_sequence_type": 458,
+  "adjusted_mutual_information_with_mlst": 0.7204223363477655,
+  "permutation_null_mean": -0.00010376598616666507,
+  "permutation_null_sd": 0.012044563488738875,
+  "z_against_permutation_null": 59.82168660637571
+ },
+ "thresholds": {
+  "required_match_rate": 1.0,
+  "required_year_agreement": 1.0,
+  "required_mic_agreement": 1.0
+ }
+}

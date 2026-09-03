@@ -1,0 +1,120 @@
+{
+  "experiment": "G_block_threshold",
+  "thresholds_used": [
+    0.0,
+    0.5,
+    0.7,
+    0.85
+  ],
+  "thresholds_source": "MANUSCRIPT Table 2b (none/0.5/0.7/0.85); generator default is (0.0,0.3,0.5,0.7,0.9)",
+  "raw": {
+    "description": "type-I error of the feature-split test as a function of the automatic blocking threshold, under a no-cluster null with correlated feature blocks; threshold = 0 means no automatic blocking (per-feature split)",
+    "n_sim": 4000,
+    "n": 200,
+    "p": 30,
+    "true_block_size": 5,
+    "n_splits": 11,
+    "by_threshold": {
+      "threshold=0.0": {
+        "type_I_at_0.05": 0.99975,
+        "mean_n_split_units": 30.0,
+        "mean_max_abs_corr_between_units": 0.8987457341297737,
+        "n_usable": 4000
+      },
+      "threshold=0.5": {
+        "type_I_at_0.05": 0.01625,
+        "mean_n_split_units": 6.001,
+        "mean_max_abs_corr_between_units": 0.20179592585451933,
+        "n_usable": 4000
+      },
+      "threshold=0.7": {
+        "type_I_at_0.05": 0.0195,
+        "mean_n_split_units": 6.42675,
+        "mean_max_abs_corr_between_units": 0.32428654368614046,
+        "n_usable": 4000
+      },
+      "threshold=0.85": {
+        "type_I_at_0.05": 0.78975,
+        "mean_n_split_units": 22.69225,
+        "mean_max_abs_corr_between_units": 0.8456468988654172,
+        "n_usable": 4000
+      }
+    }
+  },
+  "cells": {
+    "threshold=0.0": {
+      "numerator": 3999,
+      "denominator": 4000,
+      "point": 0.99975,
+      "raw_rate": 0.99975,
+      "cp95_lower": 0.9986078848780338,
+      "cp95_upper": 0.9999936705680349,
+      "cp95_upper_exceeds_0.05": true,
+      "mean_n_split_units": 30.0,
+      "mean_max_abs_corr_between_units": 0.8987457341297737
+    },
+    "threshold=0.5": {
+      "numerator": 65,
+      "denominator": 4000,
+      "point": 0.01625,
+      "raw_rate": 0.01625,
+      "cp95_lower": 0.012563211652101634,
+      "cp95_upper": 0.02066563798829127,
+      "cp95_upper_exceeds_0.05": false,
+      "mean_n_split_units": 6.001,
+      "mean_max_abs_corr_between_units": 0.20179592585451933
+    },
+    "threshold=0.7": {
+      "numerator": 78,
+      "denominator": 4000,
+      "point": 0.0195,
+      "raw_rate": 0.0195,
+      "cp95_lower": 0.015443693335441258,
+      "cp95_upper": 0.024277841082055815,
+      "cp95_upper_exceeds_0.05": false,
+      "mean_n_split_units": 6.42675,
+      "mean_max_abs_corr_between_units": 0.32428654368614046
+    },
+    "threshold=0.85": {
+      "numerator": 3159,
+      "denominator": 4000,
+      "point": 0.78975,
+      "raw_rate": 0.78975,
+      "cp95_lower": 0.7767876626853193,
+      "cp95_upper": 0.8022876990448268,
+      "cp95_upper_exceeds_0.05": true,
+      "mean_n_split_units": 22.69225,
+      "mean_max_abs_corr_between_units": 0.8456468988654172
+    }
+  },
+  "receipt": {
+    "date": "2026-08-14",
+    "preregistration": "audyt/PREREGISTRACJA_W4.md",
+    "preregistration_sha256": "9bd10b40e207c57799c0d9cb9cba1c2ae5dff1ef683a9c0353834ae220846d64",
+    "generator": "benchmarks/calibration_study.py",
+    "generator_sha256": "729d3a2707f27e559f38de440c628faaf047d3281f9c4608bffe1bafa0d3fb68",
+    "generator_unmodified": true,
+    "git_rev": "56439d55c383fcda7e1a6188ff0c2ddc09921204",
+    "n_sim": 4000,
+    "params": {
+      "n": 200,
+      "p": 30,
+      "n_splits": 11,
+      "block_size": 5
+    },
+    "seeds_in_code": {
+      "exp_b_typeI": "default_rng(11 + block)",
+      "exp_b_power": "default_rng(77)",
+      "exp_g": "default_rng(4242)"
+    },
+    "interval": "two-sided Clopper-Pearson 95% via scipy.stats.beta.ppf",
+    "runtime_seconds": 1140.906515550043,
+    "cpu_hours": 0.3169184765416786,
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0",
+    "shipped_120_reproduction_gate": "PASS (exp_b n_sim=120 odtworzone co do bitu)",
+    "shipped_file_overwritten": false
+  }
+}

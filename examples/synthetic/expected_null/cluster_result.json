@@ -1,0 +1,3369 @@
+{
+  "schema_version": "1.0",
+  "seed": 42,
+  "config": {
+    "distance": {
+      "metric": "jaccard",
+      "undefined_pair": "identical",
+      "one_hot_metric": "simple_matching"
+    },
+    "snf": {
+      "K": 20,
+      "mu": 0.5,
+      "T": 20,
+      "alpha": 0.5,
+      "tie_policy": "inclusive",
+      "update": "renormalise"
+    },
+    "prevalence_gate": {
+      "lo": 0.0,
+      "hi": 1.0,
+      "min_count": 2
+    },
+    "mdl_complexity": "rissanen",
+    "monte_carlo": {
+      "consensus_B": 100,
+      "n_perm": 0,
+      "n_boot": 500,
+      "ps_n_reps": 30,
+      "gap_B": 30
+    }
+  },
+  "selected_k": 1,
+  "k_selection": {
+    "requested_method": "mdl",
+    "k_select_arg": "auto",
+    "mdl_complexity": "rissanen",
+    "k_range_swept": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "mdl_sweep": [
+      {
+        "k": 1,
+        "gain": -0.06697721780983557,
+        "L_null": 7134.323423828999,
+        "L_archetype": 7134.390401046809
+      },
+      {
+        "k": 2,
+        "gain": -135.66193336491415,
+        "L_null": 7134.323423828999,
+        "L_archetype": 7269.985357193913
+      },
+      {
+        "k": 3,
+        "gain": -226.78803427321873,
+        "L_null": 7134.323423828999,
+        "L_archetype": 7361.1114581022175
+      },
+      {
+        "k": 4,
+        "gain": -278.3244363052454,
+        "L_null": 7134.323423828999,
+        "L_archetype": 7412.647860134244
+      },
+      {
+        "k": 5,
+        "gain": -321.52592944763364,
+        "L_null": 7134.323423828999,
+        "L_archetype": 7455.849353276632
+      }
+    ],
+    "mdl_best_gain": -0.06697721780983557,
+    "mdl_gain_fraction": -9.388026562705063e-06,
+    "mdl_gain_bits_per_isolate": -0.00037209565449908646,
+    "mdl_prefers_no_clustering": true,
+    "mdl_optimum_at_k_range_boundary": false,
+    "mdl_note": "gain as a fraction of the i.i.d. code length is the interpretable scale; a fraction below ~0.01 is a weak preference however large the bit count looks",
+    "method_used": "mdl",
+    "selected_k": 1,
+    "no_structure": true
+  },
+  "layers": [
+    "amr",
+    "vir"
+  ],
+  "layer_reports": [
+    {
+      "layer": "amr",
+      "kind": "wide_binary",
+      "n_features_in": 18,
+      "n_features_used": 18,
+      "gated_out": [],
+      "truncated_by_top_variance": [],
+      "n_uninformative_rows": 1,
+      "frac_uninformative_rows": 0.005555555555555556,
+      "effective_dimension": 16.3702531828224,
+      "density": 0.2441358024691358,
+      "knn_ties": {
+        "K": 20.0,
+        "mean_degree": 20.016666666666666,
+        "tie_inflation": 1.0008333333333332,
+        "frac_rows_tied": 0.016666666666666666,
+        "n_distinct_affinities": 14320.0
+      }
+    },
+    {
+      "layer": "vir",
+      "kind": "wide_binary",
+      "n_features_in": 30,
+      "n_features_used": 30,
+      "gated_out": [],
+      "truncated_by_top_variance": [],
+      "n_uninformative_rows": 0,
+      "frac_uninformative_rows": 0.0,
+      "effective_dimension": 25.143136669452936,
+      "density": 0.24981481481481482,
+      "knn_ties": {
+        "K": 20.0,
+        "mean_degree": 20.0,
+        "tie_inflation": 1.0,
+        "frac_rows_tied": 0.0,
+        "n_distinct_affinities": 16108.0
+      }
+    }
+  ],
+  "n_isolates": 180,
+  "cluster_sizes": {
+    "0": 180
+  },
+  "assignment": [
+    {
+      "isolate_id": "SC_0000",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0001",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0002",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0003",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0004",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0005",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0006",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0007",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0008",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0009",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0010",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0011",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0012",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0013",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0014",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0015",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0016",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0017",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0018",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0019",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0020",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0021",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0022",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0023",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0024",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0025",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0026",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0027",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0028",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0029",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0030",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0031",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0032",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "vir"
+      ],
+      "n_informative_layers": 1,
+      "layer_conflict": null,
+      "discordant_layer": null
+    },
+    {
+      "isolate_id": "SC_0033",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0034",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0035",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0036",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0037",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0038",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0039",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0040",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0041",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0042",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0043",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0044",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0045",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0046",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0047",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0048",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0049",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0050",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0051",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0052",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0053",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0054",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0055",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0056",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0057",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0058",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0059",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0060",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0061",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0062",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0063",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0064",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0065",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0066",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0067",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0068",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0069",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0070",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0071",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0072",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0073",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0074",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0075",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0076",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0077",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0078",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0079",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0080",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0081",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0082",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0083",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0084",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0085",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0086",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0087",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0088",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0089",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0090",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0091",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0092",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0093",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0094",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0095",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0096",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0097",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0098",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0099",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0100",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0101",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0102",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0103",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0104",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0105",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0106",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0107",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0108",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0109",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0110",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0111",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0112",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0113",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0114",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0115",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0116",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0117",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0118",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0119",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0120",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0121",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0122",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0123",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0124",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0125",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0126",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0127",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0128",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0129",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0130",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0131",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0132",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0133",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0134",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0135",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0136",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0137",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0138",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0139",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0140",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0141",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0142",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0143",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0144",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0145",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0146",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0147",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0148",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0149",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0150",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0151",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0152",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0153",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0154",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0155",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0156",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0157",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0158",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0159",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0160",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0161",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0162",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0163",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0164",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0165",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0166",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0167",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0168",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0169",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0170",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0171",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0172",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0173",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0174",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0175",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0176",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0177",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0178",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    },
+    {
+      "isolate_id": "SC_0179",
+      "cluster": 0,
+      "confidence": 1.0,
+      "stability": "robust",
+      "fragility": 0.0,
+      "positive_layers": [
+        "amr",
+        "vir"
+      ],
+      "n_informative_layers": 2,
+      "layer_conflict": 0.0,
+      "discordant_layer": "fused"
+    }
+  ],
+  "descriptive_archetype_profiles": [],
+  "n_defining_features_descriptive": 0,
+  "mdl_calibration": {
+    "n_perm": 0,
+    "p_MDL": null,
+    "reject_H0": null,
+    "gain_obs": -0.06697721780983557,
+    "note": "permutation null not run (n_perm=0). Re-run with run(..., n_perm=199) for a p-value; cost is O(n_perm * T * m * n^3). The default evidence for real structure is result['post_clustering_inference']."
+  },
+  "mdl_contribution": [
+    {
+      "cluster": 0,
+      "n_c": 180,
+      "L_null_restricted": 6954.518949517086,
+      "L_residuals": 6954.585926734896,
+      "MDL_contribution": -0.06697721780983557
+    }
+  ],
+  "pac": 0.0,
+  "cdf_area": 0.0,
+  "artifact_diagnostics": {
+    "per_layer": [
+      {
+        "layer": "amr",
+        "n_uninformative_rows": 1,
+        "frac_uninformative_rows": 0.005555555555555556,
+        "empty_stratum_ari": 0.0,
+        "empty_stratum_ami": 0.0,
+        "effective_dimension": 16.3702531828224,
+        "n_features_used": 18,
+        "knn_tie_inflation": 1.0008333333333332
+      },
+      {
+        "layer": "vir",
+        "n_uninformative_rows": 0,
+        "frac_uninformative_rows": 0.0,
+        "empty_stratum_ari": null,
+        "empty_stratum_ami": null,
+        "effective_dimension": 25.143136669452936,
+        "n_features_used": 30,
+        "knn_tie_inflation": 1.0
+      }
+    ],
+    "frac_uninformative_per_cluster": {
+      "0": {
+        "amr": 0.005555555555555556,
+        "vir": 0.0
+      }
+    },
+    "layer_positivity_pattern_per_cluster": {
+      "0": {
+        "amr+vir": 179,
+        "vir": 1
+      }
+    },
+    "frac_positive_in_no_layer_per_cluster": {
+      "0": 0.0
+    },
+    "frac_positive_in_all_layers_per_cluster": {
+      "0": 0.9944444444444445
+    },
+    "max_empty_stratum_ari": 0.0,
+    "empty_stratum_layer": null,
+    "empty_stratum_warning": false,
+    "note": "empty_stratum_ari compares the partition to the indicator 'carries none of this layer's features'; a high value means the clusters are the trait-absent stratum, an artefact of the empty-union distance convention rather than trait structure"
+  },
+  "layer_influence": {
+    "per_layer": [
+      {
+        "layer": "amr",
+        "ari_solo_vs_fused": 1.0,
+        "delta_loo": 0.0,
+        "weight": 0.5,
+        "p_contribution": 1.0,
+        "null_mean_delta_loo": 0.0,
+        "inert": true
+      },
+      {
+        "layer": "vir",
+        "ari_solo_vs_fused": 1.0,
+        "delta_loo": 0.0,
+        "weight": 0.5,
+        "p_contribution": 1.0,
+        "null_mean_delta_loo": 0.0,
+        "inert": true
+      }
+    ],
+    "n_layers": 2,
+    "n_eff": 2.0,
+    "n_eff_simpson": 2.0,
+    "max_ari_solo_vs_fused": 1.0,
+    "regime": "redundant",
+    "regime_note": "every layer reproduces the fused partition alone; the fusion adds nothing over the best single layer",
+    "collapse": false,
+    "collapse_threshold": 1.5,
+    "n_perm": 10,
+    "dominant_layer": "amr",
+    "n_perm_requested": 10
+  },
+  "layer_contribution": [
+    {
+      "layer": "amr",
+      "ari_solo_vs_fused": 1.0,
+      "silhouette_of_fused_in_layer": null
+    },
+    {
+      "layer": "vir",
+      "ari_solo_vs_fused": 1.0,
+      "silhouette_of_fused_in_layer": null
+    }
+  ],
+  "layer_agreement": {
+    "pair_agreement": {
+      "fused|amr": 1.0,
+      "fused|vir": 1.0,
+      "amr|vir": 1.0
+    },
+    "fused_vs_layer": {
+      "amr": 1.0,
+      "vir": 1.0
+    },
+    "conflict_mean_layer_pairs_only": 0.0,
+    "n_layer_pairs": 1
+  },
+  "baselines": {
+    "candidates": [
+      {
+        "partition": "fused_snf",
+        "n_clusters": 1,
+        "cluster_sizes": {
+          "0": 180
+        },
+        "ari_vs_fused": 1.0,
+        "mdl_gain": -0.06697721780983557,
+        "external_agreement": {}
+      },
+      {
+        "partition": "concatenation",
+        "n_clusters": 1,
+        "cluster_sizes": {
+          "0": 180
+        },
+        "ari_vs_fused": 1.0,
+        "mdl_gain": -0.06697721780983557,
+        "external_agreement": {}
+      },
+      {
+        "partition": "solo_amr",
+        "n_clusters": 1,
+        "cluster_sizes": {
+          "0": 180
+        },
+        "ari_vs_fused": 1.0,
+        "mdl_gain": -0.06697721780983557,
+        "external_agreement": {}
+      },
+      {
+        "partition": "solo_vir",
+        "n_clusters": 1,
+        "cluster_sizes": {
+          "0": 180
+        },
+        "ari_vs_fused": 1.0,
+        "mdl_gain": -0.06697721780983557,
+        "external_agreement": {}
+      },
+      {
+        "partition": "bernoulli_mixture",
+        "n_clusters": 1,
+        "cluster_sizes": {
+          "0": 180
+        },
+        "ari_vs_fused": 1.0,
+        "mdl_gain": -0.06697721780983557,
+        "external_agreement": {}
+      }
+    ],
+    "bernoulli_mixture_k_by_bic": 1,
+    "bernoulli_mixture_bic_table": [
+      {
+        "k": 1,
+        "loglik": -4820.505201008482,
+        "n_par": 48,
+        "bic": 9890.272330859694,
+        "aic": 9737.010402016964
+      },
+      {
+        "k": 2,
+        "loglik": -4767.68692849428,
+        "n_par": 97,
+        "bic": 10039.090671524911,
+        "aic": 9729.37385698856
+      },
+      {
+        "k": 3,
+        "loglik": -4717.829521362173,
+        "n_par": 146,
+        "bic": 10193.830742954317,
+        "aic": 9727.659042724346
+      },
+      {
+        "k": 4,
+        "loglik": -4662.797731552777,
+        "n_par": 195,
+        "bic": 10338.222049029146,
+        "aic": 9715.595463105554
+      },
+      {
+        "k": 5,
+        "loglik": -4630.572078018749,
+        "n_par": 244,
+        "bic": 10528.22562765471,
+        "aic": 9749.144156037499
+      }
+    ],
+    "note": "ari_vs_fused only says whether a candidate agrees with the tool's own answer. Rank candidates by external_agreement and mdl_gain; if a single layer or a domain rule wins, report that"
+  },
+  "metadata_diagnostics": {
+    "lineage_column": "lineage",
+    "lineage_concordance": {
+      "status": "ok",
+      "n_isolates": 180,
+      "n_lineages": 45,
+      "n_same_lineage_pairs": 270,
+      "n_pairs_total": 16110,
+      "frac_pairs_informative": 0.01675977653631285,
+      "collapse_variants": false,
+      "concordance_observed": 1.0,
+      "concordance_null_mean": 1.0,
+      "concordance_null_sd": 0.0,
+      "z": null,
+      "p_value": 1.0,
+      "n_perm": 500,
+      "ami_vs_lineage": 0.0,
+      "ari_vs_lineage": 0.0,
+      "note": "the pair concordance, not AMI/ARI, is the primary statistic: with many singleton lineages AMI is chance-corrected towards zero even under strong clonal confounding"
+    },
+    "external_agreement": {},
+    "cluster_composition": {
+      "0": {
+        "n": 180,
+        "lineage": {
+          "top": {
+            "L00": 4,
+            "L01": 4,
+            "L02": 4,
+            "L03": 4,
+            "L04": 4
+          },
+          "n_distinct": 45,
+          "max_share": 0.022222222222222223
+        },
+        "planted_cluster": {
+          "top": {
+            "0": 180
+          },
+          "n_distinct": 1,
+          "max_share": 1.0
+        }
+      }
+    }
+  },
+  "phenotype_validation": null,
+  "fragility": {
+    "F_isolate": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "F_feature": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "boundary_matrix": [
+      [
+        0
+      ]
+    ]
+  },
+  "tati_edges": [],
+  "label_recoverability": {
+    "records": [
+      {
+        "isolate_id": "SC_0036",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0001",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0037",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0091",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0072",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0115",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0012",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0111",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0041",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0102",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0031",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0011",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0040",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0152",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0178",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0044",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0017",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0117",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0108",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      },
+      {
+        "isolate_id": "SC_0097",
+        "assigned_cluster": 0,
+        "recovered_cluster": 0,
+        "correct": 1
+      }
+    ],
+    "internal_label_recoverability": 1.0,
+    "n_evaluated": 20,
+    "note": "recovery of the pipeline's own labels from half the features; internal coherence, not external predictive validity"
+  },
+  "post_clustering_inference": {
+    "status": "skipped",
+    "reason": "k = 1: no partition to test",
+    "structure_detected": false,
+    "discreteness": null
+  },
+  "interpretation": {
+    "contract_version": "1.0",
+    "claim_level": 0,
+    "claim_status": "no_structure",
+    "active_gate_codes": [],
+    "gate_ledger": [
+      {
+        "code": "fusion_collapse",
+        "applicable": true,
+        "triggered": false,
+        "value": 2.0,
+        "threshold": 1.5,
+        "margin_to_failure": 0.5
+      },
+      {
+        "code": "empty_stratum",
+        "applicable": true,
+        "triggered": false,
+        "value": 0.0,
+        "threshold": 0.5,
+        "margin_to_failure": 0.5
+      },
+      {
+        "code": "post_clustering_inference",
+        "applicable": false,
+        "triggered": false,
+        "value": "skipped",
+        "threshold": "status == ok",
+        "margin_to_failure": null
+      },
+      {
+        "code": "split_design",
+        "applicable": false,
+        "triggered": false,
+        "value": null,
+        "threshold": "adequate == true",
+        "margin_to_failure": null
+      },
+      {
+        "code": "lineage_confounding",
+        "applicable": true,
+        "triggered": false,
+        "value": {
+          "p_value": 1.0,
+          "z": null
+        },
+        "threshold": {
+          "p_value_below": 0.05,
+          "z_above": 2.0
+        },
+        "margin_to_failure": null
+      },
+      {
+        "code": "phenotype_superiority",
+        "applicable": false,
+        "triggered": false,
+        "value": {
+          "rules_beating_partition": [],
+          "worst_ci95_low_minus_partition": null
+        },
+        "threshold": "no tested simple rule has bootstrap CI95 low > 0",
+        "margin_to_failure": null
+      },
+      {
+        "code": "continuum_discreteness",
+        "applicable": false,
+        "triggered": false,
+        "value": {
+          "status": null,
+          "p_value": null,
+          "tail_probability_ci95": null
+        },
+        "threshold": "status == ok and p_value < 0.05",
+        "margin_to_failure": null
+      }
+    ],
+    "scope_note": "Highest claim supported by diagnostics applicable to this run; archetype_candidate is not causal, clinical or cross-cohort biological confirmation."
+  }
+}

@@ -1,0 +1,107 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "amr-clonalshare: lineage-conditioned diagnostics for bacterial resistance patterns and prevalence trends"
+abstract: >-
+  Clusters one or more binary genotype layers (acquired antimicrobial-resistance
+  determinants, virulence loci, capsule type) by similarity-network fusion, and
+  reports the diagnostics that decide whether the resulting partition means
+  anything: whether the largest cluster is the trait-absent stratum produced by
+  the empty-union distance convention, whether tied affinities make the answer
+  depend on input row order, whether the fusion collapsed onto a single layer,
+  and whether the clusters are a clonal relabelling. Post-clustering inference
+  uses multi-split feature splitting with a p-value merging rule valid for
+  exchangeable, arbitrarily dependent p-values, and separates "there is
+  structure" from "that structure is discrete" with a parametric bootstrap from
+  a BIC-selected latent-trait continuum model with adaptive dimension checking
+  and exact finite-bootstrap uncertainty. A five-level machine-readable claim
+  ladder exposes every applicable gate and prevents a partition from being
+  promoted directly to a biological archetype.
+  A second family of outputs decomposes a difference in non-wild-type
+  prevalence between two collections into a lineage-composition and a
+  within-lineage rate component using the Kitagawa identity, with a calibrated
+  estimability gate on shared lineage support, a test for lineage labels that
+  are differentially and informatively missing, and Benjamini-Hochberg control
+  across the antimicrobial panel beside the effective number of independent
+  agents. Prevalence is reported on both the isolate and the lineage scale.
+  Ships two independently seeded positive controls, negative and adversarial
+  controls, and documented Klebsiella pneumoniae and Streptococcus suis case
+  studies in which statistical discreteness and biological interpretation are
+  reported separately.
+  A third family of outputs reads a susceptibility panel at its recorded
+  resolution: a dichotomised call and a recorded dilution are both intervals on
+  the log2 concentration scale and enter one interval likelihood, so the input
+  mode changes how much an observation carries rather than what is estimated.
+  Each share also carries an anytime-valid e-value, with false-discovery
+  control across the panel that holds under arbitrary dependence between
+  antimicrobials. The attribution is exercised outside the shipped cohorts on
+  185 species-agent cells from ten species of NCBI Pathogen Detection, each
+  with a permuted-label control.
+type: software
+authors:
+  - family-names: Kochanowski
+    given-names: M.
+    affiliation: "National Veterinary Research Institute (PIWet-PIB), Pulawy, Poland"
+version: "1.0.0"
+license: MIT
+keywords:
+  - bioinformatics
+  - antimicrobial resistance
+  - veterinary surveillance
+  - Streptococcus suis
+  - prevalence decomposition
+  - multi-view clustering
+  - population structure
+  - interval-censored MIC
+  - anytime-valid inference
+references:
+  - type: article
+    authors:
+      - family-names: Wang
+        given-names: Bo
+      - family-names: Mezlini
+        given-names: Aziz M.
+      - family-names: Goldenberg
+        given-names: Anna
+    title: "Similarity network fusion for aggregating data types on a genomic scale"
+    journal: "Nature Methods"
+    volume: 11
+    year: 2014
+    doi: "10.1038/nmeth.2810"
+  - type: article
+    authors:
+      - family-names: Neufeld
+        given-names: Anna
+      - family-names: Dharamshi
+        given-names: Ameer
+      - family-names: Gao
+        given-names: Lucy L.
+      - family-names: Witten
+        given-names: Daniela
+    title: "Data thinning for convolution-closed distributions"
+    journal: "Journal of Machine Learning Research"
+    volume: 25
+    year: 2024
+  - type: article
+    authors:
+      - family-names: Gasparin
+        given-names: Matteo
+      - family-names: Wang
+        given-names: Ruodu
+      - family-names: Ramdas
+        given-names: Aaditya
+    title: "Combining exchangeable P-values"
+    journal: "Proceedings of the National Academy of Sciences"
+    volume: 122
+    year: 2025
+    doi: "10.1073/pnas.2410849122"
+  - type: article
+    authors:
+      - family-names: Lam
+        given-names: Margaret M. C.
+      - family-names: Holt
+        given-names: Kathryn E.
+    title: "A genomic surveillance framework and genotyping tool for Klebsiella pneumoniae and its related species complex"
+    journal: "Nature Communications"
+    volume: 12
+    year: 2021
+    doi: "10.1038/s41467-021-24448-3"

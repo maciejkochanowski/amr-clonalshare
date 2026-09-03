@@ -1,0 +1,127 @@
+{
+  "experiment": "A_merging_rules — rejection counts and Clopper-Pearson 95% intervals",
+  "derivation": "czysta arytmetyka na benchmarks/results/calibration.json -> A_merging_rules; licznik = round(rate * n_sim). Zadna kampania nie byla uruchamiana.",
+  "source_file": "benchmarks/results/calibration.json",
+  "source_sha256": "0f9471614dcde611d1678a8424c885fea47171d6d7ed37d261a4e7e36c4463d6",
+  "n_sim": 4000,
+  "M_splits": 9,
+  "interval": "two-sided Clopper-Pearson 95% via scipy.stats.beta.ppf, lo=ppf(0.025,x,n-x+1), hi=ppf(0.975,x+1,n-x)",
+  "cells": {
+    "exchangeable_ruger.rho=0.0": {
+      "numerator": 106,
+      "denominator": 4000,
+      "point": 0.0265,
+      "raw_rate": 0.0265,
+      "cp95_lower": 0.021745846919316362,
+      "cp95_upper": 0.0319616164685322,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "ruger.rho=0.0": {
+      "numerator": 0,
+      "denominator": 4000,
+      "point": 0.0,
+      "raw_rate": 0.0,
+      "cp95_lower": 0.0,
+      "cp95_upper": 0.0009217947494830555,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "twice_mean.rho=0.0": {
+      "numerator": 0,
+      "denominator": 4000,
+      "point": 0.0,
+      "raw_rate": 0.0,
+      "cp95_lower": 0.0,
+      "cp95_upper": 0.0009217947494830555,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "mmb.rho=0.0": {
+      "numerator": 0,
+      "denominator": 4000,
+      "point": 0.0,
+      "raw_rate": 0.0,
+      "cp95_lower": 0.0,
+      "cp95_upper": 0.0009217947494830555,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "exchangeable_ruger.rho=0.5": {
+      "numerator": 129,
+      "denominator": 4000,
+      "point": 0.03225,
+      "raw_rate": 0.03225,
+      "cp95_lower": 0.02699421853192276,
+      "cp95_upper": 0.038202667495547384,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "ruger.rho=0.5": {
+      "numerator": 25,
+      "denominator": 4000,
+      "point": 0.00625,
+      "raw_rate": 0.00625,
+      "cp95_lower": 0.004048633837598227,
+      "cp95_upper": 0.009212496550317828,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "twice_mean.rho=0.5": {
+      "numerator": 5,
+      "denominator": 4000,
+      "point": 0.00125,
+      "raw_rate": 0.00125,
+      "cp95_lower": 0.0004059922299675104,
+      "cp95_upper": 0.002914652177068153,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "mmb.rho=0.5": {
+      "numerator": 14,
+      "denominator": 4000,
+      "point": 0.0035,
+      "raw_rate": 0.0035,
+      "cp95_lower": 0.0019147630118462313,
+      "cp95_upper": 0.005865439254924303,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "exchangeable_ruger.rho=0.9": {
+      "numerator": 144,
+      "denominator": 4000,
+      "point": 0.036,
+      "raw_rate": 0.036,
+      "cp95_lower": 0.030443088690966534,
+      "cp95_upper": 0.0422471886083907,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "ruger.rho=0.9": {
+      "numerator": 93,
+      "denominator": 4000,
+      "point": 0.02325,
+      "raw_rate": 0.02325,
+      "cp95_lower": 0.018805777149319927,
+      "cp95_upper": 0.02840800496948566,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "twice_mean.rho=0.9": {
+      "numerator": 75,
+      "denominator": 4000,
+      "point": 0.01875,
+      "raw_rate": 0.01875,
+      "cp95_lower": 0.01477590119328775,
+      "cp95_upper": 0.02344726256156053,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "mmb.rho=0.9": {
+      "numerator": 20,
+      "denominator": 4000,
+      "point": 0.005,
+      "raw_rate": 0.005,
+      "cp95_lower": 0.0030567244542523604,
+      "cp95_upper": 0.0077115815278353435,
+      "cp95_upper_exceeds_0.05": false
+    }
+  },
+  "max_cp95_upper_over_all_cells": 0.0422471886083907,
+  "all_four_rules_hold_the_level": true,
+  "feeds_manuscript": "paper/manuscript.md, Tabela 1 w sekcji 4",
+  "date": "2026-08-14",
+  "preregistration": "audyt/PREREGISTRACJA_W4.md, punkt 1.3",
+  "python": "3.11.5",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1"
+}

@@ -1,0 +1,41 @@
+site_name: amr-clonalshare
+site_description: Lineage-conditioned diagnostics for bacterial resistance patterns and prevalence trends
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+nav:
+  - Home: index.md
+  - User manual:
+      - 1. Install: manual/01-install.md
+      - 2. Prepare the input: manual/02-input.md
+      - 3. Check the input: manual/03-check-input.md
+      - 4. Run: manual/04-run.md
+      - 5. Read the results: manual/05-results.md
+      - 6. The clonal share, agent by agent: manual/06-clonal-share.md
+      - 7. Mix or rate: two collections: manual/07-decomposition.md
+      - 8. Container and reproducibility: manual/08-container.md
+      - 9. Exit codes and troubleshooting: manual/09-troubleshooting.md
+  - Methods: methodology.md
+  - Code metadata: CODE_METADATA.md

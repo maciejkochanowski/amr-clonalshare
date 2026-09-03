@@ -1,0 +1,678 @@
+genome_id,mlst,serovar,isolation_country,collection_year,host_name
+g1307.7503,MLST.ssuis.1,1,United Kingdom,2010,Pig
+g1307.7504,MLST.ssuis.1,1,United Kingdom,2010,Pig
+g1307.7505,MLST.ssuis.911,4,United Kingdom,2010,Pig
+g1307.7506,MLST.ssuis.1,2,United Kingdom,NA,Pig
+g1307.7507,MLST.ssuis.911,4,United Kingdom,2010,Pig
+g1307.7508,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7509,MLST.ssuis.87,8,United Kingdom,2010,Pig
+g1307.7510,MLST.ssuis.1,2,United Kingdom,2011,Pig
+g1307.7511,MLST.ssuis.867,8,United Kingdom,2010,Pig
+g1307.7512,MLST.ssuis.87,8,United Kingdom,2010,Pig
+g1307.7513,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7514,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7515,MLST.ssuis.906,NA,United Kingdom,2011,Pig
+g1307.7516,MLST.ssuis.905,11,United Kingdom,2011,Pig
+g1307.7517,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7518,MLST.ssuis.1,1,United Kingdom,2010,Pig
+g1307.7519,MLST.ssuis.908,4,United Kingdom,2010,Pig
+g1307.7520,MLST.ssuis.1,14,United Kingdom,2010,Pig
+g1307.7521,MLST.ssuis.27,3,United Kingdom,2010,Pig
+g1307.7522,MLST.ssuis.46,9,United Kingdom,2011,Pig
+g1307.7523,MLST.ssuis.892,16,United Kingdom,2010,Pig
+g1307.7524,MLST.ssuis.27,3,United Kingdom,2011,Pig
+g1307.7525,MLST.ssuis.27,3,United Kingdom,2010,Pig
+g1307.7526,MLST.ssuis.1,2,United Kingdom,2011,Pig
+g1307.7527,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7528,MLST.ssuis.1,14,United Kingdom,2010,Pig
+g1307.7529,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7530,MLST.ssuis.947,31,United Kingdom,2011,Pig
+g1307.7531,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7532,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7533,MLST.ssuis.907,7,United Kingdom,2010,Pig
+g1307.7534,MLST.ssuis.1,2,United Kingdom,2011,Pig
+g1307.7535,MLST.ssuis.911,4,United Kingdom,2010,Pig
+g1307.7536,MLST.ssuis.29,7,United Kingdom,2010,Pig
+g1307.7537,MLST.ssuis.25,2,United Kingdom,2010,Pig
+g1307.7538,MLST.ssuis.910,NA,United Kingdom,2011,Pig
+g1307.7539,MLST.ssuis.23,4,United Kingdom,2010,Pig
+g1307.7540,MLST.ssuis.862,4,United Kingdom,2011,Pig
+g1307.7541,MLST.ssuis.868,3,United Kingdom,2010,Pig
+g1307.7542,MLST.ssuis.28,1-Feb,United Kingdom,2010,Pig
+g1307.7543,MLST.ssuis.29,7,United Kingdom,2010,Pig
+g1307.7544,MLST.ssuis.27,3,United Kingdom,2010,Pig
+g1307.7545,MLST.ssuis.875,15(+19 partial),United Kingdom,2011,Pig
+g1307.7546,MLST.ssuis.881,21,United Kingdom,2011,Pig
+g1307.7547,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7548,MLST.ssuis.905,11,United Kingdom,2011,Pig
+g1307.7549,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7550,MLST.ssuis.28,1-Feb,United Kingdom,2010,Pig
+g1307.7551,MLST.ssuis.1,1,United Kingdom,2011,Pig
+g1307.7552,MLST.ssuis.873,2,United Kingdom,2010,Pig
+g1307.7553,MLST.ssuis.904,12,United Kingdom,2011,Pig
+g1307.7554,MLST.ssuis.29,7,United Kingdom,2010,Pig
+g1307.7555,MLST.ssuis.954,NA,United Kingdom,2010,Pig
+g1307.7556,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7557,MLST.ssuis.891,2,United Kingdom,2010,Pig
+g1307.7558,MLST.ssuis.31,3,United Kingdom,2010,Pig
+g1307.7559,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7560,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.7561,MLST.ssuis.29,7,United Kingdom,2010,Pig
+g1307.7562,MLST.ssuis.902,10,United Kingdom,2011,Pig
+g1307.7563,MLST.ssuis.859,31,United Kingdom,2011,Pig
+g1307.7564,MLST.ssuis.877,16,United Kingdom,2011,Pig
+g1307.7565,MLST.ssuis.875,15,United Kingdom,2011,Pig
+g1307.7566,MLST.ssuis.949,6,United Kingdom,2011,Pig
+g1307.7567,MLST.ssuis.866,10,United Kingdom,2010,Pig
+g1307.7568,MLST.ssuis.887,NA,United Kingdom,2011,Pig
+g1307.7569,MLST.ssuis.1,2,United Kingdom,2011,Pig
+g1307.7570,MLST.ssuis.28,1 + 6,United Kingdom,2011,Pig
+g1307.7571,MLST.ssuis.87,8,United Kingdom,2011,Pig
+g1307.7572,MLST.ssuis.28,1 + 5,United Kingdom,2011,Pig
+g1307.7573,MLST.ssuis.29,7,United Kingdom,2011,Pig
+g1307.7574,MLST.ssuis.29,7,United Kingdom,2011,Pig
+g1307.7575,MLST.ssuis.903,9,United Kingdom,2011,Pig
+g1307.7576,MLST.ssuis.28,1 and 4,United Kingdom,2011,Pig
+g1307.7577,MLST.ssuis.87,8 (+2 partial),United Kingdom,2011,Pig
+g1307.7578,MLST.ssuis.29,7,United Kingdom,2011,Pig
+g1307.7579,MLST.ssuis.883,31,United Kingdom,2011,Pig
+g1307.7580,MLST.ssuis.94,3,United Kingdom,2011,Pig
+g1307.7581,MLST.ssuis.873,2,United Kingdom,2011,Pig
+g1307.7582,MLST.Streptococcus_suis.87,9,United Kingdom,2011,Pig
+g1307.7583,MLST.ssuis.899,NA,United Kingdom,2011,Pig
+g1307.7584,MLST.ssuis.28,1 and 3,United Kingdom,2011,Pig
+g1307.7585,MLST.ssuis.94,3,United Kingdom,2011,Pig
+g1307.7586,MLST.ssuis.28,1-Feb,United Kingdom,2011,Pig
+g1307.7587,MLST.ssuis.891,2,United Kingdom,2010,Pig
+g1307.7588,MLST.ssuis.87,8,United Kingdom,2011,Pig
+g1307.7589,NA,NA,United Kingdom,2010,Pig
+g1307.7590,MLST.ssuis.87,8,United Kingdom,2011,Pig
+g1307.7591,MLST.ssuis.858,31,United Kingdom,2011,Pig
+g1307.7592,MLST.ssuis.28,1-Feb,United Kingdom,2011,Pig
+g1307.7593,NA,(4 partial),United Kingdom,2010,Pig
+g1307.7594,MLST.ssuis.1,2,United Kingdom,2011,Pig
+g1307.7595,MLST.ssuis.886,31,United Kingdom,2011,Pig
+g1307.7596,MLST.ssuis.28,1-Feb,United Kingdom,2010,Pig
+g1307.7597,MLST.ssuis.884,NA,United Kingdom,2011,Pig
+g1307.7598,MLST.ssuis.888,10,United Kingdom,2011,Pig
+g1307.7599,MLST.ssuis.28,1-Feb,United Kingdom,2011,Pig
+g1307.7600,MLST.ssuis.29,7 (+3 partial),United Kingdom,2011,Pig
+g1307.7601,MLST.ssuis.901,NA,United Kingdom,2011,Pig
+g1307.7602,MLST.ssuis.900,19,United Kingdom,2011,Pig
+g1307.7603,MLST.ssuis.863,9,United Kingdom,2011,Pig
+g1307.7604,MLST.ssuis.792,21,United Kingdom,2011,Pig
+g1307.7605,MLST.ssuis.1,2,United Kingdom,2011,Pig
+g1307.7606,MLST.ssuis.898,31,United Kingdom,2011,Pig
+g1307.7607,MLST.ssuis.882,15,United Kingdom,2011,Pig
+g1307.7608,MLST.ssuis.864,16,United Kingdom,2011,Pig
+g1307.7609,MLST.ssuis.878,16,United Kingdom,2011,Pig
+g1307.7610,MLST.ssuis.792,21,United Kingdom,2011,Pig
+g1307.7611,MLST.ssuis.948,6,United Kingdom,2011,Pig
+g1307.7612,MLST.ssuis.896,NA,United Kingdom,2011,Pig
+g1307.7613,MLST.ssuis.885,24,United Kingdom,2011,Pig
+g1307.7614,MLST.ssuis.891,2,United Kingdom,2010,Pig
+g1307.7615,MLST.ssuis.894,24,United Kingdom,2011,Pig
+g1307.7616,MLST.ssuis.873,2,United Kingdom,2011,Pig
+g1307.7617,MLST.ssuis.87,8,United Kingdom,2011,Pig
+g1307.7618,NA,4,United Kingdom,2011,Pig
+g1307.7619,MLST.ssuis.860,31,United Kingdom,2011,Pig
+g1307.7620,MLST.ssuis.950,24,United Kingdom,2011,Pig
+g1307.7621,MLST.Streptococcus_suis.28,1-Feb,United Kingdom,2011,Pig
+g1307.7622,MLST.ssuis.893,10,United Kingdom,2011,Pig
+g1307.7623,MLST.ssuis.857,15,United Kingdom,2010,Pig
+g1307.7624,MLST.ssuis.23,4,United Kingdom,2010,Pig
+g1307.7625,MLST.ssuis.1,2,United Kingdom,2011,Pig
+g1307.7626,NA,(4 partial),United Kingdom,2010,Pig
+g1307.7627,MLST.ssuis.28,2,United Kingdom,2010,Pig
+g1307.7628,MLST.ssuis.874,NA,United Kingdom,2010,Pig
+g1307.7629,MLST.ssuis.28,14,Canada,2016,Pig
+g1307.7630,NA,NA,Canada,2016,Pig
+g1307.7631,MLST.ssuis.28,14,Canada,2016,Pig
+g1307.7632,MLST.ssuis.1,14,United Kingdom,2010,Pig
+g1307.7633,MLST.ssuis.28,14,Canada,2016,Pig
+g1307.7634,MLST.ssuis.28,14,Canada,2016,Pig
+g1307.7635,MLST.ssuis.971,NA,Canada,2016,Pig
+g1307.7636,MLST.ssuis.28,14,Canada,2016,Pig
+g1307.7637,NA,31,Canada,1989,Pig
+g1307.7638,MLST.ssuis.1214,NA,Canada,2016,Pig
+g1307.7639,MLST.ssuis.1214,5,Canada,2016,Pig
+g1307.7640,MLST.ssuis.971,NA,Canada,2016,Pig
+g1307.7641,MLST.ssuis.839,4,Canada,2016,Pig
+g1307.7642,MLST.ssuis.28,1-Feb,United Kingdom,2011,Pig
+g1307.7643,MLST.ssuis.17,4,Canada,2016,Pig
+g1307.7644,MLST.ssuis.880,24,United Kingdom,2011,Pig
+g1307.7645,MLST.ssuis.28,1-Feb,United Kingdom,2011,Pig
+g1307.7646,MLST.ssuis.28,1-Feb,Canada,NA,Pig
+g1307.7647,MLST.ssuis.1,2,United Kingdom,2011,Pig
+g1307.7648,MLST.ssuis.864,16,United Kingdom,2010,Pig
+g1307.7649,MLST.ssuis.977,4,Canada,NA,Pig
+g1307.7650,NA,NA,Canada,2016,Pig
+g1307.7651,MLST.ssuis.972,29,Canada,2016,Pig
+g1307.7652,MLST.ssuis.1198,NA,Canada,NA,Pig
+g1307.7653,MLST.ssuis.879,16,United Kingdom,2009,Pig
+g1307.7654,MLST.ssuis.876,31,United Kingdom,2011,Pig
+g1307.7655,NA,12,Canada,1994,Pig
+g1307.7656,MLST.ssuis.1,14,United Kingdom,2010,Pig
+g1307.7657,MLST.ssuis.857,15,United Kingdom,2011,Pig
+g1307.7658,MLST.ssuis.29,7,United Kingdom,2010,Pig
+g1307.7659,NA,(4 partial),United Kingdom,2010,Pig
+g1307.7660,MLST.ssuis.29,7,United Kingdom,2010,Pig
+g1307.7661,MLST.ssuis.856,4,United Kingdom,2010,Pig
+g1307.7662,MLST.ssuis.855,3,United Kingdom,2010,Pig
+g1307.7663,MLST.ssuis.28,14,Canada,1994,Pig
+g1307.7664,NA,NA,Canada,1994,Pig
+g1307.7665,MLST.ssuis.1,1,United Kingdom,2010,Pig
+g1307.7666,MLST.ssuis.27,3,United Kingdom,2010,Pig
+g1307.7667,MLST.ssuis.1,1,United Kingdom,2010,Pig
+g1307.7668,MLST.ssuis.873,2,United Kingdom,2010,Pig
+g1307.7669,NA,16,Canada,1983,Pig
+g1307.7670,NA,NA,Canada,2016,Pig
+g1307.7671,NA,31,Canada,1990,Pig
+g1307.7672,NA,NA,Canada,2016,Pig
+g1307.7673,NA,16,Canada,1989,Pig
+g1307.7674,NA,NA,Canada,2016,Pig
+g1307.7675,MLST.ssuis.25,2,Canada,1989,Pig
+g1307.7676,MLST.ssuis.25,2,Canada,1990,Pig
+g1307.7677,MLST.ssuis.966,3,Canada,2016,Pig
+g1307.7678,MLST.ssuis.839,4,Canada,2016,Pig
+g1307.7679,MLST.ssuis.966,3,Canada,2016,Pig
+g1307.7680,NA,NA,Canada,2016,Pig
+g1307.7681,MLST.ssuis.28,1-Feb,Canada,2016,Pig
+g1307.7682,NA,NA,Canada,2016,Pig
+g1307.7683,MLST.ssuis.966,3,Canada,2016,Pig
+g1307.7684,MLST.ssuis.1214,NA,Canada,2016,Pig
+g1307.7685,NA,31,Canada,2016,Pig
+g1307.7686,NA,31,Canada,2016,Pig
+g1307.7687,NA,27,Canada,2014,Pig
+g1307.7688,MLST.ssuis.28,1-Feb,Canada,2016,Pig
+g1307.7689,MLST.ssuis.108,23,Canada,2014,Pig
+g1307.7690,MLST.ssuis.1333,8,Canada,2016,Pig
+g1307.7691,MLST.ssuis.28,1-Feb,Canada,2016,Pig
+g1307.7692,NA,31,Canada,2016,Pig
+g1307.7693,NA,15,Canada,2016,Pig
+g1307.7694,NA,NA,Canada,2016,Pig
+g1307.7695,MLST.ssuis.89,NA,Canada,2016,Pig
+g1307.7696,MLST.ssuis.89,NA,Canada,2016,Pig
+g1307.7697,MLST.ssuis.87,8,Canada,2014,Pig
+g1307.7698,MLST.ssuis.89,NA,Canada,2016,Pig
+g1307.7699,MLST.ssuis.89,7,Canada,2016,Pig
+g1307.7700,MLST.Streptococcus_suis.89,NA,Canada,2016,Pig
+g1307.7701,MLST.Streptococcus_suis.89,NA,Canada,2016,Pig
+g1307.7702,NA,31,Canada,NA,Pig
+g1307.7703,MLST.Streptococcus_suis.89,NA,Canada,2016,Pig
+g1307.7704,NA,NA,Canada,NA,Pig
+g1307.7705,NA,11,Canada,NA,Pig
+g1307.7706,MLST.ssuis.28,1-Feb,Canada,NA,Pig
+g1307.7707,MLST.ssuis.28,1-Feb,Canada,NA,Pig
+g1307.7708,MLST.ssuis.1198,9,Canada,NA,Pig
+g1307.7709,MLST.ssuis.969,3,Canada,NA,Pig
+g1307.7710,MLST.ssuis.108,23,Canada,NA,Pig
+g1307.7711,MLST.ssuis.28,NA,Canada,NA,Pig
+g1307.7712,MLST.ssuis.108,23,Canada,NA,Pig
+g1307.7713,MLST.ssuis.28,1-Feb,Canada,NA,Pig
+g1307.7714,MLST.ssuis.1175,5,Canada,2016,Pig
+g1307.7715,NA,NA,Canada,2016,Pig
+g1307.7716,MLST.ssuis.1175,5,Canada,2016,Pig
+g1307.7717,MLST.ssuis.28,1-Feb,Canada,NA,Pig
+g1307.7718,MLST.ssuis.972,29,Canada,2016,Pig
+g1307.7719,NA,30,Canada,2016,Pig
+g1307.7720,NA,28,Canada,2016,Pig
+g1307.7721,NA,NA,Canada,2016,Pig
+g1307.7722,NA,28,Canada,2016,Pig
+g1307.7723,NA,NA,Canada,2016,Pig
+g1307.7724,NA,NA,Canada,2016,Pig
+g1307.7725,NA,16,Canada,2016,Pig
+g1307.7726,NA,NA,Canada,2016,Pig
+g1307.7727,NA,11,Canada,1994,Pig
+g1307.7728,MLST.ssuis.108,23,Canada,2016,Pig
+g1307.7729,NA,16,Canada,2016,Pig
+g1307.7730,MLST.ssuis.1175,NA,Canada,1992,Pig
+g1307.7731,MLST.ssuis.483,23,Canada,1999,Pig
+g1307.7732,MLST.ssuis.977,5,Canada,1993,Pig
+g1307.7733,NA,4 + 8,Canada,1991,Pig
+g1307.7734,MLST.ssuis.13,1,Canada,1992,Pig
+g1307.7735,MLST.ssuis.117,3,Canada,1991,Pig
+g1307.7736,MLST.ssuis.13,1,Canada,1991,Pig
+g1307.7737,MLST.ssuis.1175,NA,Canada,1990,Pig
+g1307.7738,MLST.ssuis.28,1-Feb,Canada,1991,Pig
+g1307.7739,MLST.Streptococcus_suis.318,11,Canada,1990,Pig
+g1307.7740,MLST.ssuis.13,1,Canada,1991,Pig
+g1307.7741,NA,NA,Canada,1990,Pig
+g1307.7742,MLST.ssuis.225,NA,Canada,1989,Pig
+g1307.7743,NA,11,Canada,1990,Pig
+g1307.7744,MLST.ssuis.25,2,Canada,1989,Pig
+g1307.7745,MLST.ssuis.28,1-Feb,Canada,1989,Pig
+g1307.7746,MLST.ssuis.25,2,Canada,1989,Pig
+g1307.7747,MLST.ssuis.28,2,Canada,1989,Pig
+g1307.7748,NA,19,Canada,1989,Pig
+g1307.7749,MLST.ssuis.76,19,Canada,1989,Pig
+g1307.7750,MLST.ssuis.117,3,Canada,1988,Pig
+g1307.7751,MLST.ssuis.225,NA,Canada,1987,Pig
+g1307.7752,MLST.ssuis.731,9,Canada,1989,Pig
+g1307.7753,NA,NA,Canada,1988,Pig
+g1307.7754,NA,13,Canada,1988,Pig
+g1307.7755,MLST.ssuis.28,2,Canada,2014,Pig
+g1307.7756,NA,NA,Canada,2014,Pig
+g1307.7757,MLST.ssuis.25,2,Canada,2014,Pig
+g1307.7758,NA,NA,Canada,2014,Pig
+g1307.7759,MLST.ssuis.1,1,Canada,2014,Pig
+g1307.7760,MLST.ssuis.1,14,Canada,2014,Pig
+g1307.7761,NA,9,Canada,2014,Pig
+g1307.7762,MLST.ssuis.977,NA,Canada,1993,Pig
+g1307.7763,MLST.ssuis.1,2,Vietnam,2006,Homo sapiens
+g1307.7764,NA,16,Canada,2012,Pig
+g1307.7765,NA,NA,Canada,2009,Pig
+g1307.7766,MLST.ssuis.25,2,Canada,2014,Pig
+g1307.7767,MLST.ssuis.13,1,Canada,2014,Pig
+g1307.7768,NA,NA,Canada,2014,Pig
+g1307.7769,MLST.ssuis.94,4,Canada,2014,Pig
+g1307.7770,MLST.ssuis.32,NA,Canada,2013,Pig
+g1307.7771,NA,16,Canada,2013,Pig
+g1307.7772,MLST.ssuis.1,14,Canada,2014,Pig
+g1307.7773,MLST.ssuis.25,2,Canada,2014,Pig
+g1307.7774,NA,28,Canada,2014,Pig
+g1307.7775,MLST.ssuis.87,8,Canada,2014,Pig
+g1307.7776,NA,16,Canada,2013,Pig
+g1307.7777,MLST.ssuis.1,14,Canada,2013,Pig
+g1307.7778,NA,NA,Canada,2013,Pig
+g1307.7779,MLST.ssuis.1,14,Canada,2013,Pig
+g1307.7780,NA,NA,Canada,2013,Pig
+g1307.7781,NA,NA,Canada,2009,Pig
+g1307.7782,NA,28,Canada,2009,Pig
+g1307.7783,MLST.ssuis.25,2,Canada,2014,Pig
+g1307.7784,MLST.ssuis.1175,4,Canada,2014,Pig
+g1307.7785,MLST.ssuis.28,1-Feb,Canada,2014,Pig
+g1307.7786,NA,NA,Canada,2014,Pig
+g1307.7787,MLST.ssuis.108,3,Canada,2014,Pig
+g1307.7788,MLST.ssuis.1,1,Canada,2014,Pig
+g1307.7789,MLST.ssuis.977,4,Canada,2014,Pig
+g1307.7790,MLST.ssuis.28,1-Feb,Canada,2014,Pig
+g1307.7791,MLST.ssuis.28,2,Canada,2014,Pig
+g1307.7792,MLST.ssuis.28,1-Feb,Canada,2014,Pig
+g1307.7793,MLST.ssuis.94,5,Canada,2014,Pig
+g1307.7794,MLST.ssuis.1,1,Canada,2014,Pig
+g1307.7795,NA,9,Canada,2014,Pig
+g1307.7796,MLST.ssuis.225,NA,Canada,2014,Pig
+g1307.7797,NA,16,Canada,2014,Pig
+g1307.7798,MLST.ssuis.977,4,Canada,2014,Pig
+g1307.7799,MLST.ssuis.89,5,Canada,2014,Pig
+g1307.7800,MLST.ssuis.1187,3,Canada,2014,Pig
+g1307.7801,MLST.ssuis.28,1-Feb,Canada,2014,Pig
+g1307.7802,MLST.ssuis.28,1-Feb,Canada,2014,Pig
+g1307.7803,MLST.ssuis.1187,3,Canada,2014,Pig
+g1307.7804,MLST.ssuis.28,2,Canada,2014,Pig
+g1307.7805,MLST.ssuis.94,NA,Canada,2014,Pig
+g1307.7806,MLST.ssuis.1,1,Canada,2014,Pig
+g1307.7807,MLST.ssuis.28,1-Feb,Canada,2014,Pig
+g1307.7808,MLST.ssuis.94,NA,Canada,2014,Pig
+g1307.7809,MLST.ssuis.28,1-Feb,Canada,2014,Pig
+g1307.7810,MLST.ssuis.1,1,Canada,2014,Pig
+g1307.7811,MLST.ssuis.1,1,Canada,2014,Pig
+g1307.7812,MLST.ssuis.483,23,Canada,2013,Pig
+g1307.7813,NA,14,Canada,2014,Pig
+g1307.7814,MLST.ssuis.1175,NA,Canada,2013,Pig
+g1307.7815,NA,28,Canada,2013,Pig
+g1307.7816,NA,NA,Canada,2013,Pig
+g1307.7817,MLST.ssuis.108,23,Canada,2013,Pig
+g1307.7818,NA,NA,Canada,2013,Pig
+g1307.7819,MLST.ssuis.108,23,Canada,2013,Pig
+g1307.7820,MLST.ssuis.1333,8,Canada,2013,Pig
+g1307.7821,NA,16,Canada,2013,Pig
+g1307.7822,MLST.ssuis.87,8,Canada,2013,Pig
+g1307.7823,MLST.ssuis.27,3,Canada,2013,Pig
+g1307.7824,MLST.ssuis.27,3,Canada,2013,Pig
+g1307.7825,NA,NA,Canada,2013,Pig
+g1307.7826,MLST.ssuis.87,8,Canada,2013,Pig
+g1307.7827,NA,13,Canada,2011,Pig
+g1307.7828,MLST.ssuis.87,8,Canada,2013,Pig
+g1307.7829,MLST.ssuis.1,14,Canada,2013,Pig
+g1307.7830,MLST.ssuis.1,14,Canada,2013,Pig
+g1307.7831,NA,NA,Canada,2010,Pig
+g1307.7832,NA,25,Canada,2012,Pig
+g1307.7833,NA,28,Canada,2011,Pig
+g1307.7834,MLST.ssuis.76,19,Canada,2010,Pig
+g1307.7835,MLST.ssuis.1339,21,Canada,2011,Pig
+g1307.7836,MLST.ssuis.1359,31,Canada,2010,Pig
+g1307.7837,MLST.ssuis.1420,9,Canada,2009,Pig
+g1307.7838,NA,NA,Canada,2010,Pig
+g1307.7839,NA,21,Canada,2009,Pig
+g1307.7840,NA,24,Canada,2009,Pig
+g1307.7841,MLST.ssuis.977,5,Canada,2000,Pig
+g1307.7842,NA,NA,Canada,2008,Pig
+g1307.7843,NA,27,Canada,2008,Pig
+g1307.7844,MLST.ssuis.788,NA,Canada,2009,Pig
+g1307.7845,NA,NA,Canada,2009,Pig
+g1307.7846,NA,29,Canada,2008,Pig
+g1307.7847,NA,NA,Canada,2009,Pig
+g1307.7848,NA,NA,Canada,2008,Pig
+g1307.7849,MLST.ssuis.76,17,Canada,2008,Pig
+g1307.7850,MLST.Streptococcus_suis.583,NA,Canada,2009,Pig
+g1307.7851,NA,31,Canada,2009,Pig
+g1307.7852,NA,NA,Canada,2010,Pig
+g1307.7853,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens
+g1307.7854,MLST.ssuis.1175,NA,Canada,2009,Pig
+g1307.7855,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7856,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens
+g1307.7857,MLST.ssuis.1,2,Vietnam,2003,Homo sapiens
+g1307.7858,NA,16,United Kingdom,2013,Pig
+g1307.7859,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens
+g1307.7860,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens
+g1307.7861,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens
+g1307.7862,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens
+g1307.7863,MLST.ssuis.1,2,Vietnam,2010,Pig
+g1307.7864,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7865,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens
+g1307.7866,MLST.ssuis.1,2,Vietnam,NA,Pig
+g1307.7867,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7868,MLST.ssuis.1,2,Vietnam,2010,Pig
+g1307.7869,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7870,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7871,NA,9,United Kingdom,2013,Pig
+g1307.7872,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7873,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7874,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7875,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7876,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7877,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7878,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens
+g1307.7879,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7880,NA,4,United Kingdom,2013,Pig
+g1307.7881,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7882,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7883,MLST.ssuis.1,2,Vietnam,2010,Pig
+g1307.7884,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7885,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7886,NA,29,United Kingdom,2013,Pig
+g1307.7887,MLST.ssuis.864,16,United Kingdom,2013,Pig
+g1307.7888,NA,28,United Kingdom,2013,Pig
+g1307.7889,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens
+g1307.7890,NA,10,United Kingdom,2013,Pig
+g1307.7891,NA,9,United Kingdom,2013,Pig
+g1307.7892,NA,15,United Kingdom,2013,Pig
+g1307.7893,NA,9,United Kingdom,2013,Pig
+g1307.7894,NA,30,United Kingdom,2013,Pig
+g1307.7895,MLST.ssuis.949,6,United Kingdom,2013,Pig
+g1307.7896,NA,NA,United Kingdom,2013,Pig
+g1307.7897,NA,16,United Kingdom,2013,Pig
+g1307.7898,NA,NA,United Kingdom,2015,Pig
+g1307.7899,NA,NA,United Kingdom,2013,Pig
+g1307.7900,NA,8,United Kingdom,2013,Pig
+g1307.7901,NA,9,United Kingdom,2013,Pig
+g1307.7902,NA,9,United Kingdom,2013,Pig
+g1307.7903,MLST.Streptococcus_suis.52,15,United Kingdom,2013,Pig
+g1307.7904,NA,31,United Kingdom,2013,Pig
+g1307.7905,MLST.ssuis.790,9,United Kingdom,2013,Pig
+g1307.7906,NA,NA,United Kingdom,2013,Pig
+g1307.7907,NA,NA,United Kingdom,2013,Pig
+g1307.7908,NA,4,United Kingdom,2013,Pig
+g1307.7909,NA,NA,United Kingdom,2013,Pig
+g1307.7910,MLST.ssuis.864,16,United Kingdom,2013,Pig
+g1307.7911,NA,15,United Kingdom,2013,Pig
+g1307.7912,NA,16,United Kingdom,2013,Pig
+g1307.7913,NA,NA,United Kingdom,2013,Pig
+g1307.7914,NA,28,United Kingdom,2015,Pig
+g1307.7915,MLST.ssuis.949,6,United Kingdom,2013,Pig
+g1307.7916,NA,NA,United Kingdom,2013,Pig
+g1307.7917,NA,NA,United Kingdom,2013,Pig
+g1307.7918,NA,NA,United Kingdom,2013,Pig
+g1307.7919,NA,NA,United Kingdom,2013,Pig
+g1307.7920,NA,16,United Kingdom,2013,Pig
+g1307.7921,NA,31,United Kingdom,2013,Pig
+g1307.7922,MLST.Streptococcus_suis.52,15,United Kingdom,2013,Pig
+g1307.7923,MLST.ssuis.949,6,United Kingdom,2013,Pig
+g1307.7924,NA,9,United Kingdom,2013,Pig
+g1307.7925,NA,NA,United Kingdom,2013,Pig
+g1307.7926,NA,NA,United Kingdom,2013,Pig
+g1307.7927,NA,21,United Kingdom,2013,Pig
+g1307.7928,NA,NA,United Kingdom,2013,Pig
+g1307.7929,NA,NA,United Kingdom,2013,Pig
+g1307.7930,NA,10,United Kingdom,2013,Pig
+g1307.7931,NA,NA,United Kingdom,2013,Pig
+g1307.7932,MLST.ssuis.1409,15,United Kingdom,2013,Pig
+g1307.7933,NA,25,United Kingdom,2013,Pig
+g1307.7934,NA,NA,United Kingdom,2014,Pig
+g1307.7935,NA,NA,United Kingdom,2014,Pig
+g1307.7936,NA,16,United Kingdom,2013,Pig
+g1307.7937,NA,NA,United Kingdom,2014,Pig
+g1307.7938,NA,NA,United Kingdom,2014,Pig
+g1307.7939,NA,28,United Kingdom,2014,Pig
+g1307.7940,NA,NA,United Kingdom,2014,Pig
+g1307.7941,MLST.ssuis.1,14,United Kingdom,2014,Pig
+g1307.7942,NA,16,United Kingdom,2013,Pig
+g1307.7943,MLST.ssuis.29,7,United Kingdom,2014,Pig
+g1307.7944,NA,25,United Kingdom,2013,Pig
+g1307.7945,NA,16,United Kingdom,2013,Pig
+g1307.7946,NA,9,United Kingdom,2013,Pig
+g1307.7947,NA,16,United Kingdom,2013,Pig
+g1307.7948,NA,25,United Kingdom,2013,Pig
+g1307.7949,NA,9,United Kingdom,2013,Pig
+g1307.7950,NA,15,United Kingdom,2013,Pig
+g1307.7951,NA,10,United Kingdom,2013,Pig
+g1307.7952,NA,16,United Kingdom,2013,Pig
+g1307.7953,NA,28,United Kingdom,2013,Pig
+g1307.7954,NA,16,United Kingdom,2013,Pig
+g1307.7955,MLST.Streptococcus_suis.489,NA,United Kingdom,2013,Pig
+g1307.7956,NA,NA,United Kingdom,2013,Pig
+g1307.7957,NA,15,United Kingdom,2013,Pig
+g1307.7958,NA,15,United Kingdom,2013,Pig
+g1307.7959,NA,NA,United Kingdom,2013,Pig
+g1307.7960,NA,25,United Kingdom,2013,Pig
+g1307.7961,NA,NA,United Kingdom,2013,Pig
+g1307.7962,NA,NA,United Kingdom,2013,Pig
+g1307.7963,NA,NA,United Kingdom,2013,Pig
+g1307.7964,NA,NA,United Kingdom,2013,Pig
+g1307.7965,MLST.ssuis.864,16,United Kingdom,2013,Pig
+g1307.7966,NA,NA,United Kingdom,2013,Pig
+g1307.7967,NA,8,United Kingdom,2013,Pig
+g1307.7968,MLST.ssuis.864,16,United Kingdom,2013,Pig
+g1307.7969,NA,30,United Kingdom,2013,Pig
+g1307.7970,NA,9,United Kingdom,2013,Pig
+g1307.7971,NA,9,United Kingdom,2013,Pig
+g1307.7972,NA,NA,United Kingdom,2013,Pig
+g1307.7973,NA,16,United Kingdom,2013,Pig
+g1307.7974,NA,NA,United Kingdom,2015,Pig
+g1307.7975,MLST.ssuis.792,21,United Kingdom,2013,Pig
+g1307.7976,NA,9,United Kingdom,2013,Pig
+g1307.7977,NA,16,United Kingdom,2013,Pig
+g1307.7978,NA,29,United Kingdom,2014,Pig
+g1307.7979,NA,16,United Kingdom,2013,Pig
+g1307.7980,NA,NA,United Kingdom,2013,Pig
+g1307.7981,NA,28,United Kingdom,2015,Pig
+g1307.7982,NA,NA,United Kingdom,2013,Pig
+g1307.7983,NA,25,United Kingdom,2013,Pig
+g1307.7984,NA,16,United Kingdom,2013,Pig
+g1307.7985,NA,28,United Kingdom,2013,Pig
+g1307.7986,NA,5,United Kingdom,2013,Pig
+g1307.7987,MLST.ssuis.28,1-Feb,United Kingdom,2014,Pig
+g1307.7988,NA,25,United Kingdom,2013,Pig
+g1307.7989,MLST.ssuis.857,15,United Kingdom,2013,Pig
+g1307.7990,NA,31,United Kingdom,2013,Pig
+g1307.7991,NA,16,United Kingdom,2013,Pig
+g1307.7992,MLST.ssuis.948,6,United Kingdom,2013,Pig
+g1307.7993,MLST.ssuis.948,6,United Kingdom,2013,Pig
+g1307.7994,MLST.ssuis.948,6,United Kingdom,2013,Pig
+g1307.7995,NA,16,United Kingdom,2013,Pig
+g1307.7996,NA,NA,United Kingdom,2013,Pig
+g1307.7997,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.7998,MLST.ssuis.948,6,United Kingdom,2013,Pig
+g1307.7999,NA,9,United Kingdom,2013,Pig
+g1307.8000,NA,NA,United Kingdom,2013,Pig
+g1307.8001,NA,30,United Kingdom,2013,Pig
+g1307.8002,NA,30,United Kingdom,2013,Pig
+g1307.8003,NA,NA,United Kingdom,2013,Pig
+g1307.8004,NA,(26 partia/31 partiall),United Kingdom,2013,Pig
+g1307.8005,NA,NA,United Kingdom,2013,Pig
+g1307.8006,NA,31,United Kingdom,2013,Pig
+g1307.8007,NA,31,United Kingdom,2013,Pig
+g1307.8008,NA,NA,United Kingdom,2013,Pig
+g1307.8009,NA,NA,United Kingdom,2013,Pig
+g1307.8010,MLST.ssuis.1409,15,United Kingdom,2013,Pig
+g1307.8011,NA,10,United Kingdom,2013,Pig
+g1307.8012,NA,25,United Kingdom,2013,Pig
+g1307.8013,NA,25,United Kingdom,2013,Pig
+g1307.8014,NA,NA,United Kingdom,2013,Pig
+g1307.8015,MLST.ssuis.949,6,United Kingdom,2013,Pig
+g1307.8016,NA,NA,United Kingdom,2015,Pig
+g1307.8017,NA,28,United Kingdom,2015,Pig
+g1307.8018,NA,28,United Kingdom,2015,Pig
+g1307.8019,NA,NA,United Kingdom,2015,Pig
+g1307.8020,NA,NA,United Kingdom,2015,Pig
+g1307.8021,NA,28,United Kingdom,2015,Pig
+g1307.8022,NA,28,United Kingdom,2015,Pig
+g1307.8023,NA,28,United Kingdom,2015,Pig
+g1307.8024,NA,28,United Kingdom,2015,Pig
+g1307.8025,MLST.ssuis.891,2,United Kingdom,2014,Pig
+g1307.8026,NA,28,United Kingdom,2015,Pig
+g1307.8027,MLST.ssuis.28,2,United Kingdom,2014,Pig
+g1307.8028,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8029,MLST.ssuis.1,14,United Kingdom,2014,Pig
+g1307.8030,MLST.ssuis.1,1,United Kingdom,2014,Pig
+g1307.8031,MLST.ssuis.28,1-Feb,United Kingdom,2014,Pig
+g1307.8032,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8033,MLST.ssuis.28,1-Feb,United Kingdom,2014,Pig
+g1307.8034,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8035,MLST.ssuis.28,2,United Kingdom,NA,Pig
+g1307.8036,MLST.ssuis.29,NA,United Kingdom,2014,Pig
+g1307.8037,NA,2,United Kingdom,2014,Pig
+g1307.8038,MLST.ssuis.87,8,United Kingdom,2014,Pig
+g1307.8039,NA,NA,United Kingdom,2014,Pig
+g1307.8040,NA,1-Feb,United Kingdom,2014,Pig
+g1307.8041,MLST.ssuis.13,14,United Kingdom,2014,Pig
+g1307.8042,MLST.ssuis.856,NA,United Kingdom,2014,Pig
+g1307.8043,MLST.ssuis.28,1-Feb,United Kingdom,NA,Pig
+g1307.8044,MLST.ssuis.908,8,United Kingdom,2010,Pig
+g1307.8045,NA,NA,United Kingdom,2013,Pig
+g1307.8046,MLST.ssuis.916,8,United Kingdom,2010,Pig
+g1307.8047,MLST.ssuis.1,2,United Kingdom,2013,Pig
+g1307.8048,MLST.ssuis.87,8,United Kingdom,2013,Pig
+g1307.8049,MLST.ssuis.2,2,United Kingdom,2014,Pig
+g1307.8050,MLST.ssuis.29,7,United Kingdom,2013,Pig
+g1307.8051,MLST.ssuis.87,NA,United Kingdom,2014,Pig
+g1307.8052,MLST.ssuis.856,7,United Kingdom,2014,Pig
+g1307.8053,MLST.ssuis.28,1-Feb,United Kingdom,2010,Pig
+g1307.8054,MLST.Streptococcus_suis.295,NA,United Kingdom,2014,Pig
+g1307.8055,NA,28,United Kingdom,2014,Pig
+g1307.8056,MLST.ssuis.29,NA,United Kingdom,2014,Pig
+g1307.8057,MLST.ssuis.31,3,United Kingdom,2010,Pig
+g1307.8058,MLST.ssuis.28,1-Feb,United Kingdom,2014,Pig
+g1307.8059,MLST.ssuis.29,NA,United Kingdom,2014,Pig
+g1307.8060,MLST.ssuis.1552,14,United Kingdom,2013,Pig
+g1307.8061,NA,NA,United Kingdom,2013,Pig
+g1307.8062,MLST.ssuis.1,1,United Kingdom,2010,Pig
+g1307.8063,MLST.ssuis.28,1-Feb,United Kingdom,2013,Pig
+g1307.8064,NA,2,United Kingdom,2013,Pig
+g1307.8065,NA,9,United Kingdom,2013,Pig
+g1307.8066,NA,14,United Kingdom,2013,Pig
+g1307.8067,MLST.ssuis.29,7,United Kingdom,2013,Pig
+g1307.8068,MLST.ssuis.1,14,United Kingdom,2013,Pig
+g1307.8069,MLST.ssuis.25,2,United Kingdom,2013,Pig
+g1307.8070,MLST.ssuis.1,2,United Kingdom,2013,Pig
+g1307.8071,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8072,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8073,MLST.ssuis.87,8,United Kingdom,2014,Pig
+g1307.8074,MLST.ssuis.1,2,United Kingdom,2013,Pig
+g1307.8075,MLST.ssuis.29,7,United Kingdom,2014,Pig
+g1307.8076,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8077,NA,NA,United Kingdom,2013,Pig
+g1307.8078,NA,NA,United Kingdom,2014,Pig
+g1307.8079,NA,14,United Kingdom,2014,Pig
+g1307.8080,MLST.ssuis.87,8,United Kingdom,2014,Pig
+g1307.8081,MLST.ssuis.911,4,United Kingdom,2014,Pig
+g1307.8082,NA,NA,United Kingdom,2014,Pig
+g1307.8083,MLST.ssuis.87,8,United Kingdom,2014,Pig
+g1307.8084,MLST.ssuis.28,2,United Kingdom,2010,Pig
+g1307.8085,NA,NA,United Kingdom,2014,Pig
+g1307.8086,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8087,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8088,MLST.ssuis.87,5,United Kingdom,2014,Pig
+g1307.8089,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8090,MLST.ssuis.87,8,United Kingdom,2014,Pig
+g1307.8091,MLST.ssuis.87,8,United Kingdom,2014,Pig
+g1307.8092,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8093,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8094,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8095,MLST.ssuis.1,1,United Kingdom,2014,Pig
+g1307.8096,MLST.ssuis.28,2,United Kingdom,2014,Pig
+g1307.8097,MLST.ssuis.1,2,United Kingdom,NA,Pig
+g1307.8098,NA,2,United Kingdom,2014,Pig
+g1307.8099,MLST.ssuis.28,2,United Kingdom,2014,Pig
+g1307.8100,MLST.Streptococcus_suis.2,2,United Kingdom,2014,Pig
+g1307.8101,MLST.ssuis.28,2,United Kingdom,2014,Pig
+g1307.8102,MLST.ssuis.28,1-Feb,United Kingdom,2014,Pig
+g1307.8103,NA,NA,United Kingdom,2014,Pig
+g1307.8104,MLST.ssuis.28,2,United Kingdom,NA,Pig
+g1307.8105,MLST.ssuis.28,1-Feb,United Kingdom,2014,Pig
+g1307.8106,MLST.ssuis.23,4,United Kingdom,2013,Pig
+g1307.8107,MLST.ssuis.1,2,United Kingdom,2014,Pig
+g1307.8108,MLST.ssuis.1,2,United Kingdom,2013,Pig
+g1307.8109,MLST.ssuis.868,3,United Kingdom,2013,Pig
+g1307.8110,MLST.ssuis.1,2,United Kingdom,2013,Pig
+g1307.8111,MLST.ssuis.1,2,United Kingdom,2013,Pig
+g1307.8112,MLST.ssuis.28,1-Feb,United Kingdom,2013,Pig
+g1307.8113,NA,NA,United Kingdom,2013,Pig
+g1307.8114,MLST.ssuis.1,1,United Kingdom,2013,Pig
+g1307.8115,MLST.ssuis.31,3,United Kingdom,2013,Pig
+g1307.8116,NA,NA,United Kingdom,2013,Pig
+g1307.8117,MLST.ssuis.792,29,United Kingdom,2013,Pig
+g1307.8118,MLST.ssuis.87,8,United Kingdom,2013,Pig
+g1307.8119,MLST.ssuis.1,2,United Kingdom,NA,Pig
+g1307.8120,MLST.ssuis.27,3,United Kingdom,2013,Pig
+g1307.8121,NA,NA,United Kingdom,2013,Pig
+g1307.8122,MLST.ssuis.1,1,United Kingdom,2013,Pig
+g1307.8123,MLST.ssuis.1,2,United Kingdom,2013,Pig
+g1307.8124,NA,NA,United Kingdom,2013,Pig
+g1307.8125,MLST.ssuis.856,NA,United Kingdom,NA,Pig
+g1307.8126,MLST.ssuis.792,29,United Kingdom,2013,Pig
+g1307.8127,MLST.ssuis.87,8,United Kingdom,NA,Pig
+g1307.8128,MLST.ssuis.1,2,United Kingdom,2013,Pig
+g1307.8129,MLST.ssuis.28,1-Feb,United Kingdom,2013,Pig
+g1307.8130,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8131,MLST.ssuis.1,2,United Kingdom,NA,Pig
+g1307.8132,MLST.ssuis.108,3,United Kingdom,2010,Pig
+g1307.8133,MLST.ssuis.1,2,United Kingdom,NA,Pig
+g1307.8134,MLST.ssuis.1,14,United Kingdom,2010,Pig
+g1307.8135,MLST.ssuis.915,NA,United Kingdom,2010,Pig
+g1307.8136,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8137,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8138,MLST.ssuis.28,2,United Kingdom,2010,Pig
+g1307.8139,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8140,MLST.ssuis.1,1,United Kingdom,2010,Pig
+g1307.8141,MLST.ssuis.870,NA,United Kingdom,2010,Pig
+g1307.8142,MLST.ssuis.914,12,United Kingdom,2010,Pig
+g1307.8143,MLST.ssuis.1,1,United Kingdom,2010,Pig
+g1307.8144,MLST.ssuis.1,14,United Kingdom,2010,Pig
+g1307.8145,MLST.ssuis.1,14,United Kingdom,2010,Pig
+g1307.8146,MLST.ssuis.790,NA,United Kingdom,2010,Pig
+g1307.8147,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8148,MLST.ssuis.913,NA,United Kingdom,2010,Pig
+g1307.8149,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8150,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8151,MLST.ssuis.1,1-Feb,United Kingdom,2010,Pig
+g1307.8152,MLST.ssuis.23,4,United Kingdom,2010,Pig
+g1307.8153,MLST.ssuis.909,2,United Kingdom,2010,Pig
+g1307.8154,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8155,MLST.ssuis.871,16,United Kingdom,2010,Pig
+g1307.8156,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8157,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8158,MLST.ssuis.87,8,United Kingdom,2010,Pig
+g1307.8159,MLST.ssuis.25,2,United Kingdom,2010,Pig
+g1307.8160,MLST.ssuis.1,2,United Kingdom,2010,Pig
+g1307.8161,MLST.ssuis.912,15,United Kingdom,2010,Pig
+g1307.8162,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8163,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8164,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8165,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8166,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8167,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8168,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8169,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8170,MLST.ssuis.1,2,Vietnam,2006,Pig
+g1307.8171,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8172,MLST.ssuis.1,2,Vietnam,2006,Pig
+g1307.8173,MLST.ssuis.1,2,Vietnam,2006,Pig
+g1307.8174,MLST.ssuis.1,2,Vietnam,2006,Pig
+g1307.8175,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8176,MLST.ssuis.1,2,Vietnam,2006,Pig
+g1307.8177,MLST.ssuis.1,2,Vietnam,2007,Pig
+g1307.8178,MLST.ssuis.1,2,Vietnam,2006,Pig
+g1307.8179,MLST.ssuis.1,2,Vietnam,2006,Pig

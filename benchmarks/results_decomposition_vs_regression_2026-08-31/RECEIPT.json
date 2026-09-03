@@ -1,0 +1,41 @@
+{
+ "generated_utc": "2026-08-31T18:48:11.983544Z",
+ "script": "decomposition_vs_regression.py",
+ "grid": {
+  "lineages": [
+   10,
+   30,
+   100
+  ],
+  "cohort": [
+   100,
+   300
+  ],
+  "turnover": [
+   0.0,
+   0.4
+  ],
+  "prevalence": [
+   0.4
+  ],
+  "profiles": [
+   "dominant"
+  ],
+  "effects": [
+   "null",
+   "within_only",
+   "offsetting"
+  ],
+  "replicates": 400,
+  "ridge": 0.001,
+  "seed": 20260901
+ },
+ "n_cells": 36,
+ "elapsed_seconds": 472.0,
+ "gauss_hermite_nodes": 20,
+ "environment": {
+  "python": "3.11.5",
+  "numpy": "2.4.6",
+  "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.35"
+ }
+}

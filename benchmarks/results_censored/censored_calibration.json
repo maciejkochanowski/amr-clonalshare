@@ -1,0 +1,220 @@
+{
+  "generated": "2026-09-01",
+  "design": {
+    "true_share": 0.5,
+    "between_lineage_variance": 1.0,
+    "within_lineage_variance": 1.0,
+    "replicates": 200,
+    "lineages": 30,
+    "isolates_per_lineage": 25,
+    "bootstrap_draws": 200,
+    "panel_wells": 10,
+    "seed": 20260901
+  },
+  "readings": {
+    "point": {
+      "n": 200,
+      "mean": 0.49263452638848626,
+      "bias": -0.00736547361151374,
+      "sd": 0.06931008603714266,
+      "rmse": 0.06952782743524814,
+      "interval_width": 0.2662619459771006,
+      "interval_coverage": 0.96,
+      "bootstrap_width": 0.2086032023333673,
+      "bootstrap_coverage": 0.845,
+      "profile_width": 0.15631175,
+      "profile_coverage": 0.68
+    },
+    "interval": {
+      "n": 200,
+      "mean": 0.49225707853625933,
+      "bias": -0.007742921463740671,
+      "sd": 0.07066622879692758,
+      "rmse": 0.07091332840666466,
+      "interval_width": 0.2665118199851611,
+      "interval_coverage": 0.95,
+      "bootstrap_width": 0.2110196331295351,
+      "bootstrap_coverage": 0.855,
+      "profile_width": 0.1629235,
+      "profile_coverage": 0.745
+    },
+    "binary_cut_-1": {
+      "n": 200,
+      "mean": 0.4854705913565397,
+      "bias": -0.014529408643460306,
+      "sd": 0.07545885241950726,
+      "rmse": 0.07665945428944358,
+      "interval_width": 0.2737288697265492,
+      "interval_coverage": 0.945,
+      "bootstrap_width": 0.23596949774477552,
+      "bootstrap_coverage": 0.84,
+      "profile_width": 0.2607275,
+      "profile_coverage": 0.92,
+      "prevalence": 0.7574933333333334
+    },
+    "binary_cut_+0": {
+      "n": 200,
+      "mean": 0.5035132785806354,
+      "bias": 0.003513278580635437,
+      "sd": 0.07726736906734362,
+      "rmse": 0.07715399028800322,
+      "interval_width": 0.2699135115963505,
+      "interval_coverage": 0.91,
+      "bootstrap_width": 0.24224726930357993,
+      "bootstrap_coverage": 0.865,
+      "profile_width": 0.24039324999999998,
+      "profile_coverage": 0.915,
+      "prevalence": 0.4949666666666667
+    },
+    "binary_cut_+1": {
+      "n": 200,
+      "mean": 0.49362389075373514,
+      "bias": -0.0063761092462648605,
+      "sd": 0.07906382877424853,
+      "rmse": 0.07912324781290121,
+      "interval_width": 0.27309280818212894,
+      "interval_coverage": 0.94,
+      "bootstrap_width": 0.2347662685784049,
+      "bootstrap_coverage": 0.84,
+      "profile_width": 0.26284825,
+      "profile_coverage": 0.93,
+      "prevalence": 0.23576
+    },
+    "binary_cut_+2": {
+      "n": 200,
+      "mean": 0.4651560931933835,
+      "bias": -0.034843906806616476,
+      "sd": 0.06580512643293396,
+      "rmse": 0.07431528061629267,
+      "interval_width": 0.28951962483565813,
+      "interval_coverage": 0.97,
+      "bootstrap_width": 0.18653863556399145,
+      "bootstrap_coverage": 0.675,
+      "profile_width": 0.30439,
+      "profile_coverage": 0.91,
+      "prevalence": 0.07808
+    }
+  },
+  "censoring_sweep": [
+    {
+      "cut_log2": -1.0,
+      "isolate_share_in_censored_lineages": 0.1985,
+      "lineages_wholly_censored": 5.955,
+      "bias": -0.005464477231601473,
+      "sd": 0.07213032257821825
+    },
+    {
+      "cut_log2": -0.75,
+      "isolate_share_in_censored_lineages": 0.14466666666666667,
+      "lineages_wholly_censored": 4.34,
+      "bias": -0.006262590892087222,
+      "sd": 0.07351097017498981
+    },
+    {
+      "cut_log2": -0.5,
+      "isolate_share_in_censored_lineages": 0.10683333333333334,
+      "lineages_wholly_censored": 3.205,
+      "bias": -0.005643255956851014,
+      "sd": 0.07210154127056882
+    },
+    {
+      "cut_log2": -0.25,
+      "isolate_share_in_censored_lineages": 0.0825,
+      "lineages_wholly_censored": 2.475,
+      "bias": -0.007678144797737612,
+      "sd": 0.0749212645796905
+    },
+    {
+      "cut_log2": 0.0,
+      "isolate_share_in_censored_lineages": 0.07816666666666666,
+      "lineages_wholly_censored": 2.345,
+      "bias": -0.0037742578664608896,
+      "sd": 0.07278325875343344
+    },
+    {
+      "cut_log2": 0.25,
+      "isolate_share_in_censored_lineages": 0.08116666666666666,
+      "lineages_wholly_censored": 2.435,
+      "bias": -0.005163110387651837,
+      "sd": 0.07489394229472014
+    },
+    {
+      "cut_log2": 0.5,
+      "isolate_share_in_censored_lineages": 0.105,
+      "lineages_wholly_censored": 3.15,
+      "bias": -0.006684970418712832,
+      "sd": 0.07707334514056438
+    },
+    {
+      "cut_log2": 0.75,
+      "isolate_share_in_censored_lineages": 0.14100000000000001,
+      "lineages_wholly_censored": 4.23,
+      "bias": -0.0065793920536281435,
+      "sd": 0.07511617143822763
+    },
+    {
+      "cut_log2": 1.0,
+      "isolate_share_in_censored_lineages": 0.19033333333333333,
+      "lineages_wholly_censored": 5.71,
+      "bias": -0.011559233365516253,
+      "sd": 0.07683565819452916
+    },
+    {
+      "cut_log2": 1.25,
+      "isolate_share_in_censored_lineages": 0.2643333333333333,
+      "lineages_wholly_censored": 7.93,
+      "bias": -0.012283389375577637,
+      "sd": 0.07654112945095065
+    },
+    {
+      "cut_log2": 1.5,
+      "isolate_share_in_censored_lineages": 0.3426666666666667,
+      "lineages_wholly_censored": 10.28,
+      "bias": -0.016180993080810318,
+      "sd": 0.07341187810748852
+    },
+    {
+      "cut_log2": 1.75,
+      "isolate_share_in_censored_lineages": 0.42516666666666664,
+      "lineages_wholly_censored": 12.755,
+      "bias": -0.025742489499064367,
+      "sd": 0.07042950769609452
+    },
+    {
+      "cut_log2": 2.0,
+      "isolate_share_in_censored_lineages": 0.5121666666666667,
+      "lineages_wholly_censored": 15.365,
+      "bias": -0.04064076512574302,
+      "sd": 0.06409298357657235
+    },
+    {
+      "cut_log2": 2.25,
+      "isolate_share_in_censored_lineages": 0.6058333333333333,
+      "lineages_wholly_censored": 18.175,
+      "bias": -0.06059698427923165,
+      "sd": 0.06162505493248446
+    },
+    {
+      "cut_log2": 2.5,
+      "isolate_share_in_censored_lineages": 0.6843333333333333,
+      "lineages_wholly_censored": 20.53,
+      "bias": -0.09629239581531326,
+      "sd": 0.06730796589299119
+    },
+    {
+      "cut_log2": 2.75,
+      "isolate_share_in_censored_lineages": 0.7576666666666668,
+      "lineages_wholly_censored": 22.73,
+      "bias": -0.14647884067282607,
+      "sd": 0.0777824740093218
+    },
+    {
+      "cut_log2": 3.0,
+      "isolate_share_in_censored_lineages": 0.8195000000000001,
+      "lineages_wholly_censored": 24.585,
+      "bias": -0.20377949424038025,
+      "sd": 0.0855338598546576
+    }
+  ],
+  "estimability_limit": 0.5
+}

@@ -1,0 +1,16 @@
+include CITATION.cff
+include NOVELTY_EVIDENCE.md
+include .zenodo.json
+
+# The article is a separate bundle. Nothing under paper/ belongs in a
+# distribution of the software: a reader installing the package wants the
+# software, and shipping a retired manuscript inside it invites the manuscript
+# to be read as a description of what was installed.
+prune paper
+prune release
+
+include tests/conftest.py
+include examples/synthetic/*.yaml
+include examples/synthetic/make_data.py
+include examples/klebsiella/expected/summary.json
+include examples/klebsiella/expected/cluster_result.json

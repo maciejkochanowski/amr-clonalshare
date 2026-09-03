@@ -1,0 +1,64 @@
+{
+  "note": "iClusterBayes (Mo et al. 2018) is R/Bioconductor only and is not run here; this is a stated gap",
+  "planted": {
+    "n_rep": 3,
+    "mean_ari_vs_truth": {
+      "snf": 1.0,
+      "mofa_kmeans": 1.0
+    },
+    "sd_ari_vs_truth": {
+      "snf": 0.0,
+      "mofa_kmeans": 0.0
+    }
+  },
+  "klebsiella": {
+    "n_isolates": 1500,
+    "n_factors_requested": 6,
+    "n_factors_with_r2_above_1pct": 1,
+    "r2_per_view_per_factor": {
+      "amr": [
+        0.5442,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vir": [
+        0.012,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "total_r2_per_view": {
+      "amr": 0.5442,
+      "vir": 0.012
+    },
+    "ari_mofa_kmeans_vs_snf_partition": 0.3836532956403755,
+    "latent_dimension_by_bic": {
+      "q_selected": 4,
+      "bic_by_q": {
+        "1": 17776.949324842644,
+        "2": 17253.577641728163,
+        "3": 17183.674428641392,
+        "4": 17178.223263022275
+      },
+      "q_max": 4,
+      "at_boundary": true
+    },
+    "factor_attribution": [
+      {
+        "factor": 0,
+        "dominant_view": "amr",
+        "share_of_factor_r2": 0.978,
+        "r2": {
+          "amr": 0.5442,
+          "vir": 0.012
+        }
+      }
+    ]
+  }
+}

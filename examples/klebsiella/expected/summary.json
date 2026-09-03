@@ -1,0 +1,43 @@
+{
+  "selected_k": 2,
+  "n_isolates": 1500,
+  "no_structure": false,
+  "inference_status": "ok",
+  "p_value_structure_report": "p < 1e-100 across all checked split orderings",
+  "diagnostic_p_value_structure_exact": 1.3978130041463598e-193,
+  "structure_detected": true,
+  "discrete_beyond_a_gradient": true,
+  "discreteness_status": "ok",
+  "discreteness_verdict": "discrete",
+  "discreteness_p_value": 0.01,
+  "continuum_bootstrap_exceedances": 0,
+  "continuum_tail_probability_ci95": {
+    "method": "Clopper-Pearson exact binomial",
+    "confidence_level": 0.95,
+    "low": 0.0,
+    "high": 0.03657574498347893
+  },
+  "continuum_decision_resolved_at_alpha_0_05": true,
+  "continuum_latent_dimension": 3,
+  "continuum_null_under_dimensioned": false,
+  "split_design_adequate": true,
+  "phenotype_n_fdr_significant": 12,
+  "phenotype_partition_beats_every_single_column_rule": false,
+  "n_defining_validated": 17,
+  "n_defining_descriptive": 22,
+  "fusion_n_eff_layers": 1.7893160074349297,
+  "fusion_collapse": false,
+  "max_empty_stratum_ari": 0.6328112682300324,
+  "lineage_concordance_excess": 0.1776,
+  "lineage_concordance_z": 14.0029718182725,
+  "lineage_confounded": true,
+  "mdl_p_value": null,
+  "mdl_gain_fraction_of_null_code": 0.14891050144447857,
+  "claim_level": 3,
+  "claim_status": "statistically_discrete_partition",
+  "active_gate_codes": [
+    "empty_stratum",
+    "lineage_confounding",
+    "phenotype_superiority"
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "experiment": "B_feature_splitting",
+  "raw": {
+    "typeI_independent_features": {
+      "per_feature_split": 0.02425,
+      "block_aware_split": 0.025,
+      "single_split_no_merge": 0.0395
+    },
+    "typeI_blocked_features": {
+      "per_feature_split": 0.99975,
+      "block_aware_split": 0.0195,
+      "single_split_no_merge": 0.89475
+    },
+    "power": {
+      "delta_p=0.1": {
+        "merged": 0.0235,
+        "single_split": 0.0345
+      },
+      "delta_p=0.2": {
+        "merged": 0.036,
+        "single_split": 0.056
+      },
+      "delta_p=0.3": {
+        "merged": 0.3785,
+        "single_split": 0.3485
+      },
+      "delta_p=0.4": {
+        "merged": 0.9965,
+        "single_split": 0.9195
+      }
+    },
+    "block_size": 5,
+    "n": 200,
+    "p": 30,
+    "n_splits": 11,
+    "n_sim": 4000,
+    "description": "feature-split test on binary panels: type-I under a global null with independent and with block-correlated features, and power against a planted two-group prevalence shift on a third of the features"
+  },
+  "cells": {
+    "typeI_independent_features.per_feature_split": {
+      "numerator": 97,
+      "denominator": 4000,
+      "point": 0.02425,
+      "raw_rate": 0.02425,
+      "cp95_lower": 0.019708070645420177,
+      "cp95_upper": 0.029503734099083783,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "typeI_independent_features.block_aware_split": {
+      "numerator": 100,
+      "denominator": 4000,
+      "point": 0.025,
+      "raw_rate": 0.025,
+      "cp95_lower": 0.02038619798299893,
+      "cp95_upper": 0.030324144021519346,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "typeI_independent_features.single_split_no_merge": {
+      "numerator": 158,
+      "denominator": 4000,
+      "point": 0.0395,
+      "raw_rate": 0.0395,
+      "cp95_lower": 0.03367735471122417,
+      "cp95_upper": 0.046006903299538215,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "typeI_blocked_features.per_feature_split": {
+      "numerator": 3999,
+      "denominator": 4000,
+      "point": 0.99975,
+      "raw_rate": 0.99975,
+      "cp95_lower": 0.9986078848780338,
+      "cp95_upper": 0.9999936705680349,
+      "cp95_upper_exceeds_0.05": true
+    },
+    "typeI_blocked_features.block_aware_split": {
+      "numerator": 78,
+      "denominator": 4000,
+      "point": 0.0195,
+      "raw_rate": 0.0195,
+      "cp95_lower": 0.015443693335441258,
+      "cp95_upper": 0.024277841082055815,
+      "cp95_upper_exceeds_0.05": false
+    },
+    "typeI_blocked_features.single_split_no_merge": {
+      "numerator": 3579,
+      "denominator": 4000,
+      "point": 0.89475,
+      "raw_rate": 0.89475,
+      "cp95_lower": 0.8848249548153226,
+      "cp95_upper": 0.9040940997375897,
+      "cp95_upper_exceeds_0.05": true
+    },
+    "power.delta_p=0.1.merged": {
+      "numerator": 47,
+      "denominator": 2000,
+      "point": 0.0235,
+      "raw_rate": 0.0235,
+      "cp95_lower": 0.017316813015912907,
+      "cp95_upper": 0.031128550818985364
+    },
+    "power.delta_p=0.1.single_split": {
+      "numerator": 69,
+      "denominator": 2000,
+      "point": 0.0345,
+      "raw_rate": 0.0345,
+      "cp95_lower": 0.026940219567643687,
+      "cp95_upper": 0.043460871452290335
+    },
+    "power.delta_p=0.2.merged": {
+      "numerator": 72,
+      "denominator": 2000,
+      "point": 0.036,
+      "raw_rate": 0.036,
+      "cp95_lower": 0.028272282305312472,
+      "cp95_upper": 0.045123210435492875
+    },
+    "power.delta_p=0.2.single_split": {
+      "numerator": 112,
+      "denominator": 2000,
+      "point": 0.056,
+      "raw_rate": 0.056,
+      "cp95_lower": 0.04633060857321737,
+      "cp95_upper": 0.06699518713651617
+    },
+    "power.delta_p=0.3.merged": {
+      "numerator": 757,
+      "denominator": 2000,
+      "point": 0.3785,
+      "raw_rate": 0.3785,
+      "cp95_lower": 0.35718496764269375,
+      "cp95_upper": 0.4001718868602736
+    },
+    "power.delta_p=0.3.single_split": {
+      "numerator": 697,
+      "denominator": 2000,
+      "point": 0.3485,
+      "raw_rate": 0.3485,
+      "cp95_lower": 0.3276019113999047,
+      "cp95_upper": 0.3698431758613983
+    },
+    "power.delta_p=0.4.merged": {
+      "numerator": 1993,
+      "denominator": 2000,
+      "point": 0.9965,
+      "raw_rate": 0.9965,
+      "cp95_lower": 0.992802038285342,
+      "cp95_upper": 0.9985916961674974
+    },
+    "power.delta_p=0.4.single_split": {
+      "numerator": 1839,
+      "denominator": 2000,
+      "point": 0.9195,
+      "raw_rate": 0.9195,
+      "cp95_lower": 0.9067014912590344,
+      "cp95_upper": 0.9310518797802613
+    }
+  },
+  "receipt": {
+    "date": "2026-08-14",
+    "preregistration": "audyt/PREREGISTRACJA_W4.md",
+    "preregistration_sha256": "9bd10b40e207c57799c0d9cb9cba1c2ae5dff1ef683a9c0353834ae220846d64",
+    "generator": "benchmarks/calibration_study.py",
+    "generator_sha256": "729d3a2707f27e559f38de440c628faaf047d3281f9c4608bffe1bafa0d3fb68",
+    "generator_unmodified": true,
+    "git_rev": "56439d55c383fcda7e1a6188ff0c2ddc09921204",
+    "n_sim": 4000,
+    "params": {
+      "n": 200,
+      "p": 30,
+      "n_splits": 11,
+      "block_size": 5
+    },
+    "seeds_in_code": {
+      "exp_b_typeI": "default_rng(11 + block)",
+      "exp_b_power": "default_rng(77)",
+      "exp_g": "default_rng(4242)"
+    },
+    "interval": "two-sided Clopper-Pearson 95% via scipy.stats.beta.ppf",
+    "runtime_seconds": 1794.1502537800116,
+    "cpu_hours": 0.4983750704944477,
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0",
+    "shipped_120_reproduction_gate": "PASS (exp_b n_sim=120 odtworzone co do bitu)",
+    "shipped_file_overwritten": false
+  }
+}

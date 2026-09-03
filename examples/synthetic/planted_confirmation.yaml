@@ -1,0 +1,45 @@
+# Independent-seed confirmation of the frozen positive-control design.
+# The design was chosen on seed 17; these data use seed 117 and must pass
+# unchanged. This is a software sensitivity benchmark, not biological evidence.
+
+dataset:
+  name: synthetic_planted_k3_confirmation
+  strain_id_column: isolate
+  data_dir: data/planted_confirmation
+  strain_alignment_policy: intersect_core
+  expected_n: 240
+  metadata: metadata.csv
+  lineage_column: lineage
+  external_columns: [planted_cluster]
+
+files:
+  amr: { path: amr.csv, kind: wide_binary }
+  vir: { path: vir.csv, kind: wide_binary }
+
+distance:
+  metric: jaccard
+  undefined_pair: identical
+
+snf:
+  K: 20
+  mu: 0.5
+  T: 20
+  tie_policy: inclusive
+
+trait_cluster:
+  layers: [amr, vir]
+  k_range: [2, 3, 4, 5]
+  k_select_primary: mdl
+  prevalence_gate: { lo: 0.0, hi: 1.0, min_count: 2 }
+
+tva:
+  n_splits: 25
+  n_boot_continuum: 99
+  continuum_q_max: 4
+  merge: exchangeable_ruger
+
+influence:
+  n_perm: 10
+
+validation:
+  cluster_ari_min: 0.80

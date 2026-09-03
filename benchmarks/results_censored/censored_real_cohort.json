@@ -1,0 +1,947 @@
+{
+  "generated": "2026-09-01",
+  "bootstrap_draws": 400,
+  "summary": {
+    "n_isolates": 677,
+    "n_lineages": 30,
+    "lineage_column": "baps_cluster",
+    "n_agents_with_panel": 16,
+    "n_agents_paired": 13,
+    "n_agents_panel_only": 3,
+    "n_agents_call_refused": 2,
+    "n_agents_dilution_refused": 0,
+    "pearson_kappa": 0.9283965021434055,
+    "median_interval_width_binary": 0.2680873957133927,
+    "median_interval_width_mic": 0.23395635022672423,
+    "agents_with_narrower_mic_interval": 10,
+    "median_profile_width_binary": 0.24949999999999997,
+    "median_profile_width_mic": 0.1996,
+    "agents_with_narrower_mic_profile": 9,
+    "median_bootstrap_width_binary": 0.23406586212717267,
+    "median_bootstrap_width_mic": 0.2647491682177864,
+    "agents_with_narrower_mic_bootstrap": 4
+  },
+  "per_agent": {
+    "amoxicillin": {
+      "agent": "amoxicillin",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.05465288035450517,
+      "cutoff_log2": -4.058893689053568,
+      "binary": {
+        "kappa": 0.6043067001150682,
+        "ci_low": 0.4614575467489289,
+        "ci_high": 0.7475886820459986,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 1.2358033165686726,
+        "boot_low": 0.35569957206245384,
+        "boot_high": 0.730645689250522,
+        "profile_low": 0.5498999999999999,
+        "profile_high": 0.72455,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 18,
+        "share_in_censored_groups": 0.33234859675036926,
+        "estimable": false,
+        "reason": "a single cut point with 5% of isolates above it lies outside the calibrated window 10% to 90%, where the share is not estimable from a call; the recorded concentration is not affected; 18 of 30 lineages lie wholly beyond the panel, holding 33% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.7577929805682889,
+        "ci_low": 0.6588300478247907,
+        "ci_high": 0.8519139108447505,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 0.6060817230989884,
+        "sigma_between": 1.072045243089711,
+        "boot_low": 0.21794666593318518,
+        "boot_high": 0.9026827435872797,
+        "profile_low": 0.4501,
+        "profile_high": 0.6996,
+        "share_censored": 0.07533234859675036,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 9,
+        "lowest": 0.015,
+        "highest": 4.0,
+        "share_on_lowest": 0.07090103397341212,
+        "share_on_highest": 0.004431314623338257,
+        "lattice_ratios": [
+          2.0,
+          2.083
+        ],
+        "doubling": true,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.07 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    },
+    "cefquinome": {
+      "agent": "cefquinome",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.03840472673559823,
+      "cutoff_log2": -3.0588936890535687,
+      "binary": {
+        "kappa": 0.4645064567549729,
+        "ci_low": 0.31898022688035976,
+        "ci_high": 0.6321223239775134,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 0.9313625226539708,
+        "boot_low": 0.21636543465622793,
+        "boot_high": 0.6024315426274105,
+        "profile_low": 0.37525,
+        "profile_high": 0.87425,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 21,
+        "share_in_censored_groups": 0.5805022156573116,
+        "estimable": false,
+        "reason": "a single cut point with 4% of isolates above it lies outside the calibrated window 10% to 90%, where the share is not estimable from a call; the recorded concentration is not affected; 58% of isolates lie in lineages wholly beyond the panel, above the calibrated limit of 50%; their latent means are not identified and the share is not estimable; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.4699185634816838,
+        "ci_low": 0.34891503836291804,
+        "ci_high": 0.6234246302028654,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0788128385621747,
+        "sigma_between": 1.015748311909993,
+        "boot_low": 0.3033069523068266,
+        "boot_high": 0.659284978531475,
+        "profile_low": 0.37525,
+        "profile_high": 0.5498999999999999,
+        "share_censored": 0.014771048744460856,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 11,
+        "lowest": 0.002,
+        "highest": 2.0,
+        "share_on_lowest": 0.007385524372230428,
+        "share_on_highest": 0.007385524372230428,
+        "lattice_ratios": [
+          1.875,
+          2.0,
+          2.083
+        ],
+        "doubling": true,
+        "admissible_modes": [
+          "binary",
+          "interval",
+          "point"
+        ],
+        "reason": "panel supports all modes"
+      }
+    },
+    "ceftiofur": {
+      "agent": "ceftiofur",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.24076809453471196,
+      "cutoff_log2": -2.0,
+      "binary": {
+        "kappa": 0.7829371259196102,
+        "ci_low": 0.6825074436205767,
+        "ci_high": 0.8711703723460735,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 1.8991998577382305,
+        "boot_low": 0.6607319397023836,
+        "boot_high": 0.8661406272069456,
+        "profile_low": 0.5998,
+        "profile_high": 0.6996,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 14,
+        "share_in_censored_groups": 0.21565731166912852,
+        "estimable": true,
+        "reason": "14 of 30 lineages lie wholly beyond the panel, holding 22% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.6687434498169093,
+        "ci_low": 0.554188416196565,
+        "ci_high": 0.7881447664232892,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0633115054387616,
+        "sigma_between": 1.5108037232018265,
+        "boot_low": 0.4703092075822682,
+        "boot_high": 0.8530364560045223,
+        "profile_low": 0.5,
+        "profile_high": 0.6497,
+        "share_censored": 0.013293943870014771,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 11,
+        "lowest": 0.03,
+        "highest": 16.0,
+        "share_on_lowest": 0.004431314623338257,
+        "share_on_highest": 0.008862629246676515,
+        "lattice_ratios": [
+          1.042,
+          2.0
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval",
+          "point"
+        ],
+        "reason": "panel supports all modes"
+      }
+    },
+    "doxycycline": {
+      "agent": "doxycycline",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.843426883308715,
+      "cutoff_log2": -1.0,
+      "binary": {
+        "kappa": 0.1777388471328855,
+        "ci_low": 0.10235095126684339,
+        "ci_high": 0.30488853753176476,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 0.46492863262867595,
+        "boot_low": 0.02838905746104623,
+        "boot_high": 0.22094496692639398,
+        "profile_low": 0.02595,
+        "profile_high": 0.27545,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 11,
+        "share_in_censored_groups": 0.11521418020679468,
+        "estimable": true,
+        "reason": "11 of 30 lineages lie wholly beyond the panel, holding 12% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.08206970722056363,
+        "ci_low": 0.0366828454898149,
+        "ci_high": 0.1680646885602604,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 2.476847499066454,
+        "sigma_between": 0.7406036677961904,
+        "boot_low": 0.0448877054994251,
+        "boot_high": 0.10947206235408011,
+        "profile_low": 0.0509,
+        "profile_high": 0.1507,
+        "share_censored": 0.005908419497784343,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 12,
+        "lowest": 0.03,
+        "highest": 64.0,
+        "share_on_lowest": 0.004431314623338257,
+        "share_on_highest": 0.0014771048744460858,
+        "lattice_ratios": [
+          1.033,
+          1.05,
+          1.905,
+          1.935,
+          2.0,
+          2.083,
+          8.0
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval",
+          "point"
+        ],
+        "reason": "panel supports all modes"
+      }
+    },
+    "enrofloxacin": {
+      "agent": "enrofloxacin",
+      "n": 677,
+      "has_call": false,
+      "mic": {
+        "kappa": 0.22564111912655868,
+        "ci_low": 0.14076412088617554,
+        "ci_high": 0.36346661211589154,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 0.6917392736418974,
+        "sigma_between": 0.3734052454878814,
+        "boot_low": 0.07546336027928147,
+        "boot_high": 0.362506395913149,
+        "profile_low": 0.1507,
+        "profile_high": 0.2505,
+        "share_censored": 0.004431314623338257,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 10,
+        "lowest": 0.008,
+        "highest": 8.0,
+        "share_on_lowest": 0.0014771048744460858,
+        "share_on_highest": 0.0029542097488921715,
+        "lattice_ratios": [
+          2.0,
+          2.083,
+          3.75
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval",
+          "point"
+        ],
+        "reason": "panel supports all modes"
+      }
+    },
+    "erythromycin": {
+      "agent": "erythromycin",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.5406203840472673,
+      "cutoff_log2": -2.0,
+      "binary": {
+        "kappa": 0.3785320641178482,
+        "ci_low": 0.26391596083451047,
+        "ci_high": 0.5363089753910746,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 0.780444408087789,
+        "boot_low": 0.2080606433430986,
+        "boot_high": 0.44850629627751437,
+        "profile_low": 0.1507,
+        "profile_high": 0.42515000000000003,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 10,
+        "share_in_censored_groups": 0.0620384047267356,
+        "estimable": true,
+        "reason": "10 of 30 lineages lie wholly beyond the panel, holding 6% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.22914686087217326,
+        "ci_low": 0.14338617370243015,
+        "ci_high": 0.3678477247462634,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 8.736811730681085,
+        "sigma_between": 4.763477416971124,
+        "boot_low": 0.06299920221842294,
+        "boot_high": 0.3144116782775326,
+        "profile_low": 0.1008,
+        "profile_high": 0.3503,
+        "share_censored": 0.5612998522895125,
+        "n_groups_fully_censored": 4,
+        "share_in_censored_groups": 0.01772525849335303,
+        "estimable": true,
+        "reason": "4 of 30 lineages lie wholly beyond the panel, holding 2% of isolates, which the calibration puts inside the range where the shrinkage absorbs them"
+      },
+      "panel": {
+        "n_wells": 13,
+        "lowest": 0.015,
+        "highest": 32.0,
+        "share_on_lowest": 0.12112259970457903,
+        "share_on_highest": 0.4401772525849335,
+        "lattice_ratios": [
+          1.033,
+          1.067,
+          1.875,
+          1.935,
+          2.0,
+          2.083,
+          4.0
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.44 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    },
+    "florfenicol": {
+      "agent": "florfenicol",
+      "n": 677,
+      "has_call": false,
+      "mic": {
+        "kappa": 0.24003268028240496,
+        "ci_low": 0.15127629690983682,
+        "ci_high": 0.38159182207252174,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 0.44467173037307706,
+        "sigma_between": 0.24990632567702356,
+        "boot_low": 0.11535600248485421,
+        "boot_high": 0.4250771225211952,
+        "profile_low": 0.1507,
+        "profile_high": 0.42515000000000003,
+        "share_censored": 0.03249630723781388,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 5,
+        "lowest": 0.25,
+        "highest": 4.0,
+        "share_on_lowest": 0.0014771048744460858,
+        "share_on_highest": 0.0310192023633678,
+        "lattice_ratios": [
+          2.0
+        ],
+        "doubling": true,
+        "admissible_modes": [
+          "binary",
+          "interval",
+          "point"
+        ],
+        "reason": "panel supports all modes"
+      }
+    },
+    "lincomycin": {
+      "agent": "lincomycin",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.6262924667651403,
+      "cutoff_log2": 1.0,
+      "binary": {
+        "kappa": 0.4419313325440225,
+        "ci_low": 0.3197632812144092,
+        "ci_high": 0.5991037663218074,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 0.8898843660382222,
+        "boot_low": 0.31288505674364064,
+        "boot_high": 0.49772673024309544,
+        "profile_low": 0.4002,
+        "profile_high": 0.5998,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 12,
+        "share_in_censored_groups": 0.07533234859675036,
+        "estimable": true,
+        "reason": "12 of 30 lineages lie wholly beyond the panel, holding 8% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.3573137056678764,
+        "ci_low": 0.2470474227283295,
+        "ci_high": 0.5134024616336902,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 6.163537833550287,
+        "sigma_between": 4.595739296834489,
+        "boot_low": 0.22901316436550379,
+        "boot_high": 0.4277163054622312,
+        "profile_low": 0.27545,
+        "profile_high": 0.52495,
+        "share_censored": 0.5583456425406204,
+        "n_groups_fully_censored": 7,
+        "share_in_censored_groups": 0.051698670605613,
+        "estimable": true,
+        "reason": "7 of 30 lineages lie wholly beyond the panel, holding 5% of isolates, which the calibration puts inside the range where the shrinkage absorbs them"
+      },
+      "panel": {
+        "n_wells": 13,
+        "lowest": 0.06,
+        "highest": 128.0,
+        "share_on_lowest": 0.008862629246676515,
+        "share_on_highest": 0.5494830132939439,
+        "lattice_ratios": [
+          1.042,
+          2.0
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.55 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    },
+    "marbofloxacin": {
+      "agent": "marbofloxacin",
+      "n": 677,
+      "has_call": false,
+      "mic": {
+        "kappa": 0.04370556093869466,
+        "ci_low": 0.0106182556247325,
+        "ci_high": 0.10906044039518505,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.242943923989832,
+        "sigma_between": 0.26571989355665904,
+        "boot_low": 0.004470132929382708,
+        "boot_high": 0.07857647483271313,
+        "profile_low": 0.001,
+        "profile_high": 0.1008,
+        "share_censored": 0.04283604135893648,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 6,
+        "lowest": 0.015,
+        "highest": 16.0,
+        "share_on_lowest": 0.03988183161004431,
+        "share_on_highest": 0.0029542097488921715,
+        "lattice_ratios": [
+          2.0,
+          8.0,
+          16.667
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval",
+          "point"
+        ],
+        "reason": "panel supports all modes"
+      }
+    },
+    "penicillin": {
+      "agent": "penicillin",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.23042836041358936,
+      "cutoff_log2": -4.058893689053568,
+      "binary": {
+        "kappa": 0.7634199109439512,
+        "ci_low": 0.6579107399863514,
+        "ci_high": 0.8581649613959917,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 1.796356980227081,
+        "boot_low": 0.6222924978943187,
+        "boot_high": 0.8487786401399701,
+        "profile_low": 0.52495,
+        "profile_high": 0.8493,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 13,
+        "share_in_censored_groups": 0.1757754800590842,
+        "estimable": true,
+        "reason": "13 of 30 lineages lie wholly beyond the panel, holding 18% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.6548705431110224,
+        "ci_low": 0.5362888601519207,
+        "ci_high": 0.7786247305422084,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 2.53792967756592,
+        "sigma_between": 3.4959587379857244,
+        "boot_low": 0.5056686012272181,
+        "boot_high": 0.7662986583231285,
+        "profile_low": 0.42515000000000003,
+        "profile_high": 0.62475,
+        "share_censored": 0.6573116691285081,
+        "n_groups_fully_censored": 4,
+        "share_in_censored_groups": 0.0827178729689808,
+        "estimable": true,
+        "reason": "4 of 30 lineages lie wholly beyond the panel, holding 8% of isolates, which the calibration puts inside the range where the shrinkage absorbs them"
+      },
+      "panel": {
+        "n_wells": 11,
+        "lowest": 0.03,
+        "highest": 16.0,
+        "share_on_lowest": 0.6558345642540621,
+        "share_on_highest": 0.0014771048744460858,
+        "lattice_ratios": [
+          1.033,
+          1.935,
+          2.0,
+          2.083
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.66 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    },
+    "spectinomycin": {
+      "agent": "spectinomycin",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.11521418020679468,
+      "cutoff_log2": 5.0,
+      "binary": {
+        "kappa": 0.4216590751182017,
+        "ci_low": 0.29717726786908394,
+        "ci_high": 0.5822261349088247,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 0.8538641175588355,
+        "boot_low": 0.21965454439760548,
+        "boot_high": 0.548118751312396,
+        "profile_low": 0.17565,
+        "profile_high": 0.4501,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 9,
+        "share_in_censored_groups": 0.059084194977843424,
+        "estimable": true,
+        "reason": "9 of 30 lineages lie wholly beyond the panel, holding 6% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.46282549289426916,
+        "ci_low": 0.3423013145920827,
+        "ci_high": 0.6168431985011572,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.4091923805645632,
+        "sigma_between": 1.3080406038755434,
+        "boot_low": 0.1569156618804496,
+        "boot_high": 0.6446854506141969,
+        "profile_low": 0.27545,
+        "profile_high": 0.47505,
+        "share_censored": 0.07828655834564253,
+        "n_groups_fully_censored": 1,
+        "share_in_censored_groups": 0.0014771048744460858,
+        "estimable": true,
+        "reason": "1 of 30 lineages lie wholly beyond the panel, holding 0% of isolates, which the calibration puts inside the range where the shrinkage absorbs them"
+      },
+      "panel": {
+        "n_wells": 10,
+        "lowest": 1.0,
+        "highest": 512.0,
+        "share_on_lowest": 0.0014771048744460858,
+        "share_on_highest": 0.07680945347119646,
+        "lattice_ratios": [
+          2.0
+        ],
+        "doubling": true,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.08 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    },
+    "tetracycline": {
+      "agent": "tetracycline",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.8478581979320532,
+      "cutoff_log2": 2.0,
+      "binary": {
+        "kappa": 0.14794389600939178,
+        "ci_low": 0.08084001441172785,
+        "ci_high": 0.2648358783246928,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 0.4166912968048956,
+        "boot_low": 0.024250014318569883,
+        "boot_high": 0.18247292923915132,
+        "profile_low": 0.02595,
+        "profile_high": 0.2505,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 12,
+        "share_in_censored_groups": 0.11816838995568685,
+        "estimable": true,
+        "reason": "12 of 30 lineages lie wholly beyond the panel, holding 12% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.07760461161662283,
+        "ci_low": 0.03359190944226059,
+        "ci_high": 0.161386995789357,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 2.1651463256073353,
+        "sigma_between": 0.6280185266673086,
+        "boot_low": 0.038887852335997224,
+        "boot_high": 0.09782084330028604,
+        "profile_low": 0.02595,
+        "profile_high": 0.17565,
+        "share_censored": 0.09896602658788774,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 12,
+        "lowest": 0.06,
+        "highest": 128.0,
+        "share_on_lowest": 0.0014771048744460858,
+        "share_on_highest": 0.09748892171344166,
+        "lattice_ratios": [
+          2.0,
+          2.083
+        ],
+        "doubling": true,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.10 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    },
+    "tiamulin": {
+      "agent": "tiamulin",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.1935007385524372,
+      "cutoff_log2": 3.0,
+      "binary": {
+        "kappa": 0.7131814398682157,
+        "ci_low": 0.5966968684790038,
+        "ci_high": 0.8235810663230964,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 1.5768718146415002,
+        "boot_low": 0.5498467792026177,
+        "boot_high": 0.8432261927048529,
+        "profile_low": 0.67465,
+        "profile_high": 0.7494999999999999,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 13,
+        "share_in_censored_groups": 0.3722304283604136,
+        "estimable": true,
+        "reason": "13 of 30 lineages lie wholly beyond the panel, holding 37% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.695236147372503,
+        "ci_low": 0.5846247494980585,
+        "ci_high": 0.8076158850029963,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.6508369603811648,
+        "sigma_between": 2.4933808998707416,
+        "boot_low": 0.5155689586114809,
+        "boot_high": 0.8231601456445962,
+        "profile_low": 0.6497,
+        "profile_high": 0.6996,
+        "share_censored": 0.07976366322008863,
+        "n_groups_fully_censored": 2,
+        "share_in_censored_groups": 0.008862629246676515,
+        "estimable": true,
+        "reason": "2 of 30 lineages lie wholly beyond the panel, holding 1% of isolates, which the calibration puts inside the range where the shrinkage absorbs them"
+      },
+      "panel": {
+        "n_wells": 11,
+        "lowest": 0.03,
+        "highest": 64.0,
+        "share_on_lowest": 0.0029542097488921715,
+        "share_on_highest": 0.07680945347119646,
+        "lattice_ratios": [
+          2.0,
+          2.083,
+          4.0
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.08 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    },
+    "tilmicosin": {
+      "agent": "tilmicosin",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.5376661742983752,
+      "cutoff_log2": 3.0,
+      "binary": {
+        "kappa": 0.3451048471170325,
+        "ci_low": 0.23537968591864142,
+        "ci_high": 0.5014553903999105,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 0.725921470277581,
+        "boot_low": 0.18808801552646365,
+        "boot_high": 0.4330129682311133,
+        "profile_low": 0.1507,
+        "profile_high": 0.4002,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 9,
+        "share_in_censored_groups": 0.056129985228951254,
+        "estimable": true,
+        "reason": "9 of 30 lineages lie wholly beyond the panel, holding 6% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.17241973498024865,
+        "ci_low": 0.10106964566557526,
+        "ci_high": 0.2951630134754689,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 2.573986388975024,
+        "sigma_between": 1.1748831353312121,
+        "boot_low": 0.08276064741297286,
+        "boot_high": 0.23079586724195472,
+        "profile_low": 0.07585,
+        "profile_high": 0.2505,
+        "share_censored": 0.019202363367799114,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 13,
+        "lowest": 0.25,
+        "highest": 1024.0,
+        "share_on_lowest": 0.0014771048744460858,
+        "share_on_highest": 0.01772525849335303,
+        "lattice_ratios": [
+          2.0
+        ],
+        "doubling": true,
+        "admissible_modes": [
+          "binary",
+          "interval",
+          "point"
+        ],
+        "reason": "panel supports all modes"
+      }
+    },
+    "trimethoprim": {
+      "agent": "trimethoprim",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.28064992614475626,
+      "cutoff_log2": -2.0,
+      "binary": {
+        "kappa": 0.563033969303198,
+        "ci_low": 0.43560500359944665,
+        "ci_high": 0.7071153957351198,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 1.135124403712749,
+        "boot_low": 0.42963542447284103,
+        "boot_high": 0.6474961202987866,
+        "profile_low": 0.4501,
+        "profile_high": 0.62475,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 10,
+        "share_in_censored_groups": 0.09453471196454949,
+        "estimable": true,
+        "reason": "10 of 30 lineages lie wholly beyond the panel, holding 9% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.4379952967524104,
+        "ci_low": 0.31937698402178005,
+        "ci_high": 0.5934390972444672,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 2.541933419622954,
+        "sigma_between": 2.244031347737976,
+        "boot_low": 0.2563674122345367,
+        "boot_high": 0.5816505488609486,
+        "profile_low": 0.2505,
+        "profile_high": 0.5,
+        "share_censored": 0.09896602658788774,
+        "n_groups_fully_censored": 0,
+        "share_in_censored_groups": 0.0,
+        "estimable": true,
+        "reason": "ok"
+      },
+      "panel": {
+        "n_wells": 13,
+        "lowest": 0.015,
+        "highest": 32.0,
+        "share_on_lowest": 0.050221565731166914,
+        "share_on_highest": 0.04874446085672083,
+        "lattice_ratios": [
+          1.042,
+          2.0
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.05 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    },
+    "tylosin": {
+      "agent": "tylosin",
+      "n": 677,
+      "has_call": true,
+      "prevalence": 0.5406203840472673,
+      "cutoff_log2": 1.0,
+      "binary": {
+        "kappa": 0.3545008051793466,
+        "ci_low": 0.24331167955287977,
+        "ci_high": 0.5113990752662725,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 1.0,
+        "sigma_between": 0.741072607381221,
+        "boot_low": 0.18486372363323345,
+        "boot_high": 0.4189295857604061,
+        "profile_low": 0.1507,
+        "profile_high": 0.4002,
+        "share_censored": 1.0,
+        "n_groups_fully_censored": 9,
+        "share_in_censored_groups": 0.056129985228951254,
+        "estimable": true,
+        "reason": "9 of 30 lineages lie wholly beyond the panel, holding 6% of isolates, which the calibration puts inside the range where the shrinkage absorbs them; scale not identified from a single cut point; reported on the liability scale with residual standard deviation fixed at one"
+      },
+      "mic": {
+        "kappa": 0.2729400516368101,
+        "ci_low": 0.17760248061448233,
+        "ci_high": 0.4202131667101405,
+        "n": 677,
+        "n_groups": 30,
+        "sigma_within": 7.09426043274276,
+        "sigma_between": 4.346659809848615,
+        "boot_low": 0.10810995403654491,
+        "boot_high": 0.3728591222543313,
+        "profile_low": 0.1507,
+        "profile_high": 0.37525,
+        "share_censored": 0.51698670605613,
+        "n_groups_fully_censored": 6,
+        "share_in_censored_groups": 0.03988183161004431,
+        "estimable": true,
+        "reason": "6 of 30 lineages lie wholly beyond the panel, holding 4% of isolates, which the calibration puts inside the range where the shrinkage absorbs them"
+      },
+      "panel": {
+        "n_wells": 12,
+        "lowest": 0.12,
+        "highest": 256.0,
+        "share_on_lowest": 0.0014771048744460858,
+        "share_on_highest": 0.5155096011816839,
+        "lattice_ratios": [
+          1.042,
+          2.0,
+          4.0
+        ],
+        "doubling": false,
+        "admissible_modes": [
+          "binary",
+          "interval"
+        ],
+        "reason": "0.52 of readings sit on an end well, so a point value is a censored reading and the interval mode is required"
+      }
+    }
+  }
+}

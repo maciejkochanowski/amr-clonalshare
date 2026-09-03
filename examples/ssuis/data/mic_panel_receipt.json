@@ -1,0 +1,49 @@
+{
+  "source": "mic_long.csv",
+  "target": "mic_panel.csv",
+  "operation": "prepend 'g' to genome_id, then restrict to the layer index",
+  "rows_in": 10832,
+  "rows_out": 10832,
+  "strains_in_layers": 677,
+  "strains_with_mic": 677,
+  "antimicrobials": [
+    "amoxicillin",
+    "cefquinome",
+    "ceftiofur",
+    "doxycycline",
+    "enrofloxacin",
+    "erythromycin",
+    "florfenicol",
+    "lincomycin",
+    "marbofloxacin",
+    "penicillin",
+    "spectinomycin",
+    "tetracycline",
+    "tiamulin",
+    "tilmicosin",
+    "trimethoprim",
+    "tylosin"
+  ],
+  "readings_per_agent": {
+    "amoxicillin": 677,
+    "cefquinome": 677,
+    "ceftiofur": 677,
+    "doxycycline": 677,
+    "enrofloxacin": 677,
+    "erythromycin": 677,
+    "florfenicol": 677,
+    "lincomycin": 677,
+    "marbofloxacin": 677,
+    "penicillin": 677,
+    "spectinomycin": 677,
+    "tetracycline": 677,
+    "tiamulin": 677,
+    "tilmicosin": 677,
+    "trimethoprim": 677,
+    "tylosin": 677
+  },
+  "censoring_signs_recorded": 0,
+  "units": [
+    "mg/L"
+  ]
+}

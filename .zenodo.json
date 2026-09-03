@@ -1,0 +1,54 @@
+{
+  "title": "amr-clonalshare: lineage-conditioned diagnostics for bacterial resistance patterns and prevalence trends",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "license": "MIT",
+  "description": "<p>Python package and command-line tool for two questions that share one confounder. For a partition of binary bacterial trait layers it runs an ordered sequence of artefact, layer-influence, population-structure, held-out-feature and adaptively dimensioned latent-continuum diagnostics, tied to fail-closed outputs and process exit codes. For a difference in non-wild-type prevalence between two collections it applies the Kitagawa decomposition to split the difference into a lineage-composition component and a within-lineage rate component, with a shared-support gate calibrated against measured interval coverage, a test for lineage labels that are differentially and informatively missing, and Benjamini-Yekutieli control within each component family of the antimicrobial panel, valid whatever the dependence between agents, reported beside the discovery count under an independence assumption and the effective number of independent agents.</p><p>Ships two independently seeded positive controls, a negative and an adversarial control, a <em>Klebsiella pneumoniae</em> genotype case study and a <em>Streptococcus suis</em> veterinary case study with full data provenance, together with a 720,000-decomposition calibration study and a head-to-head comparison against lineage-adjusted logistic regression.</p><p>A susceptibility panel is read at its recorded resolution: a dichotomised call and a recorded dilution are both intervals on the log2 concentration scale and enter one interval likelihood, so the input mode changes how much an observation carries rather than what is estimated. Each share carries an anytime-valid e-value with false-discovery control that holds under arbitrary dependence across the panel. The attribution is exercised outside the shipped cohorts on 185 species-agent cells from ten species of NCBI Pathogen Detection, each with a permuted-label control.</p><p>A veterinary arm cuts the same source by host species and by sampling matrix and runs every cell at two definitions of a lineage, the Pathogen Detection SNP cluster and the serovar, with the permuted-label control at both. The pair is reported rather than one number, because the share a cohort carries is a function of the resolution at which a lineage is defined, and a laboratory that serotypes holds a different resolution from one that clusters genomes.</p>",
+  "creators": [
+    {
+      "name": "Kochanowski, M.",
+      "affiliation": "National Veterinary Research Institute (PIWet-PIB), Pulawy, Poland"
+    }
+  ],
+  "keywords": [
+    "bioinformatics",
+    "antimicrobial resistance",
+    "veterinary surveillance",
+    "Streptococcus suis",
+    "prevalence decomposition",
+    "Kitagawa decomposition",
+    "multi-view clustering",
+    "similarity network fusion",
+    "population structure",
+    "reproducible research",
+    "interval-censored MIC",
+    "anytime-valid inference",
+    "serovar",
+    "typing resolution",
+    "NCBI Pathogen Detection",
+    "sampling frame"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.1186/s12915-021-01094-1",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1093/nar/gkac1003",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/ElsevierSoftwareX/SOFTX-D-26-XXXXXX",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "notes": "The Streptococcus suis example data derive from Hadjirin et al. 2021, BMC Biology 19:191, under CC BY 4.0; retrieval, epidemiological cut-off derivation, metadata repairs and the population-cluster join are documented and reproducible in examples/ssuis/DATA_PROVENANCE.md."
+}

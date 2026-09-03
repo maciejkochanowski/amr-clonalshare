@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.eggs/
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.Zone.Identifier
+
+# Build outputs of THIS tree only. The leading slash matters: a bare `dist/`
+# and a bare `*.egg-info/` also match the directories inside `release/*/`,
+# where they are not build scratch but the released artifacts themselves,
+# hashed by that release's own SHA256SUMS. Excluding them leaves a manifest
+# that lists files git refuses to store, and the failure is silent until
+# someone verifies a release and finds it incomplete.
+/dist/
+/build/
+/src/*.egg-info/
+
+# The tree-wide .gitignore at the repository root carries
+# `Habilitacja7sierpnia/**/dist/`, which also catches the released artifacts
+# under `release/*/dist/`. A negation in this file, which is deeper and so
+# applied later, re-includes the directory. It has to name the directory
+# rather than the files inside it: git will not re-include a file whose parent
+# directory is excluded.
+!release/*/dist/
+!release/*/source/*.egg-info/

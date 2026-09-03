@@ -1,0 +1,178 @@
+{
+  "snfpy_agreement": {
+    "available": true,
+    "n": 60,
+    "m": 3,
+    "K": 12,
+    "T": 20,
+    "n_seeds": 5,
+    "max_relative_difference": 1.9644484794315756e-16,
+    "agrees": true
+  },
+  "planted_recovery": {
+    "n_rep": 20,
+    "n": 150,
+    "k_true": 3,
+    "by_overlap": {
+      "overlap=0.05": {
+        "renormalise": {
+          "mean_ari_vs_truth": 1.0,
+          "sd_ari_vs_truth": 0.0,
+          "mean_n_eff_layers": 2.0,
+          "frac_layer_collapse_flagged": 0.0,
+          "mean_ari_fused_vs_best_single_layer": 1.0
+        },
+        "add_identity": {
+          "mean_ari_vs_truth": 1.0,
+          "sd_ari_vs_truth": 0.0,
+          "mean_n_eff_layers": 2.0,
+          "frac_layer_collapse_flagged": 0.0,
+          "mean_ari_fused_vs_best_single_layer": 1.0
+        },
+        "paired_margin_renormalise_minus_add_identity": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "frac_renormalise_better": 0.0,
+          "frac_tied": 1.0
+        }
+      },
+      "overlap=0.15": {
+        "renormalise": {
+          "mean_ari_vs_truth": 1.0,
+          "sd_ari_vs_truth": 0.0,
+          "mean_n_eff_layers": 1.7,
+          "frac_layer_collapse_flagged": 0.0,
+          "mean_ari_fused_vs_best_single_layer": 1.0
+        },
+        "add_identity": {
+          "mean_ari_vs_truth": 1.0,
+          "sd_ari_vs_truth": 0.0,
+          "mean_n_eff_layers": 1.7,
+          "frac_layer_collapse_flagged": 0.0,
+          "mean_ari_fused_vs_best_single_layer": 1.0
+        },
+        "paired_margin_renormalise_minus_add_identity": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "frac_renormalise_better": 0.0,
+          "frac_tied": 1.0
+        }
+      },
+      "overlap=0.25": {
+        "renormalise": {
+          "mean_ari_vs_truth": 1.0,
+          "sd_ari_vs_truth": 0.0,
+          "mean_n_eff_layers": 1.061369648036611,
+          "frac_layer_collapse_flagged": 0.6,
+          "mean_ari_fused_vs_best_single_layer": 0.9979932004718041
+        },
+        "add_identity": {
+          "mean_ari_vs_truth": 1.0,
+          "sd_ari_vs_truth": 0.0,
+          "mean_n_eff_layers": 1.061369648036611,
+          "frac_layer_collapse_flagged": 0.6,
+          "mean_ari_fused_vs_best_single_layer": 0.9979932004718041
+        },
+        "paired_margin_renormalise_minus_add_identity": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "frac_renormalise_better": 0.0,
+          "frac_tied": 1.0
+        }
+      },
+      "overlap=0.35": {
+        "renormalise": {
+          "mean_ari_vs_truth": 0.9700832749878199,
+          "sd_ari_vs_truth": 0.022792424145966435,
+          "mean_n_eff_layers": 1.6137524126503948,
+          "frac_layer_collapse_flagged": 0.25,
+          "mean_ari_fused_vs_best_single_layer": 0.9196392054240633
+        },
+        "add_identity": {
+          "mean_ari_vs_truth": 0.9710968748334002,
+          "sd_ari_vs_truth": 0.020818922180156737,
+          "mean_n_eff_layers": 1.6410204667505173,
+          "frac_layer_collapse_flagged": 0.25,
+          "mean_ari_fused_vs_best_single_layer": 0.9148365567181516
+        },
+        "paired_margin_renormalise_minus_add_identity": {
+          "mean": -0.001013599845580404,
+          "sd": 0.013648350957389204,
+          "frac_renormalise_better": 0.15,
+          "frac_tied": 0.7
+        }
+      }
+    }
+  },
+  "null_control": {
+    "n_rep": 6,
+    "n": 150,
+    "description": "unstructured binary layers; reported quantity is how close the fused partition is to a single layer's, and whether the influence diagnostic calls it out",
+    "renormalise": {
+      "mean_ari_fused_vs_best_single_layer": 0.42898782593259305,
+      "mean_n_eff_layers": 1.9330644103040218,
+      "regimes": {
+        "complementary": 5,
+        "unstructured": 1
+      }
+    },
+    "add_identity": {
+      "mean_ari_fused_vs_best_single_layer": 0.4611609515060535,
+      "mean_n_eff_layers": 1.9113636704422392,
+      "regimes": {
+        "complementary": 5,
+        "unstructured": 1
+      }
+    }
+  },
+  "clonal_control": {
+    "n_rep": 3,
+    "renormalise": {
+      "mean_ami_vs_lineage": 0.7430440862654124,
+      "mean_n_eff_layers": 1.6194177221166182
+    },
+    "add_identity": {
+      "mean_ami_vs_lineage": 0.744503922951604,
+      "mean_n_eff_layers": 1.9327159843043997
+    }
+  },
+  "klebsiella": {
+    "available": true,
+    "n": 1500,
+    "K": 30,
+    "renormalise": {
+      "ari_vs_amr_alone": 0.5647884755296733,
+      "ari_vs_vir_alone": -0.002361709273207989,
+      "ari_vs_empty_virulence_indicator": -0.002361709273207989,
+      "ari_vs_empty_amr_indicator": 0.5647884755296733,
+      "n_eff_layers": 1.8470382939102068,
+      "regime": "complementary",
+      "collapse": false,
+      "cluster_sizes": [
+        885,
+        615
+      ],
+      "mean_virulence_score_by_cluster": [
+        0.4610169491525424,
+        0.8569105691056911
+      ]
+    },
+    "add_identity": {
+      "ari_vs_amr_alone": 0.5567824240165287,
+      "ari_vs_vir_alone": -0.001004780215801493,
+      "ari_vs_empty_virulence_indicator": -0.001004780215801493,
+      "ari_vs_empty_amr_indicator": 0.5567824240165287,
+      "n_eff_layers": 1.852921723459751,
+      "regime": "complementary",
+      "collapse": false,
+      "cluster_sizes": [
+        885,
+        615
+      ],
+      "mean_virulence_score_by_cluster": [
+        0.4768361581920904,
+        0.8341463414634146
+      ]
+    }
+  }
+}

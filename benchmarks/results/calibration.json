@@ -1,0 +1,130 @@
+{
+  "A_merging_rules": {
+    "description": "type-I of each merging rule at alpha=0.05, equicorrelated Gaussian-copula exchangeable null",
+    "n_sim": 4000,
+    "M_splits": 9,
+    "rates": {
+      "rho=0.0": {
+        "exchangeable_ruger": 0.0265,
+        "ruger": 0.0,
+        "twice_mean": 0.0,
+        "mmb": 0.0
+      },
+      "rho=0.5": {
+        "exchangeable_ruger": 0.03225,
+        "ruger": 0.00625,
+        "twice_mean": 0.00125,
+        "mmb": 0.0035
+      },
+      "rho=0.9": {
+        "exchangeable_ruger": 0.036,
+        "ruger": 0.02325,
+        "twice_mean": 0.01875,
+        "mmb": 0.005
+      }
+    }
+  },
+  "B_feature_splitting": {
+    "typeI_independent_features": {
+      "per_feature_split": 0.0,
+      "block_aware_split": 0.041666666666666664,
+      "single_split_no_merge": 0.03333333333333333
+    },
+    "typeI_blocked_features": {
+      "per_feature_split": 1.0,
+      "block_aware_split": 0.008333333333333333,
+      "single_split_no_merge": 0.8666666666666667
+    },
+    "power": {
+      "delta_p=0.1": {
+        "merged": 0.03333333333333333,
+        "single_split": 0.03333333333333333
+      },
+      "delta_p=0.2": {
+        "merged": 0.03333333333333333,
+        "single_split": 0.06666666666666667
+      },
+      "delta_p=0.3": {
+        "merged": 0.38333333333333336,
+        "single_split": 0.36666666666666664
+      },
+      "delta_p=0.4": {
+        "merged": 1.0,
+        "single_split": 0.95
+      }
+    },
+    "block_size": 5,
+    "n": 200,
+    "p": 30,
+    "n_splits": 11,
+    "n_sim": 120,
+    "description": "feature-split test on binary panels: type-I under a global null with independent and with block-correlated features, and power against a planted two-group prevalence shift on a third of the features"
+  },
+  "C_count_splitting": {
+    "description": "realised corr(X1, X2); should be ~0 when the assumed family and parameter are right (Neufeld et al. 2024 JMLR 25(57) Prop. 11 gives the exact covariance otherwise)",
+    "n": 3000,
+    "p": 8,
+    "results": {
+      "nb_r_correct": {
+        "r_used": 5.0,
+        "mean_corr": 0.0003744077342562836,
+        "max_abs_corr": 0.02252346326330347
+      },
+      "nb_r_too_small": {
+        "r_used": 0.4,
+        "mean_corr": -0.4217300932879967,
+        "max_abs_corr": 0.4328118114583912
+      },
+      "nb_r_too_large": {
+        "r_used": 50.0,
+        "mean_corr": 0.25152943642182346,
+        "max_abs_corr": 0.2803082692436612
+      },
+      "binomial_hypergeometric_m_known": {
+        "m": 11,
+        "mean_corr": -0.013435326972381518,
+        "max_abs_corr": 0.047337374512271366
+      },
+      "binomial_data_split_as_nb": {
+        "r_used": 0.43,
+        "mean_corr": -0.6308654449820356,
+        "max_abs_corr": 0.6430832381946241
+      }
+    }
+  },
+  "D_selection_defect": {
+    "description": "per-feature type-I under a global negative-binomial null with NO clusters and r KNOWN, so the only defect is the direction being selected from the tested half",
+    "n_sim": 300,
+    "n": 300,
+    "p": 12,
+    "k": 3,
+    "marginal_rejection_rate": {
+      "defective": 0.15138888888888888,
+      "corrected": 0.05111111111111111
+    },
+    "family_wise_any_bh_rejection": {
+      "defective": 0.17,
+      "corrected": 0.05
+    },
+    "nominal": 0.05
+  },
+  "E_k_selection_null": {
+    "description": "k selected on data with no clusters, with and without k = 1 in the sweep",
+    "n_sim": 60,
+    "n": 200,
+    "p": 30,
+    "frac_k_equals_1_when_1_is_in_the_sweep": 1.0,
+    "frac_k_equals_1_when_sweep_starts_at_2": 0.0,
+    "mean_k_when_sweep_starts_at_2": 2.0
+  },
+  "F_continuum_null": {
+    "description": "continuum-null test: power on planted discrete data and false-positive rate on one-factor continuum data",
+    "n_sim": 25,
+    "n": 200,
+    "p": 30,
+    "k": 3,
+    "n_boot": 49,
+    "power_on_discrete": 1.0,
+    "false_positive_on_continuum": 0.0
+  }
+}
