@@ -13,9 +13,12 @@
 name: Publish
 
 on:
-  # Run from the Actions tab once the PyPI trusted publisher for this
-  # repository, this file and the `pypi` environment exists; a release does
-  # not trigger it until then.
+  # Every published GitHub release publishes to PyPI once the trusted
+  # publisher for this repository, this file and the `pypi` environment
+  # exists; until then, or for a release that predates it, run it from the
+  # Actions tab against the release tag.
+  release:
+    types: [published]
   workflow_dispatch:
 
 permissions:

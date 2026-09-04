@@ -68,9 +68,9 @@ tests bought.
 ## Releasing
 
 A release is a GitHub release, not a tag. Publishing a release archives the
-tagged tree on Zenodo through the GitHub integration. The PyPI upload is
-`.github/workflows/publish.yml`, run from the Actions tab against the release
-tag: it builds the distribution, checks that the tag, `pyproject.toml` and
+tagged tree on Zenodo through the GitHub integration and runs
+`.github/workflows/publish.yml`, which can also be started from the Actions
+tab against the release tag: it builds the distribution, checks that the tag, `pyproject.toml` and
 `__version__` agree, installs the wheel in a clean environment, and uploads to
 PyPI through Trusted Publishing with a PEP 740 provenance attestation on every
 file. No API token is stored anywhere.
