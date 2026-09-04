@@ -20,6 +20,17 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      build_number:
+        description: >-
+          Wheel build number. PyPI records every file name it has ever
+          accepted and never takes one twice, so a version whose files are
+          already on the index can only be replaced by a wheel carrying a
+          build number. The version is unchanged; only the file name
+          differs, and pip prefers the higher build number. Leave empty for
+          a first upload.
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -39,6 +50,15 @@ jobs:
           python -m pip install --upgrade pip build twine
           python -m build
           python -m twine check --strict dist/*
+      - name: Stamp the wheel with a build number, if one was given
+        if: inputs.build_number != ''
+        run: |
+          python -m pip install --upgrade wheel
+          python -m wheel tags --build '${{ inputs.build_number }}' --remove dist/*.whl
+          rm -f dist/*.tar.gz
+          python -m twine check --strict dist/*
+          ls -l dist/
+
       - name: The version in the metadata is the version in the tag
         run: |
           python - <<'PY'
