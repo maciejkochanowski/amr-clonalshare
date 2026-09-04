@@ -51,7 +51,7 @@ type: software
 authors:
   - family-names: Kochanowski
     given-names: Maciej
-    affiliation: "Department of Research Support and Department of Bacteriology and Bacterial Diseases of Animals, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland"
+    affiliation: "Department of Bacteriology and Bacterial Diseases of Animals, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland"
     email: "maciej.kochanowski@piwet.pulawy.pl"
 version: "1.0.0"
 doi: 10.5281/zenodo.22306354
