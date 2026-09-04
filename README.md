@@ -532,7 +532,10 @@ pytest                    # + the Monte-Carlo calibration tests
 
 ## Citing
 
-See `CITATION.cff`. The *Klebsiella* data in `examples/klebsiella/data/` is
+See `CITATION.cff`. The tagged 1.0.0 release is archived at
+https://doi.org/10.5281/zenodo.22306354; the derived tables from which every
+number in the article and its supplement was read are archived separately at
+https://doi.org/10.5281/zenodo.22307389 (CC BY 4.0). The *Klebsiella* data in `examples/klebsiella/data/` is
 **not** covered by this repository's MIT licence. It derives from Lam et al.
 (2021) and is redistributed under CC BY 4.0. See
 `examples/klebsiella/DATA_PROVENANCE.md`, which also lists the reproducibility

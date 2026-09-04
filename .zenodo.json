@@ -48,6 +48,12 @@
       "relation": "isSupplementTo",
       "resource_type": "software",
       "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.22307389",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
     }
   ],
   "notes": "The Streptococcus suis example data derive from Hadjirin et al. 2021, BMC Biology 19:191, under CC BY 4.0; retrieval, epidemiological cut-off derivation, metadata repairs and the population-cluster join are documented and reproducible in examples/ssuis/DATA_PROVENANCE.md."
