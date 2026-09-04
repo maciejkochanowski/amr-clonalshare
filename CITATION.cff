@@ -54,7 +54,7 @@ authors:
     affiliation: "Department of Bacteriology and Bacterial Diseases, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland"
     email: "maciej.kochanowski@piwet.pulawy.pl"
 version: "1.0.0"
-doi: 10.5281/zenodo.22306354
+doi: 10.5281/zenodo.22306353
 license: MIT
 repository-code: "https://github.com/maciejkochanowski/amr-clonalshare"
 url: "https://github.com/maciejkochanowski/amr-clonalshare/tree/main/docs"

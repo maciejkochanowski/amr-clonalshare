@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22306354.svg)](https://doi.org/10.5281/zenodo.22306354)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22306353.svg)](https://doi.org/10.5281/zenodo.22306353)
 
 **Release status:** public product version `1.0.0`.
 
@@ -533,7 +533,7 @@ pytest                    # + the Monte-Carlo calibration tests
 ## Citing
 
 See `CITATION.cff`. The tagged 1.0.0 release is archived at
-https://doi.org/10.5281/zenodo.22306354; the derived tables from which every
+https://doi.org/10.5281/zenodo.22306353; the derived tables from which every
 number in the article and its supplement was read are archived separately at
 https://doi.org/10.5281/zenodo.22307388 (CC BY 4.0). The *Klebsiella* data in `examples/klebsiella/data/` is
 **not** covered by this repository's MIT licence. It derives from Lam et al.
