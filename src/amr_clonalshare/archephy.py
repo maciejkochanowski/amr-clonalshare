@@ -53,9 +53,9 @@ hypergeometric survival function ``P(M >= m) = sf_Hypergeom(E, c_1, c_2)``,
 which :func:`joint_homoplasy_pvalue` uses directly and which the test suite
 checks the general formula against.
 
-The previous release used a Poisson approximation with
-``lambda = prod_t c_t / E^(k-1)``; that is the first moment of the exact null
-and is retained as ``method="poisson"`` for comparison. It is anticonservative
+A Poisson approximation with ``lambda = prod_t c_t / E^(k-1)`` is the first
+moment of the exact null and is available as ``method="poisson"`` for
+comparison. It is anticonservative
 in the regime that matters (small ``E``, large ``c_t``), which is precisely the
 small-cohort regime this test targets - see ``benchmarks/`` for the comparison.
 
@@ -69,7 +69,7 @@ Assumptions, stated plainly
   independent CTMCs, the exact null rejects at **0.072-0.078 +/- 0.011** against
   a nominal 0.05. "No resampling and no asymptotics means calibration at small n
   by construction" is therefore false: the arithmetic is exact, the null is not
-  the biological one. Since 2.2.0 the default is ``method="ctmc"``, which
+  the biological one. The default is therefore ``method="ctmc"``, which
   simulates each trait down the actual tree (conditioned on its observed number
   of changes) and is not significantly above nominal in any cell tested. The
   exact p-value is still reported alongside as
@@ -113,7 +113,7 @@ _MAX_EXACT_TERMS = 400
 
 def _require_dendropy():
     try:
-        import dendropy  # noqa: F401
+        import dendropy
     except ImportError as exc:  # pragma: no cover
         raise ImportError(
             "ArchePhy-CS needs dendropy. Install with "
@@ -136,7 +136,7 @@ def load_tree(newick_str: str):
     return t, leaves
 
 
-def fitch_change_edges(tree, leaves: List[str], trait: np.ndarray) -> set:
+def fitch_change_edges(tree, leaves: Sequence[str], trait: np.ndarray) -> set:
     """Node ids whose incoming edge is a Fitch state-change edge for ``trait``.
 
     Standard two-pass Fitch parsimony (Fitch 1971, Syst Zool 20:406-416,

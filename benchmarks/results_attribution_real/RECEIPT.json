@@ -7,5 +7,6 @@
  "runtime_s": 26.4,
  "numpy": "2.5.2",
  "pandas": "3.0.5",
- "python": "3.12.13"
+ "python": "3.12.13",
+ "p_value_design": "computed with null_repeats=1: a single fold draw per permutation against the mean of 20 observed draws, which is conservative; the shipped default is null_repeats=5. The estimates and intervals in cells.json do not depend on this setting, the p-values do, and no reported claim rests on them"
 }

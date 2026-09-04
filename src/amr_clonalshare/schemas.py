@@ -40,7 +40,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Mapping, Optional, Sequence
 
-import numpy as np
 import pandas as pd
 
 # pandera>=0.18: prefer the `pandera.pandas` namespace; fall back to the
@@ -265,13 +264,3 @@ def validate_dataset(dataset, *, policies: Optional[Mapping[str, LayerPolicy]] =
 # --------------------------------------------------------------------------- #
 # Numpy convenience — used by the Hypothesis property tests
 # --------------------------------------------------------------------------- #
-def assert_binary_array(arr: np.ndarray, name: str = "array") -> None:
-    """Cheap numpy-side guard: 0/1 only, no NaN, integer-castable."""
-    a = np.asarray(arr)
-    if a.size == 0:
-        return
-    if np.isnan(a.astype(float, copy=False)).any():
-        raise ValueError(f"{name}: contains NaN")
-    uniq = np.unique(a)
-    if not np.isin(uniq, [0, 1]).all():
-        raise ValueError(f"{name}: non-binary entries {sorted(set(uniq))}")

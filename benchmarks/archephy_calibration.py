@@ -28,7 +28,7 @@ import numpy as np
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "src"))
 
-from amr_clonalshare.archephy import (  # noqa: E402
+from amr_clonalshare.archephy import (
     _ctmc_leaf_states,
     archephy_cs_test,
     load_tree,

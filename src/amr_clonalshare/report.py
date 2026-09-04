@@ -8,7 +8,7 @@ means, and no figure appears here that is not in the record it was read from.
 """
 from __future__ import annotations
 
-from typing import Dict, List, Optional
+from typing import List, Optional
 
 __all__ = ["render_report"]
 

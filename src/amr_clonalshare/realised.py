@@ -58,7 +58,7 @@ to 0.96.
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
-from typing import Dict, Sequence, Tuple
+from typing import Any, Dict, Sequence, Tuple
 
 import numpy as np
 from scipy.stats import f as _f_dist
@@ -132,7 +132,7 @@ class RealisedShare:
     estimable: bool
     reason: str
 
-    def as_dict(self) -> Dict[str, object]:
+    def as_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
 
@@ -264,21 +264,21 @@ def realised_share(y: Sequence[float], lineage: Sequence,
         # alpha = 1 returned a zero-width interval, alpha = 2 a reversed one
         # and alpha = nan the pair (0, 0), each of them flagged estimable.
         raise ValueError(f"alpha={alpha}; the interval needs 0 < alpha < 1")
-    y = np.asarray(y, dtype=float).ravel()
+    values = np.asarray(y, dtype=float).ravel()
     labels = np.asarray(lineage, dtype=object).ravel()
-    if y.size != labels.size:
-        raise ValueError(f"y has {y.size} entries and lineage has "
+    if values.size != labels.size:
+        raise ValueError(f"y has {values.size} entries and lineage has "
                          f"{labels.size}; they must match")
-    keep = np.isfinite(y)
-    y, labels = y[keep], labels[keep]
-    if y.size == 0:
+    keep = np.isfinite(values)
+    values, labels = values[keep], labels[keep]
+    if values.size == 0:
         return RealisedShare(float("nan"), float("nan"), float("nan"),
                              float("nan"), float("nan"), 0, 0, float("nan"),
                              float("nan"), float("nan"), False,
                              "no finite observations")
     _, code = np.unique(_label_strings(labels), return_inverse=True)
     n_groups = int(code.max()) + 1
-    counts, present, populated, n, ssb, ssw, residual = _one_way(y, code,
+    counts, present, populated, n, ssb, ssw, residual = _one_way(values, code,
                                                                  n_groups)
     n0 = _effective_size(counts, present, n, populated)
 

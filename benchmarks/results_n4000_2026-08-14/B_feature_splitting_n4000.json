@@ -158,8 +158,11 @@
   },
   "receipt": {
     "date": "2026-08-14",
-    "preregistration": "audyt/PREREGISTRACJA_W4.md",
-    "preregistration_sha256": "9bd10b40e207c57799c0d9cb9cba1c2ae5dff1ef683a9c0353834ae220846d64",
+    "preregistration": {
+      "reading_rule_fixed_before_run": true,
+      "rule_changed_after_result": false,
+      "rule": "Fixed in writing before the run and not changed after the result was seen: two-sided Clopper-Pearson 95 % interval computed from the beta distribution, lo = Beta.ppf(0.025, x, n - x + 1) and 0 when x = 0, hi = Beta.ppf(0.975, x + 1, n - x) and 1 when x = n; a cell holds the level when its upper limit does not exceed 0.05."
+    },
     "generator": "benchmarks/calibration_study.py",
     "generator_sha256": "729d3a2707f27e559f38de440c628faaf047d3281f9c4608bffe1bafa0d3fb68",
     "generator_unmodified": true,
@@ -183,7 +186,7 @@
     "numpy": "2.4.6",
     "scipy": "1.17.1",
     "sklearn": "1.9.0",
-    "shipped_120_reproduction_gate": "PASS (exp_b n_sim=120 odtworzone co do bitu)",
+    "shipped_120_reproduction_gate": "PASS (exp_b at n_sim=120 reproduced bit for bit)",
     "shipped_file_overwritten": false
   }
 }

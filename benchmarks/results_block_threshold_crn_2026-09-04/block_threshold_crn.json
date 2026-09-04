@@ -1,0 +1,136 @@
+{
+  "what": "type-I error of the feature-split test by automatic blocking threshold, every threshold on the same cohorts",
+  "date": "2026-09-04",
+  "design": {
+    "n_replicates": 100000,
+    "n": 200,
+    "p": 30,
+    "true_block_size": 5,
+    "n_splits": 11,
+    "thresholds": [
+      0.0,
+      0.3,
+      0.5,
+      0.7,
+      0.85,
+      0.9
+    ],
+    "alpha": 0.05,
+    "root_seed": 20260904,
+    "seeding": "SeedSequence(root).spawn(n)[i] -> (data, split); the split stream is re-seeded identically for each threshold",
+    "generator": "benchmarks/calibration_study.py::_binary_null",
+    "generator_source_sha256": "6d3582e8f32a6a94eb8ffa7527c82d007247cafaffd00de60a647e59ca929a61"
+  },
+  "cells": {
+    "0.00": {
+      "n_usable": 100000,
+      "n_not_ok": 0,
+      "rejections": 99988,
+      "type_I": 0.99988,
+      "cp95_low": 0.9997903935419499,
+      "cp95_high": 0.9999379927608827,
+      "holds_level": false,
+      "mean_units": 30.0,
+      "mean_cross": 0.8987451024627076
+    },
+    "0.30": {
+      "n_usable": 100000,
+      "n_not_ok": 0,
+      "rejections": 1736,
+      "type_I": 0.01736,
+      "cp95_low": 0.01655951501602257,
+      "cp95_high": 0.018188650977867413,
+      "holds_level": true,
+      "mean_units": 5.99489,
+      "mean_cross": 0.2011393100815731
+    },
+    "0.50": {
+      "n_usable": 100000,
+      "n_not_ok": 0,
+      "rejections": 1863,
+      "type_I": 0.01863,
+      "cp95_low": 0.017800931547035437,
+      "cp95_high": 0.01948715260490507,
+      "holds_level": true,
+      "mean_units": 6.00088,
+      "mean_cross": 0.20195469309298572
+    },
+    "0.70": {
+      "n_usable": 100000,
+      "n_not_ok": 0,
+      "rejections": 1887,
+      "type_I": 0.01887,
+      "cp95_low": 0.018035646757909186,
+      "cp95_high": 0.019732422021084054,
+      "holds_level": true,
+      "mean_units": 6.43144,
+      "mean_cross": 0.3240307385414908
+    },
+    "0.85": {
+      "n_usable": 100000,
+      "n_not_ok": 0,
+      "rejections": 78916,
+      "type_I": 0.78916,
+      "cp95_low": 0.7866184565320301,
+      "cp95_high": 0.7916847614690958,
+      "holds_level": false,
+      "mean_units": 22.71203,
+      "mean_cross": 0.8457213939443167
+    },
+    "0.90": {
+      "n_usable": 100000,
+      "n_not_ok": 0,
+      "rejections": 99833,
+      "type_I": 0.99833,
+      "cp95_low": 0.9980568903979193,
+      "cp95_high": 0.9985735160782502,
+      "holds_level": false,
+      "mean_units": 29.2827,
+      "mean_cross": 0.8858358363543585
+    }
+  },
+  "paired": {
+    "0.70_minus_0.50": {
+      "n_pairs": 100000,
+      "both_reject": 1597,
+      "only_0.50": 266,
+      "only_0.70": 290,
+      "difference": 0.00024000000000000063,
+      "ci95_low": -0.00023194877413531368,
+      "ci95_high": 0.0007093858411602799
+    },
+    "0.85_minus_0.70": {
+      "n_pairs": 100000,
+      "both_reject": 1690,
+      "only_0.70": 197,
+      "only_0.85": 77226,
+      "difference": 0.7702899999999999,
+      "ci95_low": 0.7697005891435573,
+      "ci95_high": 0.7708204442619407
+    },
+    "0.50_minus_0.30": {
+      "n_pairs": 100000,
+      "both_reject": 1734,
+      "only_0.30": 2,
+      "only_0.50": 129,
+      "difference": 0.0012700000000000003,
+      "ci95_low": 0.001168359182064109,
+      "ci95_high": 0.0013051417256898681
+    },
+    "0.90_minus_0.85": {
+      "n_pairs": 100000,
+      "both_reject": 78847,
+      "only_0.85": 69,
+      "only_0.90": 20986,
+      "difference": 0.20917000000000008,
+      "ci95_low": 0.20880428202795967,
+      "ci95_high": 0.20947591226119955
+    }
+  },
+  "environment": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.0"
+  }
+}

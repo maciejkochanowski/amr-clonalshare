@@ -65,7 +65,7 @@ matrices and a fusion callable.
 from __future__ import annotations
 
 import math
-from typing import Callable, Dict, List, Optional, Sequence
+from typing import Any, Callable, Dict, List, Optional, Sequence
 
 import numpy as np
 from sklearn.metrics import adjusted_rand_score
@@ -77,7 +77,7 @@ __all__ = [
 ]
 
 
-def hill_number(weights: Sequence[float], order: int = 1) -> float:
+def hill_number(weights: "Sequence[float] | np.ndarray", order: int = 1) -> float:
     """Hill number of a weight vector (Hill 1973). order=1 -> exp(Shannon)."""
     w = np.asarray(weights, dtype=float)
     w = w[w > 0]
@@ -91,7 +91,7 @@ def hill_number(weights: Sequence[float], order: int = 1) -> float:
     return float((np.sum(w ** order)) ** (1.0 / (1.0 - order)))
 
 
-def effective_n_layers(deltas: Sequence[float]) -> Dict[str, float]:
+def effective_n_layers(deltas: "Sequence[float] | np.ndarray") -> Dict[str, Any]:
     """Effective number of contributing layers from leave-one-out influences."""
     d = np.asarray(deltas, dtype=float)
     d = np.clip(d, 0.0, None)
@@ -119,7 +119,7 @@ def layer_influence(
     n_perm: int = 0,
     collapse_threshold: float = 1.5,
     unstructured_solo_max: float = 0.35,
-) -> Dict[str, object]:
+) -> Dict[str, Any]:
     """Quantify how much each layer actually drives the fused partition.
 
     Parameters
@@ -171,7 +171,7 @@ def layer_influence(
         delta_loo.append(float(np.clip(
             1.0 - adjusted_rand_score(fused_labels, labels_minus), 0.0, 1.0)))
 
-    eff = effective_n_layers(delta_loo)
+    eff: Dict[str, Any] = effective_n_layers(delta_loo)
 
     pvals: List[Optional[float]] = [None] * m
     null_means: List[Optional[float]] = [None] * m
@@ -189,12 +189,12 @@ def layer_influence(
                 null_deltas.append(
                     1.0 - adjusted_rand_score(labels_perm_full, labels_perm_minus)
                 )
-            null_deltas = np.asarray(null_deltas, dtype=float)
+            deltas = np.asarray(null_deltas, dtype=float)
             # Phipson & Smyth (2010) corrected permutation p-value:
             # never zero, (b + 1) / (n_perm + 1).
-            b = int((null_deltas >= delta_loo[l]).sum())
+            b = int((deltas >= delta_loo[l]).sum())
             pvals[l] = float((b + 1) / (n_perm + 1))
-            null_means[l] = float(null_deltas.mean())
+            null_means[l] = float(deltas.mean())
 
     per_layer = [
         {

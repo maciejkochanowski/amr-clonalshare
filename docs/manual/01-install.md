@@ -2,7 +2,7 @@
 
 ## From PyPI
 
-Python 3.10 or later on Linux, macOS or Windows.
+Python 3.11 or later on Linux, macOS or Windows.
 
 ```bash
 python -m pip install amr-clonalshare

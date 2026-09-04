@@ -1,0 +1,29 @@
+{
+  "registration": "block_threshold_crn_2026-09-04",
+  "registered_on": "2026-09-04",
+  "registered_before": "any replicate of benchmarks/block_threshold_crn.py at the design below was run beyond the six-replicate smoke test used to check that the script executes",
+  "question": "Does the automatic blocking threshold hold the level of the feature-split test, and how do neighbouring thresholds differ on identical cohorts?",
+  "design": {
+    "generator": "benchmarks/calibration_study.py::_binary_null with n = 200, p = 30, block_size = 5",
+    "test": "amr_clonalshare.inference.feature_split_test with k = 2, n_splits = 11, KMeans with n_init = 5, exchangeable Ruger merge",
+    "thresholds": [0.0, 0.3, 0.5, 0.7, 0.85, 0.9],
+    "replicates": 100000,
+    "alpha": 0.05,
+    "seeding": "SeedSequence(20260904).spawn(100000)[i] spawned into a data stream and a split stream; the split stream is re-seeded identically for every threshold, so the thresholds see the same cohort and the same split draws",
+    "reading_rule": "a cell holds the level when the exact two-sided 95 % Clopper-Pearson upper limit of its rejection rate is at or below 0.05; a paired contrast is read from the discordant pairs, with the exact interval on only_b / (only_a + only_b) mapped to the difference"
+  },
+  "predictions": [
+    {"id": "G-1", "cell": "threshold 0.0 (per-feature split)", "prediction": "rejection rate at or above 0.99; CP lower limit at or above 0.99", "basis": "3999 of 4000 in results_n4000_2026-08-14", "falsifiable_by": "CP lower limit below 0.99"},
+    {"id": "G-2", "cell": "thresholds 0.5 and 0.7", "prediction": "both hold the level; rejection rate between 0.010 and 0.030", "basis": "0.01625 and 0.0195 at n = 4000", "falsifiable_by": "CP upper limit above 0.05, or CP interval outside [0.010, 0.030], in either cell"},
+    {"id": "G-3", "cell": "thresholds 0.85 and 0.9", "prediction": "both fail the level; CP lower limit above 0.50", "basis": "0.78975 at 0.85 at n = 4000; 0.9 leaves nearly every feature its own unit", "falsifiable_by": "CP lower limit at or below 0.50 in either cell"},
+    {"id": "G-4", "cell": "paired 0.70 minus 0.50", "prediction": "the same cohorts give a paired difference in rejection rate inside [-0.010, +0.010]", "basis": "0.0195 - 0.01625 = 0.00325 at n = 4000, unpaired", "falsifiable_by": "the exact paired interval excluding [-0.010, +0.010] entirely"},
+    {"id": "G-5", "cell": "threshold 0.7", "prediction": "mean number of split units between 6.0 and 7.0", "basis": "6.43 at n = 4000, 6 true blocks", "falsifiable_by": "mean outside [6.0, 7.0]"},
+    {"id": "G-6", "cell": "threshold 0.3", "prediction": "holds the level with mean split units below 6.5, because a threshold below the within-block correlation merges whole blocks and nothing else", "basis": "no prior run at 0.3 at this size; recorded as a prediction, not a confirmation", "falsifiable_by": "CP upper limit above 0.05, or mean units at or above 6.5"}
+  ],
+  "void_conditions": [
+    {"id": "VOID-G1", "condition": "more than 1 % of replicates return a status other than ok at threshold 0.7", "consequence": "the whole table is void; the test refused too often for the cell to describe the rule"},
+    {"id": "VOID-G2", "condition": "the recorded generator_source_sha256 differs from the digest of _binary_null in the shipped calibration_study.py at the commit the run is cited from", "consequence": "the run describes a different null and is not evidence for this one"},
+    {"id": "VOID-G3", "condition": "any replicate index is missing or duplicated in the aggregate", "consequence": "the aggregate is not the registered set and is void"}
+  ],
+  "what_changes_on_a_failed_prediction": "The default threshold stays at 0.7 only if G-2 holds. If G-2 fails at 0.7 and holds at 0.5, the default moves to 0.5 and the change is recorded in the changelog with this registration as the reason. If G-4 fails, the two thresholds are reported as distinguishable and the manuscript sentence that calls them equivalent is withdrawn."
+}

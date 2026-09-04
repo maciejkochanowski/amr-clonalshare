@@ -6,9 +6,9 @@ Why this benchmark is not optional
 The comparative multi-view literature is unanimous that the mandatory question
 is whether a multi-view solution beats the best single view (Rappoport & Shamir
 2018, *Nucleic Acids Res* 46:10546-10562; Tini et al. 2019, *Brief Bioinform*
-20:1269-1279). Earlier releases of this package answered that with single-layer
-spectral partitions and a Bernoulli mixture, and listed MOFA and iClusterBayes
-as "the natural competitors we did not benchmark and should have".
+20:1269-1279). Answering it with single-layer spectral partitions and a
+Bernoulli mixture alone would leave MOFA and iClusterBayes unbenchmarked, and
+they are the natural competitors.
 
 They are more than competitors here. MOFA (Argelaguet et al. 2018, *Mol Syst
 Biol* 14:e8124, doi:10.15252/msb.20178124) with a Bernoulli likelihood is the
@@ -47,11 +47,11 @@ from sklearn.metrics import adjusted_rand_score
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "src"))
 
-from amr_clonalshare.core import spectral_from_similarity  # noqa: E402
-from amr_clonalshare.fusion import default_K, snf_fuse, snf_kernel  # noqa: E402
-from amr_clonalshare.inference import select_latent_dimension  # noqa: E402
-from amr_clonalshare.stats import binary_distance_matrix  # noqa: E402
-from amr_clonalshare.synthetic import synth_cluster_archetypes  # noqa: E402
+from amr_clonalshare.core import spectral_from_similarity
+from amr_clonalshare.fusion import default_K, snf_fuse, snf_kernel
+from amr_clonalshare.inference import select_latent_dimension
+from amr_clonalshare.stats import binary_distance_matrix
+from amr_clonalshare.synthetic import synth_cluster_archetypes
 
 
 def run_mofa(views: dict, n_factors: int = 10, seed: int = 1,

@@ -33,7 +33,7 @@ from __future__ import annotations
 import math
 from itertools import combinations
 from pathlib import Path
-from typing import Callable, Dict, List, Optional, Tuple
+from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import numpy as np
 import pandas as pd
@@ -221,11 +221,11 @@ def mdl_null_calibration(X: np.ndarray, k: int, W_fused: np.ndarray,
         labels_perm = spectral_from_similarity(refuse(X_perm), k)
         null_gains.append(mdl_archetype(X_perm, labels_perm,
                                         complexity=complexity)["gain"])
-    null_gains = np.asarray(null_gains, dtype=float)
-    p_val = permutation_pvalue(null_gains, gain_obs, tail="greater")
+    gains = np.asarray(null_gains, dtype=float)
+    p_val = permutation_pvalue(gains, gain_obs, tail="greater")
     return {"k": int(k), "gain_obs": float(gain_obs),
-            "null_mean": float(null_gains.mean()) if null_gains.size else float("nan"),
-            "null_std": float(null_gains.std()) if null_gains.size else float("nan"),
+            "null_mean": float(gains.mean()) if gains.size else float("nan"),
+            "null_std": float(gains.std()) if gains.size else float("nan"),
             "n_perm": int(n_perm),
             "p_MDL": p_val,
             "p_MDL_minimum_attainable": float(1.0 / (int(n_perm) + 1)),
@@ -267,14 +267,8 @@ def cdf_area(M: np.ndarray) -> float:
     if entries.size == 0:
         return 0.0
     x = np.linspace(0, 1, entries.size)
-    trapz = getattr(np, "trapezoid", None) or np.trapz
+    trapz = getattr(np, "trapezoid", None) or getattr(np, "trapz")
     return float(trapz(x, entries))
-
-
-def delta_cdf_area(M_k: np.ndarray, M_km1: np.ndarray) -> float:
-    """Relative gain in consensus CDF area from k-1 to k."""
-    a_km1 = cdf_area(M_km1)
-    return 0.0 if a_km1 == 0 else (cdf_area(M_k) - a_km1) / a_km1
 
 
 def assignment_confidence(M: np.ndarray, labels: np.ndarray) -> np.ndarray:
@@ -783,7 +777,7 @@ def _select_k(cfg: Config, k_select: str, X_combined: np.ndarray,
     threshold = cfg.trait_cluster.prediction_strength_threshold
     requested = (cfg.trait_cluster.k_select_primary if k_select == "auto"
                  else k_select)
-    diag: Dict[str, object] = {"requested_method": requested,
+    diag: Dict[str, Any] = {"requested_method": requested,
                                "k_select_arg": k_select,
                                "mdl_complexity": mdl_complexity,
                                "k_range_swept": [1] + k_range}
@@ -1039,7 +1033,7 @@ def run(cfg: Config, *, results_dir=None, seed: int = 42,
     inference_block = None
     if cfg.tva.enabled:
         inference_block = _run_inference(cfg, layer_names, layer_frames, X_df, k,
-                                         rngs["tva"], W_fused, K,
+                                         rngs["tva"], K,
                                          reported_labels=labels)
 
     frag = fragility_analysis(X_combined, labels)
@@ -1304,11 +1298,11 @@ def _layer_contribution(cfg, layer_names, layer_mats, fused_labels, k) -> List[d
     return rows
 
 
-_REPORTED_LABELS: Dict[str, object] = {}
+_REPORTED_LABELS: Dict[str, Any] = {}
 
 
-def _run_inference(cfg, layer_names, layer_frames, X_df, k, rng, W_fused,
-                   K, reported_labels=None) -> dict:
+def _run_inference(cfg, layer_names, layer_frames, X_df, k, rng, K,
+                   reported_labels=None) -> dict:
     """Valid post-clustering inference, and an honest statement of its scope.
 
     Two questions, deliberately separated because a single p-value cannot answer
@@ -1340,10 +1334,10 @@ def _run_inference(cfg, layer_names, layer_frames, X_df, k, rng, W_fused,
 
     # The discovery block is clustered the way the reported partition was:
     # per-layer distances (one_hot layers get the matching coefficient), fused.
-    col_layer = []
+    col_layer_list: list[str] = []
     for name, df in zip(layer_names, layer_frames):
-        col_layer.extend([name] * df.shape[1])
-    col_layer = np.asarray(col_layer, dtype=object)
+        col_layer_list.extend([name] * df.shape[1])
+    col_layer = np.asarray(col_layer_list, dtype=object)
 
     def cluster_block(block, kk, seed, cols=None):
         block = np.asarray(block)
@@ -1474,7 +1468,7 @@ def _count_thinning_comparison(cfg, layer_names, layer_frames, k, rng) -> dict:
     r_arr = _tva.estimate_dispersion_per_feature(
         Xi, method="mle" if cfg.tva.dispersion in ("mle", "pooled_mle") else "mom")
     X1, X2 = _inf.nb_thin(Xi, r=r_arr, eps=cfg.tva.eps, rng=rng)
-    dep = _inf.thinning_dependence(Xi, X1, X2)
+    dep = _inf.thinning_dependence(X1, X2)
     block = _tva.tva_report(kept, k=max(k, 2), rng=rng, eps=cfg.tva.eps,
                             n_splits=cfg.tva.n_splits, q_fdr=cfg.tva.q_fdr,
                             dispersion=cfg.tva.dispersion, merge=cfg.tva.merge,
@@ -1607,7 +1601,7 @@ def _metadata_diagnostics(cfg, ds, strain_ids, labels, rng, n_perm,
     if md is None or cfg.dataset.lineage_column is None:
         return None
     md = md.reindex(strain_ids)
-    out: Dict[str, object] = {}
+    out: Dict[str, Any] = {}
     col = cfg.dataset.lineage_column
     if col in md.columns:
         out["lineage_column"] = col
@@ -1759,7 +1753,7 @@ def _metadata_diagnostics(cfg, ds, strain_ids, labels, rng, n_perm,
 # Synthetic validation harness
 # =============================================================================
 def validate(cfg=None, *, seed: int = 42, overlap: float = 0.05,
-             n: int = 150, k_true: int = 3, **options) -> dict:
+             n: int = 150, k_true: int = 3) -> dict:
     """Planted-truth recovery check.
 
     Generates two binary layers with ``k_true`` planted archetypes at separation
@@ -1813,7 +1807,7 @@ def _censored_diagnostics(cfg, ds, strain_ids, lineage, cen) -> Optional[dict]:
     ids = pd.Index(strain_ids).astype(str)
     lineage = pd.Series(list(lineage), index=ids)
 
-    out: Dict[str, object] = {"join": getattr(ds, "mic_join", None),
+    out: Dict[str, Any] = {"join": getattr(ds, "mic_join", None),
                               "per_agent": {}}
     for agent, block in mic.groupby(mic[abc].astype(str), sort=True):
         block = block.drop_duplicates(subset=[idc], keep="first")
@@ -1832,7 +1826,7 @@ def _censored_diagnostics(cfg, ds, strain_ids, lineage, cen) -> Optional[dict]:
             treat_end_wells_as_censored=cen.end_wells_censored)
         share = _censored.censored_clonal_share(lo, hi, lin,
                                                 n_boot=cen.n_boot, seed=0)
-        entry: Dict[str, object] = {
+        entry: Dict[str, Any] = {
             "n": int(present.sum()),
             "panel": geometry.as_dict(),
             "share": share.as_dict(),

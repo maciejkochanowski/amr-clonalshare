@@ -45,11 +45,10 @@ from amr_clonalshare.attribution import clonal_share
 from amr_clonalshare.clonality import decompose_prevalence_difference
 from amr_clonalshare.realised import realised_share
 
+from agent_screen import MIN_DRUG_N, MIN_MINOR, reconcile, screen_agent
 from vet_source_taxonomy import ANIMAL_GROUPS, classify
 
 MIN_ISOLATES = 60
-MIN_DRUG_N = 50
-MIN_MINOR = 0.02
 FOLDS = 5
 REPEATS = 10
 N_BOOT = 300
@@ -148,16 +147,12 @@ def run_cohort(raw: Path, cell: dict) -> dict:
             "agents": {}}
     for agent in agents:
         y = np.array([r.get(agent, np.nan) for r in rows], dtype=float)
-        ok = np.isfinite(y)
-        if ok.sum() < MIN_DRUG_N:
+        screen = screen_agent(y, lineage)
+        if not screen.analyse:
+            out["agents"][agent] = screen.record
             continue
-        yy = y[ok]
-        ll = [lineage[i] for i in np.where(ok)[0]]
-        prevalence = float(yy.mean())
-        if prevalence < MIN_MINOR or prevalence > 1 - MIN_MINOR:
-            out["agents"][agent] = {"n": int(ok.sum()), "prevalence": prevalence,
-                                    "skipped": "no variance"}
-            continue
+        yy, ll = screen.y, list(screen.lineage)
+        prevalence = screen.record["prevalence"]
         permuted = list(rng.permutation(ll))
         conditional = realised_share(yy, ll)
         real = clonal_share(yy, ll, folds=FOLDS, repeats=REPEATS,
@@ -165,7 +160,7 @@ def run_cohort(raw: Path, cell: dict) -> dict:
         null = clonal_share(yy, permuted, folds=FOLDS, repeats=REPEATS,
                             n_boot=N_BOOT, n_perm=N_PERM, seed=SEED).as_dict()
         out["agents"][agent] = {
-            "n": int(ok.sum()), "prevalence": prevalence,
+            "n": screen.record["n"], "prevalence": prevalence,
             "kappa": real["kappa_adj"], "ci_low": real["ci_low"],
             "ci_high": real["ci_high"], "support": real["support"],
             "estimable": bool(real["estimable"]),
@@ -179,9 +174,10 @@ def run_cohort(raw: Path, cell: dict) -> dict:
                          "n_groups": conditional.n_groups,
                          "estimable": conditional.estimable,
                          "reason": conditional.reason}}
-        print(f"  {agent:<30} n={ok.sum():>5} p={prevalence:.3f} "
+        print(f"  {agent:<30} n={screen.record['n']:>5} p={prevalence:.3f} "
               f"kappa={real['kappa_adj']:+.3f} perm={null['kappa_adj']:+.3f}",
               flush=True)
+    reconcile(len(agents), out["agents"])
     return out
 
 

@@ -31,20 +31,20 @@ C. **Count splitting.** Realised ``corr(X1, X2)`` for the negative-binomial
    independence the method rests on, and the numerical form of Proposition 11
    of Neufeld et al. (2024).
 
-D. **The per-feature selection defect.** The pre-2.0 per-feature test chose the
+D. **The per-feature selection defect.** The defective per-feature test picks the
    contrast direction from the held-out half and then tested one-sided in that
    direction on the same half. Both the defective and the corrected tests are
    run under an identical null so the inflation can be quoted as a number.
 
 E. **k selection under a null.** Does the criterion return k = 1 when there is
    no structure? Run with and without k = 1 in the sweep to quantify what the
-   pre-2.0 sweep-from-2 convention cost.
+   a sweep that starts at k = 2 costs.
 
 F. **The continuum null.** Power on planted discrete data, and false-positive
    rate on continuum data of one, two and three latent dimensions, with the null
-   dimension chosen by BIC and with it pinned at one. The pinned arm is what the
-   previous release shipped, and it is the one that fails: a one-dimensional
-   null calls a two-dimensional gradient discrete every time.
+   dimension chosen by BIC and with it pinned at one. The pinned arm is the one
+   that fails: a one-dimensional null calls a two-dimensional gradient discrete
+   every time.
 
 G. **The automatic blocking threshold.** Type-I error and the resulting number
    of split units as a function of the correlation at which features are forced
@@ -181,19 +181,19 @@ def exp_c_count_splitting(n: int = 2000, p: int = 8) -> dict:
     for label, r_used in (("nb_r_correct", r_true), ("nb_r_too_small", 0.4),
                           ("nb_r_too_large", 50.0)):
         X1, X2 = nb_thin(Xnb, r=r_used, rng=rng)
-        dep = thinning_dependence(Xnb, X1, X2)
+        dep = thinning_dependence(X1, X2)
         out[label] = {"r_used": r_used,
                       "mean_corr": float(np.nanmean(dep)),
                       "max_abs_corr": float(np.nanmax(np.abs(dep)))}
     m = 11
     Xb = rng.binomial(m, 0.3, size=(n, p))
     X1, X2 = binomial_thin(Xb, m=m, rng=rng)
-    dep = thinning_dependence(Xb, X1, X2)
+    dep = thinning_dependence(X1, X2)
     out["binomial_hypergeometric_m_known"] = {
         "m": m, "mean_corr": float(np.nanmean(dep)),
         "max_abs_corr": float(np.nanmax(np.abs(dep)))}
     X1, X2 = nb_thin(Xb, r=0.43, rng=rng)
-    dep = thinning_dependence(Xb, X1, X2)
+    dep = thinning_dependence(X1, X2)
     out["binomial_data_split_as_nb"] = {
         "r_used": 0.43, "mean_corr": float(np.nanmean(dep)),
         "max_abs_corr": float(np.nanmax(np.abs(dep)))}
@@ -205,7 +205,8 @@ def exp_c_count_splitting(n: int = 2000, p: int = 8) -> dict:
 
 
 def _perfeature_defective(X1, X2, labels):
-    """The pre-2.0 test: pick the direction from X2, then test one-sided on X2."""
+    """The defective test: pick the direction from X2, then test one-sided
+    on the same X2."""
     from scipy.stats import mannwhitneyu
     p = X2.shape[1]
     pv = np.ones(p)
@@ -318,8 +319,7 @@ def exp_f_continuum_null(n_sim: int, n: int = 200, p: int = 30, k: int = 3,
         cont_calls.append(continuum_null_test(Xc, k, rng=rng, n_boot=n_boot)[
             "discrete_beyond_a_gradient"])
 
-    # The arm that matters, and that the previous release did not run: a
-    # continuum with more than one dimension. An accessory genome has at least
+    # The arm that matters: a continuum with more than one dimension. An accessory genome has at least
     # two (resistance load and virulence load), so a null that can only
     # represent one ordering of the isolates will call any real panel discrete.
     multi = {}

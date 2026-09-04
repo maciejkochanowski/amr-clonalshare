@@ -68,7 +68,7 @@ from pathlib import Path
 
 import numpy as np
 import scipy
-from scipy import linalg, optimize, stats
+from scipy import linalg, optimize
 
 from amr_clonalshare.attribution import (_codes, _folds, _rng, _skill,
                                             clonal_share)

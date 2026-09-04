@@ -1,8 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "amr-clonalshare: lineage-conditioned diagnostics for bacterial resistance patterns and prevalence trends"
+title: "amr-clonalshare: measuring how much of antimicrobial resistance travels with the clone"
 abstract: >-
-  Clusters one or more binary genotype layers (acquired antimicrobial-resistance
+  Estimates the share of variance in an antimicrobial resistance phenotype
+  that the lineages of a bacterial collection carry, from a lineage label and
+  a susceptibility call or a recorded dilution, and refuses the estimate
+  where the collection cannot support one. Two estimands are reported with
+  their own intervals, a realised share for the collection in hand with an
+  exact noncentral-F interval, and a superpopulation share for the species
+  with a cluster-bootstrap interval, each behind a gate whose operating
+  characteristics were measured against a known truth; the lineage label may
+  be a sequence type, a core-genome or SNP cluster, or a serovar, so the same
+  estimate can be read at two typing resolutions.
+  A second family of outputs clusters one or more binary genotype layers (acquired antimicrobial-resistance
   determinants, virulence loci, capsule type) by similarity-network fusion, and
   reports the diagnostics that decide whether the resulting partition means
   anything: whether the largest cluster is the trait-absent stratum produced by
@@ -16,36 +26,37 @@ abstract: >-
   and exact finite-bootstrap uncertainty. A five-level machine-readable claim
   ladder exposes every applicable gate and prevents a partition from being
   promoted directly to a biological archetype.
-  A second family of outputs decomposes a difference in non-wild-type
+  A third family of outputs decomposes a difference in non-wild-type
   prevalence between two collections into a lineage-composition and a
   within-lineage rate component using the Kitagawa identity, with a calibrated
   estimability gate on shared lineage support, a test for lineage labels that
-  are differentially and informatively missing, and Benjamini-Hochberg control
-  across the antimicrobial panel beside the effective number of independent
-  agents. Prevalence is reported on both the isolate and the lineage scale.
+  are differentially and informatively missing, and Benjamini-Yekutieli
+  control within each component family, valid whatever the dependence between
+  agents, beside the effective number of independent agents. Prevalence is reported on both the isolate and the lineage scale.
   Ships two independently seeded positive controls, negative and adversarial
   controls, and documented Klebsiella pneumoniae and Streptococcus suis case
   studies in which statistical discreteness and biological interpretation are
   reported separately.
-  A third family of outputs reads a susceptibility panel at its recorded
+  A fourth family of outputs reads a susceptibility panel at its recorded
   resolution: a dichotomised call and a recorded dilution are both intervals on
   the log2 concentration scale and enter one interval likelihood, so the input
   mode changes how much an observation carries rather than what is estimated.
   Each share also carries an anytime-valid e-value, with false-discovery
   control across the panel that holds under arbitrary dependence between
   antimicrobials. The attribution is exercised outside the shipped cohorts on
-  185 species-agent cells from ten species of NCBI Pathogen Detection, each
-  with a permuted-label control.
+  192 species-agent cells from 12 species of NCBI Pathogen Detection, each
+  with a permuted-label control, and on 402 host-by-agent cells of animal
+  surveillance at two typing resolutions.
 type: software
 authors:
   - family-names: Kochanowski
-    given-names: M.
-    affiliation: "National Veterinary Research Institute (PIWet-PIB), Pulawy, Poland"
+    given-names: Maciej
+    affiliation: "Department of Research Support and Department of Bacteriology and Bacterial Diseases of Animals, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland"
     email: "maciej.kochanowski@piwet.pulawy.pl"
 version: "1.0.0"
 license: MIT
 repository-code: "https://github.com/maciejkochanowski/amr-clonalshare"
-url: "https://maciejkochanowski.github.io/amr-clonalshare/"
+url: "https://github.com/maciejkochanowski/amr-clonalshare/tree/main/docs"
 keywords:
   - bioinformatics
   - antimicrobial resistance

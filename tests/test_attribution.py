@@ -1,4 +1,6 @@
 """Clonal share and partition attribution: properties, planted truth, gates."""
+import math
+
 import numpy as np
 import pytest
 from scipy.cluster.hierarchy import fcluster, linkage
@@ -193,7 +195,15 @@ def test_a_non_finite_trait_value_is_dropped_rather_than_pinning_the_p_value_to_
     r = clonal_share(y, lin, n_boot=50, n_perm=200, repeats=5, seed=1)
     assert r.n_dropped_non_finite == 1
     assert r.n == 59
-    assert r.p_value > 1.0 / (200 + 1)
+    # Dropping the isolate is the whole of the treatment: the run must be the
+    # run on the cohort with that isolate absent, number for number.
+    keep = np.isfinite(y)
+    clean = clonal_share(y[keep], lin[keep], n_boot=50, n_perm=200, repeats=5,
+                         seed=1)
+    assert clean.n_dropped_non_finite == 0
+    for name in ("kappa", "kappa_adj", "ci_low", "ci_high", "null_mean",
+                 "p_value"):
+        assert getattr(r, name) == getattr(clean, name), name
     assert np.isfinite(r.kappa_adj)
     assert r.as_dict()["n_dropped_non_finite"] == 1
 
@@ -352,3 +362,35 @@ def test_the_lineage_bootstrap_is_refused_together_with_a_refit():
         attribute_partition(X, lab, lin, folds=5, repeats=4, n_boot=10,
                             n_perm=10, seed=17,
                             refit=lambda train, held_out, labels=None: lab)
+
+
+def test_a_cohort_with_one_lineage_is_refused_rather_than_scored_zero():
+    """One lineage leaves nothing to contrast, so the share is undefined.
+
+    The estimator used to answer such a cohort with kappa 0, an interval of
+    exactly zero width and p = 1, all flagged estimable. Every one of those
+    numbers is defensible arithmetic and the set of them is a false statement:
+    it reads as "lineage explains nothing" when nothing was compared. A public
+    release that assigns a whole species to a single cluster produces exactly
+    this shape, so the case is reachable on real data and not a curiosity.
+
+    The design can fail rather than merely pass: the two-lineage arm on the
+    same trait vector must still be estimable, so a guard that refused every
+    cohort would be caught here.
+    """
+    rng = np.random.default_rng(0)
+    y = (rng.random(120) < 0.25).astype(float)
+
+    one = np.array(["PDS000000001"] * 120, dtype=object)
+    refused = clonal_share(y, one, folds=5, repeats=4, n_boot=40, n_perm=40,
+                           seed=1)
+    assert refused.n_groups == 1
+    assert not refused.estimable
+    assert math.isnan(refused.kappa_adj)
+    assert math.isnan(refused.ci_low) and math.isnan(refused.ci_high)
+
+    two = np.array(["PDS000000001"] * 60 + ["PDS000000002"] * 60, dtype=object)
+    scored = clonal_share(y, two, folds=5, repeats=4, n_boot=40, n_perm=40,
+                          seed=1)
+    assert scored.n_groups == 2
+    assert math.isfinite(scored.kappa_adj)

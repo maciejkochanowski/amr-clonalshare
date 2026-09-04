@@ -56,6 +56,15 @@ quantities would sharpen it.
 
 ![Section 4 of the report on the planted control](../img/06_clonal_share.png)
 
+The record also carries a permutation p-value per trait, for readers who want
+one. It answers a narrower question than the interval: whether the lineage
+carries any information about the trait at all. The statistic on both sides
+of the comparison is the same function of the labels, a mean over the same
+number of fold draws, so the p-value is exact under exchangeability rather
+than conservative; `benchmarks/null_uniformity.py` checks that it is uniform
+on the permutation grid when there is nothing to find, and records the power
+against a graded lineage effect.
+
 ## The e-value
 
 Beside each share is an e-value: the evidence that the lineage carries *any*

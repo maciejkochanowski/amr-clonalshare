@@ -1,21 +1,29 @@
 # amr-clonalshare
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 **Release status:** public product version `1.0.0`.
 
-**Multi-layer trait analysis for bacterial genotype panels, with diagnostics
-that distinguish a continuous gradient from discrete groups and artefacts, and
-a decomposition that splits a prevalence difference into lineage mix and
-within-lineage rate.**
+**How much of the antimicrobial resistance in a collection travels with the
+clone?** Give it a lineage label per isolate (sequence type, core-genome or
+SNP cluster, or serovar) and a susceptibility call or a recorded dilution, and
+it returns the share of the resistance variance the lineages carry, per
+antimicrobial, as two estimands with their own intervals: a realised share for
+the collection in hand and a superpopulation share for the species it was
+drawn from. Each sits behind a gate that refuses where the collection cannot
+support an estimate, each carries an anytime-valid e-value for panels that
+surveillance re-reads every year, and a prevalence difference between two
+collections is split into lineage mix and within-lineage rate. The section
+[How much of this is the clone?](#how-much-of-this-is-the-clone) is where to
+start.
 
-Give it one or more wide binary matrices per isolate (acquired AMR
-determinants, virulence loci, capsule type, plasmid replicons) and it will fuse
-them into a similarity network, cluster it, and profile the result. So will a
-dozen other tools. The reason to use this one is that it also answers the
-questions that decide whether the partition means anything:
+The package also fuses one or more wide binary matrices per isolate (acquired
+AMR determinants, virulence loci, capsule type, plasmid replicons) into a
+similarity network, clusters it, and profiles the result. So will a dozen other
+tools. The reason to use this one is that it also answers the questions that
+decide whether the partition means anything:
 
 - **Is the largest cluster just the isolates with no detected features?**
   Jaccard is undefined for two all-zero rows and the usual convention calls them
@@ -58,9 +66,8 @@ CI 0-0.0366), validates 60 defining features, finds no lineage confounding,
 reaches claim level 4 (`archetype_candidate`), and exits 0.
 
 On the shipped *Klebsiella* cohort a discrete signal is detected beyond the
-BIC-selected three-factor continuum (`p = 0.01`); the previous non-estimable
-result was caused by stopping the BIC sweep at `q_max = 3`. Extending the
-supported range to 4 makes `q = 3` an interior optimum. This statistical result
+BIC-selected three-factor continuum (`p = 0.01`); with the BIC sweep run to
+four factors, `q = 3` is an interior optimum. This statistical result
 does not establish biological archetypes: the two-group partition remains
 strongly lineage-associated, correlates with the all-zero virulence stratum,
 and is inferior to a one-dimensional resistance score for measured
@@ -111,7 +118,12 @@ amr-clonalshare --config examples/klebsiella/config.yaml --results-dir out/kp
 Each run writes `summary.json` (headline numbers, claim level and active gates),
 `cluster_result.json` (everything), `archetype_profiles.tsv` (per-cluster effect
 sizes) and `assignment.tsv` (one row per isolate, joined to every metadata
-column, which is the table you actually want to open).
+column, which is the table you actually want to open). It also writes the run
+report in two forms, `report.md` and `report.html`: the same sections and the
+same numbers, the second with the diagnostics drawn, so that a panel of
+intervals that all cross zero is seen rather than counted. Both read every
+value from `cluster_result.json` and recompute nothing, and `report.html` is a
+single file with no script and nothing to fetch, so it opens offline.
 
 ## Reading the output
 
@@ -325,8 +337,8 @@ responses:
   stewardship.
 
 Declare the two collections and every agent is split by the Kitagawa identity,
-with a bootstrap interval on each component and Benjamini-Hochberg control
-across the panel:
+with a bootstrap interval on each component and Benjamini-Yekutieli control
+within each component family, valid whatever the dependence between agents:
 
 ```yaml
 dataset:
@@ -512,7 +524,7 @@ The manuscript is `paper/manuscript.md`.
 ## Tests
 
 ```bash
-pytest -m "not slow"      # ~45 s
+pytest -m "not slow"      # a few minutes
 pytest                    # + the Monte-Carlo calibration tests
 ```
 

@@ -58,8 +58,7 @@ import numpy as np
 import scipy
 from scipy import stats
 
-from amr_clonalshare.realised import (realised_interval, realised_share,
-                                         superpopulation_interval)
+from amr_clonalshare.realised import (realised_interval, superpopulation_interval)
 
 ALPHA = 0.05
 SEED = 20260902

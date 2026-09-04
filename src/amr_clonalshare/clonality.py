@@ -101,7 +101,7 @@ so the size of the family is visible next to its count.
 """
 from __future__ import annotations
 
-from typing import Dict, Mapping, Optional, Sequence, Tuple
+from typing import Any, Dict, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
@@ -133,12 +133,6 @@ DEFAULT_MIN_SHARED_SUPPORT = 0.8
 #: bootstrap is drawn in chunks of this many cells so that a large replicate
 #: count does not scale memory with it.
 _CHUNK_CELLS = 4_000_000
-
-
-def _clean(y: Sequence, lineage: Sequence) -> Tuple[np.ndarray, np.ndarray, int]:
-    """Drop isolates with no usable lineage label; report how many went."""
-    arr, lin, keep = _clean_with_mask(y, lineage)
-    return arr[keep], lin[keep], int((~keep).sum())
 
 
 def _clean_with_mask(y: Sequence,
@@ -280,7 +274,7 @@ def _clopper_pearson(successes: int, trials: int,
 
 def _label_availability(y_a: np.ndarray, keep_a: np.ndarray,
                         y_b: np.ndarray, keep_b: np.ndarray,
-                        alpha: float) -> Dict[str, object]:
+                        alpha: float) -> Dict[str, Any]:
     """Is the labelled subset representative of the collection it came from?
 
     A lineage-resolved statistic is computed on the isolates that carry a
@@ -315,8 +309,8 @@ def _label_availability(y_a: np.ndarray, keep_a: np.ndarray,
     coverage_p = fisher_exact_p(int(keep_a.sum()), int((~keep_a).sum()),
                                 int(keep_b.sum()), int((~keep_b).sum()))
 
-    gaps: Dict[str, object] = {}
-    trait_p = {}
+    gaps: Dict[str, Any] = {}
+    trait_p: Dict[str, Optional[float]] = {}
     for side, y, keep in (("a", y_a, keep_a), ("b", y_b, keep_b)):
         unlabelled = ~keep & np.isfinite(y)
         labelled = keep & np.isfinite(y)
@@ -360,7 +354,7 @@ def decompose_prevalence_difference(
     rng: Optional[np.random.Generator] = None,
     min_shared_support: float = DEFAULT_MIN_SHARED_SUPPORT,
     label_alpha: float = 0.05,
-) -> Dict[str, object]:
+) -> Dict[str, Any]:
     """Split a prevalence difference into composition and within-lineage parts.
 
     Parameters
@@ -409,8 +403,8 @@ def decompose_prevalence_difference(
     n_lin = len(lineages)
     wa, pa = _shares_and_rates(codes_a, ya, n_lin)
     wb, pb = _shares_and_rates(codes_b, yb, n_lin)
-    comp, within = _kitagawa(wa, pa, wb, pb)
-    comp, within = float(comp), float(within)
+    comp_arr, within_arr = _kitagawa(wa, pa, wb, pb)
+    comp, within = float(comp_arr), float(within_arr)
     diff = float(ya.mean() - yb.mean())
 
     pa_f = np.nan_to_num(np.where(np.isnan(pa), pb, pa))
@@ -522,7 +516,7 @@ def decompose_panel(
     rng: Optional[np.random.Generator] = None,
     q: float = 0.05,
     min_shared_support: float = DEFAULT_MIN_SHARED_SUPPORT,
-) -> Dict[str, object]:
+) -> Dict[str, Any]:
     """Decompose every agent in a panel and control the family error rate.
 
     An antimicrobial panel is a family of tests and its members are not
@@ -575,7 +569,7 @@ def decompose_panel(
             n_boot=n_boot, rng=rng, min_shared_support=min_shared_support)
 
     usable = [a for a in agents if per_agent[a].get("status") == "ok"]
-    family: Dict[str, object] = {
+    family: Dict[str, Any] = {
         "n_agents": len(agents),
         "n_agents_decomposed": len(usable),
         "q": float(q),
@@ -617,7 +611,7 @@ def lineage_resolved_prevalence(
     *,
     n_boot: int = 2000,
     rng: Optional[np.random.Generator] = None,
-) -> Dict[str, object]:
+) -> Dict[str, Any]:
     """Report trait prevalence per isolate and per lineage, with an interval.
 
     Parameters
@@ -718,7 +712,7 @@ def trait_concentration(
     *,
     n_perm: int = 500,
     rng: Optional[np.random.Generator] = None,
-) -> Dict[str, object]:
+) -> Dict[str, Any]:
     """How concentrated in lineages is a trait, and by how much beyond chance.
 
     Two instruments, both borrowed rather than invented, and neither in use on

@@ -21,7 +21,7 @@ import argparse
 import os
 import sys
 from pathlib import Path
-from typing import Dict
+from typing import Any, Dict
 
 from . import __version__
 from .config import ConfigError, load_config
@@ -77,7 +77,7 @@ def _surveillance_summary(meta: dict) -> dict:
     way in opposite directions. A report quoting prevalence alone calls that
     agent stable, which is the one reading the decomposition exists to prevent.
     """
-    out: Dict[str, object] = {}
+    out: Dict[str, Any] = {}
     lrp = meta.get("lineage_resolved_prevalence") or {}
     gaps = {f: r["difference_per_lineage_minus_per_isolate"]
             for f, r in lrp.items() if r.get("status") == "ok"}
@@ -276,7 +276,7 @@ def _gates(result: dict) -> list:
         # its null standard deviation shrinks with the number of pairs while
         # the share of the partition that lineage explains does not move.
         gate = float(att.get("lambda_gate", 0.5))
-        lam, hi = att.get("lam"), att.get("ci_high")
+        lam = att.get("lam")
 
         # A record read back from JSON carries null where the run held NaN,
         # so a missing number is formatted from None as well as from NaN.
@@ -575,6 +575,7 @@ def main(argv=None) -> int:
     except ConfigError as exc:
         print(f"input error: {exc}", file=sys.stderr)
         return 2
+    assert ds.input_qc is not None
     qc_text = render_markdown(ds.input_qc)
     if rd is not None:
         write_json(ds.input_qc, rd / "input_qc.json")
@@ -592,11 +593,17 @@ def main(argv=None) -> int:
     problems = _gates(result)
     if rd is not None:
         from .report import render_report
+        from .report_html import render_html_report
         write_json(result, rd / "cluster_result.json")
         write_json(_summary(result), rd / "summary.json")
         (rd / "report.md").write_text(
             render_report(result, _summary(result), input_qc=input_record,
                           problems=problems), encoding="utf-8")
+        # The same run, drawn. The prose form states the result; the drawn
+        # form is where a reader sees that every per-trait interval crosses
+        # zero, or that one gate held by 0.04 while the rest held by 0.5.
+        (rd / "report.html").write_text(
+            render_html_report(result, _summary(result)), encoding="utf-8")
 
     if not args.quiet:
         print("[amr-clonalshare] summary:")

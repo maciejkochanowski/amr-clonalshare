@@ -1,0 +1,112 @@
+{
+  "what": "uniformity of the clonal-share permutation p-value under a null with no lineage effect, and power against a graded lineage effect",
+  "date": "2026-09-04",
+  "design": {
+    "n_isolates": 240,
+    "n_lineages": 40,
+    "lineage_sizes": "geometric, ratio 0.7",
+    "prevalence": 0.35,
+    "n_null_replicates": 2000,
+    "n_power_replicates_per_spread": 400,
+    "estimator_settings": {
+      "folds": 5,
+      "repeats": 5,
+      "n_boot": 0,
+      "n_perm": 199
+    },
+    "seed": 20260904,
+    "seeding": "numpy SeedSequence, one spawned child per replicate"
+  },
+  "null": {
+    "grid_gap": 0.014000000000000012,
+    "grid_gap_reference_draws": 4000,
+    "grid_gap_p_value": 0.7828042989252687,
+    "uniform_on_the_grid": true,
+    "level": {
+      "0.01": {
+        "rejections": 17,
+        "rate": 0.0085,
+        "cp95_low": 0.0049591350217812556,
+        "cp95_high": 0.013574546199731806,
+        "holds": true
+      },
+      "0.05": {
+        "rejections": 96,
+        "rate": 0.048,
+        "cp95_low": 0.039050337055576895,
+        "cp95_high": 0.05830249234114568,
+        "holds": true
+      },
+      "0.10": {
+        "rejections": 189,
+        "rate": 0.0945,
+        "cp95_low": 0.08203138293797992,
+        "cp95_high": 0.10817141749229192,
+        "holds": true
+      }
+    },
+    "kappa_adj_mean": -0.00024463472853587906,
+    "kappa_adj_sd": 0.02852265730811623,
+    "p_value_deciles": [
+      0.105,
+      0.205,
+      0.31,
+      0.405,
+      0.505,
+      0.615,
+      0.715,
+      0.81,
+      0.9
+    ]
+  },
+  "power_at_0.05": {
+    "0.00": {
+      "rejections": 21,
+      "power": 0.0525,
+      "cp95_low": 0.03278842457715372,
+      "cp95_high": 0.07913463048694427,
+      "median_kappa_adj": 0.0009553728011930348
+    },
+    "0.05": {
+      "rejections": 34,
+      "power": 0.085,
+      "cp95_low": 0.05958241574856729,
+      "cp95_high": 0.11675384278483415,
+      "median_kappa_adj": 0.0038890514097858365
+    },
+    "0.10": {
+      "rejections": 139,
+      "power": 0.3475,
+      "cp95_low": 0.30086574441064584,
+      "cp95_high": 0.3964101227353924,
+      "median_kappa_adj": 0.03018204083414242
+    },
+    "0.15": {
+      "rejections": 257,
+      "power": 0.6425,
+      "cp95_low": 0.5933640813712461,
+      "cp95_high": 0.6895097426239442,
+      "median_kappa_adj": 0.06819815782086552
+    },
+    "0.20": {
+      "rejections": 350,
+      "power": 0.875,
+      "cp95_low": 0.8385413405693943,
+      "cp95_high": 0.905781485313414,
+      "median_kappa_adj": 0.12460426390653635
+    },
+    "0.30": {
+      "rejections": 392,
+      "power": 0.98,
+      "cp95_low": 0.9609737232883799,
+      "cp95_high": 0.9913268296308817,
+      "median_kappa_adj": 0.2326058694465984
+    }
+  },
+  "reading_rule": "The p-value is called uniform when the grid-gap reference p-value exceeds 0.05, and the level holds at alpha when the observed rejection rate is at or below alpha or its exact 95 % upper limit is within 0.02 of it. Both rules were fixed before the run.",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  }
+}

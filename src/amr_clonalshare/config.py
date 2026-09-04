@@ -21,7 +21,7 @@ with an actionable message instead of failing deep inside the analysis.
 from __future__ import annotations
 
 import difflib
-from dataclasses import dataclass, field, replace
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence
 
@@ -457,8 +457,8 @@ class AttributionConfig:
 class SurveillanceConfig:
     """Budgets and thresholds for the lineage-resolved prevalence outputs.
 
-    These were previously taken from ``influence.n_perm``, which set the
-    permutation budget of a different diagnostic. A percentile interval and a
+    They are separate from ``influence.n_perm``, which sets the permutation
+    budget of a different diagnostic. A percentile interval and a
     permutation tail are not the same resampling and do not want the same
     count: 500 replicates put the 2.5th percentile on the 13th draw, and 500
     permutations put a p-value floor at 1/501, which a panel of thirteen agents
@@ -906,8 +906,3 @@ def load_config(path: "str | Path", check_files_exist: bool = True) -> Config:
     if not isinstance(raw, dict):
         raise ConfigError(f"config root must be a mapping, got {type(raw).__name__}")
     return from_dict(raw, config_path=p).validate(check_files_exist=check_files_exist)
-
-
-def with_data_root(cfg: Config, data_dir: "str | Path") -> Config:
-    """Return a copy whose data_dir points elsewhere (used by tests)."""
-    return replace(cfg, dataset=replace(cfg.dataset, data_dir=str(data_dir)))

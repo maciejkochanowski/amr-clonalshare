@@ -2,9 +2,8 @@
 
 Implements the affinity kernel and cross-diffusion of Wang et al. (2014),
 "Similarity network fusion for aggregating data types on a genomic scale",
-Nature Methods 11:333-337, doi:10.1038/nmeth.2810, with two corrections
-relative to the previous release of this package and one behaviour that the
-reference implementations leave undefined.
+Nature Methods 11:333-337, doi:10.1038/nmeth.2810, with two corrections and
+one behaviour that the reference implementations leave undefined.
 
 1. **Local scaling is local.** Wang et al. Eq. (1) sets
 
@@ -45,7 +44,7 @@ reference implementations leave undefined.
    graph to be meaningful.
 
 4. **The diffusion update is the reference update. There are two of them, and
-   they are not the same.** A previous release of this docstring recorded, as a
+   they are not the same.** An earlier draft of this docstring recorded, as a
    fourth deviation, that ``snf_fuse`` re-applies the full row normalisation at
    every iteration "whereas SNFtool and snfpy add a constant to the diagonal and
    normalise once", and reported that under the reference update the

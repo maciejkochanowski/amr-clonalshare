@@ -15,6 +15,7 @@ from amr_clonalshare.censored import (CENSORED_GROUP_LIMIT,
                                          censored_clonal_share,
                                          intervals_from_binary,
                                          intervals_from_mic, panel_geometry,
+                                         profile_interval,
                                          scale_is_identified,
                                          sensitivity_endpoints)
 
@@ -325,3 +326,25 @@ def test_the_gate_names_the_quantity_it_read():
     lo, hi, lineage = _left_censored(rng, cut=3.0)
     reason = censored_clonal_share(lo, hi, lineage, n_boot=0).reason
     assert "%" in reason and "wholly beyond the panel" in reason
+
+
+def test_the_profile_width_answers_to_the_level_it_was_asked_for():
+    """``profile_interval`` accepts ``alpha`` and must use it. The cut was a
+    hard-coded 0.95 chi-squared quantile, so the width did not move with the
+    argument. The default still reproduces that quantile bit for bit, so no
+    recorded number changes; what changes is that a level other than 0.05 now
+    reaches the endpoints.
+
+    The design can fail rather than merely pass: on an inestimable cohort every
+    arm returns NaN and the comparison would be vacuous, so the peak is
+    required to be finite before the widths are compared. The grid is refined
+    because the endpoints are grid points and a coarse grid can tie."""
+    rng = np.random.default_rng(7)
+    z, _, lineage = _latent(rng, [8] * 30)
+    width = {}
+    for alpha in (0.5, 0.05, 0.01):
+        lower, upper, peak = profile_interval(z, z, lineage, alpha=alpha,
+                                              grid=201)
+        assert np.isfinite(peak)
+        width[alpha] = upper - lower
+    assert width[0.5] < width[0.05] < width[0.01]

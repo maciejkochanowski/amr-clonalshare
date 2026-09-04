@@ -1,528 +1,528 @@
 {
- "what": "split_design_adequate as a function of tva.block_threshold on the data shipped with the package",
- "method": "deterministic, one pass over the data, using the package's own functions core._load_gated_layers, core._feature_split_groups, inference._split_units and inference._block_report. No replication, no generator, no simulation.",
- "date": "2026-08-14",
- "grids": {
-  "coarse": [
-   0.3,
-   0.4,
-   0.5,
-   0.6,
-   0.7,
-   0.8,
-   0.85,
-   0.9
+  "what": "split_design_adequate as a function of tva.block_threshold on the data shipped with the package",
+  "method": "deterministic, one pass over the data, using the package's own functions core._load_gated_layers, core._feature_split_groups, inference._split_units and inference._block_report. No replication, no generator, no simulation.",
+  "date": "2026-08-14",
+  "grids": {
+    "coarse": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.85,
+      0.9
+    ],
+    "fine": "0.30 do 0.99 co 0.01"
+  },
+  "gate_constants": {
+    "BLOCK_ADEQUACY_MAX_CROSS_CORR": 0.7,
+    "MIN_SPLIT_UNITS": 4,
+    "MAX_FRAC_IN_ONE_UNIT": 0.6,
+    "note": "the gate requires max_abs_corr_between_units < 0.7 AND n_units >= 4 AND the largest share <= 0.6"
+  },
+  "coarse": {
+    "planted (positive control)": {
+      "config": "examples/synthetic/planted.yaml",
+      "n_isolates": 180,
+      "n_features_after_gating": 48,
+      "layers": {
+        "amr": 18,
+        "vir": 30
+      },
+      "default_threshold": 0.7,
+      "grid": [
+        {
+          "threshold": 0.3,
+          "n_split_units": 1,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 48,
+          "frac_features_in_largest_unit": 1.0,
+          "max_abs_corr_between_units": 0.0,
+          "block_aware": true,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.4,
+          "n_split_units": 1,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 48,
+          "frac_features_in_largest_unit": 1.0,
+          "max_abs_corr_between_units": 0.0,
+          "block_aware": true,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.5,
+          "n_split_units": 1,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 48,
+          "frac_features_in_largest_unit": 1.0,
+          "max_abs_corr_between_units": 0.0,
+          "block_aware": true,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.6,
+          "n_split_units": 3,
+          "n_multi_feature_units": 3,
+          "largest_unit_size": 16,
+          "frac_features_in_largest_unit": 0.3333,
+          "max_abs_corr_between_units": 0.523,
+          "block_aware": true,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.7,
+          "n_split_units": 3,
+          "n_multi_feature_units": 3,
+          "largest_unit_size": 16,
+          "frac_features_in_largest_unit": 0.3333,
+          "max_abs_corr_between_units": 0.523,
+          "block_aware": true,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.8,
+          "n_split_units": 9,
+          "n_multi_feature_units": 3,
+          "largest_unit_size": 15,
+          "frac_features_in_largest_unit": 0.3125,
+          "max_abs_corr_between_units": 0.7991,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.85,
+          "n_split_units": 22,
+          "n_multi_feature_units": 3,
+          "largest_unit_size": 13,
+          "frac_features_in_largest_unit": 0.2708,
+          "max_abs_corr_between_units": 0.8499,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.9,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.8915,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        }
+      ]
+    },
+    "null (negative control)": {
+      "config": "examples/synthetic/null.yaml",
+      "n_isolates": 180,
+      "n_features_after_gating": 48,
+      "layers": {
+        "amr": 18,
+        "vir": 30
+      },
+      "default_threshold": 0.7,
+      "grid": [
+        {
+          "threshold": 0.3,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.2985,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.4,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.2985,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.5,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.2985,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.6,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.2985,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.7,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.2985,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.8,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.2985,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.85,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.2985,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.9,
+          "n_split_units": 48,
+          "n_multi_feature_units": 0,
+          "largest_unit_size": 1,
+          "frac_features_in_largest_unit": 0.0208,
+          "max_abs_corr_between_units": 0.2985,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        }
+      ]
+    },
+    "clonal (clonal control)": {
+      "config": "examples/synthetic/clonal.yaml",
+      "n_isolates": 200,
+      "n_features_after_gating": 35,
+      "layers": {
+        "amr": 15,
+        "vir": 20
+      },
+      "default_threshold": 0.7,
+      "grid": [
+        {
+          "threshold": 0.3,
+          "n_split_units": 5,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 31,
+          "frac_features_in_largest_unit": 0.8857,
+          "max_abs_corr_between_units": 0.2847,
+          "block_aware": true,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.4,
+          "n_split_units": 7,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 29,
+          "frac_features_in_largest_unit": 0.8286,
+          "max_abs_corr_between_units": 0.3659,
+          "block_aware": true,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.5,
+          "n_split_units": 11,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 21,
+          "frac_features_in_largest_unit": 0.6,
+          "max_abs_corr_between_units": 0.497,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.6,
+          "n_split_units": 16,
+          "n_multi_feature_units": 3,
+          "largest_unit_size": 15,
+          "frac_features_in_largest_unit": 0.4286,
+          "max_abs_corr_between_units": 0.5908,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.7,
+          "n_split_units": 20,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 14,
+          "frac_features_in_largest_unit": 0.4,
+          "max_abs_corr_between_units": 0.6784,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.8,
+          "n_split_units": 28,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 7,
+          "frac_features_in_largest_unit": 0.2,
+          "max_abs_corr_between_units": 0.7957,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.85,
+          "n_split_units": 30,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 6,
+          "frac_features_in_largest_unit": 0.1714,
+          "max_abs_corr_between_units": 0.8381,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.9,
+          "n_split_units": 34,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 2,
+          "frac_features_in_largest_unit": 0.0571,
+          "max_abs_corr_between_units": 0.8951,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        }
+      ]
+    },
+    "Klebsiella (case study)": {
+      "config": "examples/klebsiella/config.yaml",
+      "n_isolates": 1500,
+      "n_features_after_gating": 19,
+      "layers": {
+        "amr": 14,
+        "vir": 5
+      },
+      "default_threshold": 0.7,
+      "grid": [
+        {
+          "threshold": 0.3,
+          "n_split_units": 5,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 11,
+          "frac_features_in_largest_unit": 0.5789,
+          "max_abs_corr_between_units": 0.2218,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.4,
+          "n_split_units": 9,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 9,
+          "frac_features_in_largest_unit": 0.4737,
+          "max_abs_corr_between_units": 0.3793,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.5,
+          "n_split_units": 10,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 8,
+          "frac_features_in_largest_unit": 0.4211,
+          "max_abs_corr_between_units": 0.4234,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.6,
+          "n_split_units": 12,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 6,
+          "frac_features_in_largest_unit": 0.3158,
+          "max_abs_corr_between_units": 0.569,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.7,
+          "n_split_units": 15,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 3,
+          "frac_features_in_largest_unit": 0.1579,
+          "max_abs_corr_between_units": 0.6983,
+          "block_aware": true,
+          "split_design_adequate": true,
+          "reason": ""
+        },
+        {
+          "threshold": 0.8,
+          "n_split_units": 16,
+          "n_multi_feature_units": 2,
+          "largest_unit_size": 3,
+          "frac_features_in_largest_unit": 0.1579,
+          "max_abs_corr_between_units": 0.7517,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.85,
+          "n_split_units": 18,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 2,
+          "frac_features_in_largest_unit": 0.1053,
+          "max_abs_corr_between_units": 0.8073,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        },
+        {
+          "threshold": 0.9,
+          "n_split_units": 18,
+          "n_multi_feature_units": 1,
+          "largest_unit_size": 2,
+          "frac_features_in_largest_unit": 0.1053,
+          "max_abs_corr_between_units": 0.8073,
+          "block_aware": false,
+          "split_design_adequate": false,
+          "reason": ""
+        }
+      ]
+    }
+  },
+  "feasible_bands": {
+    "planted (positive control)": {
+      "feasible_lo": null,
+      "feasible_hi": null,
+      "contiguous": false,
+      "n_units_at_0.5": 1,
+      "n_units_at_0.7": 3,
+      "0.5_feasible": false,
+      "0.7_feasible": false
+    },
+    "null (negative control)": {
+      "feasible_lo": 0.3,
+      "feasible_hi": 0.99,
+      "contiguous": true,
+      "n_units_at_0.5": 48,
+      "n_units_at_0.7": 48,
+      "0.5_feasible": true,
+      "0.7_feasible": true
+    },
+    "clonal (clonal control)": {
+      "feasible_lo": 0.49,
+      "feasible_hi": 0.72,
+      "contiguous": true,
+      "n_units_at_0.5": 11,
+      "n_units_at_0.7": 20,
+      "0.5_feasible": true,
+      "0.7_feasible": true
+    },
+    "Klebsiella (case study)": {
+      "feasible_lo": 0.3,
+      "feasible_hi": 0.75,
+      "contiguous": true,
+      "n_units_at_0.5": 10,
+      "n_units_at_0.7": 15,
+      "0.5_feasible": true,
+      "0.7_feasible": true
+    }
+  },
+  "joint_feasible_band_over_datasets_with_a_band": [
+    0.49,
+    0.72
   ],
-  "fine": "0.30 do 0.99 co 0.01"
- },
- "gate_constants": {
-  "BLOCK_ADEQUACY_MAX_CROSS_CORR": 0.7,
-  "MIN_SPLIT_UNITS": 4,
-  "MAX_FRAC_IN_ONE_UNIT": 0.6,
-  "note": "the gate requires max_abs_corr_between_units < 0.7 AND n_units >= 4 AND the largest share <= 0.6"
- },
- "coarse": {
-  "planted (positive control)": {
-   "config": "examples/synthetic/planted.yaml",
-   "n_isolates": 180,
-   "n_features_after_gating": 48,
-   "layers": {
-    "amr": 18,
-    "vir": 30
-   },
-   "default_threshold": 0.7,
-   "grid": [
-    {
-     "threshold": 0.3,
-     "n_split_units": 1,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 48,
-     "frac_features_in_largest_unit": 1.0,
-     "max_abs_corr_between_units": 0.0,
-     "block_aware": true,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.4,
-     "n_split_units": 1,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 48,
-     "frac_features_in_largest_unit": 1.0,
-     "max_abs_corr_between_units": 0.0,
-     "block_aware": true,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.5,
-     "n_split_units": 1,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 48,
-     "frac_features_in_largest_unit": 1.0,
-     "max_abs_corr_between_units": 0.0,
-     "block_aware": true,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.6,
-     "n_split_units": 3,
-     "n_multi_feature_units": 3,
-     "largest_unit_size": 16,
-     "frac_features_in_largest_unit": 0.3333,
-     "max_abs_corr_between_units": 0.523,
-     "block_aware": true,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.7,
-     "n_split_units": 3,
-     "n_multi_feature_units": 3,
-     "largest_unit_size": 16,
-     "frac_features_in_largest_unit": 0.3333,
-     "max_abs_corr_between_units": 0.523,
-     "block_aware": true,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.8,
-     "n_split_units": 9,
-     "n_multi_feature_units": 3,
-     "largest_unit_size": 15,
-     "frac_features_in_largest_unit": 0.3125,
-     "max_abs_corr_between_units": 0.7991,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.85,
-     "n_split_units": 22,
-     "n_multi_feature_units": 3,
-     "largest_unit_size": 13,
-     "frac_features_in_largest_unit": 0.2708,
-     "max_abs_corr_between_units": 0.8499,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.9,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.8915,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    }
-   ]
+  "typeI_from_experiment_G_n4000": {
+    "none": 0.9998,
+    "0.5": 0.0163,
+    "0.7": 0.0195,
+    "0.85": 0.7897,
+    "source": "benchmarks/results_n4000_2026-08-14/G_block_threshold_n4000.json"
   },
-  "null (negative control)": {
-   "config": "examples/synthetic/null.yaml",
-   "n_isolates": 180,
-   "n_features_after_gating": 48,
-   "layers": {
-    "amr": 18,
-    "vir": 30
-   },
-   "default_threshold": 0.7,
-   "grid": [
-    {
-     "threshold": 0.3,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.2985,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.4,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.2985,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.5,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.2985,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.6,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.2985,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.7,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.2985,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.8,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.2985,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.85,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.2985,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.9,
-     "n_split_units": 48,
-     "n_multi_feature_units": 0,
-     "largest_unit_size": 1,
-     "frac_features_in_largest_unit": 0.0208,
-     "max_abs_corr_between_units": 0.2985,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    }
-   ]
+  "answer_level_and_adequacy": {
+    "question": "whether a threshold exists at which the level is held AND the design is adequate on the shipped data",
+    "answer": "yes",
+    "band": [
+      0.49,
+      0.72
+    ],
+    "0.7_inside": true,
+    "0.5_inside": true,
+    "note": "the level was measured only at 0.5 and 0.7 inside that band, and both hold 0.05. The planted control has no adequate threshold and is excluded from this intersection."
   },
-  "clonal (clonal control)": {
-   "config": "examples/synthetic/clonal.yaml",
-   "n_isolates": 200,
-   "n_features_after_gating": 35,
-   "layers": {
-    "amr": 15,
-    "vir": 20
-   },
-   "default_threshold": 0.7,
-   "grid": [
-    {
-     "threshold": 0.3,
-     "n_split_units": 5,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 31,
-     "frac_features_in_largest_unit": 0.8857,
-     "max_abs_corr_between_units": 0.2847,
-     "block_aware": true,
-     "split_design_adequate": false,
-     "reason": ""
+  "shipped_planted_control": {
+    "finding": "at no threshold between 0.30 and 0.99 is the design adequate",
+    "mechanism": "0.30 to 0.51: all 48 features in one unit (100 %); 0.52: 2 units (66.7 %); 0.53 to 0.77: 3 units (33.3 %) where the gate requires at least 4; from 0.78 there are 5 units but the maximum correlation rises above 0.7",
+    "reviewer_run": {
+      "command": "amr-clonalshare --config examples/synthetic/planted.yaml --results-dir out/planted",
+      "exit_code": 3,
+      "inference_status": "withheld_inadequate_split_design",
+      "structure_detected": false,
+      "diagnostic_p_value_structure_exact": 5.42502208600954e-13,
+      "reproduces_shipped_expected_planted_summary": true
     },
-    {
-     "threshold": 0.4,
-     "n_split_units": 7,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 29,
-     "frac_features_in_largest_unit": 0.8286,
-     "max_abs_corr_between_units": 0.3659,
-     "block_aware": true,
-     "split_design_adequate": false,
-     "reason": ""
+    "manuscript_says": {
+      "section": "5.1, control table",
+      "structure": "p = 3 x 10^-39",
+      "exit": 0,
+      "matches_shipped_run": false
     },
-    {
-     "threshold": 0.5,
-     "n_split_units": 11,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 21,
-     "frac_features_in_largest_unit": 0.6,
-     "max_abs_corr_between_units": 0.497,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.6,
-     "n_split_units": 16,
-     "n_multi_feature_units": 3,
-     "largest_unit_size": 15,
-     "frac_features_in_largest_unit": 0.4286,
-     "max_abs_corr_between_units": 0.5908,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.7,
-     "n_split_units": 20,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 14,
-     "frac_features_in_largest_unit": 0.4,
-     "max_abs_corr_between_units": 0.6784,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.8,
-     "n_split_units": 28,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 7,
-     "frac_features_in_largest_unit": 0.2,
-     "max_abs_corr_between_units": 0.7957,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.85,
-     "n_split_units": 30,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 6,
-     "frac_features_in_largest_unit": 0.1714,
-     "max_abs_corr_between_units": 0.8381,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.9,
-     "n_split_units": 34,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 2,
-     "frac_features_in_largest_unit": 0.0571,
-     "max_abs_corr_between_units": 0.8951,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    }
-   ]
+    "not_fixable_by_threshold": true
   },
-  "Klebsiella (case study)": {
-   "config": "examples/klebsiella/config.yaml",
-   "n_isolates": 1500,
-   "n_features_after_gating": 19,
-   "layers": {
-    "amr": 14,
-    "vir": 5
-   },
-   "default_threshold": 0.7,
-   "grid": [
-    {
-     "threshold": 0.3,
-     "n_split_units": 5,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 11,
-     "frac_features_in_largest_unit": 0.5789,
-     "max_abs_corr_between_units": 0.2218,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.4,
-     "n_split_units": 9,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 9,
-     "frac_features_in_largest_unit": 0.4737,
-     "max_abs_corr_between_units": 0.3793,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.5,
-     "n_split_units": 10,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 8,
-     "frac_features_in_largest_unit": 0.4211,
-     "max_abs_corr_between_units": 0.4234,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.6,
-     "n_split_units": 12,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 6,
-     "frac_features_in_largest_unit": 0.3158,
-     "max_abs_corr_between_units": 0.569,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.7,
-     "n_split_units": 15,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 3,
-     "frac_features_in_largest_unit": 0.1579,
-     "max_abs_corr_between_units": 0.6983,
-     "block_aware": true,
-     "split_design_adequate": true,
-     "reason": ""
-    },
-    {
-     "threshold": 0.8,
-     "n_split_units": 16,
-     "n_multi_feature_units": 2,
-     "largest_unit_size": 3,
-     "frac_features_in_largest_unit": 0.1579,
-     "max_abs_corr_between_units": 0.7517,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.85,
-     "n_split_units": 18,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 2,
-     "frac_features_in_largest_unit": 0.1053,
-     "max_abs_corr_between_units": 0.8073,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    },
-    {
-     "threshold": 0.9,
-     "n_split_units": 18,
-     "n_multi_feature_units": 1,
-     "largest_unit_size": 2,
-     "frac_features_in_largest_unit": 0.1053,
-     "max_abs_corr_between_units": 0.8073,
-     "block_aware": false,
-     "split_design_adequate": false,
-     "reason": ""
-    }
-   ]
-  }
- },
- "feasible_bands": {
-  "planted (positive control)": {
-   "feasible_lo": null,
-   "feasible_hi": null,
-   "contiguous": false,
-   "n_units_at_0.5": 1,
-   "n_units_at_0.7": 3,
-   "0.5_feasible": false,
-   "0.7_feasible": false
+  "environment": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0"
   },
-  "null (negative control)": {
-   "feasible_lo": 0.3,
-   "feasible_hi": 0.99,
-   "contiguous": true,
-   "n_units_at_0.5": 48,
-   "n_units_at_0.7": 48,
-   "0.5_feasible": true,
-   "0.7_feasible": true
+  "git_rev": "56439d55c383fcda7e1a6188ff0c2ddc09921204",
+  "runtime_seconds_total": 0.7733104910003021,
+  "cpu_hours": 0.00021480846972230614,
+  "feeds_manuscript": "Nothing. The curve was computed as a reconnaissance task and no number from it entered the manuscript in that session.",
+  "commit": null,
+  "transitions_fine_grid": {
+    "planted": "1 unit up to 0.51 | 2 from 0.52 | 3 from 0.53 | 5 from 0.78 (maximum correlation 0.7761) | 9 from 0.80 | 48 from 0.90",
+    "clonal": "5 units from 0.30 | adequate from 0.49 (largest share 60.0 %, exactly on the bound) | 20 units from 0.68 | inadequate from 0.73 (maximum correlation 0.7275)",
+    "Klebsiella": "5 units from 0.30 | 10 from 0.43 | 15 from 0.70 | inadequate from 0.76 (maximum correlation 0.7517)"
   },
-  "clonal (clonal control)": {
-   "feasible_lo": 0.49,
-   "feasible_hi": 0.72,
-   "contiguous": true,
-   "n_units_at_0.5": 11,
-   "n_units_at_0.7": 20,
-   "0.5_feasible": true,
-   "0.7_feasible": true
+  "margin_notes": {
+    "0.5_on_clonal": "share of the largest unit = 21/35 = 60.0 %, bound <= 60.0 %; passes with zero margin",
+    "0.7_on_klebsiella": "maximum correlation between units 0.6983 against a bound of 0.7; passes with a margin of 0.0017",
+    "0.7_on_clonal": "maximum correlation 0.6784 against a bound of 0.7; the upper edge of the band is 0.72"
   },
-  "Klebsiella (case study)": {
-   "feasible_lo": 0.3,
-   "feasible_hi": 0.75,
-   "contiguous": true,
-   "n_units_at_0.5": 10,
-   "n_units_at_0.7": 15,
-   "0.5_feasible": true,
-   "0.7_feasible": true
-  }
- },
- "joint_feasible_band_over_datasets_with_a_band": [
-  0.49,
-  0.72
- ],
- "typeI_from_experiment_G_n4000": {
-  "none": 0.9998,
-  "0.5": 0.0163,
-  "0.7": 0.0195,
-  "0.85": 0.7897,
-  "source": "benchmarks/results_n4000_2026-08-14/G_block_threshold_n4000.json"
- },
- "answer_level_and_adequacy": {
-  "question": "whether a threshold exists at which the level is held AND the design is adequate on the shipped data",
-  "answer": "TAK",
-  "band": [
-   0.49,
-   0.72
-  ],
-  "0.7_inside": true,
-  "0.5_inside": true,
-  "note": "the level was measured only at 0.5 and 0.7 inside that band, and both hold 0.05. The planted control has no adequate threshold and is excluded from this intersection."
- },
- "shipped_planted_control": {
-  "finding": "at no threshold between 0.30 and 0.99 is the design adequate",
-  "mechanism": "0.30 to 0.51: all 48 features in one unit (100 %); 0.52: 2 units (66.7 %); 0.53 to 0.77: 3 units (33.3 %) where the gate requires at least 4; from 0.78 there are 5 units but the maximum correlation rises above 0.7",
-  "reviewer_run": {
-   "command": "amr-clonalshare --config examples/synthetic/planted.yaml --results-dir out/planted",
-   "exit_code": 3,
-   "inference_status": "withheld_inadequate_split_design",
-   "structure_detected": false,
-   "diagnostic_p_value_structure_exact": 5.42502208600954e-13,
-   "reproduces_shipped_expected_planted_summary": true
-  },
-  "manuscript_says": {
-   "section": "5.1, tabela kontroli",
-   "structure": "p = 3 x 10^-39",
-   "exit": 0,
-   "matches_shipped_run": false
-  },
-  "not_fixable_by_threshold": true
- },
- "environment": {
-  "python": "3.11.5",
-  "numpy": "2.4.6",
-  "pandas": "3.0.5",
-  "scipy": "1.17.1",
-  "sklearn": "1.9.0"
- },
- "git_rev": "56439d55c383fcda7e1a6188ff0c2ddc09921204",
- "runtime_seconds_total": 0.7733104910003021,
- "cpu_hours": 0.00021480846972230614,
- "feeds_manuscript": "Nothing. The curve was computed as a reconnaissance task and no number from it entered the manuscript in that session.",
- "commit": null,
- "transitions_fine_grid": {
-  "planted": "1 jedn. do 0.51 | 2 od 0.52 | 3 od 0.53 | 5 od 0.78 (maxcorr 0.7761) | 9 od 0.80 | 48 od 0.90",
-  "clonal": "5 units from 0.30 | adequate from 0.49 (largest share 60.0 %, exactly on the bound) | 20 units from 0.68 | inadequate from 0.73 (maximum correlation 0.7275)",
-  "Klebsiella": "5 jedn. od 0.30 | 10 od 0.43 | 15 od 0.70 | nieadekwatne od 0.76 (maxcorr 0.7517)"
- },
- "margin_notes": {
-  "0.5_on_clonal": "udzial najwiekszej jednostki = 21/35 = 60.0%, bound to <=60.0%; przechodzi z zerowym marginesem",
-  "0.7_on_klebsiella": "maxcorr miedzyjednostkowa 0.6983 przy bound 0.7; przechodzi z marginesem 0.0017",
-  "0.7_on_clonal": "maxcorr 0.6784 przy bound 0.7; gorna krawedz pasma to 0.72"
- },
- "language_note": "descriptive text translated from Polish to English on 2026-08-31; no numeric value, key path or recorded digest was changed"
+  "language_note": "descriptive text translated to English on 2026-08-31 and completed on 2026-09-04; no numeric value, key path or recorded digest was changed"
 }

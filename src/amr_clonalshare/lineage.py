@@ -23,8 +23,7 @@ Two things must be reported, and neither is optional:
     artefact" - while the same-ST pair concordance is 0.701 against a null of
     0.524 (z = +14.0). The pair statistic is the one that answers the question.
     (Those four numbers are ``metadata_diagnostics.lineage_concordance`` of the
-    committed ``examples/klebsiella/expected/`` run; earlier releases of this
-    docstring quoted a different run and did not say so.)
+    committed ``examples/klebsiella/expected/`` run.)
 
     The statistic's *coverage* is reported alongside it and should be read
     first. Lineage labels are taken verbatim, so ``ST17-1LV`` is a different
@@ -49,7 +48,7 @@ independently, see :mod:`amr_clonalshare.archephy`.
 """
 from __future__ import annotations
 
-from typing import Dict, List, Optional, Sequence
+from typing import Any, Dict, List, Optional, Sequence
 
 import re
 import numpy as np
@@ -86,7 +85,7 @@ def _concordance(codes: np.ndarray, labels: np.ndarray) -> float:
 _VARIANT_SUFFIX = re.compile(r"[-_ ]?\d*(SLV|DLV|LV)$", re.IGNORECASE)
 
 
-def collapse_st_variants(lineage: Sequence) -> np.ndarray:
+def collapse_st_variants(lineage: "Sequence | np.ndarray") -> np.ndarray:
     """Fold single- and double-locus variants onto their parent sequence type.
 
     ``ST17-1LV`` and ``ST17-2LV`` become ``ST17``. MLST variant notation is what
@@ -99,11 +98,11 @@ def collapse_st_variants(lineage: Sequence) -> np.ndarray:
                      for x in lineage], dtype=object)
 
 
-def lineage_concordance(labels: Sequence[int], lineage: Sequence,
+def lineage_concordance(labels: "Sequence[int] | np.ndarray", lineage: "Sequence | np.ndarray",
                         *, n_perm: int = 500,
                         rng: Optional[np.random.Generator] = None,
                         collapse_variants: bool = False
-                        ) -> Dict[str, object]:
+                        ) -> Dict[str, Any]:
     """Test whether same-lineage isolates are co-clustered more than chance.
 
     Parameters
@@ -173,7 +172,7 @@ def lineage_concordance(labels: Sequence[int], lineage: Sequence,
 
 def cluster_composition(labels: Sequence[int], metadata: pd.DataFrame,
                         columns: Sequence[str], *, top: int = 5
-                        ) -> Dict[str, object]:
+                        ) -> Dict[str, Any]:
     """Per-cluster composition over categorical metadata columns.
 
     Returns, for each cluster and each requested column, the top categories with
@@ -181,10 +180,10 @@ def cluster_composition(labels: Sequence[int], metadata: pd.DataFrame,
     share is high is a clone, not an archetype.
     """
     lab = np.asarray(list(labels))
-    out: Dict[str, object] = {}
+    out: Dict[str, Any] = {}
     for c in np.unique(lab):
         mask = lab == c
-        entry: Dict[str, object] = {"n": int(mask.sum())}
+        entry: Dict[str, Any] = {"n": int(mask.sum())}
         for col in columns:
             if col not in metadata.columns:
                 continue

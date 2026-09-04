@@ -32,7 +32,7 @@ Baselines provided
 """
 from __future__ import annotations
 
-from typing import Callable, Dict, List, Optional, Sequence
+from typing import Any, Callable, Dict, List, Optional, Sequence
 
 import numpy as np
 import pandas as pd
@@ -76,7 +76,7 @@ def _bmm_em(X: np.ndarray, k: int, rng: np.random.Generator, *,
 
 def bernoulli_mixture(X: np.ndarray, k: int, *,
                       rng: Optional[np.random.Generator] = None,
-                      n_init: int = 10, max_iter: int = 300) -> Dict[str, object]:
+                      n_init: int = 10, max_iter: int = 300) -> Dict[str, Any]:
     """Fit a mixture of ``k`` independent Bernoullis (latent class model).
 
     Returns the best of ``n_init`` EM restarts: log-likelihood, BIC, mixing
@@ -87,11 +87,12 @@ def bernoulli_mixture(X: np.ndarray, k: int, *,
         rng = np.random.default_rng()
     Xf = np.asarray(X, dtype=float)
     n, p = Xf.shape
-    best = None
+    best: Optional[tuple] = None
     for _ in range(int(n_init)):
         out = _bmm_em(Xf, k, rng, max_iter=max_iter)
         if best is None or out[0] > best[0]:
             best = out
+    assert best is not None
     ll, pi, theta, resp = best
     n_par = k * p + (k - 1)
     return {
@@ -110,7 +111,7 @@ def bernoulli_mixture(X: np.ndarray, k: int, *,
 
 def bernoulli_mixture_select_k(X: np.ndarray, k_range: Sequence[int], *,
                                rng: Optional[np.random.Generator] = None,
-                               n_init: int = 10) -> Dict[str, object]:
+                               n_init: int = 10) -> Dict[str, Any]:
     """Fit the Bernoulli mixture over ``k_range`` and select k by BIC."""
     if rng is None:
         rng = np.random.default_rng()
@@ -145,7 +146,7 @@ def single_layer_cluster(layer_mats: List[np.ndarray], k: int, *,
             for M in layer_mats]
 
 
-def external_agreement(labels: Sequence[int],
+def external_agreement(labels: "Sequence[int] | np.ndarray",
                        externals: Dict[str, Sequence]) -> Dict[str, Dict[str, float]]:
     """ARI and AMI of a partition against each external labelling.
 

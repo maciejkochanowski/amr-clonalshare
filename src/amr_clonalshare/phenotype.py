@@ -2,8 +2,8 @@
 
 The validation gap this closes
 ------------------------------
-Everything the case study previously called "external validation" was a
-deterministic function of the clustering input. Kleborate's ``virulence_score``
+A partition scored against a summary of its own input is not an external
+validation. Kleborate's ``virulence_score``
 and ``resistance_score`` are reconstructible from the shipped layers at 99.7 %
 and 97.8 %, so "the virulence layer alone recovers the published virulence score
 at ARI 0.875" is close to a tautology. A partition of genotypes scored against a
@@ -42,7 +42,7 @@ rather than being silently dropped or scored.
 """
 from __future__ import annotations
 
-from typing import Dict, Mapping, Optional, Sequence
+from typing import Any, Dict, Mapping, Optional, Sequence
 
 import numpy as np
 import pandas as pd
@@ -139,7 +139,7 @@ def _mean_ba(rules: Dict[str, np.ndarray], pheno: np.ndarray,
 
 def _bootstrap_head_to_head(rules: Dict[str, np.ndarray], pheno: np.ndarray,
                             cols: Sequence[int], n_boot: int, seed: int
-                            ) -> Dict[str, Dict[str, float]]:
+                            ) -> Dict[str, Dict[str, Any]]:
     """Percentile CI for mean(BA[competitor]) - mean(BA[partition]).
 
     The resampling unit is the **isolate**, not the antibiotic: antibiotics are
@@ -150,14 +150,14 @@ def _bootstrap_head_to_head(rules: Dict[str, np.ndarray], pheno: np.ndarray,
     """
     n = pheno.shape[0]
     rng = np.random.default_rng(seed)
-    diffs = {k: [] for k in rules if k != "partition"}
+    diffs: Dict[str, list] = {k: [] for k in rules if k != "partition"}
     for _ in range(int(n_boot)):
-        rows = rng.integers(0, n, n)
+        rows = rng.integers(0, n, size=(n,))
         m = _mean_ba(rules, pheno, cols, rows)
         for k in diffs:
             if np.isfinite(m.get(k, np.nan)) and np.isfinite(m.get("partition", np.nan)):
                 diffs[k].append(m[k] - m["partition"])
-    out = {}
+    out: Dict[str, Dict[str, Any]] = {}
     for k, v in diffs.items():
         a = np.asarray(v, dtype=float)
         if a.size < 10:
@@ -174,9 +174,9 @@ def _bootstrap_head_to_head(rules: Dict[str, np.ndarray], pheno: np.ndarray,
     return out
 
 
-def phenotype_concordance(labels: Sequence[int], strain_ids: Sequence[str],
+def phenotype_concordance(labels: "Sequence[int] | np.ndarray", strain_ids: Sequence[str],
                           phenotype: pd.DataFrame, *,
-                          competing_rules: Optional[Mapping[str, Sequence[int]]] = None,
+                          competing_rules: Optional[Mapping[str, "Sequence[int] | np.ndarray"]] = None,
                           min_tested: int = 20,
                           q_fdr: float = 0.05,
                           intermediate: str = "non_susceptible",
@@ -184,7 +184,7 @@ def phenotype_concordance(labels: Sequence[int], strain_ids: Sequence[str],
                           n_perm_floor: int = 200,
                           seed: int = 0,
                           strata: Optional[Sequence] = None
-                          ) -> Dict[str, object]:
+                          ) -> Dict[str, Any]:
     """Does the partition predict measured non-susceptibility -- better than what?
 
     Parameters
@@ -215,11 +215,11 @@ def phenotype_concordance(labels: Sequence[int], strain_ids: Sequence[str],
 
     pheno = phenotype.reindex(ids)
     rules = {"partition": lab}
-    for name, r in (competing_rules or {}).items():
-        r = np.asarray(list(r))
-        if r.size != lab.size:
+    for name, given in (competing_rules or {}).items():
+        arr = np.asarray(list(given))
+        if arr.size != lab.size:
             raise ValueError(f"competing rule {name!r} has the wrong length")
-        rules[name] = r
+        rules[name] = arr
 
     rows = []
     for ab in pheno.columns:
@@ -314,16 +314,16 @@ def phenotype_concordance(labels: Sequence[int], strain_ids: Sequence[str],
     # can reverse is a statement about that collection, so if strata are
     # supplied every head-to-head is recomputed with each stratum held out and
     # the worst case is reported next to the headline.
-    loco: Dict[str, object] = {}
+    loco: Dict[str, Any] = {}
     if strata is not None:
         st = pd.Series([str(x) for x in strata], index=ids)
         for g, cnt in st.value_counts().items():
             if cnt < 5:
                 continue
-            rows = np.flatnonzero((st != g).to_numpy())
-            if rows.size < 20:
+            held = np.flatnonzero((st != g).to_numpy())
+            if held.size < 20:
                 continue
-            m = _mean_ba(rules, pheno_arr, fam_cols, rows)
+            m = _mean_ba(rules, pheno_arr, fam_cols, held)
             loco[str(g)] = {
                 "n_held_out": int(cnt),
                 "mean_balanced_accuracy": {k: (float(v) if np.isfinite(v) else None)

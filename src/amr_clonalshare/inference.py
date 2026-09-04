@@ -139,7 +139,7 @@ detection boundary, because merging removes the randomisation noise.
 from __future__ import annotations
 
 import math
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
@@ -278,10 +278,10 @@ _MERGERS = {
 }
 
 
-def merge_pvalues(pvals: Sequence[float], how: str = "exchangeable_ruger") -> float:
+def merge_pvalues(pvals: "Sequence[float] | np.ndarray", how: str = "exchangeable_ruger") -> float:
     """Merge exchangeable p-values by the named rule."""
     try:
-        return float(_MERGERS[how](pvals))
+        return float(_MERGERS[how](list(pvals)))
     except KeyError:
         raise ValueError(
             f"unknown merge rule {how!r}; choose from {sorted(_MERGERS)}") from None
@@ -364,7 +364,7 @@ def binomial_thin(X, *, m, eps: float = 0.5,
     return X1, Xi - X1
 
 
-def thinning_dependence(X, X1, X2) -> np.ndarray:
+def thinning_dependence(X1, X2) -> np.ndarray:
     """Per-column ``corr(X1, X2)``: the direct check of the thinning guarantee.
 
     Should be ~0. A systematically non-zero value means the assumed family or
@@ -483,7 +483,7 @@ def correlation_blocks(X: np.ndarray, *, threshold: float = 0.5,
     return pd.factorize(pd.Series([find(j) for j in range(p)]))[0]
 
 
-def split_unit_diagnostics(X: np.ndarray, key: Sequence[int]) -> Dict[str, float]:
+def split_unit_diagnostics(X: np.ndarray, key: "Sequence[int] | np.ndarray") -> Dict[str, float]:
     """Is this set of split units actually adequate for the dependence in ``X``?
 
     ``max_abs_corr_between_units`` is the quantity that decides validity: it is
@@ -494,7 +494,9 @@ def split_unit_diagnostics(X: np.ndarray, key: Sequence[int]) -> Dict[str, float
     """
     k = np.asarray(list(key))
     p = k.size
-    sizes = np.bincount(k) if p else np.zeros(0, dtype=int)
+    # A non-integer key is a caller error and bincount refuses it; the cast
+    # below is a statement of the type it must have, not a conversion.
+    sizes = np.bincount(k.astype(np.intp, casting="safe")) if p else np.zeros(0, dtype=int)
     R = _abs_corr(X) if p > 1 else np.ones((p, p))
     cross = R[np.triu_indices(p, k=1)][
         (k[:, None] != k[None, :])[np.triu_indices(p, k=1)]] if p > 1 else np.zeros(0)
@@ -551,8 +553,7 @@ MIN_SPLIT_UNITS = 4
 MAX_FRAC_IN_ONE_UNIT = 0.6
 
 
-def _block_report(X: np.ndarray, key: Sequence[int],
-                  units: np.ndarray) -> Dict[str, object]:
+def _block_report(X: np.ndarray, key: "Sequence[int] | np.ndarray") -> Dict[str, Any]:
     """The split-unit fields every split-based result must carry.
 
     ``block_aware`` is not ``groups is not None``, which is true even when
@@ -659,7 +660,7 @@ def feature_split_test(X: np.ndarray, k: int, *, cluster_fn,
                        n_splits: int = 25, frac_discovery: float = 0.5,
                        merge: str = "exchangeable_ruger",
                        binary: bool = True,
-                       groups: Optional[Sequence] = None) -> Dict[str, object]:
+                       groups: Optional[Sequence] = None) -> Dict[str, Any]:
     """Multi-split feature-split test of "there is real k-group structure".
 
     Each split: draw a random discovery block of features, cluster on it, and
@@ -723,7 +724,7 @@ def feature_split_test(X: np.ndarray, k: int, *, cluster_fn,
         "merge_rule": merge,
         "n_splits": int(n_splits),
         "n_splits_usable": int(n_used),
-        **_block_report(X, key, units),
+        **_block_report(X, key),
         "frac_discovery": float(frac_discovery),
         "p_per_split": [float(v) for v in per_split],
         "p_split_median": float(np.median(arr)),
@@ -778,7 +779,7 @@ def feature_split_report(X: pd.DataFrame, k: int, *, cluster_fn,
                          groups: Optional[Sequence] = None,
                          fdr_features: Optional[Sequence[str]] = None,
                          reference_labels: Optional[Sequence[int]] = None
-                         ) -> Dict[str, object]:
+                         ) -> Dict[str, Any]:
     """Global test plus per-feature FDR-controlled defining features.
 
     A feature is tested only on the splits in which it was held out; its merged
@@ -884,7 +885,7 @@ def feature_split_report(X: pd.DataFrame, k: int, *, cluster_fn,
         "merge_rule": merge,
         "n_splits": int(n_splits),
         "n_splits_usable": int(n_used),
-        **_block_report(A, key, units),
+        **_block_report(A, key),
         "frac_discovery": float(frac_discovery),
         "k_tested": int(k),
         "p_value_structure": merged_global,
@@ -919,14 +920,14 @@ def feature_split_report(X: pd.DataFrame, k: int, *, cluster_fn,
 # 4. Is the structure discrete, or a continuum?
 # --------------------------------------------------------------------------- #
 def discreteness_evidence(X, k: int, *, rng: Optional[np.random.Generator] = None,
-                          n_init: int = 8) -> Dict[str, object]:
+                          n_init: int = 8) -> Dict[str, Any]:
     """**This does not test discreteness.** It compares a mixture against
     independence, and calls a smooth continuum "strongly discrete" every time.
 
     Use :func:`continuum_null_test` for the discreteness question. This function
     is kept only because the comparison it makes -- ``BIC(1 component)`` against
-    ``BIC(k components)`` -- is a useful descriptive statistic and because §4 of
-    the manuscript reports its failure as a result. On 20 one-factor continuum
+    ``BIC(k components)`` -- is a useful descriptive statistic, and because the
+    failure recorded below is itself a result. On 20 one-factor continuum
     datasets (n = 200, p = 30, no groups at all) it returns verdict "strong"
     20/20 with median ``delta_bic`` 586, and on two-factor continua 20/20 with
     median 727; it only says "against" on independent Bernoulli noise. A product
@@ -1174,7 +1175,7 @@ def latent_trait_loglik(X, a, B, *, n_nodes: Optional[int] = None) -> float:
 
 
 def select_latent_dimension(X, *, q_max: int = 4, n_iter: int = 30
-                            ) -> Dict[str, object]:
+                            ) -> Dict[str, Any]:
     """Choose the number of continuum dimensions by BIC.
 
     The routine evaluates ``q = 1..3`` first. It evaluates the supported fourth
@@ -1207,7 +1208,7 @@ def select_latent_dimension(X, *, q_max: int = 4, n_iter: int = 30
 
     for q in range(1, initial_max + 1):
         fit_dimension(q)
-    provisional_best = min(bics, key=bics.get)
+    provisional_best = min(bics, key=lambda q: bics[q])
     adaptive_extension_used = bool(
         provisional_best == initial_max and initial_max < q_limit
     )
@@ -1223,8 +1224,8 @@ def select_latent_dimension(X, *, q_max: int = 4, n_iter: int = 30
     for q, (a, B) in fits.items():
         bics_matched[q] = float(-2 * latent_trait_loglik(A, a, B, n_nodes=matched)
                                 + p * (1 + q) * logn)
-    best = min(bics, key=bics.get)
-    best_matched = min(bics_matched, key=bics_matched.get)
+    best = min(bics, key=lambda q: bics[q])
+    best_matched = min(bics_matched, key=lambda q: bics_matched[q])
     return {"q_selected": int(best),
             "bic_by_q": {str(k): v for k, v in bics.items()},
             "bic_by_q_matched_grid": {str(k): v for k, v in bics_matched.items()},
@@ -1247,7 +1248,7 @@ def continuum_null_test(X, k: int, *, rng: Optional[np.random.Generator] = None,
                         n_boot: int = 99, n_init: int = 5,
                         n_nodes: Optional[int] = None,
                         q: Optional[int] = None, q_max: int = 4
-                        ) -> Dict[str, object]:
+                        ) -> Dict[str, Any]:
     """Test discrete groups against a **unimodal continuum** null.
 
     A significant feature-split p-value says there is structure; it says so just
@@ -1303,7 +1304,7 @@ def continuum_null_test(X, k: int, *, rng: Optional[np.random.Generator] = None,
                 "reason": f"needs k >= 2, n >= {4 * max(k, 2)} and p >= 3"}
 
     logn = math.log(n)
-    dim = (select_latent_dimension(A, q_max=int(q_max)) if q is None else
+    dim: Dict[str, Any] = (select_latent_dimension(A, q_max=int(q_max)) if q is None else
            {"q_selected": int(q), "bic_by_q": {}, "q_max": int(q_max),
             "at_boundary": False})
     q_use = int(dim["q_selected"])

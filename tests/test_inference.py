@@ -81,7 +81,7 @@ def test_binomial_hypergeometric_split_is_independent():
     X = rng.binomial(11, 0.3, size=(1500, 4))
     X1, X2 = binomial_thin(X, m=11, rng=rng)
     assert np.array_equal(X1 + X2, X)
-    dep = thinning_dependence(X, X1, X2)
+    dep = thinning_dependence(X1, X2)
     assert np.nanmax(np.abs(dep)) < 0.06
 
 
@@ -89,12 +89,12 @@ def test_nb_split_is_independent_with_the_true_r_and_dependent_without_it():
     rng = np.random.default_rng(3)
     r_true = 5.0
     X = rng.negative_binomial(r_true, r_true / (r_true + 4.0), size=(1500, 4))
-    _, dep_ok = (lambda a: (a, thinning_dependence(X, *a)))(
+    _, dep_ok = (lambda a: (a, thinning_dependence(*a)))(
         nb_thin(X, r=r_true, rng=rng))
     assert np.nanmax(np.abs(dep_ok)) < 0.06
     # Neufeld et al. 2024 Prop. 11: a wrong r induces a non-zero covariance
     X1, X2 = nb_thin(X, r=0.4, rng=rng)
-    dep_bad = thinning_dependence(X, X1, X2)
+    dep_bad = thinning_dependence(X1, X2)
     assert np.nanmax(np.abs(dep_bad)) > 0.15
 
 

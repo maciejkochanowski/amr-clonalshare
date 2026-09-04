@@ -30,7 +30,7 @@ from scipy.spatial.distance import pdist
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from amr_clonalshare.attribution import (  # noqa: E402
+from amr_clonalshare.attribution import (
     SUPPORT_THRESHOLD, attribute_partition, clonal_share, concordance_z,
     layer_clonal_share,
 )

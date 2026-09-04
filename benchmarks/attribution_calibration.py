@@ -24,7 +24,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from amr_clonalshare.attribution import (  # noqa: E402
+from amr_clonalshare.attribution import (
     attribute_partition, layer_clonal_share,
 )
 

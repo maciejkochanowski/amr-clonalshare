@@ -57,10 +57,10 @@ from scipy.special import expit
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from amr_clonalshare.clonality import (  # noqa: E402
+from amr_clonalshare.clonality import (
     decompose_prevalence_difference,
 )
-from decomposition_calibration import build_population, draw  # noqa: E402
+from decomposition_calibration import build_population, draw
 
 _GH_NODES = 20
 

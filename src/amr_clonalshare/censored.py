@@ -39,12 +39,12 @@ says the question cannot be answered.
 from __future__ import annotations
 
 from dataclasses import dataclass, asdict
-from typing import Dict, Optional, Sequence, Tuple
+from typing import Any, Dict, Optional, Sequence, Tuple
 
 import numpy as np
 from scipy.optimize import minimize_scalar
 from scipy.special import log_ndtr, ndtr, ndtri
-from scipy.stats import f as _f_dist
+from scipy.stats import chi2, f as _f_dist
 
 from .attribution import _codes, _rng
 
@@ -90,7 +90,7 @@ class PanelGeometry:
     admissible_modes: Tuple[str, ...]
     reason: str
 
-    def as_dict(self) -> Dict[str, object]:
+    def as_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
 
@@ -131,7 +131,7 @@ class CensoredShare:
     realised_low: float = float("nan")
     realised_high: float = float("nan")
 
-    def as_dict(self) -> Dict[str, object]:
+    def as_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
 
@@ -547,7 +547,7 @@ def censored_clonal_share(lo, hi, lineage, *, n_boot: int = 200,
 
 
 def sensitivity_endpoints(values, lineage, *, operators=None, **kwargs
-                          ) -> Dict[str, object]:
+                          ) -> Dict[str, Any]:
     """Bracket the end-well coarsening assumption by running it both ways.
 
     Reading a value on the lowest or highest tested well as censored is an
@@ -689,7 +689,7 @@ def profile_interval(lo, hi, lineage, *, alpha: float = 0.05, grid: int = 41):
     ks = np.linspace(1e-3, 1 - 1e-3, int(grid))
     ll = np.array([_profile_at(lo, hi, code, G, k, grand, fixed) for k in ks])
     peak = int(np.argmax(ll))
-    cut = ll[peak] - 0.5 * 3.841458820694124  # chi-squared, one degree, 0.95
+    cut = ll[peak] - 0.5 * chi2.ppf(1.0 - alpha, 1)
     inside = ks[ll >= cut]
     if inside.size == 0:
         return float("nan"), float("nan"), float(ks[peak])

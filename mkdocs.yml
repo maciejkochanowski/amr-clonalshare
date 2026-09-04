@@ -19,6 +19,18 @@ theme:
     - navigation.sections
     - navigation.top
     - content.code.copy
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: numpy
+            show_source: false
+            show_root_heading: true
+            members_order: source
+            filters: ["!^_"]
 markdown_extensions:
   - admonition
   - tables
@@ -38,6 +50,7 @@ nav:
       - 8. Container and reproducibility: manual/08-container.md
       - 9. Exit codes and troubleshooting: manual/09-troubleshooting.md
   - Methods: methodology.md
+  - API reference: api.md
   - Code metadata: CODE_METADATA.md
 
 exclude_docs: |

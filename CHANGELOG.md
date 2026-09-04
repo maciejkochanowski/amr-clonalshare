@@ -20,9 +20,14 @@ lineages of at least two, and whether the clonal-share estimator will accept
 the cohort. `--check-input` runs this step alone. A refused input leaves with
 exit code 2 and a sentence naming the position, not a traceback.
 
-**Run report.** `report.md` beside `cluster_result.json`, in a fixed section
-order, reading every number from the record and stating in plain language what
-was computed, what the value means, and which gate limits the reading.
+**Run report, written and drawn.** `report.md` beside `cluster_result.json`,
+in a fixed section order, reading every number from the record and stating in
+plain language what was computed, what the value means, and which gate limits
+the reading; and `report.html` beside it, the same sections and the same
+numbers with the diagnostics drawn as figures, so that a panel of intervals
+that all cross zero is seen rather than counted. Every value on either page is
+read from the record and none is recomputed; the drawn page is one file with
+no script and nothing to fetch.
 
 **Partition diagnostics.** Multi-view consensus clustering over binary trait
 layers with similarity network fusion, order-invariant neighbour selection and
@@ -37,7 +42,22 @@ attributable share, both estimated out of sample so that a lineage variable is
 not paid for its levels, with a cross-validation debias, a cluster bootstrap
 interval that draws lineages whole, a commonality and Shapley split of the
 joint term, and a support gate whose threshold is read off a coverage curve.
-The gate on a partition is a magnitude, not a significance test.
+The gate on a partition is a magnitude, not a significance test. A cohort with
+a single lineage, like a cohort with no variance in the trait, returns a
+non-estimable result with the reason named, not a share of zero.
+
+**An exact permutation p-value beside the clonal share.** The reported share is
+a mean over `repeats` fold draws, so the permutation test compares the mean of
+the first `null_repeats` observed draws with the mean of `null_repeats` draws
+under each permutation: the same function of the labels on both sides, which
+is what makes the test exact under exchangeability (`null_repeats=5` by
+default). The extra draws come from a second random stream taken after every
+recorded quantity, so the estimate, its interval and the penalty do not depend
+on the setting. `benchmarks/null_uniformity.py` draws cohorts with no lineage
+effect and checks that the p-value is uniform on the permutation grid, then
+draws cohorts with a graded lineage effect and records the power curve; the
+check runs in the test suite on a small design and its full record is shipped
+under `benchmarks/results_null_uniformity_2026-09-04/`.
 
 **Interval-censored panel reading.** The same share from a dichotomised
 non-wild-type call, a recorded minimum inhibitory concentration or a censored
@@ -47,7 +67,8 @@ stated coarsening assumption with the alternative computed beside it, a
 recorded censoring operator overrides that assumption, and a cohort with more
 than half its isolates in lineages wholly beyond the panel is refused. Two
 intervals are given: a cluster bootstrap and a profile likelihood from the
-marginal likelihood, which answer different questions.
+marginal likelihood, which answer different questions; `profile_interval` cuts
+the profile at the level `alpha` names.
 
 **Anytime-valid evidence.** An e-value per antimicrobial, in the betting sense,
 built as the split likelihood ratio of universal inference on the same folds
@@ -57,7 +78,7 @@ the running value at every intake without spending an error budget.
 
 **Prevalence decomposition.** A Kitagawa split of a prevalence difference into
 a lineage-composition component and a within-lineage rate component, with an
-exact residual, Benjamini-Hochberg control within each component family, the
+exact residual, Benjamini-Yekutieli control within each component family, the
 effective number of independent agents, and two estimability gates: shared
 lineage support, and the pair of conditions under which missing lineage labels
 make the two collections incomparable.
@@ -73,6 +94,43 @@ success, a failed planted-truth validation, a configuration error and an
 informative refusal; a master seed spawning every stochastic stage; and a
 release pipeline that records input hashes, an environment manifest and a
 claim register.
+
+**Property tests.** `tests/test_properties.py` states the identities the
+arithmetic must satisfy for every input and lets Hypothesis search for a
+counterexample: the two components of the prevalence decomposition sum to the
+difference exactly, checked against rational arithmetic; the exact binomial
+interval brackets the proportion and moves with the count; the permutation
+p-value is the Phipson-Smyth ratio; Benjamini-Hochberg matches its step-up
+definition; the exact homoplasy tail agrees with brute-force enumeration; and
+a lineage label is a label, so renaming the lineages changes nothing.
+
+**Experiment G with common random numbers.** `benchmarks/block_threshold_crn.py`
+applies every blocking threshold to the same cohort with the same split draws,
+so that a difference between two thresholds is a difference between two rules
+on identical data, with paired contrasts read from the discordant pairs. The
+design is registered in `benchmarks/prereg_block_threshold_crn.json` before
+the run.
+
+**Evidence accounting.** `benchmarks/agent_screen.py` is the one screening rule
+for both atlases, with a closed set of refusal reasons; `reconcile()` raises
+when a cohort cannot account for every agent it holds. The cross-species and
+veterinary atlas records account for every agent present in every cohort, name
+the reason for every refusal from the closed set, and carry the estimator's own
+reason for a refused realised interval. Two verifiers run in CI: every shipped
+evidence record must account for every unit with a named reason, and every
+digest quoted in a document must match the file it names.
+
+**Engineering gates.** `ruff` and `mypy` run in CI and both pass over the
+package; the coverage gate is per module (`scripts/check_coverage_floors.py`);
+the documentation builds strictly in CI and carries an API reference generated
+from the docstrings; releases are published from GitHub releases through PyPI
+Trusted Publishing with PEP 740 attestations and no stored token; actions are
+pinned to commit digests; mutation testing is configured for the estimator
+modules and its score is recorded in `CONTRIBUTING.md`.
+
+**Supported stack.** Python 3.11 or later, NumPy 2.0, pandas 2.2, SciPy 1.13
+and scikit-learn 1.5 or later, following the scientific-Python support window;
+CI runs 3.11 to 3.13. Every reported number was produced inside these floors.
 
 **Examples.** Two real cohorts, 677 *Streptococcus suis* isolates with 16
 antimicrobials of recorded concentrations and a hierBAPS population cluster for

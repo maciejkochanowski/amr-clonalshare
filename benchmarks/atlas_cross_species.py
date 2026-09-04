@@ -38,9 +38,9 @@ import pandas as pd
 from amr_clonalshare.attribution import clonal_share
 from amr_clonalshare.realised import realised_share
 
+from agent_screen import reconcile, screen_agent
+
 MIN_ISOLATES = 60
-MIN_DRUG_N = 50
-MIN_MINOR = 0.02          # an agent needs both classes present to have variance
 FOLDS = 5
 REPEATS = 10
 N_BOOT = 300
@@ -91,17 +91,12 @@ def run_species(raw: Path, organism: str) -> dict:
            "n_drugs_available": len(agents), "agents": {}}
     for agent in agents:
         y = np.array([r.get(agent, np.nan) for r in rows], dtype=float)
-        ok = np.isfinite(y)
-        if ok.sum() < MIN_DRUG_N:
+        screen = screen_agent(y, lineage)
+        if not screen.analyse:
+            out["agents"][agent] = screen.record
             continue
-        yy = y[ok]
-        ll = [lineage[i] for i in np.where(ok)[0]]
-        prevalence = float(yy.mean())
-        if prevalence < MIN_MINOR or prevalence > 1 - MIN_MINOR:
-            out["agents"][agent] = {"n": int(ok.sum()),
-                                    "prevalence": prevalence,
-                                    "skipped": "no variance"}
-            continue
+        yy, ll = screen.y, list(screen.lineage)
+        prevalence = screen.record["prevalence"]
         # The labels of the analysed subset are permuted, not those of the
         # whole cohort: permuting globally and then subsetting draws labels
         # from a larger pool, so the lineage size distribution would differ
@@ -120,7 +115,7 @@ def run_species(raw: Path, organism: str) -> dict:
         # kappa_adj is the bias-corrected estimate and the one reported;
         # kappa is the raw skill, biased low by the cross-validation penalty.
         out["agents"][agent] = {
-            "n": int(ok.sum()), "prevalence": prevalence,
+            "n": screen.record["n"], "prevalence": prevalence,
             "kappa": real["kappa_adj"], "kappa_raw": real["kappa"],
             "null_mean": real["null_mean"],
             "ci_low": real["ci_low"], "ci_high": real["ci_high"],
@@ -140,9 +135,10 @@ def run_species(raw: Path, organism: str) -> dict:
                     conditional.residual_excess_kurtosis,
                 "estimable": conditional.estimable,
                 "reason": conditional.reason}}
-        print(f"  {agent:<30} n={ok.sum():>6} p={prevalence:.3f} "
+        print(f"  {agent:<30} n={screen.record['n']:>6} p={prevalence:.3f} "
               f"kappa={real['kappa_adj']:+.3f} "
               f"permuted={null['kappa_adj']:+.3f}", flush=True)
+    reconcile(len(agents), out["agents"])
     return out
 
 
@@ -163,6 +159,10 @@ def build_table(results: list[dict]) -> list[dict]:
             row["realised_ci_low"] = conditional.get("ci_low")
             row["realised_ci_high"] = conditional.get("ci_high")
             row["realised_estimable"] = conditional.get("estimable")
+            # The estimator states why it refused. Dropping that on the way
+            # into the table left a bare false, which reads as a failure
+            # rather than as the gate the calibration put there on purpose.
+            row["realised_reason"] = conditional.get("reason")
             row["superpopulation_ci_low"] = conditional.get(
                 "superpopulation_low")
             row["superpopulation_ci_high"] = conditional.get(
@@ -303,7 +303,7 @@ def main() -> int:
         print(f"=== {organism}", flush=True)
         try:
             record = run_species(args.raw, organism)
-        except Exception as exc:                      # noqa: BLE001
+        except Exception as exc:
             record = {"organism": organism,
                       "error": f"{type(exc).__name__}: {exc}"}
             print(f"  failed: {record['error']}", flush=True)

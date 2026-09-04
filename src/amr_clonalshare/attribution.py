@@ -44,8 +44,9 @@ difference between two collections.
 """
 from __future__ import annotations
 
+import hashlib
+import typing
 from dataclasses import dataclass
-from typing import Sequence
 
 import numpy as np
 
@@ -266,22 +267,6 @@ def _missing_share(labels) -> float:
                           for v in arr]))
 
 
-def _cross(designs: Sequence[np.ndarray]) -> np.ndarray:
-    """Codes for the crossing of several code vectors.
-
-    Retained for callers that want the saturated model. It is **not** what the
-    commonality decomposition uses: crossing 299 sequence types with 2 clusters
-    asks for 598 cells on 1031 isolates, and out of sample that predicts worse
-    than either factor alone, which then appears in the arithmetic as shared
-    variance and drove one Shapley share negative. See :func:`_skill_additive`.
-    """
-    key = np.zeros(len(designs[0]), dtype=np.int64)
-    for g in designs:
-        key = key * (int(g.max()) + 1) + g
-    _, out = np.unique(key, return_inverse=True)
-    return out.astype(np.int64)
-
-
 def _group_means(X, code, G):
     counts = np.bincount(code, minlength=G).astype(float)
     sums = np.empty((G, X.shape[1]))
@@ -424,7 +409,19 @@ def _skill_additive(X, code_a, code_b, fold, n_iter: int = 4) -> float:
 def _repeated_skill(X, code, *, folds, repeats, rng):
     n = np.asarray(code).shape[0]
     vals = np.array([_skill(X, code, _folds(n, folds, rng)) for _ in range(repeats)])
-    return float(np.nanmean(vals)), float(np.nanstd(vals))
+    return float(np.nanmean(vals)), float(np.nanstd(vals)), vals
+
+
+def _jumped(rng: np.random.Generator):
+    """A bit generator far ahead of ``rng`` on the same stream, taken without
+    advancing ``rng``. Bit generators without a jump are given a fresh one
+    seeded from their state, which is equally deterministic."""
+    jump = getattr(rng.bit_generator, "jumped", None)
+    if jump is not None:
+        return jump()
+    else:
+        digest = hashlib.sha256(repr(rng.bit_generator.state).encode()).digest()
+        return np.random.PCG64(int.from_bytes(digest[:8], "little"))
 
 
 def _phipson_smyth(exceed: int, n_perm: int) -> float:
@@ -450,7 +447,7 @@ def _group_index(code: np.ndarray):
 def _cluster_resample_fast(order: np.ndarray, bounds: np.ndarray,
                            rng: np.random.Generator):
     """Draw lineages with replacement from a prepared index. See
-    :func:`_cluster_resample` for why lineages are taken whole."""
+    :func:`_cluster_resample_fast` for why lineages are taken whole."""
     G = len(bounds) - 1
     picks = rng.integers(0, G, G)
     rows, new = [], []
@@ -461,38 +458,6 @@ def _cluster_resample_fast(order: np.ndarray, bounds: np.ndarray,
             new.append(np.full(idx.size, j, dtype=np.int64))
     if not rows:
         return np.empty(0, dtype=np.int64), np.empty(0, dtype=np.int64)
-    return np.concatenate(rows), np.concatenate(new)
-
-
-def _cluster_resample(code: np.ndarray, rng: np.random.Generator):
-    """Two-stage bootstrap: draw lineages with replacement, then take their
-    isolates.
-
-    The isolate bootstrap is wrong here and undercovers badly. A variance share
-    across lineages is uncertain mainly because a cohort contains few lineages,
-    not because it contains few isolates: resampling isolates leaves every
-    lineage present at close to its original size and so holds fixed the very
-    thing the estimate depends on. A lineage drawn twice becomes two distinct
-    groups, which is the standard convention and correctly reduces the
-    effective information rather than duplicating it.
-
-    Lineages are taken **whole**. Resampling isolates within a drawn lineage as
-    well puts duplicate rows into the cohort, and a duplicated row that lands in
-    a training fold and in the held-out fold leaks its own value into its own
-    prediction. On a cohort with many small lineages that leak is not small: it
-    lifted every bootstrap replicate above the point estimate, so the interval
-    sat entirely above the quantity it was supposed to cover.
-
-    Returns ``(row_index, new_codes)``.
-    """
-    groups = np.unique(code)
-    members = [np.flatnonzero(code == g) for g in groups]
-    picks = rng.integers(0, len(groups), len(groups))
-    rows, new = [], []
-    for j, gi in enumerate(picks):
-        idx = members[gi]
-        rows.append(idx)
-        new.append(np.full(idx.size, j, dtype=np.int64))
     return np.concatenate(rows), np.concatenate(new)
 
 
@@ -512,7 +477,7 @@ def _debias(kappa: float, null_mean: float) -> float:
 # ------------------------------------------------------------- public: agent
 def layer_clonal_share(X, lineage, *, folds: int = 5, repeats: int = 20,
                        n_boot: int = 400, n_perm: int = 200,
-                       seed=None) -> ShareResult:
+                       seed=None, null_repeats: int = 5) -> ShareResult:
     """Out-of-sample share of a trait block's variance explained by lineage.
 
     Parameters
@@ -525,6 +490,15 @@ def layer_clonal_share(X, lineage, *, folds: int = 5, repeats: int = 20,
         draws so the estimate does not depend on one partition of the cohort.
     n_boot : percentile bootstrap replicates over isolates.
     n_perm : permutations of the lineage label for the null and the p-value.
+    null_repeats : fold draws averaged on each side of the permutation test.
+        The reported estimate is a mean over ``repeats`` fold draws; a
+        permuted statistic computed from one draw carries fold noise that
+        the estimate has averaged away, and a p-value that compares the two
+        is conservative. The test therefore compares the mean of the first
+        ``null_repeats`` observed draws with the mean of ``null_repeats``
+        draws under each permutation, the same function of the labels on
+        both sides, which is exact under exchangeability at any value. More
+        draws buy power at a cost of ``n_perm`` skill evaluations each.
 
     Returns
     -------
@@ -576,6 +550,22 @@ def layer_clonal_share(X, lineage, *, folds: int = 5, repeats: int = 20,
     sizes = np.bincount(code)
     support = float((sizes[code] >= 2).mean())
 
+    if sizes.size < 2:
+        # One lineage group leaves no contrast between groups, so the share is
+        # not defined on this cohort. Without this the run returns kappa 0, a
+        # zero-width interval and p = 1, which reads as "lineage explains
+        # nothing" when in fact nothing was compared -- the same false reading
+        # the trait-variance guard below exists to prevent. A public release
+        # that assigns a whole species to one cluster produces exactly this.
+        nan = float("nan")
+        return ShareResult(kappa=nan, kappa_adj=nan, ci_low=nan, ci_high=nan,
+                           null_mean=nan, p_value=nan, n=n,
+                           n_groups=int(sizes.size),
+                           prevalence=float(X.mean()), support=support,
+                           missing_share=_missing_share(lineage),
+                           estimable=False, cv_sd=nan,
+                           n_dropped_non_finite=n_dropped_non_finite)
+
     if float(np.ptp(X, axis=0).max()) <= 0:
         # A trait present in every isolate, or in none, has no variance to
         # attribute. Returning NaN says so; returning 0 would read as "not
@@ -589,13 +579,22 @@ def layer_clonal_share(X, lineage, *, folds: int = 5, repeats: int = 20,
                            estimable=False, cv_sd=nan,
                            n_dropped_non_finite=n_dropped_non_finite)
 
-    kappa, cv_sd = _repeated_skill(X, code, folds=folds, repeats=repeats, rng=rng)
+    kappa, cv_sd, draws = _repeated_skill(X, code, folds=folds, repeats=repeats,
+                                          rng=rng)
 
-    null = np.array([_skill(X, rng.permutation(code), _folds(n, folds, rng))
-                     for _ in range(n_perm)], dtype=float)
-    exceed = int((null >= kappa).sum())
+    perms = [rng.permutation(code) for _ in range(n_perm)]
+    null = np.array([_skill(X, perm, _folds(n, folds, rng)) for perm in perms],
+                    dtype=float)
+    # The penalty is read from the first fold draw of each permutation, so the
+    # debiased estimate and the interval below do not depend on how many
+    # draws the p-value averages over.
     c_null = float(np.nanmean(null))
     kappa_adj = _debias(kappa, c_null)
+    # A second stream for the extra permuted draws, jumped far ahead of the
+    # main one and taken here, before the bootstrap, so that it depends on
+    # the isolate positions alone and not on which lineages the bootstrap
+    # happens to pick.
+    more = np.random.Generator(_jumped(rng))
 
     boot = []
     order, bounds = _group_index(code)
@@ -605,9 +604,22 @@ def layer_clonal_share(X, lineage, *, folds: int = 5, repeats: int = 20,
             continue
         boot.append(_debias(
             _skill(X[idx], newcode, _folds(len(idx), folds, rng)), c_null))
-    boot = np.asarray([b for b in boot if np.isfinite(b)], dtype=float)
-    lo, hi = (float(np.percentile(boot, 2.5)), float(np.percentile(boot, 97.5))) \
-        if boot.size >= 20 else (float("nan"), float("nan"))
+    draws_b = np.asarray([b for b in boot if np.isfinite(b)], dtype=float)
+    lo, hi = (float(np.percentile(draws_b, 2.5)), float(np.percentile(draws_b, 97.5))) \
+        if draws_b.size >= 20 else (float("nan"), float("nan"))
+
+    # Extra fold draws for the permuted statistics come last and from their
+    # own stream, so that every quantity above is the same number whatever
+    # ``null_repeats`` is. The observed side of the comparison is the mean
+    # of as many draws as the permuted side.
+    extra = max(1, min(int(null_repeats), repeats))
+    if extra > 1 and n_perm:
+        null = np.array([
+            np.nanmean([null[i]] + [_skill(X, perm, _folds(n, folds, more))
+                                    for _ in range(extra - 1)])
+            for i, perm in enumerate(perms)], dtype=float)
+    observed = float(np.nanmean(draws[:extra]))
+    exceed = int((null >= observed).sum())
 
     return ShareResult(
         kappa=kappa, kappa_adj=kappa_adj, ci_low=lo, ci_high=hi,
@@ -738,7 +750,7 @@ def attribute_partition(X, labels, lineage, *, folds: int = 5, repeats: int = 20
     whole, so a lineage drawn twice puts the same isolates into the cohort
     twice, and refitting inside such a replicate would train a cluster on rows
     that also sit in the held-out fold. That is the leak
-    :func:`_cluster_resample` already refuses to create within a lineage.
+    :func:`_cluster_resample_fast` already refuses to create within a lineage.
     ``lam_cv_sd`` is reported in its place; it is a Monte Carlo spread and not
     an interval, but the gate has always been decided by the point estimate, so
     nothing that carries a threshold is lost.
@@ -793,7 +805,7 @@ def attribute_partition(X, labels, lineage, *, folds: int = 5, repeats: int = 20
             "lam_assignment_control":
                 float(np.nanmean([r["lam"] for r in ctrl])),
         }
-    agg = {k: float(np.nanmean([r[k] for r in reps]))
+    agg: dict[str, typing.Any] = {k: float(np.nanmean([r[k] for r in reps]))
            for k in reps[0] if k != "lam_clipped"}
     agg["lam_clipped"] = bool(np.mean([r["lam_clipped"] for r in reps]) > 0.5)
     agg.pop("r2_joint_fitted", None)
@@ -811,9 +823,9 @@ def attribute_partition(X, labels, lineage, *, folds: int = 5, repeats: int = 20
                              _folds(len(idx), folds, rng), pen)
         if np.isfinite(r["lam"]):
             boot.append(r["lam"])
-    boot = np.asarray(boot, dtype=float)
-    lo, hi = (float(np.percentile(boot, 2.5)), float(np.percentile(boot, 97.5))) \
-        if boot.size >= 20 else (float("nan"), float("nan"))
+    draws_b = np.asarray(boot, dtype=float)
+    lo, hi = (float(np.percentile(draws_b, 2.5)), float(np.percentile(draws_b, 97.5))) \
+        if draws_b.size >= 20 else (float("nan"), float("nan"))
 
     return AttributionResult(ci_low=lo, ci_high=hi, n=n,
                              missing_share=_missing_share(lineage), **agg)

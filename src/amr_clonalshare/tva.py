@@ -82,7 +82,7 @@ at small ``n`` by construction.
 from __future__ import annotations
 
 import math
-from typing import Dict, List, Mapping, Optional, Sequence, Tuple
+from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
@@ -180,14 +180,14 @@ _MERGERS = {
 }
 
 
-def _merge(pvals: Sequence[float], how: str) -> float:
+def _merge(pvals: "Sequence[float] | np.ndarray", how: str) -> float:
     try:
         fn = _MERGERS[how]
     except KeyError:
         raise ValueError(
             f"unknown merge rule {how!r}; choose from {sorted(_MERGERS)}"
         ) from None
-    return fn(pvals)
+    return fn(list(pvals))
 
 
 # --------------------------------------------------------------------------- #
@@ -265,7 +265,7 @@ def estimate_dispersion_per_feature(X: np.ndarray, *, method: str = "mom",
 # 3. Thinnability screening (condition of validity)
 # --------------------------------------------------------------------------- #
 def screen_thinnable(X: pd.DataFrame, *, min_distinct: int = 3,
-                     rank_tol: float = 1e-9) -> Dict[str, object]:
+                     rank_tol: float = 1e-9) -> Dict[str, Any]:
     """Decide which count columns may be NB-thinned, and say why not otherwise.
 
     A column is retained only if all of the following hold:
@@ -293,7 +293,7 @@ def screen_thinnable(X: pd.DataFrame, *, min_distinct: int = 3,
     distinct = np.array([np.unique(A[:, j]).size for j in range(p)])
 
     keep_idx: List[int] = []
-    dropped: List[Dict[str, object]] = []
+    dropped: List[Dict[str, Any]] = []
     basis = np.zeros((n, 0))
 
     for j, name in enumerate(X.columns):
@@ -399,7 +399,7 @@ def split_informativeness(r, eps: float = 0.5) -> float:
 # 5. Tests on a single thinned pair
 # --------------------------------------------------------------------------- #
 def _labels_from_X1(X1: np.ndarray, k: int, seed: int, n_init: int
-                    ) -> Optional[np.ndarray]:
+                    ) -> Optional[tuple]:
     if X1.shape[0] < 2 * k or X1.shape[1] < 1:
         return None
     try:
@@ -481,7 +481,7 @@ def _per_feature_pvalues(X1: np.ndarray, X2: np.ndarray, k: int, seed: int,
         except ValueError:
             pv[j] = 1.0
         means1 = {c: float(X1[labels == c, j].mean()) for c in uniq}
-        top[j] = max(means1, key=means1.get)
+        top[j] = max(means1, key=lambda c: means1[c])
     return pv, top
 
 
@@ -548,7 +548,7 @@ def tva_test_separation(X: np.ndarray, *, r=None, k: int = 2, eps: float = 0.5,
                         rng: Optional[np.random.Generator] = None,
                         n_splits: int = 9, n_init: int = 10,
                         dispersion: str = "mom",
-                        merge: str = "exchangeable_ruger") -> Dict[str, object]:
+                        merge: str = "exchangeable_ruger") -> Dict[str, Any]:
     """Multi-split thinning test of "there is real k-group structure".
 
     Returns a dict with the merged p-value plus the per-split p-values, so the
@@ -651,7 +651,7 @@ def tva_defining_features(X: pd.DataFrame, *, r=None, k: int = 2,
         X1, X2 = nb_thin(Xi, r=r_arr, eps=eps, rng=rng)
         P[m], T[m] = _per_feature_pvalues(X1, X2, k=k, seed=m, n_init=n_init)
 
-    merged = np.array([_merge(P[:, j], merge) for j in range(p)], dtype=float)
+    merged = np.asarray([_merge(P[:, j], merge) for j in range(p)], dtype=float)
     adj, reject = benjamini_hochberg(merged, q=q_fdr)
     # modal top cluster across splits (from X1 only)
     top = np.array([np.bincount(T[:, j][T[:, j] >= 0]).argmax()
@@ -676,7 +676,7 @@ def tva_report(counts: pd.DataFrame, *, k: int, rng: np.random.Generator,
                q_fdr: float = 0.05, dispersion: str = "mom",
                merge: str = "exchangeable_ruger",
                min_distinct: int = 3, min_columns: int = 3,
-               r=None, r_source: str | None = None) -> Dict[str, object]:
+               r=None, r_source: str | None = None) -> Dict[str, Any]:
     """Screen, thin, test and assemble the full TVA block.
 
     This is the entry point ``core.run`` uses. It never silently proceeds on
@@ -709,7 +709,7 @@ def tva_report(counts: pd.DataFrame, *, k: int, rng: np.random.Generator,
         parameter_source = r_source
 
     screening = screen_thinnable(counts, min_distinct=min_distinct)
-    base: Dict[str, object] = {
+    base: Dict[str, Any] = {
         "method": "multi-split NB data thinning (Neufeld et al. 2024 JMLR 25(57); "
                   "merged by Gasparin, Wang & Ramdas 2025 PNAS 122:e2410849122)",
         "screening": screening,

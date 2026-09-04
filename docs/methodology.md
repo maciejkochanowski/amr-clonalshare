@@ -411,7 +411,8 @@ subset while the collection rises by 9.5. The gate fires and names the reason.
 
 An antimicrobial panel is a family of tests whose members are not independent.
 `decompose_panel` controls the false discovery rate within each component
-family by Benjamini-Hochberg, separately for composition and for the
+family by the Benjamini-Yekutieli step-up, which is valid whatever the
+dependence between agents, separately for composition and for the
 within-lineage rate because they answer different questions and are not
 exchangeable, and reports the effective number of independent agents as the
 participation ratio of the panel correlation eigenspectrum. On the shipped

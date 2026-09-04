@@ -3,9 +3,9 @@
 Two questions, answered separately.
 
 **Provenance.** ``fusion.snf_fuse`` re-applies the row normalisation after every
-diffusion step. An earlier release of this package documented that as a
-deviation from "the reference implementation". That was wrong, and the error is
-worth stating precisely because it changes the default: there are *two*
+diffusion step. Calling that a deviation from "the reference implementation"
+would be wrong, and the point is worth stating precisely because it decides
+the default: there are *two*
 reference lineages, and they disagree with each other.
 
 * Wang's MATLAB code, ``SNFtool`` <= 2.2 (CRAN, 2014) and ``snfpy`` (a port of
@@ -48,17 +48,17 @@ from sklearn.metrics import adjusted_rand_score
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / "src"))
 
-from amr_clonalshare.core import spectral_from_similarity  # noqa: E402
-from amr_clonalshare.fusion import (  # noqa: E402
+from amr_clonalshare.core import spectral_from_similarity
+from amr_clonalshare.fusion import (
     _cross_diffuse,
     _rowstochastic,
     default_K,
     snf_fuse,
     snf_kernel,
 )
-from amr_clonalshare.influence import layer_influence  # noqa: E402
-from amr_clonalshare.stats import binary_distance_matrix  # noqa: E402
-from amr_clonalshare.synthetic import (  # noqa: E402
+from amr_clonalshare.influence import layer_influence
+from amr_clonalshare.stats import binary_distance_matrix
+from amr_clonalshare.synthetic import (
     synth_cluster_archetypes,
     synth_lineage_cohort,
 )
@@ -149,7 +149,7 @@ def _fuse_fn(update, K):
 
 def _profile(mats, names, labels_true, k, update, K):
     """Fuse under one update rule and score the partition it produces."""
-    kern = lambda X: _kernel(X, K)          # noqa: E731
+    kern = lambda X: _kernel(X, K)        
     fuse = _fuse_fn(update, K)
     Ws = [kern(X) for X in mats]
     labels = spectral_from_similarity(fuse(Ws), k)

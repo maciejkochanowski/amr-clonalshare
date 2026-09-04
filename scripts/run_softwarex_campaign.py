@@ -12,7 +12,6 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
-import os
 import platform
 import shutil
 import subprocess

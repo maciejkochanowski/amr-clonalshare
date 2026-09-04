@@ -15,7 +15,7 @@ isolates, together with isolate metadata:
 
 `amr.csv`, `vir.csv`, `kloc.csv` and `otype.csv` are derived from the same
 underlying Kleborate output; `kloc.csv` and `otype.csv` were produced by
-splitting the single capsule matrix of earlier releases into its two
+splitting the single capsule matrix into its two
 categorical variables, because K locus and O antigen vary quasi-independently
 and a one-hot block of both at once has no usable set-overlap structure (see
 `docs/methodology.md`, "One-hot layers").
@@ -155,9 +155,8 @@ anything other than an illustration of the software:
 2. **Kleborate and database versions.** The Kleborate release and the versions
    of its AMR/virulence/capsule databases determine the column set and the
    calls. They are not recorded.
-3. **Subsetting procedure.** An earlier release of this repository shipped
-   metadata for 8254 isolates alongside layers for 1500, with no script
-   connecting them. `subset.py` in this directory reproduces the 1500-isolate
+3. **Subsetting procedure.** The upstream cohort carries metadata for 8254
+   isolates while the layers here cover 1500, and no script connects them. `subset.py` in this directory reproduces the 1500-isolate
    selection *from a supplied full cohort*, but the selection actually used to
    produce the committed files was not recorded and `subset.py` is therefore a
    specification of intent, not a replay of history.

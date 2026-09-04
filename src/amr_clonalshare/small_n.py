@@ -40,7 +40,7 @@ being silent.
 from __future__ import annotations
 
 import math
-from typing import Callable, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 
 import numpy as np
 import pandas as pd
@@ -111,13 +111,13 @@ def gap_statistic(
                 continue
         if not null_log:
             continue
-        null_log = np.asarray(null_log)
+        ref = np.asarray(null_log)
         results.append({
             "k": int(k),
             "log_Wk_obs": log_Wk_obs,
-            "E_log_Wk_null": float(null_log.mean()),
-            "Gap": float(null_log.mean() - log_Wk_obs),
-            "s_k": float(null_log.std() * math.sqrt(1 + 1 / len(null_log))),
+            "E_log_Wk_null": float(ref.mean()),
+            "Gap": float(ref.mean() - log_Wk_obs),
+            "s_k": float(ref.std() * math.sqrt(1 + 1 / len(ref))),
         })
     df = pd.DataFrame(results)
     k_star = None
@@ -136,7 +136,7 @@ def gap_statistic_k(
     B: int = 30,
     seed: int = 42,
     include_k1: bool = True,
-) -> Dict[str, object]:
+) -> Dict[str, Any]:
     """Select k by the gap statistic and the 1-standard-error rule.
 
     Returns ``{"k_star", "k_range", "table", "rule_fired", "method"}``. When the

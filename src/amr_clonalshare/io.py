@@ -18,7 +18,7 @@ from __future__ import annotations
 import warnings
 from dataclasses import dataclass, field
 import re
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional
 
 import pandas as pd
 
@@ -64,7 +64,7 @@ def date_coerced_values(series: "pd.Series") -> Dict[str, int]:
     return hits
 
 
-def metadata_quality(metadata: "pd.DataFrame") -> Dict[str, object]:
+def metadata_quality(metadata: "pd.DataFrame") -> Dict[str, Any]:
     """Data-quality notes on the metadata, emitted with the run."""
     if metadata is None or not len(metadata.columns):
         return {}
@@ -73,7 +73,7 @@ def metadata_quality(metadata: "pd.DataFrame") -> Dict[str, object]:
         found = date_coerced_values(metadata[column])
         if found:
             coerced[str(column)] = found
-    notes: Dict[str, object] = {}
+    notes: Dict[str, Any] = {}
     if coerced:
         notes["date_coerced_values"] = coerced
         notes["date_coerced_note"] = (
@@ -88,7 +88,7 @@ def metadata_quality(metadata: "pd.DataFrame") -> Dict[str, object]:
 class Dataset:
     """Loaded, aligned binary layers for one cohort. Role keys come from the config."""
     cfg: Config
-    frames: Dict[str, object] = field(default_factory=dict)  # role -> DataFrame
+    frames: Dict[str, Any] = field(default_factory=dict)  # role -> DataFrame
     strain_ids: Optional[pd.Index] = None
     metadata: Optional[pd.DataFrame] = None
     #: Long-format minimum inhibitory concentrations, one row per (isolate,
@@ -98,11 +98,11 @@ class Dataset:
     #: Share of the aligned strains carrying at least one MIC row, and the
     #: identifiers that did not join. Both are emitted with the run: a join
     #: that quietly matched half the cohort is the failure mode this reports.
-    mic_join: Optional[Dict[str, object]] = None
+    mic_join: Optional[Dict[str, Any]] = None
     #: The input-check record from :func:`amr_clonalshare.qc.input_qc`:
     #: missing cells and the policy applied, per-trait adequacy, the metadata
     #: join, and per-lineage group sizes with the estimator's verdict.
-    input_qc: Optional[Dict[str, object]] = None
+    input_qc: Optional[Dict[str, Any]] = None
 
     def get(self, role: str):
         if role not in self.frames:
@@ -151,7 +151,7 @@ def load_dataset(cfg: Config) -> Dataset:
     Non-binary file kinds are skipped (they belong to other tools).
     """
     strain_col = cfg.dataset.strain_id_column
-    frames: Dict[str, object] = {}
+    frames: Dict[str, Any] = {}
     indices: List[pd.Index] = []
 
     for role, spec in cfg.files.items():
@@ -221,9 +221,9 @@ def load_dataset(cfg: Config) -> Dataset:
         if spec.kind == "one_hot" and role in frames:
             rs = frames[role].sum(axis=1)
             if not ((rs >= 0) & (rs <= 1)).all():
-                bad = int((rs > 1).sum())
+                n_bad = int((rs > 1).sum())
                 raise ConfigError(
-                    f"layer {role!r} is declared kind='one_hot' but {bad} rows "
+                    f"layer {role!r} is declared kind='one_hot' but {n_bad} rows "
                     f"have more than one positive column; split it into one "
                     f"layer per categorical variable")
 
@@ -259,15 +259,15 @@ def load_dataset(cfg: Config) -> Dataset:
                  input_qc=input_qc(frames, missing, metadata=metadata,
                                    lineage_column=cfg.dataset.lineage_column))
 
-    # Fail-loud pandera validation (G.0 Warstwa 1): every loaded wide_binary
+    # Fail-loud pandera validation: every loaded wide_binary
     # layer must be strictly 0/1 with a unique strain index. Disable via
     # cfg.validation.schema_check=False when running on partially-cleaned data.
     if getattr(cfg.validation, "schema_check", True):
         try:
             from .schemas import validate_dataset as _validate_dataset
         except ImportError:  # pragma: no cover - pandera not installed
-            _validate_dataset = None
-        if _validate_dataset is not None:
+            pass
+        else:
             _validate_dataset(ds)
 
     return ds
@@ -302,7 +302,7 @@ def _load_mic(cfg: Config, path, strain_ids: "pd.Index"):
     joined = df.loc[keep].copy()
     matched = sorted(set(joined[idc].astype(str)))
     unmatched = [s for s in wanted if s not in set(matched)]
-    report = {
+    report: Dict[str, Any] = {
         "path": str(path),
         "rows_read": int(len(df)),
         "rows_joined": int(len(joined)),

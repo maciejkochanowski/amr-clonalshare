@@ -46,7 +46,7 @@ makes a macrolide block behave as one trait.
 from __future__ import annotations
 
 from dataclasses import dataclass, asdict
-from typing import Dict, Iterable, List, Sequence
+from typing import Any, Dict, Iterable, List, Sequence
 
 import numpy as np
 
@@ -88,7 +88,7 @@ class EResult:
     prevalence: float
     n_splits: int
 
-    def as_dict(self) -> Dict[str, object]:
+    def as_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
 
@@ -203,7 +203,7 @@ def combine_within_cohort(values: Iterable[float]) -> float:
     return float(v.mean())
 
 
-def e_bh(evalues: Sequence[float], alpha: float = 0.05) -> Dict[str, object]:
+def e_bh(evalues: Sequence[float], alpha: float = 0.05) -> Dict[str, Any]:
     """The e-BH procedure of Wang and Ramdas (2022).
 
     Sort the e-values in decreasing order and reject the largest ``k`` for

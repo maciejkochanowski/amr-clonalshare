@@ -1,0 +1,30 @@
+{
+  "campaign": "block_threshold_crn_2026-09-04",
+  "registration": "benchmarks/prereg_block_threshold_crn.json",
+  "registration_sha256": "a20728bef92f9ae44b87a0ff9070168b0d4b08d47747b044610d08bdbb94df6c",
+  "generator": "benchmarks/block_threshold_crn.py",
+  "generator_sha256_as_run": "283bde82f59c9490d2a268df5d1e6116f6a5886b9423d6d99fe1c380248b2d3c",
+  "generator_sha256_shipped": "283bde82f59c9490d2a268df5d1e6116f6a5886b9423d6d99fe1c380248b2d3c",
+  "calibration_study_sha256_as_run": "b4ddeddfb97c33837263eadc667f6cca62248bfa8dc96714044009ae263d4721",
+  "payload_sha256": "946357918b7218b37068b6f42e0b28af5113eb8d13e4c8d9715e3b0c037160e5",
+  "where": "Helios, ACC Cyfronet AGH; login01.helios.cyfronet.pl; Red Hat Enterprise Linux 8.10; AMD EPYC 9654",
+  "scheduler": {
+    "job": "21915250",
+    "array": "0-99, 1000 replicates per task, 16 processes per task",
+    "submitted": "2026-09-04T08:08:02",
+    "first_start": "2026-09-04T08:09:06",
+    "last_end": "2026-09-04T08:11:26",
+    "states": "200 COMPLETED (100 batch, 100 step)",
+    "account": "plgsoa27eupahw-cpu",
+    "partition": "plgrid"
+  },
+  "environment": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.0"
+  },
+  "parts": "100 part files on the cluster scratch, digests in parts_SHA256SUMS; the aggregate is the shipped record",
+  "aggregate_sha256": "a10e3f508ac2b48658119ef5253a18081b5ab3a209511e5d68ce9585bbb2ad58",
+  "smoke_test_before_registration": "six replicates locally and two on the cluster, to check that the script runs; their outputs were discarded"
+}
