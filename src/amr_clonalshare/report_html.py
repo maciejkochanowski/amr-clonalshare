@@ -301,14 +301,30 @@ def _table(caption, headers, rows) -> str:
     return "".join(out) + "</tbody></table>"
 
 
+def _inner(w) -> str:
+    """One value inside a gate-ledger entry, with nulls named rather than shown."""
+    if w is None:
+        return "not computed"
+    if isinstance(w, bool):
+        return "yes" if w else "no"
+    if isinstance(w, float):
+        return _num(w)
+    if isinstance(w, (list, tuple)):
+        if not w:
+            return "none"
+        if all(x is None for x in w):
+            return "not computed"
+        return "[%s]" % ", ".join(_inner(x) for x in w)
+    return str(w)
+
+
 def _pretty(v) -> str:
     if isinstance(v, bool):
         return "yes" if v else "no"
     if isinstance(v, float):
         return _num(v)
     if isinstance(v, dict):
-        bits = ["%s %s" % (k.replace("_", " "),
-                           _num(w) if isinstance(w, float) else w)
+        bits = ["%s %s" % (k.replace("_", " "), _inner(w))
                 for k, w in list(v.items())[:2]]
         s = "; ".join(bits)
         if len(v) > 2:
@@ -388,8 +404,11 @@ def render_html_report(record: dict, summary: dict) -> str:
     for k, v in (
         ("Quantity measured", "share of resistance-profile variation "
                               "attributable to lineage"),
-        ("Cohort", "%s isolates, %s lineage groups"
-                   % (record.get("n_isolates"), conc.get("n_groups"))),
+        ("Cohort", "%s isolates, %s lineage labels"
+                   % (record.get("n_isolates"), conc.get("n_lineages"))
+                   if conc.get("n_lineages") is not None else
+                   "%s isolates, no lineage labels supplied"
+                   % record.get("n_isolates")),
         ("Binary layers", ", ".join(record.get("layers") or [])),
         ("Distance", "%s (undefined pairs: %s)"
                      % (dist.get("metric"), dist.get("undefined_pair"))),
@@ -404,16 +423,26 @@ def render_html_report(record: dict, summary: dict) -> str:
 
     # 2 -------------------------------------------------------------------
     add('<h2><span class="no">2</span>Admissibility of the input</h2>')
-    support = conc.get("support")
+    shares = [v for v in (md.get("clonal_share") or {}).values()
+              if _finite(v.get("support"))]
+    support = min((v["support"] for v in shares), default=None)
+    groups_used = max((v.get("n_groups") for v in shares
+                       if isinstance(v.get("n_groups"), int)), default=None)
     add(_table("<b>Table 1.</b> Conditions the estimator requires before any "
                "result is reported.",
                [("Condition", "lab"), ("Observed", "num"),
                 ("Required", "num"), ("Verdict", "lab")],
-               [("Lineage support", _pct(support), "&#8805; 90.0&#8201;%",
-                 "accepted" if isinstance(support, (int, float)) and support >= 0.9
-                 else "refused"),
-                ("Singleton lineages", str(conc.get("n_singleton_groups", 0)),
-                 "reported", "accepted"),
+               [("Lineage support",
+                 _pct(support) if support is not None else "not recorded",
+                 "&#8805; 90.0&#8201;%",
+                 "accepted" if _finite(support) and support >= 0.9
+                 else "refused" if support is not None else "not evaluated"),
+                ("Lineage groups used",
+                 "%s of %s" % (groups_used, conc.get("n_lineages"))
+                 if groups_used is not None
+                 and conc.get("n_lineages") is not None else "not recorded",
+                 "reported",
+                 "accepted" if groups_used is not None else "not evaluated"),
                 ("Effective layers",
                  _num(summary.get("fusion_n_eff_layers"), 1), "&gt; 1.5",
                  "refused" if summary.get("fusion_collapse") else "accepted"),
@@ -451,8 +480,7 @@ def render_html_report(record: dict, summary: dict) -> str:
                 ("Permutation null for that gain",
                  _num(ks.get("mdl_p_value")) if _finite(
                      ks.get("mdl_p_value")) else "not run",
-                 _esc((record.get("mdl_calibration") or {}).get("note", ""))
-                 [:120]),
+                 _esc((record.get("mdl_calibration") or {}).get("note", ""))),
                 ("Held-out reproducibility",
                  _esc(summary.get("p_value_structure_report")),
                  "groups recur on features not used to form them"),
@@ -636,14 +664,17 @@ def render_html_report(record: dict, summary: dict) -> str:
         "size and %s are concentrated in a few lineages; %s depart from "
         "proportional carriage far enough to matter for a prevalence reading. "
         "The widest gap between the per-isolate and the per-lineage "
-        "prevalence is %s, on <code>%s</code>. Where the two differ, a small "
+        "prevalence is %s. Where the two differ, a small "
         "number of large lineages carry most of the resistance, and a change "
         "in prevalence may be a change in which lineages were sampled rather "
         "than a change in rate.</p>"
         % (cd.get("proportional", 0), cd.get("concentrated", 0),
            sv.get("n_features_departing_from_proportional_carriage", 0),
-           _num(sv.get("lineage_prevalence_widest_gap")),
-           _esc(sv.get("lineage_prevalence_widest_gap_feature"))))
+           ("%s, on <code>%s</code>"
+            % (_num(sv.get("lineage_prevalence_widest_gap")),
+               _esc(sv.get("lineage_prevalence_widest_gap_feature")))
+            if sv.get("lineage_prevalence_widest_gap_feature")
+            else "not reported: no trait departs far enough to rank")))
 
     # 10 ------------------------------------------------------------------
     add('<h2><span class="no">10</span>What may be concluded, and what may '
