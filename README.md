@@ -81,10 +81,11 @@ interpretation gates, not refusals by the continuum test.
 
 ## Install
 
-From an unpacked source candidate:
+From PyPI, or from an unpacked source tree:
 
 ```bash
-python -m pip install .                     # core
+python -m pip install amr-clonalshare       # released version from PyPI
+python -m pip install .                     # core, from source
 python -m pip install ".[phylo]"            # + the phylogenetic convergence test
 python -m pip install -e ".[dev]"           # editable source + test suite
 ```
