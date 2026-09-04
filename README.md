@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22306354.svg)](https://doi.org/10.5281/zenodo.22306354)
 
 **Release status:** public product version `1.0.0`.
 
