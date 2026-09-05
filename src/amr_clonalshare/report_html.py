@@ -456,13 +456,22 @@ def render_html_report(record: dict, summary: dict) -> str:
     add('<h2><span class="no">3</span>Are there resistance-profile groups?'
         "</h2>")
     ks = record.get("k_selection") or {}
-    add("<p>The selection procedure returned <b>%s</b> profile groups. Tested "
-        "on features held out of the clustering, the grouping reproduces at "
-        "%s. The structure is separated by gaps rather than shading "
-        "continuously from one type into the next (%s).</p>"
-        % (record.get("selected_k"),
-           _esc(summary.get("p_value_structure_report")),
-           _esc(summary.get("discreteness_verdict"))))
+    held_out = summary.get("p_value_structure_report")
+    verdict = summary.get("discreteness_verdict")
+    if held_out is None:
+        add("<p>The selection procedure returned <b>%s</b> profile group. No "
+            "structure was detected, so the held-out reproduction test and "
+            "the reading of gaps against a gradient were not run: with one "
+            "group there is nothing for them to separate.</p>"
+            % record.get("selected_k"))
+    else:
+        add("<p>The selection procedure returned <b>%s</b> profile groups. "
+            "Tested on features held out of the clustering, the grouping "
+            "reproduces at %s.%s</p>"
+            % (record.get("selected_k"), _esc(held_out),
+               (" The structure is separated by gaps rather than shading "
+                "continuously from one type into the next (%s)."
+                % _esc(verdict)) if verdict else ""))
     fig = _fig_mdl(ks.get("mdl_sweep") or [], record.get("selected_k"))
     if fig:
         add("<figure>%s<figcaption><b>Figure 1.</b> Description length saved "
@@ -610,26 +619,33 @@ def render_html_report(record: dict, summary: dict) -> str:
                  "how far one feature can move the grouping"),
                 ("Label recovery from half the features",
                  _num(lr.get("internal_label_recoverability")),
-                 _esc(lr.get("note", ""))[:110])]))
+                 _esc(lr.get("note", "")))]))
 
     # 8 -------------------------------------------------------------------
     add('<h2><span class="no">8</span>How much of the pattern is the clone?'
         "</h2>")
-    add("<p>Across the whole panel, knowing an isolate&#8217;s lineage "
-        "predicts <b>%s</b> of the variation for an isolate the model has not "
-        "seen. The profile groups themselves are explained by lineage to a "
-        "share of <b>%s</b>: a value near one would mean the groups are the "
-        "lineages under another name, a value near zero that they cut across "
-        "lineages.</p>"
-        % (_num(summary.get("clonal_share_all_features")),
-           _num(summary.get("lineage_attributable_share"))))
-    add("<p>Read the intervals as frequencies. If cohorts like this one were "
-        "drawn again and again, the interval printed for a trait would cover "
-        "that trait&#8217;s true share on about 95 draws in 100. For <b>%d of "
-        "the %d traits</b> shown the interval includes zero, so no lineage "
-        "effect is distinguishable from none for that trait; over the whole "
-        "panel this holds for <b>%d of %d</b>.</p>"
-        % (n_cross, len(shown), n_cross_all, len(rows)))
+    panel = summary.get("clonal_share_all_features")
+    groups_by_lineage = summary.get("lineage_attributable_share")
+    if _finite(panel) or _finite(groups_by_lineage):
+        add("<p>Across the whole panel, knowing an isolate&#8217;s lineage "
+            "predicts <b>%s</b> of the variation for an isolate the model has "
+            "not seen. The profile groups themselves are explained by lineage "
+            "to a share of <b>%s</b>: a value near one would mean the groups "
+            "are the lineages under another name, a value near zero that they "
+            "cut across lineages.</p>"
+            % (_num(panel), _num(groups_by_lineage)))
+    else:
+        add("<p>No share is reported here. This run was given no lineage "
+            "column, so there is no lineage membership to attribute variation "
+            "to; the sections above describe the grouping alone.</p>")
+    if rows:
+        add("<p>Read the intervals as frequencies. If cohorts like this one "
+            "were drawn again and again, the interval printed for a trait "
+            "would cover that trait&#8217;s true share on about 95 draws in "
+            "100. For <b>%d of the %d traits</b> shown the interval includes "
+            "zero, so no lineage effect is distinguishable from none for that "
+            "trait; over the whole panel this holds for <b>%d of %d</b>.</p>"
+            % (n_cross, len(shown), n_cross_all, len(rows)))
     fig = _fig_intervals(shown)
     if fig:
         add("<figure>%s<figcaption><b>Figure 3.</b> Clonal share by trait, "
@@ -659,22 +675,40 @@ def render_html_report(record: dict, summary: dict) -> str:
     add('<h2><span class="no">9</span>Composition or rate: the surveillance '
         "reading</h2>")
     sv = summary.get("surveillance") or {}
-    cd = sv.get("carriage_direction_counts") or {}
-    add("<p>Of the traits examined, %s are carried in proportion to lineage "
-        "size and %s are concentrated in a few lineages; %s depart from "
-        "proportional carriage far enough to matter for a prevalence reading. "
-        "The widest gap between the per-isolate and the per-lineage "
-        "prevalence is %s. Where the two differ, a small "
-        "number of large lineages carry most of the resistance, and a change "
-        "in prevalence may be a change in which lineages were sampled rather "
-        "than a change in rate.</p>"
-        % (cd.get("proportional", 0), cd.get("concentrated", 0),
-           sv.get("n_features_departing_from_proportional_carriage", 0),
-           ("%s, on <code>%s</code>"
-            % (_num(sv.get("lineage_prevalence_widest_gap")),
-               _esc(sv.get("lineage_prevalence_widest_gap_feature")))
-            if sv.get("lineage_prevalence_widest_gap_feature")
-            else "not reported: no trait departs far enough to rank")))
+    dep = sv.get("departing_carriage_direction_counts") or {}
+    n_read = sv.get("n_features_with_carriage_reading") or sum(
+        (sv.get("carriage_direction_counts") or {}).values())
+    n_dep = sv.get("n_features_departing_from_proportional_carriage") or 0
+    if not n_read:
+        add("<p>No trait has a carriage reading on this run, so nothing is "
+            "said here about whether a prevalence change would be a change in "
+            "rate or a change in which lineages were sampled.</p>")
+    else:
+        parts = [t for t in (
+            "%d in fewer lineages than chance gives" % dep["concentrated"]
+            if dep.get("concentrated") else "",
+            "%d in more" % dep["dispersed"] if dep.get("dispersed") else "",
+            "%d in as many carrying lineages as chance gives but not in the "
+            "same shares across them" % dep["proportional"]
+            if dep.get("proportional") else "") if t]
+        shape = (" and ".join([", ".join(parts[:-1]), parts[-1]])
+                 if len(parts) > 1 else
+                 parts[0] if parts else "the record does not break them down")
+        add("<p>Of the <b>%d</b> traits with a carriage reading, <b>%d</b> "
+            "depart from carriage in proportion to lineage size far enough to "
+            "matter for a prevalence reading: %s.%s The widest gap between "
+            "the per-isolate and the per-lineage prevalence is %s. Where the "
+            "two differ, a small number of large lineages carry most of the "
+            "resistance, and a change in prevalence may be a change in which "
+            "lineages were sampled rather than a change in rate.</p>"
+            % (n_read, n_dep, shape,
+               (" The remaining %d are consistent with proportional carriage."
+                % (n_read - n_dep)) if n_read > n_dep else "",
+               ("%s, on <code>%s</code>"
+                % (_num(sv.get("lineage_prevalence_widest_gap")),
+                   _esc(sv.get("lineage_prevalence_widest_gap_feature")))
+                if sv.get("lineage_prevalence_widest_gap_feature")
+                else "not reported: no trait departs far enough to rank")))
 
     # 10 ------------------------------------------------------------------
     add('<h2><span class="no">10</span>What may be concluded, and what may '

@@ -93,8 +93,18 @@ def _surveillance_summary(meta: dict) -> dict:
         for r in ok:
             counts[r["direction"]] = counts.get(r["direction"], 0) + 1
         out["carriage_direction_counts"] = counts
-        out["n_features_departing_from_proportional_carriage"] = sum(
-            1 for r in ok if (r.get("p_value") or 1.0) < 0.05)
+        out["n_features_with_carriage_reading"] = len(ok)
+        # `direction` compares the effective number of carrying lineages with
+        # the null band; the p-value tests the size of the departure in bits.
+        # They are different criteria and can disagree on the same trait, so
+        # the direction is reported for the traits the p-value selects rather
+        # than beside a count taken over all of them.
+        departing = [r for r in ok if (r.get("p_value") or 1.0) < 0.05]
+        out["n_features_departing_from_proportional_carriage"] = len(departing)
+        dep_counts: Dict[str, int] = {}
+        for r in departing:
+            dep_counts[r["direction"]] = dep_counts.get(r["direction"], 0) + 1
+        out["departing_carriage_direction_counts"] = dep_counts
 
     dec = meta.get("prevalence_decomposition") or {}
     per = dec.get("per_feature") or {}
