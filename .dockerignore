@@ -1,0 +1,16 @@
+.git
+.github
+.venv*
+**/__pycache__
+*.egg-info
+build
+dist
+release
+out_*
+audit_*
+review
+_TRANSFER
+paper
+benchmarks
+tests
+*.xml

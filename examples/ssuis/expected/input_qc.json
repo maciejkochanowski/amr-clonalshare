@@ -1,0 +1,195 @@
+{
+  "n_isolates": 677,
+  "n_antimicrobials": 13,
+  "traits": {
+    "amoxicillin": {
+      "n": 677,
+      "prevalence": 0.05465288035450517,
+      "minor_count": 37,
+      "constant": false,
+      "adequate": true
+    },
+    "cefquinome": {
+      "n": 677,
+      "prevalence": 0.03840472673559823,
+      "minor_count": 26,
+      "constant": false,
+      "adequate": true
+    },
+    "ceftiofur": {
+      "n": 677,
+      "prevalence": 0.24076809453471196,
+      "minor_count": 163,
+      "constant": false,
+      "adequate": true
+    },
+    "doxycycline": {
+      "n": 677,
+      "prevalence": 0.843426883308715,
+      "minor_count": 106,
+      "constant": false,
+      "adequate": true
+    },
+    "erythromycin": {
+      "n": 677,
+      "prevalence": 0.5406203840472673,
+      "minor_count": 311,
+      "constant": false,
+      "adequate": true
+    },
+    "lincomycin": {
+      "n": 677,
+      "prevalence": 0.6262924667651403,
+      "minor_count": 253,
+      "constant": false,
+      "adequate": true
+    },
+    "penicillin": {
+      "n": 677,
+      "prevalence": 0.23042836041358936,
+      "minor_count": 156,
+      "constant": false,
+      "adequate": true
+    },
+    "spectinomycin": {
+      "n": 677,
+      "prevalence": 0.11521418020679468,
+      "minor_count": 78,
+      "constant": false,
+      "adequate": true
+    },
+    "tetracycline": {
+      "n": 677,
+      "prevalence": 0.8478581979320532,
+      "minor_count": 103,
+      "constant": false,
+      "adequate": true
+    },
+    "tiamulin": {
+      "n": 677,
+      "prevalence": 0.1935007385524372,
+      "minor_count": 131,
+      "constant": false,
+      "adequate": true
+    },
+    "tilmicosin": {
+      "n": 677,
+      "prevalence": 0.5376661742983752,
+      "minor_count": 313,
+      "constant": false,
+      "adequate": true
+    },
+    "trimethoprim": {
+      "n": 677,
+      "prevalence": 0.28064992614475626,
+      "minor_count": 190,
+      "constant": false,
+      "adequate": true
+    },
+    "tylosin": {
+      "n": 677,
+      "prevalence": 0.5406203840472673,
+      "minor_count": 311,
+      "constant": false,
+      "adequate": true
+    }
+  },
+  "min_minor_count": 20,
+  "min_group_size": 2,
+  "mic_join": {
+    "path": "mic_panel.csv",
+    "rows_read": 10832,
+    "rows_joined": 10832,
+    "strains_with_mic": 677,
+    "strains_aligned": 677,
+    "join_rate": 1.0,
+    "unmatched_examples": [],
+    "antimicrobials": [
+      "amoxicillin",
+      "cefquinome",
+      "ceftiofur",
+      "doxycycline",
+      "enrofloxacin",
+      "erythromycin",
+      "florfenicol",
+      "lincomycin",
+      "marbofloxacin",
+      "penicillin",
+      "spectinomycin",
+      "tetracycline",
+      "tiamulin",
+      "tilmicosin",
+      "trimethoprim",
+      "tylosin"
+    ],
+    "n_unparseable_values": 0,
+    "unparseable_values_by_agent": {},
+    "operator_read_from_value": false
+  },
+  "metadata_join": {
+    "n_joined": 677,
+    "share_joined": 1.0,
+    "unjoined_examples": [],
+    "rows_read": 677,
+    "n_duplicate_ids": 0,
+    "strains_joined": 677,
+    "strains_aligned": 677
+  },
+  "lineage": {
+    "column": "baps_cluster",
+    "n": 677,
+    "n_typed": 677,
+    "n_untyped": 0,
+    "n_groups": 30,
+    "n_singletons": 3,
+    "n_informative_groups": 27,
+    "support": 0.9955686853766618,
+    "support_threshold": 0.9,
+    "estimable": true,
+    "effective_group_size": 21.064432333316358,
+    "group_sizes": {
+      "BAPS1": 42,
+      "BAPS10": 40,
+      "BAPS11": 17,
+      "BAPS12": 13,
+      "BAPS13": 22,
+      "BAPS14": 8,
+      "BAPS16": 10,
+      "BAPS18": 6,
+      "BAPS19": 4,
+      "BAPS2": 5,
+      "BAPS20": 5,
+      "BAPS21": 50,
+      "BAPS22": 7,
+      "BAPS24": 11,
+      "BAPS25": 31,
+      "BAPS26": 36,
+      "BAPS27": 11,
+      "BAPS28": 20,
+      "BAPS29": 3,
+      "BAPS3": 1,
+      "BAPS30": 2,
+      "BAPS31": 3,
+      "BAPS32": 1,
+      "BAPS33": 4,
+      "BAPS34": 2,
+      "BAPS4": 161,
+      "BAPS5": 44,
+      "BAPS7": 1,
+      "BAPS8": 57,
+      "BAPS9": 60
+    },
+    "smallest_groups": {
+      "BAPS32": 1,
+      "BAPS7": 1,
+      "BAPS3": 1,
+      "BAPS30": 2,
+      "BAPS34": 2,
+      "BAPS29": 3,
+      "BAPS31": 3,
+      "BAPS19": 4,
+      "BAPS33": 4,
+      "BAPS2": 5
+    }
+  }
+}

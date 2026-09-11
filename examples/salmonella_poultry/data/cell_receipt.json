@@ -1,0 +1,13 @@
+{
+ "release": "PDG000000002.4210",
+ "n_isolates": 7049,
+ "n_serovars": 85,
+ "n_clusters": 534,
+ "years": [
+  2002,
+  2021
+ ],
+ "n_calls": 101235,
+ "n_antimicrobials": 22,
+ "cell": "host poultry, matrix animal_food, serovar and collection date present, SNP cluster assigned"
+}

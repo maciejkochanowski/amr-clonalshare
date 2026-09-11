@@ -1,0 +1,283 @@
+{
+  "n_isolates": 7049,
+  "n_antimicrobials": 22,
+  "traits": {
+    "amikacin": {
+      "n": 2401,
+      "prevalence": 0.00041649312786339027,
+      "minor_count": 1,
+      "constant": false,
+      "adequate": false
+    },
+    "amoxicillin-clavulanic acid": {
+      "n": 6917,
+      "prevalence": 0.1681364753505855,
+      "minor_count": 1163,
+      "constant": false,
+      "adequate": true
+    },
+    "ampicillin": {
+      "n": 7049,
+      "prevalence": 0.2644346715846219,
+      "minor_count": 1864,
+      "constant": false,
+      "adequate": true
+    },
+    "azithromycin": {
+      "n": 4779,
+      "prevalence": 0.005021971123666039,
+      "minor_count": 24,
+      "constant": false,
+      "adequate": true
+    },
+    "cefoxitin": {
+      "n": 6917,
+      "prevalence": 0.09382680352754084,
+      "minor_count": 649,
+      "constant": false,
+      "adequate": true
+    },
+    "ceftazidime": {
+      "n": 132,
+      "prevalence": 0.2803030303030303,
+      "minor_count": 37,
+      "constant": false,
+      "adequate": true
+    },
+    "ceftiofur": {
+      "n": 3616,
+      "prevalence": 0.14629424778761063,
+      "minor_count": 529,
+      "constant": false,
+      "adequate": true
+    },
+    "ceftriaxone": {
+      "n": 6917,
+      "prevalence": 0.1296804973254301,
+      "minor_count": 897,
+      "constant": false,
+      "adequate": true
+    },
+    "chloramphenicol": {
+      "n": 7049,
+      "prevalence": 0.06029224003404738,
+      "minor_count": 425,
+      "constant": false,
+      "adequate": true
+    },
+    "ciprofloxacin": {
+      "n": 6935,
+      "prevalence": 0.0873828406633021,
+      "minor_count": 606,
+      "constant": false,
+      "adequate": true
+    },
+    "colistin": {
+      "n": 525,
+      "prevalence": 1.0,
+      "minor_count": 0,
+      "constant": true,
+      "adequate": false
+    },
+    "gentamicin": {
+      "n": 7047,
+      "prevalence": 0.14303959131545338,
+      "minor_count": 1008,
+      "constant": false,
+      "adequate": true
+    },
+    "imipenem": {
+      "n": 132,
+      "prevalence": 0.0,
+      "minor_count": 0,
+      "constant": true,
+      "adequate": false
+    },
+    "kanamycin": {
+      "n": 3206,
+      "prevalence": 0.1331877729257642,
+      "minor_count": 427,
+      "constant": false,
+      "adequate": true
+    },
+    "meropenem": {
+      "n": 3300,
+      "prevalence": 0.0,
+      "minor_count": 0,
+      "constant": true,
+      "adequate": false
+    },
+    "nalidixic acid": {
+      "n": 6915,
+      "prevalence": 0.08445408532176428,
+      "minor_count": 584,
+      "constant": false,
+      "adequate": true
+    },
+    "spectinomycin": {
+      "n": 1,
+      "prevalence": 0.0,
+      "minor_count": 0,
+      "constant": true,
+      "adequate": false
+    },
+    "streptomycin": {
+      "n": 6520,
+      "prevalence": 0.40782208588957053,
+      "minor_count": 2659,
+      "constant": false,
+      "adequate": true
+    },
+    "sulfamethoxazole": {
+      "n": 253,
+      "prevalence": 0.2134387351778656,
+      "minor_count": 54,
+      "constant": false,
+      "adequate": true
+    },
+    "sulfisoxazole": {
+      "n": 6662,
+      "prevalence": 0.2892524767337136,
+      "minor_count": 1927,
+      "constant": false,
+      "adequate": true
+    },
+    "tetracycline": {
+      "n": 7047,
+      "prevalence": 0.5263232581240244,
+      "minor_count": 3338,
+      "constant": false,
+      "adequate": true
+    },
+    "trimethoprim-sulfamethoxazole": {
+      "n": 6915,
+      "prevalence": 0.030079537237888646,
+      "minor_count": 208,
+      "constant": false,
+      "adequate": true
+    }
+  },
+  "min_minor_count": 20,
+  "min_group_size": 2,
+  "metadata_join": {
+    "n_joined": 7049,
+    "share_joined": 1.0,
+    "unjoined_examples": [],
+    "rows_read": 7049,
+    "n_duplicate_ids": 0,
+    "strains_joined": 7049,
+    "strains_aligned": 7049
+  },
+  "lineage": {
+    "column": "serovar",
+    "n": 7049,
+    "n_typed": 7049,
+    "n_untyped": 0,
+    "n_groups": 85,
+    "n_singletons": 20,
+    "n_informative_groups": 65,
+    "support": 0.9971627181160448,
+    "support_threshold": 0.9,
+    "estimable": true,
+    "effective_group_size": 76.82103168973647,
+    "group_sizes": {
+      "-:r:1,5": 18,
+      "13,23:g,z51:-": 2,
+      "18:z4,z23:-": 69,
+      "3,10:e,h:-": 2,
+      "4,12:d:-": 32,
+      "4,12:i:-": 34,
+      "4,12:nonmotile": 3,
+      "4,12:r:-": 5,
+      "4,5,12:i:-": 2,
+      "4,[5],12:i:-": 108,
+      "4,[5],12:r:-": 15,
+      "44:z4,z23:-": 1,
+      "48:z4,z24:-": 1,
+      "4:i:-": 19,
+      "6,7:-1,5": 1,
+      "6,7:k:-": 3,
+      "8,(20):-:z6": 1,
+      "9,46:nonmotile": 1,
+      "9:-:-": 1,
+      "9:z29:-": 1,
+      "Agona": 122,
+      "Alachua": 36,
+      "Albany": 45,
+      "Albert": 1,
+      "Anatum": 59,
+      "Bareilly": 2,
+      "Berta": 72,
+      "Blockley": 12,
+      "Braenderup": 72,
+      "Brandenburg": 32,
+      "Bredeney": 14,
+      "Corvallis": 3,
+      "Derby": 23,
+      "Dublin": 2,
+      "Enteritidis": 617,
+      "Fresno": 1,
+      "Gaminara": 5,
+      "Haardt": 1,
+      "Hadar": 452,
+      "Heidelberg": 692,
+      "Hillingdon": 1,
+      "Holcomb": 2,
+      "Houten": 1,
+      "Idikan": 1,
+      "Indiana": 7,
+      "Infantis": 598,
+      "Javiana": 3,
+      "Johannesburg": 7,
+      "Kentucky": 1400,
+      "Kiambu": 6,
+      "Litchfield": 22,
+      "Liverpool": 4,
+      "Livingstone": 5,
+      "London": 9,
+      "Manhattan": 1,
+      "Mbandaka": 48,
+      "Meleagridis": 1,
+      "Minnesota": 6,
+      "Montevideo": 76,
+      "Muenchen": 87,
+      "Muenster": 3,
+      "Newport": 41,
+      "Norwich": 4,
+      "Ohio": 7,
+      "Oranienburg": 5,
+      "Orion": 4,
+      "Panama": 4,
+      "Reading": 408,
+      "Rissen": 5,
+      "Ruiru": 3,
+      "SI Rough:r:1,5": 1,
+      "Saintpaul": 396,
+      "Schwarzengrund": 230,
+      "Senftenberg": 127,
+      "Sinstorf": 1,
+      "Tallahassee": 1,
+      "Tennessee": 3,
+      "Thompson": 44,
+      "Typhimurium": 371,
+      "Typhimurium var. 5-": 463,
+      "Uganda": 41,
+      "Westhampton": 1,
+      "Widemarsh": 1,
+      "Worthington": 11,
+      "[1],13,23:g,z51:-": 7
+    },
+    "smallest_groups": {
+      "48:z4,z24:-": 1,
+      "6,7:-1,5": 1,
+      "44:z4,z23:-": 1,
+      "Albert": 1,
+      "9:z29:-": 1,
+      "9:-:-": 1,
+      "9,46:nonmotile": 1,
+      "8,(20):-:z6": 1,
+      "Hillingdon": 1,
+      "Meleagridis": 1
+    }
+  }
+}

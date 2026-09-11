@@ -1,0 +1,60 @@
+{
+  "title": "amr-clonalshare: measuring how much of antimicrobial resistance travels with the clone",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "license": "MIT",
+  "description": "<p>Python package and command-line tool that estimates the share of variance in an antimicrobial resistance phenotype carried by the lineages of a bacterial collection, from a lineage label and a susceptibility call or a recorded dilution, and refuses the estimate where the collection cannot support one. One collection admits three quantities and the package reports them apart: the lineage-membership share, what a rule scored out of sample reaches, with a lineage bootstrap; the design-corrected component ratio of the same collection, with an interval exact under the Gaussian one-way model by inversion of a noncentral F; and the superpopulation share for the species, with a chi-square layer on the number of lineages. Each is scored against its own truth on 135 simulated cells from five lineages to a thousand, and each sits behind a gate that refuses where the collection cannot identify the quantity or the residuals contradict the law the interval assumes, the coverage of each having been measured. A binary share is restated on the latent scale of the threshold model beside the observed scale. The lineage label may be a sequence type, a core-genome or SNP cluster, or a serovar, so the same estimate can be read at two typing resolutions.</p><p>For a difference in non-wild-type prevalence between two collections it applies the Kitagawa decomposition to split the difference into a lineage-composition component and a within-lineage rate component, with a shared-support gate calibrated against measured interval coverage, a test for lineage labels that are differentially and informatively missing, and Benjamini-Yekutieli control within each component family of the antimicrobial panel, valid whatever the dependence between agents.</p><p>Ships a <em>Streptococcus suis</em> case study (677 isolates, 650 porcine and 27 human, with full data provenance) read at population-cluster and at sequence-type resolution, together with a 720,000-decomposition calibration study and a head-to-head comparison against lineage-adjusted logistic regression. The package reads two tables and never a genome.</p><p>A susceptibility panel is read at its recorded resolution: a dichotomised call and a recorded dilution are both intervals on the log2 concentration scale and enter one interval likelihood, so the input mode changes how much an observation carries rather than what is estimated. The interval is exact where every reading is a point and calibrated by simulation where a reading is an interval, and the tested wells are taken from the recorded values unless the panel is supplied. Each share carries an e-value; a run that declares the intake each isolate arrived in also carries the running product over intakes, a test supermartingale that may be read after any intake, with the panel decision taken on the log scale so that evidence too strong for a float is still evidence. False-discovery control across the panel holds under arbitrary dependence.</p><p>The attribution is exercised outside the shipped cohorts on fifty organisms of one NCBI Pathogen Detection release, each taken at the release accession the retrieval recorded: every agent of every cohort that reaches the estimator leaves one record, estimated or refused with the condition that failed, 192 cells are estimated in twelve species and 44 admitted by the support gate in six, and every cell carries a permuted-label control. The <em>Streptococcus suis</em> cohort is read at three definitions of a lineage, population cluster, serotype and sequence type, with the reference label rerun on each other label's own isolates so that the label is separated from the collection.</p><p>A veterinary arm cuts the same source by host species and by sampling matrix and runs every cell at two definitions of a lineage, the Pathogen Detection SNP cluster and the serovar, with the permuted-label control at both. The pair is reported rather than one number, because the share a cohort carries is a function of the resolution at which a lineage is defined, and a laboratory that serotypes holds a different resolution from one that clusters genomes.</p>",
+  "creators": [
+    {
+      "name": "Kochanowski, Maciej",
+      "affiliation": "Department of Bacteriology and Bacterial Diseases, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland",
+      "orcid": "0000-0002-9982-3028"
+    }
+  ],
+  "keywords": [
+    "bioinformatics",
+    "antimicrobial resistance",
+    "veterinary surveillance",
+    "variance component",
+    "population structure",
+    "typing resolution",
+    "intraclass correlation",
+    "prevalence decomposition",
+    "Kitagawa decomposition",
+    "interval-censored MIC",
+    "anytime-valid inference",
+    "Streptococcus suis",
+    "serovar",
+    "NCBI Pathogen Detection",
+    "reproducible research"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.1186/s12915-021-01094-1",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1093/nar/gkac1003",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/maciejkochanowski/amr-clonalshare",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.22307388",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "The Streptococcus suis example data derive from Hadjirin et al. 2021, BMC Biology 19:191, under CC BY 4.0; retrieval, epidemiological cut-off derivation, metadata repairs and the population-cluster join are documented and reproducible in examples/ssuis/DATA_PROVENANCE.md."
+}

@@ -1,0 +1,859 @@
+{
+ "ssuis_per_agent": [
+  {
+   "kappa": -0.02428861450565798,
+   "kappa_adj": 0.03049502860608927,
+   "ci_low": -0.06210793987104529,
+   "ci_high": 0.07051745472184202,
+   "null_mean": -0.056506820210505765,
+   "p_value": 0.04477611940298507,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.843426883308715,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.01224165843784639,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.0,
+   "superpopulation_high": 0.10720760976073507,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.06765354433446191,
+   "latent_low": 0.0,
+   "latent_high": 0.15026199605199508,
+   "latent_species_low": 0.0,
+   "latent_species_high": 0.22081373547553085,
+   "dominant_lineage_share": 0.10060759337873844,
+   "few_lineages": false,
+   "agent": "doxycycline",
+   "layer": "ribosomal",
+   "mechanism": "mobile",
+   "determinant_carriers": {
+    "mobile": 567,
+    "chromosomal": 0
+   },
+   "determinant_set": "tet"
+  },
+  {
+   "kappa": -0.016352180929940573,
+   "kappa_adj": 0.03960724159129618,
+   "ci_low": -0.04743363188590523,
+   "ci_high": 0.07478844474053341,
+   "null_mean": -0.058267226643771416,
+   "p_value": 0.014925373134328358,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.8478581979320532,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.010499226841832195,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.0,
+   "superpopulation_high": 0.11293987485532853,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.08811724642873742,
+   "latent_low": 0.0,
+   "latent_high": 0.16044326502014883,
+   "latent_species_low": 0.0,
+   "latent_species_high": 0.23363598456489854,
+   "dominant_lineage_share": 0.12186039288901127,
+   "few_lineages": false,
+   "agent": "tetracycline",
+   "layer": "ribosomal",
+   "mechanism": "mobile",
+   "determinant_carriers": {
+    "mobile": 567,
+    "chromosomal": 0
+   },
+   "determinant_set": "tet"
+  },
+  {
+   "kappa": 0.12121303509566497,
+   "kappa_adj": 0.16881242362970883,
+   "ci_low": 0.0740269769086286,
+   "ci_high": 0.2784336350157533,
+   "null_mean": -0.057266722803901125,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.5406203840472673,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.011425167364225115,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.08138874521040178,
+   "superpopulation_high": 0.30383751587305596,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.2627416192262899,
+   "latent_low": 0.1163917531084735,
+   "latent_high": 0.4243546765355859,
+   "latent_species_low": 0.12789938089554198,
+   "latent_species_high": 0.46016143550514244,
+   "dominant_lineage_share": 0.18142871780913686,
+   "few_lineages": false,
+   "agent": "erythromycin",
+   "layer": "ribosomal",
+   "mechanism": "mobile",
+   "determinant_carriers": {
+    "mobile": 373,
+    "chromosomal": 0
+   },
+   "determinant_set": "erm"
+  },
+  {
+   "kappa": 0.10917054042839999,
+   "kappa_adj": 0.1559039009999584,
+   "ci_low": 0.0611184307703933,
+   "ci_high": 0.2514497965807803,
+   "null_mean": -0.055364976365749205,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.5406203840472673,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.010694367520596975,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.06728976836395623,
+   "superpopulation_high": 0.28833611319350894,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.2430915854347404,
+   "latent_low": 0.09617409345810302,
+   "latent_high": 0.38557394096278585,
+   "latent_species_low": 0.10584569166530855,
+   "latent_species_high": 0.4383965980086941,
+   "dominant_lineage_share": 0.1867496399842636,
+   "few_lineages": false,
+   "agent": "tylosin",
+   "layer": "ribosomal",
+   "mechanism": "mobile",
+   "determinant_carriers": {
+    "mobile": 373,
+    "chromosomal": 0
+   },
+   "determinant_set": "erm"
+  },
+  {
+   "kappa": 0.10086546246127018,
+   "kappa_adj": 0.14704534315858778,
+   "ci_low": 0.052412398881263554,
+   "ci_high": 0.26636962289445315,
+   "null_mean": -0.05414107341687652,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.5376661742983752,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.009822950960988395,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.05775873826959074,
+   "superpopulation_high": 0.2869321238820238,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.2294598507869523,
+   "latent_low": 0.08247450707131065,
+   "latent_high": 0.4069956070452463,
+   "latent_species_low": 0.09086214160197414,
+   "latent_species_high": 0.43629891649470665,
+   "dominant_lineage_share": 0.1950072232321794,
+   "few_lineages": false,
+   "agent": "tilmicosin",
+   "layer": "ribosomal",
+   "mechanism": "mobile",
+   "determinant_carriers": {
+    "mobile": 373,
+    "chromosomal": 0
+   },
+   "determinant_set": "erm"
+  },
+  {
+   "kappa": 0.18968950380037852,
+   "kappa_adj": 0.23279963164184667,
+   "ci_low": 0.12362756416363546,
+   "ci_high": 0.37614122700991215,
+   "null_mean": -0.05619148480562638,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.6262924667651403,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.008227028135563051,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.13520175083715308,
+   "superpopulation_high": 0.40055098946520246,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.3652707405562978,
+   "latent_low": 0.19850905539351515,
+   "latent_high": 0.5647953389270697,
+   "latent_species_low": 0.21665204569580965,
+   "latent_species_high": 0.5960048779670615,
+   "dominant_lineage_share": 0.1606996047892977,
+   "few_lineages": false,
+   "agent": "lincomycin",
+   "layer": "ribosomal",
+   "mechanism": "mobile",
+   "determinant_carriers": {
+    "mobile": 423,
+    "chromosomal": 0
+   },
+   "determinant_set": "lnu/lin"
+  },
+  {
+   "kappa": 0.3586478368847767,
+   "kappa_adj": 0.3937876139406925,
+   "ci_low": 0.23840627027392475,
+   "ci_high": 0.5250814043737261,
+   "null_mean": -0.0579661152823724,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.1935007385524372,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.01781537550888775,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.2575680006095639,
+   "superpopulation_high": 0.5838708099554424,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.631569658027729,
+   "latent_low": 0.4213092890859116,
+   "latent_high": 0.772846801643027,
+   "latent_species_low": 0.44979233920457773,
+   "latent_species_high": 0.8252741975884419,
+   "dominant_lineage_share": 0.2313821534561977,
+   "few_lineages": false,
+   "agent": "tiamulin",
+   "layer": "ribosomal",
+   "mechanism": "mixed",
+   "determinant_carriers": {
+    "mobile": 43,
+    "chromosomal": 173
+   },
+   "determinant_set": "lsaE/vgaF"
+  },
+  {
+   "kappa": 0.07080141908533795,
+   "kappa_adj": 0.11939106503117203,
+   "ci_low": -0.07820399446017699,
+   "ci_high": 0.3262834914985493,
+   "null_mean": -0.05517732561679502,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.11521418020679468,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.03119329469421312,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.0,
+   "superpopulation_high": 0.3492691456904498,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.26871352558373474,
+   "latent_low": 0.0,
+   "latent_high": 0.5922081480093766,
+   "latent_species_low": 0.0,
+   "latent_species_high": 0.6208564342523459,
+   "dominant_lineage_share": 0.5821254376463129,
+   "few_lineages": false,
+   "agent": "spectinomycin",
+   "layer": "ribosomal",
+   "mechanism": "mobile",
+   "determinant_carriers": {
+    "mobile": 147,
+    "chromosomal": 0
+   },
+   "determinant_set": "ant/aph"
+  },
+  {
+   "kappa": 0.18671960903113197,
+   "kappa_adj": 0.23240569185063545,
+   "ci_low": -0.0544737739618876,
+   "ci_high": 0.4785994020620167,
+   "null_mean": -0.05951852734506405,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.05465288035450517,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.04267404228177294,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.0,
+   "superpopulation_high": 0.5042835887018863,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.5344439372129273,
+   "latent_low": 0.0,
+   "latent_high": 0.8034105036931578,
+   "latent_species_low": 0.0,
+   "latent_species_high": 0.8233502963848878,
+   "dominant_lineage_share": 0.3709513955312643,
+   "few_lineages": false,
+   "agent": "amoxicillin",
+   "layer": "cell_folate",
+   "mechanism": "chromosomal",
+   "determinant_carriers": {
+    "mobile": 0,
+    "chromosomal": 489
+   },
+   "determinant_set": "PBP"
+  },
+  {
+   "kappa": 0.14139974532613717,
+   "kappa_adj": 0.1851786713697687,
+   "ci_low": -0.025586680343072658,
+   "ci_high": 0.4340170961066275,
+   "null_mean": -0.053728252446738,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.03840472673559823,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.027443318687047077,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.0,
+   "superpopulation_high": 0.4594168612463589,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.49528327301959507,
+   "latent_low": 0.0,
+   "latent_high": 0.7858117075811606,
+   "latent_species_low": 0.0,
+   "latent_species_high": 0.8061981096689124,
+   "dominant_lineage_share": 0.6921417732189281,
+   "few_lineages": false,
+   "agent": "cefquinome",
+   "layer": "cell_folate",
+   "mechanism": "chromosomal",
+   "determinant_carriers": {
+    "mobile": 0,
+    "chromosomal": 489
+   },
+   "determinant_set": "PBP"
+  },
+  {
+   "kappa": 0.475597133073304,
+   "kappa_adj": 0.5028849384596656,
+   "ci_low": 0.2410250597797456,
+   "ci_high": 0.6663840126686593,
+   "null_mean": -0.05489233277665973,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.24076809453471196,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.014950460070724104,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.26032532674341163,
+   "superpopulation_high": 0.6888321184853463,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.7383309675205965,
+   "latent_low": 0.4065965244953986,
+   "latent_high": 0.8807255126012024,
+   "latent_species_low": 0.4350920619617682,
+   "latent_species_high": 0.8961021228751633,
+   "dominant_lineage_share": 0.3203814825435292,
+   "few_lineages": false,
+   "agent": "ceftiofur",
+   "layer": "cell_folate",
+   "mechanism": "chromosomal",
+   "determinant_carriers": {
+    "mobile": 0,
+    "chromosomal": 489
+   },
+   "determinant_set": "PBP"
+  },
+  {
+   "kappa": 0.48712620017733793,
+   "kappa_adj": 0.5154856957780529,
+   "ci_low": 0.24757577742021522,
+   "ci_high": 0.7058726259754513,
+   "null_mean": -0.05853180257754367,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.23042836041358936,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.014506964479532246,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.26721591600179573,
+   "superpopulation_high": 0.7267531713949221,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.7536181250179652,
+   "latent_low": 0.4199366554094013,
+   "latent_high": 0.9081418582063634,
+   "latent_species_low": 0.4487332688004244,
+   "latent_species_high": 0.9206460665736813,
+   "dominant_lineage_share": 0.3608683179749852,
+   "few_lineages": false,
+   "agent": "penicillin",
+   "layer": "cell_folate",
+   "mechanism": "chromosomal",
+   "determinant_carriers": {
+    "mobile": 0,
+    "chromosomal": 489
+   },
+   "determinant_set": "PBP"
+  },
+  {
+   "kappa": 0.266361650143109,
+   "kappa_adj": 0.30490310647479674,
+   "ci_low": 0.15766743592789637,
+   "ci_high": 0.39428788095221623,
+   "null_mean": -0.05544760261583623,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.28064992614475626,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.011149198678628095,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.17180373232252108,
+   "superpopulation_high": 0.4912872732411415,
+   "p_floor": 0.004975124378109453,
+   "latent_share": 0.4867106643214356,
+   "latent_low": 0.2663794737600256,
+   "latent_high": 0.6046790594991762,
+   "latent_species_low": 0.28881360121886246,
+   "latent_species_high": 0.7174326574022416,
+   "dominant_lineage_share": 0.18991495271442294,
+   "few_lineages": false,
+   "agent": "trimethoprim",
+   "layer": "cell_folate",
+   "mechanism": "mixed",
+   "determinant_carriers": {
+    "mobile": 18,
+    "chromosomal": 235
+   },
+   "determinant_set": "dfr/DHFR"
+  }
+ ],
+ "ssuis_layers": {
+  "ribosomal": {
+   "kappa": 0.12394735061767115,
+   "kappa_adj": 0.17166182668008842,
+   "ci_low": 0.09208947056590955,
+   "ci_high": 0.2527737701724356,
+   "null_mean": -0.057602652635434584,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.5306499261447563,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.006415242131409169,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.10105147529299395,
+   "superpopulation_high": 0.30028618399319384,
+   "p_floor": 0.004975124378109453,
+   "latent_share": NaN,
+   "latent_low": NaN,
+   "latent_high": NaN,
+   "latent_species_low": NaN,
+   "latent_species_high": NaN,
+   "dominant_lineage_share": NaN,
+   "few_lineages": false
+  },
+  "cell_folate": {
+   "kappa": 0.36931414571835774,
+   "kappa_adj": 0.40273908562229255,
+   "ci_low": 0.22453608029761163,
+   "ci_high": 0.5140764542101866,
+   "null_mean": -0.05596371552081326,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.1689807976366322,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.00615223477660406,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.2429386131375524,
+   "superpopulation_high": 0.5801061922820736,
+   "p_floor": 0.004975124378109453,
+   "latent_share": NaN,
+   "latent_low": NaN,
+   "latent_high": NaN,
+   "latent_species_low": NaN,
+   "latent_species_high": NaN,
+   "dominant_lineage_share": NaN,
+   "few_lineages": false
+  },
+  "all": {
+   "kappa": 0.1982456291581279,
+   "kappa_adj": 0.24155798915533852,
+   "ci_low": 0.12853436613407515,
+   "ci_high": 0.33243890014428706,
+   "null_mean": -0.05710701593253591,
+   "p_value": 0.004975124378109453,
+   "n": 677,
+   "n_groups": 30,
+   "prevalence": 0.39154641518009314,
+   "support": 0.9955686853766618,
+   "missing_share": 0.0,
+   "estimable": true,
+   "cv_sd": 0.005081154885965993,
+   "n_dropped_non_finite": 0,
+   "n_dropped_untyped": 0,
+   "interval_target": "lineage_membership",
+   "superpopulation_low": 0.1404942894513882,
+   "superpopulation_high": 0.3928118745025131,
+   "p_floor": 0.004975124378109453,
+   "latent_share": NaN,
+   "latent_low": NaN,
+   "latent_high": NaN,
+   "latent_species_low": NaN,
+   "latent_species_high": NaN,
+   "dominant_lineage_share": NaN,
+   "few_lineages": false
+  }
+ },
+ "ssuis_ordering": {
+  "n_chromosomal": 4,
+  "n_mixed": 2,
+  "n_mobile": 7,
+  "mean_chromosomal": 0.3589887493645307,
+  "mean_non_mobile": 0.35577428631226865,
+  "mean_mobile": 0.12772209066552273,
+  "pairs_chromosomal_vs_mobile": 28,
+  "pairs_chromosomal_higher": 26,
+  "pairs_non_mobile_vs_mobile": 42,
+  "pairs_non_mobile_higher": 40,
+  "determinant_sets": {
+   "tet": {
+    "agents": [
+     "doxycycline",
+     "tetracycline"
+    ],
+    "mechanism": "mobile",
+    "mean_share": 0.035051135098692725
+   },
+   "erm": {
+    "agents": [
+     "erythromycin",
+     "tylosin",
+     "tilmicosin"
+    ],
+    "mechanism": "mobile",
+    "mean_share": 0.15725388926275166
+   },
+   "lnu/lin": {
+    "agents": [
+     "lincomycin"
+    ],
+    "mechanism": "mobile",
+    "mean_share": 0.23279963164184667
+   },
+   "lsaE/vgaF": {
+    "agents": [
+     "tiamulin"
+    ],
+    "mechanism": "mixed",
+    "mean_share": 0.3937876139406925
+   },
+   "ant/aph": {
+    "agents": [
+     "spectinomycin"
+    ],
+    "mechanism": "mobile",
+    "mean_share": 0.11939106503117203
+   },
+   "PBP": {
+    "agents": [
+     "amoxicillin",
+     "cefquinome",
+     "ceftiofur",
+     "penicillin"
+    ],
+    "mechanism": "chromosomal",
+    "mean_share": 0.3589887493645307
+   },
+   "dfr/DHFR": {
+    "agents": [
+     "trimethoprim"
+    ],
+    "mechanism": "mixed",
+    "mean_share": 0.30490310647479674
+   }
+  },
+  "set_pairs_total": 12,
+  "set_pairs_non_mobile_higher": 12
+ },
+ "ssuis_genotype_check": [
+  {
+   "agent": "erythromycin",
+   "mechanism": "mobile",
+   "determinants": [
+    "G__MLSB_ermB_M_O",
+    "G__MLSB_ermG_M_S",
+    "G__MLSB_ermT_M_S"
+   ],
+   "carriage": 0.5480059084194978,
+   "kappa_genotype": 0.1534507175350737,
+   "kappa_phenotype": 0.16881242362970883,
+   "ci_genotype": [
+    0.06792723968493664,
+    0.25434293992861334
+   ]
+  },
+  {
+   "agent": "tylosin",
+   "mechanism": "mobile",
+   "determinants": [
+    "G__MLSB_ermB_M_O",
+    "G__MLSB_ermG_M_S",
+    "G__MLSB_ermT_M_S"
+   ],
+   "carriage": 0.5480059084194978,
+   "kappa_genotype": 0.1534507175350737,
+   "kappa_phenotype": 0.1559039009999584,
+   "ci_genotype": [
+    0.06792723968493664,
+    0.25434293992861334
+   ]
+  },
+  {
+   "agent": "tilmicosin",
+   "mechanism": "mobile",
+   "determinants": [
+    "G__MLSB_ermB_M_O",
+    "G__MLSB_ermG_M_S",
+    "G__MLSB_ermT_M_S"
+   ],
+   "carriage": 0.5480059084194978,
+   "kappa_genotype": 0.1534507175350737,
+   "kappa_phenotype": 0.14704534315858778,
+   "ci_genotype": [
+    0.06792723968493664,
+    0.25434293992861334
+   ]
+  },
+  {
+   "agent": "lincomycin",
+   "mechanism": "mobile",
+   "determinants": [
+    "G__MLSB_ermB_M_O",
+    "G__MLSB_linB_M_O",
+    "G__MLSB_lnuB__M_O",
+    "G__MLSB_lnuC_M_O"
+   ],
+   "carriage": 0.5745937961595273,
+   "kappa_genotype": 0.14311949744314928,
+   "kappa_phenotype": 0.23279963164184667,
+   "ci_genotype": [
+    0.062144891074059364,
+    0.25432252290173546
+   ]
+  },
+  {
+   "agent": "tetracycline",
+   "mechanism": "mobile",
+   "determinants": [
+    "G__Tetra_tet44_M_S",
+    "G__Tetra_tetM__M_O",
+    "G__Tetra_tetO_M_O",
+    "G__Tetra_tetW__M_O",
+    "G__Tetra_tetL_M_O"
+   ],
+   "carriage": 0.7991137370753324,
+   "kappa_genotype": 0.0504817049451914,
+   "kappa_phenotype": 0.03960724159129618,
+   "ci_genotype": [
+    -0.010257848607665236,
+    0.11737847852994315
+   ]
+  },
+  {
+   "agent": "doxycycline",
+   "mechanism": "mobile",
+   "determinants": [
+    "G__Tetra_tet44_M_S",
+    "G__Tetra_tetM__M_O",
+    "G__Tetra_tetO_M_O",
+    "G__Tetra_tetW__M_O",
+    "G__Tetra_tetL_M_O"
+   ],
+   "carriage": 0.7991137370753324,
+   "kappa_genotype": 0.0504817049451914,
+   "kappa_phenotype": 0.03049502860608927,
+   "ci_genotype": [
+    -0.010257848607665236,
+    0.11737847852994315
+   ]
+  },
+  {
+   "agent": "spectinomycin",
+   "mechanism": "mobile",
+   "determinants": [
+    "G__Amino_ant_4_Ib_M_S",
+    "G__Amino_ant_6_Ia_M_O",
+    "G__Amino_ant_9_Ia_M_O",
+    "G__Amino_aph_3_IIIa_M_S"
+   ],
+   "carriage": 0.15214180206794684,
+   "kappa_genotype": 0.06624180376495444,
+   "kappa_phenotype": 0.11939106503117203,
+   "ci_genotype": [
+    -0.02472117871771217,
+    0.12984667090238805
+   ]
+  },
+  {
+   "agent": "tiamulin",
+   "mechanism": "mixed",
+   "determinants": [
+    "G__Pleuro_lsaE_M_O",
+    "G__Pleuro_vgaF_C_N"
+   ],
+   "carriage": 0.28508124076809455,
+   "kappa_genotype": 0.5675791209419706,
+   "kappa_phenotype": 0.3937876139406925,
+   "ci_genotype": [
+    0.3108507389609362,
+    0.6677599990451153
+   ]
+  },
+  {
+   "agent": "trimethoprim",
+   "mechanism": "mixed",
+   "determinants": [
+    "G__TMP_DHFR_102_V_N",
+    "G__TMP_DHFRPromoter_S_N",
+    "G__TMP_dfrF_M_S",
+    "G__TMP_dfrK_M_S"
+   ],
+   "carriage": 0.36336779911373707,
+   "kappa_genotype": 0.37662202987308413,
+   "kappa_phenotype": 0.30490310647479674,
+   "ci_genotype": [
+    0.19913099801763864,
+    0.4720638462762448
+   ]
+  },
+  {
+   "agent": "penicillin",
+   "mechanism": "chromosomal",
+   "determinants": [
+    "G__Beta_PBP2B.hap_V_N",
+    "G__Beta_PBP2X.hap_V_N",
+    "G__Beta_PBP2X_551_V_N",
+    "G__Beta_MraY.hap_V_N"
+   ],
+   "carriage": 0.310192023633678,
+   "kappa_genotype": 0.7563169889506376,
+   "kappa_phenotype": 0.5154856957780529,
+   "ci_genotype": [
+    0.49529042519466504,
+    0.90710577216567
+   ]
+  },
+  {
+   "agent": "amoxicillin",
+   "mechanism": "chromosomal",
+   "determinants": [
+    "G__Beta_PBP2B.hap_V_N",
+    "G__Beta_PBP2X.hap_V_N",
+    "G__Beta_PBP2X_551_V_N",
+    "G__Beta_MraY.hap_V_N"
+   ],
+   "carriage": 0.310192023633678,
+   "kappa_genotype": 0.7563169889506376,
+   "kappa_phenotype": 0.23240569185063545,
+   "ci_genotype": [
+    0.49529042519466504,
+    0.90710577216567
+   ]
+  },
+  {
+   "agent": "ceftiofur",
+   "mechanism": "chromosomal",
+   "determinants": [
+    "G__Beta_PBP2B.hap_V_N",
+    "G__Beta_PBP2X.hap_V_N",
+    "G__Beta_PBP2X_551_V_N",
+    "G__Beta_MraY.hap_V_N"
+   ],
+   "carriage": 0.310192023633678,
+   "kappa_genotype": 0.7563169889506376,
+   "kappa_phenotype": 0.5028849384596656,
+   "ci_genotype": [
+    0.49529042519466504,
+    0.90710577216567
+   ]
+  },
+  {
+   "agent": "cefquinome",
+   "mechanism": "chromosomal",
+   "determinants": [
+    "G__Beta_PBP2B.hap_V_N",
+    "G__Beta_PBP2X.hap_V_N",
+    "G__Beta_PBP2X_551_V_N",
+    "G__Beta_MraY.hap_V_N"
+   ],
+   "carriage": 0.310192023633678,
+   "kappa_genotype": 0.7563169889506376,
+   "kappa_phenotype": 0.1851786713697687,
+   "ci_genotype": [
+    0.49529042519466504,
+    0.90710577216567
+   ]
+  }
+ ],
+ "ssuis_genotype_agreement": {
+  "n_pairs": 13,
+  "pearson": 0.7595075985301292,
+  "spearman": 0.7940046214576216,
+  "mean_abs_diff": 0.15636416829522393,
+  "mobile_mean_phenotype": 0.12772209066552273,
+  "non_mobile_mean_phenotype": 0.35577428631226865,
+  "mobile_mean_genotype": 0.11009669481481539,
+  "non_mobile_mean_genotype": 0.6615781844362676
+ }
+}

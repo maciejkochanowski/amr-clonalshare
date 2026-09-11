@@ -1,0 +1,119 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amr-clonalshare"
+version = "1.0.0"
+description = "Measures how much of an antimicrobial resistance phenotype travels with the lineages of a bacterial collection: a realised, a lineage-membership and a superpopulation share with measured intervals and gates that refuse where the collection cannot support an estimate, an anytime-valid e-value per agent, a Kitagawa decomposition of a prevalence difference into lineage mix and within-lineage rate, and an interval-censored reading of MIC panels."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "Licence.txt"]
+authors = [{ name = "Maciej Kochanowski", email = "maciej.kochanowski@piwet.pulawy.pl" }]
+keywords = ["bioinformatics", "antimicrobial-resistance", "veterinary-surveillance", "variance-component", "population-structure", "typing-resolution", "intraclass-correlation", "prevalence-decomposition", "kitagawa-decomposition", "interval-censored-mic", "anytime-valid-inference", "streptococcus-suis", "serovar", "ncbi-pathogen-detection", "reproducible-research"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Intended Audience :: Healthcare Industry",
+    "Operating System :: OS Independent",
+]
+
+# Pure core stack, no heavy optional dependencies. The floors follow the
+# scientific-Python support window (SPEC 0): the interpreter and the numerical
+# stack of the last two to three years. Every reported number was produced on
+# a stack inside these floors, recorded in requirements-lock.txt and in the
+# receipts beside the results.
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scipy>=1.13",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "hypothesis>=6.0",
+    # examples/ssuis/link_source_lineages.py scores the lineage join with
+    # adjusted mutual information; the package itself does not import it
+    "scikit-learn>=1.5",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "types-PyYAML>=6.0",
+    # release tooling only; not imported by the package
+    "build>=1.0",
+]
+docs = [
+    "mkdocs-material==9.5.39",
+    "mkdocstrings[python]==1.0.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/maciejkochanowski/amr-clonalshare"
+Documentation = "https://github.com/maciejkochanowski/amr-clonalshare/tree/main/docs"
+Repository = "https://github.com/maciejkochanowski/amr-clonalshare"
+Issues = "https://github.com/maciejkochanowski/amr-clonalshare/issues"
+Changelog = "https://github.com/maciejkochanowski/amr-clonalshare/blob/main/CHANGELOG.md"
+
+[project.scripts]
+amr-clonalshare = "amr_clonalshare.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["amr_clonalshare*"]
+
+[tool.setuptools.package-data]
+amr_clonalshare = ["validation_grid.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: Monte-Carlo calibration and large-cohort runs; deselect with -m 'not slow'",
+]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["dist", "build"]
+
+[tool.ruff.lint]
+# Correctness and dead code only. Formatting is not enforced: the docstrings
+# carry the calibration evidence and are wrapped for reading, not for a
+# formatter. ERA and RUF100 keep commented-out code and stale suppressions out.
+select = ["E9", "E402", "F", "ARG", "ERA", "RUF100"]
+
+[tool.ruff.lint.per-file-ignores]
+# A stub that replaces a real function has to keep that function's signature.
+"tests/*" = ["ARG"]
+# The benchmark drivers pass interchangeable callbacks through one
+# signature and put the package on sys.path before importing it.
+"benchmarks/*" = ["ARG", "E402"]
+
+[tool.mypy]
+# The package is checked as it is annotated. Third-party stubs are not
+# required: the numerical stack is typed loosely and a missing stub is not a
+# defect in this code.
+files = ["src/amr_clonalshare"]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[tool.mutmut]
+# Mutation testing is run by hand on the modules whose arithmetic carries a
+# reported number; it is too slow for every push. `mutmut run` mutates the
+# files below and runs the tests that cover each mutant. The score recorded in
+# CONTRIBUTING.md is the last run.
+source_paths = ["src/amr_clonalshare/stats.py", "src/amr_clonalshare/clonality.py",
+                "src/amr_clonalshare/attribution.py", "src/amr_clonalshare/realised.py"]
+also_copy = ["src/amr_clonalshare/", "benchmarks/"]
+pytest_add_cli_args_test_selection = ["tests/", "-p", "no:cacheprovider", "--no-cov"]

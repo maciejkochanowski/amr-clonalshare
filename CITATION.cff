@@ -1,0 +1,121 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "amr-clonalshare: measuring how much of antimicrobial resistance travels with the clone"
+abstract: >-
+  Estimates the share of variance in an antimicrobial resistance phenotype
+  that the lineages of a bacterial collection carry, from a lineage label and
+  a susceptibility call or a recorded dilution, and refuses the estimate
+  where the collection cannot support one. One collection admits three
+  quantities and the package reports them apart, each with its own interval:
+  the lineage-membership share, what a rule scored out of sample reaches; the
+  design-corrected component ratio of the same collection, with an interval
+  exact under the Gaussian one-way model by inversion of a noncentral F; and a
+  superpopulation share for the species. Each is scored against its own truth
+  on 135 simulated cells from five lineages to a thousand, and each sits
+  behind a gate that refuses where the collection cannot identify the quantity
+  or the residuals contradict the law the interval assumes, with a
+  binary share restated on the latent scale beside the observed scale; the lineage label may
+  be a sequence type, a core-genome or SNP cluster, or a serovar, so the same
+  estimate can be read at two typing resolutions.
+  A second family of outputs decomposes a difference in non-wild-type
+  prevalence between two collections into a lineage-composition and a
+  within-lineage rate component using the Kitagawa identity, with a calibrated
+  estimability gate on shared lineage support, a test for lineage labels that
+  are differentially and informatively missing, and Benjamini-Yekutieli
+  control within each component family, valid whatever the dependence between
+  agents, beside the effective number of independent agents. Prevalence is reported on both the isolate and the lineage scale.
+  A third family of outputs reads a susceptibility panel at its recorded
+  resolution: a dichotomised call and a recorded dilution are both intervals on
+  the log2 concentration scale and enter one interval likelihood, so the input
+  mode changes how much an observation carries rather than what is estimated.
+  Each share also carries an e-value, and a programme of yearly intakes a
+  sequential e-value whose running product is a test supermartingale, with
+  false-discovery control across the panel that holds under arbitrary
+  dependence between antimicrobials. The attribution is exercised outside the shipped cohorts on
+  fifty organisms of one NCBI Pathogen Detection release, each taken at the
+  release accession the retrieval recorded, where 192 agent cells are
+  estimated in twelve species and 44 admitted by the support gate in six, each
+  with a permuted-label control, on the same release cut by host and sampling
+  matrix, with 131 Salmonella cells read at two typing resolutions, and on the
+  Streptococcus suis cohort at three definitions of a lineage. The package reads two tables and never a
+  genome.
+type: software
+authors:
+  - family-names: Kochanowski
+    given-names: Maciej
+    affiliation: "Department of Bacteriology and Bacterial Diseases, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland"
+    email: "maciej.kochanowski@piwet.pulawy.pl"
+    orcid: "https://orcid.org/0000-0002-9982-3028"
+version: "1.0.0"
+doi: 10.5281/zenodo.22306353
+date-released: "2026-09-11"
+license: MIT
+repository-code: "https://github.com/maciejkochanowski/amr-clonalshare"
+url: "https://github.com/maciejkochanowski/amr-clonalshare/tree/main/docs"
+keywords:
+  - bioinformatics
+  - antimicrobial resistance
+  - veterinary surveillance
+  - variance component
+  - population structure
+  - typing resolution
+  - intraclass correlation
+  - prevalence decomposition
+  - Kitagawa decomposition
+  - interval-censored MIC
+  - anytime-valid inference
+  - Streptococcus suis
+  - serovar
+  - NCBI Pathogen Detection
+  - reproducible research
+references:
+  - type: article
+    authors:
+      - family-names: Kitagawa
+        given-names: Evelyn M.
+    title: "Components of a difference between two rates"
+    journal: "Journal of the American Statistical Association"
+    volume: 50
+    year: 1955
+    doi: "10.1080/01621459.1955.10501299"
+  - type: article
+    authors:
+      - family-names: Hadjirin
+        given-names: Nazreen F.
+      - family-names: Miller
+        given-names: Eric L.
+      - family-names: Murray
+        given-names: Gemma G. R.
+      - family-names: Yen
+        given-names: Phung L. K.
+      - family-names: Phuc
+        given-names: Ho D.
+      - family-names: Wileman
+        given-names: Thomas M.
+      - family-names: Hernandez-Garcia
+        given-names: Juan
+      - family-names: Williamson
+        given-names: Susanna M.
+      - family-names: Parkhill
+        given-names: Julian
+      - family-names: Maskell
+        given-names: Duncan J.
+      - family-names: Zhou
+        given-names: Rui
+      - family-names: Fittipaldi
+        given-names: Nahuel
+      - family-names: Gottschalk
+        given-names: Marcelo
+      - family-names: Tucker
+        given-names: A. W. Dan
+      - family-names: Hoa
+        given-names: Ngo T.
+      - family-names: Welch
+        given-names: John J.
+      - family-names: Weinert
+        given-names: Lucy A.
+    title: "Large-scale genomic analysis of antimicrobial resistance in the zoonotic pathogen Streptococcus suis"
+    journal: "BMC Biology"
+    volume: 19
+    year: 2021
+    doi: "10.1186/s12915-021-01094-1"

@@ -1,0 +1,40 @@
+# Streptococcus suis, n = 677 — the same cohort read at sequence-type
+# resolution, with the two countries declared as the collections to contrast.
+#
+#   amr-clonalshare --config examples/ssuis/config_contrast.yaml --results-dir out/ssuis-contrast
+#
+# Two things differ from config.yaml, and both are the point.
+#
+#  * THE LINEAGE IS THE SEQUENCE TYPE, which BV-BRC serves for 458 of the 677
+#    isolates and which is missing informatively: 40 % of the later United
+#    Kingdom period carries one against 97 % of the earlier one, and the
+#    untyped isolates are the more resistant. The support gate reads that
+#    resolution and refuses what it cannot identify; config.yaml reads the
+#    population cluster every isolate carries.
+#
+#  * TWO COLLECTIONS ARE DECLARED, so each agent's non-wild-type prevalence
+#    difference between them is split into a lineage-mix component and a
+#    within-lineage rate component. Country is used here because it needs no
+#    derived column; read `turnover_share` in the output before the
+#    components, because these two collections share few lineages and the
+#    split is correspondingly weak. examples/ssuis/decompose_trend.py runs the
+#    stronger within-United-Kingdom period contrast, which it derives itself.
+
+dataset:
+  name: streptococcus_suis_n677_contrast
+  strain_id_column: genome_id
+  data_dir: data
+  metadata: metadata.csv
+  lineage_column: mlst
+  contrast_column: isolation_country
+  contrast_levels: ["Canada", "United Kingdom"]
+
+  phenotype: calls_long.csv
+  phenotype_id_column: genome_id
+  phenotype_antibiotic_column: antibiotic
+  phenotype_call_column: call
+
+  mic: mic_panel.csv
+  mic_id_column: genome_id
+  mic_antibiotic_column: antibiotic
+  mic_value_column: measurement

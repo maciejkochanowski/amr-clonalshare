@@ -1,0 +1,37 @@
+# Salmonella from poultry meat, one NCBI Pathogen Detection release, read at
+# SNP-cluster resolution: the same isolates as config.yaml with the finer
+# label, so the two runs are the two-resolution reading of Section 3.1.
+#
+#   amr-clonalshare --check-input --config examples/salmonella_poultry/config_cluster.yaml
+#   amr-clonalshare --config examples/salmonella_poultry/config_cluster.yaml --results-dir out/poultry_cluster
+#
+# 7,049 isolates the release places in a SNP cluster, assigned to poultry and
+# to a food matrix by the host and sampling-matrix rules of
+# benchmarks/vet_source_taxonomy.py, with a serovar and a collection date;
+# 22 antimicrobials, every call the release records for them. Built from the
+# pinned release by build_cell.py; DATA_PROVENANCE.md says where each column
+# came from. Many clusters hold one isolate, so the support is lower than at
+# serovar resolution and the gate decides per agent whether the label can
+# carry the estimate.
+
+dataset:
+  name: salmonella_poultry_meat_pdg2_4210_cluster
+  strain_id_column: genome_id
+  data_dir: data
+  metadata: metadata.csv
+  lineage_column: pds_cluster
+
+  # The panel as NCBI serves it: one row per isolate and antimicrobial, with
+  # the S/I/R category written out; I is read as non-susceptible.
+  phenotype: calls_long.csv
+  phenotype_id_column: genome_id
+  phenotype_antibiotic_column: antibiotic
+  phenotype_call_column: call
+
+# The budgets the article's reading of this cell used (supplement S20), so
+# the shipped run reproduces it up to the draw of the random stream.
+attribution:
+  folds: 5
+  repeats: 10
+  n_boot: 300
+  n_perm: 150
