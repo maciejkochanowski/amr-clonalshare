@@ -1,0 +1,110 @@
+{
+  "campaigns": {
+    "null_confirmation": {
+      "job_id": "22487736",
+      "tasks": 584,
+      "states": {
+        "COMPLETED": 584
+      },
+      "cpu_hours": 507.5311111111111,
+      "cpus_per_task": [
+        4
+      ]
+    },
+    "exact_confirmation": {
+      "job_id": "22457734",
+      "tasks": 42,
+      "states": {
+        "COMPLETED": 42
+      },
+      "cpu_hours": 1.005,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "mic_empirical": {
+      "job_id": "22509276",
+      "tasks": 16,
+      "states": {
+        "COMPLETED": 16
+      },
+      "cpu_hours": 87.2,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "extension": {
+      "job_id": "22505356,22506743,22506744,22506745,22506746,22506747,22506748,22506749,22506750,22506751,22506752,22509275,22510228,22510229",
+      "tasks": 252,
+      "states": {
+        "COMPLETED": 249,
+        "TIMEOUT": 3
+      },
+      "cpu_hours": 366.6486111111111,
+      "cpus_per_task": [
+        1,
+        4
+      ]
+    },
+    "empirical_unadjusted": {
+      "job_id": "22509279",
+      "tasks": 16,
+      "states": {
+        "COMPLETED": 16
+      },
+      "cpu_hours": 32.95111111111111,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "empirical_uk": {
+      "job_id": "22509280",
+      "tasks": 16,
+      "states": {
+        "COMPLETED": 16
+      },
+      "cpu_hours": 20.648888888888887,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "empirical_b499": {
+      "job_id": "22509277",
+      "tasks": 3,
+      "states": {
+        "COMPLETED": 3
+      },
+      "cpu_hours": 40.373333333333335,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "empirical_b999": {
+      "job_id": "22509278",
+      "tasks": 3,
+      "states": {
+        "COMPLETED": 3
+      },
+      "cpu_hours": 77.39555555555556,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "country_year": {
+      "job_id": "22513608,22516119",
+      "tasks": 18,
+      "states": {
+        "CANCELLED by 117273": 3,
+        "COMPLETED": 15
+      },
+      "cpu_hours": 47.21611111111111,
+      "cpus_per_task": [
+        1,
+        4
+      ]
+    }
+  },
+  "cpu_hours_total": 1180.9697222222221,
+  "tests_passed": 713,
+  "empirical_cpus_per_task": 16
+}

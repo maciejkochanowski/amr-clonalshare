@@ -1,0 +1,7 @@
+# Actions are pinned to commit digests in the workflows, so a tag that moves
+# cannot move what runs here. Dependabot proposes the digest updates.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: monthly }

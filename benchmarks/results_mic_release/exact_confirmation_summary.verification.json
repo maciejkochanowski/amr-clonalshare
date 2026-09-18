@@ -1,0 +1,51 @@
+{
+  "chunks": 42,
+  "datasets": 138000,
+  "cells": 42,
+  "phases": [
+    "confirmation"
+  ],
+  "sum_fit_seconds": 3334.4600608529227,
+  "source_hashes": {
+    "benchmarks/mic_inference/calibrate.py": "55b074036ddc24de2d331335d7ca48ccd280a875c0731467a52aec561088c208",
+    "src/amr_clonalshare/latent.py": "93b1ac637c30fa39873ae59d44f6c205f8f48c81396a0935fbe3a5afa5a44fcd",
+    "src/amr_clonalshare/missingness.py": "f9dfbf7192c7f1149ad44fcb585f1fd656a79c6d5a85775d6efccb91094fa73b",
+    "src/amr_clonalshare/config.py": "932800ccccaaa6a06fdeb8af0e760fba01bcd481f41b9264f00b05660bbbd85c",
+    "src/amr_clonalshare/__init__.py": "4f237e3b1ae51f711403451a19ee670484ff19aa6e093c066f6b65261b583e48",
+    "src/amr_clonalshare/_general_probit_upper.py": "449c02f827d30de413828c12e67c00a5ac40e7c3667c1348195ea0dc1d868a58",
+    "src/amr_clonalshare/evalues.py": "aec42176ead2d8c6aad970138fb3e01724bc2118d0dd157ff232343a7572ddda",
+    "src/amr_clonalshare/_mic_quadrature.py": "6e5bc2514edbb1e8428f118ca3b066e15fa30ef8230c33e12c279a8dcbc69351",
+    "src/amr_clonalshare/attribution.py": "6661347470d898860d1d63da9d9825a0e8ec1b61855d77aff1be7bd714d84a1e",
+    "src/amr_clonalshare/jsonio.py": "88bd6d41189229900e7691f7fd7617f77e8036d33cf9f9dd8b70d89d11f56caa",
+    "src/amr_clonalshare/qc.py": "d3786091acb05ac67d84a7dc8d6dfbeda845cc99229d875cd346fed4aba082f1",
+    "src/amr_clonalshare/clonality.py": "b5add5b06111ad8c3a1a8f256875368e28bd07b483753c36aad028c13707a8a5",
+    "src/amr_clonalshare/realised.py": "82b6af3751c437eac2b443a547dea22dc3709fb91cbff197ec7a966145404407",
+    "src/amr_clonalshare/report_html.py": "9354bb9729a25eaf6aaeef1c7b309d88640a4a9e50126d65028242be57c695b4",
+    "src/amr_clonalshare/core.py": "1efd0fab12845b89df4afb1027841d1b33ac929cab9048e162f327ec0c703826",
+    "src/amr_clonalshare/_mic_likelihood.py": "bde464b13e3016f6dc9331e3af992b95485eb8e30088f0e34c732ff6ca495f38",
+    "src/amr_clonalshare/report_model.py": "380ef641c35ae48fc4c4b9d5cf6f1f960150b575b9c0a47718235518890a40de",
+    "src/amr_clonalshare/phenotype.py": "77d8a2c6bee9a1b6277bec05ddcd4261905c1ebedd6c62eccfd13bcf2c4b4e9c",
+    "src/amr_clonalshare/_population_probit_numerics.py": "dededb84f429ba84602aef048d2642be725981dc5982719436b68d28d3927668",
+    "src/amr_clonalshare/_normal_numerics.py": "7736b837a373a19537d9977d722f1c739f22a02cc0f3ed2d1efbf1952ced415b",
+    "src/amr_clonalshare/_finite_reference_ranked.py": "9a9101f37182c77f7561061ab3a2b2a471051b1c59ecbe4f95874138717a1393",
+    "src/amr_clonalshare/io.py": "ab64c1b325b9b9873630a99a997b4946987c861d49660fda2b256706dbdf65d0",
+    "src/amr_clonalshare/mic_inference.py": "b206bfd0afa29142a58dba93d1e8ce1378392b1e388dfe48281f71c315059351",
+    "src/amr_clonalshare/_finite_reference_inversion.py": "1c6357a630a7477215eebce229ee39ddc9db812df015590c359f8677588a65e6",
+    "src/amr_clonalshare/cli.py": "e654b8dc9b5c283d827048cde0f8bae5fae08a553ce544aa7131da05aa5a876e",
+    "src/amr_clonalshare/comparison.py": "1e70daaa39e57cfc75ac84b3745fa4a4934f63d68b3096428581c3487b186c95",
+    "src/amr_clonalshare/mic_bootstrap.py": "ec831d5b17625e38f0358e77506af44033f563310eddb11151f1468be895297e",
+    "src/amr_clonalshare/_general_probit_compute.py": "09ff2ba4fb75817419e47348c7e895c0f5478686badb8f9e345fe7c11ba776eb",
+    "src/amr_clonalshare/censored.py": "e097668ae37c2225f6dfc63dd7d0cb9d3fd8a6a8c27d01da7a0ef0d6cfbc335a",
+    "src/amr_clonalshare/research_rc4.py": "a00eb3c0364ffb34ccfc0ac9948474dfdddf597ac0894dfaa343b0f2b205b369",
+    "src/amr_clonalshare/finite_reference.py": "93e1522d6599fff92f4e839eb416944dd190fbf1dc9a707aace37b1ab29079aa",
+    "src/amr_clonalshare/report.py": "58f95293232756a15c7f62caba6fb7f54c8fd6376a70abf27cc3bc6a64a663fa",
+    "src/amr_clonalshare/population_probit.py": "f9cb9a8c68aeee997380ff27e757d284ab6ab30cc030dfcf5c9e5ad36b1e2728",
+    "src/amr_clonalshare/stats.py": "1e8cb8ee6215bac1a376e34ef859f89d587e77f65fcd3986c4d0f8a226e0f9ba",
+    "src/amr_clonalshare/outputs.py": "2ba8e671f5492144f4fdb776ac7541721fd6b800d3add5d0a91c5ed13e077f5a",
+    "src/amr_clonalshare/general_probit.py": "84b650323b5cf0ac7e7216340d0d4b7eeb48810b8805a9ca5631886e2151c121"
+  },
+  "failures": {
+    "": 126000,
+    "ValueError: at least two lineages and within-lineage replication are required": 12000
+  }
+}

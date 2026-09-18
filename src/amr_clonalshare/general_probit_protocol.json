@@ -1,0 +1,33 @@
+{
+  "B": 4999,
+  "a_grid_count": 123,
+  "accepted": true,
+  "alternative_rho_count": 17,
+  "components": "diagnostic",
+  "confirmation_evidence": {
+    "confirmation_freeze_sha256": "d8a2b103dfef807921359945abc3e84d4ae86cf38a6b87dc1913e3895218f40e",
+    "confirmation_summary_sha256": "207da5986e77aa7820dd1badf16bfbeeaf052ef260bfe17098c151dfa496da67",
+    "root_acceptance_sha256": "bc555dea133f7fea0b7f1e26446ea1ea98dccd6a209c2f2ef3029acaa137e174",
+    "scope": "Finite-panel empirical confirmation of the coverage target. For R>=2, the bootstrap uses an internal 0.04 threshold against a 95% hull-coverage target; R1 uses a separately justified 95% upper limit. Fitted-nuisance bootstrap and continuous-parameter interpolation remain approximate, with no exact continuum guarantee.",
+    "selection_sha256": "6f50a6e434b5c7eff553dcbfff983ca63890aea4bfd9abad077ea44ac185c797"
+  },
+  "coverage_scope": "Finite-panel empirical confirmation of the coverage target. For R>=2, the bootstrap uses an internal 0.04 threshold against a 95% hull-coverage target; R1 uses a separately justified 95% upper limit. Fitted-nuisance bootstrap and continuous-parameter interpolation remain approximate, with no exact continuum guarantee.",
+  "dispatch": {
+    "R0": "structural_full",
+    "R1": "plain_upper_95_B9999_i100",
+    "R>=2": "restricted_nuisance_bootstrap"
+  },
+  "internal_alpha": 0.04,
+  "nominal_level": 0.95,
+  "numerical_source_sha256": "dededb84f429ba84602aef048d2642be725981dc5982719436b68d28d3927668",
+  "primary_object": "hull",
+  "protocol_id": "general_confirmation_selected_20260912",
+  "refinement_levels": 3,
+  "selection_sha256": "6f50a6e434b5c7eff553dcbfff983ca63890aea4bfd9abad077ea44ac185c797",
+  "sources": {
+    "_general_probit/histogram_table_research/histogram_table.py": "12e361d5a12ed468ae7d1ce517bee1bff949122f3d34488b64fb5fdf5a941b62",
+    "_general_probit/profile_bootstrap_research/bootstrap.py": "1aa4212eacee92e7aac38d1fabb5b61618203eafa0332211fcf9fc596843735b",
+    "_general_probit_upper.py": "449c02f827d30de413828c12e67c00a5ac40e7c3667c1348195ea0dc1d868a58"
+  },
+  "validation_status": "confirmation_accepted"
+}

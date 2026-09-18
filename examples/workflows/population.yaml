@@ -1,0 +1,30 @@
+# Fictional format demonstration; reduced resampling budgets are not validation settings.
+dataset:
+  name: fictional_workflow
+  data_dir: data
+  metadata: metadata.csv
+  strain_id_column: isolate_id
+  lineage_column: lineage
+  duplicate_policy: error
+  phenotype: calls.csv
+  phenotype_id_column: isolate_id
+  phenotype_antibiotic_column: agent
+  phenotype_call_column: call
+  phenotype_kind: clinical_sir
+  phenotype_positive_definition: R only in fictional format example
+  phenotype_source: fictional teaching fixture with no AST interpretation
+attribution:
+  folds: 2
+  repeats: 2
+  n_boot: 20
+  n_perm: 19
+surveillance:
+  n_boot: 20
+evidence:
+  folds: 2
+  repeats: 2
+population_probit:
+  enabled: true
+  interval_method: general
+  memory_budget_mb: 128
+  table_cache_mb: 32

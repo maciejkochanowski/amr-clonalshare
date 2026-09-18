@@ -1,0 +1,306 @@
+[
+ {
+  "agent": "amoxicillin",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.0625,
+   "mu": -5.515900162698799,
+   "sd": 0.33628945480632866,
+   "n_wt": 640.002096859033,
+   "r2": 1.0,
+   "wt_mode": 0.03125,
+   "raw_cut": 0.03758826396721381,
+   "ecoff": 0.0625,
+   "wt_fraction": 0.9453502169261936
+  },
+  "published": null,
+  "published_value": null,
+  "published_tentative": null,
+  "agreement": ""
+ },
+ {
+  "agent": "cefquinome",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.0625,
+   "mu": -5.936940128308099,
+   "sd": 0.8808514921152245,
+   "n_wt": 625.8072451243194,
+   "r2": 0.9998991734581726,
+   "wt_mode": 0.03125,
+   "raw_cut": 0.06755596015073868,
+   "ecoff": 0.125,
+   "wt_fraction": 0.9243829322368086
+  },
+  "published": null,
+  "published_value": null,
+  "published_tentative": null,
+  "agreement": ""
+ },
+ {
+  "agent": "ceftiofur",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.25,
+   "mu": -3.4445449680867446,
+   "sd": 0.46612456020745435,
+   "n_wt": 514.5096730944022,
+   "r2": 0.9999609219494359,
+   "wt_mode": 0.125,
+   "raw_cut": 0.1947672360944044,
+   "ecoff": 0.25,
+   "wt_fraction": 0.7599847460774035
+  },
+  "published": null,
+  "published_value": null,
+  "published_tentative": null,
+  "agreement": ""
+ },
+ {
+  "agent": "doxycycline",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.5,
+   "mu": -3.6387073822116056,
+   "sd": 0.5019272887319759,
+   "n_wt": 103.14764872202622,
+   "r2": 0.9955873948968046,
+   "wt_mode": 0.125,
+   "raw_cut": 0.18035984731204202,
+   "ecoff": 0.25,
+   "wt_fraction": 0.15235989471495748
+  },
+  "published": "(0.5)",
+  "published_value": 0.5,
+  "published_tentative": true,
+  "agreement": "-1 dilution"
+ },
+ {
+  "agent": "enrofloxacin",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.5,
+   "mu": -1.8423832246180765,
+   "sd": 0.639642430350618,
+   "n_wt": 685.377198061445,
+   "r2": 0.9999606932256803,
+   "wt_mode": 0.5,
+   "raw_cut": 0.7822206801959334,
+   "ecoff": 1.0,
+   "wt_fraction": 1.0123740000907608
+  },
+  "published": "-",
+  "published_value": null,
+  "published_tentative": false,
+  "agreement": ""
+ },
+ {
+  "agent": "erythromycin",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.0625,
+   "mu": -5.62773445265992,
+   "sd": 0.6124630477179116,
+   "n_wt": 309.2164446069461,
+   "r2": 1.0,
+   "wt_mode": 0.03125,
+   "raw_cut": 0.05429893290369554,
+   "ecoff": 0.0625,
+   "wt_fraction": 0.4567451175878081
+  },
+  "published": "(0.25)",
+  "published_value": 0.25,
+  "published_tentative": true,
+  "agreement": "-2 dilutions"
+ },
+ {
+  "agent": "florfenicol",
+  "n": 677,
+  "fit": {
+   "endpoint": 4.0,
+   "mu": 0.303008774006517,
+   "sd": 0.37552721795872496,
+   "n_wt": 677.2284667883758,
+   "r2": 0.999230910470208,
+   "wt_mode": 2.0,
+   "raw_cut": 2.260458950999973,
+   "ecoff": 4.0,
+   "wt_fraction": 1.000337469406759
+  },
+  "published": "4",
+  "published_value": 4.0,
+  "published_tentative": false,
+  "agreement": "exact"
+ },
+ {
+  "agent": "lincomycin",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.5,
+   "mu": -2.3460564021781622,
+   "sd": 1.0734410075325889,
+   "n_wt": 145.87424096225712,
+   "r2": 0.9981019506483735,
+   "wt_mode": 0.25,
+   "raw_cut": 1.1104472053454102,
+   "ecoff": 2.0,
+   "wt_fraction": 0.21547155238147284
+  },
+  "published": "ID",
+  "published_value": null,
+  "published_tentative": false,
+  "agreement": ""
+ },
+ {
+  "agent": "marbofloxacin",
+  "n": 677,
+  "fit": {
+   "endpoint": 16.0,
+   "mu": -0.9623988250976724,
+   "sd": 0.593017700937686,
+   "n_wt": 680.3445735026712,
+   "r2": 0.9977353186135991,
+   "wt_mode": 1.0,
+   "raw_cut": 1.3353025324471466,
+   "ecoff": 2.0,
+   "wt_fraction": 1.0049402858237388
+  },
+  "published": null,
+  "published_value": null,
+  "published_tentative": null,
+  "agreement": ""
+ },
+ {
+  "agent": "penicillin",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.0625,
+   "mu": -5.844513727140176,
+   "sd": 0.5368832040162191,
+   "n_wt": 521.1540661748351,
+   "r2": 0.9999999999999986,
+   "wt_mode": 0.03125,
+   "raw_cut": 0.04136239037547067,
+   "ecoff": 0.0625,
+   "wt_fraction": 0.7697992114842468
+  },
+  "published": null,
+  "published_value": null,
+  "published_tentative": null,
+  "agreement": ""
+ },
+ {
+  "agent": "spectinomycin",
+  "n": 677,
+  "fit": {
+   "endpoint": 64.0,
+   "mu": 3.4423504123101325,
+   "sd": 0.5378297763730064,
+   "n_wt": 602.7598714901608,
+   "r2": 0.9997776044037429,
+   "wt_mode": 16.0,
+   "raw_cut": 25.875764259434703,
+   "ecoff": 32.0,
+   "wt_fraction": 0.8903395442986126
+  },
+  "published": null,
+  "published_value": null,
+  "published_tentative": null,
+  "agreement": ""
+ },
+ {
+  "agent": "tetracycline",
+  "n": 677,
+  "fit": {
+   "endpoint": 8.0,
+   "mu": 0.03153057288110474,
+   "sd": 0.9975242665317362,
+   "n_wt": 108.0470724191038,
+   "r2": 0.9955288828009451,
+   "wt_mode": 2.0,
+   "raw_cut": 5.10573630698525,
+   "ecoff": 8.0,
+   "wt_fraction": 0.15959685733988743
+  },
+  "published": "4",
+  "published_value": 4.0,
+  "published_tentative": false,
+  "agreement": "+1 dilution"
+ },
+ {
+  "agent": "tiamulin",
+  "n": 677,
+  "fit": {
+   "endpoint": 8.0,
+   "mu": -0.22087410025264498,
+   "sd": 1.0312185220945094,
+   "n_wt": 533.3103668080981,
+   "r2": 0.9947538021305062,
+   "wt_mode": 1.0,
+   "raw_cut": 4.5255681297629655,
+   "ecoff": 8.0,
+   "wt_fraction": 0.7877553424048717
+  },
+  "published": "-",
+  "published_value": null,
+  "published_tentative": false,
+  "agreement": ""
+ },
+ {
+  "agent": "tilmicosin",
+  "n": 677,
+  "fit": {
+   "endpoint": 64.0,
+   "mu": 1.345938185999963,
+   "sd": 0.4538690545764738,
+   "n_wt": 316.1113076373052,
+   "r2": 0.9987187186984451,
+   "wt_mode": 4.0,
+   "raw_cut": 5.2846044703665145,
+   "ecoff": 8.0,
+   "wt_fraction": 0.4669295533785896
+  },
+  "published": "-",
+  "published_value": null,
+  "published_tentative": false,
+  "agreement": ""
+ },
+ {
+  "agent": "trimethoprim",
+  "n": 677,
+  "fit": {
+   "endpoint": 0.0625,
+   "mu": -4.785264232751857,
+   "sd": 0.8993988572688859,
+   "n_wt": 384.56999457413247,
+   "r2": 1.0,
+   "wt_mode": 0.0625,
+   "raw_cut": 0.15464696085594215,
+   "ecoff": 0.25,
+   "wt_fraction": 0.5680502135511558
+  },
+  "published": null,
+  "published_value": null,
+  "published_tentative": null,
+  "agreement": ""
+ },
+ {
+  "agent": "tylosin",
+  "n": 677,
+  "fit": {
+   "endpoint": 4.0,
+   "mu": -1.270797492844439,
+   "sd": 0.60161094443788,
+   "n_wt": 313.1491076847353,
+   "r2": 0.999638781647202,
+   "wt_mode": 0.5,
+   "raw_cut": 1.0933526846890718,
+   "ecoff": 2.0,
+   "wt_fraction": 0.4625540733895647
+  },
+  "published": "-",
+  "published_value": null,
+  "published_tentative": false,
+  "agreement": ""
+ }
+]

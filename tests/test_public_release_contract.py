@@ -1,0 +1,51 @@
+"""Public release-contract checks.
+
+The release version is 1.0.0. The output schema is versioned separately and is
+2.0, with schema 1.0 reader compatibility.
+"""
+from __future__ import annotations
+
+import importlib.metadata
+import re
+from pathlib import Path
+
+from amr_clonalshare import __version__, core
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+#: The one place the public product version is written down for the tests.
+PUBLIC_VERSION = "1.0.0"
+
+#: The concept DOI that groups all deposited versions.
+CONCEPT_DOI = "10.5281/zenodo.22306353"
+
+
+def test_all_current_public_version_sources_agree():
+    pyproject = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+    zenodo = (ROOT / ".zenodo.json").read_text(encoding="utf-8")
+    v = re.escape(PUBLIC_VERSION)
+
+    assert re.search(rf'^version = "{v}"$', pyproject, flags=re.MULTILINE)
+    assert __version__ == PUBLIC_VERSION
+    assert importlib.metadata.version("amr-clonalshare") == PUBLIC_VERSION
+    assert f'version: "{PUBLIC_VERSION}"' in citation
+    assert f'"version": "{PUBLIC_VERSION}"' in zenodo
+
+
+def test_current_output_schema_is_2_0(share_cfg):
+    _, cfg = share_cfg
+    result = core.run(cfg, seed=42)
+    assert result["schema_version"] == "2.0"
+
+
+def test_every_file_that_cites_the_deposit_cites_the_same_concept_doi():
+    for name in ("README.md", "CITATION.cff", "REPRODUCIBILITY.md",
+                 "docs/CODE_METADATA.md"):
+        assert CONCEPT_DOI in (ROOT / name).read_text(encoding="utf-8"), name
+
+
+def test_softwarex_licence_copy_is_byte_identical():
+    assert (ROOT / "Licence.txt").read_bytes() == (ROOT / "LICENSE").read_bytes()

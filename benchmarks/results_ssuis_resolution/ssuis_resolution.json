@@ -1,0 +1,2177 @@
+{
+ "provenance": {
+  "seed": 20260901,
+  "n_boot": 400,
+  "n_perm": 200,
+  "support_threshold": 0.9,
+  "n_isolates": 677,
+  "n_with_all_three_labels": 412,
+  "python": "3.11.15",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "runtime_s": 97.4
+ },
+ "labels": {
+  "hierbaps_cluster": {
+   "column": "baps_cluster",
+   "n_isolates": 677,
+   "n_levels": 30,
+   "per_agent": [
+    {
+     "agent": "doxycycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.03049502860608927,
+     "ci_low": -0.06210793987104529,
+     "ci_high": 0.07051745472184202,
+     "null_mean": -0.056506820210505765,
+     "p_value": 0.04477611940298507,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.843426883308715
+    },
+    {
+     "agent": "tetracycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.03960724159129618,
+     "ci_low": -0.04743363188590523,
+     "ci_high": 0.07478844474053341,
+     "null_mean": -0.058267226643771416,
+     "p_value": 0.014925373134328358,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.8478581979320532
+    },
+    {
+     "agent": "erythromycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.16881242362970883,
+     "ci_low": 0.0740269769086286,
+     "ci_high": 0.2784336350157533,
+     "null_mean": -0.057266722803901125,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.5406203840472673
+    },
+    {
+     "agent": "tylosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.1559039009999584,
+     "ci_low": 0.0611184307703933,
+     "ci_high": 0.2514497965807803,
+     "null_mean": -0.055364976365749205,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.5406203840472673
+    },
+    {
+     "agent": "tilmicosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.14704534315858778,
+     "ci_low": 0.052412398881263554,
+     "ci_high": 0.26636962289445315,
+     "null_mean": -0.05414107341687652,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.5376661742983752
+    },
+    {
+     "agent": "lincomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.23279963164184667,
+     "ci_low": 0.12362756416363546,
+     "ci_high": 0.37614122700991215,
+     "null_mean": -0.05619148480562638,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.6262924667651403
+    },
+    {
+     "agent": "tiamulin",
+     "mechanism": "mixed",
+     "kappa_adj": 0.3937876139406925,
+     "ci_low": 0.23840627027392475,
+     "ci_high": 0.5250814043737261,
+     "null_mean": -0.0579661152823724,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.1935007385524372
+    },
+    {
+     "agent": "spectinomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.11939106503117203,
+     "ci_low": -0.07820399446017699,
+     "ci_high": 0.3262834914985493,
+     "null_mean": -0.05517732561679502,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.11521418020679468
+    },
+    {
+     "agent": "amoxicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.23240569185063545,
+     "ci_low": -0.0544737739618876,
+     "ci_high": 0.4785994020620167,
+     "null_mean": -0.05951852734506405,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.05465288035450517
+    },
+    {
+     "agent": "cefquinome",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.1851786713697687,
+     "ci_low": -0.025586680343072658,
+     "ci_high": 0.4340170961066275,
+     "null_mean": -0.053728252446738,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.03840472673559823
+    },
+    {
+     "agent": "ceftiofur",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.5028849384596656,
+     "ci_low": 0.2410250597797456,
+     "ci_high": 0.6663840126686593,
+     "null_mean": -0.05489233277665973,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.24076809453471196
+    },
+    {
+     "agent": "penicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.5154856957780529,
+     "ci_low": 0.24757577742021522,
+     "ci_high": 0.7058726259754513,
+     "null_mean": -0.05853180257754367,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.23042836041358936
+    },
+    {
+     "agent": "trimethoprim",
+     "mechanism": "mixed",
+     "kappa_adj": 0.30490310647479674,
+     "ci_low": 0.15766743592789637,
+     "ci_high": 0.39428788095221623,
+     "null_mean": -0.05544760261583623,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9955686853766618,
+     "estimable": true,
+     "n": 677,
+     "n_groups": 30,
+     "prevalence": 0.28064992614475626
+    }
+   ],
+   "ordering": {
+    "n_chromosomal": 4,
+    "n_mixed": 2,
+    "n_mobile": 7,
+    "mean_chromosomal": 0.3589887493645307,
+    "mean_non_mobile": 0.35577428631226865,
+    "mean_mobile": 0.12772209066552273,
+    "pairs_chromosomal_vs_mobile": 28,
+    "pairs_chromosomal_higher": 26,
+    "pairs_non_mobile_vs_mobile": 42,
+    "pairs_non_mobile_higher": 40,
+    "determinant_sets": {
+     "tet": {
+      "agents": [
+       "doxycycline",
+       "tetracycline"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.035051135098692725
+     },
+     "erm": {
+      "agents": [
+       "erythromycin",
+       "tylosin",
+       "tilmicosin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.15725388926275166
+     },
+     "lnu/lin": {
+      "agents": [
+       "lincomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.23279963164184667
+     },
+     "lsaE/vgaF": {
+      "agents": [
+       "tiamulin"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.3937876139406925
+     },
+     "ant/aph": {
+      "agents": [
+       "spectinomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.11939106503117203
+     },
+     "PBP": {
+      "agents": [
+       "amoxicillin",
+       "cefquinome",
+       "ceftiofur",
+       "penicillin"
+      ],
+      "mechanism": "chromosomal",
+      "mean_share": 0.3589887493645307
+     },
+     "dfr/DHFR": {
+      "agents": [
+       "trimethoprim"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.30490310647479674
+     }
+    },
+    "set_pairs_total": 12,
+    "set_pairs_non_mobile_higher": 12
+   },
+   "per_agent_common_isolates": [
+    {
+     "agent": "doxycycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.07643371723402773,
+     "ci_low": -0.028205717404168374,
+     "ci_high": 0.1612545809272261,
+     "null_mean": -0.05531320744161105,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.8131067961165048
+    },
+    {
+     "agent": "tetracycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.08316200378443767,
+     "ci_low": -0.03322491719836931,
+     "ci_high": 0.15976696587783187,
+     "null_mean": -0.06229826450514727,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.8131067961165048
+    },
+    {
+     "agent": "erythromycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.16038587299038976,
+     "ci_low": 0.07276030031060446,
+     "ci_high": 0.28765487740914425,
+     "null_mean": -0.05851978209027835,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.4878640776699029
+    },
+    {
+     "agent": "tylosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.15403836968496631,
+     "ci_low": 0.06272339028096648,
+     "ci_high": 0.2879362224936836,
+     "null_mean": -0.05411441664619243,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.49029126213592233
+    },
+    {
+     "agent": "tilmicosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.15045922398682668,
+     "ci_low": 0.07234903671007384,
+     "ci_high": 0.27495793490161974,
+     "null_mean": -0.059267878936205776,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.4878640776699029
+    },
+    {
+     "agent": "lincomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.1493403289081321,
+     "ci_low": 0.07495103586576932,
+     "ci_high": 0.2921087256239959,
+     "null_mean": -0.057806839048639314,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.5266990291262136
+    },
+    {
+     "agent": "tiamulin",
+     "mechanism": "mixed",
+     "kappa_adj": 0.10863510981165962,
+     "ci_low": -0.08663897909350697,
+     "ci_high": 0.25038702423364073,
+     "null_mean": -0.05863240109780774,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.06553398058252427
+    },
+    {
+     "agent": "spectinomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.01853574796071315,
+     "ci_low": -0.15077306971171245,
+     "ci_high": 0.05748970095458864,
+     "null_mean": -0.05661401597895274,
+     "p_value": 0.10945273631840796,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.07281553398058252
+    },
+    {
+     "agent": "amoxicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.2587074852797535,
+     "ci_low": -0.6428571612088362,
+     "ci_high": 0.024946882095742726,
+     "null_mean": -0.053542058337624585,
+     "p_value": 1.0,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.014563106796116505
+    },
+    {
+     "agent": "cefquinome",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.14603404665941722,
+     "ci_low": -0.4958880238804825,
+     "ci_high": 0.03616357713038656,
+     "null_mean": -0.058058724706658384,
+     "p_value": 0.9900497512437811,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.014563106796116505
+    },
+    {
+     "agent": "ceftiofur",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.25593262847642445,
+     "ci_low": 0.035154813789397825,
+     "ci_high": 0.4673478711419102,
+     "null_mean": -0.05736589626341579,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.08737864077669903
+    },
+    {
+     "agent": "penicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.2904927267566793,
+     "ci_low": -0.01693857535802134,
+     "ci_high": 0.48020503086906063,
+     "null_mean": -0.058329554607524814,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.0825242718446602
+    },
+    {
+     "agent": "trimethoprim",
+     "mechanism": "mixed",
+     "kappa_adj": 0.13478044736155803,
+     "ci_low": -0.010654480082358045,
+     "ci_high": 0.24038322836524847,
+     "null_mean": -0.058665323766274965,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9975728155339806,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 18,
+     "prevalence": 0.1553398058252427
+    }
+   ],
+   "ordering_common_isolates": {
+    "n_chromosomal": 4,
+    "n_mixed": 2,
+    "n_mobile": 7,
+    "mean_chromosomal": 0.03542095582348326,
+    "mean_non_mobile": 0.06418323007785845,
+    "mean_mobile": 0.1131936092213562,
+    "pairs_chromosomal_vs_mobile": 28,
+    "pairs_chromosomal_higher": 14,
+    "pairs_non_mobile_vs_mobile": 42,
+    "pairs_non_mobile_higher": 20,
+    "determinant_sets": {
+     "tet": {
+      "agents": [
+       "doxycycline",
+       "tetracycline"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.0797978605092327
+     },
+     "erm": {
+      "agents": [
+       "erythromycin",
+       "tylosin",
+       "tilmicosin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.1549611555540609
+     },
+     "lnu/lin": {
+      "agents": [
+       "lincomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.1493403289081321
+     },
+     "lsaE/vgaF": {
+      "agents": [
+       "tiamulin"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.10863510981165962
+     },
+     "ant/aph": {
+      "agents": [
+       "spectinomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.01853574796071315
+     },
+     "PBP": {
+      "agents": [
+       "amoxicillin",
+       "cefquinome",
+       "ceftiofur",
+       "penicillin"
+      ],
+      "mechanism": "chromosomal",
+      "mean_share": 0.03542095582348326
+     },
+     "dfr/DHFR": {
+      "agents": [
+       "trimethoprim"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.13478044736155803
+     }
+    },
+    "set_pairs_total": 12,
+    "set_pairs_non_mobile_higher": 5
+   }
+  },
+  "serotype": {
+   "column": "serovar",
+   "n_isolates": 541,
+   "n_levels": 38,
+   "per_agent": [
+    {
+     "agent": "doxycycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.05593889858600425,
+     "ci_low": -0.01505826104517049,
+     "ci_high": 0.11607946038595737,
+     "null_mean": -0.07712447238255563,
+     "p_value": 0.009950248756218905,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.8317929759704251
+    },
+    {
+     "agent": "tetracycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.06230765030470684,
+     "ci_low": -0.018369688609350843,
+     "ci_high": 0.10698813401734152,
+     "null_mean": -0.07725542156635973,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.833641404805915
+    },
+    {
+     "agent": "erythromycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.17327236312527694,
+     "ci_low": 0.07197718231243232,
+     "ci_high": 0.28604539500096565,
+     "null_mean": -0.07413649349584822,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.5027726432532348
+    },
+    {
+     "agent": "tylosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.16387186111286234,
+     "ci_low": 0.07680379838942275,
+     "ci_high": 0.29885938666062223,
+     "null_mean": -0.07598783921552175,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.5027726432532348
+    },
+    {
+     "agent": "tilmicosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.1652032784117791,
+     "ci_low": 0.0612629924674403,
+     "ci_high": 0.29758450146293713,
+     "null_mean": -0.0722786959667975,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.5009242144177449
+    },
+    {
+     "agent": "lincomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.2082222370115653,
+     "ci_low": 0.1177670607690144,
+     "ci_high": 0.33323242589312335,
+     "null_mean": -0.07313247132820787,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.5656192236598891
+    },
+    {
+     "agent": "tiamulin",
+     "mechanism": "mixed",
+     "kappa_adj": 0.22984844553574246,
+     "ci_low": 0.026266180966063063,
+     "ci_high": 0.37994592168929586,
+     "null_mean": -0.0707009206628015,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.12384473197781885
+    },
+    {
+     "agent": "spectinomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.10457338145529144,
+     "ci_low": -0.07513208173127718,
+     "ci_high": 0.27432094717589844,
+     "null_mean": -0.07331121394455482,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.10166358595194085
+    },
+    {
+     "agent": "amoxicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.05045332429959032,
+     "ci_low": -0.1576281991740578,
+     "ci_high": 0.2610416611460367,
+     "null_mean": -0.07506019462538016,
+     "p_value": 0.208955223880597,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.036968576709796676
+    },
+    {
+     "agent": "cefquinome",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.06997045456703345,
+     "ci_low": -0.32002047432218544,
+     "ci_high": 0.0785649249855665,
+     "null_mean": -0.076787447830349,
+     "p_value": 0.9751243781094527,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.033271719038817
+    },
+    {
+     "agent": "ceftiofur",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.3412287440063796,
+     "ci_low": 0.15114192013272518,
+     "ci_high": 0.4910717818303216,
+     "null_mean": -0.07265041648664279,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.1645101663585952
+    },
+    {
+     "agent": "penicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.3415248365395522,
+     "ci_low": 0.1503869876141697,
+     "ci_high": 0.4772805358713173,
+     "null_mean": -0.07599196479958331,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.1589648798521257
+    },
+    {
+     "agent": "trimethoprim",
+     "mechanism": "mixed",
+     "kappa_adj": 0.17586263360862517,
+     "ci_low": 0.033933592398008645,
+     "ci_high": 0.2767030664419791,
+     "null_mean": -0.07173266583015353,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9815157116451017,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 38,
+     "prevalence": 0.21256931608133087
+    }
+   ],
+   "ordering": {
+    "n_chromosomal": 4,
+    "n_mixed": 2,
+    "n_mobile": 7,
+    "mean_chromosomal": 0.16580911256962216,
+    "mean_non_mobile": 0.17815792157047605,
+    "mean_mobile": 0.1333413814296409,
+    "pairs_chromosomal_vs_mobile": 28,
+    "pairs_chromosomal_higher": 14,
+    "pairs_non_mobile_vs_mobile": 42,
+    "pairs_non_mobile_higher": 27,
+    "determinant_sets": {
+     "tet": {
+      "agents": [
+       "doxycycline",
+       "tetracycline"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.05912327444535555
+     },
+     "erm": {
+      "agents": [
+       "erythromycin",
+       "tylosin",
+       "tilmicosin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.16744916754997277
+     },
+     "lnu/lin": {
+      "agents": [
+       "lincomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.2082222370115653
+     },
+     "lsaE/vgaF": {
+      "agents": [
+       "tiamulin"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.22984844553574246
+     },
+     "ant/aph": {
+      "agents": [
+       "spectinomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.10457338145529144
+     },
+     "PBP": {
+      "agents": [
+       "amoxicillin",
+       "cefquinome",
+       "ceftiofur",
+       "penicillin"
+      ],
+      "mechanism": "chromosomal",
+      "mean_share": 0.16580911256962216
+     },
+     "dfr/DHFR": {
+      "agents": [
+       "trimethoprim"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.17586263360862517
+     }
+    },
+    "set_pairs_total": 12,
+    "set_pairs_non_mobile_higher": 9
+   },
+   "per_agent_common_isolates": [
+    {
+     "agent": "doxycycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.08047000546620911,
+     "ci_low": -0.023666101005065394,
+     "ci_high": 0.14166253837778361,
+     "null_mean": -0.07853539970860936,
+     "p_value": 0.009950248756218905,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.8131067961165048
+    },
+    {
+     "agent": "tetracycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.08297080136177346,
+     "ci_low": -0.019842265273838474,
+     "ci_high": 0.14401553973366915,
+     "null_mean": -0.08117647208782966,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.8131067961165048
+    },
+    {
+     "agent": "erythromycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.1382709420993425,
+     "ci_low": 0.03785728488919593,
+     "ci_high": 0.3058555150535379,
+     "null_mean": -0.07593635016273075,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.4878640776699029
+    },
+    {
+     "agent": "tylosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.13444120584755082,
+     "ci_low": 0.0162763884956023,
+     "ci_high": 0.3114928751775559,
+     "null_mean": -0.07608260488972056,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.49029126213592233
+    },
+    {
+     "agent": "tilmicosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.14163841723375664,
+     "ci_low": 0.014268908377056517,
+     "ci_high": 0.29663672566999716,
+     "null_mean": -0.07889076692380775,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.4878640776699029
+    },
+    {
+     "agent": "lincomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.1491347337817274,
+     "ci_low": 0.05554305847579996,
+     "ci_high": 0.3119420299354611,
+     "null_mean": -0.07843348909236905,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.5266990291262136
+    },
+    {
+     "agent": "tiamulin",
+     "mechanism": "mixed",
+     "kappa_adj": 0.014808142824561544,
+     "ci_low": -0.19691432084471278,
+     "ci_high": 0.139226367968246,
+     "null_mean": -0.07902222719465697,
+     "p_value": 0.0945273631840796,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.06553398058252427
+    },
+    {
+     "agent": "spectinomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.05893507849114406,
+     "ci_low": -0.06258787469971075,
+     "ci_high": 0.0897258054555937,
+     "null_mean": -0.07945545626895574,
+     "p_value": 0.024875621890547265,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.07281553398058252
+    },
+    {
+     "agent": "amoxicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.09157142525288475,
+     "ci_low": -0.4547283193461559,
+     "ci_high": 0.01997180871813218,
+     "null_mean": -0.07427750522518722,
+     "p_value": 0.9601990049751243,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.014563106796116505
+    },
+    {
+     "agent": "cefquinome",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.11983374083067988,
+     "ci_low": -0.2802872187638319,
+     "ci_high": -0.023767999672281492,
+     "null_mean": -0.08488719995473769,
+     "p_value": 0.9950248756218906,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.014563106796116505
+    },
+    {
+     "agent": "ceftiofur",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.27625861435801663,
+     "ci_low": -0.04599349293220957,
+     "ci_high": 0.5127660777017279,
+     "null_mean": -0.07795360748883523,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.08737864077669903
+    },
+    {
+     "agent": "penicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.20234244882145663,
+     "ci_low": -0.05933847913415491,
+     "ci_high": 0.44551606673434013,
+     "null_mean": -0.07597599281090411,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.0825242718446602
+    },
+    {
+     "agent": "trimethoprim",
+     "mechanism": "mixed",
+     "kappa_adj": 0.15061235674693485,
+     "ci_low": -0.02506800069741357,
+     "ci_high": 0.2804243945423797,
+     "null_mean": -0.0766851305311183,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9805825242718447,
+     "estimable": true,
+     "n": 412,
+     "n_groups": 30,
+     "prevalence": 0.1553398058252427
+    }
+   ],
+   "ordering_common_isolates": {
+    "n_chromosomal": 4,
+    "n_mixed": 2,
+    "n_mobile": 7,
+    "mean_chromosomal": 0.06679897427397716,
+    "mean_non_mobile": 0.07210273277790084,
+    "mean_mobile": 0.11226588346878628,
+    "pairs_chromosomal_vs_mobile": 28,
+    "pairs_chromosomal_higher": 14,
+    "pairs_non_mobile_vs_mobile": 42,
+    "pairs_non_mobile_higher": 21,
+    "determinant_sets": {
+     "tet": {
+      "agents": [
+       "doxycycline",
+       "tetracycline"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.08172040341399128
+     },
+     "erm": {
+      "agents": [
+       "erythromycin",
+       "tylosin",
+       "tilmicosin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.13811685506021665
+     },
+     "lnu/lin": {
+      "agents": [
+       "lincomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.1491347337817274
+     },
+     "lsaE/vgaF": {
+      "agents": [
+       "tiamulin"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.014808142824561544
+     },
+     "ant/aph": {
+      "agents": [
+       "spectinomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.05893507849114406
+     },
+     "PBP": {
+      "agents": [
+       "amoxicillin",
+       "cefquinome",
+       "ceftiofur",
+       "penicillin"
+      ],
+      "mechanism": "chromosomal",
+      "mean_share": 0.06679897427397716
+     },
+     "dfr/DHFR": {
+      "agents": [
+       "trimethoprim"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.15061235674693485
+     }
+    },
+    "set_pairs_total": 12,
+    "set_pairs_non_mobile_higher": 5
+   },
+   "per_agent_reference_same_isolates": [
+    {
+     "agent": "doxycycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.031913899481661234,
+     "ci_low": -0.03780758794843073,
+     "ci_high": 0.0798871856928873,
+     "null_mean": -0.04784376114826571,
+     "p_value": 0.05970149253731343,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.8317929759704251
+    },
+    {
+     "agent": "tetracycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.027553498345462345,
+     "ci_low": -0.0526563638766191,
+     "ci_high": 0.0763486620723705,
+     "null_mean": -0.04549154163545018,
+     "p_value": 0.06467661691542288,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.833641404805915
+    },
+    {
+     "agent": "erythromycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.172360978067805,
+     "ci_low": 0.07641735876162661,
+     "ci_high": 0.30330639920106317,
+     "null_mean": -0.04824887479892784,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.5027726432532348
+    },
+    {
+     "agent": "tylosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.16737345717999796,
+     "ci_low": 0.08389234871578971,
+     "ci_high": 0.3075991861717866,
+     "null_mean": -0.04906146656506314,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.5027726432532348
+    },
+    {
+     "agent": "tilmicosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.16231229864059105,
+     "ci_low": 0.07053065760888941,
+     "ci_high": 0.3156694496447852,
+     "null_mean": -0.04489337996899035,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.5009242144177449
+    },
+    {
+     "agent": "lincomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.1872372798203549,
+     "ci_low": 0.08133430643420665,
+     "ci_high": 0.3243212775216234,
+     "null_mean": -0.04718119135736786,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.5656192236598891
+    },
+    {
+     "agent": "tiamulin",
+     "mechanism": "mixed",
+     "kappa_adj": 0.3373146405870619,
+     "ci_low": 0.06650591187812481,
+     "ci_high": 0.5534970463034733,
+     "null_mean": -0.04700549980671712,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.12384473197781885
+    },
+    {
+     "agent": "spectinomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.17949729061743777,
+     "ci_low": -0.0510096194611425,
+     "ci_high": 0.51498949252493,
+     "null_mean": -0.046381250041398266,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.10166358595194085
+    },
+    {
+     "agent": "amoxicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.04213589021345478,
+     "ci_low": -0.1544284853592717,
+     "ci_high": 0.15514119200165194,
+     "null_mean": -0.04724829829730663,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.036968576709796676
+    },
+    {
+     "agent": "cefquinome",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.04450623932014819,
+     "ci_low": -0.06714808248512374,
+     "ci_high": 0.1444963385704955,
+     "null_mean": -0.04639325393957869,
+     "p_value": 0.029850746268656716,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.033271719038817
+    },
+    {
+     "agent": "ceftiofur",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.4344041910295421,
+     "ci_low": 0.16736533785608382,
+     "ci_high": 0.6287631910813101,
+     "null_mean": -0.04759296521871278,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.1645101663585952
+    },
+    {
+     "agent": "penicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.44456296177608856,
+     "ci_low": 0.13006210136081217,
+     "ci_high": 0.6824083152930966,
+     "null_mean": -0.047811168099403716,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.1589648798521257
+    },
+    {
+     "agent": "trimethoprim",
+     "mechanism": "mixed",
+     "kappa_adj": 0.25038198880592566,
+     "ci_low": 0.08731952129439349,
+     "ci_high": 0.3818269959406873,
+     "null_mean": -0.04748862538495668,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9907578558225508,
+     "estimable": true,
+     "n": 541,
+     "n_groups": 24,
+     "prevalence": 0.21256931608133087
+    }
+   ],
+   "ordering_reference_same_isolates": {
+    "n_chromosomal": 4,
+    "n_mixed": 2,
+    "n_mobile": 7,
+    "mean_chromosomal": 0.2414023205848084,
+    "mean_non_mobile": 0.25888431862203687,
+    "mean_mobile": 0.1326069574504729,
+    "pairs_chromosomal_vs_mobile": 28,
+    "pairs_chromosomal_higher": 18,
+    "pairs_non_mobile_vs_mobile": 42,
+    "pairs_non_mobile_higher": 32,
+    "determinant_sets": {
+     "tet": {
+      "agents": [
+       "doxycycline",
+       "tetracycline"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.02973369891356179
+     },
+     "erm": {
+      "agents": [
+       "erythromycin",
+       "tylosin",
+       "tilmicosin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.16734891129613136
+     },
+     "lnu/lin": {
+      "agents": [
+       "lincomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.1872372798203549
+     },
+     "lsaE/vgaF": {
+      "agents": [
+       "tiamulin"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.3373146405870619
+     },
+     "ant/aph": {
+      "agents": [
+       "spectinomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.17949729061743777
+     },
+     "PBP": {
+      "agents": [
+       "amoxicillin",
+       "cefquinome",
+       "ceftiofur",
+       "penicillin"
+      ],
+      "mechanism": "chromosomal",
+      "mean_share": 0.2414023205848084
+     },
+     "dfr/DHFR": {
+      "agents": [
+       "trimethoprim"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.25038198880592566
+     }
+    },
+    "set_pairs_total": 12,
+    "set_pairs_non_mobile_higher": 12
+   },
+   "reference_column": "baps_cluster"
+  },
+  "sequence_type": {
+   "column": "mlst",
+   "n_isolates": 458,
+   "n_levels": 108,
+   "per_agent": [
+    {
+     "agent": "doxycycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.27229048795283706,
+     "ci_low": 0.11458688426811263,
+     "ci_high": 0.46335037289252967,
+     "null_mean": -0.14613781718255742,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.8253275109170306
+    },
+    {
+     "agent": "tetracycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.2730971349057399,
+     "ci_low": 0.11231736823642985,
+     "ci_high": 0.44580087992282774,
+     "null_mean": -0.15710385755179979,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.8253275109170306
+    },
+    {
+     "agent": "erythromycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.2854053841369651,
+     "ci_low": 0.17030723531497055,
+     "ci_high": 0.44381730410978676,
+     "null_mean": -0.15054886605375423,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.517467248908297
+    },
+    {
+     "agent": "tylosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.2837108013872611,
+     "ci_low": 0.17913299856671305,
+     "ci_high": 0.43168540069081535,
+     "null_mean": -0.1534111843187079,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.519650655021834
+    },
+    {
+     "agent": "tilmicosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.26027576728019,
+     "ci_low": 0.14427068846327468,
+     "ci_high": 0.3994584068421983,
+     "null_mean": -0.1539150081844326,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.517467248908297
+    },
+    {
+     "agent": "lincomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.283680851326807,
+     "ci_low": 0.17904176150759082,
+     "ci_high": 0.461823397776577,
+     "null_mean": -0.15799411351164797,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.5567685589519651
+    },
+    {
+     "agent": "tiamulin",
+     "mechanism": "mixed",
+     "kappa_adj": 0.2074035265442232,
+     "ci_low": 0.04577173407584717,
+     "ci_high": 0.35019745901989485,
+     "null_mean": -0.14757465733120442,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.07860262008733625
+    },
+    {
+     "agent": "spectinomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.09724433814215647,
+     "ci_low": -0.08766153925810151,
+     "ci_high": 0.27208787982154226,
+     "null_mean": -0.15689976732952793,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.07423580786026202
+    },
+    {
+     "agent": "amoxicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.15272376614160377,
+     "ci_low": -0.5502992750199143,
+     "ci_high": 0.19699627607490025,
+     "null_mean": -0.13891347637935453,
+     "p_value": 0.7661691542288557,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.017467248908296942
+    },
+    {
+     "agent": "cefquinome",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.18312786615517043,
+     "ci_low": -0.3901843224413071,
+     "ci_high": 0.6742969689227978,
+     "null_mean": -0.15490280543655158,
+     "p_value": 0.014925373134328358,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.019650655021834062
+    },
+    {
+     "agent": "ceftiofur",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.329289888921635,
+     "ci_low": 0.11352336271807223,
+     "ci_high": 0.48122035781530403,
+     "null_mean": -0.1512804569941901,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.11135371179039301
+    },
+    {
+     "agent": "penicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.3151904231203774,
+     "ci_low": 0.11996997601524866,
+     "ci_high": 0.4774051151269852,
+     "null_mean": -0.15388246394287441,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.10043668122270742
+    },
+    {
+     "agent": "trimethoprim",
+     "mechanism": "mixed",
+     "kappa_adj": 0.34211412363693133,
+     "ci_low": 0.21107228640622797,
+     "ci_high": 0.45158553684958197,
+     "null_mean": -0.15158311483401748,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8580786026200873,
+     "estimable": false,
+     "n": 458,
+     "n_groups": 108,
+     "prevalence": 0.16812227074235808
+    }
+   ],
+   "ordering": {
+    "n_chromosomal": 4,
+    "n_mixed": 2,
+    "n_mobile": 7,
+    "mean_chromosomal": 0.16872110301389476,
+    "mean_non_mobile": 0.20406701037278893,
+    "mean_mobile": 0.25081496644742235,
+    "pairs_chromosomal_vs_mobile": 28,
+    "pairs_chromosomal_higher": 15,
+    "pairs_non_mobile_vs_mobile": 42,
+    "pairs_non_mobile_higher": 23,
+    "determinant_sets": {
+     "tet": {
+      "agents": [
+       "doxycycline",
+       "tetracycline"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.2726938114292885
+     },
+     "erm": {
+      "agents": [
+       "erythromycin",
+       "tylosin",
+       "tilmicosin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.27646398426813873
+     },
+     "lnu/lin": {
+      "agents": [
+       "lincomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.283680851326807
+     },
+     "lsaE/vgaF": {
+      "agents": [
+       "tiamulin"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.2074035265442232
+     },
+     "ant/aph": {
+      "agents": [
+       "spectinomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.09724433814215647
+     },
+     "PBP": {
+      "agents": [
+       "amoxicillin",
+       "cefquinome",
+       "ceftiofur",
+       "penicillin"
+      ],
+      "mechanism": "chromosomal",
+      "mean_share": 0.16872110301389476
+     },
+     "dfr/DHFR": {
+      "agents": [
+       "trimethoprim"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.34211412363693133
+     }
+    },
+    "set_pairs_total": 12,
+    "set_pairs_non_mobile_higher": 6
+   },
+   "per_agent_common_isolates": [
+    {
+     "agent": "doxycycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.28475983421678425,
+     "ci_low": 0.12369545587290581,
+     "ci_high": 0.4607993399901815,
+     "null_mean": -0.1446856760526897,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.8131067961165048
+    },
+    {
+     "agent": "tetracycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.28318616753479386,
+     "ci_low": 0.11690871228430262,
+     "ci_high": 0.48602604028893576,
+     "null_mean": -0.14780569546648478,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.8131067961165048
+    },
+    {
+     "agent": "erythromycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.25130687008019714,
+     "ci_low": 0.15091128050442332,
+     "ci_high": 0.4272915476218765,
+     "null_mean": -0.14439694820275126,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.4878640776699029
+    },
+    {
+     "agent": "tylosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.2452633188693674,
+     "ci_low": 0.15002749713102254,
+     "ci_high": 0.39217868348336954,
+     "null_mean": -0.14233189558391884,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.49029126213592233
+    },
+    {
+     "agent": "tilmicosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.23458057380875136,
+     "ci_low": 0.12983517630308025,
+     "ci_high": 0.36157429330579854,
+     "null_mean": -0.14816782510254267,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.4878640776699029
+    },
+    {
+     "agent": "lincomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.24706975080131896,
+     "ci_low": 0.14635628617051064,
+     "ci_high": 0.42044680353909114,
+     "null_mean": -0.1455897631336657,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.5266990291262136
+    },
+    {
+     "agent": "tiamulin",
+     "mechanism": "mixed",
+     "kappa_adj": 0.20634227343451478,
+     "ci_low": 0.04431285278425139,
+     "ci_high": 0.4386775271015267,
+     "null_mean": -0.14490997344309833,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.06553398058252427
+    },
+    {
+     "agent": "spectinomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.10586043049076112,
+     "ci_low": -0.1317852450473987,
+     "ci_high": 0.3146755303298533,
+     "null_mean": -0.14728218972452745,
+     "p_value": 0.014925373134328358,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.07281553398058252
+    },
+    {
+     "agent": "amoxicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.2689447631140424,
+     "ci_low": -0.6654985851449237,
+     "ci_high": 0.12326010821553242,
+     "null_mean": -0.1475469627626406,
+     "p_value": 0.9950248756218906,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.014563106796116505
+    },
+    {
+     "agent": "cefquinome",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.2515698003911697,
+     "ci_low": -0.5349785416623499,
+     "ci_high": 0.13030580115990636,
+     "null_mean": -0.14568133316161955,
+     "p_value": 0.9601990049751243,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.014563106796116505
+    },
+    {
+     "agent": "ceftiofur",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.22016210977782022,
+     "ci_low": 0.024465309011603032,
+     "ci_high": 0.40705145856061514,
+     "null_mean": -0.14002287222731383,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.08737864077669903
+    },
+    {
+     "agent": "penicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.3075549397815547,
+     "ci_low": 0.09303832525982876,
+     "ci_high": 0.47146736992489313,
+     "null_mean": -0.14906376496735027,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.0825242718446602
+    },
+    {
+     "agent": "trimethoprim",
+     "mechanism": "mixed",
+     "kappa_adj": 0.33935172043614487,
+     "ci_low": 0.15243841974239794,
+     "ci_high": 0.4964376134892326,
+     "null_mean": -0.14578891452161796,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.8762135922330098,
+     "estimable": false,
+     "n": 412,
+     "n_groups": 88,
+     "prevalence": 0.1553398058252427
+    }
+   ],
+   "ordering_common_isolates": {
+    "n_chromosomal": 4,
+    "n_mixed": 2,
+    "n_mobile": 7,
+    "mean_chromosomal": 0.0018006215135406844,
+    "mean_non_mobile": 0.09214941332080373,
+    "mean_mobile": 0.23600384940028202,
+    "pairs_chromosomal_vs_mobile": 28,
+    "pairs_chromosomal_higher": 8,
+    "pairs_non_mobile_vs_mobile": 42,
+    "pairs_non_mobile_higher": 16,
+    "determinant_sets": {
+     "tet": {
+      "agents": [
+       "doxycycline",
+       "tetracycline"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.28397300087578903
+     },
+     "erm": {
+      "agents": [
+       "erythromycin",
+       "tylosin",
+       "tilmicosin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.2437169209194386
+     },
+     "lnu/lin": {
+      "agents": [
+       "lincomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.24706975080131896
+     },
+     "lsaE/vgaF": {
+      "agents": [
+       "tiamulin"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.20634227343451478
+     },
+     "ant/aph": {
+      "agents": [
+       "spectinomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.10586043049076112
+     },
+     "PBP": {
+      "agents": [
+       "amoxicillin",
+       "cefquinome",
+       "ceftiofur",
+       "penicillin"
+      ],
+      "mechanism": "chromosomal",
+      "mean_share": 0.0018006215135406844
+     },
+     "dfr/DHFR": {
+      "agents": [
+       "trimethoprim"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.33935172043614487
+     }
+    },
+    "set_pairs_total": 12,
+    "set_pairs_non_mobile_higher": 5
+   },
+   "per_agent_reference_same_isolates": [
+    {
+     "agent": "doxycycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.0636411906312059,
+     "ci_low": -0.025045155246055564,
+     "ci_high": 0.13003615196369606,
+     "null_mean": -0.05630806146228945,
+     "p_value": 0.009950248756218905,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.8253275109170306
+    },
+    {
+     "agent": "tetracycline",
+     "mechanism": "mobile",
+     "kappa_adj": 0.05649712678933778,
+     "ci_low": -0.017967454577921052,
+     "ci_high": 0.12128050768232423,
+     "null_mean": -0.05571667150574003,
+     "p_value": 0.024875621890547265,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.8253275109170306
+    },
+    {
+     "agent": "erythromycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.17311720054565055,
+     "ci_low": 0.06772129173872689,
+     "ci_high": 0.29739759304221836,
+     "null_mean": -0.05370596034397605,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.517467248908297
+    },
+    {
+     "agent": "tylosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.1631132416154958,
+     "ci_low": 0.07777506868738399,
+     "ci_high": 0.3078449207500805,
+     "null_mean": -0.053271275555986236,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.519650655021834
+    },
+    {
+     "agent": "tilmicosin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.15966252633296849,
+     "ci_low": 0.07408769126728235,
+     "ci_high": 0.2974798474632587,
+     "null_mean": -0.05229564116677109,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.517467248908297
+    },
+    {
+     "agent": "lincomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.18353209314053393,
+     "ci_low": 0.08381265336789882,
+     "ci_high": 0.32170468223683946,
+     "null_mean": -0.05535574770804816,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.5567685589519651
+    },
+    {
+     "agent": "tiamulin",
+     "mechanism": "mixed",
+     "kappa_adj": 0.1543029631014494,
+     "ci_low": -0.11593435276607268,
+     "ci_high": 0.2789253303609497,
+     "null_mean": -0.055348366613059204,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.07860262008733625
+    },
+    {
+     "agent": "spectinomycin",
+     "mechanism": "mobile",
+     "kappa_adj": 0.0035754964249649413,
+     "ci_low": -0.09958727463689354,
+     "ci_high": 0.049980692994116956,
+     "null_mean": -0.05836350987053452,
+     "p_value": 0.5323383084577115,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.07423580786026202
+    },
+    {
+     "agent": "amoxicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": -0.07571787760585973,
+     "ci_low": -0.36522053293411005,
+     "ci_high": 0.16066331804319153,
+     "null_mean": -0.05536616731108148,
+     "p_value": 0.5074626865671642,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.017467248908296942
+    },
+    {
+     "agent": "cefquinome",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.16469222802546984,
+     "ci_low": -0.023869099463631582,
+     "ci_high": 0.4296828330335249,
+     "null_mean": -0.057173598312784825,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.019650655021834062
+    },
+    {
+     "agent": "ceftiofur",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.3073419469204966,
+     "ci_low": 0.09984370703608306,
+     "ci_high": 0.45752982608871245,
+     "null_mean": -0.05564689142541018,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.11135371179039301
+    },
+    {
+     "agent": "penicillin",
+     "mechanism": "chromosomal",
+     "kappa_adj": 0.2938741827041204,
+     "ci_low": 0.05858395250188834,
+     "ci_high": 0.46553594963274925,
+     "null_mean": -0.056733840528696323,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.10043668122270742
+    },
+    {
+     "agent": "trimethoprim",
+     "mechanism": "mixed",
+     "kappa_adj": 0.1478367940513924,
+     "ci_low": 0.023122870579809267,
+     "ci_high": 0.24630016717064895,
+     "null_mean": -0.05055696158492518,
+     "p_value": 0.004975124378109453,
+     "p_floor": 0.004975124378109453,
+     "support": 0.9890829694323144,
+     "estimable": true,
+     "n": 458,
+     "n_groups": 23,
+     "prevalence": 0.16812227074235808
+    }
+   ],
+   "ordering_reference_same_isolates": {
+    "n_chromosomal": 4,
+    "n_mixed": 2,
+    "n_mobile": 7,
+    "mean_chromosomal": 0.17254762001105678,
+    "mean_non_mobile": 0.16538837286617816,
+    "mean_mobile": 0.1147341250685939,
+    "pairs_chromosomal_vs_mobile": 28,
+    "pairs_chromosomal_higher": 19,
+    "pairs_non_mobile_vs_mobile": 42,
+    "pairs_non_mobile_higher": 25,
+    "determinant_sets": {
+     "tet": {
+      "agents": [
+       "doxycycline",
+       "tetracycline"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.06006915871027184
+     },
+     "erm": {
+      "agents": [
+       "erythromycin",
+       "tylosin",
+       "tilmicosin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.16529765616470496
+     },
+     "lnu/lin": {
+      "agents": [
+       "lincomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.18353209314053393
+     },
+     "lsaE/vgaF": {
+      "agents": [
+       "tiamulin"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.1543029631014494
+     },
+     "ant/aph": {
+      "agents": [
+       "spectinomycin"
+      ],
+      "mechanism": "mobile",
+      "mean_share": 0.0035754964249649413
+     },
+     "PBP": {
+      "agents": [
+       "amoxicillin",
+       "cefquinome",
+       "ceftiofur",
+       "penicillin"
+      ],
+      "mechanism": "chromosomal",
+      "mean_share": 0.17254762001105678
+     },
+     "dfr/DHFR": {
+      "agents": [
+       "trimethoprim"
+      ],
+      "mechanism": "mixed",
+      "mean_share": 0.1478367940513924
+     }
+    },
+    "set_pairs_total": 12,
+    "set_pairs_non_mobile_higher": 7
+   },
+   "reference_column": "baps_cluster"
+  }
+ }
+}

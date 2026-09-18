@@ -1,0 +1,12 @@
+{
+ "seed": 20260901,
+ "quick": false,
+ "n_boot": 400,
+ "n_perm": 200,
+ "n_isolates": 677,
+ "n_agents": 13,
+ "runtime_s": 27.7,
+ "numpy": "2.4.4",
+ "pandas": "3.0.2",
+ "python": "3.11.15"
+}

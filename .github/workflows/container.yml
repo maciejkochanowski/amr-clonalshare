@@ -1,0 +1,54 @@
+# Builds the pinned container image from the Dockerfile and pushes it to the
+# GitHub Container Registry under this repository, so that a reader can pull
+# the environment the shipped records reproduce on instead of building it.
+#
+# The image is tagged with the release tag and with the commit it was built
+# from. Nothing outside GitHub is involved: the token the job receives is
+# scoped to this repository's packages and expires with the run. The build
+# uses the docker client that ships on the runner; no third-party action is
+# needed.
+name: Container image
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Log in to the registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+
+      - name: Build
+        run: |
+          image="ghcr.io/${GITHUB_REPOSITORY,,}"
+          ref="${GITHUB_REF_NAME}"
+          case "$ref" in v*) tag="${ref#v}" ;; *) tag="$ref" ;; esac
+          docker build \
+            --label "org.opencontainers.image.source=https://github.com/${GITHUB_REPOSITORY}" \
+            --label "org.opencontainers.image.revision=${GITHUB_SHA}" \
+            -t "$image:$tag" -t "$image:sha-${GITHUB_SHA::12}" .
+          docker run --rm "$image:$tag" --version
+          echo "IMAGE=$image" >> "$GITHUB_ENV"
+          echo "TAG=$tag" >> "$GITHUB_ENV"
+
+      - name: Check the pinned stack inside the image
+        run: |
+          docker run --rm --entrypoint python "$IMAGE:$TAG" -c "import amr_clonalshare, numpy, scipy, pandas; print(numpy.__version__, scipy.__version__, pandas.__version__)"
+
+      - name: Push
+        run: |
+          docker push "$IMAGE:$TAG"
+          docker push "$IMAGE:sha-${GITHUB_SHA::12}"
+          if [ "${{ github.event_name }}" = "release" ]; then
+            docker tag "$IMAGE:$TAG" "$IMAGE:latest"
+            docker push "$IMAGE:latest"
+          fi

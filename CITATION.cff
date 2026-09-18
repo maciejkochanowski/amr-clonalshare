@@ -1,0 +1,94 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file and the version-specific Zenodo record."
+title: "amr-clonalshare: observational analysis of antimicrobial phenotypes by lineage"
+abstract: >-
+  Observational summaries of antimicrobial phenotypes by recorded lineage, with explicit phenotype definitions, input diagnostics, collection bounds and model-specific uncertainty.
+  Version 1.0.0 adds a matched-record comparison of lineage definitions and a
+  simulation-checked 95% interval for the lineage share of MIC variation.
+  Collection and population targets have distinct assumptions. Missing labels
+  do not establish collection representativeness.
+type: software
+authors:
+  - family-names: Kochanowski
+    given-names: Maciej
+    affiliation: "Department of Bacteriology and Bacterial Diseases, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland"
+    email: "maciej.kochanowski@piwet.pulawy.pl"
+    orcid: "https://orcid.org/0000-0002-9982-3028"
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/maciejkochanowski/amr-clonalshare"
+url: "https://github.com/maciejkochanowski/amr-clonalshare/tree/main/docs"
+keywords:
+  - bioinformatics
+  - antimicrobial resistance
+  - veterinary surveillance
+  - variance component
+  - population structure
+  - typing resolution
+  - intraclass correlation
+  - prevalence decomposition
+  - Kitagawa decomposition
+  - interval-censored MIC
+  - anytime-valid inference
+  - Streptococcus suis
+  - serovar
+  - NCBI Pathogen Detection
+  - reproducible research
+references:
+  - type: software
+    title: "amr-clonalshare (all versions)"
+    authors:
+      - family-names: Kochanowski
+        given-names: Maciej
+    version: "1.0.0"
+    doi: "10.5281/zenodo.22306353"
+  - type: article
+    authors:
+      - family-names: Kitagawa
+        given-names: Evelyn M.
+    title: "Components of a difference between two rates"
+    journal: "Journal of the American Statistical Association"
+    volume: 50
+    year: 1955
+    doi: "10.1080/01621459.1955.10501299"
+  - type: article
+    authors:
+      - family-names: Hadjirin
+        given-names: Nazreen F.
+      - family-names: Miller
+        given-names: Eric L.
+      - family-names: Murray
+        given-names: Gemma G. R.
+      - family-names: Yen
+        given-names: Phung L. K.
+      - family-names: Phuc
+        given-names: Ho D.
+      - family-names: Wileman
+        given-names: Thomas M.
+      - family-names: Hernandez-Garcia
+        given-names: Juan
+      - family-names: Williamson
+        given-names: Susanna M.
+      - family-names: Parkhill
+        given-names: Julian
+      - family-names: Maskell
+        given-names: Duncan J.
+      - family-names: Zhou
+        given-names: Rui
+      - family-names: Fittipaldi
+        given-names: Nahuel
+      - family-names: Gottschalk
+        given-names: Marcelo
+      - family-names: Tucker
+        given-names: A. W. Dan
+      - family-names: Hoa
+        given-names: Ngo T.
+      - family-names: Welch
+        given-names: John J.
+      - family-names: Weinert
+        given-names: Lucy A.
+    title: "Large-scale genomic analysis of antimicrobial resistance in the zoonotic pathogen Streptococcus suis"
+    journal: "BMC Biology"
+    volume: 19
+    year: 2021
+    doi: "10.1186/s12915-021-01094-1"
