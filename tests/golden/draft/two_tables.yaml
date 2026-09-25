@@ -1,0 +1,16 @@
+# Drafted by amr-clonalshare --init from the column names of:
+#   examples/workflows/data/metadata.csv
+#   examples/workflows/data/calls.csv
+# Every value below is a guess. Read it before running the analysis;
+# a line marked REPLACE_ME could not be guessed at all.
+dataset:
+  name: my_collection
+  data_dir: "<repository>/examples/workflows/data"
+  metadata: "metadata.csv"
+  strain_id_column: "isolate_id"
+  lineage_column: "lineage"
+  phenotype: "calls.csv"
+  phenotype_id_column: "isolate_id"
+  phenotype_antibiotic_column: "agent"
+  phenotype_call_column: "call"
+  phenotype_kind: clinical_sir

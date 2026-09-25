@@ -1,0 +1,219 @@
+{
+  "n_isolates": 25,
+  "n_antimicrobials": 3,
+  "n_empty_agents": 1,
+  "traits": {
+    "agent_a": {
+      "n": 25,
+      "n_missing": 0,
+      "n_positive": 9,
+      "prevalence": 0.36,
+      "minor_count": 9,
+      "constant": false,
+      "empty": false,
+      "adequate": false
+    },
+    "agent_b": {
+      "n": 23,
+      "n_missing": 2,
+      "n_positive": 0,
+      "prevalence": 0.0,
+      "minor_count": 0,
+      "constant": true,
+      "empty": false,
+      "adequate": false
+    },
+    "agent_c": {
+      "n": 0,
+      "n_missing": 25,
+      "n_positive": 0,
+      "prevalence": null,
+      "minor_count": 0,
+      "constant": false,
+      "empty": true,
+      "adequate": false
+    }
+  },
+  "min_minor_count": 20,
+  "min_group_size": 2,
+  "metadata_join": {
+    "n_joined": 24,
+    "share_joined": 0.96,
+    "unjoined_examples": [
+      "iso_99"
+    ],
+    "n_near_matches": 0,
+    "near_match_examples": [],
+    "rows_read": 25,
+    "n_duplicate_ids": 0,
+    "strains_joined": 24,
+    "strains_aligned": 25,
+    "n_metadata_only": 1,
+    "metadata_only_examples": [
+      "iso_25"
+    ],
+    "duplicate_policy": "error",
+    "n_duplicate_rows": 0,
+    "n_identical_duplicates_collapsed": 0,
+    "n_conflicting_keys": 0,
+    "n_conflicting_rows": 0,
+    "conflicting_key_examples": [],
+    "n_conflict_rows_dropped": 0
+  },
+  "lineage": {
+    "column": "lineage",
+    "n": 25,
+    "n_typed": 22,
+    "n_untyped": 3,
+    "n_groups": 6,
+    "n_singletons": 2,
+    "n_informative_groups": 4,
+    "support": 0.9090909090909091,
+    "support_threshold": 0.8,
+    "estimable": true,
+    "effective_group_size": 3.4727272727272727,
+    "group_sizes": {
+      "L01": 5,
+      "L02": 5,
+      "L03": 5,
+      "L04": 5,
+      "L05": 1,
+      "L06": 1
+    },
+    "smallest_groups": {
+      "L06": 1,
+      "L05": 1,
+      "L01": 5,
+      "L02": 5,
+      "L04": 5,
+      "L03": 5
+    }
+  },
+  "agent_feasibility": {
+    "agent_a": {
+      "n_retained": 22,
+      "n_dropped_non_finite": 0,
+      "n_dropped_untyped": 3,
+      "prevalence": 0.4090909090909091,
+      "minor_count": 9,
+      "n_groups": 6,
+      "n_singletons": 2,
+      "support": 0.9090909090909091,
+      "support_threshold": 0.8,
+      "input_feasible": true,
+      "failure_reasons": [],
+      "warnings": [
+        "fewer than 20 isolates of the rarer outcome"
+      ],
+      "support_pairings_needed": 0,
+      "projected_support": 0.9090909090909091
+    },
+    "agent_b": {
+      "n_retained": 22,
+      "n_dropped_non_finite": 2,
+      "n_dropped_untyped": 3,
+      "prevalence": 0.0,
+      "minor_count": 0,
+      "n_groups": 6,
+      "n_singletons": 2,
+      "support": 0.9090909090909091,
+      "support_threshold": 0.8,
+      "input_feasible": false,
+      "failure_reasons": [
+        "constant trait"
+      ],
+      "warnings": [
+        "fewer than 20 isolates of the rarer outcome"
+      ],
+      "support_pairings_needed": 0,
+      "projected_support": 0.9090909090909091
+    },
+    "agent_c": {
+      "n_retained": 0,
+      "n_dropped_non_finite": 25,
+      "n_dropped_untyped": 3,
+      "prevalence": null,
+      "minor_count": 0,
+      "n_groups": 0,
+      "n_singletons": 0,
+      "support": null,
+      "support_threshold": 0.8,
+      "input_feasible": false,
+      "failure_reasons": [
+        "fewer than 2 tested and typed isolates",
+        "fewer than 2 lineages"
+      ],
+      "warnings": [
+        "fewer than 20 isolates of the rarer outcome"
+      ],
+      "support_pairings_needed": null,
+      "projected_support": null
+    }
+  },
+  "phenotype_reading": {
+    "rows_read": 74,
+    "n_unrecognized_calls": 24,
+    "unrecognized_calls": {
+      "nt": 24
+    },
+    "n_missing_calls": 1,
+    "n_intermediate_dropped": 0,
+    "isolates_without_readable_calls": 0,
+    "phenotype_kind": "clinical_sir",
+    "positive_definition": "R only in fictional format example",
+    "positive_coding": "R (resistant)",
+    "intermediate_policy": "susceptible",
+    "source": "fictional teaching fixture with no AST interpretation",
+    "ast_standard": null,
+    "ast_version": null,
+    "agents": {
+      "agent_a": {
+        "rows_read": 26,
+        "n_recorded_isolates": 25,
+        "n_missing_calls": 0,
+        "n_unrecognized_calls": 0,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 25,
+        "n_absent_records": 0
+      },
+      "agent_b": {
+        "rows_read": 24,
+        "n_recorded_isolates": 24,
+        "n_missing_calls": 1,
+        "n_unrecognized_calls": 0,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 23,
+        "n_absent_records": 1
+      },
+      "agent_c": {
+        "rows_read": 24,
+        "n_recorded_isolates": 24,
+        "n_missing_calls": 0,
+        "n_unrecognized_calls": 24,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 0,
+        "n_absent_records": 1
+      }
+    },
+    "duplicate_policy": "error",
+    "n_duplicate_rows": 1,
+    "n_identical_duplicates_collapsed": 1,
+    "n_conflicting_keys": 0,
+    "n_conflicting_rows": 0,
+    "conflicting_key_examples": [],
+    "n_conflict_rows_dropped": 0,
+    "call_table_isolates_without_readable_calls": 0
+  },
+  "raw_universe": {
+    "definition": "union of raw call and MIC record identifiers",
+    "n_call_isolates": 25,
+    "n_mic_isolates": 0,
+    "n_mic_only_isolates": 0,
+    "call_agents": [
+      "agent_a",
+      "agent_b",
+      "agent_c"
+    ],
+    "mic_agents": []
+  }
+}

@@ -1,0 +1,5 @@
+$PY benchmarks/campaign/run_logged.py --receipt $ROOT/outputs/attribution_calibration/RUN_RECEIPT.json --outputs $ROOT/outputs/attribution_calibration -- $PY benchmarks/attribution_calibration.py --out $ROOT/outputs/attribution_calibration
+$PY benchmarks/campaign/run_logged.py --receipt $ROOT/outputs/null_uniformity/RUN_RECEIPT.json --outputs $ROOT/outputs/null_uniformity -- $PY benchmarks/null_uniformity.py --out $ROOT/outputs/null_uniformity
+$PY benchmarks/campaign/run_logged.py --receipt $ROOT/outputs/censored_gates/RUN_RECEIPT.json --outputs $ROOT/outputs/censored_gates -- $PY benchmarks/censored_gates.py --out $ROOT/outputs/censored_gates
+$PY benchmarks/campaign/run_logged.py --receipt $ROOT/outputs/ssuis_mechanism/RUN_RECEIPT.json --outputs $ROOT/outputs/ssuis_mechanism -- $PY benchmarks/ssuis_mechanism.py --out $ROOT/outputs/ssuis_mechanism
+$PY benchmarks/campaign/run_logged.py --receipt $ROOT/outputs/ssuis_resolution/RUN_RECEIPT.json --outputs $ROOT/outputs/ssuis_resolution -- $PY benchmarks/ssuis_resolution.py --out $ROOT/outputs/ssuis_resolution

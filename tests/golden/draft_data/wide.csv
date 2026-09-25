@@ -1,0 +1,13 @@
+isolate_id,ampicillin,tetracycline,enrofloxacin
+iso_01,S,R,S
+iso_02,R,R,S
+iso_03,S,S,S
+iso_04,R,R,S
+iso_05,S,R,S
+iso_06,R,S,S
+iso_07,S,R,S
+iso_08,R,R,S
+iso_09,S,S,S
+iso_10,R,R,S
+iso_11,S,R,S
+iso_12,R,S,S
