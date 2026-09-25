@@ -1,6 +1,6 @@
 # Four workflows using one small fictional collection
 
-These CSV files contain 96 fictional isolates, 12 arbitrary lineage labels and one invented agent. They demonstrate formats and software behavior; they are not biological observations, clinical recommendations or performance evidence. No Python programming is needed for the command-line routes. Run from the repository root after installing the candidate.
+These CSV files contain 96 fictional isolates, 12 arbitrary lineage labels and one invented agent. They demonstrate formats and software behavior; they are not biological observations, clinical recommendations or performance evidence. No Python programming is needed for the command-line routes. Run from the repository root after installing the package.
 
 ## 1 Calls and lineage labels
 

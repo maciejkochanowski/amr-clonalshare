@@ -237,10 +237,10 @@ def test_actual_selected_reference_and_resume_equivalence(tmp_path):
     # One tiny fixed development fixture, full selected settings; no campaign seeds.
     options=GeneralComputeOptions(cache_dir=str(tmp_path))
     session=GeneralComputeSession(options)
-    first=api.general_probit_icc([1,0],[2,2],seed=713,case_key='rc3_fixed_fixture',compute=session)
+    first=api.general_probit_icc([1,0],[2,2],seed=713,case_key='fixed_fixture',compute=session)
     assert first.complete and first.internal_alpha==.04
     native=first.computation['native']
-    second=api.general_probit_icc([1,0],[2,2],seed=713,case_key='rc3_fixed_fixture',compute=session)
+    second=api.general_probit_icc([1,0],[2,2],seed=713,case_key='fixed_fixture',compute=session)
     assert _without_seconds(native)==_without_seconds(second.computation['native'])
     assert second.computation['cache_reused_nodes']==len(native['nodes'])
     # Reuse the actual computed ranks to independently invert both alpha lists.
@@ -253,7 +253,7 @@ def test_actual_selected_reference_and_resume_equivalence(tmp_path):
 
 def test_actual_upper_uses_exact_selected_division_grid():
     from amr_clonalshare._general_probit_upper import mc_upper_bound
-    result=api.general_probit_icc([1,0],[3,1],seed=713,case_key='rc3_upper_grid_fixture')
+    result=api.general_probit_icc([1,0],[3,1],seed=713,case_key='upper_grid_fixture')
     raw=result.computation['native']
     selected=[i/100 for i in range(101)]
     assert raw['grid']==selected

@@ -69,8 +69,8 @@ dataset:
 population_probit:
   enabled: true
 
-# The calibrated MIC interval (on by default) takes several minutes per
-# antimicrobial even on many cores, so this example leaves it out to keep the
+# The calibrated MIC interval (on by default) takes 9 to 30 minutes per
+# antimicrobial on 16 cores, so this example leaves it out to keep the
 # run short. Delete these two lines for the full reading.
 censored:
   calibrated_interval: false

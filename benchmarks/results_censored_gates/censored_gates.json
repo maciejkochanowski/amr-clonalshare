@@ -1,0 +1,477 @@
+{
+ "design": {
+  "seed": 20260925,
+  "lineages": 30,
+  "isolates_per_lineage": 25,
+  "replicates": 200
+ },
+ "beyond_panel": [
+  {
+   "cut": -1.0,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.30633333333333335,
+   "bias": -0.013090141802885645,
+   "sd": 0.06965036524683324
+  },
+  {
+   "cut": -0.8,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.2235,
+   "bias": -0.02205540991882761,
+   "sd": 0.07689479756587597
+  },
+  {
+   "cut": -0.6,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.1635,
+   "bias": -0.013889429770868943,
+   "sd": 0.08191892513664935
+  },
+  {
+   "cut": -0.3999999999999999,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.11866666666666667,
+   "bias": 0.0012373361412648621,
+   "sd": 0.07498134379068334
+  },
+  {
+   "cut": -0.19999999999999996,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.08016666666666666,
+   "bias": -0.009858353976488763,
+   "sd": 0.07973229863694947
+  },
+  {
+   "cut": 0.0,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.0785,
+   "bias": -3.561403833282878e-05,
+   "sd": 0.07186336169730892
+  },
+  {
+   "cut": 0.20000000000000018,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.08916666666666667,
+   "bias": -0.00022646810920654348,
+   "sd": 0.07897192351345601
+  },
+  {
+   "cut": 0.40000000000000013,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.12466666666666666,
+   "bias": 0.01037710281950937,
+   "sd": 0.07688622291284695
+  },
+  {
+   "cut": 0.6000000000000001,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.16450000000000004,
+   "bias": -0.002501041390903127,
+   "sd": 0.07334558022169234
+  },
+  {
+   "cut": 0.8,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.22,
+   "bias": -0.01828806816483277,
+   "sd": 0.07660534960907814
+  },
+  {
+   "cut": 1.0,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.3148333333333333,
+   "bias": -0.011084052571941966,
+   "sd": 0.07238806136048699
+  },
+  {
+   "cut": 1.2000000000000002,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.4058333333333334,
+   "bias": -0.017543822684566956,
+   "sd": 0.06906243473520464
+  },
+  {
+   "cut": 1.4000000000000004,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.5016666666666667,
+   "bias": -0.03068609239208711,
+   "sd": 0.061176566179809065
+  },
+  {
+   "cut": 1.6,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.6091666666666666,
+   "bias": -0.052016018829399595,
+   "sd": 0.05265151111533184
+  },
+  {
+   "cut": 1.8000000000000003,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.6973333333333334,
+   "bias": -0.07336269967977312,
+   "sd": 0.059467391822222444
+  },
+  {
+   "cut": 2.0,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.7833333333333334,
+   "bias": -0.12023687805658197,
+   "sd": 0.060455004659564465
+  },
+  {
+   "cut": 2.2,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.8461666666666667,
+   "bias": -0.17757498089325646,
+   "sd": 0.0866167475967812
+  },
+  {
+   "cut": 2.4000000000000004,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.8926666666666668,
+   "bias": -0.23415952033370055,
+   "sd": 0.09780198541570875
+  },
+  {
+   "cut": 2.6,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.9286666666666668,
+   "bias": -0.3056018542664466,
+   "sd": 0.10636395703055847
+  },
+  {
+   "cut": 2.8000000000000003,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.9523333333333334,
+   "bias": -0.3574473475503682,
+   "sd": 0.10314413830818006
+  },
+  {
+   "cut": 3.0,
+   "replicates": 200,
+   "scored": 200,
+   "isolate_share_in_censored_lineages": 0.9766666666666667,
+   "bias": -0.4225954963634315,
+   "sd": 0.08687490262864574
+  }
+ ],
+ "single_cut": [
+  {
+   "true_share": 0.0,
+   "prevalence": 0.04,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.1655792013178491,
+   "intervals": 200,
+   "coverage": 0.155
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.06,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.1042484871565948,
+   "intervals": 200,
+   "coverage": 0.195
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.08,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.06285785798219556,
+   "intervals": 200,
+   "coverage": 0.28
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.1,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.04152293866666649,
+   "intervals": 200,
+   "coverage": 0.395
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.12,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.03641598506135693,
+   "intervals": 200,
+   "coverage": 0.43
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.16,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.02527177083709318,
+   "intervals": 200,
+   "coverage": 0.57
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.2,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.01873406147984941,
+   "intervals": 200,
+   "coverage": 0.67
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.24,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.016442273091446618,
+   "intervals": 200,
+   "coverage": 0.77
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.3,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.013785218520598821,
+   "intervals": 200,
+   "coverage": 0.795
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.4,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.01344460418252625,
+   "intervals": 200,
+   "coverage": 0.83
+  },
+  {
+   "true_share": 0.0,
+   "prevalence": 0.5,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.010505457909165277,
+   "intervals": 200,
+   "coverage": 0.87
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.04,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.06550824374272736,
+   "intervals": 200,
+   "coverage": 0.905
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.06,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.06698987586428196,
+   "intervals": 200,
+   "coverage": 0.885
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.08,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.049024086202623315,
+   "intervals": 200,
+   "coverage": 0.875
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.1,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.039733753685492805,
+   "intervals": 200,
+   "coverage": 0.885
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.12,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.029598379150897774,
+   "intervals": 200,
+   "coverage": 0.825
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.16,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.02656694542118,
+   "intervals": 200,
+   "coverage": 0.87
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.2,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.015502039920230413,
+   "intervals": 200,
+   "coverage": 0.925
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.24,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.007104892939358645,
+   "intervals": 200,
+   "coverage": 0.895
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.3,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.011405826830372123,
+   "intervals": 200,
+   "coverage": 0.885
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.4,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.010101214429354783,
+   "intervals": 200,
+   "coverage": 0.935
+  },
+  {
+   "true_share": 0.3,
+   "prevalence": 0.5,
+   "replicates": 200,
+   "scored": 200,
+   "bias": 0.007127938386331256,
+   "intervals": 200,
+   "coverage": 0.93
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.04,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.06823040045929554,
+   "intervals": 200,
+   "coverage": 0.975
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.06,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.03436518532577919,
+   "intervals": 200,
+   "coverage": 0.98
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.08,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.03407193962735972,
+   "intervals": 200,
+   "coverage": 0.99
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.1,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.02501206518721986,
+   "intervals": 200,
+   "coverage": 0.965
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.12,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.02468891334148214,
+   "intervals": 200,
+   "coverage": 0.95
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.16,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.016337123052876778,
+   "intervals": 200,
+   "coverage": 0.965
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.2,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.012426351440638493,
+   "intervals": 200,
+   "coverage": 0.93
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.24,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.010019837657862862,
+   "intervals": 200,
+   "coverage": 0.91
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.3,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.009482163206134495,
+   "intervals": 200,
+   "coverage": 0.935
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.4,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.007983802475315174,
+   "intervals": 200,
+   "coverage": 0.93
+  },
+  {
+   "true_share": 0.5,
+   "prevalence": 0.5,
+   "replicates": 200,
+   "scored": 200,
+   "bias": -0.004230726381462077,
+   "intervals": 200,
+   "coverage": 0.97
+  }
+ ]
+}

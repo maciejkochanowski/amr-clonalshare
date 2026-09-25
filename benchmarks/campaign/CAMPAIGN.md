@@ -76,50 +76,39 @@ python -c "import json;print(json.load(open('$O/calibration.json'))['critical_va
 $S --array=0-129 --cpus-per-task=48 --mem=96G --time=24:00:00 $C/lines.sbatch $C/commands/population_validation_lr_packed.txt
 ```
 
-## 3. Summaries
+## 3. Summaries and final runs
 
 Each summary runs under `run_logged.py` with the directory it reads as an
-output, so its receipt carries the sha256 of every file the array wrote.
+output, so its receipt carries the sha256 of every file the array wrote. The
+summary lines are in `commands/summaries.txt`; `run_summaries.sh` runs a file
+of them in order and stops at the first failure.
 
 ```bash
-R="$PY benchmarks/campaign/run_logged.py"
-O=$AMR_CAMPAIGN_ROOT/outputs
-$R --receipt $O/estimator_grid/RUN_RECEIPT.json --outputs $O/estimator_grid -- \
-    $PY benchmarks/estimator_benchmark.py --aggregate --out $O/estimator_grid
-$R --receipt $O/realised_calibration/RUN_RECEIPT.json --outputs $O/realised_calibration -- \
-    $PY benchmarks/realised_calibration.py --aggregate --out $O/realised_calibration
-$R --receipt $O/mic_exact/RUN_RECEIPT.json --outputs $O/mic_exact -- \
-    $PY benchmarks/mic_inference/summarize.py $O/mic_exact $O/exact_confirmation_summary.csv
-$R --receipt $O/mic_null/RUN_RECEIPT.json --outputs $O/mic_null -- \
-    $PY -m benchmarks.mic_inference.summarize_null $O/mic_null $O/null_confirmation_summary.csv \
-    --tasks benchmarks/mic_inference/tasks_null_confirmation.tsv
-$R --receipt $O/mic_extension/RUN_RECEIPT.json --outputs $O/mic_extension -- \
-    $PY -m benchmarks.mic_inference.summarize_null $O/mic_extension $O/null_extension_summary.csv \
-    --tasks benchmarks/mic_inference/tasks_extension.tsv
-for F in validation robustness; do for M in lr general; do
-  $R --receipt $O/population/${M}_$F/RUN_RECEIPT.json --outputs $O/population/${M}_$F -- \
-      $PY -m benchmarks.population_model.aggregate cover $O/population/${M}_$F $O/population/${F}_$M.csv
-done; done
-$R --receipt $O/population/benefit/RUN_RECEIPT.json --outputs $O/population/benefit -- \
-    $PY -m benchmarks.population_model.aggregate benefit $O/population/benefit $O/population/benefit.csv
+$S --cpus-per-task=1 --mem=64G --time=24:00:00 $C/run_summaries.sh $C/commands/summaries.txt
+$S --array=0-3 --cpus-per-task=18 --mem=48G --time=12:00:00 $C/lines.sbatch $C/commands/final_runs.txt
 $PY benchmarks/mic_inference/account_jobs.py $O/accounting.json <pytest log> <name>=<job> ...
 ```
 
-## 4. On one workstation, from the same commit and stack
+`final_runs.txt` repeats the *S. suis* analysis under forty seeds, profiles it,
+and writes the *S. suis* and *Salmonella* reanalyses the article reports.
+
+## 4. Package files and example records
+
+From the same commit and stack, the validation files the package reads and the
+shipped example records are written from these results:
 
 ```bash
 python benchmarks/estimator_grid_summary.py <estimator_grid>/estimator_benchmark.json \
     src/amr_clonalshare/validation_grid.json
 python -m benchmarks.population_model.aggregate evidence <population results> src/amr_clonalshare
-python -m benchmarks.mic_inference.write_extension_grid benchmarks/results_mic_release/extension/extension_design_grid.json
+python -m benchmarks.mic_inference.write_extension_grid benchmarks/results_mic_release/extension_design_grid.json
 python scripts/update_golden.py
 amr-clonalshare --config examples/ssuis/config.yaml --results-dir examples/ssuis/expected --overwrite
 amr-clonalshare --config examples/salmonella_poultry/config.yaml --results-dir examples/salmonella_poultry/expected_serovar --overwrite
 amr-clonalshare --config examples/salmonella_poultry/config_cluster.yaml --results-dir examples/salmonella_poultry/expected_cluster --overwrite
-python benchmarks/empirical/ssuis_analysis.py
-python benchmarks/empirical/salmonella_analysis.py
-OMP_NUM_THREADS=1 python benchmarks/seed_stability.py 40 18 benchmarks/results_seed_stability/seeds.json
-OMP_NUM_THREADS=1 python benchmarks/profile_run.py examples/ssuis/config.yaml benchmarks/results_profile/profile.json
 ```
 
-each under `run_logged.py` as above.
+The results are then copied into `benchmarks/results_*`: each folder holds the
+summaries, the receipts and the per-cell files small enough to ship; the
+receipts list the sha256 of every per-task file, including those that are not
+shipped.

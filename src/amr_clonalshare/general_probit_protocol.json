@@ -30,7 +30,7 @@
     "validation_cells": 144,
     "validation_replicates": 72000,
     "validation_seed": 20260926202,
-    "validation_summary_sha256": "9982bd27f92d527c65ccd1a955db51ce236347f6edc88d6fc5811941ab620b9a"
+    "validation_summary_sha256": "e54333ec9f1774f7ab8260d64efe839b7c201b5de2c719032156e236408e3de9"
   },
   "validation_status": "validation_accepted"
 }

@@ -1,0 +1,80 @@
+{
+ "command": [
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_release/env/bin/python",
+  "benchmarks/empirical/salmonella_analysis.py"
+ ],
+ "exit_status": 0,
+ "started_utc": "2026-09-25T16:28:03Z",
+ "finished_utc": "2026-09-25T16:28:23Z",
+ "wall_seconds": 20.5,
+ "commit": "391574012982b5b55a4e8ddc8e73fef00f5b3d34",
+ "source": {
+  "package_sha256": "65ce5327248315afbe8725c4c5d8fea87422f9a1c281076669126426a48cbb15",
+  "files": {
+   "__init__.py": "8ea0b2a8699a5672be581c1304fccac01970300352b959dd721e9dfc0bf91b47",
+   "_general_probit/__init__.py": "c0f12aa2667163da76424f22ba7d4d8f65c93c49be73ea395bafea9cda04aca3",
+   "_general_probit/histogram_table/__init__.py": "c0f12aa2667163da76424f22ba7d4d8f65c93c49be73ea395bafea9cda04aca3",
+   "_general_probit/histogram_table/histogram_table.py": "e4c2be7ac3a468c749ca61d3a73905238aed7c33b877c46c3819388de4a0a595",
+   "_general_probit/profile_bootstrap/__init__.py": "c0f12aa2667163da76424f22ba7d4d8f65c93c49be73ea395bafea9cda04aca3",
+   "_general_probit/profile_bootstrap/bootstrap.py": "558414c2bb68bec4b329f2b01671690d1da4fa08387a440f0e613e537493ea9d",
+   "_general_probit_compute.py": "1fab598ea685b993231f4b29aa54ecbbb2e12ce0f784e6fd3721f9bb6ea3e283",
+   "_general_probit_upper.py": "6b7dc1642b88b8a5a076b3afd17820ef357c66aa1ec0547769e822ad89a72de6",
+   "_mic_adaptive.py": "94c010ce3a7443de7f380f8a655e58b24ce4ea1cbcd37abb85d67499e509e444",
+   "_mic_boundary.py": "898a55e30e162a080692ed17776ad2ee9c0f898f15e67b8c5ee4ec6d5ea21866",
+   "_mic_likelihood.py": "c0647c082dca60e2a90d3e132b5b1c942ca52828143fb86c245bf0f8601e7995",
+   "_mic_panels.py": "4b497290801ddaf5048fe04de7147a1c2bbc8361d7a93f890c7426984f3bc750",
+   "_mic_piecewise.py": "053185be17fb8856e03a626a612c12041ec3d8981fa2d2c9efccf5a3741918bd",
+   "_mic_quadrature.py": "3af5d76b37fcbc7af0e8742d6f9c199e19d316a2f2f021aad5500a402e9f5f9f",
+   "_normal_numerics.py": "7736b837a373a19537d9977d722f1c739f22a02cc0f3ed2d1efbf1952ced415b",
+   "_population_probit_numerics.py": "5bb56b972497aa951f0d70b8bf14f56e83a915a23a03f7c854336666f82594e8",
+   "_seeding.py": "ae959415ed18b5e84de61766735797eb70250e16392bd26504ba1b0c84e28d20",
+   "attribution.py": "eb76373ce0ca1a411f3c54b2bea9bccc8322fafbfc2194911f43e973e8d13380",
+   "censored.py": "4c60846c5330ab15a4011156a19c1d90f3d703e68b5dfebf0af56c984e10359b",
+   "cli.py": "05a7957664bdfc16c30e49a762e0f17ee8a8393fb33e2dfb5c707a6aba910cd6",
+   "clonality.py": "7965cdee93da42e99ef25793008c0b687b7f3c9f9dcc267e5b14b289c869663b",
+   "comparison.py": "7321d0ea7e310338134a0a4708a48dd17ca14ac14d0349c8132234b0a4f991e5",
+   "config.py": "281e8f47a484becd87d042684562c20c77aac860861f9cb74e6f7626645bb51f",
+   "core.py": "cc488c3557f7d9680612e1320f53bb5eae1075664dd2845e3f3fae01a0fe0f90",
+   "draft.py": "2e2a4df3b855058e2666f2b09692398eff287cf80b003bee649c20b6e30395ad",
+   "evalues.py": "6da57c3aa8b3260d67691fd25600fb5afb98a1a7be0de20288203df769a21451",
+   "general_probit.py": "531a72f4c3c868026cb5f12c54765525bdd713b93a313c7bcc70dce0cf1c4718",
+   "io.py": "4fec6efeb94a3d279cfbcc45b4069b4c9758717223eb6210664e8e355c96f048",
+   "jsonio.py": "88bd6d41189229900e7691f7fd7617f77e8036d33cf9f9dd8b70d89d11f56caa",
+   "latent.py": "93b1ac637c30fa39873ae59d44f6c205f8f48c81396a0935fbe3a5afa5a44fcd",
+   "mic_inference.py": "9dcd3ab326167f5cdf8e5fd6d763f796493ea332f900c8239c1a8e2045e7db80",
+   "mic_inference_cli.py": "eed00a26b1b9657447c6207a89c0b3069ce22c4f06cb0ce5aaafd92b24b8145e",
+   "mic_null_bootstrap.py": "a8f459b5ee58afdec11fda390511b787f91d4a971450566c8d779d7dac877098",
+   "missingness.py": "5ac7ec381530c9e5845c1e32a26853d98b90baaf1f51799575ec0b45a0544f23",
+   "outputs.py": "11a526486d2ab70d809ea0d0e94d6f49e86c00defaa2b52a67bd20247874fd3c",
+   "phenotype.py": "548e4c3013bf53b986ddd2b236149d2f6b2651db1f5d08216b25a84dcdcbebb2",
+   "population_probit.py": "f9cb9a8c68aeee997380ff27e757d284ab6ab30cc030dfcf5c9e5ad36b1e2728",
+   "qc.py": "499643f52e312fe8fe891dfd07da90a77c99532fe8f237493765bde5d9ca24f6",
+   "realised.py": "8aec1cf828b154f8ea47a33f83ff337f5bc0b83d8772feb3067a2579cd87dbdd",
+   "report.py": "d8c8d6cf11189d7ff5a9c5db59c79810c40193dcd8c0d18225c58c44c5d60546",
+   "report_html.py": "5dc469e53eeb2258fc97ea073e5c70cf9603b7111c4792709808b2f6cd90da59",
+   "report_model.py": "e7a1ce5b3487db4f9b7a6ed969d1f86785e31df19ea7254f409019ae26a82cf5",
+   "stats.py": "ccc5129af2bc768441700e46639c04def542748675776479bc6a36507c3b05fd"
+  }
+ },
+ "stack": {
+  "python": "3.11.15",
+  "platform": "Linux-5.14.0-687.47.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "pandas": "3.0.2",
+  "yaml": "6.0.3",
+  "threadpoolctl": "3.6.0"
+ },
+ "cpus_available": 18,
+ "slurm": {
+  "SLURM_JOB_ID": "24114092",
+  "SLURM_ARRAY_JOB_ID": "24114092",
+  "SLURM_ARRAY_TASK_ID": "3",
+  "SLURM_CPUS_PER_TASK": "18"
+ },
+ "outputs_sha256": {
+  "nalidixic_arms.csv": "cc70bde9aff948463647b6f0dabc8b5a079e8b84a179746514cefffa06dd0c87",
+  "nalidixic_matched_comparison.json": "7cbabf77389ff19839fe4eec8ee9888a8c33720b13e96fb124e6f4a21e7fe97d",
+  "receipt.json": "c4c40ffa649e9be03b662ba10b9f04d0749a4c58ca86d3d9bcd26ad63077debb"
+ }
+}

@@ -20,4 +20,4 @@ sha256 of every file in it.
 | `population_model/` (see `PROTOCOL.md`) | calibration and validation of the optional population liability ICC | `results_population_model/`, `src/amr_clonalshare/population_probit_validation.json`, `src/amr_clonalshare/general_probit_protocol.json` |
 | `seed_stability.py` | the spread of each agent's share over master seeds | `results_seed_stability/` |
 | `profile_run.py` | time and memory of one analysis, by phase | `results_profile/` |
-| `fetch_pathogen_detection.sh`, `pathogen_detection_releases.tsv`, `vet_source_taxonomy.py`, `verify_vet_claims.py`, `ast_calls.py` | retrieval of the public source at pinned release accessions and the rules that build the *Salmonella* example from it | `raw/` (not shipped), `examples/salmonella_poultry/data/` |
+| `fetch_pathogen_detection.sh`, `pathogen_detection_releases.tsv`, `vet_source_taxonomy.py`, `ast_calls.py` | retrieval of the public source at pinned release accessions and the rules that build the *Salmonella* example from it | `raw/` (not shipped), `examples/salmonella_poultry/data/` |

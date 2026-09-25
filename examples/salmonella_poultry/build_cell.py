@@ -29,7 +29,7 @@ import pandas as pd
 HERE = Path(__file__).resolve().parent
 DATA = HERE / "data"
 sys.path.insert(0, str(HERE.parent.parent / "benchmarks"))
-from verify_vet_claims import parse_ast, serovar, year  # noqa: E402
+from ast_calls import parse_ast, serovar, year  # noqa: E402
 from vet_source_taxonomy import classify  # noqa: E402
 
 RELEASE = "PDG000000002.4210"

@@ -20,7 +20,7 @@ An existing output destination is protected. Use a new directory or an intention
 
 An unsupported attribution may reflect insufficient repeated-lineage support, few usable outcomes or another method-specific condition. Read the recorded reason. A coarser label changes the target; it is not an automatic fix that preserves the original question.
 
-A slightly negative debiased attribution can arise near the permutation null; interpret it with its uncertainty and support. A withheld realised interval means its reporting criterion was not met. Passing the kurtosis criterion does not prove Gaussian errors or ensure nominal coverage, and historical stress tests retain serious failures.
+A slightly negative debiased attribution can arise near the permutation null; interpret it with its uncertainty and support. A withheld realised interval means its reporting criterion was not met. Passing the kurtosis criterion does not prove Gaussian errors or ensure nominal coverage; heavy-tailed residuals lowered coverage in the validation study.
 
 An e-value of one and a nonzero share are not contradictory. Evidence and magnitude are different outputs with different constructions. Sequential validity requires actual batch ordering and the stated conditional null model.
 

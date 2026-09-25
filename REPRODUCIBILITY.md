@@ -38,8 +38,11 @@ Numbers are not promised to be bit-identical on other NumPy or SciPy versions.
 Every result under `benchmarks/results_*` and the three validation files the
 package reads at run time (`validation_grid.json`,
 `population_probit_validation.json`, `general_probit_protocol.json`) were
-produced by one campaign, run from one commit of this repository on the stack
-above. `benchmarks/campaign/CAMPAIGN.md` lists its commands in order. Each step
+produced by one campaign, run from commit `3915740` of this repository (the
+first commit of its history) on the stack above; the second commit adds the
+results, the package files written from them, the command lists of the summary
+steps and the documentation, and leaves the package code and the simulation
+drivers unchanged. `benchmarks/campaign/CAMPAIGN.md` lists its commands in order. Each step
 wrote a receipt naming the command, the commit, a digest of every Python file of
 the package, the library versions, the Slurm job and the sha256 of every file it
 wrote; the per-task receipts of the MIC simulations also carry the hash of every

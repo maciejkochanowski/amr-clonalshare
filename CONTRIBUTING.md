@@ -193,28 +193,27 @@ The score is killed mutants over all mutants of the module.
 | `missingness.py` | 170 | 164 | 6 | 0.96 |
 | `stats.py` | 261 | 238 | 23 | 0.91 |
 | `qc.py` | 763 | 680 | 83 | 0.89 |
-| `comparison.py` | 716 | 620 | 96 | 0.87 |
-| `clonality.py` | 1457 | 1233 | 224 | 0.85 |
-| `evalues.py` | 731 | 620 | 111 | 0.85 |
+| `evalues.py` | 733 | 622 | 111 | 0.85 |
+| `clonality.py` | 1,454 | 1,229 | 224 | 0.85 |
 | `_normal_numerics.py` | 398 | 336 | 62 | 0.84 |
 | `latent.py` | 146 | 121 | 25 | 0.83 |
-| `attribution.py` | 1195 | 981 | 214 | 0.82 |
-| `phenotype.py` | 464 | 366 | 98 | 0.79 |
-| `draft.py` | 222 | 174 | 48 | 0.78 |
-| `realised.py` | 603 | 438 | 165 | 0.73 |
-| all of the above | 7133 | 5975 | 1155 | 0.84 |
+| `attribution.py` | 1,209 | 994 | 215 | 0.82 |
+| `comparison.py` | 777 | 638 | 139 | 0.82 |
+| `draft.py` | 230 | 187 | 43 | 0.81 |
+| `phenotype.py` | 485 | 373 | 112 | 0.77 |
+| `realised.py` | 604 | 437 | 165 | 0.72 |
+| all of the above | 7,230 | 6,019 | 1,208 | 0.83 |
 
-The per-module rows count the mutants generated for each file; the total
-row is the run's own, which is seven larger because three mutants timed
-out and four sit outside a function body.
+The per-module rows count the mutants generated for each file; three mutants timed
+out and are counted as neither killed nor surviving.
 
-Every one of the 1,155 survivors is written down in
+Every one of the 1,208 survivors is written down in
 `tests/mutation_survivors.json`, in fourteen classes, each with a verdict and
-a reason. Ninety-two of them are equivalent mutants: a `dtype=float` dropped
+a reason. Thirty-six of them are equivalent mutants: a `dtype=float` dropped
 from a constructor whose default is already float64, an argument of
 `np.errstate` that decides whether a warning is printed and never what is
 computed. No test can kill those, and none should be written to try. The
-other 1,063 are gaps, and the record says for each class what a test would
+other 1,172 are gaps, and the record says for each class what a test would
 have to do; the largest are text on a path no fixture enters, a returned
 field no assertion reads, and a numeric gate no input sits exactly on.
 Calling them gaps rather than equivalents is deliberate: for many of them

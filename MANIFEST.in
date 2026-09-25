@@ -14,6 +14,7 @@ include tests/mutation_survivors.json
 # without them a suite run from the source distribution cannot check them.
 recursive-include tests/golden *.yaml *.csv *.json *.md *.html
 recursive-include benchmarks *.py *.sh *.tsv *.md *.sbatch
+recursive-include benchmarks/campaign/commands *.txt
 recursive-include scripts *.py *.sh
 include examples/ssuis/*.yaml
 include examples/ssuis/*.md

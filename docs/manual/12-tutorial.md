@@ -20,13 +20,13 @@ amr-clonalshare --config examples/ssuis/config.yaml --check-input --results-dir 
 
 ## Step 3. Run the configured analysis
 
-The example configuration names the testing laboratory as the panel column, the country of isolation as a fixed effect of the MIC model and as the stratifying column, and switches the calibrated MIC interval off (`censored: {calibrated_interval: false}`) to keep the run short, about fifteen minutes on one core with the three strata. Deleting that line adds the calibrated interval for all sixteen agents: 7 to 37 minutes per agent on 16 cores in the records of this release, a median of 23, and 5.4 hours for the whole panel. The run writes the files listed in the [results manual](05-results.md).
+The example configuration names the testing laboratory as the panel column, the country of isolation as a fixed effect of the MIC model and as the stratifying column, and switches the calibrated MIC interval off (`censored: {calibrated_interval: false}`) to keep the run short, about four minutes on one core with the three strata. Deleting that line adds the calibrated interval for all sixteen agents: 9 to 30 minutes per agent on 16 cores in the records of this release, a median of 19, and 5.0 hours for the whole panel. The run writes the files listed in the [results manual](05-results.md).
 
 ```
 amr-clonalshare --config examples/ssuis/config.yaml --results-dir out/ssuis
 ```
 
-Open `out/ssuis/report.html`. Table 1 gives the lineage share of every binary endpoint with its limits, e-value and reading; Table 5 the share of the dilution scale per agent; Tables 5a to 5c the panel of each laboratory, the fixed-effect coefficients with their reference level and the status of every calibrated interval; the heat map the readings per lineage and dilution well; and Table 5d the same shares within each country.
+Open `out/ssuis/report.html`. Table 1 gives the lineage share of every binary endpoint with its limits, e-value and reading; Table 5 the share of the dilution scale per agent; Tables 5a to 5c the panel of each laboratory, the fixed-effect coefficients with their reference level and the status of every calibrated interval; the heat map the readings per lineage and dilution well; Table 5d the same shares within each country; and the population-model section the liability intraclass correlation of every call with its interval.
 
 ## Step 4. Compare two lineage definitions on matched records
 
@@ -38,7 +38,7 @@ d = "examples/ssuis/data/"
 meta = pd.read_csv(d + "metadata.csv", dtype=str)
 calls = pd.read_csv(d + "calls_long.csv", dtype=str)
 cef = calls[calls.antibiotic == "ceftiofur"].merge(meta, on="genome_id")
-cef["positive"] = cef.call.map({"non-susceptible": 1, "susceptible": 0}).astype("Int64")  # missing stays empty
+cef["positive"] = cef.call.map({"NWT": 1, "WT": 0}).astype("Int64")  # missing stays empty
 cef[["genome_id", "positive", "baps_cluster", "mlst"]].to_csv("aligned.csv", index=False)
 ```
 
@@ -48,7 +48,7 @@ amr-clonalshare-compare --input aligned.csv --id-column genome_id --outcome posi
   --bootstraps 399 --output out/ceftiofur_comparison
 ```
 
-`arms.csv` lists the four analyses: population clusters on all 677 isolates and on the 458 shared records, and sequence types on the shared records and on their own; the sequence-type score is flagged because its lineage coverage is 85.81%.
+`arms.csv` lists the four analyses: population clusters on all 677 isolates and on the 458 shared records, and sequence types on the shared records and on their own. The sequence types reach a lineage coverage of 85.81%, above the 0.80 threshold, but only 43 of the 108 types repeat.
 
 ## Step 5. Compute the calibrated MIC interval for one agent
 
@@ -61,7 +61,7 @@ amr-clonalshare-mic benchmarks/results_mic_release/mic_empirical_inputs/ceftiofu
   --workers 16 --output out/ceftiofur_rho.json
 ```
 
-The output records the estimate and the interval together with every tested value of ρ, its bootstrap sample, the fixed-effect coefficients, the input digest and the software versions; the computation takes about ten minutes on 16 cores. `--bootstrap` (default 199) sets the simulated datasets per tested value, `--alpha` (0.05) the level and `--tolerance` (0.002) the bisection step in ρ; `--method null-test --rho R` runs the test at one candidate value instead of inverting it, and `--method exact` applies Wald's pivot when every reading is exact. The comparison tool takes `--folds` (5) and `--repeats` (20) for its cross-validated scores beside `--permutations` and `--bootstraps`.
+The output records the estimate and the interval together with every tested value of ρ, its bootstrap sample, the fixed-effect coefficients, the input digest and the software versions; the computation took 13 minutes on 16 cores. `--bootstrap` (default 199) sets the simulated datasets per tested value, `--alpha` (0.05) the level and `--tolerance` (0.002) the bisection step in ρ; `--method null-test --rho R` runs the test at one candidate value instead of inverting it, and `--method exact` applies Wald's pivot when every reading is exact. The comparison tool takes `--folds` (5) and `--repeats` (20) for its cross-validated scores beside `--permutations` and `--bootstraps`.
 
 ## Step 6. Read the results
 

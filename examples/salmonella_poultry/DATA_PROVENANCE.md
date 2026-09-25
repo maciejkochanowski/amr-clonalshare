@@ -18,7 +18,7 @@ susceptibility calls the submitting laboratories deposited, one
 which gives every isolate its SNP cluster (`PDS` accession) at that release.
 The data are public and carry no licence restriction; the isolates were
 deposited by the United States National Antimicrobial Resistance Monitoring
-System and other submitters, and the release is the version the veterinary atlases were run on.
+System and other submitters.
 
 NCBI recomputes the SNP clusters at every release, so a later release is a
 different lineage variable rather than a longer version of this one. A reader
@@ -58,8 +58,8 @@ for that agent.
 | `isolation_source` | the free-text field the matrix rule read |
 
 `data/calls_long.csv`, one row per isolate and antimicrobial: `genome_id`,
-`antibiotic` as the release spells it, and `call`, `susceptible` for S and
-`non-susceptible` for I or R, the reading NCBI applies to its own categories.
+`antibiotic` as the release spells it, and `call`, 0 for S and 1 for I or R,
+the reading NCBI applies to its own categories.
 `data/cell_receipt.json` records the counts at the time the tables were
 written.
 

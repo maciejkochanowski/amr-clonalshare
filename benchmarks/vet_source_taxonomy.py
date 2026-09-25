@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Assign a host and a sampling matrix to a Pathogen Detection isolate.
 
-    python source_taxonomy.py --profile <host_source.tsv> --out <dir>
+    python vet_source_taxonomy.py --profile <host_source.tsv> --out <dir>
 
 WHY THIS EXISTS. The `host` field of the Pathogen Detection metadata is empty
 for about half the isolates that carry an antimicrobial susceptibility result,

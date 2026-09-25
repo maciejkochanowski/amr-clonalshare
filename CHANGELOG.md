@@ -4,7 +4,7 @@
 
 First release.
 
-- Share of a binary phenotype carried by lineage: a permutation-adjusted, cross-validated Brier skill score of lineage-specific rates, with lineage-bootstrap limits, a species interval on the scale of a population intraclass correlation, a permuted-label control, the support of repeated lineages and a flag below 80% support.
+- Share of a binary phenotype carried by lineage: a permutation-adjusted, cross-validated Brier skill score of lineage-specific rates, with lineage-bootstrap limits, a species interval on the scale of a population intraclass correlation, a permuted-label control, the support of repeated lineages, and a score withheld below 80% support.
 - Held-out e-values per antimicrobial with e-BH selection, and a running product over intakes that may be read after any of them.
 - MIC reading from dilution intervals: a Gaussian random-intercept model on the log2 scale with the panel read within each testing laboratory, categorical covariates (a laboratory, a country, a year) as additive fixed effects, and a calibrated 95% interval for the lineage share of latent variance: Wald's generalised F pivot for exact readings, and for intervals a likelihood-ratio test inverted over candidate values, each calibrated by 199 datasets simulated from the fit restricted to that value. A moment estimate with an approximate F interval is reported beside it as a labelled comparison. `amr-clonalshare-mic` computes the interval for a single table.
 - Kitagawa decomposition of a prevalence difference between two collections into composition and within-lineage terms, with bootstrap limits, a shared-support gate and exact recorded-frame bounds for missing outcomes.

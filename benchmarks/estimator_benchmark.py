@@ -141,9 +141,9 @@ def cohort(rng, n_groups, size, share, binary=False, prevalence=0.25,
         # effects equals ``prevalence``: under the normal law the liability has
         # variance 1 + tau^2, so the intercept is Phi^-1(p) sqrt(1 + tau^2);
         # under the two-point law it solves the mixture equation numerically.
-        # Placing Phi^-1(p) on the liability directly, as the first release
-        # did, gave a marginal prevalence that rose with the share, 0.32
-        # rather than 0.25 at a share of 0.5.
+        # Placing Phi^-1(p) on the liability directly would give a marginal
+        # prevalence that rises with the share, 0.32 rather than 0.25 at a
+        # share of 0.5.
         c = _binary_intercept(prevalence, tau, law)
         p = np.clip(stats.norm.cdf(c + effects), 1e-6, 1 - 1e-6)
         y = rng.binomial(1, np.repeat(p, sizes)).astype(float)
@@ -363,8 +363,7 @@ def design() -> list[dict]:
                       "unbalance": "poisson", "replicates": 400})
         i += 1
     # The ends of the lineage-count range: a collection of five lineages, and
-    # the many-lineages-few-isolates regime a genome-cluster label produces
-    # (the cross-species atlas holds 22,671 isolates in 5,904 clusters).
+    # the many-lineages-few-isolates regime a genome-cluster label produces.
     for binary in (False, True):
         for n_groups, size in ((5, 5), (5, 20), (300, 3), (1000, 3)):
             for share in (0.0, 0.1, 0.3, 0.5, 0.7):

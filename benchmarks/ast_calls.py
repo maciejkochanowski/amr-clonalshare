@@ -1,5 +1,9 @@
-"""Order-independent interpretation of contributed Pathogen Detection calls."""
+"""Reading of contributed NCBI Pathogen Detection fields: AST calls, serovar, year."""
 from collections import defaultdict
+
+import numpy as np
+
+SEROVAR_MARK = " serovar "
 
 
 def parse_ast(field: str) -> dict[str, float]:
@@ -24,3 +28,18 @@ def parse_ast(field: str) -> dict[str, float]:
             calls[drug].add(float(call != 'S'))
     return {drug: next(iter(values)) if len(values) == 1 else float('nan')
             for drug, values in calls.items()}
+
+
+def serovar(name):
+    """The serovar written after the serovar mark of an isolate name, or ''."""
+    if not isinstance(name, str) or SEROVAR_MARK not in name:
+        return ""
+    return name.split(SEROVAR_MARK, 1)[1].strip()
+
+
+def year(value):
+    """The year of a collection date that starts with four digits, else NaN."""
+    if not isinstance(value, str) or len(value) < 4:
+        return np.nan
+    head = value[:4]
+    return float(head) if head.isdigit() else np.nan

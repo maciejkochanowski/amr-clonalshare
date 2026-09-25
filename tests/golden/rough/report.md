@@ -3,7 +3,7 @@
 Every number below is read from `clonal_share_result.json`, written by the same run, or from the release's validation grid where the text says so; none is recomputed here.
 
 - **Run:** E753CE01
-- **Issued:** 2026-09-25T15:42Z
+- **Issued:** 2026-09-25T17:38Z
 - **Software:** amr-clonalshare 1.0.0
 - **Isolates:** 25
 - **Lineage:** lineage
@@ -134,7 +134,7 @@ On the release's validation grid, the interval this estimator prints for a binar
 
 Two intervals answer two questions. The interval above is for the share the lineages in this collection carry. The second interval below is for the share a fresh draw of lineages from the species would show, stated on the scale of the realised share of Table 3b below; it adds the sampling of the lineages themselves, on 5 degrees of freedom, is widened to the envelope of the first taken on that scale (with a lower end no smaller than zero, since a species share is not negative), and is the one to quote when the figure is read as a property of the species rather than of this collection. With few lineages it is markedly wider; with many the two nearly coincide.
 
-This collection holds fewer than ten lineages. On the release's validation grid the interval for lineage membership contained the truth in only 0.83 to 0.96 of runs at 5 lineages. A resample of so few lineages has too few distinct outcomes, and the species interval, wider in the normal-effect cells, answers a different question and does not repair uncertainty about this collection.
+This collection holds fewer than ten lineages. On the release's validation grid the interval for lineage membership contained the truth in only 0.82 to 0.96 of runs at 5 lineages. A resample of so few lineages has too few distinct outcomes, and the species interval, wider in the normal-effect cells, answers a different question and does not repair uncertainty about this collection.
 
 For one trait one lineage carries more than half of the between-lineage variation (agent_a 67.4 %). The species interval describes lineage effects drawn from one law, and a collection in which one lineage carries the positive calls is not that: on the validation grid a carrier law of this kind took the species interval below its level with few lineages while the interval for the lineages in hand held. For it read the first interval as the statement about this collection and the species interval with that reservation.
 

@@ -43,12 +43,11 @@ holding.
 Two things are not promised. A different version of NumPy, SciPy or pandas may
 move the last digits of a floating-point result, which is why the record names
 the versions it was produced with and the report prints a digest that covers
-them; in the release's own checks the six artefacts of every fixture were
-identical across two such environments, but that is a measurement and not a
-guarantee. And the Monte Carlo error of the estimators themselves remains: a
-different seed gives a different draw, with a spread the release measures at
-0.002 to 0.007 on the shipped example, two orders below the width of the
-reported interval (`benchmarks/results_seed_stability`).
+them. And the Monte Carlo error of the estimators themselves remains: a
+different seed gives a different draw, with a spread the release measures as
+a standard deviation of 0.002 to 0.007 on the shipped example, 17 to 51 times
+smaller than the median half-width of the reported intervals
+(`benchmarks/results_seed_stability`).
 
 ## Validation results
 

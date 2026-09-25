@@ -102,8 +102,8 @@ def _noise(rng, size, kind):
 def _bernoulli_cohort(rng, n_groups, sizes, share, prevalence):
     """A binary trait with a known realised share on the observed scale.
 
-    The atlas reads non-susceptibility as a 0/1 indicator, so the share it
-    reports is the intraclass correlation of that indicator and not a
+    A call read as a 0/1 non-susceptibility indicator gives a share that
+    is the intraclass correlation of that indicator and not a
     liability-scale quantity. The residuals of a Bernoulli are not Gaussian by
     construction: at a middling prevalence they are platykurtic, which the
     F approximation tolerates, and at an extreme one they are heavy, which the

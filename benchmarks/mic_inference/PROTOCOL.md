@@ -62,7 +62,8 @@ standard deviations per year, adjusted for both the laboratory and the year. The
 full interval is computed for the first dataset of each design, except in design 20
 (75% on an end well, 30 uneven lineages, rho 0.9) and in the three designs with two
 covariates, where a single interval takes several hours; the fifth column of the
-task table records this.
+task table records this. A design whose first dataset is refused has no full
+interval.
 
 The *S. suis* reanalysis reads the panel within each testing laboratory
 (`prepare_empirical.py`) with the country of isolation as a fixed effect (the reported

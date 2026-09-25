@@ -58,7 +58,7 @@ def test_pipeline_carries_the_calibrated_result_to_tables_and_report(tmp_path, m
     assert "Every interval drawn is the calibrated interval" in report
     assert "interval for the Gaussian population model (thin)" not in report
     # the series itself, not only the caption: the drawn interval must be the
-    # calibrated one, never the approximate F interval it supersedes
+    # calibrated one, never the approximate F interval
     from amr_clonalshare.cli import _summary
     from amr_clonalshare.report_model import build_report
     drawn = [block for section in build_report(out, _summary(out)).sections

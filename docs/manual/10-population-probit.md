@@ -72,7 +72,7 @@ range inclusion does not validate every intermediate design. Result records
 flag group counts, group sizes and fitted prevalences outside the tested
 designs, and retain the assumptions. When an assumption fails, coverage can
 fall far below the nominal level. With lineage effects from a t distribution
-on four degrees of freedom it stayed between 90.8% and 95.1%; with lineage
+on four degrees of freedom it stayed between 90.8% and 95.0%; with lineage
 sizes that grow with the lineage effect it fell to between 61.9% and 85.8%;
 and with a two-point (carrier) law of lineage effects it fell to between 1.4%
 and 86.9%, lowest at a latent ICC of 0.7. Large legal groups can be expensive
@@ -83,8 +83,8 @@ Under the model the latent ICC does not depend on prevalence, whereas the
 observed-scale lineage share does. In 500 datasets of 30 lineages of 20
 isolates with a latent ICC of 0.3, the mean profile estimate stayed between
 0.28 and 0.29 at prevalences from 0.05 to 0.50, while the mean observed-scale
-share rose from 0.05 to 0.19; at a latent ICC of 0.6 the estimate stayed
-between 0.55 and 0.58 and the share rose from 0.15 to 0.40. At a prevalence
+share rose from 0.09 to 0.19; at a latent ICC of 0.6 the estimate stayed
+between 0.55 and 0.58 and the share rose from 0.23 to 0.40. At a prevalence
 of 0.02 the estimate fell to 0.26 and 0.51. The two quantities answer
 different questions and are reported side by side.
 

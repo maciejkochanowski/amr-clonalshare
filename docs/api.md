@@ -9,7 +9,7 @@ cfg = load_config("examples/workflows/calls.yaml")
 record = run(cfg, results_dir="out/calls_api", seed=20260913)
 ```
 
-Substitute `mic.yaml`, `contrasts.yaml` or `population.yaml` to run the other recipes. The command line and Python use the same configuration and scientific path. `run` also accepts `overwrite=False` and `progress=None`. Use a new directory by default; deliberate overwrite preserves a backup. The progress callback is optional and should not modify analytical state.
+Substitute `mic.yaml`, `contrasts.yaml` or `population.yaml` to run the other recipes. The command line and Python use the same configuration and scientific path. `run` also accepts `overwrite=False` and `progress=None`. Use a new directory by default; a deliberate overwrite replaces the earlier results files. The progress callback is optional and should not modify analytical state.
 
 ## Read saved results
 

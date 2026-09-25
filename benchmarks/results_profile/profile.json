@@ -1,0 +1,225 @@
+{
+ "config": "examples/ssuis/config.yaml",
+ "phase_seconds": {
+  "estimators": 238.704,
+  "read_tables": 0.261,
+  "total": 239.203,
+  "write_artefacts": 0.239
+ },
+ "peak_rss_mb": 141.8,
+ "peak_traced_python_mb": 12.5,
+ "hot_functions": [
+  {
+   "function": "cli.py:194:main",
+   "calls": 1,
+   "tottime": 0.0016,
+   "cumtime": 945.5874
+  },
+  {
+   "function": "core.py:57:run",
+   "calls": 1,
+   "tottime": 0.0005,
+   "cumtime": 945.2918
+  },
+  {
+   "function": "core.py:251:_metadata_diagnostics",
+   "calls": 4,
+   "tottime": 0.0138,
+   "cumtime": 943.6193
+  },
+  {
+   "function": "core.py:200:_population_profiles",
+   "calls": 4,
+   "tottime": 0.0061,
+   "cumtime": 896.3783
+  },
+  {
+   "function": "population_probit.py:130:population_probit_icc",
+   "calls": 52,
+   "tottime": 0.0009,
+   "cumtime": 895.5624
+  },
+  {
+   "function": "_population_probit_numerics.py:157:fit_profile",
+   "calls": 52,
+   "tottime": 0.0094,
+   "cumtime": 895.5105
+  },
+  {
+   "function": "_minimize.py:831:minimize_scalar",
+   "calls": 15256,
+   "tottime": 0.3719,
+   "cumtime": 895.1138
+  },
+  {
+   "function": "_optimize.py:2289:_minimize_scalar_bounded",
+   "calls": 15256,
+   "tottime": 3.9973,
+   "cumtime": 895.0389
+  },
+  {
+   "function": "_population_probit_numerics.py:119:profile",
+   "calls": 16336,
+   "tottime": 0.334,
+   "cumtime": 894.8668
+  },
+  {
+   "function": "_population_probit_numerics.py:133:<lambda>",
+   "calls": 167933,
+   "tottime": 0.1966,
+   "cumtime": 889.9552
+  },
+  {
+   "function": "_population_probit_numerics.py:109:nll",
+   "calls": 167972,
+   "tottime": 27.1457,
+   "cumtime": 889.8345
+  },
+  {
+   "function": "_population_probit_numerics.py:56:selected_count_log_probabilities",
+   "calls": 2729980,
+   "tottime": 172.4346,
+   "cumtime": 842.9623
+  },
+  {
+   "function": "_population_probit_numerics.py:141:mle",
+   "calls": 39,
+   "tottime": 0.014,
+   "cumtime": 826.2487
+  },
+  {
+   "function": "_population_probit_numerics.py:149:<lambda>",
+   "calls": 13296,
+   "tottime": 0.0402,
+   "cumtime": 802.3694
+  },
+  {
+   "function": "_logsumexp.py:15:logsumexp",
+   "calls": 2562114,
+   "tottime": 60.5974,
+   "cumtime": 613.0566
+  },
+  {
+   "function": "core.py:109:_strata",
+   "calls": 1,
+   "tottime": 0.001,
+   "cumtime": 510.7721
+  },
+  {
+   "function": "_logsumexp.py:201:_logsumexp",
+   "calls": 2562114,
+   "tottime": 103.8514,
+   "cumtime": 382.8828
+  },
+  {
+   "function": "_at.py:362:set",
+   "calls": 5124228,
+   "tottime": 5.9899,
+   "cumtime": 105.3989
+  },
+  {
+   "function": "_at.py:224:_op",
+   "calls": 5124228,
+   "tottime": 45.2413,
+   "cumtime": 99.409
+  },
+  {
+   "function": "_array_api.py:524:xp_promote",
+   "calls": 2562231,
+   "tottime": 23.8637,
+   "cumtime": 89.0049
+  }
+ ],
+ "own_time": [
+  {
+   "function": "_population_probit_numerics.py:56:selected_count_log_probabilities",
+   "calls": 2729980,
+   "tottime": 172.4346,
+   "cumtime": 842.9623
+  },
+  {
+   "function": "_logsumexp.py:201:_logsumexp",
+   "calls": 2562114,
+   "tottime": 103.8514,
+   "cumtime": 382.8828
+  },
+  {
+   "function": "_logsumexp.py:15:logsumexp",
+   "calls": 2562114,
+   "tottime": 60.5974,
+   "cumtime": 613.0566
+  },
+  {
+   "function": "~:0:<method 'reduce' of 'numpy.ufunc' objects>",
+   "calls": 26211389,
+   "tottime": 58.0344,
+   "cumtime": 58.0344
+  },
+  {
+   "function": "_at.py:224:_op",
+   "calls": 5124228,
+   "tottime": 45.2413,
+   "cumtime": 99.409
+  },
+  {
+   "function": "fromnumeric.py:66:_wrapreduction",
+   "calls": 10737164,
+   "tottime": 28.1213,
+   "cumtime": 75.1157
+  },
+  {
+   "function": "_population_probit_numerics.py:109:nll",
+   "calls": 167972,
+   "tottime": 27.1457,
+   "cumtime": 889.8345
+  },
+  {
+   "function": "_array_api.py:524:xp_promote",
+   "calls": 2562231,
+   "tottime": 23.8637,
+   "cumtime": 89.0049
+  },
+  {
+   "function": "numerictypes.py:385:isdtype",
+   "calls": 10248495,
+   "tottime": 21.0185,
+   "cumtime": 49.9099
+  },
+  {
+   "function": "fromnumeric.py:86:_wrapreduction_any_all",
+   "calls": 8256754,
+   "tottime": 19.8594,
+   "cumtime": 45.9803
+  },
+  {
+   "function": "attribution.py:264:_skill",
+   "calls": 70936,
+   "tottime": 16.0065,
+   "cumtime": 24.7407
+  },
+  {
+   "function": "_aliases.py:631:sign",
+   "calls": 5124228,
+   "tottime": 15.9893,
+   "cumtime": 41.2267
+  },
+  {
+   "function": "numerictypes.py:372:_preprocess_dtype",
+   "calls": 10248495,
+   "tottime": 14.5759,
+   "cumtime": 22.804
+  },
+  {
+   "function": "fromnumeric.py:67:<dictcomp>",
+   "calls": 10737164,
+   "tottime": 14.1886,
+   "cumtime": 14.1886
+  },
+  {
+   "function": "_array_api.py:471:xp_result_type",
+   "calls": 2562270,
+   "tottime": 12.6895,
+   "cumtime": 34.272
+  }
+ ]
+}

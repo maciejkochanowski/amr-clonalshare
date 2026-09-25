@@ -50,4 +50,4 @@ for recipe in ("calls", "mic", "contrasts", "population"):
 
 ## Preserve and interpret the bundle
 
-Inspect the completion manifest, canonical JSON and method statuses before using the CSV or offline reports. Use new destination names for reruns. Explicit `--overwrite` preserves a backup. Demonstration resampling budgets are intentionally small; they are unsuitable for precision claims. Numerical validation campaigns use their separately recorded protocols and seeds. File-format examples do not replace provenance, sampling assessment or method-specific validation.
+Inspect the completion manifest, canonical JSON and method statuses before using the CSV or offline reports. Use new destination names for reruns. Explicit `--overwrite` replaces the earlier results files. Demonstration resampling budgets are intentionally small; they are unsuitable for precision claims. Numerical validation campaigns use their separately recorded protocols and seeds. File-format examples do not replace provenance, sampling assessment or method-specific validation.

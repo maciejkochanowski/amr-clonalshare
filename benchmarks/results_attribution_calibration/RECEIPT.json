@@ -1,0 +1,14 @@
+{
+ "seed": 20260901,
+ "quick": false,
+ "reps": 40,
+ "folds": 5,
+ "repeats": 10,
+ "n_boot": 200,
+ "n_perm": 200,
+ "n_cells_A": 400,
+ "support_reps": 100,
+ "runtime_s": 798.3,
+ "numpy": "2.4.4",
+ "python": "3.11.15"
+}

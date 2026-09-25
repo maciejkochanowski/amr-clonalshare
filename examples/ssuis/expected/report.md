@@ -3,13 +3,13 @@
 Every number below is read from `clonal_share_result.json`, written by the same run, or from the release's validation grid where the text says so; none is recomputed here.
 
 - **Run:** 000284F4
-- **Issued:** 2026-09-25T15:49Z
+- **Issued:** 2026-09-25T16:35Z
 - **Software:** amr-clonalshare 1.0.0
 - **Isolates:** 677
 - **Lineage:** baps_cluster
 - **Seed:** 42
 - **Configuration:** sha256:bfa04c09a84c
-- **Record digest:** sha256:c8a0b5ce7cb1d8e25511f7bf9aa632cc656804ceded82c06c69b466d96f57365
+- **Record digest:** sha256:120c40357eb7a33d5dcc6339b878b1bd258f98dbce2d71b05fc2c29ba6b723ba
 
 **16 antimicrobials; 94 analysis outcomes.** 85 computed, 0 full ranges, 9 unavailable or incomplete. Each result retains its own target and data subset.
 
@@ -545,10 +545,10 @@ This optional result targets the Gaussian random-intercept population liability 
 
 - **Fixed LR cutoff:** 5.443134202054537
 - **Calibration:** population-model-calibration-20260926101
-- **Calibration SHA-256:** 2c2206be26ea5f5ca88bcb07964ec64fded065676291df9a1e2a68b4a0e911e4
+- **Calibration SHA-256:** 1b37d9471813fb8df40d9fd6a856c701927539e9c751b18dc944bae1841ed378
 - **Independent validation:** population-model-validation-20260926202
 - **Validation status:** accepted_finite_grid_model_dependent
-- **Validation summary SHA-256:** e026f78eb7559ec1de3b914377d8c052eebc1aa45cb64042881a04c6d634faf0
+- **Validation summary SHA-256:** c34bcdacb5981a70d7c4cad5f594c9b6d551a8dbdf8ed46a3ec20724468818a4
 
 Constant outcomes or too few repeated groups retain an explicitly uninformative [0,1] set with no point estimate. Numerical failure has no estimate or interval. The repeated-group policy is separate from the support gate of the clonal share. Counts, exclusions, numerical checks and the complete model-domain diagnostics are in the result record.
 
@@ -563,7 +563,7 @@ Tested finite-grid group-count range: [15, 200]; maximum tested group size: 161;
 - **Software:** amr-clonalshare 1.0.0, record schema 1.0
 - **Seed:** 42
 - **Configuration:** `sha256:bfa04c09a84c`
-- **Record:** `sha256:c8a0b5ce7cb1d8e25511f7bf9aa632cc656804ceded82c06c69b466d96f57365`
+- **Record:** `sha256:120c40357eb7a33d5dcc6339b878b1bd258f98dbce2d71b05fc2c29ba6b723ba`
 
 > **Terms used in this report**
 >
@@ -589,7 +589,7 @@ Tested finite-grid group-count range: [15, 200]; maximum tested group size: 161;
 - § Derived arithmetically from a quantity recorded elsewhere in the record rather than estimated in this run.
 
 amr-clonalshare 1.0.0 · record schema 1.0 · seed 42 · configuration sha256:bfa04c09a84c
-Cite this run as: “amr-clonalshare 1.0.0, run 000284F4, record sha256:c8a0b5ce7cb1.”
+Cite this run as: “amr-clonalshare 1.0.0, run 000284F4, record sha256:120c40357eb7.”
 This report supersedes any earlier report bearing the same run identifier. It is regenerated from the record and holds no value that the record does not. The symbols carry the same wording in every run of this software; no symbol against a value means only that none of the listed conditions fired.
 Classical collection-bootstrap endpoints are printed without clipping; the separately labeled species interval is floored at zero as part of its construction.
 Population-model profile endpoints are computed within [0,1]. A numerical failure has missing endpoints, and an uninformative full set is labeled separately. Its population target and finite-grid evidence are independent of the classical collection-bootstrap interval.

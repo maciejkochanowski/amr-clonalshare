@@ -1,6 +1,6 @@
 {
  "what": "Interval coverage measured on the release's validation grid: simulated cohorts with a known share, one estimator interval per run, the fraction of runs whose interval contained the truth. These values belong to the release, not to any run that cites them. Each estimator is scored against the quantity it estimates: clonal_share against the lineage-membership share of this collection, clonal_share_superpopulation against the share a fresh draw of lineages would show, realised_share against the design-corrected component ratio the exact interval is derived for. The grid spans 5 to 1,000 lineages, 3 to 20 isolates a lineage, normal and two-point lineage laws, and binary prevalences of 8 and 25 per cent.",
- "source": "estimator_benchmark.json written by benchmarks/estimator_benchmark.py of amr-clonalshare 1.0.0, generated 2026-09-10, seed 20260902, nominal level 0.95",
+ "source": "estimator_benchmark.json written by benchmarks/estimator_benchmark.py, seed 20260902, nominal level 0.95",
  "coverage": {
   "clonal_share": {
    "binary": {
@@ -19,9 +19,9 @@
    },
    "few_lineages": {
     "lineages": 5,
-    "min_cell": 0.83,
+    "min_cell": 0.825,
     "max_cell": 0.96,
-    "what": "coverage of the lineage-membership share by the lineage-bootstrap interval in the five-lineage cells with a non-zero share; from ten lineages up the cells covered at 0.92 to 1.00"
+    "what": "coverage of the lineage-membership share by the lineage-bootstrap interval in the five-lineage cells with a non-zero share; from ten lineages up the cells covered at 0.89 to 1.00"
    }
   },
   "clonal_share_superpopulation": {

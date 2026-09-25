@@ -1,5 +1,5 @@
 #!/bin/bash
-# Retrieve the NCBI Pathogen Detection tables the cross-species atlas reads.
+# Retrieve NCBI Pathogen Detection tables at pinned release accessions.
 #
 #     bash benchmarks/fetch_pathogen_detection.sh <raw_dir> [organism ...]
 #
@@ -8,12 +8,12 @@
 #
 # WHICH RELEASE. NCBI recomputes the SNP clusters at every release, so a later
 # release is a different lineage variable, not a longer version of the same
-# one. The release the published atlas was retrieved at is written out per
+# one. The pinned release is written out per
 # organism in benchmarks/pathogen_detection_releases.tsv, and this script
 # fetches that release by accession whenever the organism appears there, so a
 # rerun reads the same lineage variable for as long as NCBI keeps the release
 # directory. Point RELEASES at an empty file to take latest_snps instead,
-# which is a new retrieval and not a reproduction of the published one. The
+# which is a new retrieval and not a reproduction of the pinned one. The
 # release accession is written to the log either way.
 #
 # The column names are read from the live header rather than assumed by
