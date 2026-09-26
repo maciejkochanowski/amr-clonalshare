@@ -1,0 +1,488 @@
+{
+  "schema_version": "1.0",
+  "seed": 42,
+  "config": {
+    "dataset": {
+      "name": "fictional_workflow",
+      "strain_id_column": "isolate_id",
+      "data_dir": "../../examples/workflows/data",
+      "metadata": "metadata.csv",
+      "lineage_column": "lineage",
+      "contrast_column": null,
+      "contrast_levels": [],
+      "batch_column": null,
+      "phenotype": null,
+      "phenotype_id_column": "Strain_ID",
+      "phenotype_antibiotic_column": "antibiotic",
+      "phenotype_call_column": "resistant_phenotype",
+      "phenotype_agent_columns": [],
+      "phenotype_intermediate": null,
+      "phenotype_kind": "undeclared",
+      "phenotype_positive_definition": null,
+      "phenotype_source": null,
+      "ast_standard": null,
+      "ast_version": null,
+      "duplicate_policy": "error",
+      "mic": "mic.csv",
+      "mic_id_column": "isolate_id",
+      "mic_antibiotic_column": "agent",
+      "mic_value_column": "measurement",
+      "mic_operator_column": "operator",
+      "mic_panel_column": null,
+      "mic_covariate_columns": [],
+      "stratify_by": null,
+      "mic_wells": {
+        "demo_agent": [
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8
+        ]
+      },
+      "mic_units": {
+        "demo_agent": "mg/L"
+      }
+    },
+    "attribution": {
+      "enabled": true,
+      "folds": 2,
+      "repeats": 2,
+      "n_boot": 20,
+      "n_perm": 19
+    },
+    "surveillance": {
+      "enabled": true,
+      "n_boot": 20,
+      "q_fdr": 0.05,
+      "min_shared_support": 0.9,
+      "label_alpha": 0.05
+    },
+    "censored": {
+      "enabled": true,
+      "end_wells_censored": true,
+      "calibrated_interval": false,
+      "calibration_n_boot": 199,
+      "workers": 0,
+      "screening_n_boot": null,
+      "calibration_agents": []
+    },
+    "evidence": {
+      "enabled": true,
+      "folds": 2,
+      "repeats": 2,
+      "alpha": 0.05
+    },
+    "population_probit": {
+      "enabled": false,
+      "interval_method": "fixed_cutoff"
+    },
+    "config_file": "mic.yaml"
+  },
+  "versions": {
+    "amr_clonalshare": "1.0.0",
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1"
+  },
+  "n_isolates": 96,
+  "n_traits": 0,
+  "traits": [],
+  "metadata_diagnostics": {
+    "lineage_column": "lineage",
+    "censored_share": {
+      "join": {
+        "path": "mic.csv",
+        "rows_read": 96,
+        "rows_joined": 96,
+        "strains_with_mic": 96,
+        "strains_aligned": 96,
+        "join_rate": 1.0,
+        "unmatched_examples": [],
+        "antimicrobials": [
+          "demo_agent"
+        ],
+        "n_unparseable_values": 0,
+        "n_missing_values": 0,
+        "unparseable_values_by_agent": {},
+        "operator_read_from_value": false,
+        "mic_wells": {
+          "demo_agent": [
+            0.25,
+            0.5,
+            1,
+            2,
+            4,
+            8
+          ]
+        },
+        "mic_units": {
+          "demo_agent": "mg/L"
+        },
+        "agents": {
+          "demo_agent": {
+            "rows_read": 96,
+            "n_recorded_isolates": 96,
+            "n_missing_values": 0,
+            "n_unparseable_values": 0,
+            "n_absent_records": 0,
+            "n_readable_isolates": 96
+          }
+        },
+        "duplicate_policy": "error",
+        "n_duplicate_rows": 0,
+        "n_identical_duplicates_collapsed": 0,
+        "n_conflicting_keys": 0,
+        "n_conflicting_rows": 0,
+        "conflicting_key_examples": [],
+        "n_conflict_rows_dropped": 0,
+        "n_near_matches": 0,
+        "near_match_examples": []
+      },
+      "per_agent": {
+        "demo_agent": {
+          "n": 96,
+          "n_dropped_untyped": 0,
+          "mic_units": "mg/L",
+          "panel_source": "configured",
+          "panel": {
+            "n_wells": 6,
+            "lowest": 0.25,
+            "highest": 8.0,
+            "share_on_lowest": 0.16666666666666666,
+            "share_on_highest": 0.16666666666666666,
+            "lattice_ratios": [
+              2.0
+            ],
+            "doubling": true,
+            "admissible_modes": [
+              "binary",
+              "interval"
+            ],
+            "reason": "0.17 of readings sit on an end well, so a point value is a censored reading and the interval mode is required",
+            "n_wells_recorded": 6,
+            "lattice": "given"
+          },
+          "dilution_table": {
+            "lineages": [
+              "L01",
+              "L02",
+              "L03",
+              "L04",
+              "L05",
+              "L06",
+              "L07",
+              "L08",
+              "L09",
+              "L10",
+              "L11",
+              "L12"
+            ],
+            "intervals": [
+              [
+                null,
+                -2.0
+              ],
+              [
+                -2.0,
+                -1.0
+              ],
+              [
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0
+              ],
+              [
+                1.0,
+                2.0
+              ],
+              [
+                2.0,
+                null
+              ]
+            ],
+            "counts": [
+              [
+                2,
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                2,
+                2,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                1,
+                1,
+                1,
+                1,
+                2
+              ],
+              [
+                2,
+                2,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                2,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                2,
+                2,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                2,
+                2,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2
+              ],
+              [
+                2,
+                1,
+                1,
+                1,
+                1,
+                2
+              ]
+            ]
+          },
+          "share": {
+            "kappa": 0.013119894268471499,
+            "ci_low": 0.0,
+            "ci_high": 0.22285608531951515,
+            "n": 96,
+            "n_groups": 12,
+            "sigma_within": 2.37625527970442,
+            "sigma_between": 0.2739845447258562,
+            "share_censored": 0.3333333333333333,
+            "n_groups_fully_censored": 0,
+            "share_in_censored_groups": 0.0,
+            "estimable": true,
+            "reason": "ok",
+            "realised_low": 0.0,
+            "realised_high": 0.16876933703204147,
+            "n_dropped_untyped": 0,
+            "estimator_method": "empirical_Bayes_moment_iteration",
+            "interval_status": "approximate_F_interval; scenario-specific calibration only",
+            "n_dropped_uninformative": 0,
+            "realised_status": "plug_in_mean_square_ratio; approximate_residual_df; not_the_exact_pivot",
+            "fit_converged": true,
+            "fit_iterations": 198,
+            "fit_max_scaled_change": 9.865435260675681e-11,
+            "complete": true
+          }
+        }
+      }
+    }
+  },
+  "input_qc": {
+    "n_isolates": 96,
+    "n_antimicrobials": 0,
+    "n_empty_agents": 0,
+    "traits": {},
+    "min_minor_count": 20,
+    "min_group_size": 2,
+    "mic_join": {
+      "path": "mic.csv",
+      "rows_read": 96,
+      "rows_joined": 96,
+      "strains_with_mic": 96,
+      "strains_aligned": 96,
+      "join_rate": 1.0,
+      "unmatched_examples": [],
+      "antimicrobials": [
+        "demo_agent"
+      ],
+      "n_unparseable_values": 0,
+      "n_missing_values": 0,
+      "unparseable_values_by_agent": {},
+      "operator_read_from_value": false,
+      "mic_wells": {
+        "demo_agent": [
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8
+        ]
+      },
+      "mic_units": {
+        "demo_agent": "mg/L"
+      },
+      "agents": {
+        "demo_agent": {
+          "rows_read": 96,
+          "n_recorded_isolates": 96,
+          "n_missing_values": 0,
+          "n_unparseable_values": 0,
+          "n_absent_records": 0,
+          "n_readable_isolates": 96
+        }
+      },
+      "duplicate_policy": "error",
+      "n_duplicate_rows": 0,
+      "n_identical_duplicates_collapsed": 0,
+      "n_conflicting_keys": 0,
+      "n_conflicting_rows": 0,
+      "conflicting_key_examples": [],
+      "n_conflict_rows_dropped": 0,
+      "n_near_matches": 0,
+      "near_match_examples": []
+    },
+    "metadata_join": {
+      "n_joined": 96,
+      "share_joined": 1.0,
+      "unjoined_examples": [],
+      "n_near_matches": 0,
+      "near_match_examples": [],
+      "rows_read": 96,
+      "n_duplicate_ids": 0,
+      "strains_joined": 96,
+      "strains_aligned": 96,
+      "n_metadata_only": 0,
+      "metadata_only_examples": [],
+      "duplicate_policy": "error",
+      "n_duplicate_rows": 0,
+      "n_identical_duplicates_collapsed": 0,
+      "n_conflicting_keys": 0,
+      "n_conflicting_rows": 0,
+      "conflicting_key_examples": [],
+      "n_conflict_rows_dropped": 0
+    },
+    "lineage": {
+      "column": "lineage",
+      "n": 96,
+      "n_typed": 96,
+      "n_untyped": 0,
+      "n_groups": 12,
+      "n_singletons": 0,
+      "n_informative_groups": 12,
+      "support": 1.0,
+      "estimable": true,
+      "effective_group_size": 8.0,
+      "group_sizes": {
+        "L01": 8,
+        "L02": 8,
+        "L03": 8,
+        "L04": 8,
+        "L05": 8,
+        "L06": 8,
+        "L07": 8,
+        "L08": 8,
+        "L09": 8,
+        "L10": 8,
+        "L11": 8,
+        "L12": 8
+      },
+      "smallest_groups": {
+        "L01": 8,
+        "L02": 8,
+        "L03": 8,
+        "L04": 8,
+        "L05": 8,
+        "L06": 8,
+        "L07": 8,
+        "L08": 8,
+        "L09": 8,
+        "L10": 8
+      }
+    },
+    "agent_feasibility": {},
+    "raw_universe": {
+      "definition": "union of raw call and MIC record identifiers",
+      "n_call_isolates": 0,
+      "n_mic_isolates": 96,
+      "n_mic_only_isolates": 96,
+      "call_agents": [],
+      "mic_agents": [
+        "demo_agent"
+      ]
+    }
+  },
+  "collection_bounds": {},
+  "results": [
+    {
+      "agent": "demo_agent",
+      "analysis": "censored_mic",
+      "method": "empirical_Bayes_moment_iteration",
+      "estimand": "MIC latent population variance-component ratio",
+      "analysis_scope": "population model fitted to readable and typed MIC subset",
+      "n": 96,
+      "n_groups": 12,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "population model fitted to readable and typed MIC subset",
+      "batch": null,
+      "estimate": 0.013119894268471499,
+      "lower": 0.0,
+      "upper": 0.22285608531951515,
+      "log_e": null,
+      "interval_kind": "approximate nominal 95% F interval; not a coverage guarantee",
+      "status": "computed",
+      "reason": "ok",
+      "unit": "proportion",
+      "assumptions": "Empirical-Bayes moment estimate, not maximum likelihood; Gaussian variance-components; ignorable sampling and coarsening. Nominal coverage is not guaranteed. MIC units: mg/L"
+    }
+  ]
+}

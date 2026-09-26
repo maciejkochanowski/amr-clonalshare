@@ -1,0 +1,54 @@
+{
+  "title": "amr-clonalshare: observational analysis of antimicrobial phenotypes by lineage",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "license": "MIT",
+  "description": "<p>Version 1.0.0. Observational summaries of antimicrobial phenotypes by recorded lineage, with explicit phenotype definitions, input diagnostics, collection bounds and method-specific uncertainty. Includes a matched-record comparison of two lineage definitions, a simulation-checked 95% interval for the lineage share of MIC variation (exact generalised F pivot for exact readings; null-wise parametric-bootstrap likelihood-ratio inversion for dilution intervals) and an optional population liability ICC under a Gaussian lineage model, calibrated and validated in a prespecified simulation study. Collection descriptions do not establish representativeness or causation. Clinical resistance and non-wild-type status are separately configured.</p>",
+  "creators": [
+    {
+      "name": "Kochanowski, Maciej",
+      "affiliation": "Department of Bacteriology and Bacterial Diseases, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland",
+      "orcid": "0000-0002-9982-3028"
+    }
+  ],
+  "keywords": [
+    "bioinformatics",
+    "antimicrobial resistance",
+    "veterinary surveillance",
+    "variance component",
+    "population structure",
+    "typing resolution",
+    "intraclass correlation",
+    "prevalence decomposition",
+    "Kitagawa decomposition",
+    "interval-censored MIC",
+    "anytime-valid inference",
+    "Streptococcus suis",
+    "serovar",
+    "NCBI Pathogen Detection",
+    "reproducible research"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.1186/s12915-021-01094-1",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1093/nar/gkac1003",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/maciejkochanowski/amr-clonalshare",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Simulation drivers, results and the S. suis reanalysis are in benchmarks/mic_inference and benchmarks/results_mic_release; the MIC model reads dilution panels per laboratory, enters declared covariates as fixed effects and repeats the run within strata, and the pinned container image is published to the GitHub Container Registry with every release. The Streptococcus suis example data derive from Hadjirin et al. 2021, BMC Biology 19:191, under CC BY 4.0; retrieval, cut-off derivation, metadata repairs and the population-cluster join are documented and reproducible in examples/ssuis/DATA_PROVENANCE.md."
+}

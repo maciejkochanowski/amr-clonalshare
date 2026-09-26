@@ -1,0 +1,50 @@
+{
+ "generated_utc": "2026-09-25T16:07:37.140212Z",
+ "script": "decomposition_calibration.py",
+ "grid": {
+  "lineages": [
+   10,
+   30,
+   100
+  ],
+  "cohort": [
+   50,
+   100,
+   200,
+   500,
+   1000
+  ],
+  "turnover": [
+   0.0,
+   0.2,
+   0.5
+  ],
+  "prevalence": [
+   0.1,
+   0.4
+  ],
+  "profiles": [
+   "even",
+   "dominant"
+  ],
+  "effects": [
+   "null",
+   "composition_only",
+   "within_only",
+   "offsetting"
+  ],
+  "replicates": 1000,
+  "n_boot": 999,
+  "seed": 20260831,
+  "min_shared_support": 0.5
+ },
+ "n_cells": 720,
+ "n_decompositions": 720000,
+ "elapsed_seconds": 823.7,
+ "environment": {
+  "python": "3.11.15",
+  "numpy": "2.4.4",
+  "platform": "Linux-5.14.0-687.47.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "cpu_count": 192
+ }
+}

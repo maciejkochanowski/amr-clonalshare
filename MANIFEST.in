@@ -1,0 +1,33 @@
+include CITATION.cff
+include .zenodo.json
+include CHANGELOG.md
+include REPRODUCIBILITY.md
+include CONTRIBUTING.md
+include requirements-lock.txt
+include Dockerfile
+include mkdocs.yml
+recursive-include docs *.md *.yml
+
+include tests/conftest.py
+include tests/mutation_survivors.json
+# The fixtures and the committed artefacts the golden tests compare against;
+# without them a suite run from the source distribution cannot check them.
+recursive-include tests/golden *.yaml *.csv *.json *.md *.html
+recursive-include benchmarks *.py *.sh *.tsv *.md *.sbatch
+recursive-include benchmarks/campaign/commands *.txt
+recursive-include scripts *.py *.sh
+include examples/ssuis/*.yaml
+include examples/ssuis/*.md
+include examples/ssuis/*.py
+include examples/ssuis/data/*
+include examples/ssuis/expected/*
+include examples/salmonella_poultry/*.yaml
+include examples/salmonella_poultry/*.md
+include examples/salmonella_poultry/*.py
+include examples/salmonella_poultry/data/*
+include examples/salmonella_poultry/expected_serovar/*
+include examples/salmonella_poultry/expected_cluster/*
+
+
+recursive-include examples/workflows *.yaml *.md *.csv
+recursive-include examples/matched_lineages *.md *.csv

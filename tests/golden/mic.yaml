@@ -1,0 +1,32 @@
+# Fictional format demonstration; reduced resampling budgets are not validation settings.
+dataset:
+  name: fictional_workflow
+  data_dir: ../../examples/workflows/data
+  metadata: metadata.csv
+  strain_id_column: isolate_id
+  lineage_column: lineage
+  duplicate_policy: error
+  mic: mic.csv
+  mic_id_column: isolate_id
+  mic_antibiotic_column: agent
+  mic_value_column: measurement
+  mic_operator_column: operator
+  mic_wells:
+    demo_agent: [0.25, 0.5, 1, 2, 4, 8]
+  mic_units:
+    demo_agent: mg/L
+attribution:
+  folds: 2
+  repeats: 2
+  n_boot: 20
+  n_perm: 19
+surveillance:
+  n_boot: 20
+evidence:
+  folds: 2
+  repeats: 2
+censored:
+  # The golden run compares artefacts, not the calibration: the bootstrap that
+  # the recipe itself demonstrates costs two minutes and is exercised by
+  # tests/test_calibrated_pipeline.py instead.
+  calibrated_interval: false

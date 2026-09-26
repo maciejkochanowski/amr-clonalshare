@@ -1,0 +1,125 @@
+{
+  "n_isolates": 96,
+  "n_antimicrobials": 0,
+  "n_empty_agents": 0,
+  "traits": {},
+  "min_minor_count": 20,
+  "min_group_size": 2,
+  "mic_join": {
+    "path": "mic.csv",
+    "rows_read": 96,
+    "rows_joined": 96,
+    "strains_with_mic": 96,
+    "strains_aligned": 96,
+    "join_rate": 1.0,
+    "unmatched_examples": [],
+    "antimicrobials": [
+      "demo_agent"
+    ],
+    "n_unparseable_values": 0,
+    "n_missing_values": 0,
+    "unparseable_values_by_agent": {},
+    "operator_read_from_value": false,
+    "mic_wells": {
+      "demo_agent": [
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "mic_units": {
+      "demo_agent": "mg/L"
+    },
+    "agents": {
+      "demo_agent": {
+        "rows_read": 96,
+        "n_recorded_isolates": 96,
+        "n_missing_values": 0,
+        "n_unparseable_values": 0,
+        "n_absent_records": 0,
+        "n_readable_isolates": 96
+      }
+    },
+    "duplicate_policy": "error",
+    "n_duplicate_rows": 0,
+    "n_identical_duplicates_collapsed": 0,
+    "n_conflicting_keys": 0,
+    "n_conflicting_rows": 0,
+    "conflicting_key_examples": [],
+    "n_conflict_rows_dropped": 0,
+    "n_near_matches": 0,
+    "near_match_examples": []
+  },
+  "metadata_join": {
+    "n_joined": 96,
+    "share_joined": 1.0,
+    "unjoined_examples": [],
+    "n_near_matches": 0,
+    "near_match_examples": [],
+    "rows_read": 96,
+    "n_duplicate_ids": 0,
+    "strains_joined": 96,
+    "strains_aligned": 96,
+    "n_metadata_only": 0,
+    "metadata_only_examples": [],
+    "duplicate_policy": "error",
+    "n_duplicate_rows": 0,
+    "n_identical_duplicates_collapsed": 0,
+    "n_conflicting_keys": 0,
+    "n_conflicting_rows": 0,
+    "conflicting_key_examples": [],
+    "n_conflict_rows_dropped": 0
+  },
+  "lineage": {
+    "column": "lineage",
+    "n": 96,
+    "n_typed": 96,
+    "n_untyped": 0,
+    "n_groups": 12,
+    "n_singletons": 0,
+    "n_informative_groups": 12,
+    "support": 1.0,
+    "estimable": true,
+    "effective_group_size": 8.0,
+    "group_sizes": {
+      "L01": 8,
+      "L02": 8,
+      "L03": 8,
+      "L04": 8,
+      "L05": 8,
+      "L06": 8,
+      "L07": 8,
+      "L08": 8,
+      "L09": 8,
+      "L10": 8,
+      "L11": 8,
+      "L12": 8
+    },
+    "smallest_groups": {
+      "L01": 8,
+      "L02": 8,
+      "L03": 8,
+      "L04": 8,
+      "L05": 8,
+      "L06": 8,
+      "L07": 8,
+      "L08": 8,
+      "L09": 8,
+      "L10": 8
+    }
+  },
+  "agent_feasibility": {},
+  "raw_universe": {
+    "definition": "union of raw call and MIC record identifiers",
+    "n_call_isolates": 0,
+    "n_mic_isolates": 96,
+    "n_mic_only_isolates": 96,
+    "call_agents": [],
+    "mic_agents": [
+      "demo_agent"
+    ]
+  }
+}

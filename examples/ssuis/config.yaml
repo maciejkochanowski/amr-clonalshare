@@ -1,0 +1,76 @@
+# Streptococcus suis, n = 677, thirteen antimicrobials, typed by population
+# cluster.
+#
+#   python examples/ssuis/build_calls_long.py
+#   amr-clonalshare --config examples/ssuis/config.yaml --results-dir out/ssuis
+#
+# The cohort as a surveillance programme holds it: one column of
+# susceptibility calls, one column of lineage labels. The run computes the
+# share the lineages carry and stops: per antimicrobial the lineage-membership
+# share against its permuted control, the population liability ICC under a
+# Gaussian lineage model, an e-value with the sequential e-process
+# over the yearly intakes, the reading of the recorded dilutions, and the gate
+# that refuses where the cohort cannot identify any of them. The record is
+# `clonal_share_result.json`, and the two reports are rendered from it.
+#
+# The lineage is the hierBAPS population cluster the source study reports for
+# every isolate, not the sequence type, which is missing for a third of them
+# and missing informatively; config_contrast.yaml reads the sequence type and
+# shows what the support gate makes of it. DATA_PROVENANCE.md documents both.
+
+dataset:
+  name: streptococcus_suis_n677
+  strain_id_column: genome_id
+  data_dir: data
+  metadata: metadata.csv
+  lineage_column: baps_cluster
+
+  # The panel as a laboratory exports it: one row per isolate and
+  # antimicrobial. Built from the two wide call tables by build_calls_long.py and
+  # checked against them by tests/test_ssuis_provenance.py.
+  phenotype: calls_long.csv
+  phenotype_id_column: genome_id
+  phenotype_antibiotic_column: antibiotic
+  phenotype_call_column: call
+  # Each call is wild type or non-wild-type against the cut-off of its agent,
+  # not a clinical category.
+  phenotype_kind: wt_nwt
+  phenotype_source: >-
+    MIC against the cut-off of each agent in DATA_PROVENANCE.md section 2:
+    EUCAST epidemiological cut-offs for tetracycline, doxycycline and
+    erythromycin, collection-specific cut-offs for the other ten
+
+  # The year an isolate arrived is the intake of a programme of looks, so the
+  # run also reports the running product of the e-values over the intakes,
+  # which may be read after any of them.
+  batch_column: collection_year
+
+  # The recorded dilutions, read at their own resolution beside the calls: a
+  # value on an end well is an interval, not a point.
+  mic: mic_panel.csv
+  mic_id_column: genome_id
+  mic_antibiotic_column: antibiotic
+  mic_value_column: measurement
+  # Two laboratories read the panel and tested different ranges, so the end
+  # wells are found within each laboratory (build_mic_table.py names them).
+  mic_panel_column: testing_laboratory
+  # The country of isolation enters the calibrated MIC interval as a fixed
+  # effect: the source study found consistently higher MICs in Canadian
+  # isolates across lineages, and the country also distinguishes the two
+  # laboratories.
+  mic_covariate_column: isolation_country
+  # The run is also repeated within each country, so that a share seen in the
+  # pooled collection can be checked against the share within each source.
+  stratify_by: isolation_country
+
+# The population liability ICC of each call under a Gaussian lineage model,
+# a separate target reported beside the lineage share
+# (docs/manual/10-population-probit.md).
+population_probit:
+  enabled: true
+
+# The calibrated MIC interval (on by default) takes 9 to 30 minutes per
+# antimicrobial on 16 cores, so this example leaves it out to keep the
+# run short. Delete these two lines for the full reading.
+censored:
+  calibrated_interval: false

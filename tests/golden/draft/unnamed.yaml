@@ -1,0 +1,15 @@
+# Drafted by amr-clonalshare --init from the column names of:
+#   tests/golden/draft_data/unnamed.csv
+# Every value below is a guess. Read it before running the analysis;
+# a line marked REPLACE_ME could not be guessed at all.
+dataset:
+  name: my_collection
+  data_dir: "<repository>/tests/golden/draft_data"
+  metadata: "unnamed.csv"
+  strain_id_column: "REPLACE_ME"
+  lineage_column: "REPLACE_ME"
+  phenotype: "unnamed.csv"
+  phenotype_id_column: "REPLACE_ME"
+  phenotype_antibiotic_column: "REPLACE_ME"
+  phenotype_call_column: "REPLACE_ME"
+  phenotype_kind: REPLACE_ME   # clinical_sir, wt_nwt or binary; the recorded values fit none of them

@@ -1,0 +1,264 @@
+[
+ {
+  "bh_accumulated": {
+   "fdp_ever": {
+    "mc_se": 0.0013261363747134468,
+    "mean": 0.0610279341029341,
+    "n_finite": 6000
+   },
+   "fdp_final_look": {
+    "mc_se": 0.0008353411355992043,
+    "mean": 0.021868320105820103,
+    "n_finite": 6000
+   },
+   "fdp_per_look": {
+    "mc_se": 0.0005634729025134617,
+    "mean": 0.020039847883597885,
+    "n_finite": 6000
+   },
+   "n_declared_ever": {
+    "mc_se": 0.019167568245004006,
+    "mean": 4.946833333333333,
+    "n_finite": 6000
+   },
+   "power_ever": {
+    "mc_se": 0.0023030239108430047,
+    "mean": 0.6541428571428571,
+    "n_finite": 6000
+   },
+   "power_final_look": {
+    "mc_se": 0.002327865922861388,
+    "mean": 0.6015952380952381,
+    "n_finite": 6000
+   }
+  },
+  "by_accumulated": {
+   "fdp_ever": {
+    "mc_se": 0.0008285020644193543,
+    "mean": 0.01828611111111111,
+    "n_finite": 6000
+   },
+   "fdp_final_look": {
+    "mc_se": 0.00048672068987894754,
+    "mean": 0.00587691798941799,
+    "n_finite": 6000
+   },
+   "fdp_per_look": {
+    "mc_se": 0.0003075954146294634,
+    "mean": 0.00550291832010582,
+    "n_finite": 6000
+   },
+   "n_declared_ever": {
+    "mc_se": 0.017405389905077475,
+    "mean": 3.7308333333333334,
+    "n_finite": 6000
+   },
+   "power_ever": {
+    "mc_se": 0.0023671820177508275,
+    "mean": 0.5202857142857142,
+    "n_finite": 6000
+   },
+   "power_final_look": {
+    "mc_se": 0.0023562735444474826,
+    "mean": 0.4793095238095238,
+    "n_finite": 6000
+   }
+  },
+  "cell": {
+   "cell_index": 18,
+   "law": "t4",
+   "n_lineages": 40,
+   "n_per_year": 30,
+   "null_fraction": 0.5
+  },
+  "config": {
+   "alpha": 0.05,
+   "evalue_only": false,
+   "folds": 5,
+   "master_seed": 20260902,
+   "n_agents": 13,
+   "n_perm": 999,
+   "n_years": 8,
+   "prevalence": 0.35,
+   "repeats": 4,
+   "rho": 0.3,
+   "shares": [
+    0.1,
+    0.3
+   ]
+  },
+  "ebh_accumulated": {
+   "fdp_ever": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   },
+   "fdp_final_look": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   },
+   "fdp_per_look": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   },
+   "n_declared_ever": {
+    "mc_se": 0.010612198230025688,
+    "mean": 0.6496666666666666,
+    "n_finite": 6000
+   },
+   "power_ever": {
+    "mc_se": 0.0015160283185750984,
+    "mean": 0.0928095238095238,
+    "n_finite": 6000
+   },
+   "power_final_look": {
+    "mc_se": 0.0014907144889492407,
+    "mean": 0.08859523809523807,
+    "n_finite": 6000
+   }
+  },
+  "ebh_product": {
+   "fdp_ever": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   },
+   "fdp_final_look": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   },
+   "fdp_per_look": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   },
+   "n_declared_ever": {
+    "mc_se": 0.000706104168790175,
+    "mean": 0.003,
+    "n_finite": 6000
+   },
+   "power_ever": {
+    "mc_se": 0.00010087202411288215,
+    "mean": 0.00042857142857142855,
+    "n_finite": 6000
+   },
+   "power_final_look": {
+    "mc_se": 9.210622554026087e-05,
+    "mean": 0.00035714285714285714,
+    "n_finite": 6000
+   }
+  },
+  "ebh_sequential": {
+   "fdp_ever": {
+    "mc_se": 0.0002652670991542577,
+    "mean": 0.0005694444444444444,
+    "n_finite": 6000
+   },
+   "fdp_final_look": {
+    "mc_se": 5.5555555555555565e-05,
+    "mean": 5.555555555555555e-05,
+    "n_finite": 6000
+   },
+   "fdp_per_look": {
+    "mc_se": 5.298736783599044e-05,
+    "mean": 0.00010763888888888887,
+    "n_finite": 6000
+   },
+   "n_declared_ever": {
+    "mc_se": 0.011858314262930263,
+    "mean": 1.0475,
+    "n_finite": 6000
+   },
+   "power_ever": {
+    "mc_se": 0.0016924650682485502,
+    "mean": 0.14949999999999997,
+    "n_finite": 6000
+   },
+   "power_final_look": {
+    "mc_se": 0.0016237254655912664,
+    "mean": 0.13309523809523807,
+    "n_finite": 6000
+   }
+  },
+  "environment": {
+   "amr_clonalshare": "1.0.0",
+   "node": "x1000c6s3b0n0",
+   "numpy": "2.4.4",
+   "package_file": "__init__.py",
+   "platform": "Linux-5.14.0-687.47.1.el9_8.x86_64-x86_64-with-glibc2.34",
+   "python": "3.11.15",
+   "scipy": "1.17.1"
+  },
+  "lond_batch": {
+   "fdp_ever": {
+    "mc_se": 0.0014984943639102849,
+    "mean": 0.014,
+    "n_finite": 6000
+   },
+   "fdp_final_look": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   },
+   "fdp_per_look": {
+    "mc_se": 0.0001873117954887856,
+    "mean": 0.00175,
+    "n_finite": 6000
+   },
+   "n_declared_ever": {
+    "mc_se": 0.003757666436306553,
+    "mean": 0.07933333333333334,
+    "n_finite": 6000
+   },
+   "power_ever": {
+    "mc_se": 0.0004845150449187702,
+    "mean": 0.009214285714285713,
+    "n_finite": 6000
+   },
+   "power_final_look": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   }
+  },
+  "lond_finite_horizon": {
+   "fdp_ever": {
+    "mc_se": 0.0015536644995121443,
+    "mean": 0.015083333333333334,
+    "n_finite": 6000
+   },
+   "fdp_final_look": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   },
+   "fdp_per_look": {
+    "mc_se": 0.00019420806243901803,
+    "mean": 0.0018854166666666668,
+    "n_finite": 6000
+   },
+   "n_declared_ever": {
+    "mc_se": 0.003841495088384948,
+    "mean": 0.0835,
+    "n_finite": 6000
+   },
+   "power_ever": {
+    "mc_se": 0.0004935721305405418,
+    "mean": 0.00964285714285714,
+    "n_finite": 6000
+   },
+   "power_final_look": {
+    "mc_se": 0.0,
+    "mean": 0.0,
+    "n_finite": 6000
+   }
+  },
+  "prevalence_seen": 0.32290432692307697,
+  "replicates": 6000,
+  "seconds": 202.49987506866455,
+  "seconds_per_replicate": 0.03374997921784719
+ }
+]

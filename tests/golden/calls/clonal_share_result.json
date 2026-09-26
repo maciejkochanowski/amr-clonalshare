@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0",
+  "seed": 42,
+  "config": {
+    "dataset": {
+      "name": "fictional_workflow",
+      "strain_id_column": "isolate_id",
+      "data_dir": "../../examples/workflows/data",
+      "metadata": "metadata.csv",
+      "lineage_column": "lineage",
+      "contrast_column": null,
+      "contrast_levels": [],
+      "batch_column": null,
+      "phenotype": "calls.csv",
+      "phenotype_id_column": "isolate_id",
+      "phenotype_antibiotic_column": "agent",
+      "phenotype_call_column": "call",
+      "phenotype_agent_columns": [],
+      "phenotype_intermediate": null,
+      "phenotype_kind": "clinical_sir",
+      "phenotype_positive_definition": "R only in fictional format example",
+      "phenotype_source": "fictional teaching fixture with no AST interpretation",
+      "ast_standard": null,
+      "ast_version": null,
+      "duplicate_policy": "error",
+      "mic": null,
+      "mic_id_column": "Strain_ID",
+      "mic_antibiotic_column": "antibiotic",
+      "mic_value_column": "measurement",
+      "mic_operator_column": null,
+      "mic_panel_column": null,
+      "mic_covariate_columns": [],
+      "stratify_by": null,
+      "mic_wells": {},
+      "mic_units": {}
+    },
+    "attribution": {
+      "enabled": true,
+      "folds": 2,
+      "repeats": 2,
+      "n_boot": 20,
+      "n_perm": 19
+    },
+    "surveillance": {
+      "enabled": true,
+      "n_boot": 20,
+      "q_fdr": 0.05,
+      "min_shared_support": 0.9,
+      "label_alpha": 0.05
+    },
+    "censored": {
+      "enabled": true,
+      "end_wells_censored": true,
+      "calibrated_interval": true,
+      "calibration_n_boot": 199,
+      "workers": 0,
+      "screening_n_boot": null,
+      "calibration_agents": []
+    },
+    "evidence": {
+      "enabled": true,
+      "folds": 2,
+      "repeats": 2,
+      "alpha": 0.05
+    },
+    "population_probit": {
+      "enabled": false,
+      "interval_method": "fixed_cutoff"
+    },
+    "config_file": "calls.yaml"
+  },
+  "versions": {
+    "amr_clonalshare": "1.0.0",
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1"
+  },
+  "n_isolates": 96,
+  "n_traits": 1,
+  "traits": [
+    "demo_agent"
+  ],
+  "metadata_diagnostics": {
+    "lineage_column": "lineage",
+    "clonal_share": {
+      "demo_agent": {
+        "kappa": -0.3081769488720062,
+        "kappa_adj": -0.03390067672602297,
+        "ci_low": -0.33943413988336096,
+        "ci_high": 0.04686881895805146,
+        "null_mean": -0.2652829989574179,
+        "p_value": 0.55,
+        "n": 96,
+        "n_groups": 12,
+        "prevalence": 0.40625,
+        "support": 1.0,
+        "missing_share": 0.0,
+        "estimable": true,
+        "cv_sd": 0.008597689612746984,
+        "n_dropped_non_finite": 0,
+        "n_dropped_untyped": 0,
+        "n_singletons_set_aside": 0,
+        "n_scored": 96,
+        "interval_target": "lineage_membership",
+        "superpopulation_low": 0.0,
+        "superpopulation_high": 0.26916999213881354,
+        "superpopulation_share": -0.03709688456394733,
+        "p_floor": 0.05,
+        "latent_share": 0.0,
+        "latent_low": 0.0,
+        "latent_high": 0.07492322407779284,
+        "latent_species_low": 0.0,
+        "latent_species_high": 0.4146427991508972,
+        "dominant_lineage_share": 0.25,
+        "few_lineages": false,
+        "n_groups_repeated": 12,
+        "effective_groups": 11.999999999999998,
+        "largest_group_share": 0.08333333333333333,
+        "n_positive_repeated": 39.0,
+        "reason": ""
+      }
+    },
+    "lineage_selection": {
+      "method": "benjamini_yekutieli",
+      "alpha": 0.05,
+      "n_tested": 1,
+      "q_values": {
+        "demo_agent": 0.55
+      },
+      "rejected_features": [],
+      "p_value_floor": 0.05,
+      "note": "permutation p-values of the clonal share; the smallest attainable p-value is 1/(n_perm + 1), so a panel of m agents needs n_perm large enough that this floor is below alpha/m for a single agent to be selectable"
+    },
+    "realised_share": {
+      "demo_agent": {
+        "kappa": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "superpopulation_low": 0.0,
+        "superpopulation_high": 0.0,
+        "n": 96,
+        "n_groups": 12,
+        "effective_group_size": 8.0,
+        "f_ratio": 0.2666328085322499,
+        "residual_excess_kurtosis": -1.7639312486915941,
+        "estimable": false,
+        "reason": "the observed mean-square ratio 0.267 falls below the 0.025 point of the central F on 11 and 84 degrees of freedom, so the inverted confidence set for the noncentrality is empty and the interval closes on zero",
+        "n_dropped_untyped": 0,
+        "n_dropped_non_finite": 0
+      }
+    },
+    "lineage_evidence": {
+      "per_feature": {
+        "demo_agent": {
+          "e_value": 0.6479513712031735,
+          "log_e": -0.43393962988538426,
+          "reject_05": false,
+          "reject_01": false,
+          "n": 96,
+          "n_groups": 12,
+          "prevalence": 0.40625,
+          "n_splits": 4,
+          "n_dropped_untyped": 0,
+          "n_dropped_non_finite": 0
+        }
+      },
+      "e_bh": {
+        "rejected": [],
+        "n_rejected": 0,
+        "threshold": null,
+        "alpha": 0.05,
+        "m": 1,
+        "rejected_features": []
+      },
+      "note": "e-value in the betting sense of Vovk and Wang, not the BLAST expectation value and not the E-value of VanderWeele and Ding"
+    }
+  },
+  "input_qc": {
+    "n_isolates": 96,
+    "n_antimicrobials": 1,
+    "n_empty_agents": 0,
+    "traits": {
+      "demo_agent": {
+        "n": 96,
+        "n_missing": 0,
+        "n_positive": 39,
+        "prevalence": 0.40625,
+        "minor_count": 39,
+        "constant": false,
+        "empty": false,
+        "adequate": true
+      }
+    },
+    "min_minor_count": 20,
+    "min_group_size": 2,
+    "metadata_join": {
+      "n_joined": 96,
+      "share_joined": 1.0,
+      "unjoined_examples": [],
+      "n_near_matches": 0,
+      "near_match_examples": [],
+      "rows_read": 96,
+      "n_duplicate_ids": 0,
+      "strains_joined": 96,
+      "strains_aligned": 96,
+      "n_metadata_only": 0,
+      "metadata_only_examples": [],
+      "duplicate_policy": "error",
+      "n_duplicate_rows": 0,
+      "n_identical_duplicates_collapsed": 0,
+      "n_conflicting_keys": 0,
+      "n_conflicting_rows": 0,
+      "conflicting_key_examples": [],
+      "n_conflict_rows_dropped": 0
+    },
+    "lineage": {
+      "column": "lineage",
+      "n": 96,
+      "n_typed": 96,
+      "n_untyped": 0,
+      "n_groups": 12,
+      "n_singletons": 0,
+      "n_informative_groups": 12,
+      "support": 1.0,
+      "estimable": true,
+      "effective_group_size": 8.0,
+      "group_sizes": {
+        "L01": 8,
+        "L02": 8,
+        "L03": 8,
+        "L04": 8,
+        "L05": 8,
+        "L06": 8,
+        "L07": 8,
+        "L08": 8,
+        "L09": 8,
+        "L10": 8,
+        "L11": 8,
+        "L12": 8
+      },
+      "smallest_groups": {
+        "L01": 8,
+        "L02": 8,
+        "L03": 8,
+        "L04": 8,
+        "L05": 8,
+        "L06": 8,
+        "L07": 8,
+        "L08": 8,
+        "L09": 8,
+        "L10": 8
+      }
+    },
+    "agent_feasibility": {
+      "demo_agent": {
+        "n_retained": 96,
+        "n_dropped_non_finite": 0,
+        "n_dropped_untyped": 0,
+        "prevalence": 0.40625,
+        "minor_count": 39,
+        "n_groups": 12,
+        "n_singletons": 0,
+        "support": 1.0,
+        "input_feasible": true,
+        "failure_reasons": [],
+        "warnings": []
+      }
+    },
+    "phenotype_reading": {
+      "rows_read": 96,
+      "n_unrecognized_calls": 0,
+      "unrecognized_calls": {},
+      "n_missing_calls": 0,
+      "n_intermediate_dropped": 0,
+      "isolates_without_readable_calls": 0,
+      "phenotype_kind": "clinical_sir",
+      "positive_definition": "R only in fictional format example",
+      "positive_coding": "R (resistant)",
+      "intermediate_policy": "susceptible",
+      "source": "fictional teaching fixture with no AST interpretation",
+      "ast_standard": null,
+      "ast_version": null,
+      "agents": {
+        "demo_agent": {
+          "rows_read": 96,
+          "n_recorded_isolates": 96,
+          "n_missing_calls": 0,
+          "n_unrecognized_calls": 0,
+          "n_intermediate_dropped": 0,
+          "n_readable_isolates": 96,
+          "n_absent_records": 0
+        }
+      },
+      "duplicate_policy": "error",
+      "n_duplicate_rows": 0,
+      "n_identical_duplicates_collapsed": 0,
+      "n_conflicting_keys": 0,
+      "n_conflicting_rows": 0,
+      "conflicting_key_examples": [],
+      "n_conflict_rows_dropped": 0,
+      "call_table_isolates_without_readable_calls": 0
+    },
+    "raw_universe": {
+      "definition": "union of raw call and MIC record identifiers",
+      "n_call_isolates": 96,
+      "n_mic_isolates": 0,
+      "n_mic_only_isolates": 0,
+      "call_agents": [
+        "demo_agent"
+      ],
+      "mic_agents": []
+    }
+  },
+  "collection_bounds": {
+    "demo_agent": {
+      "status": "ok",
+      "analysis_scope": "supplied finite collection",
+      "total_count": 96,
+      "observed_count": 96,
+      "missing_count": 0,
+      "positive_count": 39,
+      "observed_prevalence": 0.40625,
+      "lower_bound": 0.40625,
+      "upper_bound": 0.40625,
+      "prevalence_bounds": [
+        0.40625,
+        0.40625
+      ]
+    }
+  },
+  "results": [
+    {
+      "agent": "demo_agent",
+      "analysis": "finite_collection_prevalence",
+      "method": "finite_collection_prevalence",
+      "estimand": "prevalence in recorded collection",
+      "analysis_scope": "recorded finite collection",
+      "n": 96,
+      "n_groups": null,
+      "n_observed": 96,
+      "n_missing": 0,
+      "n_positive": 39,
+      "estimate_scope": "observed outcomes only",
+      "batch": null,
+      "estimate": 0.40625,
+      "lower": 0.40625,
+      "upper": 0.40625,
+      "log_e": null,
+      "interval_kind": "identification bounds; not a confidence interval",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "Binary outcomes; recorded collection size known. Estimate is observed-only prevalence; bounds cover missing outcomes."
+    },
+    {
+      "agent": "demo_agent",
+      "analysis": "collection_membership",
+      "method": "collection_membership",
+      "estimand": "collection lineage-membership share",
+      "analysis_scope": "observed and typed subset",
+      "n": 96,
+      "n_groups": 12,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "observed and typed subset",
+      "batch": null,
+      "estimate": -0.03390067672602297,
+      "lower": -0.33943413988336096,
+      "upper": 0.04686881895805146,
+      "log_e": null,
+      "interval_kind": "95% interval",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "Method-specific sampling assumptions apply."
+    },
+    {
+      "agent": "demo_agent",
+      "analysis": "realised_component",
+      "method": "realised_component",
+      "estimand": "realised variance-component ratio",
+      "analysis_scope": "observed and typed subset",
+      "n": 96,
+      "n_groups": 12,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "observed and typed subset",
+      "batch": null,
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "log_e": null,
+      "interval_kind": "95% interval",
+      "status": "unavailable",
+      "reason": "the observed mean-square ratio 0.267 falls below the 0.025 point of the central F on 11 and 84 degrees of freedom, so the inverted confidence set for the noncentrality is empty and the interval closes on zero",
+      "unit": "proportion",
+      "assumptions": "Gaussian residual model for interval interpretation; diagnostic checks do not verify this assumption."
+    },
+    {
+      "agent": "demo_agent",
+      "analysis": "lineage_evidence",
+      "method": "lineage_evidence",
+      "estimand": "evidence against lineage-independent binary outcomes",
+      "analysis_scope": "observed and typed subset",
+      "n": 96,
+      "n_groups": 12,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "observed and typed subset",
+      "batch": null,
+      "estimate": 0.6479513712031735,
+      "lower": null,
+      "upper": null,
+      "log_e": -0.43393962988538426,
+      "interval_kind": "e-value; not an effect size",
+      "status": "computed",
+      "reason": "",
+      "unit": "e-value",
+      "assumptions": "Held-out Bernoulli likelihood under the stated null; training data separate from evaluation."
+    }
+  ]
+}

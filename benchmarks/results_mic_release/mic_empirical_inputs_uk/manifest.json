@@ -1,0 +1,389 @@
+{
+  "records": [
+    {
+      "index": 0,
+      "agent": "amoxicillin",
+      "file": "amoxicillin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917200,
+      "sha256": "f552cdf103035f3a6ee95ef9471638198fbb139140db5811dedfe92ceb85c69e"
+    },
+    {
+      "index": 1,
+      "agent": "cefquinome",
+      "file": "cefquinome.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -9.0,
+          -8.0,
+          -7.0,
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917201,
+      "sha256": "c7e1e1abab81c4a19912205a1e91b2d40291cb2f98337e72a2cda33d25112ee3"
+    },
+    {
+      "index": 2,
+      "agent": "ceftiofur",
+      "file": "ceftiofur.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917202,
+      "sha256": "a2d485dc71e77bc9ae1e508e9b153b4dd8afc536203c313649a55139a7c1e2e4"
+    },
+    {
+      "index": 3,
+      "agent": "doxycycline",
+      "file": "doxycycline.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917203,
+      "sha256": "6412da81317aedb0ecc6ac48409da02d9d2c5e3d765d90389f20887368907ea3"
+    },
+    {
+      "index": 4,
+      "agent": "enrofloxacin",
+      "file": "enrofloxacin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917204,
+      "sha256": "30a2227d11e5fd09a4aee416eb7af2d37abccc711b6db7963c81dcf160115209"
+    },
+    {
+      "index": 5,
+      "agent": "erythromycin",
+      "file": "erythromycin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917205,
+      "sha256": "318ac1fdc182138b293d72ff1b41073514a0fed916fffe1b068f9fd9cbe0e348"
+    },
+    {
+      "index": 6,
+      "agent": "florfenicol",
+      "file": "florfenicol.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -1.0,
+          0.0,
+          1.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917206,
+      "sha256": "51fc94e6120109f54abe334f243148fd4f23595dfc46999cfb7b92b6d320806f"
+    },
+    {
+      "index": 7,
+      "agent": "lincomycin",
+      "file": "lincomycin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917207,
+      "sha256": "79ceec0e9f1570811b46258d091a4d44d9c01fb3cb8e71cf2ef8b44a7a63598f"
+    },
+    {
+      "index": 8,
+      "agent": "marbofloxacin",
+      "file": "marbofloxacin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917208,
+      "sha256": "fe4dd94adf46075ec6a0f4e3fdcc8dcd265dadc324e1ae4e35f3cdf94ba1a287"
+    },
+    {
+      "index": 9,
+      "agent": "penicillin",
+      "file": "penicillin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917209,
+      "sha256": "497f82f3503f0b60b7766323edab163716b19f5c4abd34d6ed72813b91fd9c0d"
+    },
+    {
+      "index": 10,
+      "agent": "spectinomycin",
+      "file": "spectinomycin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917210,
+      "sha256": "f6c8491c91aaba4fe968455d8264c015621d8c46b18b42cdbcbd08f5802b57b3"
+    },
+    {
+      "index": 11,
+      "agent": "tetracycline",
+      "file": "tetracycline.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917211,
+      "sha256": "876f78ad2a55045ee6b0b9f328c90df5c2d52e90641e6797cb1ab89bb8ead001"
+    },
+    {
+      "index": 12,
+      "agent": "tiamulin",
+      "file": "tiamulin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917212,
+      "sha256": "8c52d019f144e6cb4edf9178c6b75b9d409d6a6e362521dced2ec789dc58b218"
+    },
+    {
+      "index": 13,
+      "agent": "tilmicosin",
+      "file": "tilmicosin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917213,
+      "sha256": "0204f33b73bc0824d765525b72c9e72d4482c72b63b2cc80ff66a44dd8b696dc"
+    },
+    {
+      "index": 14,
+      "agent": "trimethoprim",
+      "file": "trimethoprim.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917214,
+      "sha256": "0c4b4570c821e0ed0ba508369c439cee428c5aec520131dd0e823ac8bccb4675"
+    },
+    {
+      "index": 15,
+      "agent": "tylosin",
+      "file": "tylosin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ]
+      },
+      "n": 423,
+      "groups": 26,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260917215,
+      "sha256": "b1e88f653642c3f3069b920817f2661214099bd7fd2d47c7e2cde74a4ef58c05"
+    }
+  ],
+  "subset": {
+    "country": "United Kingdom",
+    "isolates": 423
+  },
+  "scientific_scope": "Method comparison under an explicit observation assumption; not clinical inference",
+  "source_sha256": {
+    "examples/ssuis/data/metadata.csv": "7cee95c7245683d53d2ca6a4470d07e6b6df8a7be19e3bd3e3668c827b72feab",
+    "examples/ssuis/data/mic_panel.csv": "b856d494229d6c257fb0ee91fdd84ef0feb36caac795dab95cb76e7cf23b90b9",
+    "benchmarks/mic_inference/prepare_empirical.py": "75f725a805c1995965b26c962e312bce12b2fa1e292d3e3e59e8d568ed458d12"
+  }
+}

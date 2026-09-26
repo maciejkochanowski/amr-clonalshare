@@ -1,0 +1,538 @@
+{
+  "records": [
+    {
+      "index": 0,
+      "agent": "amoxicillin",
+      "file": "amoxicillin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -6.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916100,
+      "sha256": "68c2bee4cd0175262c7a011234534c855b2221d6b024ed8460fab82e7b3fc1e8"
+    },
+    {
+      "index": 1,
+      "agent": "cefquinome",
+      "file": "cefquinome.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -9.0,
+          -8.0,
+          -7.0,
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -7.0,
+          -6.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916101,
+      "sha256": "d97e6e94a99533e48112527b9289e0694c03b3aa433a6544bb6215b1106bc590"
+    },
+    {
+      "index": 2,
+      "agent": "ceftiofur",
+      "file": "ceftiofur.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -4.0,
+          -3.0,
+          -2.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916102,
+      "sha256": "1dcec984600746291a1bb58eb5697d5f808377e815f53467e382d5f6f43a1278"
+    },
+    {
+      "index": 3,
+      "agent": "doxycycline",
+      "file": "doxycycline.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916103,
+      "sha256": "85e2776449a4b83bf65fcaf47c2b79745480f8ff80a5a0c25bf55000f4d2ca97"
+    },
+    {
+      "index": 4,
+      "agent": "enrofloxacin",
+      "file": "enrofloxacin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -7.0,
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -2.0,
+          -1.0,
+          0.0,
+          1.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916104,
+      "sha256": "e6d40622802fca87009fa2618ffc1181b4af909b507d934fde20b2a18178e0de"
+    },
+    {
+      "index": 5,
+      "agent": "erythromycin",
+      "file": "erythromycin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916105,
+      "sha256": "5bc53cf58fcfdb354feed98973f31e309ce6b66000c86696081f6e71ed787374"
+    },
+    {
+      "index": 6,
+      "agent": "florfenicol",
+      "file": "florfenicol.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -2.0,
+          -1.0,
+          0.0,
+          1.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916106,
+      "sha256": "942dd5343e4fd985c210d73d55fd009b99e010977bbad114439c84f526ae74d6"
+    },
+    {
+      "index": 7,
+      "agent": "lincomycin",
+      "file": "lincomycin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916107,
+      "sha256": "fef81d44c65f046b0e7b6f3ed998aa09cb5a3b6c04f2c22b803073a336f85407"
+    },
+    {
+      "index": 8,
+      "agent": "marbofloxacin",
+      "file": "marbofloxacin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -2.0,
+          -1.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916108,
+      "sha256": "a8ebdd02ba1325310f99ad003dbab8e4c3f0e2d79e5a8daa1993121e347c3281"
+    },
+    {
+      "index": 9,
+      "agent": "penicillin",
+      "file": "penicillin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916109,
+      "sha256": "4b292a460c41a7ac24209cf129fc41de167168e86b83cdb70eee594932f5d3be"
+    },
+    {
+      "index": 10,
+      "agent": "spectinomycin",
+      "file": "spectinomycin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916110,
+      "sha256": "e694d1c654137c2bce901af593b1c492e1b2ac18e4ddedebf44b04de48d34ac2"
+    },
+    {
+      "index": 11,
+      "agent": "tetracycline",
+      "file": "tetracycline.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916111,
+      "sha256": "07054e92e3e0ac157658d5ad5b18500c4e9044f763b383b47698a244b80b0e36"
+    },
+    {
+      "index": 12,
+      "agent": "tiamulin",
+      "file": "tiamulin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916112,
+      "sha256": "32fda86bc7abc2a8adf5247b365cd31155cb957590913971a5ef6dda154eaa26"
+    },
+    {
+      "index": 13,
+      "agent": "tilmicosin",
+      "file": "tilmicosin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916113,
+      "sha256": "c51c7fa3851dc1426e6d6ea1959b6e1b26dbb6756c624fa118626f948a3c0407"
+    },
+    {
+      "index": 14,
+      "agent": "trimethoprim",
+      "file": "trimethoprim.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916114,
+      "sha256": "3e4c3d4260b0b7583f8bc4865127aa91c02ad9d2de340ca802ce2a76c0f09c74"
+    },
+    {
+      "index": 15,
+      "agent": "tylosin",
+      "file": "tylosin.csv",
+      "panel_edges": {
+        "LGC Fordham": [
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ],
+        "OUCRU Ho Chi Minh City": [
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ]
+      },
+      "n": 677,
+      "groups": 30,
+      "panel_provenance": "assumed_from_recorded_lattice_and_extrema_within_testing_laboratory; not_verified_laboratory_panel",
+      "endpoint_assumption": "inferred_end_wells_within_testing_laboratory; same_intervals_for_both_methods",
+      "seed": 20260916115,
+      "sha256": "abe109b3c5c20556a3d632f89203c9249d3bab17b8e5c9560680fcce372f5d61"
+    }
+  ],
+  "subset": {
+    "country": null,
+    "isolates": 677
+  },
+  "scientific_scope": "Method comparison under an explicit observation assumption; not clinical inference",
+  "source_sha256": {
+    "examples/ssuis/data/metadata.csv": "7cee95c7245683d53d2ca6a4470d07e6b6df8a7be19e3bd3e3668c827b72feab",
+    "examples/ssuis/data/mic_panel.csv": "b856d494229d6c257fb0ee91fdd84ef0feb36caac795dab95cb76e7cf23b90b9",
+    "benchmarks/mic_inference/prepare_empirical.py": "75f725a805c1995965b26c962e312bce12b2fa1e292d3e3e59e8d568ed458d12"
+  }
+}

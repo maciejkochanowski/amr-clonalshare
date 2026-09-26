@@ -1,0 +1,260 @@
+{
+  "campaigns": {
+    "serial_runs": {
+      "job_id": "24111314",
+      "tasks": 5,
+      "states": {
+        "COMPLETED": 5
+      },
+      "cpu_hours": 0.6652777777777777,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "parallel_runs": {
+      "job_id": "24111315",
+      "tasks": 2,
+      "states": {
+        "COMPLETED": 2
+      },
+      "cpu_hours": 7.113333333333333,
+      "cpus_per_task": [
+        24
+      ]
+    },
+    "estimator_grid": {
+      "job_id": "24111316",
+      "tasks": 135,
+      "states": {
+        "COMPLETED": 135
+      },
+      "cpu_hours": 6.113333333333333,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "realised": {
+      "job_id": "24111317",
+      "tasks": 59,
+      "states": {
+        "COMPLETED": 59
+      },
+      "cpu_hours": 0.3877777777777778,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "repeated_looks": {
+      "job_id": "24113633",
+      "tasks": 24,
+      "states": {
+        "COMPLETED": 24
+      },
+      "cpu_hours": 23.58222222222222,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "mic_exact": {
+      "job_id": "24111319",
+      "tasks": 42,
+      "states": {
+        "COMPLETED": 42
+      },
+      "cpu_hours": 0.6541666666666667,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "mic_null": {
+      "job_id": "24111320",
+      "tasks": 584,
+      "states": {
+        "COMPLETED": 584
+      },
+      "cpu_hours": 977.3944444444444,
+      "cpus_per_task": [
+        4
+      ]
+    },
+    "mic_extension": {
+      "job_id": "24111321",
+      "tasks": 255,
+      "states": {
+        "COMPLETED": 255
+      },
+      "cpu_hours": 729.8544444444444,
+      "cpus_per_task": [
+        4
+      ]
+    },
+    "mic_empirical": {
+      "job_id": "24112408",
+      "tasks": 16,
+      "states": {
+        "COMPLETED": 16
+      },
+      "cpu_hours": 80.2,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "empirical_unadjusted": {
+      "job_id": "24112409",
+      "tasks": 16,
+      "states": {
+        "COMPLETED": 16
+      },
+      "cpu_hours": 36.91555555555556,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "empirical_uk": {
+      "job_id": "24112410",
+      "tasks": 16,
+      "states": {
+        "COMPLETED": 16
+      },
+      "cpu_hours": 30.906666666666666,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "empirical_b499": {
+      "job_id": "24112411",
+      "tasks": 3,
+      "states": {
+        "COMPLETED": 3
+      },
+      "cpu_hours": 58.50666666666667,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "empirical_b999": {
+      "job_id": "24112412",
+      "tasks": 3,
+      "states": {
+        "COMPLETED": 3
+      },
+      "cpu_hours": 90.20444444444445,
+      "cpus_per_task": [
+        16
+      ]
+    },
+    "population_calibration": {
+      "job_id": "24112413",
+      "tasks": 180,
+      "states": {
+        "COMPLETED": 180
+      },
+      "cpu_hours": 150.76,
+      "cpus_per_task": [
+        48
+      ]
+    },
+    "population_general": {
+      "job_id": "24112414",
+      "tasks": 325,
+      "states": {
+        "COMPLETED": 325
+      },
+      "cpu_hours": 755.56,
+      "cpus_per_task": [
+        48
+      ]
+    },
+    "population_benefit": {
+      "job_id": "24112415",
+      "tasks": 7,
+      "states": {
+        "COMPLETED": 7
+      },
+      "cpu_hours": 1.28,
+      "cpus_per_task": [
+        48
+      ]
+    },
+    "population_anchor": {
+      "job_id": "24112416",
+      "tasks": 1,
+      "states": {
+        "COMPLETED": 1
+      },
+      "cpu_hours": 0.43583333333333335,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "population_calibrate": {
+      "job_id": "24112417",
+      "tasks": 1,
+      "states": {
+        "COMPLETED": 1
+      },
+      "cpu_hours": 0.013333333333333334,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "population_lr": {
+      "job_id": "24112418",
+      "tasks": 130,
+      "states": {
+        "COMPLETED": 130
+      },
+      "cpu_hours": 460.32,
+      "cpus_per_task": [
+        48
+      ]
+    },
+    "summaries_a": {
+      "job_id": "24113657",
+      "tasks": 1,
+      "states": {
+        "COMPLETED": 1
+      },
+      "cpu_hours": 0.025,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "summaries_b": {
+      "job_id": "24114069",
+      "tasks": 1,
+      "states": {
+        "COMPLETED": 1
+      },
+      "cpu_hours": 0.013055555555555556,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "summaries_c": {
+      "job_id": "24114070",
+      "tasks": 1,
+      "states": {
+        "COMPLETED": 1
+      },
+      "cpu_hours": 0.029166666666666667,
+      "cpus_per_task": [
+        1
+      ]
+    },
+    "final_runs": {
+      "job_id": "24114092",
+      "tasks": 4,
+      "states": {
+        "COMPLETED": 4
+      },
+      "cpu_hours": 10.225,
+      "cpus_per_task": [
+        18
+      ]
+    }
+  },
+  "cpu_hours_total": 3421.1597222222226,
+  "tests_passed": 1083,
+  "empirical_cpus_per_task": 16
+}

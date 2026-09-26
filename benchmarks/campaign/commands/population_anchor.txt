@@ -1,0 +1,1 @@
+$PY benchmarks/campaign/run_logged.py --receipt $ROOT/outputs/population/anchor/RUN_RECEIPT.json --outputs $ROOT/outputs/population/anchor -- $PY -m benchmarks.population_model.anchor --output $ROOT/outputs/population/anchor/anchor.json

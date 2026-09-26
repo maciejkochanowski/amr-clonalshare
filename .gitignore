@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.eggs/
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.Zone.Identifier
+
+# Build outputs.
+/dist/
+/build/
+/src/*.egg-info/
+
+# Local verification environments and downloaded dependencies
+.venv*/
+site/

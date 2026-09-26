@@ -1,0 +1,36 @@
+{
+  "B": 4999,
+  "a_grid_count": 123,
+  "accepted": true,
+  "alternative_rho_count": 17,
+  "components": "diagnostic",
+  "coverage_scope": "Finite-panel empirical validation of the coverage target on fresh draws from the Gaussian model. For R>=2, the bootstrap uses an internal 0.04 threshold against a 95% hull-coverage target; R1 uses a separately justified 95% upper limit. Fitted-nuisance bootstrap and continuous-parameter interpolation remain approximate, with no exact continuum guarantee.",
+  "dispatch": {
+    "R0": "structural_full",
+    "R1": "plain_upper_95_B9999_i100",
+    "R>=2": "restricted_nuisance_bootstrap"
+  },
+  "internal_alpha": 0.04,
+  "nominal_level": 0.95,
+  "numerical_source_sha256": "5bb56b972497aa951f0d70b8bf14f56e83a915a23a03f7c854336666f82594e8",
+  "primary_object": "hull",
+  "protocol_id": "general_population_probit_1.0.0",
+  "refinement_levels": 3,
+  "sources": {
+    "_general_probit/histogram_table/histogram_table.py": "e4c2be7ac3a468c749ca61d3a73905238aed7c33b877c46c3819388de4a0a595",
+    "_general_probit/profile_bootstrap/bootstrap.py": "558414c2bb68bec4b329f2b01671690d1da4fa08387a440f0e613e537493ea9d",
+    "_general_probit_upper.py": "6b7dc1642b88b8a5a076b3afd17820ef357c66aa1ec0547769e822ad89a72de6"
+  },
+  "validation_evidence": {
+    "coverage_range": [
+      0.934,
+      0.996
+    ],
+    "scope": "Finite-panel empirical validation of the coverage target on fresh draws from the Gaussian model. For R>=2, the bootstrap uses an internal 0.04 threshold against a 95% hull-coverage target; R1 uses a separately justified 95% upper limit. Fitted-nuisance bootstrap and continuous-parameter interpolation remain approximate, with no exact continuum guarantee.",
+    "validation_cells": 144,
+    "validation_replicates": 72000,
+    "validation_seed": 20260926202,
+    "validation_summary_sha256": "e54333ec9f1774f7ab8260d64efe839b7c201b5de2c719032156e236408e3de9"
+  },
+  "validation_status": "validation_accepted"
+}
