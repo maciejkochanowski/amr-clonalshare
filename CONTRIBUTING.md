@@ -192,28 +192,28 @@ The score is killed mutants over all mutants of the module.
 |---|---:|---:|---:|---:|
 | `missingness.py` | 170 | 164 | 6 | 0.96 |
 | `stats.py` | 261 | 238 | 23 | 0.91 |
-| `qc.py` | 763 | 680 | 83 | 0.89 |
+| `qc.py` | 652 | 587 | 65 | 0.90 |
 | `evalues.py` | 733 | 622 | 111 | 0.85 |
 | `clonality.py` | 1,454 | 1,229 | 224 | 0.85 |
-| `_normal_numerics.py` | 398 | 336 | 62 | 0.84 |
 | `latent.py` | 146 | 121 | 25 | 0.83 |
-| `attribution.py` | 1,209 | 994 | 215 | 0.82 |
-| `comparison.py` | 777 | 638 | 139 | 0.82 |
+| `attribution.py` | 1,247 | 1,028 | 219 | 0.82 |
+| `comparison.py` | 777 | 639 | 138 | 0.82 |
+| `_normal_numerics.py` | 398 | 326 | 72 | 0.82 |
 | `draft.py` | 230 | 187 | 43 | 0.81 |
 | `phenotype.py` | 485 | 373 | 112 | 0.77 |
 | `realised.py` | 604 | 437 | 165 | 0.72 |
-| all of the above | 7,230 | 6,019 | 1,208 | 0.83 |
+| all of the above | 7,157 | 5,951 | 1,203 | 0.83 |
 
 The per-module rows count the mutants generated for each file; three mutants timed
 out and are counted as neither killed nor surviving.
 
-Every one of the 1,208 survivors is written down in
+Every one of the 1,203 survivors is written down in
 `tests/mutation_survivors.json`, in fourteen classes, each with a verdict and
 a reason. Thirty-six of them are equivalent mutants: a `dtype=float` dropped
 from a constructor whose default is already float64, an argument of
 `np.errstate` that decides whether a warning is printed and never what is
 computed. No test can kill those, and none should be written to try. The
-other 1,172 are gaps, and the record says for each class what a test would
+other 1,167 are gaps, and the record says for each class what a test would
 have to do; the largest are text on a path no fixture enters, a returned
 field no assertion reads, and a numeric gate no input sits exactly on.
 Calling them gaps rather than equivalents is deliberate: for many of them
