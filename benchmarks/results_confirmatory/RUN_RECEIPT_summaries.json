@@ -1,0 +1,69 @@
+{
+ "command": [
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_final/env/bin/python",
+  "benchmarks/confirmatory_summaries.py",
+  "--grid",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_rev4/outputs/estimator_grid/estimator_benchmark.json",
+  "--grid-rerun",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_rev4/final/outputs/estimator_grid_rerun/cells",
+  "--order",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_rev4/outputs/order",
+  "--conditional",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_rev4/decide/outputs/conditional_final",
+  "--output",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_rev4/decide/outputs/summaries"
+ ],
+ "exit_status": 0,
+ "started_utc": "2026-09-29T22:40:02Z",
+ "finished_utc": "2026-09-29T22:40:48Z",
+ "wall_seconds": 45.5,
+ "commit": "b4b763bc490b4249b911c356116545aec7f376ab",
+ "source": {
+  "package_sha256": "cca8a1affe7057d6ac79ccac0b7161592a09317bc2cac5e375bcd826db2e9e5d",
+  "files": {
+   "__init__.py": "415b68a553b4c4a10f14744000dfd86c67cddb595142505ef86fec7c01442df4",
+   "_seeding.py": "ae959415ed18b5e84de61766735797eb70250e16392bd26504ba1b0c84e28d20",
+   "attribution.py": "6188bf2c3462dbe103a1e3f454b51382bf425c140979341ecdbe318485ae3489",
+   "censored.py": "7f1ca2e5795a53c87004d918dd93814bf8adbdb1ac6a4a4fde17194213a41c86",
+   "cli.py": "8c318cc64f534030e9848e316c336c6d8f9651aece820a7367a15f087cd75c6d",
+   "clonality.py": "565b88693475a6475d08950e7cf6240045354a25d281a279ffafd2f9a98c0e33",
+   "comparison.py": "59d15ed20547b2b3c258286c194aa3c7b56e0a271cb320435cdb628f22109784",
+   "config.py": "4052f59d7dcb634e7f512343d9e1f216f9c057a3fa9bf14a0da737245c2cf617",
+   "core.py": "87e6bc8a11b695eb9b8a2513b7b59388d90202f3b5c864b0ac3925702be606f2",
+   "draft.py": "4c9852f341b1f1651b88347c0c1cdda3bd86528a2da6436f9428eaec1ebc8c7b",
+   "evalues.py": "5a38ff1fbb7e58c3b1cdd28aa9f6bb5a6df1424f0c93ed94217080e82d8144ae",
+   "io.py": "f19beed0dfe5aa9d2cd912c273b8319ad9e4824ec13a26f04c005ca843d60662",
+   "jsonio.py": "f101eff1592e351587d526151c687e03b40bd2fff1faf2ece8e9fe5417fbfe1f",
+   "latent_order.py": "fa1115d87de00da4116a137f36e063e7b2180581e73d451704fb3abc53344d5a",
+   "mic_order.py": "dffc35c9ee0ffe81243bb0c4b0f6222a7772df532827f4cdb373d786ba0b79b5",
+   "missingness.py": "5ac7ec381530c9e5845c1e32a26853d98b90baaf1f51799575ec0b45a0544f23",
+   "outputs.py": "7ffa63ff77ae50f0bb3f6de5943459daffc55424277c2b0eb34a09252f0c057c",
+   "phenotype.py": "548e4c3013bf53b986ddd2b236149d2f6b2651db1f5d08216b25a84dcdcbebb2",
+   "qc.py": "3179d76516366177a55703891bb2170826bf86d8837ac2fc2e0b70c7100a9281",
+   "report.py": "62d7ee17c7b9c4165462c88abe22d4256ef51accaf20f370164a73df609e5a01",
+   "report_html.py": "8012a01449b9d165d32922f55ae709f0f2bfb123526d77157475828e5146a7a2",
+   "report_model.py": "c31a64cce68ab46d1ed5e2f3468c94426305ee33c6b961968d5a5f16368f300d",
+   "stats.py": "ccc5129af2bc768441700e46639c04def542748675776479bc6a36507c3b05fd"
+  }
+ },
+ "stack": {
+  "python": "3.11.15",
+  "platform": "Linux-5.14.0-687.47.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "pandas": "3.0.2",
+  "yaml": "6.0.3",
+  "threadpoolctl": "3.6.0"
+ },
+ "cpus_available": 192,
+ "slurm": {
+  "SLURM_JOB_ID": "24255304",
+  "SLURM_ARRAY_JOB_ID": "24255304",
+  "SLURM_ARRAY_TASK_ID": "0",
+  "SLURM_CPUS_PER_TASK": "192"
+ },
+ "outputs_sha256": {
+  "design_summaries.json": "108cb8f6f555125f4d54667b047eb243470c1ce8d1012dad1b3d8ce2e9ebc9a3",
+  "raw_outputs_sha256.json": "16fd90bb21001aea85525f17c4c5a0abe7f43b173e2a4acdfe2158a07f24dbeb"
+ }
+}

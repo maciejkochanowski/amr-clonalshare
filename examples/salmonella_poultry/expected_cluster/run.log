@@ -1,0 +1,25 @@
+2026-10-03 08:11:45  Reading input tables and checking data
+2026-10-03 08:11:45  Computing analyses on their observed and typed subsets
+2026-10-03 08:11:45  Lineage share of the call: amikacin (1 of 22)
+2026-10-03 08:11:46  Lineage share of the call: amoxicillin-clavulanic acid (2 of 22); 0 s so far, about 10 s to go
+2026-10-03 08:11:47  Lineage share of the call: ampicillin (3 of 22); 2 s so far, about 16 s to go
+2026-10-03 08:11:48  Lineage share of the call: azithromycin (4 of 22); 3 s so far, about 17 s to go
+2026-10-03 08:11:49  Lineage share of the call: cefoxitin (5 of 22); 4 s so far, about 16 s to go
+2026-10-03 08:11:50  Lineage share of the call: ceftazidime (6 of 22); 5 s so far, about 16 s to go
+2026-10-03 08:11:50  Lineage share of the call: ceftiofur (7 of 22); 5 s so far, about 13 s to go
+2026-10-03 08:11:51  Lineage share of the call: ceftriaxone (8 of 22); 6 s so far, about 12 s to go
+2026-10-03 08:11:52  Lineage share of the call: chloramphenicol (9 of 22); 7 s so far, about 12 s to go
+2026-10-03 08:11:53  Lineage share of the call: ciprofloxacin (10 of 22); 8 s so far, about 12 s to go
+2026-10-03 08:11:55  Lineage share of the call: colistin (11 of 22); 9 s so far, about 11 s to go
+2026-10-03 08:11:55  Lineage share of the call: gentamicin (12 of 22); 9 s so far, about 9 s to go
+2026-10-03 08:11:56  Lineage share of the call: imipenem (13 of 22); 10 s so far, about 9 s to go
+2026-10-03 08:11:56  Lineage share of the call: kanamycin (14 of 22); 10 s so far, about 7 s to go
+2026-10-03 08:11:56  Lineage share of the call: meropenem (15 of 22); 11 s so far, about 6 s to go
+2026-10-03 08:11:56  Lineage share of the call: nalidixic acid (16 of 22); 11 s so far, about 5 s to go
+2026-10-03 08:11:58  Lineage share of the call: spectinomycin (17 of 22); 12 s so far, about 5 s to go
+2026-10-03 08:11:58  Lineage share of the call: streptomycin (18 of 22); 12 s so far, about 4 s to go
+2026-10-03 08:11:59  Lineage share of the call: sulfamethoxazole (19 of 22); 13 s so far, about 3 s to go
+2026-10-03 08:11:59  Lineage share of the call: sulfisoxazole (20 of 22); 13 s so far, about 2 s to go
+2026-10-03 08:12:00  Lineage share of the call: tetracycline (21 of 22); 14 s so far, about 1 s to go
+2026-10-03 08:12:01  Lineage share of the call: trimethoprim-sulfamethoxazole (22 of 22); 15 s so far, about 1 s to go
+2026-10-03 08:12:28  Writing reports, CSV and completion manifest

@@ -1,0 +1,678 @@
+genome_id,genome_name,mlst,serovar,isolation_country,collection_year,host_name,collection_period,country_period,baps_cluster,source_strain
+g1307.7503,Streptococcus suis SS1038,MLST.ssuis.1,1,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1038
+g1307.7504,Streptococcus suis SS1039,MLST.ssuis.1,1,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1039
+g1307.7505,Streptococcus suis SS1041,MLST.ssuis.911,4,United Kingdom,2010,Pig,early,United Kingdom early,BAPS1,SS1041
+g1307.7506,Streptococcus suis SS1054,MLST.ssuis.1,2,United Kingdom,,Pig,,,BAPS4,SS1054
+g1307.7507,Streptococcus suis SS1040,MLST.ssuis.911,4,United Kingdom,2010,Pig,early,United Kingdom early,BAPS1,SS1040
+g1307.7508,Streptococcus suis SS1036,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1036
+g1307.7509,Streptococcus suis SS1037,MLST.ssuis.87,8,United Kingdom,2010,Pig,early,United Kingdom early,BAPS5,SS1037
+g1307.7510,Streptococcus suis LSS97,MLST.ssuis.1,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS97
+g1307.7511,Streptococcus suis SS1035,MLST.ssuis.867,8,United Kingdom,2010,Pig,early,United Kingdom early,BAPS26,SS1035
+g1307.7512,Streptococcus suis SS1016,MLST.ssuis.87,8,United Kingdom,2010,Pig,early,United Kingdom early,BAPS5,SS1016
+g1307.7513,Streptococcus suis SS1055,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1055
+g1307.7514,Streptococcus suis SS1017,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1017
+g1307.7515,Streptococcus suis LSS99,MLST.ssuis.906,,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,LSS99
+g1307.7516,Streptococcus suis LSS96,MLST.ssuis.905,11,United Kingdom,2011,Pig,early,United Kingdom early,BAPS10,LSS96
+g1307.7517,Streptococcus suis SS1032,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1032
+g1307.7518,Streptococcus suis SS1033,MLST.ssuis.1,1,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1033
+g1307.7519,Streptococcus suis SS1028,MLST.ssuis.908,4,United Kingdom,2010,Pig,early,United Kingdom early,BAPS9,SS1028
+g1307.7520,Streptococcus suis SS1029,MLST.ssuis.1,14,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1029
+g1307.7521,Streptococcus suis SS1030,MLST.ssuis.27,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS24,SS1030
+g1307.7522,Streptococcus suis LSS92,MLST.ssuis.46,9,United Kingdom,2011,Pig,early,United Kingdom early,BAPS8,LSS92
+g1307.7523,Streptococcus suis LSS8,MLST.ssuis.892,16,United Kingdom,2010,Pig,early,United Kingdom early,BAPS8,LSS8
+g1307.7524,Streptococcus suis SS1014,MLST.ssuis.27,3,United Kingdom,2011,Pig,early,United Kingdom early,BAPS24,SS1014
+g1307.7525,Streptococcus suis SS1015,MLST.ssuis.27,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS24,SS1015
+g1307.7526,Streptococcus suis LSS63,MLST.ssuis.1,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS63
+g1307.7527,Streptococcus suis SS1025,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1025
+g1307.7528,Streptococcus suis SS1027,MLST.ssuis.1,14,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1027
+g1307.7529,Streptococcus suis SS1024,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1024
+g1307.7530,Streptococcus suis LSS80,MLST.ssuis.947,31,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS80
+g1307.7531,Streptococcus suis SS1023,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1023
+g1307.7532,Streptococcus suis SS1026,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1026
+g1307.7533,Streptococcus suis SS1022,MLST.ssuis.907,7,United Kingdom,2010,Pig,early,United Kingdom early,BAPS10,SS1022
+g1307.7534,Streptococcus suis LSS98,MLST.ssuis.1,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS98
+g1307.7535,Streptococcus suis SS1042,MLST.ssuis.911,4,United Kingdom,2010,Pig,early,United Kingdom early,BAPS1,SS1042
+g1307.7536,Streptococcus suis SS1051,MLST.ssuis.29,7,United Kingdom,2010,Pig,early,United Kingdom early,BAPS28,SS1051
+g1307.7537,Streptococcus suis SS1053,MLST.ssuis.25,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS27,SS1053
+g1307.7538,Streptococcus suis SS1013,MLST.ssuis.910,,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,SS1013
+g1307.7539,Streptococcus suis SS1048,MLST.ssuis.23,4,United Kingdom,2010,Pig,early,United Kingdom early,BAPS5,SS1048
+g1307.7540,Streptococcus suis LSS94,MLST.ssuis.862,4,United Kingdom,2011,Pig,early,United Kingdom early,BAPS5,LSS94
+g1307.7541,Streptococcus suis SS1052,MLST.ssuis.868,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS5,SS1052
+g1307.7542,Streptococcus suis SS1043,MLST.ssuis.28,1/2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS26,SS1043
+g1307.7543,Streptococcus suis SS1018,MLST.ssuis.29,7,United Kingdom,2010,Pig,early,United Kingdom early,BAPS28,SS1018
+g1307.7544,Streptococcus suis SS1021,MLST.ssuis.27,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS24,SS1021
+g1307.7545,Streptococcus suis LSS79,MLST.ssuis.875,15(+19 partial),United Kingdom,2011,Pig,early,United Kingdom early,BAPS10,LSS79
+g1307.7546,Streptococcus suis LSS64,MLST.ssuis.881,21,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,LSS64
+g1307.7547,Streptococcus suis SS1012,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1012
+g1307.7548,Streptococcus suis LSS95,MLST.ssuis.905,11,United Kingdom,2011,Pig,early,United Kingdom early,BAPS10,LSS95
+g1307.7549,Streptococcus suis SS1010,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1010
+g1307.7550,Streptococcus suis SS1009,MLST.ssuis.28,1/2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS25,SS1009
+g1307.7551,Streptococcus suis SS1011,MLST.ssuis.1,1,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,SS1011
+g1307.7552,Streptococcus suis SS1008,MLST.ssuis.873,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1008
+g1307.7553,Streptococcus suis LSS78,MLST.ssuis.904,12,United Kingdom,2011,Pig,early,United Kingdom early,BAPS10,LSS78
+g1307.7554,Streptococcus suis SS1007,MLST.ssuis.29,7,United Kingdom,2010,Pig,early,United Kingdom early,BAPS28,SS1007
+g1307.7555,Streptococcus suis SS1003,MLST.ssuis.954,,United Kingdom,2010,Pig,early,United Kingdom early,BAPS16,SS1003
+g1307.7556,Streptococcus suis SS1006,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1006
+g1307.7557,Streptococcus suis SS1004,MLST.ssuis.891,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1004
+g1307.7558,Streptococcus suis SS1005,MLST.ssuis.31,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS24,SS1005
+g1307.7559,Streptococcus suis SS1001,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1001
+g1307.7560,Streptococcus suis SS1002,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1002
+g1307.7561,Streptococcus suis SS1000,MLST.ssuis.29,7,United Kingdom,2010,Pig,early,United Kingdom early,BAPS28,SS1000
+g1307.7562,Streptococcus suis LSS65,MLST.ssuis.902,10,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS65
+g1307.7563,Streptococcus suis LSS90,MLST.ssuis.859,31,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS90
+g1307.7564,Streptococcus suis LSS82,MLST.ssuis.877,16,United Kingdom,2011,Pig,early,United Kingdom early,BAPS13,LSS82
+g1307.7565,Streptococcus suis LSS81,MLST.ssuis.875,15,United Kingdom,2011,Pig,early,United Kingdom early,BAPS10,LSS81
+g1307.7566,Streptococcus suis LSS91,MLST.ssuis.949,6,United Kingdom,2011,Pig,early,United Kingdom early,BAPS8,LSS91
+g1307.7567,Streptococcus suis LSS9,MLST.ssuis.866,10,United Kingdom,2010,Pig,early,United Kingdom early,BAPS8,LSS9
+g1307.7568,Streptococcus suis LSS88,MLST.ssuis.887,,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,LSS88
+g1307.7569,Streptococcus suis LSS62,MLST.ssuis.1,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS62
+g1307.7570,Streptococcus suis LSS87,MLST.ssuis.28,1 + 6,United Kingdom,2011,Pig,early,United Kingdom early,BAPS26,LSS87
+g1307.7571,Streptococcus suis LSS89,MLST.ssuis.87,8,United Kingdom,2011,Pig,early,United Kingdom early,BAPS5,LSS89
+g1307.7572,Streptococcus suis LSS86,MLST.ssuis.28,1 + 5,United Kingdom,2011,Pig,early,United Kingdom early,BAPS26,LSS86
+g1307.7573,Streptococcus suis LSS84,MLST.ssuis.29,7,United Kingdom,2011,Pig,early,United Kingdom early,BAPS28,LSS84
+g1307.7574,Streptococcus suis LSS85,MLST.ssuis.29,7,United Kingdom,2011,Pig,early,United Kingdom early,BAPS28,LSS85
+g1307.7575,Streptococcus suis LSS66,MLST.ssuis.903,9,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS66
+g1307.7576,Streptococcus suis LSS77,MLST.ssuis.28,1 and 4,United Kingdom,2011,Pig,early,United Kingdom early,BAPS26,LSS77
+g1307.7577,Streptococcus suis LSS76,MLST.ssuis.87,8 (+2 partial),United Kingdom,2011,Pig,early,United Kingdom early,BAPS5,LSS76
+g1307.7578,Streptococcus suis LSS83,MLST.ssuis.29,7,United Kingdom,2011,Pig,early,United Kingdom early,BAPS28,LSS83
+g1307.7579,Streptococcus suis LSS75,MLST.ssuis.883,31,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS75
+g1307.7580,Streptococcus suis LSS74,MLST.ssuis.94,3,United Kingdom,2011,Pig,early,United Kingdom early,BAPS1,LSS74
+g1307.7581,Streptococcus suis LSS50,MLST.ssuis.873,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS50
+g1307.7582,Streptococcus suis LSS70,MLST.Streptococcus_suis.87,9,United Kingdom,2011,Pig,early,United Kingdom early,BAPS5,LSS70
+g1307.7583,Streptococcus suis LSS49,MLST.ssuis.899,,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS49
+g1307.7584,Streptococcus suis LSS72,MLST.ssuis.28,1 and 3,United Kingdom,2011,Pig,early,United Kingdom early,BAPS26,LSS72
+g1307.7585,Streptococcus suis LSS73,MLST.ssuis.94,3,United Kingdom,2011,Pig,early,United Kingdom early,BAPS1,LSS73
+g1307.7586,Streptococcus suis LSS71,MLST.ssuis.28,1/2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS25,LSS71
+g1307.7587,Streptococcus suis LSS5,MLST.ssuis.891,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,LSS5
+g1307.7588,Streptococcus suis LSS68,MLST.ssuis.87,8,United Kingdom,2011,Pig,early,United Kingdom early,BAPS5,LSS68
+g1307.7589,Streptococcus suis LSS7,,,United Kingdom,2010,Pig,early,United Kingdom early,BAPS3,LSS7
+g1307.7590,Streptococcus suis LSS67,MLST.ssuis.87,8,United Kingdom,2011,Pig,early,United Kingdom early,BAPS5,LSS67
+g1307.7591,Streptococcus suis LSS60,MLST.ssuis.858,31,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS60
+g1307.7592,Streptococcus suis LSS61,MLST.ssuis.28,1/2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS25,LSS61
+g1307.7593,Streptococcus suis LSS6,,(4 partial),United Kingdom,2010,Pig,early,United Kingdom early,BAPS16,LSS6
+g1307.7594,Streptococcus suis LSS28,MLST.ssuis.1,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS28
+g1307.7595,Streptococcus suis LSS58,MLST.ssuis.886,31,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS58
+g1307.7596,Streptococcus suis LSS3,MLST.ssuis.28,1/2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS25,LSS3
+g1307.7597,Streptococcus suis LSS57,MLST.ssuis.884,,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS57
+g1307.7598,Streptococcus suis LSS59,MLST.ssuis.888,10,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS59
+g1307.7599,Streptococcus suis LSS29,MLST.ssuis.28,1/2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS25,LSS29
+g1307.7600,Streptococcus suis LSS56,MLST.ssuis.29,7 (+3 partial),United Kingdom,2011,Pig,early,United Kingdom early,BAPS28,LSS56
+g1307.7601,Streptococcus suis LSS54,MLST.ssuis.901,,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,LSS54
+g1307.7602,Streptococcus suis LSS52,MLST.ssuis.900,19,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,LSS52
+g1307.7603,Streptococcus suis LSS55,MLST.ssuis.863,9,United Kingdom,2011,Pig,early,United Kingdom early,BAPS14,LSS55
+g1307.7604,Streptococcus suis LSS53,MLST.ssuis.792,21,United Kingdom,2011,Pig,early,United Kingdom early,BAPS22,LSS53
+g1307.7605,Streptococcus suis LSS51,MLST.ssuis.1,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS51
+g1307.7606,Streptococcus suis LSS48,MLST.ssuis.898,31,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS48
+g1307.7607,Streptococcus suis LSS44,MLST.ssuis.882,15,United Kingdom,2011,Pig,early,United Kingdom early,BAPS11,LSS44
+g1307.7608,Streptococcus suis LSS47,MLST.ssuis.864,16,United Kingdom,2011,Pig,early,United Kingdom early,BAPS8,LSS47
+g1307.7609,Streptococcus suis LSS42,MLST.ssuis.878,16,United Kingdom,2011,Pig,early,United Kingdom early,BAPS13,LSS42
+g1307.7610,Streptococcus suis LSS41,MLST.ssuis.792,21,United Kingdom,2011,Pig,early,United Kingdom early,BAPS22,LSS41
+g1307.7611,Streptococcus suis LSS40,MLST.ssuis.948,6,United Kingdom,2011,Pig,early,United Kingdom early,BAPS8,LSS40
+g1307.7612,Streptococcus suis LSS36,MLST.ssuis.896,,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,LSS36
+g1307.7613,Streptococcus suis LSS37,MLST.ssuis.885,24,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS37
+g1307.7614,Streptococcus suis LSS4,MLST.ssuis.891,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,LSS4
+g1307.7615,Streptococcus suis LSS32,MLST.ssuis.894,24,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,LSS32
+g1307.7616,Streptococcus suis LSS35,MLST.ssuis.873,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS35
+g1307.7617,Streptococcus suis LSS34,MLST.ssuis.87,8,United Kingdom,2011,Pig,early,United Kingdom early,BAPS5,LSS34
+g1307.7618,Streptococcus suis LSS33,,4,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS33
+g1307.7619,Streptococcus suis LSS30,MLST.ssuis.860,31,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS30
+g1307.7620,Streptococcus suis LSS31,MLST.ssuis.950,24,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS31
+g1307.7621,Streptococcus suis LSS26,MLST.Streptococcus_suis.28,1/2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS26,LSS26
+g1307.7622,Streptococcus suis LSS27,MLST.ssuis.893,10,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS27
+g1307.7623,Streptococcus suis LSS2,MLST.ssuis.857,15,United Kingdom,2010,Pig,early,United Kingdom early,BAPS10,LSS2
+g1307.7624,Streptococcus suis LSS20,MLST.ssuis.23,4,United Kingdom,2010,Pig,early,United Kingdom early,BAPS5,LSS20
+g1307.7625,Streptococcus suis LSS21,MLST.ssuis.1,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS21
+g1307.7626,Streptococcus suis LSS19,,(4 partial),United Kingdom,2010,Pig,early,United Kingdom early,BAPS16,LSS19
+g1307.7627,Streptococcus suis LSS1,MLST.ssuis.28,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS26,LSS1
+g1307.7628,Streptococcus suis LSS10,MLST.ssuis.874,,United Kingdom,2010,Pig,early,United Kingdom early,BAPS9,LSS10
+g1307.7629,Streptococcus suis MZ1B3-4E,MLST.ssuis.28,14,Canada,2016,Pig,late,Canada late,BAPS25,MZ1B3-4E
+g1307.7630,Streptococcus suis CF2D3-4D,,,Canada,2016,Pig,late,Canada late,BAPS9,CF2D3-4D
+g1307.7631,Streptococcus suis MZ1B3-4B,MLST.ssuis.28,14,Canada,2016,Pig,late,Canada late,BAPS26,MZ1B3-4B
+g1307.7632,Streptococcus suis LOLA-SS011,MLST.ssuis.1,14,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,LOLA-SS011
+g1307.7633,Streptococcus suis MZ1B3-4A,MLST.ssuis.28,14,Canada,2016,Pig,late,Canada late,BAPS25,MZ1B3-4A
+g1307.7634,Streptococcus suis MZ1B3-4C,MLST.ssuis.28,14,Canada,2016,Pig,late,Canada late,BAPS25,MZ1B3-4C
+g1307.7635,Streptococcus suis NH1E3-10A,MLST.ssuis.971,,Canada,2016,Pig,late,Canada late,BAPS29,NH1E3-10A
+g1307.7636,Streptococcus suis MZ1B3-4D,MLST.ssuis.28,14,Canada,2016,Pig,late,Canada late,BAPS25,MZ1B3-4D
+g1307.7637,Streptococcus suis 89-88-422,,31,Canada,1989,Pig,early,Canada early,BAPS14,89-88-422
+g1307.7638,Streptococcus suis MA4T3-4B,MLST.ssuis.1214,,Canada,2016,Pig,late,Canada late,BAPS14,MA4T3-4B
+g1307.7639,Streptococcus suis MA4T3-4A,MLST.ssuis.1214,5,Canada,2016,Pig,late,Canada late,BAPS14,MA4T3-4A
+g1307.7640,Streptococcus suis NH1E3-10B,MLST.ssuis.971,,Canada,2016,Pig,late,Canada late,BAPS29,NH1E3-10B
+g1307.7641,Streptococcus suis MA4T3-4C,MLST.ssuis.839,4,Canada,2016,Pig,late,Canada late,BAPS1,MA4T3-4C
+g1307.7642,Streptococcus suis LSS24,MLST.ssuis.28,1/2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS26,LSS24
+g1307.7643,Streptococcus suis DB1V3-4A,MLST.ssuis.17,4,Canada,2016,Pig,late,Canada late,BAPS7,DB1V3-4A
+g1307.7644,Streptococcus suis LSS23,MLST.ssuis.880,24,United Kingdom,2011,Pig,early,United Kingdom early,BAPS21,LSS23
+g1307.7645,Streptococcus suis LSS25,MLST.ssuis.28,1/2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS25,LSS25
+g1307.7646,Streptococcus suis D16-010263,MLST.ssuis.28,1/2,Canada,,Pig,,,BAPS26,D16-010263
+g1307.7647,Streptococcus suis LSS22,MLST.ssuis.1,2,United Kingdom,2011,Pig,early,United Kingdom early,BAPS4,LSS22
+g1307.7648,Streptococcus suis LSS18,MLST.ssuis.864,16,United Kingdom,2010,Pig,early,United Kingdom early,BAPS8,LSS18
+g1307.7649,Streptococcus suis D16-010378,MLST.ssuis.977,4,Canada,,Pig,,,BAPS1,D16-010378
+g1307.7650,Streptococcus suis CF2D3-4C,,,Canada,2016,Pig,late,Canada late,BAPS9,CF2D3-4C
+g1307.7651,Streptococcus suis CG3S3-2A,MLST.ssuis.972,29,Canada,2016,Pig,late,Canada late,BAPS21,CG3S3-2A
+g1307.7652,Streptococcus suis D16-017871,MLST.ssuis.1198,,Canada,,Pig,,,BAPS8,D16-017871
+g1307.7653,Streptococcus suis LSS13,MLST.ssuis.879,16,United Kingdom,2009,Pig,early,United Kingdom early,BAPS13,LSS13
+g1307.7654,Streptococcus suis LSS11,MLST.ssuis.876,31,United Kingdom,2011,Pig,early,United Kingdom early,BAPS9,LSS11
+g1307.7655,Streptococcus suis 94-2571,,12,Canada,1994,Pig,early,Canada early,BAPS10,94-2571
+g1307.7656,Streptococcus suis LOLA-SS010,MLST.ssuis.1,14,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,LOLA-SS010
+g1307.7657,Streptococcus suis LSS100,MLST.ssuis.857,15,United Kingdom,2011,Pig,early,United Kingdom early,BAPS10,LSS100
+g1307.7658,Streptococcus suis LOLA-SS009,MLST.ssuis.29,7,United Kingdom,2010,Pig,early,United Kingdom early,BAPS28,LOLA-SS009
+g1307.7659,Streptococcus suis LOLA-SS007,,(4 partial),United Kingdom,2010,Pig,early,United Kingdom early,BAPS16,LOLA-SS007
+g1307.7660,Streptococcus suis LOLA-SS008,MLST.ssuis.29,7,United Kingdom,2010,Pig,early,United Kingdom early,BAPS28,LOLA-SS008
+g1307.7661,Streptococcus suis LOLA-SS006,MLST.ssuis.856,4,United Kingdom,2010,Pig,early,United Kingdom early,BAPS24,LOLA-SS006
+g1307.7662,Streptococcus suis LOLA-SS005,MLST.ssuis.855,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS5,LOLA-SS005
+g1307.7663,Streptococcus suis 94-8576-4887,MLST.ssuis.28,14,Canada,1994,Pig,early,Canada early,BAPS25,94-8576-4887
+g1307.7664,Streptococcus suis 94-3370-6480,,,Canada,1994,Pig,early,Canada early,BAPS12,94-3370-6480
+g1307.7665,Streptococcus suis LOLA-SS002,MLST.ssuis.1,1,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,LOLA-SS002
+g1307.7666,Streptococcus suis LOLA-SS004,MLST.ssuis.27,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS24,LOLA-SS004
+g1307.7667,Streptococcus suis LOLA-SS003,MLST.ssuis.1,1,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,LOLA-SS003
+g1307.7668,Streptococcus suis LOLA-SS001,MLST.ssuis.873,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,LOLA-SS001
+g1307.7669,Streptococcus suis P83-3336,,16,Canada,1983,Pig,early,Canada early,BAPS8,P83-3336
+g1307.7670,Streptococcus suis NH1E3-9A,,,Canada,2016,Pig,late,Canada late,BAPS21,NH1E3-9A
+g1307.7671,Streptococcus suis 90-1145,,31,Canada,1990,Pig,early,Canada early,BAPS9,90-1145
+g1307.7672,Streptococcus suis NH1E3-9C,,,Canada,2016,Pig,late,Canada late,BAPS21,NH1E3-9C
+g1307.7673,Streptococcus suis 89-5197,,16,Canada,1989,Pig,early,Canada early,BAPS8,89-5197
+g1307.7674,Streptococcus suis NH1E3-9D,,,Canada,2016,Pig,late,Canada late,BAPS21,NH1E3-9D
+g1307.7675,Streptococcus suis 89-6891-2,MLST.ssuis.25,2,Canada,1989,Pig,early,Canada early,BAPS27,89-6891-2
+g1307.7676,Streptococcus suis 90-2741-7,MLST.ssuis.25,2,Canada,1990,Pig,early,Canada early,BAPS27,90-2741-7
+g1307.7677,Streptococcus suis MY1C3-3B,MLST.ssuis.966,3,Canada,2016,Pig,late,Canada late,BAPS1,MY1C3-3B
+g1307.7678,Streptococcus suis MY1C3-3C,MLST.ssuis.839,4,Canada,2016,Pig,late,Canada late,BAPS1,MY1C3-3C
+g1307.7679,Streptococcus suis MY1C3-2C,MLST.ssuis.966,3,Canada,2016,Pig,late,Canada late,BAPS1,MY1C3-2C
+g1307.7680,Streptococcus suis MY1C3-3A,,,Canada,2016,Pig,late,Canada late,BAPS34,MY1C3-3A
+g1307.7681,Streptococcus suis MY1C3-1A,MLST.ssuis.28,1/2,Canada,2016,Pig,late,Canada late,BAPS25,MY1C3-1A
+g1307.7682,Streptococcus suis MG2C3-3D,,,Canada,2016,Pig,late,Canada late,BAPS20,MG2C3-3D
+g1307.7683,Streptococcus suis MY1C3-2B,MLST.ssuis.966,3,Canada,2016,Pig,late,Canada late,BAPS1,MY1C3-2B
+g1307.7684,Streptococcus suis MA4T3-4D,MLST.ssuis.1214,,Canada,2016,Pig,late,Canada late,BAPS14,MA4T3-4D
+g1307.7685,Streptococcus suis ME1D3-3A,,31,Canada,2016,Pig,late,Canada late,BAPS14,ME1D3-3A
+g1307.7686,Streptococcus suis MA4T3-3C,,31,Canada,2016,Pig,late,Canada late,BAPS9,MA4T3-3C
+g1307.7687,Streptococcus suis 1671154,,27,Canada,2014,Pig,late,Canada late,BAPS21,1671154
+g1307.7688,Streptococcus suis MA4T3-3B,MLST.ssuis.28,1/2,Canada,2016,Pig,late,Canada late,BAPS25,MA4T3-3B
+g1307.7689,Streptococcus suis 1633180,MLST.ssuis.108,23,Canada,2014,Pig,late,Canada late,BAPS1,1633180
+g1307.7690,Streptococcus suis MA4T3-2B,MLST.ssuis.1333,8,Canada,2016,Pig,late,Canada late,BAPS5,MA4T3-2B
+g1307.7691,Streptococcus suis MA4T3-3A,MLST.ssuis.28,1/2,Canada,2016,Pig,late,Canada late,BAPS26,MA4T3-3A
+g1307.7692,Streptococcus suis MA4T3-1B,,31,Canada,2016,Pig,late,Canada late,BAPS9,MA4T3-1B
+g1307.7693,Streptococcus suis EJ2T3-3B,,15,Canada,2016,Pig,late,Canada late,BAPS10,EJ2T3-3B
+g1307.7694,Streptococcus suis MA4T3-1A,,,Canada,2016,Pig,late,Canada late,BAPS9,MA4T3-1A
+g1307.7695,Streptococcus suis EJ2T3-2E,MLST.ssuis.89,,Canada,2016,Pig,late,Canada late,BAPS5,EJ2T3-2E
+g1307.7696,Streptococcus suis EJ2T3-2D,MLST.ssuis.89,,Canada,2016,Pig,late,Canada late,BAPS5,EJ2T3-2D
+g1307.7697,Streptococcus suis 1628823,MLST.ssuis.87,8,Canada,2014,Pig,late,Canada late,BAPS5,1628823
+g1307.7698,Streptococcus suis EJ2T3-2C,MLST.ssuis.89,,Canada,2016,Pig,late,Canada late,BAPS5,EJ2T3-2C
+g1307.7699,Streptococcus suis EJ2T3-2A,MLST.ssuis.89,7,Canada,2016,Pig,late,Canada late,BAPS5,EJ2T3-2A
+g1307.7700,Streptococcus suis EJ2T3-2B,MLST.Streptococcus_suis.89,,Canada,2016,Pig,late,Canada late,BAPS5,EJ2T3-2B
+g1307.7701,Streptococcus suis EJ2T3-1B,MLST.Streptococcus_suis.89,,Canada,2016,Pig,late,Canada late,BAPS5,EJ2T3-1B
+g1307.7702,Streptococcus suis D15-061569,,31,Canada,,Pig,,,BAPS9,D15-061569
+g1307.7703,Streptococcus suis EJ2T3-1A,MLST.Streptococcus_suis.89,,Canada,2016,Pig,late,Canada late,BAPS5,EJ2T3-1A
+g1307.7704,Streptococcus suis D16-009258,,,Canada,,Pig,,,BAPS21,D16-009258
+g1307.7705,Streptococcus suis D16-010262,,11,Canada,,Pig,,,BAPS33,D16-010262
+g1307.7706,Streptococcus suis D15-049887,MLST.ssuis.28,1/2,Canada,,Pig,,,BAPS26,D15-049887
+g1307.7707,Streptococcus suis D15-055799,MLST.ssuis.28,1/2,Canada,,Pig,,,BAPS26,D15-055799
+g1307.7708,Streptococcus suis D15-049776,MLST.ssuis.1198,9,Canada,,Pig,,,BAPS8,D15-049776
+g1307.7709,Streptococcus suis D15-036753,MLST.ssuis.969,3,Canada,,Pig,,,BAPS1,D15-036753
+g1307.7710,Streptococcus suis D15-037100,MLST.ssuis.108,23,Canada,,Pig,,,BAPS1,D15-037100
+g1307.7711,Streptococcus suis D15-036755,MLST.ssuis.28,,Canada,,Pig,,,BAPS26,D15-036755
+g1307.7712,Streptococcus suis D15-036308,MLST.ssuis.108,23,Canada,,Pig,,,BAPS1,D15-036308
+g1307.7713,Streptococcus suis D15-037104,MLST.ssuis.28,1/2,Canada,,Pig,,,BAPS26,D15-037104
+g1307.7714,Streptococcus suis CF2D3-4A,MLST.ssuis.1175,5,Canada,2016,Pig,late,Canada late,BAPS1,CF2D3-4A
+g1307.7715,Streptococcus suis CF2D3-4B,,,Canada,2016,Pig,late,Canada late,BAPS9,CF2D3-4B
+g1307.7716,Streptococcus suis CF2D3-2E,MLST.ssuis.1175,5,Canada,2016,Pig,late,Canada late,BAPS1,CF2D3-2E
+g1307.7717,Streptococcus suis D15-036307,MLST.ssuis.28,1/2,Canada,,Pig,,,BAPS25,D15-036307
+g1307.7718,Streptococcus suis CG3S3-2B,MLST.ssuis.972,29,Canada,2016,Pig,late,Canada late,BAPS21,CG3S3-2B
+g1307.7719,Streptococcus suis CF2D3-2D,,30,Canada,2016,Pig,late,Canada late,BAPS11,CF2D3-2D
+g1307.7720,Streptococcus suis CF2D3-1C,,28,Canada,2016,Pig,late,Canada late,BAPS12,CF2D3-1C
+g1307.7721,Streptococcus suis CF2D3-1B,,,Canada,2016,Pig,late,Canada late,BAPS33,CF2D3-1B
+g1307.7722,Streptococcus suis CF2D3-2C,,28,Canada,2016,Pig,late,Canada late,BAPS12,CF2D3-2C
+g1307.7723,Streptococcus suis BH3D7-4E,,,Canada,2016,Pig,late,Canada late,BAPS34,BH3D7-4E
+g1307.7724,Streptococcus suis CF2D3-1A,,,Canada,2016,Pig,late,Canada late,BAPS33,CF2D3-1A
+g1307.7725,Streptococcus suis BE4B3-4B,,16,Canada,2016,Pig,late,Canada late,BAPS8,BE4B3-4B
+g1307.7726,Streptococcus suis BE4B3-2B,,,Canada,2016,Pig,late,Canada late,BAPS33,BE4B3-2B
+g1307.7727,Streptococcus suis 94-1713,,11,Canada,1994,Pig,early,Canada early,BAPS8,94-1713
+g1307.7728,Streptococcus suis BE4B3-2A,MLST.ssuis.108,23,Canada,2016,Pig,late,Canada late,BAPS1,BE4B3-2A
+g1307.7729,Streptococcus suis BE4B3-4A,,16,Canada,2016,Pig,late,Canada late,BAPS8,BE4B3-4A
+g1307.7730,Streptococcus suis 92-2402-1119,MLST.ssuis.1175,,Canada,1992,Pig,early,Canada early,BAPS1,92-2402-1119
+g1307.7731,Streptococcus suis 99-C561-8614-2,MLST.ssuis.483,23,Canada,1999,Pig,early,Canada early,BAPS1,99-C561-8614-2
+g1307.7732,Streptococcus suis 93-1320,MLST.ssuis.977,5,Canada,1993,Pig,early,Canada early,BAPS1,93-1320
+g1307.7733,Streptococcus suis 91-178-2215,,4 + 8,Canada,1991,Pig,early,Canada early,BAPS29,91-178-2215
+g1307.7734,Streptococcus suis 92-1130,MLST.ssuis.13,1,Canada,1992,Pig,early,Canada early,BAPS10,92-1130
+g1307.7735,Streptococcus suis 91-178-2469,MLST.ssuis.117,3,Canada,1991,Pig,early,Canada early,BAPS25,91-178-2469
+g1307.7736,Streptococcus suis 91-173B-752,MLST.ssuis.13,1,Canada,1991,Pig,early,Canada early,BAPS10,91-173B-752
+g1307.7737,Streptococcus suis 90-546,MLST.ssuis.1175,,Canada,1990,Pig,early,Canada early,BAPS1,90-546
+g1307.7738,Streptococcus suis 91-175B-2156,MLST.ssuis.28,1/2,Canada,1991,Pig,early,Canada early,BAPS25,91-175B-2156
+g1307.7739,Streptococcus suis 90-4517-4,MLST.Streptococcus_suis.318,11,Canada,1990,Pig,early,Canada early,BAPS10,90-4517-4
+g1307.7740,Streptococcus suis 91-1174,MLST.ssuis.13,1,Canada,1991,Pig,early,Canada early,BAPS10,91-1174
+g1307.7741,Streptococcus suis 90-4400,,,Canada,1990,Pig,early,Canada early,BAPS8,90-4400
+g1307.7742,Streptococcus suis 89-5189,MLST.ssuis.225,,Canada,1989,Pig,early,Canada early,BAPS10,89-5189
+g1307.7743,Streptococcus suis 90-3615-2,,11,Canada,1990,Pig,early,Canada early,BAPS10,90-3615-2
+g1307.7744,Streptococcus suis 89-5046,MLST.ssuis.25,2,Canada,1989,Pig,early,Canada early,BAPS27,89-5046
+g1307.7745,Streptococcus suis 89-4004,MLST.ssuis.28,1/2,Canada,1989,Pig,early,Canada early,BAPS26,89-4004
+g1307.7746,Streptococcus suis 89-1591,MLST.ssuis.25,2,Canada,1989,Pig,early,Canada early,BAPS27,89-1591
+g1307.7747,Streptococcus suis 89-4223,MLST.ssuis.28,2,Canada,1989,Pig,early,Canada early,BAPS26,89-4223
+g1307.7748,Streptococcus suis 89-4294,,19,Canada,1989,Pig,early,Canada early,BAPS2,89-4294
+g1307.7749,Streptococcus suis 89-1824,MLST.ssuis.76,19,Canada,1989,Pig,early,Canada early,BAPS2,89-1824
+g1307.7750,Streptococcus suis 88-5454A,MLST.ssuis.117,3,Canada,1988,Pig,early,Canada early,BAPS25,88-5454A
+g1307.7751,Streptococcus suis 87-4647,MLST.ssuis.225,,Canada,1987,Pig,early,Canada early,BAPS10,87-4647
+g1307.7752,Streptococcus suis 89-289,MLST.ssuis.731,9,Canada,1989,Pig,early,Canada early,BAPS9,89-289
+g1307.7753,Streptococcus suis 88-4127,,,Canada,1988,Pig,early,Canada early,BAPS30,88-4127
+g1307.7754,Streptococcus suis 88-2775,,13,Canada,1988,Pig,early,Canada early,BAPS21,88-2775
+g1307.7755,Streptococcus suis 1650131,MLST.ssuis.28,2,Canada,2014,Pig,late,Canada late,BAPS25,1650131
+g1307.7756,Streptococcus suis 1628469,,,Canada,2014,Pig,late,Canada late,BAPS18,1628469
+g1307.7757,Streptococcus suis 1636820,MLST.ssuis.25,2,Canada,2014,Pig,late,Canada late,BAPS27,1636820
+g1307.7758,Streptococcus suis 1621705,,,Canada,2014,Pig,late,Canada late,BAPS21,1621705
+g1307.7759,Streptococcus suis 1619952,MLST.ssuis.1,1,Canada,2014,Pig,late,Canada late,BAPS4,1619952
+g1307.7760,Streptococcus suis 1611505,MLST.ssuis.1,14,Canada,2014,Pig,late,Canada late,BAPS4,1611505
+g1307.7761,Streptococcus suis 1615892,,9,Canada,2014,Pig,late,Canada late,BAPS14,1615892
+g1307.7762,Streptococcus suis 93-2042-4514,MLST.ssuis.977,,Canada,1993,Pig,early,Canada early,BAPS1,93-2042-4514
+g1307.7763,Streptococcus suis SS38,MLST.ssuis.1,2,Vietnam,2006,Homo sapiens,early,Vietnam early,BAPS4,SS38
+g1307.7764,Streptococcus suis 1442765,,16,Canada,2012,Pig,early,Canada early,BAPS8,1442765
+g1307.7765,Streptococcus suis 1193601,,,Canada,2009,Pig,early,Canada early,BAPS8,1193601
+g1307.7766,Streptococcus suis 1602951,MLST.ssuis.25,2,Canada,2014,Pig,late,Canada late,BAPS27,1602951
+g1307.7767,Streptococcus suis 1602949,MLST.ssuis.13,1,Canada,2014,Pig,late,Canada late,BAPS10,1602949
+g1307.7768,Streptococcus suis 1602952,,,Canada,2014,Pig,late,Canada late,BAPS9,1602952
+g1307.7769,Streptococcus suis 1602956,MLST.ssuis.94,4,Canada,2014,Pig,late,Canada late,BAPS1,1602956
+g1307.7770,Streptococcus suis 1506978,MLST.ssuis.32,,Canada,2013,Pig,late,Canada late,BAPS10,1506978
+g1307.7771,Streptococcus suis 1506989,,16,Canada,2013,Pig,late,Canada late,BAPS8,1506989
+g1307.7772,Streptococcus suis 1666727,MLST.ssuis.1,14,Canada,2014,Pig,late,Canada late,BAPS4,1666727
+g1307.7773,Streptococcus suis 1667796,MLST.ssuis.25,2,Canada,2014,Pig,late,Canada late,BAPS27,1667796
+g1307.7774,Streptococcus suis 1622145,,28,Canada,2014,Pig,late,Canada late,BAPS21,1622145
+g1307.7775,Streptococcus suis 1602954,MLST.ssuis.87,8,Canada,2014,Pig,late,Canada late,BAPS5,1602954
+g1307.7776,Streptococcus suis 1505307,,16,Canada,2013,Pig,late,Canada late,BAPS13,1505307
+g1307.7777,Streptococcus suis 1463646,MLST.ssuis.1,14,Canada,2013,Pig,late,Canada late,BAPS4,1463646
+g1307.7778,Streptococcus suis 1495917,,,Canada,2013,Pig,late,Canada late,BAPS16,1495917
+g1307.7779,Streptococcus suis 1462648,MLST.ssuis.1,14,Canada,2013,Pig,late,Canada late,BAPS4,1462648
+g1307.7780,Streptococcus suis 1456898,,,Canada,2013,Pig,late,Canada late,BAPS21,1456898
+g1307.7781,Streptococcus suis 1171239,,,Canada,2009,Pig,early,Canada early,BAPS21,1171239
+g1307.7782,Streptococcus suis 1191316,,28,Canada,2009,Pig,early,Canada early,BAPS21,1191316
+g1307.7783,Streptococcus suis 1666725,MLST.ssuis.25,2,Canada,2014,Pig,late,Canada late,BAPS27,1666725
+g1307.7784,Streptococcus suis 1665814,MLST.ssuis.1175,4,Canada,2014,Pig,late,Canada late,BAPS1,1665814
+g1307.7785,Streptococcus suis 1661949,MLST.ssuis.28,1/2,Canada,2014,Pig,late,Canada late,BAPS25,1661949
+g1307.7786,Streptococcus suis 1665815,,,Canada,2014,Pig,late,Canada late,BAPS19,1665815
+g1307.7787,Streptococcus suis 1656890,MLST.ssuis.108,3,Canada,2014,Pig,late,Canada late,BAPS1,1656890
+g1307.7788,Streptococcus suis 1659834,MLST.ssuis.1,1,Canada,2014,Pig,late,Canada late,BAPS4,1659834
+g1307.7789,Streptococcus suis 1652716,MLST.ssuis.977,4,Canada,2014,Pig,late,Canada late,BAPS1,1652716
+g1307.7790,Streptococcus suis 1654537,MLST.ssuis.28,1/2,Canada,2014,Pig,late,Canada late,BAPS26,1654537
+g1307.7791,Streptococcus suis 1651929,MLST.ssuis.28,2,Canada,2014,Pig,late,Canada late,BAPS26,1651929
+g1307.7792,Streptococcus suis 1650132,MLST.ssuis.28,1/2,Canada,2014,Pig,late,Canada late,BAPS26,1650132
+g1307.7793,Streptococcus suis 1637946,MLST.ssuis.94,5,Canada,2014,Pig,late,Canada late,BAPS1,1637946
+g1307.7794,Streptococcus suis 1644048,MLST.ssuis.1,1,Canada,2014,Pig,late,Canada late,BAPS4,1644048
+g1307.7795,Streptococcus suis 1615461,,9,Canada,2014,Pig,late,Canada late,BAPS1,1615461
+g1307.7796,Streptococcus suis 1615460,MLST.ssuis.225,,Canada,2014,Pig,late,Canada late,BAPS10,1615460
+g1307.7797,Streptococcus suis 1614720,,16,Canada,2014,Pig,late,Canada late,BAPS8,1614720
+g1307.7798,Streptococcus suis 1607743,MLST.ssuis.977,4,Canada,2014,Pig,late,Canada late,BAPS1,1607743
+g1307.7799,Streptococcus suis 1607744,MLST.ssuis.89,5,Canada,2014,Pig,late,Canada late,BAPS5,1607744
+g1307.7800,Streptococcus suis 1610743,MLST.ssuis.1187,3,Canada,2014,Pig,late,Canada late,BAPS1,1610743
+g1307.7801,Streptococcus suis 1601399,MLST.ssuis.28,1/2,Canada,2014,Pig,late,Canada late,BAPS25,1601399
+g1307.7802,Streptococcus suis 1606529,MLST.ssuis.28,1/2,Canada,2014,Pig,late,Canada late,BAPS26,1606529
+g1307.7803,Streptococcus suis 1606517,MLST.ssuis.1187,3,Canada,2014,Pig,late,Canada late,BAPS1,1606517
+g1307.7804,Streptococcus suis 1603813,MLST.ssuis.28,2,Canada,2014,Pig,late,Canada late,BAPS26,1603813
+g1307.7805,Streptococcus suis 1601827,MLST.ssuis.94,,Canada,2014,Pig,late,Canada late,BAPS1,1601827
+g1307.7806,Streptococcus suis 1596201,MLST.ssuis.1,1,Canada,2014,Pig,late,Canada late,BAPS4,1596201
+g1307.7807,Streptococcus suis 1597776,MLST.ssuis.28,1/2,Canada,2014,Pig,late,Canada late,BAPS25,1597776
+g1307.7808,Streptococcus suis 1600268,MLST.ssuis.94,,Canada,2014,Pig,late,Canada late,BAPS1,1600268
+g1307.7809,Streptococcus suis 1597778,MLST.ssuis.28,1/2,Canada,2014,Pig,late,Canada late,BAPS26,1597778
+g1307.7810,Streptococcus suis 1596217,MLST.ssuis.1,1,Canada,2014,Pig,late,Canada late,BAPS4,1596217
+g1307.7811,Streptococcus suis 1588531,MLST.ssuis.1,1,Canada,2014,Pig,late,Canada late,BAPS4,1588531
+g1307.7812,Streptococcus suis 1522228,MLST.ssuis.483,23,Canada,2013,Pig,late,Canada late,BAPS1,1522228
+g1307.7813,Streptococcus suis 1596165,,14,Canada,2014,Pig,late,Canada late,BAPS26,1596165
+g1307.7814,Streptococcus suis 1521251,MLST.ssuis.1175,,Canada,2013,Pig,late,Canada late,BAPS1,1521251
+g1307.7815,Streptococcus suis 1514647,,28,Canada,2013,Pig,late,Canada late,BAPS21,1514647
+g1307.7816,Streptococcus suis 1494500,,,Canada,2013,Pig,late,Canada late,BAPS16,1494500
+g1307.7817,Streptococcus suis 1508445,MLST.ssuis.108,23,Canada,2013,Pig,late,Canada late,BAPS1,1508445
+g1307.7818,Streptococcus suis 1481965,,,Canada,2013,Pig,late,Canada late,BAPS22,1481965
+g1307.7819,Streptococcus suis 1491188,MLST.ssuis.108,23,Canada,2013,Pig,late,Canada late,BAPS1,1491188
+g1307.7820,Streptococcus suis 1481257,MLST.ssuis.1333,8,Canada,2013,Pig,late,Canada late,BAPS5,1481257
+g1307.7821,Streptococcus suis 1493634,,16,Canada,2013,Pig,late,Canada late,BAPS5,1493634
+g1307.7822,Streptococcus suis 1481256,MLST.ssuis.87,8,Canada,2013,Pig,late,Canada late,BAPS5,1481256
+g1307.7823,Streptococcus suis 1475186,MLST.ssuis.27,3,Canada,2013,Pig,late,Canada late,BAPS24,1475186
+g1307.7824,Streptococcus suis 1477528,MLST.ssuis.27,3,Canada,2013,Pig,late,Canada late,BAPS25,1477528
+g1307.7825,Streptococcus suis 1466571,,,Canada,2013,Pig,late,Canada late,BAPS11,1466571
+g1307.7826,Streptococcus suis 1478991,MLST.ssuis.87,8,Canada,2013,Pig,late,Canada late,BAPS5,1478991
+g1307.7827,Streptococcus suis 1348170,,13,Canada,2011,Pig,early,Canada early,BAPS21,1348170
+g1307.7828,Streptococcus suis 1464747,MLST.ssuis.87,8,Canada,2013,Pig,late,Canada late,BAPS5,1464747
+g1307.7829,Streptococcus suis 1464749,MLST.ssuis.1,14,Canada,2013,Pig,late,Canada late,BAPS4,1464749
+g1307.7830,Streptococcus suis 1465473,MLST.ssuis.1,14,Canada,2013,Pig,late,Canada late,BAPS4,1465473
+g1307.7831,Streptococcus suis 1248867,,,Canada,2010,Pig,early,Canada early,BAPS21,1248867
+g1307.7832,Streptococcus suis 1378494,,25,Canada,2012,Pig,early,Canada early,BAPS8,1378494
+g1307.7833,Streptococcus suis 1270935,,28,Canada,2011,Pig,early,Canada early,BAPS21,1270935
+g1307.7834,Streptococcus suis 1231255,MLST.ssuis.76,19,Canada,2010,Pig,early,Canada early,BAPS2,1231255
+g1307.7835,Streptococcus suis 1269330,MLST.ssuis.1339,21,Canada,2011,Pig,early,Canada early,BAPS21,1269330
+g1307.7836,Streptococcus suis 1231073,MLST.ssuis.1359,31,Canada,2010,Pig,early,Canada early,BAPS9,1231073
+g1307.7837,Streptococcus suis 1197378,MLST.ssuis.1420,9,Canada,2009,Pig,early,Canada early,BAPS8,1197378
+g1307.7838,Streptococcus suis 1209618,,,Canada,2010,Pig,early,Canada early,BAPS8,1209618
+g1307.7839,Streptococcus suis 1152130,,21,Canada,2009,Pig,early,Canada early,BAPS21,1152130
+g1307.7840,Streptococcus suis 1162351,,24,Canada,2009,Pig,early,Canada early,BAPS21,1162351
+g1307.7841,Streptococcus suis 00-3638-4B,MLST.ssuis.977,5,Canada,2000,Pig,early,Canada early,BAPS1,00-3638-4B
+g1307.7842,Streptococcus suis 1080671,,,Canada,2008,Pig,early,Canada early,BAPS18,1080671
+g1307.7843,Streptococcus suis 1093404,,27,Canada,2008,Pig,early,Canada early,BAPS21,1093404
+g1307.7844,Streptococcus suis 1197165,MLST.ssuis.788,,Canada,2009,Pig,early,Canada early,BAPS12,1197165
+g1307.7845,Streptococcus suis 1145478,,,Canada,2009,Pig,early,Canada early,BAPS16,1145478
+g1307.7846,Streptococcus suis 1129711,,29,Canada,2008,Pig,early,Canada early,BAPS11,1129711
+g1307.7847,Streptococcus suis 1165977,,,Canada,2009,Pig,early,Canada early,BAPS18,1165977
+g1307.7848,Streptococcus suis 1112943,,,Canada,2008,Pig,early,Canada early,BAPS21,1112943
+g1307.7849,Streptococcus suis 1126699,MLST.ssuis.76,17,Canada,2008,Pig,early,Canada early,BAPS2,1126699
+g1307.7850,Streptococcus suis 1160410,MLST.Streptococcus_suis.583,,Canada,2009,Pig,early,Canada early,BAPS11,1160410
+g1307.7851,Streptococcus suis 1158584,,31,Canada,2009,Pig,early,Canada early,BAPS9,1158584
+g1307.7852,Streptococcus suis 1230091,,,Canada,2010,Pig,early,Canada early,BAPS20,1230091
+g1307.7853,Streptococcus suis BM264a,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens,early,Vietnam early,BAPS4,BM264a
+g1307.7854,Streptococcus suis 1148794,MLST.ssuis.1175,,Canada,2009,Pig,early,Canada early,BAPS1,1148794
+g1307.7855,Streptococcus suis BM257a,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM257a
+g1307.7856,Streptococcus suis BM272C,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens,early,Vietnam early,BAPS4,BM272C
+g1307.7857,Streptococcus suis BM329B,MLST.ssuis.1,2,Vietnam,2003,Homo sapiens,early,Vietnam early,BAPS4,BM329B
+g1307.7858,Streptococcus suis 784_7A,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,784_7A
+g1307.7859,Streptococcus suis BM321C,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens,early,Vietnam early,BAPS4,BM321C
+g1307.7860,Streptococcus suis BM308a,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens,early,Vietnam early,BAPS4,BM308a
+g1307.7861,Streptococcus suis BM315C,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens,early,Vietnam early,BAPS4,BM315C
+g1307.7862,Streptococcus suis BM303a,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens,early,Vietnam early,BAPS4,BM303a
+g1307.7863,Streptococcus suis 01ZN-ST222,MLST.ssuis.1,2,Vietnam,2010,Pig,early,Vietnam early,BAPS4,01ZN-ST222
+g1307.7864,Streptococcus suis BM190a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM190a
+g1307.7865,Streptococcus suis BM278a,MLST.ssuis.1,2,Vietnam,2002,Homo sapiens,early,Vietnam early,BAPS4,BM278a
+g1307.7866,Streptococcus suis 01ZN-TG187,MLST.ssuis.1,2,Vietnam,,Pig,,,BAPS4,01ZN-TG187
+g1307.7867,Streptococcus suis BM253a,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM253a
+g1307.7868,Streptococcus suis 01ZN-TG189,MLST.ssuis.1,2,Vietnam,2010,Pig,early,Vietnam early,BAPS4,01ZN-TG189
+g1307.7869,Streptococcus suis BM251C,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM251C
+g1307.7870,Streptococcus suis BM241a,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM241a
+g1307.7871,Streptococcus suis 784_7B,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,784_7B
+g1307.7872,Streptococcus suis BM237a,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM237a
+g1307.7873,Streptococcus suis BM178a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM178a
+g1307.7874,Streptococcus suis BM231a,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM231a
+g1307.7875,Streptococcus suis BM228C,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM228C
+g1307.7876,Streptococcus suis BM216a,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM216a
+g1307.7877,Streptococcus suis BM211a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM211a
+g1307.7878,Streptococcus suis BM224C,MLST.ssuis.1,2,Vietnam,2001,Homo sapiens,early,Vietnam early,BAPS4,BM224C
+g1307.7879,Streptococcus suis BM213a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM213a
+g1307.7880,Streptococcus suis 270_6A,,4,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,270_6A
+g1307.7881,Streptococcus suis BM203a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM203a
+g1307.7882,Streptococcus suis BM209a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM209a
+g1307.7883,Streptococcus suis 01ZN-TG183,MLST.ssuis.1,2,Vietnam,2010,Pig,early,Vietnam early,BAPS4,01ZN-TG183
+g1307.7884,Streptococcus suis BM197a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM197a
+g1307.7885,Streptococcus suis BM191a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM191a
+g1307.7886,Streptococcus suis 876_3B,,29,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,876_3B
+g1307.7887,Streptococcus suis 784_8B,MLST.ssuis.864,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,784_8B
+g1307.7888,Streptococcus suis 684_5B,,28,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,684_5B
+g1307.7889,Streptococcus suis BM198a,MLST.ssuis.1,2,Vietnam,2000,Homo sapiens,early,Vietnam early,BAPS4,BM198a
+g1307.7890,Streptococcus suis 876_6C,,10,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,876_6C
+g1307.7891,Streptococcus suis 876_2A,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,876_2A
+g1307.7892,Streptococcus suis 876_1A,,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,876_1A
+g1307.7893,Streptococcus suis 876_20A,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,876_20A
+g1307.7894,Streptococcus suis 876_21B,,30,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,876_21B
+g1307.7895,Streptococcus suis 784_10B,MLST.ssuis.949,6,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,784_10B
+g1307.7896,Streptococcus suis 784_16B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,784_16B
+g1307.7897,Streptococcus suis 635_6B,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,635_6B
+g1307.7898,Streptococcus suis TMW_SS109,,,United Kingdom,2015,Pig,late,United Kingdom late,BAPS11,TMW_SS109
+g1307.7899,Streptococcus suis 784_15B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,784_15B
+g1307.7900,Streptococcus suis 876_19A,,8,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,876_19A
+g1307.7901,Streptococcus suis 876_15C,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,876_15C
+g1307.7902,Streptococcus suis 876_15B,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,876_15B
+g1307.7903,Streptococcus suis 635_11B,MLST.Streptococcus_suis.52,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS11,635_11B
+g1307.7904,Streptococcus suis 784_6A,,31,United Kingdom,2013,Pig,late,United Kingdom late,BAPS14,784_6A
+g1307.7905,Streptococcus suis 784_9A,MLST.ssuis.790,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,784_9A
+g1307.7906,Streptococcus suis 784_4B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS31,784_4B
+g1307.7907,Streptococcus suis 270_24B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS16,270_24B
+g1307.7908,Streptococcus suis 784_3B,,4,United Kingdom,2013,Pig,late,United Kingdom late,BAPS30,784_3B
+g1307.7909,Streptococcus suis 784_3A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,784_3A
+g1307.7910,Streptococcus suis 784_5C,MLST.ssuis.864,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,784_5C
+g1307.7911,Streptococcus suis 684_6A,,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,684_6A
+g1307.7912,Streptococcus suis 684_5A,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_5A
+g1307.7913,Streptococcus suis 684_18B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,684_18B
+g1307.7914,Streptococcus suis TMW_SS107,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS107
+g1307.7915,Streptococcus suis 784_2C,MLST.ssuis.949,6,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,784_2C
+g1307.7916,Streptococcus suis 784_24B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS19,784_24B
+g1307.7917,Streptococcus suis 784_24A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS22,784_24A
+g1307.7918,Streptococcus suis 684_18A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS16,684_18A
+g1307.7919,Streptococcus suis 784_23C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,784_23C
+g1307.7920,Streptococcus suis 635_8C,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,635_8C
+g1307.7921,Streptococcus suis 784_18C,,31,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,784_18C
+g1307.7922,Streptococcus suis 635_6C,MLST.Streptococcus_suis.52,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS11,635_6C
+g1307.7923,Streptococcus suis 784_20A,MLST.ssuis.949,6,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,784_20A
+g1307.7924,Streptococcus suis 684_16A,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,684_16A
+g1307.7925,Streptococcus suis 784_18B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS31,784_18B
+g1307.7926,Streptococcus suis 784_21A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS11,784_21A
+g1307.7927,Streptococcus suis 784_23B,,21,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,784_23B
+g1307.7928,Streptococcus suis 635_5A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS31,635_5A
+g1307.7929,Streptococcus suis 784_17C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,784_17C
+g1307.7930,Streptococcus suis 635_10C,,10,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,635_10C
+g1307.7931,Streptococcus suis 784_10A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,784_10A
+g1307.7932,Streptococcus suis 684_17C,MLST.ssuis.1409,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,684_17C
+g1307.7933,Streptococcus suis 632_9C,,25,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,632_9C
+g1307.7934,Streptococcus suis 714_7B,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS21,714_7B
+g1307.7935,Streptococcus suis 714_5C,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS32,714_5C
+g1307.7936,Streptococcus suis 632_9A,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,632_9A
+g1307.7937,Streptococcus suis 714_3A,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS21,714_3A
+g1307.7938,Streptococcus suis 714_21C,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS19,714_21C
+g1307.7939,Streptococcus suis 714_14B,,28,United Kingdom,2014,Pig,late,United Kingdom late,BAPS10,714_14B
+g1307.7940,Streptococcus suis 714_19B,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS21,714_19B
+g1307.7941,Streptococcus suis TMW_SS090,MLST.ssuis.1,14,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS090
+g1307.7942,Streptococcus suis 635_3A,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,635_3A
+g1307.7943,Streptococcus suis 714_15A,MLST.ssuis.29,7,United Kingdom,2014,Pig,late,United Kingdom late,BAPS28,714_15A
+g1307.7944,Streptococcus suis 684_7C,,25,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_7C
+g1307.7945,Streptococcus suis 684_8C,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_8C
+g1307.7946,Streptococcus suis 684_9B,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_9B
+g1307.7947,Streptococcus suis 684_8A,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_8A
+g1307.7948,Streptococcus suis 684_7A,,25,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_7A
+g1307.7949,Streptococcus suis 684_6C,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_6C
+g1307.7950,Streptococcus suis 427_17B,,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS11,427_17B
+g1307.7951,Streptococcus suis 359_6B,,10,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,359_6B
+g1307.7952,Streptococcus suis 684_6B,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_6B
+g1307.7953,Streptococcus suis 684_3C,,28,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,684_3C
+g1307.7954,Streptococcus suis 684_4A,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_4A
+g1307.7955,Streptococcus suis 083_1A,MLST.Streptococcus_suis.489,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS19,083_1A
+g1307.7956,Streptococcus suis 684_3B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,684_3B
+g1307.7957,Streptococcus suis 684_3A,,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS11,684_3A
+g1307.7958,Streptococcus suis 684_25C,,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,684_25C
+g1307.7959,Streptococcus suis 083_17C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,083_17C
+g1307.7960,Streptococcus suis 684_2A,,25,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_2A
+g1307.7961,Streptococcus suis 083_17B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,083_17B
+g1307.7962,Streptococcus suis 083_1C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,083_1C
+g1307.7963,Streptococcus suis 684_24C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,684_24C
+g1307.7964,Streptococcus suis 684_18C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,684_18C
+g1307.7965,Streptococcus suis 684_21C,MLST.ssuis.864,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_21C
+g1307.7966,Streptococcus suis 684_21B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,684_21B
+g1307.7967,Streptococcus suis 684_1B,,8,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,684_1B
+g1307.7968,Streptococcus suis 684_21A,MLST.ssuis.864,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_21A
+g1307.7969,Streptococcus suis 684_19B,,30,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,684_19B
+g1307.7970,Streptococcus suis 684_20C,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_20C
+g1307.7971,Streptococcus suis 684_14C,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_14C
+g1307.7972,Streptococcus suis 083_19A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS18,083_19A
+g1307.7973,Streptococcus suis 684_20A,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_20A
+g1307.7974,Streptococcus suis TMW_SS108,,,United Kingdom,2015,Pig,late,United Kingdom late,BAPS11,TMW_SS108
+g1307.7975,Streptococcus suis 684_15B,MLST.ssuis.792,21,United Kingdom,2013,Pig,late,United Kingdom late,BAPS22,684_15B
+g1307.7976,Streptococcus suis 684_14B,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_14B
+g1307.7977,Streptococcus suis 684_13C,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_13C
+g1307.7978,Streptococcus suis TMW_SS091,,29,United Kingdom,2014,Pig,late,United Kingdom late,BAPS21,TMW_SS091
+g1307.7979,Streptococcus suis 684_13A,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_13A
+g1307.7980,Streptococcus suis 684_12C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,684_12C
+g1307.7981,Streptococcus suis TMW_SS106,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS106
+g1307.7982,Streptococcus suis 635_9A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,635_9A
+g1307.7983,Streptococcus suis 684_12A,,25,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_12A
+g1307.7984,Streptococcus suis 684_12B,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,684_12B
+g1307.7985,Streptococcus suis 684_11B,,28,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,684_11B
+g1307.7986,Streptococcus suis 684_10A,,5,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,684_10A
+g1307.7987,Streptococcus suis TMW_SS105,MLST.ssuis.28,1/2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS25,TMW_SS105
+g1307.7988,Streptococcus suis 684_11C,,25,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,684_11C
+g1307.7989,Streptococcus suis 635_9C,MLST.ssuis.857,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,635_9C
+g1307.7990,Streptococcus suis 632_7C,,31,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,632_7C
+g1307.7991,Streptococcus suis 632_7B,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,632_7B
+g1307.7992,Streptococcus suis 632_6B,MLST.ssuis.948,6,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,632_6B
+g1307.7993,Streptococcus suis 632_6C,MLST.ssuis.948,6,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,632_6C
+g1307.7994,Streptococcus suis 632_6A,MLST.ssuis.948,6,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,632_6A
+g1307.7995,Streptococcus suis 427_5B,,16,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,427_5B
+g1307.7996,Streptococcus suis 427_17C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS21,427_17C
+g1307.7997,Streptococcus suis TMW_SS089,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS089
+g1307.7998,Streptococcus suis 632_4A,MLST.ssuis.948,6,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,632_4A
+g1307.7999,Streptococcus suis 427_7C,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,427_7C
+g1307.8000,Streptococcus suis 270_23C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,270_23C
+g1307.8001,Streptococcus suis 270_21C,,30,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,270_21C
+g1307.8002,Streptococcus suis 270_21B,,30,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,270_21B
+g1307.8003,Streptococcus suis 270_19C,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS20,270_19C
+g1307.8004,Streptococcus suis 270_1B,,(26 partia/31 partiall),United Kingdom,2013,Pig,late,United Kingdom late,BAPS20,270_1B
+g1307.8005,Streptococcus suis 083_3A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,083_3A
+g1307.8006,Streptococcus suis 083_2B,,31,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,083_2B
+g1307.8007,Streptococcus suis 083_2A,,31,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,083_2A
+g1307.8008,Streptococcus suis 270_11A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS20,270_11A
+g1307.8009,Streptococcus suis 270_16A,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,270_16A
+g1307.8010,Streptococcus suis 083_22A,MLST.ssuis.1409,15,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,083_22A
+g1307.8011,Streptococcus suis 083_25C,,10,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,083_25C
+g1307.8012,Streptococcus suis 083_24C,,25,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,083_24C
+g1307.8013,Streptococcus suis 083_17A,,25,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,083_17A
+g1307.8014,Streptococcus suis 083_15B,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS16,083_15B
+g1307.8015,Streptococcus suis 083_13A,MLST.ssuis.949,6,United Kingdom,2013,Pig,late,United Kingdom late,BAPS8,083_13A
+g1307.8016,Streptococcus suis TMW_SS119,,,United Kingdom,2015,Pig,late,United Kingdom late,BAPS11,TMW_SS119
+g1307.8017,Streptococcus suis TMW_SS118,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS118
+g1307.8018,Streptococcus suis TMW_SS115,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS115
+g1307.8019,Streptococcus suis TMW_SS117,,,United Kingdom,2015,Pig,late,United Kingdom late,BAPS11,TMW_SS117
+g1307.8020,Streptococcus suis TMW_SS116,,,United Kingdom,2015,Pig,late,United Kingdom late,BAPS11,TMW_SS116
+g1307.8021,Streptococcus suis TMW_SS114,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS114
+g1307.8022,Streptococcus suis TMW_SS113,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS113
+g1307.8023,Streptococcus suis TMW_SS111,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS111
+g1307.8024,Streptococcus suis TMW_SS112,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS112
+g1307.8025,Streptococcus suis TMW_SS104,MLST.ssuis.891,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS104
+g1307.8026,Streptococcus suis TMW_SS110,,28,United Kingdom,2015,Pig,late,United Kingdom late,BAPS12,TMW_SS110
+g1307.8027,Streptococcus suis TMW_SS101,MLST.ssuis.28,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS25,TMW_SS101
+g1307.8028,Streptococcus suis TMW_SS102,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS102
+g1307.8029,Streptococcus suis TMW_SS103,MLST.ssuis.1,14,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS103
+g1307.8030,Streptococcus suis TMW_SS097,MLST.ssuis.1,1,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS097
+g1307.8031,Streptococcus suis TMW_SS095,MLST.ssuis.28,1/2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS25,TMW_SS095
+g1307.8032,Streptococcus suis TMW_SS096,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS096
+g1307.8033,Streptococcus suis TMW_SS100,MLST.ssuis.28,1/2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS25,TMW_SS100
+g1307.8034,Streptococcus suis TMW_SS099,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS099
+g1307.8035,Streptococcus suis TMW_SS098,MLST.ssuis.28,2,United Kingdom,,Pig,,,BAPS25,TMW_SS098
+g1307.8036,Streptococcus suis TMW_SS092,MLST.ssuis.29,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS28,TMW_SS092
+g1307.8037,Streptococcus suis TMW_SS093,,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS093
+g1307.8038,Streptococcus suis TMW_SS094,MLST.ssuis.87,8,United Kingdom,2014,Pig,late,United Kingdom late,BAPS5,TMW_SS094
+g1307.8039,Streptococcus suis TMW_SS088,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS18,TMW_SS088
+g1307.8040,Streptococcus suis TMW_SS085,,1/2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS25,TMW_SS085
+g1307.8041,Streptococcus suis TMW_SS086,MLST.ssuis.13,14,United Kingdom,2014,Pig,late,United Kingdom late,BAPS10,TMW_SS086
+g1307.8042,Streptococcus suis TMW_SS087,MLST.ssuis.856,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS28,TMW_SS087
+g1307.8043,Streptococcus suis TMW_SS084,MLST.ssuis.28,1/2,United Kingdom,,Pig,,,BAPS25,TMW_SS084
+g1307.8044,Streptococcus suis SS1056,MLST.ssuis.908,8,United Kingdom,2010,Pig,early,United Kingdom early,BAPS9,SS1056
+g1307.8045,Streptococcus suis TMW_SS035,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,TMW_SS035
+g1307.8046,Streptococcus suis SS997,MLST.ssuis.916,8,United Kingdom,2010,Pig,early,United Kingdom early,BAPS9,SS997
+g1307.8047,Streptococcus suis TMW_SS016,MLST.ssuis.1,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS016
+g1307.8048,Streptococcus suis TMW_SS018,MLST.ssuis.87,8,United Kingdom,2013,Pig,late,United Kingdom late,BAPS5,TMW_SS018
+g1307.8049,Streptococcus suis TMW_SS071,MLST.ssuis.2,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS071
+g1307.8050,Streptococcus suis TMW_SS013,MLST.ssuis.29,7,United Kingdom,2013,Pig,late,United Kingdom late,BAPS28,TMW_SS013
+g1307.8051,Streptococcus suis TMW_SS074,MLST.ssuis.87,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS5,TMW_SS074
+g1307.8052,Streptococcus suis TMW_SS072,MLST.ssuis.856,7,United Kingdom,2014,Pig,late,United Kingdom late,BAPS28,TMW_SS072
+g1307.8053,Streptococcus suis SS996,MLST.ssuis.28,1/2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS26,SS996
+g1307.8054,Streptococcus suis TMW_SS050,MLST.Streptococcus_suis.295,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS18,TMW_SS050
+g1307.8055,Streptococcus suis TMW_SS054,,28,United Kingdom,2014,Pig,late,United Kingdom late,BAPS10,TMW_SS054
+g1307.8056,Streptococcus suis TMW_SS051,MLST.ssuis.29,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS28,TMW_SS051
+g1307.8057,Streptococcus suis SS1057,MLST.ssuis.31,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS24,SS1057
+g1307.8058,Streptococcus suis TMW_SS053,MLST.ssuis.28,1/2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS26,TMW_SS053
+g1307.8059,Streptococcus suis TMW_SS052,MLST.ssuis.29,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS28,TMW_SS052
+g1307.8060,Streptococcus suis TMW_SS017,MLST.ssuis.1552,14,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS017
+g1307.8061,Streptococcus suis TMW_SS034,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,TMW_SS034
+g1307.8062,Streptococcus suis SS1058,MLST.ssuis.1,1,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1058
+g1307.8063,Streptococcus suis TMW_SS036,MLST.ssuis.28,1/2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS26,TMW_SS036
+g1307.8064,Streptococcus suis TMW_SS015,,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS015
+g1307.8065,Streptococcus suis TMW_SS008,,9,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,TMW_SS008
+g1307.8066,Streptococcus suis TMW_SS011,,14,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS011
+g1307.8067,Streptococcus suis TMW_SS014,MLST.ssuis.29,7,United Kingdom,2013,Pig,late,United Kingdom late,BAPS28,TMW_SS014
+g1307.8068,Streptococcus suis TMW_SS019,MLST.ssuis.1,14,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS019
+g1307.8069,Streptococcus suis TMW_SS009,MLST.ssuis.25,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS27,TMW_SS009
+g1307.8070,Streptococcus suis TMW_SS007,MLST.ssuis.1,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS007
+g1307.8071,Streptococcus suis TMW_SS081,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS081
+g1307.8072,Streptococcus suis TMW_SS083,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS083
+g1307.8073,Streptococcus suis TMW_SS082,MLST.ssuis.87,8,United Kingdom,2014,Pig,late,United Kingdom late,BAPS5,TMW_SS082
+g1307.8074,Streptococcus suis TMW_SS010,MLST.ssuis.1,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS010
+g1307.8075,Streptococcus suis TMW_SS080,MLST.ssuis.29,7,United Kingdom,2014,Pig,late,United Kingdom late,BAPS28,TMW_SS080
+g1307.8076,Streptococcus suis TMW_SS079,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS079
+g1307.8077,Streptococcus suis TMW_SS012,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,TMW_SS012
+g1307.8078,Streptococcus suis TMW_SS078,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS9,TMW_SS078
+g1307.8079,Streptococcus suis TMW_SS077,,14,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS077
+g1307.8080,Streptococcus suis TMW_SS076,MLST.ssuis.87,8,United Kingdom,2014,Pig,late,United Kingdom late,BAPS5,TMW_SS076
+g1307.8081,Streptococcus suis TMW_SS070,MLST.ssuis.911,4,United Kingdom,2014,Pig,late,United Kingdom late,BAPS1,TMW_SS070
+g1307.8082,Streptococcus suis TMW_SS075,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS8,TMW_SS075
+g1307.8083,Streptococcus suis TMW_SS073,MLST.ssuis.87,8,United Kingdom,2014,Pig,late,United Kingdom late,BAPS5,TMW_SS073
+g1307.8084,Streptococcus suis SS974,MLST.ssuis.28,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS25,SS974
+g1307.8085,Streptococcus suis TMW_SS066,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS2,TMW_SS066
+g1307.8086,Streptococcus suis SS972,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS972
+g1307.8087,Streptococcus suis TMW_SS069,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS069
+g1307.8088,Streptococcus suis TMW_SS065,MLST.ssuis.87,5,United Kingdom,2014,Pig,late,United Kingdom late,BAPS5,TMW_SS065
+g1307.8089,Streptococcus suis TMW_SS062,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS062
+g1307.8090,Streptococcus suis TMW_SS063,MLST.ssuis.87,8,United Kingdom,2014,Pig,late,United Kingdom late,BAPS5,TMW_SS063
+g1307.8091,Streptococcus suis TMW_SS064,MLST.ssuis.87,8,United Kingdom,2014,Pig,late,United Kingdom late,BAPS5,TMW_SS064
+g1307.8092,Streptococcus suis TMW_SS060,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS060
+g1307.8093,Streptococcus suis SS973,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS973
+g1307.8094,Streptococcus suis TMW_SS061,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS061
+g1307.8095,Streptococcus suis TMW_SS059,MLST.ssuis.1,1,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS059
+g1307.8096,Streptococcus suis TMW_SS057,MLST.ssuis.28,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS26,TMW_SS057
+g1307.8097,Streptococcus suis TMW_SS058,MLST.ssuis.1,2,United Kingdom,,Pig,,,BAPS4,TMW_SS058
+g1307.8098,Streptococcus suis TMW_SS049,,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS049
+g1307.8099,Streptococcus suis TMW_SS056,MLST.ssuis.28,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS26,TMW_SS056
+g1307.8100,Streptococcus suis TMW_SS055,MLST.Streptococcus_suis.2,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS055
+g1307.8101,Streptococcus suis TMW_SS048,MLST.ssuis.28,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS26,TMW_SS048
+g1307.8102,Streptococcus suis TMW_SS046,MLST.ssuis.28,1/2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS26,TMW_SS046
+g1307.8103,Streptococcus suis TMW_SS045,,,United Kingdom,2014,Pig,late,United Kingdom late,BAPS9,TMW_SS045
+g1307.8104,Streptococcus suis TMW_SS047,MLST.ssuis.28,2,United Kingdom,,Pig,,,BAPS26,TMW_SS047
+g1307.8105,Streptococcus suis TMW_SS044,MLST.ssuis.28,1/2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS26,TMW_SS044
+g1307.8106,Streptococcus suis TMW_SS042,MLST.ssuis.23,4,United Kingdom,2013,Pig,late,United Kingdom late,BAPS5,TMW_SS042
+g1307.8107,Streptococcus suis TMW_SS043,MLST.ssuis.1,2,United Kingdom,2014,Pig,late,United Kingdom late,BAPS4,TMW_SS043
+g1307.8108,Streptococcus suis TMW_SS040,MLST.ssuis.1,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS040
+g1307.8109,Streptococcus suis TMW_SS041,MLST.ssuis.868,3,United Kingdom,2013,Pig,late,United Kingdom late,BAPS5,TMW_SS041
+g1307.8110,Streptococcus suis TMW_SS038,MLST.ssuis.1,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS038
+g1307.8111,Streptococcus suis TMW_SS039,MLST.ssuis.1,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS039
+g1307.8112,Streptococcus suis TMW_SS033,MLST.ssuis.28,1/2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS25,TMW_SS033
+g1307.8113,Streptococcus suis TMW_SS037,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS9,TMW_SS037
+g1307.8114,Streptococcus suis TMW_SS031,MLST.ssuis.1,1,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS031
+g1307.8115,Streptococcus suis TMW_SS032,MLST.ssuis.31,3,United Kingdom,2013,Pig,late,United Kingdom late,BAPS24,TMW_SS032
+g1307.8116,Streptococcus suis TMW_SS029,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,TMW_SS029
+g1307.8117,Streptococcus suis TMW_SS028,MLST.ssuis.792,29,United Kingdom,2013,Pig,late,United Kingdom late,BAPS22,TMW_SS028
+g1307.8118,Streptococcus suis TMW_SS027,MLST.ssuis.87,8,United Kingdom,2013,Pig,late,United Kingdom late,BAPS5,TMW_SS027
+g1307.8119,Streptococcus suis TMW_SS025,MLST.ssuis.1,2,United Kingdom,,Pig,,,BAPS4,TMW_SS025
+g1307.8120,Streptococcus suis TMW_SS026,MLST.ssuis.27,3,United Kingdom,2013,Pig,late,United Kingdom late,BAPS24,TMW_SS026
+g1307.8121,Streptococcus suis TMW_SS024,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS10,TMW_SS024
+g1307.8122,Streptococcus suis TMW_SS023,MLST.ssuis.1,1,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS023
+g1307.8123,Streptococcus suis TMW_SS022,MLST.ssuis.1,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS022
+g1307.8124,Streptococcus suis TMW_SS020,,,United Kingdom,2013,Pig,late,United Kingdom late,BAPS13,TMW_SS020
+g1307.8125,Streptococcus suis TMW_SS003,MLST.ssuis.856,,United Kingdom,,Pig,,,BAPS28,TMW_SS003
+g1307.8126,Streptococcus suis TMW_SS021,MLST.ssuis.792,29,United Kingdom,2013,Pig,late,United Kingdom late,BAPS22,TMW_SS021
+g1307.8127,Streptococcus suis TMW_SS004,MLST.ssuis.87,8,United Kingdom,,Pig,,,BAPS5,TMW_SS004
+g1307.8128,Streptococcus suis TMW_SS006,MLST.ssuis.1,2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS4,TMW_SS006
+g1307.8129,Streptococcus suis TMW_SS005,MLST.ssuis.28,1/2,United Kingdom,2013,Pig,late,United Kingdom late,BAPS26,TMW_SS005
+g1307.8130,Streptococcus suis SS998,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS998
+g1307.8131,Streptococcus suis TMW_SS001,MLST.ssuis.1,2,United Kingdom,,Pig,,,BAPS4,TMW_SS001
+g1307.8132,Streptococcus suis SS999,MLST.ssuis.108,3,United Kingdom,2010,Pig,early,United Kingdom early,BAPS1,SS999
+g1307.8133,Streptococcus suis TMW_SS002,MLST.ssuis.1,2,United Kingdom,,Pig,,,BAPS4,TMW_SS002
+g1307.8134,Streptococcus suis SS995,MLST.ssuis.1,14,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS995
+g1307.8135,Streptococcus suis SS993,MLST.ssuis.915,,United Kingdom,2010,Pig,early,United Kingdom early,BAPS21,SS993
+g1307.8136,Streptococcus suis SS992,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS992
+g1307.8137,Streptococcus suis SS994,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS994
+g1307.8138,Streptococcus suis SS989,MLST.ssuis.28,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS26,SS989
+g1307.8139,Streptococcus suis SS991,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS991
+g1307.8140,Streptococcus suis SS983,MLST.ssuis.1,1,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS983
+g1307.8141,Streptococcus suis SS985,MLST.ssuis.870,,United Kingdom,2010,Pig,early,United Kingdom early,BAPS8,SS985
+g1307.8142,Streptococcus suis SS986,MLST.ssuis.914,12,United Kingdom,2010,Pig,early,United Kingdom early,BAPS11,SS986
+g1307.8143,Streptococcus suis SS987,MLST.ssuis.1,1,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS987
+g1307.8144,Streptococcus suis SS979,MLST.ssuis.1,14,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS979
+g1307.8145,Streptococcus suis SS982,MLST.ssuis.1,14,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS982
+g1307.8146,Streptococcus suis SS981,MLST.ssuis.790,,United Kingdom,2010,Pig,early,United Kingdom early,BAPS8,SS981
+g1307.8147,Streptococcus suis SS976,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS976
+g1307.8148,Streptococcus suis SS975,MLST.ssuis.913,,United Kingdom,2010,Pig,early,United Kingdom early,BAPS9,SS975
+g1307.8149,Streptococcus suis SS969,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS969
+g1307.8150,Streptococcus suis SS970,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS970
+g1307.8151,Streptococcus suis SS1073,MLST.ssuis.1,1/2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1073
+g1307.8152,Streptococcus suis SS967,MLST.ssuis.23,4,United Kingdom,2010,Pig,early,United Kingdom early,BAPS5,SS967
+g1307.8153,Streptococcus suis SS1072,MLST.ssuis.909,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1072
+g1307.8154,Streptococcus suis SS1070,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1070
+g1307.8155,Streptococcus suis SS1067,MLST.ssuis.871,16,United Kingdom,2010,Pig,early,United Kingdom early,BAPS13,SS1067
+g1307.8156,Streptococcus suis SS1066,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1066
+g1307.8157,Streptococcus suis SS1063,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1063
+g1307.8158,Streptococcus suis SS1061,MLST.ssuis.87,8,United Kingdom,2010,Pig,early,United Kingdom early,BAPS5,SS1061
+g1307.8159,Streptococcus suis SS1064,MLST.ssuis.25,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS27,SS1064
+g1307.8160,Streptococcus suis SS1065,MLST.ssuis.1,2,United Kingdom,2010,Pig,early,United Kingdom early,BAPS4,SS1065
+g1307.8161,Streptococcus suis SS1062,MLST.ssuis.912,15,United Kingdom,2010,Pig,early,United Kingdom early,BAPS11,SS1062
+g1307.8162,Streptococcus suis FX211,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX211
+g1307.8163,Streptococcus suis FX428_1,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX428_1
+g1307.8164,Streptococcus suis FX328_4,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX328_4
+g1307.8165,Streptococcus suis FX275,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX275
+g1307.8166,Streptococcus suis FX230,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX230
+g1307.8167,Streptococcus suis FX415_6,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX415_6
+g1307.8168,Streptococcus suis FX419,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX419
+g1307.8169,Streptococcus suis FX543_1,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX543_1
+g1307.8170,Streptococcus suis FX14,MLST.ssuis.1,2,Vietnam,2006,Pig,early,Vietnam early,BAPS4,FX14
+g1307.8171,Streptococcus suis FX507_1,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX507_1
+g1307.8172,Streptococcus suis FX50_2,MLST.ssuis.1,2,Vietnam,2006,Pig,early,Vietnam early,BAPS4,FX50_2
+g1307.8173,Streptococcus suis FX109,MLST.ssuis.1,2,Vietnam,2006,Pig,early,Vietnam early,BAPS4,FX109
+g1307.8174,Streptococcus suis FX28_2,MLST.ssuis.1,2,Vietnam,2006,Pig,early,Vietnam early,BAPS4,FX28_2
+g1307.8175,Streptococcus suis FX478,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX478
+g1307.8176,Streptococcus suis FX74,MLST.ssuis.1,2,Vietnam,2006,Pig,early,Vietnam early,BAPS4,FX74
+g1307.8177,Streptococcus suis FX540_1,MLST.ssuis.1,2,Vietnam,2007,Pig,early,Vietnam early,BAPS4,FX540_1
+g1307.8178,Streptococcus suis FX77_1,MLST.ssuis.1,2,Vietnam,2006,Pig,early,Vietnam early,BAPS4,FX77_1
+g1307.8179,Streptococcus suis FX90_2,MLST.ssuis.1,2,Vietnam,2006,Pig,early,Vietnam early,BAPS4,FX90_2

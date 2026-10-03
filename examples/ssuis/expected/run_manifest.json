@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "kind": "analysis",
+  "files": {
+    "clonal_share_result.json": "3ee3d16084cc3520502340537a20203de1e6d99fcbd49914274e3e1ee1920b46",
+    "input_qc.json": "90572b8fcdaecf8fd0897af9fcd9517136d8478dca3caae685ae0d8a88d68c53",
+    "input_qc.md": "d8c66081611c88a85dc72d3730b7b329fbe6ed7395c9b9d1d7334b811412c968",
+    "report.html": "c48d2b7b80988e7f7b53ebca9537526a34a5c48d1720e4b61724785dc81bac7e",
+    "report.md": "71c605ad13f2f18dc2af6bc20ef7340c936b6110c3a29da131a1cc2eaac44fc8",
+    "results.csv": "116d40c40fabefeaf741d17bcd208255bb40c6e0f3b00ca434a0b356b066294f",
+    "run.log": "fe5ffc4fbb6a997f913683b33d5a27b84058ee328504b76c76739e38a2bdea98",
+    "strata_results.csv": "8d802c940019338eb4e6c64c817cbb8c9d5e643437b1b7c74e6c9b11b1c65b88"
+  }
+}

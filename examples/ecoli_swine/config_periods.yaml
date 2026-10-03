@@ -1,0 +1,40 @@
+# Escherichia coli from diseased pigs, China: the change from 2011-2013 to
+# 2014-2017 in the share of isolates with a MIC above the cut of each agent,
+# split into a change in the mix of phylogroups and a change within
+# phylogroups.
+#
+#   python examples/ecoli_swine/build_derived_tables.py
+#   amr-clonalshare --config examples/ecoli_swine/config_periods.yaml --results-dir out/ecoli-periods --seed 20261001
+#
+# The calls are the readings of config_two_categories.yaml written as 0 or 1:
+# 1 when the MIC lies above the cut of its agent (ciprofloxacin 1, meropenem 2,
+# the other four agents 4 mg/L). The cuts are technical, not clinical
+# breakpoints. The lineage is the phylogroup, which every isolate carries and
+# which both periods share; the sequence types shared by the two periods hold
+# too few of the isolates for the split to be read at that resolution.
+
+dataset:
+  name: escherichia_coli_swine_china_periods
+  strain_id_column: isolate_id
+  data_dir: data
+  metadata: metadata_periods.csv
+  lineage_column: phylogroup
+  duplicate_policy: error
+  # The two periods compared, the later first, so that every difference is
+  # the later period less the earlier; the 11 isolates of the source without
+  # a year have no readings.
+  contrast_column: period
+  contrast_levels: ["2014-2017", "2011-2013"]
+
+  phenotype: calls_two_categories.csv
+  phenotype_id_column: isolate_id
+  phenotype_antibiotic_column: agent
+  phenotype_call_column: call
+  phenotype_kind: binary
+  phenotype_positive_definition: >-
+    MIC above the cut of its agent: ciprofloxacin 1, meropenem 2, cefotaxime,
+    ceftazidime, gentamicin and tetracycline 4 mg/L; technical cuts, not
+    clinical breakpoints or epidemiological cut-offs
+  phenotype_source: >-
+    the two-category readings of mic_two_categories.csv, written as 0 or 1 by
+    build_derived_tables.py

@@ -1,0 +1,207 @@
+{
+ "groups": {
+  "effective_group_size": 2.0636604774535807,
+  "estimable": true,
+  "group_sizes": {
+   "a": 3,
+   "b": 3,
+   "c": 2,
+   "d": 2,
+   "e": 2,
+   "f": 2,
+   "g": 2,
+   "h": 2,
+   "i": 2,
+   "j": 2,
+   "k": 2,
+   "l": 2,
+   "m": 2,
+   "n": 1
+  },
+  "n": 30,
+  "n_groups": 14,
+  "n_informative_groups": 13,
+  "n_singletons": 1,
+  "n_typed": 29,
+  "n_untyped": 1,
+  "smallest_groups": {
+   "c": 2,
+   "d": 2,
+   "e": 2,
+   "f": 2,
+   "g": 2,
+   "h": 2,
+   "i": 2,
+   "j": 2,
+   "k": 2,
+   "n": 1
+  },
+  "support": 0.9655172413793104
+ },
+ "input": {
+  "agent_feasibility": {
+   "complete": {
+    "failure_reasons": [],
+    "input_feasible": true,
+    "minor_count": 14,
+    "n_dropped_non_finite": 0,
+    "n_dropped_untyped": 1,
+    "n_groups": 14,
+    "n_retained": 29,
+    "n_singletons": 1,
+    "prevalence": 0.5172413793103449,
+    "support": 0.9655172413793104,
+    "warnings": [
+     "fewer than 20 isolates of the rarer outcome"
+    ]
+   },
+   "rare": {
+    "failure_reasons": [],
+    "input_feasible": true,
+    "minor_count": 2,
+    "n_dropped_non_finite": 0,
+    "n_dropped_untyped": 1,
+    "n_groups": 14,
+    "n_retained": 29,
+    "n_singletons": 1,
+    "prevalence": 0.06896551724137931,
+    "support": 0.9655172413793104,
+    "warnings": [
+     "fewer than 20 isolates of the rarer outcome"
+    ]
+   },
+   "sparse": {
+    "failure_reasons": [
+     "fewer than 2 lineages with at least 2 isolates"
+    ],
+    "input_feasible": false,
+    "minor_count": 5,
+    "n_dropped_non_finite": 15,
+    "n_dropped_untyped": 1,
+    "n_groups": 13,
+    "n_retained": 14,
+    "n_singletons": 12,
+    "prevalence": 0.35714285714285715,
+    "support": 0.14285714285714285,
+    "warnings": [
+     "fewer than 20 isolates of the rarer outcome"
+    ]
+   }
+  },
+  "lineage": {
+   "column": "lineage",
+   "effective_group_size": 2.0636604774535807,
+   "estimable": true,
+   "group_sizes": {
+    "a": 3,
+    "b": 3,
+    "c": 2,
+    "d": 2,
+    "e": 2,
+    "f": 2,
+    "g": 2,
+    "h": 2,
+    "i": 2,
+    "j": 2,
+    "k": 2,
+    "l": 2,
+    "m": 2,
+    "n": 1
+   },
+   "n": 30,
+   "n_groups": 14,
+   "n_informative_groups": 13,
+   "n_singletons": 1,
+   "n_typed": 29,
+   "n_untyped": 1,
+   "smallest_groups": {
+    "c": 2,
+    "d": 2,
+    "e": 2,
+    "f": 2,
+    "g": 2,
+    "h": 2,
+    "i": 2,
+    "j": 2,
+    "k": 2,
+    "n": 1
+   },
+   "support": 0.9655172413793104
+  },
+  "metadata_join": {
+   "n_joined": 30,
+   "share_joined": 1.0,
+   "unjoined_examples": []
+  },
+  "min_group_size": 2,
+  "min_minor_count": 20,
+  "n_antimicrobials": 3,
+  "n_empty_agents": 0,
+  "n_isolates": 30,
+  "traits": {
+   "complete": {
+    "adequate": false,
+    "constant": false,
+    "empty": false,
+    "minor_count": 15,
+    "n": 30,
+    "n_missing": 0,
+    "n_positive": 15,
+    "prevalence": 0.5
+   },
+   "rare": {
+    "adequate": false,
+    "constant": false,
+    "empty": false,
+    "minor_count": 2,
+    "n": 30,
+    "n_missing": 0,
+    "n_positive": 2,
+    "prevalence": 0.06666666666666667
+   },
+   "sparse": {
+    "adequate": false,
+    "constant": false,
+    "empty": false,
+    "minor_count": 5,
+    "n": 15,
+    "n_missing": 15,
+    "n_positive": 5,
+    "prevalence": 0.3333333333333333
+   }
+  }
+ },
+ "markdown": "# Input check\n\nIsolates in the raw call/MIC collection: 30; antimicrobials recorded in the call table: 3.\n\n## Antimicrobials\n\nAntimicrobials with at least 20 isolates of the rarer outcome: 0 of 3. This count is a warning threshold; each method reports whether its own input requirements are met.\nBelow the threshold: complete, sparse, rare.\n\n## Metadata\n\n30 isolates (100.0 %) have a metadata row.\n\n## Lineage groups (`lineage`)\n\n14 lineages among 29 typed isolates (1 untyped). 1 lineages hold a single isolate; a single isolate cannot show how much a trait varies inside its lineage, so those isolates do not contribute to that part of the estimate.\nShare of isolates in lineages of at least 2 (support): 96.6 %; the lineage share is scored on these isolates and the singletons are set aside. The lineage share can be estimated on this collection.\nEffective lineage size for the between-lineage variance: 2.1.\n\n\n## Per-agent feasibility\n\nEach row uses only isolates with both a readable result for that agent and a recorded lineage. Support is the share of them in lineages of at least two isolates; the share is scored on those isolates and the singletons are set aside. The rarer-outcome count is a warning threshold, not a reporting condition of the estimator.\n\n| Agent | Retained | Support | Input failures | Rarer outcome |\n| --- | --- | --- | --- | --- |\n| complete | 29 | 96.6 % | none at input level | 14 (below 20) |\n| sparse | 14 | 14.3 % | fewer than 2 lineages with at least 2 isolates | 5 (below 20) |\n| rare | 29 | 96.6 % | none at input level | 2 (below 20) |",
+ "traits": {
+  "complete": {
+   "adequate": false,
+   "constant": false,
+   "empty": false,
+   "minor_count": 15,
+   "n": 30,
+   "n_missing": 0,
+   "n_positive": 15,
+   "prevalence": 0.5
+  },
+  "rare": {
+   "adequate": false,
+   "constant": false,
+   "empty": false,
+   "minor_count": 2,
+   "n": 30,
+   "n_missing": 0,
+   "n_positive": 2,
+   "prevalence": 0.06666666666666667
+  },
+  "sparse": {
+   "adequate": false,
+   "constant": false,
+   "empty": false,
+   "minor_count": 5,
+   "n": 15,
+   "n_missing": 15,
+   "n_positive": 5,
+   "prevalence": 0.3333333333333333
+  }
+ }
+}

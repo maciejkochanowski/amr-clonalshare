@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.eggs/
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.Zone.Identifier
+
+# Build outputs.
+/dist/
+/build/
+/src/*.egg-info/
+
+# Local verification environments and downloaded dependencies
+.venv*/
+site/
+
+# Queue files of the campaign, written by benchmarks/campaign/make_confirmatory_queues.py.
+/benchmarks/campaign/commands/
+
+# The working copy of mutmut (mutation testing, see CONTRIBUTING.md).
+/mutants/

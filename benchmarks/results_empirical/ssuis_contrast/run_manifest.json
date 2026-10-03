@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "kind": "analysis",
+  "files": {
+    "clonal_share_result.json": "ae9f745ec7a07ea3a49aef8a9bf81adbc5133df5e69d4fb11cdec5a827c7d34b",
+    "input_qc.json": "d63f1530e9cb19567209178e6abaa7b6027c2c8410665ecaab112a7973f1a2b7",
+    "input_qc.md": "a103ff85860c2696b2f32d5daa51177ada502c26e80b982d6518113a21964e55",
+    "report.html": "afdccb6fa9c05959c60702a6d457b5ba4c82b16923a7128d0a3e32476427b5e6",
+    "report.md": "ddac3099102940225fd2746cd6f6626a62c9c78f79aba1ed868c29deb12ee66e",
+    "results.csv": "f29f8cda761d633707a9dec9e2542625e696801f84a8c2e943c8cae6588b056c",
+    "run.log": "507f40a227f02b562c31513565310be97530f119989a7939e72913ed6644508e"
+  }
+}

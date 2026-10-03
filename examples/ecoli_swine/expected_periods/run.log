@@ -1,0 +1,9 @@
+2026-10-03 08:11:45  Reading input tables and checking data
+2026-10-03 08:11:45  Computing analyses on their observed and typed subsets
+2026-10-03 08:11:45  Lineage share of the call: cefotaxime (1 of 6)
+2026-10-03 08:11:46  Lineage share of the call: ceftazidime (2 of 6); 1 s so far, about 3 s to go
+2026-10-03 08:11:46  Lineage share of the call: ciprofloxacin (3 of 6); 1 s so far, about 3 s to go
+2026-10-03 08:11:47  Lineage share of the call: gentamicin (4 of 6); 2 s so far, about 2 s to go
+2026-10-03 08:11:48  Lineage share of the call: meropenem (5 of 6); 3 s so far, about 1 s to go
+2026-10-03 08:11:48  Lineage share of the call: tetracycline (6 of 6); 3 s so far, about 1 s to go
+2026-10-03 08:11:49  Writing reports, CSV and completion manifest

@@ -1,0 +1,68 @@
+{
+ "command": [
+  "env",
+  "R_LIBS_BENCH=/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_rev4/rlib",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_final/env/bin/python",
+  "-m",
+  "benchmarks.competitors.compare_order",
+  "--summarize",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_rev4/outputs/competitors",
+  "--output",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_clonalshare_rev4/outputs/competitors_summary"
+ ],
+ "exit_status": 0,
+ "started_utc": "2026-09-29T22:20:35Z",
+ "finished_utc": "2026-09-29T22:20:47Z",
+ "wall_seconds": 11.3,
+ "commit": "ea3ad2af7c7cf942fab80153d8f5f0badbad4724",
+ "source": {
+  "package_sha256": "4690bb3cc5b12443cd62e20e813c91661fb4e049f30be3ea2714167d641f8db4",
+  "files": {
+   "__init__.py": "415b68a553b4c4a10f14744000dfd86c67cddb595142505ef86fec7c01442df4",
+   "_seeding.py": "ae959415ed18b5e84de61766735797eb70250e16392bd26504ba1b0c84e28d20",
+   "attribution.py": "6188bf2c3462dbe103a1e3f454b51382bf425c140979341ecdbe318485ae3489",
+   "censored.py": "7f1ca2e5795a53c87004d918dd93814bf8adbdb1ac6a4a4fde17194213a41c86",
+   "cli.py": "8c318cc64f534030e9848e316c336c6d8f9651aece820a7367a15f087cd75c6d",
+   "clonality.py": "565b88693475a6475d08950e7cf6240045354a25d281a279ffafd2f9a98c0e33",
+   "comparison.py": "05f60c3a08b65927a7ff9b3d82dc2c631ca06edbde369ec81179c409b8ebe8f0",
+   "config.py": "267ee86d744b0fa8e2b3071c517db246bc9779cb5328811f291d494591f9d8b5",
+   "core.py": "87e6bc8a11b695eb9b8a2513b7b59388d90202f3b5c864b0ac3925702be606f2",
+   "draft.py": "4c9852f341b1f1651b88347c0c1cdda3bd86528a2da6436f9428eaec1ebc8c7b",
+   "evalues.py": "5a38ff1fbb7e58c3b1cdd28aa9f6bb5a6df1424f0c93ed94217080e82d8144ae",
+   "io.py": "f19beed0dfe5aa9d2cd912c273b8319ad9e4824ec13a26f04c005ca843d60662",
+   "jsonio.py": "f101eff1592e351587d526151c687e03b40bd2fff1faf2ece8e9fe5417fbfe1f",
+   "latent_order.py": "fa1115d87de00da4116a137f36e063e7b2180581e73d451704fb3abc53344d5a",
+   "mic_order.py": "dffc35c9ee0ffe81243bb0c4b0f6222a7772df532827f4cdb373d786ba0b79b5",
+   "missingness.py": "5ac7ec381530c9e5845c1e32a26853d98b90baaf1f51799575ec0b45a0544f23",
+   "outputs.py": "7ffa63ff77ae50f0bb3f6de5943459daffc55424277c2b0eb34a09252f0c057c",
+   "phenotype.py": "548e4c3013bf53b986ddd2b236149d2f6b2651db1f5d08216b25a84dcdcbebb2",
+   "qc.py": "3179d76516366177a55703891bb2170826bf86d8837ac2fc2e0b70c7100a9281",
+   "report.py": "62d7ee17c7b9c4165462c88abe22d4256ef51accaf20f370164a73df609e5a01",
+   "report_html.py": "8012a01449b9d165d32922f55ae709f0f2bfb123526d77157475828e5146a7a2",
+   "report_model.py": "c31a64cce68ab46d1ed5e2f3468c94426305ee33c6b961968d5a5f16368f300d",
+   "stats.py": "ccc5129af2bc768441700e46639c04def542748675776479bc6a36507c3b05fd"
+  }
+ },
+ "stack": {
+  "python": "3.11.15",
+  "platform": "Linux-5.14.0-687.47.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "pandas": "3.0.2",
+  "yaml": "6.0.3",
+  "threadpoolctl": "3.6.0"
+ },
+ "cpus_available": 8,
+ "slurm": {
+  "SLURM_JOB_ID": "24253680",
+  "SLURM_ARRAY_JOB_ID": null,
+  "SLURM_ARRAY_TASK_ID": null,
+  "SLURM_CPUS_PER_TASK": "8"
+ },
+ "outputs_sha256": {
+  "confirmatory_paired.csv": "f77cd6762b217a573a926f13f64aa404ff7d10663b571d8097d0b38517d0dd41",
+  "confirmatory_rejection.csv": "0b7052fb0715503226708ce194acb60d913ae48676886190364fbf5b3bd5eef8",
+  "confirmatory_replicates.csv.gz": "5109631d99f181c95e93ed50d2a7579ec1bb84f31d2c2e6c67d70cb4dc0618c6",
+  "confirmatory_verdict.json": "119cabac5ee270ab509421d081b659204b25289f4dd770a44743be14c35cf562"
+ }
+}

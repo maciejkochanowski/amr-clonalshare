@@ -1,0 +1,5026 @@
+{
+  "schema_version": "1.0",
+  "seed": 20261001,
+  "config": {
+    "dataset": {
+      "name": "escherichia_coli_swine_china_without_st410",
+      "strain_id_column": "isolate_id",
+      "data_dir": "data",
+      "metadata": "metadata.csv",
+      "lineage_column": "st",
+      "contrast_column": null,
+      "contrast_levels": [],
+      "batch_column": null,
+      "phenotype": null,
+      "phenotype_id_column": "Strain_ID",
+      "phenotype_antibiotic_column": "antibiotic",
+      "phenotype_call_column": "resistant_phenotype",
+      "phenotype_agent_columns": [],
+      "phenotype_intermediate": null,
+      "phenotype_kind": "undeclared",
+      "phenotype_covariate_column": null,
+      "phenotype_positive_definition": null,
+      "phenotype_source": null,
+      "ast_standard": null,
+      "ast_version": null,
+      "duplicate_policy": "error",
+      "mic": "mic_long_without_st410.csv",
+      "mic_id_column": "isolate_id",
+      "mic_antibiotic_column": "agent",
+      "mic_value_column": "measurement",
+      "mic_operator_column": "operator",
+      "mic_agent_columns": [],
+      "mic_unit_column": "unit",
+      "mic_panel_column": "panel",
+      "mic_covariate_columns": [],
+      "stratify_by": null,
+      "unit_column": null,
+      "mic_panel_preset": null,
+      "mic_wells": {
+        "cefotaxime": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32
+        ],
+        "ceftazidime": [
+          1,
+          2,
+          4,
+          8,
+          16
+        ],
+        "meropenem": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "ciprofloxacin": [
+          0.5,
+          1,
+          2
+        ],
+        "gentamicin": [
+          2,
+          4,
+          8
+        ],
+        "tetracycline": [
+          2,
+          4,
+          8
+        ]
+      },
+      "mic_units": {}
+    },
+    "attribution": {
+      "enabled": true,
+      "folds": 5,
+      "repeats": 20,
+      "n_boot": 999,
+      "n_perm": 999
+    },
+    "surveillance": {
+      "enabled": true,
+      "n_boot": 2000,
+      "q_fdr": 0.05,
+      "min_shared_support": 0.9,
+      "label_alpha": 0.05
+    },
+    "censored": {
+      "enabled": true,
+      "end_wells_censored": true
+    },
+    "evidence": {
+      "enabled": true,
+      "folds": 5,
+      "repeats": 20,
+      "alpha": 0.05
+    },
+    "config_file": "config_without_st410.yaml"
+  },
+  "versions": {
+    "amr_clonalshare": "1.0.0",
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1"
+  },
+  "n_isolates": 408,
+  "n_traits": 0,
+  "traits": [],
+  "metadata_diagnostics": {
+    "lineage_column": "st",
+    "censored_share": {
+      "join": {
+        "path": "mic_long_without_st410.csv",
+        "rows_read": 2448,
+        "rows_joined": 2448,
+        "strains_with_mic": 408,
+        "strains_aligned": 408,
+        "join_rate": 1.0,
+        "unmatched_examples": [],
+        "antimicrobials": [
+          "cefotaxime",
+          "ceftazidime",
+          "meropenem",
+          "ciprofloxacin",
+          "gentamicin",
+          "tetracycline"
+        ],
+        "n_unparseable_values": 0,
+        "n_missing_values": 0,
+        "unparseable_values_by_agent": {},
+        "operator_read_from_value": false,
+        "mic_wells": {
+          "cefotaxime": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32
+          ],
+          "ceftazidime": [
+            1,
+            2,
+            4,
+            8,
+            16
+          ],
+          "meropenem": [
+            1,
+            2,
+            4,
+            8
+          ],
+          "ciprofloxacin": [
+            0.5,
+            1,
+            2
+          ],
+          "gentamicin": [
+            2,
+            4,
+            8
+          ],
+          "tetracycline": [
+            2,
+            4,
+            8
+          ]
+        },
+        "mic_units": {
+          "cefotaxime": "mg/L",
+          "ceftazidime": "mg/L",
+          "meropenem": "mg/L",
+          "ciprofloxacin": "mg/L",
+          "gentamicin": "mg/L",
+          "tetracycline": "mg/L"
+        },
+        "mic_unit_column": "unit",
+        "units_excluded": {},
+        "agents_in_other_units_only": [],
+        "agent_names_unified": {},
+        "wide_shape": false,
+        "agents": {
+          "cefotaxime": {
+            "rows_read": 408,
+            "n_recorded_isolates": 408,
+            "n_missing_values": 0,
+            "n_unparseable_values": 0,
+            "n_unit_excluded": 0,
+            "n_unit_blank": 0,
+            "observed_wells": [
+              1.0,
+              2.0,
+              4.0,
+              8.0,
+              16.0,
+              32.0
+            ],
+            "share_on_observed_ends": 0.9142156862745098,
+            "tested_wells_declared": true,
+            "n_absent_records": 0,
+            "n_readable_isolates": 408
+          },
+          "ceftazidime": {
+            "rows_read": 408,
+            "n_recorded_isolates": 408,
+            "n_missing_values": 0,
+            "n_unparseable_values": 0,
+            "n_unit_excluded": 0,
+            "n_unit_blank": 0,
+            "observed_wells": [
+              1.0,
+              2.0,
+              4.0,
+              8.0,
+              16.0
+            ],
+            "share_on_observed_ends": 0.7720588235294118,
+            "tested_wells_declared": true,
+            "n_absent_records": 0,
+            "n_readable_isolates": 408
+          },
+          "meropenem": {
+            "rows_read": 408,
+            "n_recorded_isolates": 408,
+            "n_missing_values": 0,
+            "n_unparseable_values": 0,
+            "n_unit_excluded": 0,
+            "n_unit_blank": 0,
+            "observed_wells": [
+              1.0,
+              8.0
+            ],
+            "share_on_observed_ends": 1.0,
+            "tested_wells_declared": true,
+            "n_absent_records": 0,
+            "n_readable_isolates": 408
+          },
+          "ciprofloxacin": {
+            "rows_read": 408,
+            "n_recorded_isolates": 408,
+            "n_missing_values": 0,
+            "n_unparseable_values": 0,
+            "n_unit_excluded": 0,
+            "n_unit_blank": 0,
+            "observed_wells": [
+              0.5,
+              1.0,
+              2.0
+            ],
+            "share_on_observed_ends": 0.9240196078431373,
+            "tested_wells_declared": true,
+            "n_absent_records": 0,
+            "n_readable_isolates": 408
+          },
+          "gentamicin": {
+            "rows_read": 408,
+            "n_recorded_isolates": 408,
+            "n_missing_values": 0,
+            "n_unparseable_values": 0,
+            "n_unit_excluded": 0,
+            "n_unit_blank": 0,
+            "observed_wells": [
+              2.0,
+              4.0,
+              8.0
+            ],
+            "share_on_observed_ends": 0.9926470588235294,
+            "tested_wells_declared": true,
+            "n_absent_records": 0,
+            "n_readable_isolates": 408
+          },
+          "tetracycline": {
+            "rows_read": 408,
+            "n_recorded_isolates": 408,
+            "n_missing_values": 0,
+            "n_unparseable_values": 0,
+            "n_unit_excluded": 0,
+            "n_unit_blank": 0,
+            "observed_wells": [
+              2.0,
+              4.0,
+              8.0
+            ],
+            "share_on_observed_ends": 0.9975490196078431,
+            "tested_wells_declared": true,
+            "n_absent_records": 0,
+            "n_readable_isolates": 408
+          }
+        },
+        "duplicate_policy": "error",
+        "n_duplicate_rows": 0,
+        "n_identical_duplicates_collapsed": 0,
+        "n_conflicting_keys": 0,
+        "n_conflicting_rows": 0,
+        "conflicting_key_examples": [],
+        "n_conflict_rows_dropped": 0,
+        "n_near_matches": 0,
+        "near_match_examples": []
+      },
+      "per_agent": {
+        "cefotaxime": {
+          "n": 399,
+          "n_dropped_untyped": 9,
+          "mic_units": "mg/L",
+          "panel_source": "configured",
+          "panel": {
+            "per_panel": {
+              "BD Phoenix": {
+                "n_wells": 6,
+                "lowest": 1.0,
+                "highest": 32.0,
+                "share_on_lowest": 0.47368421052631576,
+                "share_on_highest": 0.43859649122807015,
+                "lattice_ratios": [
+                  2.0
+                ],
+                "doubling": true,
+                "n_wells_recorded": 6,
+                "lattice": "given"
+              }
+            },
+            "panel_column": "panel"
+          },
+          "dilution_table": {
+            "lineages": [
+              "ST10",
+              "ST100",
+              "ST101",
+              "ST1148",
+              "ST115",
+              "ST117",
+              "ST1196",
+              "ST1266",
+              "ST131",
+              "ST154",
+              "ST155",
+              "ST156",
+              "ST162",
+              "ST1642",
+              "ST167",
+              "ST1684",
+              "ST1724",
+              "ST1798",
+              "ST20",
+              "ST200",
+              "ST2003",
+              "ST206",
+              "ST2088",
+              "ST2179",
+              "ST224",
+              "ST2253",
+              "ST226",
+              "ST23",
+              "ST2599",
+              "ST2847",
+              "ST29",
+              "ST297",
+              "ST2973",
+              "ST3014",
+              "ST345",
+              "ST354",
+              "ST361",
+              "ST3941",
+              "ST398",
+              "ST405",
+              "ST453",
+              "ST457",
+              "ST46",
+              "ST48",
+              "ST5147",
+              "ST540",
+              "ST542",
+              "ST58",
+              "ST5871",
+              "ST602",
+              "ST603",
+              "ST609",
+              "ST616",
+              "ST617",
+              "ST6395",
+              "ST641",
+              "ST648",
+              "ST6730",
+              "ST69",
+              "ST711",
+              "ST7176",
+              "ST744",
+              "ST7449",
+              "ST746",
+              "ST75",
+              "ST7588",
+              "ST7618",
+              "ST871",
+              "ST877",
+              "ST88",
+              "ST8932",
+              "ST898",
+              "ST93",
+              "ST95"
+            ],
+            "intervals": [
+              [
+                null,
+                0.0
+              ],
+              [
+                0.0,
+                1.0
+              ],
+              [
+                1.0,
+                2.0
+              ],
+              [
+                2.0,
+                3.0
+              ],
+              [
+                3.0,
+                4.0
+              ],
+              [
+                4.0,
+                5.0
+              ],
+              [
+                5.0,
+                null
+              ]
+            ],
+            "counts": [
+              [
+                8,
+                0,
+                2,
+                1,
+                1,
+                0,
+                10
+              ],
+              [
+                4,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                18,
+                0,
+                3,
+                1,
+                1,
+                0,
+                15
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                16,
+                0,
+                0,
+                1,
+                1,
+                0,
+                9
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                18,
+                0,
+                0,
+                0,
+                0,
+                1,
+                6
+              ],
+              [
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                6,
+                0,
+                0,
+                0,
+                1,
+                0,
+                8
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                9,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                1,
+                13
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                1,
+                1,
+                0,
+                0,
+                3
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                4
+              ],
+              [
+                7,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                8,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                10
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                11
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                1,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                17,
+                0,
+                1,
+                3,
+                4,
+                4,
+                13
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "order": {
+            "kappa": 0.13696420604672396,
+            "kappa_adj": 0.1358868026095073,
+            "null_mean": 0.0012468313647682507,
+            "p_value": 0.001,
+            "n": 399,
+            "n_groups": 74,
+            "support": 0.9323308270676691,
+            "missing_share": 0.0,
+            "estimable": true,
+            "cv_sd": 0.011952402031621913,
+            "observed_low": 0.05963578675790267,
+            "observed_high": 0.21508069175864813,
+            "observed_se": 0.06453646107511263,
+            "n_dropped_non_finite": 0,
+            "n_dropped_untyped": 0,
+            "n_singletons_set_aside": 27,
+            "n_scored": 372,
+            "interval_target": "lineage share of the represented lineages",
+            "p_floor": 0.001,
+            "n_groups_repeated": 47,
+            "effective_groups": 19.463291139240507,
+            "largest_group_share": 0.11290322580645161,
+            "n_boot_used": 999,
+            "fold_ratio": 1.0030497069896072,
+            "reason": "",
+            "n_strata": 1,
+            "method": "lineage share of the within-stratum mid-distribution score",
+            "stratified_by": "panel",
+            "strata": {
+              "BD Phoenix": 399
+            },
+            "distinct_readings": {
+              "BD Phoenix": 7
+            },
+            "share_end_wells": 0.8872180451127819,
+            "n_readings": 399,
+            "sampling_units": null,
+            "latent_order_lower": 0.013974009729834433,
+            "latent_order_upper": 0.6272380022970694,
+            "latent_order_upper_bound": 0.9161749171748341,
+            "latent_order_upper_exact": false,
+            "latent_order_lower_limit": 0.0,
+            "latent_order_midpoint": 0.19715576949363478,
+            "panel_resolution": 0.8266300364763407,
+            "latent_order_gap": 1.3322676295501878e-15,
+            "latent_order_sharp": true,
+            "latent_order_readings": 7,
+            "latent_order_alpha": 0.05,
+            "latent_order_splits": 25,
+            "latent_order_upper_starts": 11
+          }
+        },
+        "ceftazidime": {
+          "n": 399,
+          "n_dropped_untyped": 9,
+          "mic_units": "mg/L",
+          "panel_source": "configured",
+          "panel": {
+            "per_panel": {
+              "BD Phoenix": {
+                "n_wells": 5,
+                "lowest": 1.0,
+                "highest": 16.0,
+                "share_on_lowest": 0.6491228070175439,
+                "share_on_highest": 0.12531328320802004,
+                "lattice_ratios": [
+                  2.0
+                ],
+                "doubling": true,
+                "n_wells_recorded": 5,
+                "lattice": "given"
+              }
+            },
+            "panel_column": "panel"
+          },
+          "dilution_table": {
+            "lineages": [
+              "ST10",
+              "ST100",
+              "ST101",
+              "ST1148",
+              "ST115",
+              "ST117",
+              "ST1196",
+              "ST1266",
+              "ST131",
+              "ST154",
+              "ST155",
+              "ST156",
+              "ST162",
+              "ST1642",
+              "ST167",
+              "ST1684",
+              "ST1724",
+              "ST1798",
+              "ST20",
+              "ST200",
+              "ST2003",
+              "ST206",
+              "ST2088",
+              "ST2179",
+              "ST224",
+              "ST2253",
+              "ST226",
+              "ST23",
+              "ST2599",
+              "ST2847",
+              "ST29",
+              "ST297",
+              "ST2973",
+              "ST3014",
+              "ST345",
+              "ST354",
+              "ST361",
+              "ST3941",
+              "ST398",
+              "ST405",
+              "ST453",
+              "ST457",
+              "ST46",
+              "ST48",
+              "ST5147",
+              "ST540",
+              "ST542",
+              "ST58",
+              "ST5871",
+              "ST602",
+              "ST603",
+              "ST609",
+              "ST616",
+              "ST617",
+              "ST6395",
+              "ST641",
+              "ST648",
+              "ST6730",
+              "ST69",
+              "ST711",
+              "ST7176",
+              "ST744",
+              "ST7449",
+              "ST746",
+              "ST75",
+              "ST7588",
+              "ST7618",
+              "ST871",
+              "ST877",
+              "ST88",
+              "ST8932",
+              "ST898",
+              "ST93",
+              "ST95"
+            ],
+            "intervals": [
+              [
+                null,
+                0.0
+              ],
+              [
+                0.0,
+                1.0
+              ],
+              [
+                1.0,
+                2.0
+              ],
+              [
+                2.0,
+                3.0
+              ],
+              [
+                3.0,
+                4.0
+              ],
+              [
+                4.0,
+                null
+              ]
+            ],
+            "counts": [
+              [
+                13,
+                1,
+                1,
+                3,
+                3,
+                1
+              ],
+              [
+                6,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                27,
+                4,
+                2,
+                2,
+                3,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                24,
+                0,
+                0,
+                2,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                21,
+                2,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                2,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                3,
+                1,
+                2,
+                1,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                7,
+                2,
+                2,
+                1,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                10,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                11,
+                1,
+                0,
+                4,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                7,
+                0,
+                3,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                2
+              ],
+              [
+                8,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                8,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                17,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                6,
+                2,
+                1,
+                4,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                2,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                8,
+                4,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                2,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                25,
+                5,
+                1,
+                3,
+                4,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          "order": {
+            "kappa": 0.14259326047446985,
+            "kappa_adj": 0.14457363990909539,
+            "null_mean": -0.0023150788039955584,
+            "p_value": 0.001,
+            "n": 399,
+            "n_groups": 74,
+            "support": 0.9323308270676691,
+            "missing_share": 0.0,
+            "estimable": true,
+            "cv_sd": 0.013148687136107078,
+            "observed_low": 0.05464421619644706,
+            "observed_high": 0.24349492053189586,
+            "observed_se": 0.08451823296033052,
+            "n_dropped_non_finite": 0,
+            "n_dropped_untyped": 0,
+            "n_singletons_set_aside": 27,
+            "n_scored": 372,
+            "interval_target": "lineage share of the represented lineages",
+            "p_floor": 0.001,
+            "n_groups_repeated": 47,
+            "effective_groups": 19.463291139240507,
+            "largest_group_share": 0.11290322580645161,
+            "n_boot_used": 999,
+            "fold_ratio": 1.0020972228545355,
+            "reason": "",
+            "n_strata": 1,
+            "method": "lineage share of the within-stratum mid-distribution score",
+            "stratified_by": "panel",
+            "strata": {
+              "BD Phoenix": 399
+            },
+            "distinct_readings": {
+              "BD Phoenix": 6
+            },
+            "share_end_wells": 0.706766917293233,
+            "n_readings": 399,
+            "sampling_units": null,
+            "latent_order_lower": 0.07153732013650994,
+            "latent_order_upper": 0.6707920687813056,
+            "latent_order_upper_bound": 1.0,
+            "latent_order_upper_exact": false,
+            "latent_order_lower_limit": 0.0,
+            "latent_order_midpoint": 0.19047335279039146,
+            "panel_resolution": 0.72940932943954,
+            "latent_order_gap": 1.3322676295501878e-15,
+            "latent_order_sharp": true,
+            "latent_order_readings": 6,
+            "latent_order_alpha": 0.05,
+            "latent_order_splits": 25,
+            "latent_order_upper_starts": 11
+          }
+        },
+        "ciprofloxacin": {
+          "n": 399,
+          "n_dropped_untyped": 9,
+          "mic_units": "mg/L",
+          "panel_source": "configured",
+          "panel": {
+            "per_panel": {
+              "BD Phoenix": {
+                "n_wells": 3,
+                "lowest": 0.5,
+                "highest": 2.0,
+                "share_on_lowest": 0.22305764411027568,
+                "share_on_highest": 0.7042606516290727,
+                "lattice_ratios": [
+                  2.0
+                ],
+                "doubling": true,
+                "n_wells_recorded": 3,
+                "lattice": "given"
+              }
+            },
+            "panel_column": "panel"
+          },
+          "dilution_table": {
+            "lineages": [
+              "ST10",
+              "ST100",
+              "ST101",
+              "ST1148",
+              "ST115",
+              "ST117",
+              "ST1196",
+              "ST1266",
+              "ST131",
+              "ST154",
+              "ST155",
+              "ST156",
+              "ST162",
+              "ST1642",
+              "ST167",
+              "ST1684",
+              "ST1724",
+              "ST1798",
+              "ST20",
+              "ST200",
+              "ST2003",
+              "ST206",
+              "ST2088",
+              "ST2179",
+              "ST224",
+              "ST2253",
+              "ST226",
+              "ST23",
+              "ST2599",
+              "ST2847",
+              "ST29",
+              "ST297",
+              "ST2973",
+              "ST3014",
+              "ST345",
+              "ST354",
+              "ST361",
+              "ST3941",
+              "ST398",
+              "ST405",
+              "ST453",
+              "ST457",
+              "ST46",
+              "ST48",
+              "ST5147",
+              "ST540",
+              "ST542",
+              "ST58",
+              "ST5871",
+              "ST602",
+              "ST603",
+              "ST609",
+              "ST616",
+              "ST617",
+              "ST6395",
+              "ST641",
+              "ST648",
+              "ST6730",
+              "ST69",
+              "ST711",
+              "ST7176",
+              "ST744",
+              "ST7449",
+              "ST746",
+              "ST75",
+              "ST7588",
+              "ST7618",
+              "ST871",
+              "ST877",
+              "ST88",
+              "ST8932",
+              "ST898",
+              "ST93",
+              "ST95"
+            ],
+            "intervals": [
+              [
+                null,
+                -1.0
+              ],
+              [
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0
+              ],
+              [
+                1.0,
+                null
+              ]
+            ],
+            "counts": [
+              [
+                2,
+                1,
+                2,
+                17
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                12,
+                5,
+                0,
+                21
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                6,
+                1,
+                2,
+                18
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                6,
+                3,
+                0,
+                16
+              ],
+              [
+                0,
+                0,
+                0,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                10
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                13
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                0,
+                5
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                15
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                2,
+                8
+              ],
+              [
+                0,
+                0,
+                2,
+                4
+              ],
+              [
+                2,
+                0,
+                1,
+                6
+              ],
+              [
+                1,
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                4,
+                1,
+                0,
+                3
+              ],
+              [
+                11,
+                1,
+                1,
+                6
+              ],
+              [
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                13
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                3,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                14
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                10,
+                4,
+                3,
+                25
+              ],
+              [
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "order": {
+            "kappa": 0.13593651503585963,
+            "kappa_adj": 0.13514204934874915,
+            "null_mean": 0.0009186082945901525,
+            "p_value": 0.001,
+            "n": 399,
+            "n_groups": 74,
+            "support": 0.9323308270676691,
+            "missing_share": 0.0,
+            "estimable": true,
+            "cv_sd": 0.014488823552519518,
+            "observed_low": 0.04315027086551548,
+            "observed_high": 0.23085406846416437,
+            "observed_se": 0.08051764332462076,
+            "n_dropped_non_finite": 0,
+            "n_dropped_untyped": 0,
+            "n_singletons_set_aside": 27,
+            "n_scored": 372,
+            "interval_target": "lineage share of the represented lineages",
+            "p_floor": 0.001,
+            "n_groups_repeated": 47,
+            "effective_groups": 19.463291139240507,
+            "largest_group_share": 0.11290322580645161,
+            "n_boot_used": 999,
+            "fold_ratio": 1.0012966631598434,
+            "reason": "",
+            "n_strata": 1,
+            "method": "lineage share of the within-stratum mid-distribution score",
+            "stratified_by": "panel",
+            "strata": {
+              "BD Phoenix": 399
+            },
+            "distinct_readings": {
+              "BD Phoenix": 4
+            },
+            "share_end_wells": 0.8897243107769424,
+            "n_readings": 399,
+            "sampling_units": null,
+            "latent_order_lower": 0.021083758278254823,
+            "latent_order_upper": 0.7341101338629912,
+            "latent_order_upper_bound": 1.0,
+            "latent_order_upper_exact": false,
+            "latent_order_lower_limit": 0.0,
+            "latent_order_midpoint": 0.15740587261847683,
+            "panel_resolution": 0.6860517158425924,
+            "latent_order_gap": 1.3322676295501878e-15,
+            "latent_order_sharp": true,
+            "latent_order_readings": 4,
+            "latent_order_alpha": 0.05,
+            "latent_order_splits": 25,
+            "latent_order_upper_starts": 11
+          }
+        },
+        "gentamicin": {
+          "n": 399,
+          "n_dropped_untyped": 9,
+          "mic_units": "mg/L",
+          "panel_source": "configured",
+          "panel": {
+            "per_panel": {
+              "BD Phoenix": {
+                "n_wells": 3,
+                "lowest": 2.0,
+                "highest": 8.0,
+                "share_on_lowest": 0.2932330827067669,
+                "share_on_highest": 0.6992481203007519,
+                "lattice_ratios": [
+                  2.0
+                ],
+                "doubling": true,
+                "n_wells_recorded": 3,
+                "lattice": "given"
+              }
+            },
+            "panel_column": "panel"
+          },
+          "dilution_table": {
+            "lineages": [
+              "ST10",
+              "ST100",
+              "ST101",
+              "ST1148",
+              "ST115",
+              "ST117",
+              "ST1196",
+              "ST1266",
+              "ST131",
+              "ST154",
+              "ST155",
+              "ST156",
+              "ST162",
+              "ST1642",
+              "ST167",
+              "ST1684",
+              "ST1724",
+              "ST1798",
+              "ST20",
+              "ST200",
+              "ST2003",
+              "ST206",
+              "ST2088",
+              "ST2179",
+              "ST224",
+              "ST2253",
+              "ST226",
+              "ST23",
+              "ST2599",
+              "ST2847",
+              "ST29",
+              "ST297",
+              "ST2973",
+              "ST3014",
+              "ST345",
+              "ST354",
+              "ST361",
+              "ST3941",
+              "ST398",
+              "ST405",
+              "ST453",
+              "ST457",
+              "ST46",
+              "ST48",
+              "ST5147",
+              "ST540",
+              "ST542",
+              "ST58",
+              "ST5871",
+              "ST602",
+              "ST603",
+              "ST609",
+              "ST616",
+              "ST617",
+              "ST6395",
+              "ST641",
+              "ST648",
+              "ST6730",
+              "ST69",
+              "ST711",
+              "ST7176",
+              "ST744",
+              "ST7449",
+              "ST746",
+              "ST75",
+              "ST7588",
+              "ST7618",
+              "ST871",
+              "ST877",
+              "ST88",
+              "ST8932",
+              "ST898",
+              "ST93",
+              "ST95"
+            ],
+            "intervals": [
+              [
+                null,
+                1.0
+              ],
+              [
+                1.0,
+                2.0
+              ],
+              [
+                2.0,
+                3.0
+              ],
+              [
+                3.0,
+                null
+              ]
+            ],
+            "counts": [
+              [
+                6,
+                1,
+                0,
+                15
+              ],
+              [
+                1,
+                0,
+                0,
+                5
+              ],
+              [
+                17,
+                0,
+                1,
+                20
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                4,
+                0,
+                1,
+                22
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                5,
+                0,
+                0,
+                20
+              ],
+              [
+                1,
+                0,
+                0,
+                4
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                8
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                13
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                8,
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                16
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                3,
+                0,
+                0,
+                8
+              ],
+              [
+                1,
+                0,
+                0,
+                5
+              ],
+              [
+                5,
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                4
+              ],
+              [
+                1,
+                0,
+                0,
+                2
+              ],
+              [
+                3,
+                0,
+                0,
+                5
+              ],
+              [
+                12,
+                0,
+                0,
+                7
+              ],
+              [
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                13
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                4
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                13
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2,
+                0,
+                0,
+                5
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                16,
+                0,
+                0,
+                26
+              ],
+              [
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "order": {
+            "kappa": 0.11011783601490151,
+            "kappa_adj": 0.10835385743207275,
+            "null_mean": 0.0019783392745338683,
+            "p_value": 0.001,
+            "n": 399,
+            "n_groups": 74,
+            "support": 0.9323308270676691,
+            "missing_share": 0.0,
+            "estimable": true,
+            "cv_sd": 0.0131319888378968,
+            "observed_low": 0.024019563326357893,
+            "observed_high": 0.1930418505770669,
+            "observed_se": 0.07482250743143148,
+            "n_dropped_non_finite": 0,
+            "n_dropped_untyped": 0,
+            "n_singletons_set_aside": 27,
+            "n_scored": 372,
+            "interval_target": "lineage share of the represented lineages",
+            "p_floor": 0.001,
+            "n_groups_repeated": 47,
+            "effective_groups": 19.463291139240507,
+            "largest_group_share": 0.11290322580645161,
+            "n_boot_used": 999,
+            "fold_ratio": 1.0033795614159038,
+            "reason": "",
+            "n_strata": 1,
+            "method": "lineage share of the within-stratum mid-distribution score",
+            "stratified_by": "panel",
+            "strata": {
+              "BD Phoenix": 399
+            },
+            "distinct_readings": {
+              "BD Phoenix": 4
+            },
+            "share_end_wells": 0.9849624060150376,
+            "n_readings": 399,
+            "sampling_units": null,
+            "latent_order_lower": 0.010512597905828045,
+            "latent_order_upper": 0.7748431141128298,
+            "latent_order_upper_bound": 1.0,
+            "latent_order_upper_exact": false,
+            "latent_order_lower_limit": 0.0,
+            "latent_order_midpoint": 0.1375605724128277,
+            "panel_resolution": 0.6354411427388584,
+            "latent_order_gap": 3.9968028886505635e-15,
+            "latent_order_sharp": true,
+            "latent_order_readings": 4,
+            "latent_order_alpha": 0.05,
+            "latent_order_splits": 25,
+            "latent_order_upper_starts": 11
+          }
+        },
+        "meropenem": {
+          "n": 399,
+          "n_dropped_untyped": 9,
+          "mic_units": "mg/L",
+          "panel_source": "configured",
+          "panel": {
+            "per_panel": {
+              "BD Phoenix": {
+                "n_wells": 4,
+                "lowest": 1.0,
+                "highest": 8.0,
+                "share_on_lowest": 0.9924812030075187,
+                "share_on_highest": 0.007518796992481203,
+                "lattice_ratios": [
+                  8.0
+                ],
+                "doubling": true,
+                "n_wells_recorded": 2,
+                "lattice": "given"
+              }
+            },
+            "panel_column": "panel"
+          },
+          "dilution_table": {
+            "lineages": [
+              "ST10",
+              "ST100",
+              "ST101",
+              "ST1148",
+              "ST115",
+              "ST117",
+              "ST1196",
+              "ST1266",
+              "ST131",
+              "ST154",
+              "ST155",
+              "ST156",
+              "ST162",
+              "ST1642",
+              "ST167",
+              "ST1684",
+              "ST1724",
+              "ST1798",
+              "ST20",
+              "ST200",
+              "ST2003",
+              "ST206",
+              "ST2088",
+              "ST2179",
+              "ST224",
+              "ST2253",
+              "ST226",
+              "ST23",
+              "ST2599",
+              "ST2847",
+              "ST29",
+              "ST297",
+              "ST2973",
+              "ST3014",
+              "ST345",
+              "ST354",
+              "ST361",
+              "ST3941",
+              "ST398",
+              "ST405",
+              "ST453",
+              "ST457",
+              "ST46",
+              "ST48",
+              "ST5147",
+              "ST540",
+              "ST542",
+              "ST58",
+              "ST5871",
+              "ST602",
+              "ST603",
+              "ST609",
+              "ST616",
+              "ST617",
+              "ST6395",
+              "ST641",
+              "ST648",
+              "ST6730",
+              "ST69",
+              "ST711",
+              "ST7176",
+              "ST744",
+              "ST7449",
+              "ST746",
+              "ST75",
+              "ST7588",
+              "ST7618",
+              "ST871",
+              "ST877",
+              "ST88",
+              "ST8932",
+              "ST898",
+              "ST93",
+              "ST95"
+            ],
+            "intervals": [
+              [
+                null,
+                0.0
+              ],
+              [
+                3.0,
+                null
+              ]
+            ],
+            "counts": [
+              [
+                22,
+                0
+              ],
+              [
+                6,
+                0
+              ],
+              [
+                38,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                27,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                25,
+                0
+              ],
+              [
+                5,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                10,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                15,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                11,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                16,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                11,
+                0
+              ],
+              [
+                6,
+                0
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                8,
+                0
+              ],
+              [
+                19,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                14,
+                0
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                15,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                7,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                42,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          "order": {
+            "kappa": 0.6655391900459342,
+            "kappa_adj": 0.6654840129598701,
+            "null_mean": 0.00016494603606915766,
+            "p_value": 0.001,
+            "n": 399,
+            "n_groups": 74,
+            "support": 0.9323308270676691,
+            "missing_share": 0.0,
+            "estimable": true,
+            "cv_sd": 0.0026650054623076655,
+            "observed_low": 0.0,
+            "observed_high": 1.0,
+            "observed_se": 2.2120974873939048,
+            "n_dropped_non_finite": 0,
+            "n_dropped_untyped": 0,
+            "n_singletons_set_aside": 27,
+            "n_scored": 372,
+            "interval_target": "lineage share of the represented lineages",
+            "p_floor": 0.001,
+            "n_groups_repeated": 47,
+            "effective_groups": 19.463291139240507,
+            "largest_group_share": 0.11290322580645161,
+            "n_boot_used": 999,
+            "fold_ratio": 1.0044568098989572,
+            "reason": "",
+            "n_strata": 1,
+            "method": "lineage share of the within-stratum mid-distribution score",
+            "stratified_by": "panel",
+            "strata": {
+              "BD Phoenix": 399
+            },
+            "distinct_readings": {
+              "BD Phoenix": 2
+            },
+            "share_end_wells": 1.0,
+            "n_readings": 399,
+            "sampling_units": null,
+            "latent_order_lower": 0.015869355207440712,
+            "latent_order_upper": 0.9960831291329642,
+            "latent_order_upper_bound": 1.0,
+            "latent_order_upper_exact": false,
+            "latent_order_lower_limit": 0.0,
+            "latent_order_midpoint": 0.016829980344548412,
+            "panel_resolution": 0.023998439125910487,
+            "latent_order_gap": 0.0,
+            "latent_order_sharp": true,
+            "latent_order_readings": 2,
+            "latent_order_alpha": 0.05,
+            "latent_order_splits": 25,
+            "latent_order_upper_starts": 11
+          }
+        },
+        "tetracycline": {
+          "n": 399,
+          "n_dropped_untyped": 9,
+          "mic_units": "mg/L",
+          "panel_source": "configured",
+          "panel": {
+            "per_panel": {
+              "BD Phoenix": {
+                "n_wells": 3,
+                "lowest": 2.0,
+                "highest": 8.0,
+                "share_on_lowest": 0.040100250626566414,
+                "share_on_highest": 0.9573934837092731,
+                "lattice_ratios": [
+                  2.0
+                ],
+                "doubling": true,
+                "n_wells_recorded": 3,
+                "lattice": "given"
+              }
+            },
+            "panel_column": "panel"
+          },
+          "dilution_table": {
+            "lineages": [
+              "ST10",
+              "ST100",
+              "ST101",
+              "ST1148",
+              "ST115",
+              "ST117",
+              "ST1196",
+              "ST1266",
+              "ST131",
+              "ST154",
+              "ST155",
+              "ST156",
+              "ST162",
+              "ST1642",
+              "ST167",
+              "ST1684",
+              "ST1724",
+              "ST1798",
+              "ST20",
+              "ST200",
+              "ST2003",
+              "ST206",
+              "ST2088",
+              "ST2179",
+              "ST224",
+              "ST2253",
+              "ST226",
+              "ST23",
+              "ST2599",
+              "ST2847",
+              "ST29",
+              "ST297",
+              "ST2973",
+              "ST3014",
+              "ST345",
+              "ST354",
+              "ST361",
+              "ST3941",
+              "ST398",
+              "ST405",
+              "ST453",
+              "ST457",
+              "ST46",
+              "ST48",
+              "ST5147",
+              "ST540",
+              "ST542",
+              "ST58",
+              "ST5871",
+              "ST602",
+              "ST603",
+              "ST609",
+              "ST616",
+              "ST617",
+              "ST6395",
+              "ST641",
+              "ST648",
+              "ST6730",
+              "ST69",
+              "ST711",
+              "ST7176",
+              "ST744",
+              "ST7449",
+              "ST746",
+              "ST75",
+              "ST7588",
+              "ST7618",
+              "ST871",
+              "ST877",
+              "ST88",
+              "ST8932",
+              "ST898",
+              "ST93",
+              "ST95"
+            ],
+            "intervals": [
+              [
+                null,
+                1.0
+              ],
+              [
+                1.0,
+                2.0
+              ],
+              [
+                3.0,
+                null
+              ]
+            ],
+            "counts": [
+              [
+                0,
+                0,
+                22
+              ],
+              [
+                1,
+                0,
+                5
+              ],
+              [
+                3,
+                0,
+                35
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                26
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                24
+              ],
+              [
+                0,
+                0,
+                5
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                0,
+                9
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                15
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                11
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                16
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                1,
+                9
+              ],
+              [
+                0,
+                0,
+                6
+              ],
+              [
+                0,
+                0,
+                9
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                8
+              ],
+              [
+                3,
+                0,
+                16
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                14
+              ],
+              [
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                3
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                14
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                7
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                42
+              ],
+              [
+                0,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "order": {
+            "kappa": 0.13587436028817898,
+            "kappa_adj": 0.1364115600357731,
+            "null_mean": -0.0006220552785727145,
+            "p_value": 0.048,
+            "n": 399,
+            "n_groups": 74,
+            "support": 0.9323308270676691,
+            "missing_share": 0.0,
+            "estimable": true,
+            "cv_sd": 0.014749086954837445,
+            "observed_low": 0.0,
+            "observed_high": 0.3941220157733042,
+            "observed_se": 0.3219963687487343,
+            "n_dropped_non_finite": 0,
+            "n_dropped_untyped": 0,
+            "n_singletons_set_aside": 27,
+            "n_scored": 372,
+            "interval_target": "lineage share of the represented lineages",
+            "p_floor": 0.001,
+            "n_groups_repeated": 47,
+            "effective_groups": 19.463291139240507,
+            "largest_group_share": 0.11290322580645161,
+            "n_boot_used": 999,
+            "fold_ratio": 1.0026606304270687,
+            "reason": "",
+            "n_strata": 1,
+            "method": "lineage share of the within-stratum mid-distribution score",
+            "stratified_by": "panel",
+            "strata": {
+              "BD Phoenix": 399
+            },
+            "distinct_readings": {
+              "BD Phoenix": 3
+            },
+            "share_end_wells": 0.9974937343358395,
+            "n_readings": 399,
+            "sampling_units": null,
+            "latent_order_lower": 0.013866936555698048,
+            "latent_order_upper": 0.9844704682595751,
+            "latent_order_upper_bound": 1.0,
+            "latent_order_upper_exact": false,
+            "latent_order_lower_limit": 0.0,
+            "latent_order_midpoint": 0.024604451497876267,
+            "panel_resolution": 0.12349646985107354,
+            "latent_order_gap": 1.3322676295501878e-15,
+            "latent_order_sharp": true,
+            "latent_order_readings": 3,
+            "latent_order_alpha": 0.05,
+            "latent_order_splits": 25,
+            "latent_order_upper_starts": 11
+          }
+        }
+      },
+      "order_selection": {
+        "method": "benjamini_yekutieli",
+        "alpha": 0.05,
+        "n_tested": 6,
+        "q_values": {
+          "cefotaxime": 0.00294,
+          "ceftazidime": 0.00294,
+          "ciprofloxacin": 0.00294,
+          "gentamicin": 0.00294,
+          "meropenem": 0.00294,
+          "tetracycline": 0.1176
+        },
+        "rejected_features": [
+          "cefotaxime",
+          "ceftazidime",
+          "ciprofloxacin",
+          "gentamicin",
+          "meropenem"
+        ],
+        "p_value_floor": 0.001,
+        "note": "permutation p-values of the lineage share; the smallest attainable p-value is 1/(n_perm + 1), so a panel of m agents needs n_perm large enough that this floor is below alpha/m for a single agent to be selectable",
+        "permutations_for_one_selection": 293
+      }
+    }
+  },
+  "input_qc": {
+    "n_isolates": 408,
+    "n_antimicrobials": 0,
+    "n_empty_agents": 0,
+    "traits": {},
+    "min_minor_count": 20,
+    "min_group_size": 2,
+    "mic_join": {
+      "path": "mic_long_without_st410.csv",
+      "rows_read": 2448,
+      "rows_joined": 2448,
+      "strains_with_mic": 408,
+      "strains_aligned": 408,
+      "join_rate": 1.0,
+      "unmatched_examples": [],
+      "antimicrobials": [
+        "cefotaxime",
+        "ceftazidime",
+        "meropenem",
+        "ciprofloxacin",
+        "gentamicin",
+        "tetracycline"
+      ],
+      "n_unparseable_values": 0,
+      "n_missing_values": 0,
+      "unparseable_values_by_agent": {},
+      "operator_read_from_value": false,
+      "mic_wells": {
+        "cefotaxime": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32
+        ],
+        "ceftazidime": [
+          1,
+          2,
+          4,
+          8,
+          16
+        ],
+        "meropenem": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "ciprofloxacin": [
+          0.5,
+          1,
+          2
+        ],
+        "gentamicin": [
+          2,
+          4,
+          8
+        ],
+        "tetracycline": [
+          2,
+          4,
+          8
+        ]
+      },
+      "mic_units": {
+        "cefotaxime": "mg/L",
+        "ceftazidime": "mg/L",
+        "meropenem": "mg/L",
+        "ciprofloxacin": "mg/L",
+        "gentamicin": "mg/L",
+        "tetracycline": "mg/L"
+      },
+      "mic_unit_column": "unit",
+      "units_excluded": {},
+      "agents_in_other_units_only": [],
+      "agent_names_unified": {},
+      "wide_shape": false,
+      "agents": {
+        "cefotaxime": {
+          "rows_read": 408,
+          "n_recorded_isolates": 408,
+          "n_missing_values": 0,
+          "n_unparseable_values": 0,
+          "n_unit_excluded": 0,
+          "n_unit_blank": 0,
+          "observed_wells": [
+            1.0,
+            2.0,
+            4.0,
+            8.0,
+            16.0,
+            32.0
+          ],
+          "share_on_observed_ends": 0.9142156862745098,
+          "tested_wells_declared": true,
+          "n_absent_records": 0,
+          "n_readable_isolates": 408
+        },
+        "ceftazidime": {
+          "rows_read": 408,
+          "n_recorded_isolates": 408,
+          "n_missing_values": 0,
+          "n_unparseable_values": 0,
+          "n_unit_excluded": 0,
+          "n_unit_blank": 0,
+          "observed_wells": [
+            1.0,
+            2.0,
+            4.0,
+            8.0,
+            16.0
+          ],
+          "share_on_observed_ends": 0.7720588235294118,
+          "tested_wells_declared": true,
+          "n_absent_records": 0,
+          "n_readable_isolates": 408
+        },
+        "meropenem": {
+          "rows_read": 408,
+          "n_recorded_isolates": 408,
+          "n_missing_values": 0,
+          "n_unparseable_values": 0,
+          "n_unit_excluded": 0,
+          "n_unit_blank": 0,
+          "observed_wells": [
+            1.0,
+            8.0
+          ],
+          "share_on_observed_ends": 1.0,
+          "tested_wells_declared": true,
+          "n_absent_records": 0,
+          "n_readable_isolates": 408
+        },
+        "ciprofloxacin": {
+          "rows_read": 408,
+          "n_recorded_isolates": 408,
+          "n_missing_values": 0,
+          "n_unparseable_values": 0,
+          "n_unit_excluded": 0,
+          "n_unit_blank": 0,
+          "observed_wells": [
+            0.5,
+            1.0,
+            2.0
+          ],
+          "share_on_observed_ends": 0.9240196078431373,
+          "tested_wells_declared": true,
+          "n_absent_records": 0,
+          "n_readable_isolates": 408
+        },
+        "gentamicin": {
+          "rows_read": 408,
+          "n_recorded_isolates": 408,
+          "n_missing_values": 0,
+          "n_unparseable_values": 0,
+          "n_unit_excluded": 0,
+          "n_unit_blank": 0,
+          "observed_wells": [
+            2.0,
+            4.0,
+            8.0
+          ],
+          "share_on_observed_ends": 0.9926470588235294,
+          "tested_wells_declared": true,
+          "n_absent_records": 0,
+          "n_readable_isolates": 408
+        },
+        "tetracycline": {
+          "rows_read": 408,
+          "n_recorded_isolates": 408,
+          "n_missing_values": 0,
+          "n_unparseable_values": 0,
+          "n_unit_excluded": 0,
+          "n_unit_blank": 0,
+          "observed_wells": [
+            2.0,
+            4.0,
+            8.0
+          ],
+          "share_on_observed_ends": 0.9975490196078431,
+          "tested_wells_declared": true,
+          "n_absent_records": 0,
+          "n_readable_isolates": 408
+        }
+      },
+      "duplicate_policy": "error",
+      "n_duplicate_rows": 0,
+      "n_identical_duplicates_collapsed": 0,
+      "n_conflicting_keys": 0,
+      "n_conflicting_rows": 0,
+      "conflicting_key_examples": [],
+      "n_conflict_rows_dropped": 0,
+      "n_near_matches": 0,
+      "near_match_examples": []
+    },
+    "metadata_join": {
+      "n_joined": 408,
+      "share_joined": 1.0,
+      "unjoined_examples": [],
+      "n_near_matches": 0,
+      "near_match_examples": [],
+      "rows_read": 499,
+      "n_duplicate_ids": 0,
+      "strains_joined": 408,
+      "strains_aligned": 408,
+      "n_metadata_only": 91,
+      "metadata_only_examples": [
+        "A101",
+        "A103",
+        "A111",
+        "A122",
+        "A123"
+      ],
+      "duplicate_policy": "error",
+      "n_duplicate_rows": 0,
+      "n_identical_duplicates_collapsed": 0,
+      "n_conflicting_keys": 0,
+      "n_conflicting_rows": 0,
+      "conflicting_key_examples": [],
+      "n_conflict_rows_dropped": 0
+    },
+    "lineage": {
+      "column": "st",
+      "n": 408,
+      "n_typed": 399,
+      "n_untyped": 9,
+      "n_groups": 74,
+      "n_singletons": 27,
+      "n_informative_groups": 47,
+      "support": 0.9323308270676691,
+      "estimable": true,
+      "effective_group_size": 5.220723040477907,
+      "group_sizes": {
+        "ST10": 22,
+        "ST100": 6,
+        "ST101": 38,
+        "ST1148": 1,
+        "ST115": 1,
+        "ST117": 27,
+        "ST1196": 2,
+        "ST1266": 1,
+        "ST131": 2,
+        "ST154": 2,
+        "ST155": 2,
+        "ST156": 25,
+        "ST162": 5,
+        "ST1642": 2,
+        "ST167": 10,
+        "ST1684": 2,
+        "ST1724": 1,
+        "ST1798": 1,
+        "ST20": 2,
+        "ST200": 1,
+        "ST2003": 1,
+        "ST206": 15,
+        "ST2088": 1,
+        "ST2179": 1,
+        "ST224": 4,
+        "ST2253": 1,
+        "ST226": 2,
+        "ST23": 11,
+        "ST2599": 1,
+        "ST2847": 1,
+        "ST29": 2,
+        "ST297": 1,
+        "ST2973": 1,
+        "ST3014": 2,
+        "ST345": 2,
+        "ST354": 16,
+        "ST361": 2,
+        "ST3941": 1,
+        "ST398": 1,
+        "ST405": 2,
+        "ST453": 2,
+        "ST457": 11,
+        "ST46": 6,
+        "ST48": 9,
+        "ST5147": 4,
+        "ST540": 3,
+        "ST542": 8,
+        "ST58": 19,
+        "ST5871": 2,
+        "ST602": 3,
+        "ST603": 2,
+        "ST609": 2,
+        "ST616": 1,
+        "ST617": 14,
+        "ST6395": 2,
+        "ST641": 2,
+        "ST648": 3,
+        "ST6730": 1,
+        "ST69": 4,
+        "ST711": 1,
+        "ST7176": 1,
+        "ST744": 15,
+        "ST7449": 1,
+        "ST746": 7,
+        "ST75": 1,
+        "ST7588": 1,
+        "ST7618": 1,
+        "ST871": 1,
+        "ST877": 2,
+        "ST88": 42,
+        "ST8932": 3,
+        "ST898": 1,
+        "ST93": 2,
+        "ST95": 1
+      },
+      "smallest_groups": {
+        "ST1148": 1,
+        "ST115": 1,
+        "ST1266": 1,
+        "ST1724": 1,
+        "ST1798": 1,
+        "ST200": 1,
+        "ST2003": 1,
+        "ST2088": 1,
+        "ST2179": 1,
+        "ST2253": 1
+      }
+    },
+    "agent_feasibility": {},
+    "raw_universe": {
+      "definition": "union of raw call and MIC record identifiers",
+      "n_call_isolates": 0,
+      "n_mic_isolates": 408,
+      "n_mic_only_isolates": 408,
+      "call_agents": [],
+      "mic_agents": [
+        "cefotaxime",
+        "ceftazidime",
+        "meropenem",
+        "ciprofloxacin",
+        "gentamicin",
+        "tetracycline"
+      ]
+    }
+  },
+  "collection_bounds": {},
+  "results": [
+    {
+      "agent": "cefotaxime",
+      "analysis": "mic_order",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the recorded within-stratum MIC ordering among the represented lineages",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": 0.1358868026095073,
+      "lower": 0.05963578675790267,
+      "upper": 0.21508069175864813,
+      "log_e": null,
+      "p_value": 0.001,
+      "q_value": 0.00294,
+      "selected": "yes",
+      "interval_kind": "95% interval for the represented lineages (isolates drawn again, lineages fixed)",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "No distributional form for the readings; readings scored within each level of panel; isolates of a lineage drawn independently from its distribution, whatever their sampling units share. MIC units: mg/L",
+      "conclusion": "Lineage structure established (share 0.136; 95 % interval 0.060 to 0.215; p ≤ 0.001; q 0.003; lower bound 0.014; lower confidence limit 0.000)."
+    },
+    {
+      "agent": "cefotaxime",
+      "analysis": "mic_latent_bounds",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.013974009729834433,
+      "upper": 0.9161749171748341,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "bounds the readings allow; not a confidence interval; lower end established by the readings; upper end a certified bound, not sharp",
+      "status": "computed",
+      "reason": "The largest share attained by an arrangement of the lineages inside the readings is 0.627",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained.",
+      "conclusion": ""
+    },
+    {
+      "agent": "cefotaxime",
+      "analysis": "mic_latent_lower_limit",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.0,
+      "upper": null,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "one-sided 95% lower confidence limit for the lower bound, and so for the share",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained. The limit also assumes readings independent between isolates, whatever their sampling units share.",
+      "conclusion": ""
+    },
+    {
+      "agent": "ceftazidime",
+      "analysis": "mic_order",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the recorded within-stratum MIC ordering among the represented lineages",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": 0.14457363990909539,
+      "lower": 0.05464421619644706,
+      "upper": 0.24349492053189586,
+      "log_e": null,
+      "p_value": 0.001,
+      "q_value": 0.00294,
+      "selected": "yes",
+      "interval_kind": "95% interval for the represented lineages (isolates drawn again, lineages fixed)",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "No distributional form for the readings; readings scored within each level of panel; isolates of a lineage drawn independently from its distribution, whatever their sampling units share. MIC units: mg/L",
+      "conclusion": "Lineage structure established (share 0.145; 95 % interval 0.055 to 0.243; p ≤ 0.001; q 0.003; lower bound 0.072; lower confidence limit 0.000)."
+    },
+    {
+      "agent": "ceftazidime",
+      "analysis": "mic_latent_bounds",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.07153732013650994,
+      "upper": 1.0,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "bounds the readings allow; not a confidence interval; lower end established by the readings; upper end a certified bound, not sharp",
+      "status": "computed",
+      "reason": "The largest share attained by an arrangement of the lineages inside the readings is 0.671",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained.",
+      "conclusion": ""
+    },
+    {
+      "agent": "ceftazidime",
+      "analysis": "mic_latent_lower_limit",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.0,
+      "upper": null,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "one-sided 95% lower confidence limit for the lower bound, and so for the share",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained. The limit also assumes readings independent between isolates, whatever their sampling units share.",
+      "conclusion": ""
+    },
+    {
+      "agent": "ciprofloxacin",
+      "analysis": "mic_order",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the recorded within-stratum MIC ordering among the represented lineages",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": 0.13514204934874915,
+      "lower": 0.04315027086551548,
+      "upper": 0.23085406846416437,
+      "log_e": null,
+      "p_value": 0.001,
+      "q_value": 0.00294,
+      "selected": "yes",
+      "interval_kind": "95% interval for the represented lineages (isolates drawn again, lineages fixed)",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "No distributional form for the readings; readings scored within each level of panel; isolates of a lineage drawn independently from its distribution, whatever their sampling units share. MIC units: mg/L",
+      "conclusion": "Lineage structure established (share 0.135; 95 % interval 0.043 to 0.231; p ≤ 0.001; q 0.003; lower bound 0.021; lower confidence limit 0.000)."
+    },
+    {
+      "agent": "ciprofloxacin",
+      "analysis": "mic_latent_bounds",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.021083758278254823,
+      "upper": 1.0,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "bounds the readings allow; not a confidence interval; lower end established by the readings; upper end a certified bound, not sharp",
+      "status": "computed",
+      "reason": "The largest share attained by an arrangement of the lineages inside the readings is 0.734",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained.",
+      "conclusion": ""
+    },
+    {
+      "agent": "ciprofloxacin",
+      "analysis": "mic_latent_lower_limit",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.0,
+      "upper": null,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "one-sided 95% lower confidence limit for the lower bound, and so for the share",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained. The limit also assumes readings independent between isolates, whatever their sampling units share.",
+      "conclusion": ""
+    },
+    {
+      "agent": "gentamicin",
+      "analysis": "mic_order",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the recorded within-stratum MIC ordering among the represented lineages",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": 0.10835385743207275,
+      "lower": 0.024019563326357893,
+      "upper": 0.1930418505770669,
+      "log_e": null,
+      "p_value": 0.001,
+      "q_value": 0.00294,
+      "selected": "yes",
+      "interval_kind": "95% interval for the represented lineages (isolates drawn again, lineages fixed)",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "No distributional form for the readings; readings scored within each level of panel; isolates of a lineage drawn independently from its distribution, whatever their sampling units share. MIC units: mg/L",
+      "conclusion": "Lineage structure established (share 0.108; 95 % interval 0.024 to 0.193; p ≤ 0.001; q 0.003; lower bound 0.011; lower confidence limit 0.000)."
+    },
+    {
+      "agent": "gentamicin",
+      "analysis": "mic_latent_bounds",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.010512597905828045,
+      "upper": 1.0,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "bounds the readings allow; not a confidence interval; lower end established by the readings; upper end a certified bound, not sharp",
+      "status": "computed",
+      "reason": "The largest share attained by an arrangement of the lineages inside the readings is 0.775",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained.",
+      "conclusion": ""
+    },
+    {
+      "agent": "gentamicin",
+      "analysis": "mic_latent_lower_limit",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.0,
+      "upper": null,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "one-sided 95% lower confidence limit for the lower bound, and so for the share",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained. The limit also assumes readings independent between isolates, whatever their sampling units share.",
+      "conclusion": ""
+    },
+    {
+      "agent": "meropenem",
+      "analysis": "mic_order",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the recorded within-stratum MIC ordering among the represented lineages",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": 0.6654840129598701,
+      "lower": 0.0,
+      "upper": 1.0,
+      "log_e": null,
+      "p_value": 0.001,
+      "q_value": 0.00294,
+      "selected": "yes",
+      "interval_kind": "95% interval for the represented lineages (isolates drawn again, lineages fixed)",
+      "status": "full_range",
+      "reason": "The completed interval or bounds span the entire admissible range [0, 1]",
+      "unit": "proportion",
+      "assumptions": "No distributional form for the readings; readings scored within each level of panel; isolates of a lineage drawn independently from its distribution, whatever their sampling units share. MIC units: mg/L",
+      "conclusion": "The interval spans the whole range, so the collection does not resolve the share (share 0.665; 95 % interval spans the whole range; p ≤ 0.001; q 0.003; lower bound 0.016; lower confidence limit 0.000)."
+    },
+    {
+      "agent": "meropenem",
+      "analysis": "mic_latent_bounds",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.015869355207440712,
+      "upper": 1.0,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "bounds the readings allow; not a confidence interval; lower end established by the readings; upper end a certified bound, not sharp",
+      "status": "computed",
+      "reason": "The largest share attained by an arrangement of the lineages inside the readings is 0.996",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained.",
+      "conclusion": ""
+    },
+    {
+      "agent": "meropenem",
+      "analysis": "mic_latent_lower_limit",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.0,
+      "upper": null,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "one-sided 95% lower confidence limit for the lower bound, and so for the share",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained. The limit also assumes readings independent between isolates, whatever their sampling units share.",
+      "conclusion": ""
+    },
+    {
+      "agent": "tetracycline",
+      "analysis": "mic_order",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the recorded within-stratum MIC ordering among the represented lineages",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": 0.1364115600357731,
+      "lower": 0.0,
+      "upper": 0.3941220157733042,
+      "log_e": null,
+      "p_value": 0.048,
+      "q_value": 0.1176,
+      "selected": "no",
+      "interval_kind": "95% interval for the represented lineages (isolates drawn again, lineages fixed)",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "No distributional form for the readings; readings scored within each level of panel; isolates of a lineage drawn independently from its distribution, whatever their sampling units share. MIC units: mg/L",
+      "conclusion": "Not established on this collection (share 0.136; 95 % interval 0.000 to 0.394; p 0.048; q 0.118; lower bound 0.014; lower confidence limit 0.000)."
+    },
+    {
+      "agent": "tetracycline",
+      "analysis": "mic_latent_bounds",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.013866936555698048,
+      "upper": 1.0,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "bounds the readings allow; not a confidence interval; lower end established by the readings; upper end a certified bound, not sharp",
+      "status": "computed",
+      "reason": "The largest share attained by an arrangement of the lineages inside the readings is 0.984",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained.",
+      "conclusion": ""
+    },
+    {
+      "agent": "tetracycline",
+      "analysis": "mic_latent_lower_limit",
+      "method": "lineage share of the within-stratum mid-distribution score",
+      "estimand": "lineage share of the latent ordering",
+      "analysis_scope": "readable and typed MIC subset",
+      "n": 399,
+      "n_groups": 74,
+      "n_observed": null,
+      "n_missing": null,
+      "n_positive": null,
+      "estimate_scope": "readable and typed MIC subset",
+      "batch": null,
+      "estimate": null,
+      "lower": 0.0,
+      "upper": null,
+      "log_e": null,
+      "p_value": null,
+      "q_value": null,
+      "selected": null,
+      "interval_kind": "one-sided 95% lower confidence limit for the lower bound, and so for the share",
+      "status": "computed",
+      "reason": "",
+      "unit": "proportion",
+      "assumptions": "Every reading holds the latent MIC it stands for (a call: the side of its cut-off); the latent MIC is continuous within a stratum; lineages of one isolate set aside. No distributional form for the latent values. The bounds are sharp where the distinct readings of each stratum are disjoint; overlapping readings are merged into one cell and the bounds then hold but may not be attained. The limit also assumes readings independent between isolates, whatever their sampling units share.",
+      "conclusion": ""
+    }
+  ]
+}

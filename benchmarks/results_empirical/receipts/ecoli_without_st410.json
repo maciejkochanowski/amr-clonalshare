@@ -1,0 +1,78 @@
+{
+ "command": [
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/env/bin/python",
+  "-m",
+  "amr_clonalshare.cli",
+  "--config",
+  "examples/ecoli_swine/config_without_st410.yaml",
+  "--results-dir",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/outputs/empirical/ecoli_without_st410",
+  "--seed",
+  "20261001",
+  "--quiet"
+ ],
+ "exit_status": 0,
+ "started_utc": "2026-10-03T06:11:29Z",
+ "finished_utc": "2026-10-03T06:11:50Z",
+ "wall_seconds": 20.9,
+ "commit": "b9a9f50d8b7673549147d4c3ef7e3bd32223328e",
+ "source": {
+  "package_sha256": "e4668042155ff06c09b35eccfee7ecf239ac87bf8731fff5b56aee7377b5bcc2",
+  "files": {
+   "__init__.py": "1426c42e4712e4873cf5d9b3119ab288b39be0b19522020cdf397ad99ed28e14",
+   "_seeding.py": "ae959415ed18b5e84de61766735797eb70250e16392bd26504ba1b0c84e28d20",
+   "agents.py": "0c9a21e9d7d551a4e4f344bebc517e392ec47bb37c03d6558ad7b3f3a4bec21d",
+   "attribution.py": "b3de138005584c02b33d35c2630ac0ad04fec7b03b4712b8e51801473ecec686",
+   "censored.py": "5b1ac6e4099aec22a9f8eb5cb5c59ef5b394b336ddb46b0edfe8c21a51de1e84",
+   "cli.py": "7c7cc544111d4caab53accb7f008ebde77b353bceb09038e0a19e86cd477a74f",
+   "clonality.py": "7b6ea0c80d0a066c220bdedabb9ba7b3d5fb920256fba3cf0ed57bfae08f9e5e",
+   "comparison.py": "73f047f4ae87c277f4ebd4253afe66dcb61638778a34d376793810d579023b47",
+   "config.py": "c643769e04f6ce9cc6b1c912dc0bdea1a07e7f6fea673b83d99ef70566d2dfe3",
+   "core.py": "357ac38786e8b511071151df80ee5d46a754434c4aab712d1a0f89e0381fd566",
+   "draft.py": "9748948c15da991c3a0d002fd83612534fc6a71946e295b91549cc59113fdc3d",
+   "evalues.py": "c97e1495de33162c766b6c7288707070bbc114c907679b7bd7e9ec5d241594bc",
+   "gui.py": "0d85b0d75ce13a4daea3e2b214e041a12f247d268ba946aa3fbd72715e270aa1",
+   "io.py": "21913759e6bdcffcb3d5570c91c41ac0008c2ac139c796906ace5be351df0892",
+   "jsonio.py": "fb9f452c0f9d54b203f6bad39184bb829b18caeb8024ff36aceb3c651abd2fd9",
+   "latent_order.py": "4569f385ce18ab6833ca4d85d6977dcdf531909e5fb4f0f21f08bb8f7ab84f11",
+   "mic_order.py": "5fdc71a0d6520fea5183095cd4cbe446ac0332f21d7e17abef097187e8a0e9ae",
+   "missingness.py": "5ac7ec381530c9e5845c1e32a26853d98b90baaf1f51799575ec0b45a0544f23",
+   "outputs.py": "479fc1939c1c992d767ffaeb76fd0a1959d6ea41e4c2d8acdeb5945239367fb1",
+   "panels.py": "59a3aad14ad55e60e67892e308508eb5a9db113f4858cd05228c1218c1dc4a77",
+   "phenotype.py": "ab5244bb566b902760affee4bbb3960478cb5812db61eb7eb9299cd2efb91f5d",
+   "qc.py": "4425fee65887f6423ece557ec33f084a257939271a7c3aa5ef6f8fbe011a4352",
+   "report.py": "62d7ee17c7b9c4165462c88abe22d4256ef51accaf20f370164a73df609e5a01",
+   "report_html.py": "52f838de86182e1ba2ad3875c8a8d7acdb2cbabe541fe130eb58b4e98cd02e34",
+   "report_model.py": "262335ca2e639c58320fd5eca6a53552aeb65dd93686ae7f3aeee18a3cb47258",
+   "stats.py": "49189a42b9090a88c805bcdfb27f8038621214dce3caf440c6e728a1e82d6fd5",
+   "typeface.py": "82623c45dc4fcd79974e153abde6ebf8683c59d5b979406a4bf379dbef59ee57",
+   "verdict.py": "e3c709cb31fedf35f552164f0579999ef1a08d3b45181a564556d0e375d7f8f5"
+  }
+ },
+ "stack": {
+  "python": "3.11.15",
+  "platform": "Linux-5.14.0-687.47.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "pandas": "3.0.2",
+  "yaml": "6.0.3",
+  "threadpoolctl": "3.6.0"
+ },
+ "cpus_available": 192,
+ "slurm": {
+  "SLURM_JOB_ID": "24339198",
+  "SLURM_ARRAY_JOB_ID": "24339198",
+  "SLURM_ARRAY_TASK_ID": "0",
+  "SLURM_CPUS_PER_TASK": "192"
+ },
+ "outputs_sha256": {
+  "clonal_share_result.json": "0da92cec4f6fa916cb213d8d33fa2954d7f67d7fab78182786aa6330e1363745",
+  "input_qc.json": "33c92caa971309f62d259fbbcc6bd1679749e4dd09052e8b501cc740028ff7db",
+  "input_qc.md": "9149e7ef8662c415ed517c44cbc75478f5894270516c213884b7395a37a89795",
+  "report.html": "b508076c132c619425a27f2ee68262253555ee0b61921d2b1d69a3779545cfe6",
+  "report.md": "dddffc6e25556a1c48c2897dfba836d1e57c966213e445cacd8f430539096d03",
+  "results.csv": "68802be468316b5ae0520b44ae853d8be8b0b119a181affe4142f46c40a915c1",
+  "run.log": "7a1a581a9db79d7559091dd9e46143ea2420f4774d80efc231831efdd1367418",
+  "run_manifest.json": "6fb445d2b94a2737a0dd992d7812791859eedda6015bb410dd450fddf0c71887"
+ }
+}

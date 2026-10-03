@@ -1,0 +1,80 @@
+{
+ "command": [
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/env/bin/python",
+  "benchmarks/empirical/ssuis_analysis.py",
+  "/net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/outputs/empirical/ssuis"
+ ],
+ "exit_status": 0,
+ "started_utc": "2026-10-03T06:11:29Z",
+ "finished_utc": "2026-10-03T06:13:46Z",
+ "wall_seconds": 136.3,
+ "commit": "b9a9f50d8b7673549147d4c3ef7e3bd32223328e",
+ "source": {
+  "package_sha256": "e4668042155ff06c09b35eccfee7ecf239ac87bf8731fff5b56aee7377b5bcc2",
+  "files": {
+   "__init__.py": "1426c42e4712e4873cf5d9b3119ab288b39be0b19522020cdf397ad99ed28e14",
+   "_seeding.py": "ae959415ed18b5e84de61766735797eb70250e16392bd26504ba1b0c84e28d20",
+   "agents.py": "0c9a21e9d7d551a4e4f344bebc517e392ec47bb37c03d6558ad7b3f3a4bec21d",
+   "attribution.py": "b3de138005584c02b33d35c2630ac0ad04fec7b03b4712b8e51801473ecec686",
+   "censored.py": "5b1ac6e4099aec22a9f8eb5cb5c59ef5b394b336ddb46b0edfe8c21a51de1e84",
+   "cli.py": "7c7cc544111d4caab53accb7f008ebde77b353bceb09038e0a19e86cd477a74f",
+   "clonality.py": "7b6ea0c80d0a066c220bdedabb9ba7b3d5fb920256fba3cf0ed57bfae08f9e5e",
+   "comparison.py": "73f047f4ae87c277f4ebd4253afe66dcb61638778a34d376793810d579023b47",
+   "config.py": "c643769e04f6ce9cc6b1c912dc0bdea1a07e7f6fea673b83d99ef70566d2dfe3",
+   "core.py": "357ac38786e8b511071151df80ee5d46a754434c4aab712d1a0f89e0381fd566",
+   "draft.py": "9748948c15da991c3a0d002fd83612534fc6a71946e295b91549cc59113fdc3d",
+   "evalues.py": "c97e1495de33162c766b6c7288707070bbc114c907679b7bd7e9ec5d241594bc",
+   "gui.py": "0d85b0d75ce13a4daea3e2b214e041a12f247d268ba946aa3fbd72715e270aa1",
+   "io.py": "21913759e6bdcffcb3d5570c91c41ac0008c2ac139c796906ace5be351df0892",
+   "jsonio.py": "fb9f452c0f9d54b203f6bad39184bb829b18caeb8024ff36aceb3c651abd2fd9",
+   "latent_order.py": "4569f385ce18ab6833ca4d85d6977dcdf531909e5fb4f0f21f08bb8f7ab84f11",
+   "mic_order.py": "5fdc71a0d6520fea5183095cd4cbe446ac0332f21d7e17abef097187e8a0e9ae",
+   "missingness.py": "5ac7ec381530c9e5845c1e32a26853d98b90baaf1f51799575ec0b45a0544f23",
+   "outputs.py": "479fc1939c1c992d767ffaeb76fd0a1959d6ea41e4c2d8acdeb5945239367fb1",
+   "panels.py": "59a3aad14ad55e60e67892e308508eb5a9db113f4858cd05228c1218c1dc4a77",
+   "phenotype.py": "ab5244bb566b902760affee4bbb3960478cb5812db61eb7eb9299cd2efb91f5d",
+   "qc.py": "4425fee65887f6423ece557ec33f084a257939271a7c3aa5ef6f8fbe011a4352",
+   "report.py": "62d7ee17c7b9c4165462c88abe22d4256ef51accaf20f370164a73df609e5a01",
+   "report_html.py": "52f838de86182e1ba2ad3875c8a8d7acdb2cbabe541fe130eb58b4e98cd02e34",
+   "report_model.py": "262335ca2e639c58320fd5eca6a53552aeb65dd93686ae7f3aeee18a3cb47258",
+   "stats.py": "49189a42b9090a88c805bcdfb27f8038621214dce3caf440c6e728a1e82d6fd5",
+   "typeface.py": "82623c45dc4fcd79974e153abde6ebf8683c59d5b979406a4bf379dbef59ee57",
+   "verdict.py": "e3c709cb31fedf35f552164f0579999ef1a08d3b45181a564556d0e375d7f8f5"
+  }
+ },
+ "stack": {
+  "python": "3.11.15",
+  "platform": "Linux-5.14.0-687.47.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "pandas": "3.0.2",
+  "yaml": "6.0.3",
+  "threadpoolctl": "3.6.0"
+ },
+ "cpus_available": 192,
+ "slurm": {
+  "SLURM_JOB_ID": "24339198",
+  "SLURM_ARRAY_JOB_ID": "24339198",
+  "SLURM_ARRAY_TASK_ID": "0",
+  "SLURM_CPUS_PER_TASK": "192"
+ },
+ "outputs_sha256": {
+  "amoxicillin_comparison.json": "196df27ea137c75a88847d0dc15906b46651847d2652cb0ae64eb8f19c2892ab",
+  "cefquinome_comparison.json": "2d6a319dafe90381a006cce18c24a3db45b14d472a990b11426d05e98bf535fc",
+  "ceftiofur_comparison.json": "3bfd6b89740a52258251d555ab73b962cd7c34268f3427088769de230f337dc3",
+  "ceftiofur_counts.csv": "74b2097d0d00b3f34e4d72e991ee6dd998818e4965683ba2a50e7725503413ba",
+  "ceftiofur_decomposition.json": "882c4893fcd2c27c7acfbebb4f4a66c7eb98f0883847b6a5563b3df07699c7df",
+  "doxycycline_comparison.json": "03d4f1c4f808b4e39213786a839c3b94f887b730bc7cd3be9a28eb8f23df90a7",
+  "erythromycin_comparison.json": "315bd44cdcac2bc9e29fca9d73bb1026194707c48498a4276dfd117e04aa25b8",
+  "lincomycin_comparison.json": "e6dd59dd31b15607d4b41a70729bebd6128d07807078505591fa836567ecb738",
+  "lineage_comparisons.csv": "975460f3442d2293133e050673e061d2e38cf940ea6a98e2fd71128f7f9038be",
+  "penicillin_comparison.json": "f8a6b43f0fb2f569b660e3790847a5d8e82399cc55c27bf769873ecf23ac5837",
+  "receipt.json": "f3c9b3867008cccea088f7963b8480f5e1d841c939654a270a71b11bffa058d4",
+  "spectinomycin_comparison.json": "997963dd4371f3bb4e32d25c14c61ce4225a10aed73a992007c570795fe422a2",
+  "tetracycline_comparison.json": "656d8df1ecb3ced867907d69bd1476bd17025fafa151f6d3f995beadb7126fc7",
+  "tiamulin_comparison.json": "15638bf0a7ef47adda2a98f9e4cb871a0d7844e67a6e6201cd775bd029bf6957",
+  "tilmicosin_comparison.json": "2747a3c53967d9ea1c8bdb6f0074ccbdd2ca3132d380f7e433afbcb9edd5ca58",
+  "trimethoprim_comparison.json": "6bc2e7887b4e8264ad7dcef6036d5cc632afa7877c924d4ece204bad055071a3",
+  "tylosin_comparison.json": "a6be585402aa8f5c492c0f015ae4b6c49e2b18ad54704cda830041cf5c1e1c2b"
+ }
+}

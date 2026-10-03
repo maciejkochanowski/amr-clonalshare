@@ -1,0 +1,28 @@
+{
+ "e_value": [
+  1.0,
+  5.586821942009936e-06,
+  2.948914340100806e-07
+ ],
+ "log_e": [
+  0.0,
+  -12.09509995804883,
+  -15.036658568647495
+ ],
+ "n_analyzed_per_batch": [
+  25,
+  20,
+  19
+ ],
+ "n_batches": 3,
+ "n_dropped_non_finite": 0,
+ "n_dropped_untyped": 0,
+ "n_per_batch": [
+  25,
+  20,
+  19
+ ],
+ "n_scored_batches": 2,
+ "reject_01": false,
+ "reject_05": false
+}

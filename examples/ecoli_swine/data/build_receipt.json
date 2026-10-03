@@ -1,0 +1,68 @@
+{
+ "workbook": "MOESM4_ESM.xlsx",
+ "workbook_sha256": "b723215ec2dd20d889a7284858620094bd39b960f4ff5cdca9bee3365a5d27c9",
+ "isolates_in_data_1": 499,
+ "ast_rows_in_data_13": 485,
+ "set_aside": {
+  "A154": "meropenem 3 mg/L, on no well of the range",
+  "A24": "no gentamicin reading",
+  "A62": "no ciprofloxacin reading",
+  "A71": "no ciprofloxacin reading"
+ },
+ "readings_per_agent": {
+  "cefotaxime": 481,
+  "ceftazidime": 481,
+  "meropenem": 481,
+  "ciprofloxacin": 481,
+  "gentamicin": 481,
+  "tetracycline": 481
+ },
+ "wells": {
+  "cefotaxime": [
+   1,
+   2,
+   4,
+   8,
+   16,
+   32
+  ],
+  "ceftazidime": [
+   1,
+   2,
+   4,
+   8,
+   16
+  ],
+  "meropenem": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "ciprofloxacin": [
+   0.5,
+   1,
+   2
+  ],
+  "gentamicin": [
+   2,
+   4,
+   8
+  ],
+  "tetracycline": [
+   2,
+   4,
+   8
+  ]
+ },
+ "two_category_cut": {
+  "cefotaxime": 4,
+  "ceftazidime": 4,
+  "meropenem": 2,
+  "ciprofloxacin": 1,
+  "gentamicin": 4,
+  "tetracycline": 4
+ },
+ "excluded_sequence_type": "ST410",
+ "isolates_of_excluded_type": 74
+}

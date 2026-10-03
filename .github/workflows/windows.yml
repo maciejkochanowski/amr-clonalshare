@@ -1,0 +1,60 @@
+# Builds the Windows folder that runs without any installation
+# (scripts/build_windows_bundle.py): the embeddable Python from python.org,
+# the pinned stack as Windows wheels, the package and a file to double-click
+# that opens the local form. The folder is then run on a Windows runner: the
+# shipped S. suis configuration must reproduce the shipped record, and the
+# tests of the form must pass with the folder's own interpreter. On a
+# published release the zip and its SHA-256 are attached to the release.
+name: Windows folder
+
+on:
+  push: { branches: [main] }
+  pull_request: { branches: [main] }
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  folder:
+    runs-on: windows-latest
+    permissions:
+      contents: write   # to attach the zip to a release; the token does nothing else
+    steps:
+      - name: Check out the files byte for byte
+        run: git config --global core.autocrlf false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with: { python-version: '3.13' }
+      - name: Build the folder
+        run: |
+          python -m pip install --upgrade pip build
+          python scripts/build_windows_bundle.py --out dist/windows
+      - name: The folder reproduces the shipped record and its form passes its tests
+        shell: bash
+        run: |
+          folder=$(ls -d dist/windows/AMR-ClonalShare-*-windows)
+          python scripts/check_windows_bundle.py "$folder" --threads 2
+      - name: The launcher starts the form and answers on the loopback address
+        shell: bash
+        run: |
+          folder=$(ls -d dist/windows/AMR-ClonalShare-*-windows)
+          "$folder/python/python.exe" -X utf8 -m amr_clonalshare.gui --no-browser --port 8765 --root dist/gui-root > gui.log 2>&1 &
+          for i in $(seq 1 30); do grep -q "open at" gui.log && break; sleep 1; done
+          address=$(grep -o 'http://127.0.0.1:8765/?t=[A-Za-z0-9_-]*' gui.log)
+          curl -sS --fail "$address" | grep -q "Metadata table"
+          echo "form answers at $address"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: windows-folder
+          path: |
+            dist/windows/*.zip
+            dist/windows/*.sha256
+      - name: Attach the zip to the release
+        if: github.event_name == 'release'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" dist/windows/*.zip dist/windows/*.sha256 --clobber

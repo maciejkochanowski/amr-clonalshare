@@ -1,0 +1,97 @@
+{
+ "note": "Wall-clock time and peak resident memory of the example analyses, each run once from its configuration (the comparison from its table) with amr-clonalshare 1.0.0 at commit b9a9f50 on one node of the Helios cluster (AMD EPYC 9654, 8 processor threads, --threads 8), measured with /usr/bin/time; the records these runs write equal the shipped expected records in every number.",
+ "machine": "Helios (PLGrid), AMD EPYC 9654, 8 threads",
+ "commit": "b9a9f50",
+ "runs": [
+  {
+   "example": "examples/ecoli_swine/config.yaml",
+   "collection": "E. coli, full panel",
+   "isolates": 481,
+   "lineages": 75,
+   "agents": 6,
+   "readings": "MICs on one panel",
+   "seconds": 22.9,
+   "peak_rss_mb": 110.1
+  },
+  {
+   "example": "examples/ecoli_swine/config_two_categories.yaml",
+   "collection": "E. coli, two categories",
+   "isolates": 481,
+   "lineages": 75,
+   "agents": 6,
+   "readings": "MICs merged to two categories",
+   "seconds": 6.43,
+   "peak_rss_mb": 115.0
+  },
+  {
+   "example": "examples/ecoli_swine/config_without_st410.yaml",
+   "collection": "E. coli without ST410",
+   "isolates": 408,
+   "lineages": 74,
+   "agents": 6,
+   "readings": "MICs on one panel",
+   "seconds": 6.39,
+   "peak_rss_mb": 117.4
+  },
+  {
+   "example": "examples/ecoli_swine/config_periods.yaml",
+   "collection": "E. coli, two periods",
+   "isolates": 481,
+   "lineages": 7,
+   "agents": 6,
+   "readings": "calls, 2011–2013 against 2014–2017",
+   "seconds": 5.55,
+   "peak_rss_mb": 135.6
+  },
+  {
+   "example": "examples/ecoli_swine/input.csv",
+   "collection": "E. coli, sequence type against phylogroup",
+   "isolates": 481,
+   "lineages": "75 and 7",
+   "agents": 1,
+   "readings": "one call, two lineage definitions (amr-clonalshare compare)",
+   "seconds": 9.21,
+   "peak_rss_mb": 114.4
+  },
+  {
+   "example": "examples/ecoli_swine/input.csv",
+   "collection": "E. coli, sequence type against phylogroup with C separated",
+   "isolates": 481,
+   "lineages": "75 and 8",
+   "agents": 1,
+   "readings": "one call, two lineage definitions (amr-clonalshare compare)",
+   "seconds": 9.12,
+   "peak_rss_mb": 113.4
+  },
+  {
+   "example": "examples/ssuis/config.yaml",
+   "collection": "S. suis",
+   "isolates": 677,
+   "lineages": 30,
+   "agents": 16,
+   "readings": "13 calls and 16 MIC agents, two laboratories, three strata",
+   "seconds": 101.67,
+   "peak_rss_mb": 415.3
+  },
+  {
+   "example": "examples/salmonella_poultry/config.yaml",
+   "collection": "Salmonella, serovars",
+   "isolates": 7049,
+   "lineages": 51,
+   "agents": 22,
+   "readings": "calls",
+   "seconds": 23.79,
+   "peak_rss_mb": 239.7
+  },
+  {
+   "example": "examples/salmonella_poultry/config_cluster.yaml",
+   "collection": "Salmonella, SNP clusters",
+   "isolates": 7049,
+   "lineages": 274,
+   "agents": 22,
+   "readings": "calls",
+   "seconds": 44.05,
+   "peak_rss_mb": 140.7
+  }
+ ]
+}

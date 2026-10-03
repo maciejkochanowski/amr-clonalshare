@@ -1,0 +1,19 @@
+{
+ "latent_order_alpha": 0.05,
+ "latent_order_gap": 0.0,
+ "latent_order_lower": 0.6852211626963944,
+ "latent_order_lower_limit": 0.30962716903396803,
+ "latent_order_lower_within_strata": {
+  "x": 0.6964688203357641,
+  "y": 0.7005199735735206
+ },
+ "latent_order_midpoint": 0.7618933890428603,
+ "latent_order_readings": 21,
+ "latent_order_sharp": true,
+ "latent_order_splits": 25,
+ "latent_order_upper": 0.848513260756977,
+ "latent_order_upper_bound": 0.848513260756977,
+ "latent_order_upper_exact": true,
+ "latent_order_upper_starts": 11,
+ "panel_resolution": 0.9790839947089947
+}

@@ -1,0 +1,81 @@
+# Streptococcus suis, n = 677, thirteen antimicrobials, typed by population
+# cluster.
+#
+#   python examples/ssuis/build_calls_long.py
+#   amr-clonalshare --config examples/ssuis/config.yaml --results-dir out/ssuis
+#
+# The collection as a surveillance programme holds it: one column of
+# susceptibility calls, one column of lineage labels, and the recorded MICs.
+# Per antimicrobial the run computes the lineage share of the call against its
+# permuted control with its interval for the represented lineages, an e-value
+# with running evidence over the yearly intakes, the lineage share of the
+# ordering of the recorded dilutions, the lower bound that the readings (and
+# the call) establish on the lineage share of the latent MIC ordering with its
+# lower confidence limit, and the reporting conditions that refuse where the
+# collection cannot identify any of them. The
+# record is `clonal_share_result.json`, and the two reports are rendered from
+# it.
+#
+# The lineage is the hierBAPS population cluster the source study reports for
+# every isolate, not the sequence type, which is missing for a third of them
+# and missing informatively; config_contrast.yaml reads the sequence type and
+# shows what the support reporting condition makes of it. DATA_PROVENANCE.md documents both.
+
+dataset:
+  name: streptococcus_suis_n677
+  strain_id_column: genome_id
+  data_dir: data
+  metadata: metadata.csv
+  lineage_column: baps_cluster
+
+  # The panel as a laboratory exports it: one row per isolate and
+  # antimicrobial. Built from the two wide call tables by build_calls_long.py and
+  # checked against them by tests/test_ssuis_provenance.py.
+  phenotype: calls_long.csv
+  phenotype_id_column: genome_id
+  phenotype_antibiotic_column: antibiotic
+  phenotype_call_column: call
+  # Each call is 1 when the MIC lies above the cut-off of its agent, not a
+  # clinical category; it is non-wild-type only where that cut-off is an ECOFF.
+  phenotype_kind: binary
+  # The calls are read within the country of isolation, as the MIC
+  # readings are read within laboratory and country: lineage labels are
+  # exchanged within a country, the interval draws each isolate's
+  # country with its call, and the bounds a call places on the latent
+  # ordering are the bounds within countries. The country also names the
+  # laboratory, since each laboratory read the isolates of its countries.
+  phenotype_covariate_column: isolation_country
+  phenotype_positive_definition: >-
+    MIC above the cut-off of its agent: non-wild-type for tetracycline
+    (EUCAST ECOFF), doxycycline and erythromycin (tentative EUCAST ECOFFs);
+    above a cut-off derived from this collection for the other ten
+  phenotype_source: >-
+    MIC against the cut-off of each agent in DATA_PROVENANCE.md section 2:
+    EUCAST epidemiological cut-offs for tetracycline, doxycycline and
+    erythromycin, collection-specific cut-offs for the other ten
+
+  # The year an isolate arrived is the intake of a programme of looks, so the
+  # run also reports the running product of the e-values over the intakes,
+  # which may be read after any of them.
+  batch_column: collection_year
+
+  # The recorded dilutions, read at their own resolution beside the calls: a
+  # value on an end well is an interval, not a point.
+  mic: mic_panel.csv
+  mic_id_column: genome_id
+  mic_antibiotic_column: antibiotic
+  mic_value_column: measurement
+  # The unit of every reading, mg/L throughout; a row in another unit
+  # would be set aside and counted.
+  mic_unit_column: measurement_unit
+  # Two laboratories read the panel and tested different ranges, so the end
+  # wells are found within each laboratory (build_mic_table.py names them).
+  mic_panel_column: testing_laboratory
+  # The country of isolation joins the laboratory in the strata of the MIC
+  # ordering: the source study found consistently higher MICs in Canadian
+  # isolates across lineages, so readings are ordered within laboratory and
+  # country, and a shift between countries is not read as a lineage effect.
+  mic_covariate_column: isolation_country
+  # The run is also repeated within each country, so that a share seen in the
+  # pooled collection can be checked against the share within each source.
+  stratify_by: isolation_country

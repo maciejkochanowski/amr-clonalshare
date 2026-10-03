@@ -1,0 +1,301 @@
+{
+  "n_isolates": 481,
+  "n_antimicrobials": 6,
+  "n_empty_agents": 0,
+  "traits": {
+    "cefotaxime": {
+      "n": 481,
+      "n_missing": 0,
+      "n_positive": 241,
+      "prevalence": 0.501039501039501,
+      "minor_count": 240,
+      "constant": false,
+      "empty": false,
+      "adequate": true
+    },
+    "ceftazidime": {
+      "n": 481,
+      "n_missing": 0,
+      "n_positive": 110,
+      "prevalence": 0.2286902286902287,
+      "minor_count": 110,
+      "constant": false,
+      "empty": false,
+      "adequate": true
+    },
+    "ciprofloxacin": {
+      "n": 481,
+      "n_missing": 0,
+      "n_positive": 359,
+      "prevalence": 0.7463617463617463,
+      "minor_count": 122,
+      "constant": false,
+      "empty": false,
+      "adequate": true
+    },
+    "gentamicin": {
+      "n": 481,
+      "n_missing": 0,
+      "n_positive": 340,
+      "prevalence": 0.7068607068607069,
+      "minor_count": 141,
+      "constant": false,
+      "empty": false,
+      "adequate": true
+    },
+    "meropenem": {
+      "n": 481,
+      "n_missing": 0,
+      "n_positive": 4,
+      "prevalence": 0.008316008316008316,
+      "minor_count": 4,
+      "constant": false,
+      "empty": false,
+      "adequate": false
+    },
+    "tetracycline": {
+      "n": 481,
+      "n_missing": 0,
+      "n_positive": 459,
+      "prevalence": 0.9542619542619543,
+      "minor_count": 22,
+      "constant": false,
+      "empty": false,
+      "adequate": true
+    }
+  },
+  "min_minor_count": 20,
+  "min_group_size": 2,
+  "metadata_join": {
+    "n_joined": 481,
+    "share_joined": 1.0,
+    "unjoined_examples": [],
+    "n_near_matches": 0,
+    "near_match_examples": [],
+    "rows_read": 499,
+    "n_duplicate_ids": 0,
+    "strains_joined": 481,
+    "strains_aligned": 481,
+    "n_metadata_only": 18,
+    "metadata_only_examples": [
+      "A103",
+      "A150",
+      "A154",
+      "A159",
+      "A160"
+    ],
+    "duplicate_policy": "error",
+    "n_duplicate_rows": 0,
+    "n_identical_duplicates_collapsed": 0,
+    "n_conflicting_keys": 0,
+    "n_conflicting_rows": 0,
+    "conflicting_key_examples": [],
+    "n_conflict_rows_dropped": 0
+  },
+  "lineage": {
+    "column": "phylogroup",
+    "n": 481,
+    "n_typed": 481,
+    "n_untyped": 0,
+    "n_groups": 7,
+    "n_singletons": 0,
+    "n_informative_groups": 7,
+    "support": 1.0,
+    "estimable": true,
+    "effective_group_size": 48.835065835065826,
+    "group_sizes": {
+      "A": 145,
+      "B1": 260,
+      "B2": 4,
+      "D": 12,
+      "E": 3,
+      "F": 30,
+      "G": 27
+    },
+    "smallest_groups": {
+      "E": 3,
+      "B2": 4,
+      "D": 12,
+      "G": 27,
+      "F": 30,
+      "A": 145,
+      "B1": 260
+    }
+  },
+  "agent_feasibility": {
+    "cefotaxime": {
+      "n_retained": 481,
+      "n_dropped_non_finite": 0,
+      "n_dropped_untyped": 0,
+      "prevalence": 0.501039501039501,
+      "minor_count": 240,
+      "n_groups": 7,
+      "n_singletons": 0,
+      "support": 1.0,
+      "input_feasible": true,
+      "failure_reasons": [],
+      "warnings": []
+    },
+    "ceftazidime": {
+      "n_retained": 481,
+      "n_dropped_non_finite": 0,
+      "n_dropped_untyped": 0,
+      "prevalence": 0.2286902286902287,
+      "minor_count": 110,
+      "n_groups": 7,
+      "n_singletons": 0,
+      "support": 1.0,
+      "input_feasible": true,
+      "failure_reasons": [],
+      "warnings": []
+    },
+    "ciprofloxacin": {
+      "n_retained": 481,
+      "n_dropped_non_finite": 0,
+      "n_dropped_untyped": 0,
+      "prevalence": 0.7463617463617463,
+      "minor_count": 122,
+      "n_groups": 7,
+      "n_singletons": 0,
+      "support": 1.0,
+      "input_feasible": true,
+      "failure_reasons": [],
+      "warnings": []
+    },
+    "gentamicin": {
+      "n_retained": 481,
+      "n_dropped_non_finite": 0,
+      "n_dropped_untyped": 0,
+      "prevalence": 0.7068607068607069,
+      "minor_count": 141,
+      "n_groups": 7,
+      "n_singletons": 0,
+      "support": 1.0,
+      "input_feasible": true,
+      "failure_reasons": [],
+      "warnings": []
+    },
+    "meropenem": {
+      "n_retained": 481,
+      "n_dropped_non_finite": 0,
+      "n_dropped_untyped": 0,
+      "prevalence": 0.008316008316008316,
+      "minor_count": 4,
+      "n_groups": 7,
+      "n_singletons": 0,
+      "support": 1.0,
+      "input_feasible": true,
+      "failure_reasons": [],
+      "warnings": [
+        "fewer than 20 isolates of the rarer outcome"
+      ]
+    },
+    "tetracycline": {
+      "n_retained": 481,
+      "n_dropped_non_finite": 0,
+      "n_dropped_untyped": 0,
+      "prevalence": 0.9542619542619543,
+      "minor_count": 22,
+      "n_groups": 7,
+      "n_singletons": 0,
+      "support": 1.0,
+      "input_feasible": true,
+      "failure_reasons": [],
+      "warnings": []
+    }
+  },
+  "phenotype_reading": {
+    "rows_read": 2886,
+    "n_unrecognized_calls": 0,
+    "unrecognized_calls": {},
+    "n_missing_calls": 0,
+    "n_intermediate_dropped": 0,
+    "isolates_without_readable_calls": 0,
+    "phenotype_kind": "binary",
+    "positive_definition": "MIC above the cut of its agent: ciprofloxacin 1, meropenem 2, cefotaxime, ceftazidime, gentamicin and tetracycline 4 mg/L; technical cuts, not clinical breakpoints or epidemiological cut-offs",
+    "positive_coding": "1 (positive)",
+    "intermediate_policy": null,
+    "source": "the two-category readings of mic_two_categories.csv, written as 0 or 1 by build_derived_tables.py",
+    "ast_standard": null,
+    "ast_version": null,
+    "agents": {
+      "cefotaxime": {
+        "rows_read": 481,
+        "n_recorded_isolates": 481,
+        "n_missing_calls": 0,
+        "n_unrecognized_calls": 0,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 481,
+        "n_absent_records": 0
+      },
+      "ceftazidime": {
+        "rows_read": 481,
+        "n_recorded_isolates": 481,
+        "n_missing_calls": 0,
+        "n_unrecognized_calls": 0,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 481,
+        "n_absent_records": 0
+      },
+      "ciprofloxacin": {
+        "rows_read": 481,
+        "n_recorded_isolates": 481,
+        "n_missing_calls": 0,
+        "n_unrecognized_calls": 0,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 481,
+        "n_absent_records": 0
+      },
+      "gentamicin": {
+        "rows_read": 481,
+        "n_recorded_isolates": 481,
+        "n_missing_calls": 0,
+        "n_unrecognized_calls": 0,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 481,
+        "n_absent_records": 0
+      },
+      "meropenem": {
+        "rows_read": 481,
+        "n_recorded_isolates": 481,
+        "n_missing_calls": 0,
+        "n_unrecognized_calls": 0,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 481,
+        "n_absent_records": 0
+      },
+      "tetracycline": {
+        "rows_read": 481,
+        "n_recorded_isolates": 481,
+        "n_missing_calls": 0,
+        "n_unrecognized_calls": 0,
+        "n_intermediate_dropped": 0,
+        "n_readable_isolates": 481,
+        "n_absent_records": 0
+      }
+    },
+    "duplicate_policy": "error",
+    "n_duplicate_rows": 0,
+    "n_identical_duplicates_collapsed": 0,
+    "n_conflicting_keys": 0,
+    "n_conflicting_rows": 0,
+    "conflicting_key_examples": [],
+    "n_conflict_rows_dropped": 0,
+    "call_table_isolates_without_readable_calls": 0
+  },
+  "raw_universe": {
+    "definition": "union of raw call and MIC record identifiers",
+    "n_call_isolates": 481,
+    "n_mic_isolates": 0,
+    "n_mic_only_isolates": 0,
+    "call_agents": [
+      "cefotaxime",
+      "ceftazidime",
+      "ciprofloxacin",
+      "gentamicin",
+      "meropenem",
+      "tetracycline"
+    ],
+    "mic_agents": []
+  }
+}

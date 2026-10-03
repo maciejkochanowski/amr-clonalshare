@@ -1,0 +1,67 @@
+{
+ "attrs": {
+  "phenotype_reading": {
+   "agents": {
+    "a": {
+     "n_intermediate_dropped": 0,
+     "n_missing_calls": 2,
+     "n_readable_isolates": 4,
+     "n_recorded_isolates": 6,
+     "n_unrecognized_calls": 0,
+     "rows_read": 6
+    }
+   },
+   "ast_standard": null,
+   "ast_version": null,
+   "conflicting_key_examples": [],
+   "duplicate_policy": "error",
+   "intermediate_policy": "susceptible",
+   "isolates_without_readable_calls": 2,
+   "n_conflict_rows_dropped": 0,
+   "n_conflicting_keys": 0,
+   "n_conflicting_rows": 0,
+   "n_duplicate_rows": 0,
+   "n_identical_duplicates_collapsed": 0,
+   "n_intermediate_dropped": 0,
+   "n_missing_calls": 2,
+   "n_unrecognized_calls": 0,
+   "phenotype_kind": "clinical_sir",
+   "positive_coding": "R (resistant)",
+   "positive_definition": "R (resistant)",
+   "rows_read": 6,
+   "source": null,
+   "unrecognized_calls": {}
+  }
+ },
+ "columns": [
+  "a"
+ ],
+ "index": [
+  "000",
+  "001",
+  "002",
+  "003",
+  "004",
+  "005"
+ ],
+ "rows": [
+  [
+   0.0
+  ],
+  [
+   0.0
+  ],
+  [
+   1.0
+  ],
+  [
+   null
+  ],
+  [
+   null
+  ],
+  [
+   1.0
+  ]
+ ]
+}

@@ -1,0 +1,9 @@
+2026-10-03 08:11:45  Reading input tables and checking data
+2026-10-03 08:11:45  Computing analyses on their observed and typed subsets
+2026-10-03 08:11:45  Lineage share of the MIC ordering: cefotaxime (1 of 6)
+2026-10-03 08:11:46  Lineage share of the MIC ordering: ceftazidime (2 of 6); 1 s so far, about 5 s to go
+2026-10-03 08:11:47  Lineage share of the MIC ordering: ciprofloxacin (3 of 6); 2 s so far, about 4 s to go
+2026-10-03 08:11:48  Lineage share of the MIC ordering: gentamicin (4 of 6); 3 s so far, about 3 s to go
+2026-10-03 08:11:48  Lineage share of the MIC ordering: meropenem (5 of 6); 4 s so far, about 2 s to go
+2026-10-03 08:11:49  Lineage share of the MIC ordering: tetracycline (6 of 6); 4 s so far, about 1 s to go
+2026-10-03 08:11:50  Writing reports, CSV and completion manifest

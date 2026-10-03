@@ -1,0 +1,24 @@
+{
+ "level": {
+  "null": true,
+  "null_lab_offset_85": true,
+  "null_lab_offset_100": true,
+  "null_lab_panel_100": true,
+  "null_lab_spread_85": true,
+  "null_lab_few_100": true,
+  "null_small": true,
+  "null_offset_spread": true
+ },
+ "noninferior_to_stratified": {
+  "gauss_0.1": true,
+  "few": true,
+  "weak_two_labs": true,
+  "weak_spread": true,
+  "weak_t4": true,
+  "weak_wt_nwt": true,
+  "weak_small": true,
+  "weak_offset_spread": true
+ },
+ "H1_level_in_every_null_design": true,
+ "H2_noninferior_in_every_effect_design": true
+}

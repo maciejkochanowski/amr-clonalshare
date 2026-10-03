@@ -1,0 +1,28 @@
+# A deliberately rough fictional table: unlabelled isolates, singleton lineages,
+# an antimicrobial that never varies, an antimicrobial that was never
+# interpreted, a repeated row, a blank call and a record present in one table
+# only. It exists so that the diagnostics those inputs produce are compared as
+# written text, not only as counts.
+dataset:
+  name: rough_fixture
+  data_dir: rough_data
+  metadata: metadata.csv
+  strain_id_column: isolate_id
+  lineage_column: lineage
+  phenotype: calls.csv
+  phenotype_id_column: isolate_id
+  phenotype_antibiotic_column: agent
+  phenotype_call_column: call
+  phenotype_kind: clinical_sir
+  phenotype_positive_definition: R only in fictional format example
+  phenotype_source: fictional teaching fixture with no AST interpretation
+attribution:
+  folds: 2
+  repeats: 2
+  n_boot: 20
+  n_perm: 19
+surveillance:
+  n_boot: 20
+evidence:
+  folds: 2
+  repeats: 2

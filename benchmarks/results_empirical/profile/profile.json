@@ -1,0 +1,225 @@
+{
+ "config": "examples/ssuis/config.yaml",
+ "phase_seconds": {
+  "estimators": 101.754,
+  "read_tables": 0.227,
+  "total": 102.087,
+  "write_artefacts": 0.106
+ },
+ "peak_rss_mb": 317.9,
+ "peak_traced_python_mb": 130.1,
+ "hot_functions": [
+  {
+   "function": "cli.py:231:main",
+   "calls": 1,
+   "tottime": 0.0012,
+   "cumtime": 242.4225
+  },
+  {
+   "function": "core.py:62:run",
+   "calls": 1,
+   "tottime": 0.0005,
+   "cumtime": 242.3903
+  },
+  {
+   "function": "core.py:341:_metadata_diagnostics",
+   "calls": 4,
+   "tottime": 0.0061,
+   "cumtime": 240.806
+  },
+  {
+   "function": "attribution.py:778:layer_clonal_share",
+   "calls": 116,
+   "tottime": 0.0674,
+   "cumtime": 153.2527
+  },
+  {
+   "function": "core.py:169:_strata",
+   "calls": 1,
+   "tottime": 0.0009,
+   "cumtime": 149.5373
+  },
+  {
+   "function": "core.py:552:_censored_diagnostics",
+   "calls": 4,
+   "tottime": 0.0308,
+   "cumtime": 135.984
+  },
+  {
+   "function": "mic_order.py:232:mic_order_share",
+   "calls": 64,
+   "tottime": 0.0476,
+   "cumtime": 133.0037
+  },
+  {
+   "function": "latent_order.py:746:order_bounds",
+   "calls": 116,
+   "tottime": 0.0126,
+   "cumtime": 83.1374
+  },
+  {
+   "function": "latent_order.py:692:bounds_from_bins",
+   "calls": 87,
+   "tottime": 0.0152,
+   "cumtime": 82.9502
+  },
+  {
+   "function": "attribution.py:694:_smoothed_bootstrap",
+   "calls": 87,
+   "tottime": 2.6547,
+   "cumtime": 75.0509
+  },
+  {
+   "function": "attribution.py:1040:clonal_share",
+   "calls": 52,
+   "tottime": 0.0315,
+   "cumtime": 68.7446
+  },
+  {
+   "function": "attribution.py:952:<listcomp>",
+   "calls": 87,
+   "tottime": 0.2028,
+   "cumtime": 62.8697
+  },
+  {
+   "function": "attribution.py:252:_skill_parts",
+   "calls": 90393,
+   "tottime": 34.344,
+   "cumtime": 58.9351
+  },
+  {
+   "function": "attribution.py:557:se",
+   "calls": 173913,
+   "tottime": 2.929,
+   "cumtime": 58.925
+  },
+  {
+   "function": "attribution.py:288:_skill",
+   "calls": 88653,
+   "tottime": 0.2492,
+   "cumtime": 58.0756
+  },
+  {
+   "function": "latent_order.py:451:_upper",
+   "calls": 87,
+   "tottime": 0.0181,
+   "cumtime": 56.3698
+  },
+  {
+   "function": "latent_order.py:335:_upper_exact",
+   "calls": 29,
+   "tottime": 18.9634,
+   "cumtime": 38.6361
+  },
+  {
+   "function": "latent_order.py:774:call_bounds",
+   "calls": 52,
+   "tottime": 0.0025,
+   "cumtime": 34.8433
+  },
+  {
+   "function": "latent_order.py:677:_lower_limit",
+   "calls": 87,
+   "tottime": 0.004,
+   "cumtime": 25.7442
+  },
+  {
+   "function": "latent_order.py:684:<listcomp>",
+   "calls": 87,
+   "tottime": 0.0068,
+   "cumtime": 25.6974
+  }
+ ],
+ "own_time": [
+  {
+   "function": "attribution.py:252:_skill_parts",
+   "calls": 90393,
+   "tottime": 34.344,
+   "cumtime": 58.9351
+  },
+  {
+   "function": "latent_order.py:335:_upper_exact",
+   "calls": 29,
+   "tottime": 18.9634,
+   "cumtime": 38.6361
+  },
+  {
+   "function": "~:0:<built-in method numpy.array>",
+   "calls": 2103147,
+   "tottime": 18.9027,
+   "cumtime": 18.9027
+  },
+  {
+   "function": "~:0:<method 'reduce' of 'numpy.ufunc' objects>",
+   "calls": 7721310,
+   "tottime": 16.2784,
+   "cumtime": 16.2784
+  },
+  {
+   "function": "attribution.py:565:<listcomp>",
+   "calls": 173913,
+   "tottime": 12.8237,
+   "cumtime": 12.9695
+  },
+  {
+   "function": "~:0:<built-in method math.fsum>",
+   "calls": 1495965,
+   "tottime": 9.8936,
+   "cumtime": 9.8936
+  },
+  {
+   "function": "attribution.py:465:_moment_se",
+   "calls": 173913,
+   "tottime": 9.7143,
+   "cumtime": 15.3314
+  },
+  {
+   "function": "_methods.py:115:_mean",
+   "calls": 2377531,
+   "tottime": 7.5223,
+   "cumtime": 19.4289
+  },
+  {
+   "function": "_methods.py:73:_count_reduce_items",
+   "calls": 2377705,
+   "tottime": 5.8783,
+   "cumtime": 6.2033
+  },
+  {
+   "function": "attribution.py:207:_dealt_folds",
+   "calls": 88653,
+   "tottime": 4.7024,
+   "cumtime": 5.8487
+  },
+  {
+   "function": "latent_order.py:284:_upper_search",
+   "calls": 87,
+   "tottime": 4.2434,
+   "cumtime": 13.5855
+  },
+  {
+   "function": "attribution.py:543:draw",
+   "calls": 86913,
+   "tottime": 3.8734,
+   "cumtime": 5.4536
+  },
+  {
+   "function": "_index_tricks_impl.py:343:__getitem__",
+   "calls": 315953,
+   "tottime": 3.726,
+   "cumtime": 4.826
+  },
+  {
+   "function": "_linalg.py:2417:lstsq",
+   "calls": 94380,
+   "tottime": 3.7137,
+   "cumtime": 5.3144
+  },
+  {
+   "function": "attribution.py:405:_fold_average",
+   "calls": 173826,
+   "tottime": 3.4461,
+   "cumtime": 7.7461
+  }
+ ]
+}

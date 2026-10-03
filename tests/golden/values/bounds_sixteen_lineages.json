@@ -1,0 +1,15 @@
+{
+ "latent_order_alpha": 0.05,
+ "latent_order_gap": 0.0,
+ "latent_order_lower": 0.27486093740000106,
+ "latent_order_lower_limit": 0.0,
+ "latent_order_midpoint": 0.3782531250000014,
+ "latent_order_readings": 10,
+ "latent_order_sharp": true,
+ "latent_order_splits": 25,
+ "latent_order_upper": 0.5014312500000011,
+ "latent_order_upper_bound": 0.5014312500000011,
+ "latent_order_upper_exact": true,
+ "latent_order_upper_starts": 11,
+ "panel_resolution": 0.9821953125
+}

@@ -1,0 +1,76 @@
+{
+ "attrs": {
+  "phenotype_reading": {
+   "agents": {
+    "a": {
+     "n_intermediate_dropped": 1,
+     "n_missing_calls": 0,
+     "n_readable_isolates": 2,
+     "n_recorded_isolates": 5,
+     "n_unrecognized_calls": 4,
+     "rows_read": 7
+    }
+   },
+   "ast_standard": null,
+   "ast_version": null,
+   "conflicting_key_examples": [
+    [
+     "000",
+     "a"
+    ],
+    [
+     "001",
+     "a"
+    ]
+   ],
+   "duplicate_policy": "positive_wins",
+   "intermediate_policy": "drop",
+   "isolates_without_readable_calls": 3,
+   "n_conflict_rows_dropped": 0,
+   "n_conflicting_keys": 2,
+   "n_conflicting_rows": 4,
+   "n_duplicate_rows": 2,
+   "n_identical_duplicates_collapsed": 0,
+   "n_intermediate_dropped": 1,
+   "n_missing_calls": 0,
+   "n_unrecognized_calls": 4,
+   "phenotype_kind": "undeclared",
+   "positive_coding": "R (resistant)",
+   "positive_definition": "R (resistant)",
+   "rows_read": 7,
+   "source": null,
+   "unrecognized_calls": {
+    "r": 2,
+    "s": 1,
+    "x": 1
+   }
+  }
+ },
+ "columns": [
+  "a"
+ ],
+ "index": [
+  "000",
+  "001",
+  "002",
+  "003",
+  "004"
+ ],
+ "rows": [
+  [
+   1.0
+  ],
+  [
+   0.0
+  ],
+  [
+   null
+  ],
+  [
+   null
+  ],
+  [
+   null
+  ]
+ ]
+}

@@ -1,0 +1,33 @@
+2026-10-03 08:11:45  Reading input tables and checking data
+2026-10-03 08:11:45  Computing analyses on their observed and typed subsets
+2026-10-03 08:11:45  Lineage share of the call: amoxicillin (1 of 13)
+2026-10-03 08:11:46  Lineage share of the call: cefquinome (2 of 13); 1 s so far, about 10 s to go
+2026-10-03 08:11:47  Lineage share of the call: ceftiofur (3 of 13); 2 s so far, about 9 s to go
+2026-10-03 08:11:48  Lineage share of the call: doxycycline (4 of 13); 3 s so far, about 9 s to go
+2026-10-03 08:11:48  Lineage share of the call: erythromycin (5 of 13); 3 s so far, about 7 s to go
+2026-10-03 08:11:49  Lineage share of the call: lincomycin (6 of 13); 4 s so far, about 7 s to go
+2026-10-03 08:11:50  Lineage share of the call: penicillin (7 of 13); 5 s so far, about 6 s to go
+2026-10-03 08:11:51  Lineage share of the call: spectinomycin (8 of 13); 6 s so far, about 5 s to go
+2026-10-03 08:11:52  Lineage share of the call: tetracycline (9 of 13); 7 s so far, about 4 s to go
+2026-10-03 08:11:52  Lineage share of the call: tiamulin (10 of 13); 7 s so far, about 3 s to go
+2026-10-03 08:11:53  Lineage share of the call: tilmicosin (11 of 13); 8 s so far, about 2 s to go
+2026-10-03 08:11:54  Lineage share of the call: trimethoprim (12 of 13); 9 s so far, about 2 s to go
+2026-10-03 08:11:55  Lineage share of the call: tylosin (13 of 13); 10 s so far, about 1 s to go
+2026-10-03 08:11:58  Lineage share of the MIC ordering: amoxicillin (1 of 16)
+2026-10-03 08:12:00  Lineage share of the MIC ordering: cefquinome (2 of 16); 1 s so far, about 16 s to go
+2026-10-03 08:12:01  Lineage share of the MIC ordering: ceftiofur (3 of 16); 2 s so far, about 15 s to go
+2026-10-03 08:12:02  Lineage share of the MIC ordering: doxycycline (4 of 16); 3 s so far, about 14 s to go
+2026-10-03 08:12:03  Lineage share of the MIC ordering: enrofloxacin (5 of 16); 4 s so far, about 13 s to go
+2026-10-03 08:12:04  Lineage share of the MIC ordering: erythromycin (6 of 16); 5 s so far, about 12 s to go
+2026-10-03 08:12:05  Lineage share of the MIC ordering: florfenicol (7 of 16); 6 s so far, about 11 s to go
+2026-10-03 08:12:06  Lineage share of the MIC ordering: lincomycin (8 of 16); 7 s so far, about 9 s to go
+2026-10-03 08:12:07  Lineage share of the MIC ordering: marbofloxacin (9 of 16); 8 s so far, about 8 s to go
+2026-10-03 08:12:08  Lineage share of the MIC ordering: penicillin (10 of 16); 9 s so far, about 7 s to go
+2026-10-03 08:12:09  Lineage share of the MIC ordering: spectinomycin (11 of 16); 11 s so far, about 6 s to go
+2026-10-03 08:12:10  Lineage share of the MIC ordering: tetracycline (12 of 16); 12 s so far, about 5 s to go
+2026-10-03 08:12:11  Lineage share of the MIC ordering: tiamulin (13 of 16); 13 s so far, about 4 s to go
+2026-10-03 08:12:12  Lineage share of the MIC ordering: tilmicosin (14 of 16); 14 s so far, about 3 s to go
+2026-10-03 08:12:13  Lineage share of the MIC ordering: trimethoprim (15 of 16); 15 s so far, about 2 s to go
+2026-10-03 08:12:14  Lineage share of the MIC ordering: tylosin (16 of 16); 16 s so far, about 1 s to go
+2026-10-03 08:12:15  Selection across agents: with 999 permutations one agent alone cannot be selected among 16 at alpha = 0.05; at least 1081 permutations would let a single very small p-value pass the step-up
+2026-10-03 08:12:16  Writing reports, CSV and completion manifest

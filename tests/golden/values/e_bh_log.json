@@ -1,0 +1,9 @@
+{
+ "alpha": 0.05,
+ "m": 6,
+ "n_rejected": 1,
+ "rejected": [
+  3
+ ],
+ "threshold": 120.0
+}

@@ -1,0 +1,33 @@
+# The same isolates and readings as config.yaml, with every reading merged
+# into two categories at one prespecified well per agent (build_tables.py).
+#
+#   amr-clonalshare --config examples/ecoli_swine/config_two_categories.yaml --results-dir out/ecoli_two --seed 20261001
+
+dataset:
+  name: escherichia_coli_swine_china_two_categories
+  strain_id_column: isolate_id
+  data_dir: data
+  metadata: metadata.csv
+  # The sequence type; nine isolates without one keep a blank label and are
+  # counted as untyped, and sequence types seen once are set aside by the
+  # lineage share and counted.
+  lineage_column: st
+  duplicate_policy: error
+
+  mic: mic_two_categories.csv
+  mic_id_column: isolate_id
+  mic_antibiotic_column: agent
+  mic_value_column: measurement
+  mic_operator_column: operator
+  mic_unit_column: unit
+  # One panel read all isolates, so the readings form a single stratum.
+  mic_panel_column: panel
+  # Each agent read as two categories, at or below one well or above it,
+  # the well being the cut named in build_tables.py.
+  mic_wells:
+    cefotaxime: [4]
+    ceftazidime: [4]
+    meropenem: [2]
+    ciprofloxacin: [1]
+    gentamicin: [4]
+    tetracycline: [4]

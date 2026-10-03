@@ -1,0 +1,10 @@
+{
+ "analysis_scope": "difference between supplied finite collections",
+ "difference_bounds": [
+  -0.16666666666666669,
+  0.5277777777777778
+ ],
+ "lower_bound": -0.16666666666666669,
+ "status": "ok",
+ "upper_bound": 0.5277777777777778
+}

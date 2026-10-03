@@ -1,0 +1,16 @@
+{
+ "alpha": 0.05,
+ "m": 4,
+ "n_rejected": 2,
+ "peak_log_e": [
+  3.5,
+  5.0,
+  "inf",
+  -1.0
+ ],
+ "rejected": [
+  1,
+  2
+ ],
+ "threshold": 80.0
+}

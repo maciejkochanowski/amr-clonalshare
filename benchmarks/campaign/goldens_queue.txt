@@ -1,0 +1,1 @@
+0	4	mkdir -p $ROOT/outputs/goldens && git rev-parse --short HEAD > $ROOT/outputs/goldens/commit.txt && $PY scripts/update_golden.py > $ROOT/outputs/goldens/update_golden.log 2>&1 && git diff -- tests/golden > $ROOT/outputs/goldens/goldens.patch && git diff --stat -- tests/golden > $ROOT/outputs/goldens/goldens_stat.txt; git checkout -- tests/golden

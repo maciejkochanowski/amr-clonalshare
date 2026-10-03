@@ -1,0 +1,35 @@
+# The readings of config.yaml without the 73 isolates of ST410, the most
+# frequent sequence type (build_tables.py leaves their rows out of the
+# reading table; the metadata table is the same).
+#
+#   amr-clonalshare --config examples/ecoli_swine/config_without_st410.yaml --results-dir out/ecoli_no410 --seed 20261001
+
+dataset:
+  name: escherichia_coli_swine_china_without_st410
+  strain_id_column: isolate_id
+  data_dir: data
+  metadata: metadata.csv
+  # The sequence type; nine isolates without one keep a blank label and are
+  # counted as untyped, and sequence types seen once are set aside by the
+  # lineage share and counted.
+  lineage_column: st
+  duplicate_policy: error
+
+  mic: mic_long_without_st410.csv
+  mic_id_column: isolate_id
+  mic_antibiotic_column: agent
+  mic_value_column: measurement
+  mic_operator_column: operator
+  mic_unit_column: unit
+  # One panel read all isolates, so the readings form a single stratum.
+  mic_panel_column: panel
+  # The tested range of every agent, from the "Range" block of Supplementary
+  # Data 13; a reading on the lowest or highest well is an interval open at
+  # that end.
+  mic_wells:
+    cefotaxime: [1, 2, 4, 8, 16, 32]
+    ceftazidime: [1, 2, 4, 8, 16]
+    meropenem: [1, 2, 4, 8]
+    ciprofloxacin: [0.5, 1, 2]
+    gentamicin: [2, 4, 8]
+    tetracycline: [2, 4, 8]

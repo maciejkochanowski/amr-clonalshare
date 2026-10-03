@@ -1,0 +1,68 @@
+# Streptococcus suis, n = 677 — the same collection read at sequence-type
+# resolution, with the two countries declared as the collections to contrast.
+#
+#   amr-clonalshare --config examples/ssuis/config_contrast.yaml --results-dir out/ssuis-contrast
+#
+# Two things differ from config.yaml, and both are the point.
+#
+#  * THE LINEAGE IS THE SEQUENCE TYPE, which BV-BRC serves for 458 of the 677
+#    isolates and which is missing informatively: 40 % of the later United
+#    Kingdom period carries one against 97 % of the earlier one, and the
+#    untyped isolates are the more resistant. The support reporting condition reads that
+#    resolution and refuses what it cannot identify; config.yaml reads the
+#    population cluster every isolate carries.
+#
+#  * TWO COLLECTIONS ARE DECLARED, so each agent's prevalence above the cut-off
+#    difference between them is split into a lineage-mix component and a
+#    within-lineage rate component. Country is used here because it needs no
+#    derived column; read `turnover_share` in the output before the
+#    components, because these two collections share few lineages and the
+#    split is correspondingly weak.
+
+dataset:
+  name: streptococcus_suis_n677_contrast
+  strain_id_column: genome_id
+  data_dir: data
+  metadata: metadata.csv
+  lineage_column: mlst
+  contrast_column: isolation_country
+  contrast_levels: ["Canada", "United Kingdom"]
+
+  phenotype: calls_long.csv
+  phenotype_id_column: genome_id
+  phenotype_antibiotic_column: antibiotic
+  phenotype_call_column: call
+  # Each call is 1 when the MIC lies above the cut-off of its agent, not a
+  # clinical category; it is non-wild-type only where that cut-off is an ECOFF.
+  phenotype_kind: binary
+  # The calls are read within the country of isolation, as the MIC
+  # readings are read within laboratory and country: lineage labels are
+  # exchanged within a country, the interval draws each isolate's
+  # country with its call, and the bounds a call places on the latent
+  # ordering are the bounds within countries. The country also names the
+  # laboratory, since each laboratory read the isolates of its countries.
+  phenotype_covariate_column: isolation_country
+  phenotype_positive_definition: >-
+    MIC above the cut-off of its agent: non-wild-type for tetracycline
+    (EUCAST ECOFF), doxycycline and erythromycin (tentative EUCAST ECOFFs);
+    above a cut-off derived from this collection for the other ten
+  phenotype_source: >-
+    MIC against the cut-off of each agent in DATA_PROVENANCE.md section 2:
+    EUCAST epidemiological cut-offs for tetracycline, doxycycline and
+    erythromycin, collection-specific cut-offs for the other ten
+
+  mic: mic_panel.csv
+  mic_id_column: genome_id
+  mic_antibiotic_column: antibiotic
+  mic_value_column: measurement
+  # The unit of every reading, mg/L throughout; a row in another unit
+  # would be set aside and counted.
+  mic_unit_column: measurement_unit
+  # Two laboratories read the panel and tested different ranges, so the end
+  # wells are found within each laboratory (build_mic_table.py names them).
+  mic_panel_column: testing_laboratory
+  # The country of isolation joins the laboratory in the strata of the MIC
+  # ordering: the source study found consistently higher MICs in Canadian
+  # isolates across lineages, so a shift between countries is not read as a
+  # lineage effect; the country also distinguishes the two laboratories.
+  mic_covariate_column: isolation_country

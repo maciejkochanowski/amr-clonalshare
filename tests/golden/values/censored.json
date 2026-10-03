@@ -1,0 +1,90 @@
+{
+ "by_panel": [
+  [
+   "-inf",
+   -1.0,
+   1.0,
+   "-inf",
+   0.0
+  ],
+  [
+   -2.0,
+   0.0,
+   "inf",
+   -1.0,
+   "inf"
+  ]
+ ],
+ "from_binary": [
+  [
+   "-inf",
+   1.0,
+   1.0,
+   "-inf"
+  ],
+  [
+   1.0,
+   "inf",
+   "inf",
+   1.0
+  ]
+ ],
+ "from_mic": [
+  [
+   "-inf",
+   -2.0,
+   -1.0,
+   1.0,
+   2.0
+  ],
+  [
+   -2.0,
+   -1.0,
+   0.0,
+   "inf",
+   "inf"
+  ]
+ ],
+ "from_mic_uncensored_ends": [
+  [
+   -3.0,
+   -2.0,
+   -1.0,
+   2.0
+  ],
+  [
+   -2.0,
+   -1.0,
+   0.0,
+   3.0
+  ]
+ ],
+ "geometry": {
+  "doubling": true,
+  "highest": 4.0,
+  "lattice": "doubling",
+  "lattice_ratios": [
+   2.0,
+   2.083
+  ],
+  "lowest": 0.0625,
+  "n_wells": 7,
+  "n_wells_recorded": 7,
+  "share_on_highest": 0.1111111111111111,
+  "share_on_lowest": 0.1111111111111111
+ },
+ "geometry_wells": {
+  "doubling": true,
+  "highest": 8.0,
+  "lattice": "given",
+  "lattice_ratios": [
+   2.0,
+   8.0
+  ],
+  "lowest": 0.25,
+  "n_wells": 6,
+  "n_wells_recorded": 3,
+  "share_on_highest": 0.25,
+  "share_on_lowest": 0.0
+ }
+}

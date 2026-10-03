@@ -1,0 +1,25 @@
+{
+ "read": {
+  "metadata.csv": "06a17a952e8c9169e9110fadb9106edcc4ed8f9b9aee0b0768323253dd0b926e",
+  "mic_two_categories.csv": "ac8628e518649142f929f5c15579b17a211c5cb86605a9b8230d98ebebcb730b"
+ },
+ "written": {
+  "data/metadata_periods.csv": "38c872a6ea4f70b4aa02fcdce6fb41ad9d73527568c59989ee22a516df7a3239",
+  "data/calls_two_categories.csv": "0c94da864a1322786ccf73803a749895a2fdde4b29235b4890a86b26ebc0beda",
+  "input.csv": "1ddef98963b061f1a246f5fc1a6a2e6615d77aa484d03049645f02bf7621bc4a"
+ },
+ "isolates_with_calls": 481,
+ "isolates_per_period": {
+  "2011-2013": 197,
+  "2014-2017": 284
+ },
+ "calls_above_cut": {
+  "cefotaxime": 241,
+  "ceftazidime": 110,
+  "ciprofloxacin": 359,
+  "gentamicin": 340,
+  "meropenem": 4,
+  "tetracycline": 459
+ },
+ "compared_agent": "ciprofloxacin"
+}

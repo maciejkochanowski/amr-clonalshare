@@ -1,0 +1,59 @@
+{
+ "attrs": {
+  "phenotype_reading": {
+   "agents": {
+    "a": {
+     "n_intermediate_dropped": 0,
+     "n_missing_calls": 0,
+     "n_readable_isolates": 4,
+     "n_recorded_isolates": 4,
+     "n_unrecognized_calls": 0,
+     "rows_read": 4
+    }
+   },
+   "ast_standard": null,
+   "ast_version": null,
+   "conflicting_key_examples": [],
+   "duplicate_policy": "error",
+   "intermediate_policy": null,
+   "isolates_without_readable_calls": 0,
+   "n_conflict_rows_dropped": 0,
+   "n_conflicting_keys": 0,
+   "n_conflicting_rows": 0,
+   "n_duplicate_rows": 0,
+   "n_identical_duplicates_collapsed": 0,
+   "n_intermediate_dropped": 0,
+   "n_missing_calls": 0,
+   "n_unrecognized_calls": 0,
+   "phenotype_kind": "wt_nwt",
+   "positive_coding": "NWT (non-wild-type)",
+   "positive_definition": "NWT (non-wild-type)",
+   "rows_read": 4,
+   "source": null,
+   "unrecognized_calls": {}
+  }
+ },
+ "columns": [
+  "a"
+ ],
+ "index": [
+  "000",
+  "001",
+  "002",
+  "003"
+ ],
+ "rows": [
+  [
+   0.0
+  ],
+  [
+   1.0
+  ],
+  [
+   1.0
+  ],
+  [
+   0.0
+  ]
+ ]
+}

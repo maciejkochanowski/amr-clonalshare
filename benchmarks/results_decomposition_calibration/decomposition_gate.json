@@ -1,0 +1,118 @@
+{
+ "rule": "lowest threshold at and above which no cell with at least 100 datasets at or above the threshold covers either component below 0.89",
+ "thresholds": [
+  {
+   "threshold": 0.5,
+   "composition_lowest_coverage": 0.7264705882352941,
+   "composition_cells_judged": 695,
+   "within_lineage_lowest_coverage": 0.6588235294117647,
+   "within_lineage_cells_judged": 695
+  },
+  {
+   "threshold": 0.55,
+   "composition_lowest_coverage": 0.7220779220779221,
+   "composition_cells_judged": 692,
+   "within_lineage_lowest_coverage": 0.6857142857142857,
+   "within_lineage_cells_judged": 692
+  },
+  {
+   "threshold": 0.6,
+   "composition_lowest_coverage": 0.7083333333333334,
+   "composition_cells_judged": 684,
+   "within_lineage_lowest_coverage": 0.7,
+   "within_lineage_cells_judged": 684
+  },
+  {
+   "threshold": 0.65,
+   "composition_lowest_coverage": 0.7620967741935484,
+   "composition_cells_judged": 671,
+   "within_lineage_lowest_coverage": 0.7560483870967742,
+   "within_lineage_cells_judged": 671
+  },
+  {
+   "threshold": 0.7,
+   "composition_lowest_coverage": 0.768640350877193,
+   "composition_cells_judged": 593,
+   "within_lineage_lowest_coverage": 0.7675438596491229,
+   "within_lineage_cells_judged": 593
+  },
+  {
+   "threshold": 0.75,
+   "composition_lowest_coverage": 0.7760683760683761,
+   "composition_cells_judged": 534,
+   "within_lineage_lowest_coverage": 0.8051282051282052,
+   "within_lineage_cells_judged": 534
+  },
+  {
+   "threshold": 0.8,
+   "composition_lowest_coverage": 0.7882736156351792,
+   "composition_cells_judged": 478,
+   "within_lineage_lowest_coverage": 0.8414766558089034,
+   "within_lineage_cells_judged": 478
+  },
+  {
+   "threshold": 0.85,
+   "composition_lowest_coverage": 0.8127659574468085,
+   "composition_cells_judged": 372,
+   "within_lineage_lowest_coverage": 0.8574468085106383,
+   "within_lineage_cells_judged": 372
+  },
+  {
+   "threshold": 0.9,
+   "composition_lowest_coverage": 0.8571428571428571,
+   "composition_cells_judged": 293,
+   "within_lineage_lowest_coverage": 0.8642857142857143,
+   "within_lineage_cells_judged": 293
+  },
+  {
+   "threshold": 0.95,
+   "composition_lowest_coverage": 0.9166666666666666,
+   "composition_cells_judged": 173,
+   "within_lineage_lowest_coverage": 0.9050279329608939,
+   "within_lineage_cells_judged": 173
+  }
+ ],
+ "gate": 0.95,
+ "intervals": {
+  "composition_percentile": {
+   "lowest": 0.741,
+   "cells_below_0_925": 103
+  },
+  "composition_basic": {
+   "lowest": 0.757,
+   "cells_below_0_925": 115
+  },
+  "composition_bias_corrected": {
+   "lowest": 0.785,
+   "cells_below_0_925": 111
+  },
+  "composition_bias_shifted": {
+   "lowest": 0.779,
+   "cells_below_0_925": 110
+  },
+  "composition_studentised": {
+   "lowest": 0.772,
+   "cells_below_0_925": 111
+  },
+  "within_lineage_percentile": {
+   "lowest": 0.471,
+   "cells_below_0_925": 134
+  },
+  "within_lineage_basic": {
+   "lowest": 0.54,
+   "cells_below_0_925": 380
+  },
+  "within_lineage_bias_corrected": {
+   "lowest": 0.599,
+   "cells_below_0_925": 359
+  },
+  "within_lineage_bias_shifted": {
+   "lowest": 0.597,
+   "cells_below_0_925": 370
+  },
+  "within_lineage_studentised": {
+   "lowest": 0.582,
+   "cells_below_0_925": 355
+  }
+ }
+}

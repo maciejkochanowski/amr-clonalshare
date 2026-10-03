@@ -1,0 +1,53 @@
+{
+  "title": "amr-clonalshare: lineage structure in antimicrobial susceptibility tables, and the lineage share that censored MIC readings guarantee",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "license": "MIT",
+  "description": "<p>Version 1.0.0. Lineage shares of antimicrobial phenotypes from exported susceptibility tables and a lineage column, without genomes. For MICs, the lineage share of the MIC ordering: every dilution reading is scored by its mid-distribution position under the nonparametric maximum-likelihood distribution of its testing laboratory's readings, which gives an analogue, for the observed lineages, of the rank intraclass correlation extended to censored readings on laboratory-specific panels, with an interval for the represented lineages and a permutation test within laboratories, and bounds on the lineage share of the unobserved MIC ordering whose lower end, the share the readings guarantee, is computed with a certified error. For calls, a permutation-adjusted cross-validated Brier skill score with held-out e-values. Also a Kitagawa decomposition of a prevalence difference into lineage composition and change within lineages, a comparison of two lineage definitions that separates record selection, the isolates each sets aside as singletons and relabelling on the isolates both score, with paired intervals for its terms. Tested in a confirmatory campaign whose designs, seeds and decision rules were committed before it runs (benchmarks/CONFIRMATORY_PROTOCOL.md), including a comparison with seven published procedures run in R; its verdicts carry receipts naming the commit that produced them.</p>",
+  "creators": [
+    {
+      "name": "Kochanowski, Maciej",
+      "affiliation": "Department of Bacteriology and Bacterial Diseases, National Veterinary Research Institute, 57 Partyzantów Avenue, 24-100 Puławy, Poland",
+      "orcid": "0000-0002-9982-3028"
+    }
+  ],
+  "keywords": [
+    "antimicrobial resistance",
+    "bacterial lineage",
+    "minimum inhibitory concentration",
+    "interval censoring",
+    "partial identification",
+    "veterinary surveillance",
+    "mid-distribution score",
+    "rank intraclass correlation",
+    "Kitagawa decomposition",
+    "anytime-valid inference",
+    "Streptococcus suis",
+    "Salmonella",
+    "reproducible research",
+    "bioinformatics"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.1186/s12915-021-01094-1",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1093/nar/gkac1003",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/maciejkochanowski/amr-clonalshare",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Simulation drivers, the protocol of the confirmatory campaign (benchmarks/CONFIRMATORY_PROTOCOL.md), its launch scripts (benchmarks/campaign) and the folder its verdicts and receipts are written to (benchmarks/results_confirmatory) are in benchmarks/; the pinned container image is published to the GitHub Container Registry with every release. The Streptococcus suis example data derive from Hadjirin et al. 2021, BMC Biology 19:191, under CC BY 4.0; retrieval, cut-off derivation, metadata repairs and the population-cluster join are documented and reproducible in examples/ssuis/DATA_PROVENANCE.md."
+}

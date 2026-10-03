@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "kind": "matched_lineage_comparison",
+  "files": {
+    "arms.csv": "852cc20465a7bf94f01625ffd41a369d6a687869b027f0237f1f11482637b35f",
+    "comparison.json": "e71ab9ecc39a56b2dd734eeee9e139727698543d78735a19a5c7452a29967751",
+    "report.md": "ce2f94e1660add422d0763f1a39b7b8ee9bcbfa13f40ef95ea3059265c0a83f1"
+  }
+}

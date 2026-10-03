@@ -1,0 +1,101 @@
+........................................................................ [  8%]
+........................................................................ [ 16%]
+........................................................................ [ 24%]
+........................................................................ [ 33%]
+........................................................................ [ 41%]
+........................................................................ [ 49%]
+........................................................................ [ 57%]
+........................................................................ [ 66%]
+........................................................................ [ 74%]
+........................................................................ [ 82%]
+........................................................................ [ 91%]
+........................................................................ [ 99%]
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+tests/test_data_boundary.py::test_duplicate_policies_and_empty_agent_registry
+  /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/source/tests/test_data_boundary.py:55: RuntimeWarning: undeclared phenotype vocabulary: declare clinical_sir, wt_nwt or binary for explicit interpretation
+    positive = to_non_susceptible(d, duplicate_policy='positive_wins')
+
+tests/test_data_boundary.py::test_duplicate_policies_and_empty_agent_registry
+tests/test_data_boundary.py::test_undeclared_vocabulary_reads_resistance_words_only[non_susceptible]
+tests/test_data_boundary.py::test_undeclared_vocabulary_reads_resistance_words_only[susceptible]
+tests/test_data_boundary.py::test_undeclared_vocabulary_reads_resistance_words_only[drop]
+  /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/source/src/amr_clonalshare/phenotype.py:126: RuntimeWarning: phenotype table: explicit positive_wins duplicate policy; conflicting call positives win and other tables keep the first record
+    resolved, counts = resolve_duplicates(df, [id_column, antibiotic_column], ['_canonical'], duplicate_policy,
+
+tests/test_data_boundary.py::test_union_raw_universe_preserves_ids_and_metadata_inventory
+  /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/source/src/amr_clonalshare/io.py:334: RuntimeWarning: MIC table joined 33.3% of the raw cohort; the censored share describes its readable subset. See mic_join.
+    mic, mic_join = _load_mic(cfg, cfg.mic_path, core)
+
+tests/test_data_boundary.py: 23 warnings
+  /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/source/src/amr_clonalshare/io.py:200: RuntimeWarning: undeclared phenotype vocabulary: declare clinical_sir, wt_nwt or binary for explicit interpretation
+    panel = to_non_susceptible(
+
+tests/test_data_boundary.py::test_mic_blank_unknown_invalid_and_operator_conflict
+  /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/source/src/amr_clonalshare/io.py:334: RuntimeWarning: MIC table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_mic_blank_unknown_invalid0/mic.csv holds 3 value(s) that do not parse as a positive finite concentration and are set aside: {'a': 3}. See mic_join.
+    mic, mic_join = _load_mic(cfg, cfg.mic_path, core)
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[a repeated row that agrees]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/baseline0/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[a repeated row that agrees]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_0/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[one lineage label blanked]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_2/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[one call blanked]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_3/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[one call in another vocabulary]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_4/data/calls.csv has 41 unrecognized call(s), set aside: {'n': 24, 't': 16, 'nd': 1}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[one call flipped to the rarer outcome]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_5/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[the rows in another order]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_6/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[an antimicrobial removed from the panel]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_7/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[an isolate with no label and no call]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_8/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[every isolate in one lineage]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_9/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[two labels exchanged]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_10/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_data_mutation.py::test_the_data_mutant_provokes_the_declared_reaction[one metadata row missing]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_the_data_mutant_provokes_11/data/calls.csv has 40 unrecognized call(s), set aside: {'n': 24, 't': 16}. See phenotype_reading in the input check.
+
+tests/test_golden_artefacts.py::test_written_artefacts_match_the_committed_copy[rough]
+tests/test_golden_artefacts.py::test_the_record_names_the_versions_it_was_produced_with[rough]
+tests/test_golden_artefacts.py::test_the_manifest_lists_every_artefact_with_its_digest[rough]
+  [amr-clonalshare] warning: phenotype table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/source/tests/golden/rough_data/calls.csv has 24 unrecognized call(s), set aside: {'nt': 24}. See phenotype_reading in the input check.
+
+tests/test_golden_values.py: 1 warning
+tests/test_gui.py: 2 warnings
+tests/test_input_boundary_regressions.py: 8 warnings
+tests/test_output_contract.py: 1 warning
+tests/test_phenotype.py: 8 warnings
+tests/test_pipeline_panels_and_strata.py: 11 warnings
+tests/test_public_release_contract.py: 1 warning
+tests/test_qc.py: 6 warnings
+tests/test_refusal_messages.py: 2 warnings
+tests/test_report.py: 1 warning
+tests/test_run.py: 17 warnings
+tests/test_status_reporting.py: 1 warning
+tests/test_surveillance_integration.py: 1 warning
+  [amr-clonalshare] warning: undeclared phenotype vocabulary: declare clinical_sir, wt_nwt or binary for explicit interpretation
+
+tests/test_golden_values.py::test_every_reported_value_matches_the_committed_record[phenotype_undeclared]
+  [amr-clonalshare] warning: phenotype table: explicit positive_wins duplicate policy; conflicting call positives win and other tables keep the first record
+
+tests/test_run.py::test_a_unit_column_sets_aside_readings_in_another_unit
+  [amr-clonalshare] warning: MIC table /net/storage/pr3/plgrid/plggzchsdbbpiwet/amr_reissue/tmp/24275795_0/pytest-of-plgmkochanowski/pytest-0/test_a_unit_column_sets_aside_0/data/mic.csv holds 5 row(s) in a unit other than mg/L and sets them aside: {'mm': 5}. See mic_join.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+869 passed, 107 warnings in 177.62s (0:02:57)

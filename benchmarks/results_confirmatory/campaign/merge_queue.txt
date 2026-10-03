@@ -1,0 +1,6 @@
+0	1	$PY benchmarks/estimator_benchmark.py --cell 16 --out $ROOT/outputs/estimator_grid_rerun --replicates 10000 --merge
+0	1	$PY benchmarks/estimator_benchmark.py --cell 119 --out $ROOT/outputs/estimator_grid_rerun --replicates 10000 --merge
+0	1	$PY benchmarks/estimator_benchmark.py --cell 120 --out $ROOT/outputs/estimator_grid_rerun --replicates 10000 --merge
+0	1	$PY benchmarks/estimator_benchmark.py --cell 123 --out $ROOT/outputs/estimator_grid_rerun --replicates 10000 --merge
+0	1	$PY benchmarks/estimator_benchmark.py --cell 124 --out $ROOT/outputs/estimator_grid_rerun --replicates 10000 --merge
+0	1	$PY benchmarks/estimator_benchmark.py --cell 78 --out $ROOT/outputs/estimator_grid_followup --replicates 10000 --merge

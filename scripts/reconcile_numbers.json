@@ -1,0 +1,3991 @@
+{
+ "constants": {
+  "checks_commit": "b9a9f50"
+ },
+ "about": "Every number the article and the supplement quote, with the record it is read from and the format that renders it. scripts/reconcile_numbers.py evaluates each expression against the repository and checks the literal against the documents. A claim whose text is '<generated>' is a table cell: its literal is whatever the expression renders, and the check is that the rendered string occurs in the document.",
+ "claims": [
+  {
+   "id": "ssuis.n_isolates",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "677",
+   "expr": "J('examples/ssuis/expected/clonal_share_result.json')['n_isolates']"
+  },
+  {
+   "id": "ssuis.n_agents_mic",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "sixteen",
+   "expr": "len(J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'])",
+   "format": "word"
+  },
+  {
+   "id": "ssuis.n_mlst",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "458",
+   "expr": "sum(1 for r in C('examples/ssuis/data/metadata.csv') if r['mlst'].strip())"
+  },
+  {
+   "id": "ssuis.n_calls",
+   "where": [
+    "manuscript"
+   ],
+   "text": "Thirteen",
+   "expr": "len(J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share'])",
+   "format": "Word"
+  },
+  {
+   "id": "ssuis.n_calls_s",
+   "where": [
+    "supplement"
+   ],
+   "text": "thirteen",
+   "expr": "len(J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share'])",
+   "format": "word"
+  },
+  {
+   "id": "ssuis.n_clusters",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "30",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['n_groups']",
+   "context": "{} population clusters"
+  },
+  {
+   "id": "ssuis.mic_records",
+   "where": [
+    "supplement"
+   ],
+   "text": "10,832",
+   "expr": "J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['join']['rows_read']",
+   "format": "{:,}"
+  },
+  {
+   "id": "ssuis.pigs",
+   "where": [
+    "supplement"
+   ],
+   "text": "650",
+   "expr": "sum(1 for r in C('examples/ssuis/data/metadata.csv') if r['host_name'].strip().lower().startswith('pig') or r['host_name'].strip().lower() in ('sus scrofa', 'swine', 'porcine'))"
+  },
+  {
+   "id": "ssuis.humans",
+   "where": [
+    "supplement"
+   ],
+   "text": "27",
+   "expr": "sum(1 for r in C('examples/ssuis/data/metadata.csv') if r['host_name'].strip().lower() in ('human', 'homo sapiens'))"
+  },
+  {
+   "id": "ssuis.vietnam",
+   "where": [
+    "supplement"
+   ],
+   "text": "49",
+   "expr": "sum(1 for r in C('examples/ssuis/data/metadata.csv') if r['isolation_country'].strip() == 'Vietnam')"
+  },
+  {
+   "id": "ssuis.mlst_clusters",
+   "where": [
+    "supplement"
+   ],
+   "text": "23 population clusters",
+   "expr": "len(set(r['baps_cluster'] for r in C('examples/ssuis/data/metadata.csv') if r['mlst'].strip()))",
+   "format": "{} population clusters"
+  },
+  {
+   "id": "ssuis.mlst_types",
+   "where": [
+    "supplement"
+   ],
+   "text": "108 sequence types",
+   "expr": "len(set(r['mlst'] for r in C('examples/ssuis/data/metadata.csv') if r['mlst'].strip()))",
+   "format": "{} sequence types"
+  },
+  {
+   "id": "mic.erythromycin.share",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.106",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['kappa_adj']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.erythromycin.low",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.063",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['observed_low']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.erythromycin.high",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.155",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['observed_high']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.penicillin.share",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.544",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['kappa_adj']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.penicillin.low",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.483",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['observed_low']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.penicillin.high",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.602",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['observed_high']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.lowest_share_agent",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "erythromycin",
+   "expr": "argmin({a: v['kappa_adj'] for a, v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.items()})"
+  },
+  {
+   "id": "mic.highest_share_agent",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "penicillin",
+   "expr": "argmax({a: v['kappa_adj'] for a, v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.items()})"
+  },
+  {
+   "id": "mic.selected",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "sixteen",
+   "expr": "len(J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['order_selection']['rejected_features'])",
+   "format": "word"
+  },
+  {
+   "id": "mic.lower_min",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.0007 (florfenicol)",
+   "expr": "(lambda d: '%.4f (%s)' % (min(d.values()), argmin(d)))({a: v['latent_order_lower'] for a, v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.items()})"
+  },
+  {
+   "id": "mic.lower_max",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.351 (tiamulin)",
+   "expr": "(lambda d: '%.3f (%s)' % (max(d.values()), argmax(d)))({a: v['latent_order_lower'] for a, v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.items()})"
+  },
+  {
+   "id": "mic.limit_positive_count",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "seven",
+   "expr": "sum(1 for v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.values() if round(v['latent_order_lower_limit'], 3) >= 0.001)",
+   "format": "word",
+   "note": "agents whose lower limit is at least 0.001 to three decimals, as Table A.11 prints it"
+  },
+  {
+   "id": "mic.limit_max",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.215",
+   "expr": "max(v['latent_order_lower_limit'] for v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.values())",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.limit_max_agent",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "tiamulin",
+   "expr": "argmax({a: v['latent_order_lower_limit'] for a, v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.items()})"
+  },
+  {
+   "id": "mic.end_well_majority",
+   "where": [
+    "manuscript"
+   ],
+   "text": "Five",
+   "expr": "sum(1 for v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.values() if v['share_end_wells'] > 0.5)",
+   "format": "Word"
+  },
+  {
+   "id": "mic.amoxicillin.end_wells",
+   "where": [
+    "manuscript"
+   ],
+   "text": "89%",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['share_end_wells']",
+   "format": "{:.0%}"
+  },
+  {
+   "id": "mic.amoxicillin.lower",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.038",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['latent_order_lower']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.amoxicillin.upper",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.860",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['latent_order_upper']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "mic.upper_certified_within_0.1",
+   "where": [
+    "supplement"
+   ],
+   "text": "three",
+   "expr": "sum(1 for v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.values() if v['latent_order_upper_exact'] or v['latent_order_upper_bound'] - v['latent_order_upper'] <= 0.1)",
+   "format": "word"
+  },
+  {
+   "id": "mic.uk_lower_range",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.009 to 0.449",
+   "expr": "(lambda xs: '%.3f to %.3f' % (min(xs), max(xs)))([v['latent_order_lower_within_strata']['LGC Fordham / United Kingdom'] for v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.values()])"
+  },
+  {
+   "id": "mic.canada_lower_range",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.001 to 0.389",
+   "expr": "(lambda xs: '%.3f to %.3f' % (min(xs), max(xs)))([v['latent_order_lower_within_strata']['LGC Fordham / Canada'] for v in {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}.values()])"
+  },
+  {
+   "id": "mic.p_floor",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.001",
+   "expr": "{a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['p_floor']",
+   "format": "{:.3f}",
+   "context": "minimum attainable value of {}"
+  },
+  {
+   "id": "tableS9.amoxicillin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.amoxicillin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['amoxicillin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.amoxicillin.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['amoxicillin']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['amoxicillin']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['amoxicillin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.cefquinome.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['cefquinome']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['cefquinome']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['cefquinome']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.cefquinome.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['cefquinome']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['cefquinome']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['cefquinome']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['cefquinome']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.cefquinome.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['cefquinome']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['cefquinome']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['cefquinome']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.ceftiofur.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['ceftiofur']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['ceftiofur']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['ceftiofur']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.ceftiofur.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['ceftiofur']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['ceftiofur']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['ceftiofur']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['ceftiofur']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.ceftiofur.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f to %.3f; %.3f' % (f(r['strata_lower']), f(r['strata_upper']), f(r['strata_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_calls.csv', agent='ceftiofur', dilutions_from_cutoff='0'))",
+   "note": "the call at its cut-off within the strata of the readings (laboratory by country), as Table A.11 prints it; the example record reads the calls within country"
+  },
+  {
+   "id": "tableS9.doxycycline.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['doxycycline']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['doxycycline']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['doxycycline']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.doxycycline.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['doxycycline']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['doxycycline']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['doxycycline']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['doxycycline']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.doxycycline.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['doxycycline']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['doxycycline']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['doxycycline']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.enrofloxacin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['enrofloxacin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['enrofloxacin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['enrofloxacin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.enrofloxacin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['enrofloxacin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['enrofloxacin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['enrofloxacin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['enrofloxacin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.erythromycin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.erythromycin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['erythromycin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.erythromycin.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['erythromycin']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['erythromycin']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['erythromycin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.florfenicol.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['florfenicol']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['florfenicol']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['florfenicol']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.florfenicol.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['florfenicol']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['florfenicol']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['florfenicol']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['florfenicol']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.lincomycin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['lincomycin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['lincomycin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['lincomycin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.lincomycin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['lincomycin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['lincomycin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['lincomycin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['lincomycin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.lincomycin.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['lincomycin']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['lincomycin']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['lincomycin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.marbofloxacin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['marbofloxacin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['marbofloxacin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['marbofloxacin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.marbofloxacin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['marbofloxacin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['marbofloxacin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['marbofloxacin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['marbofloxacin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.penicillin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.penicillin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['penicillin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.penicillin.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['penicillin']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['penicillin']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['penicillin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.spectinomycin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['spectinomycin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['spectinomycin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['spectinomycin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.spectinomycin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['spectinomycin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['spectinomycin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['spectinomycin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['spectinomycin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.spectinomycin.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['spectinomycin']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['spectinomycin']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['spectinomycin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.tetracycline.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tetracycline']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tetracycline']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tetracycline']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.tetracycline.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tetracycline']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tetracycline']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tetracycline']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tetracycline']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.tetracycline.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tetracycline']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tetracycline']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tetracycline']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.tiamulin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tiamulin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tiamulin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tiamulin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.tiamulin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tiamulin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tiamulin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tiamulin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tiamulin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.tiamulin.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tiamulin']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tiamulin']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tiamulin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.tilmicosin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tilmicosin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tilmicosin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tilmicosin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.tilmicosin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tilmicosin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tilmicosin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tilmicosin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tilmicosin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.tilmicosin.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tilmicosin']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tilmicosin']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tilmicosin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.trimethoprim.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['trimethoprim']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['trimethoprim']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['trimethoprim']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.trimethoprim.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['trimethoprim']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['trimethoprim']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['trimethoprim']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['trimethoprim']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.trimethoprim.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['trimethoprim']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['trimethoprim']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['trimethoprim']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.tylosin.share",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f (%.3f to %.3f)' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tylosin']['kappa_adj'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tylosin']['observed_low'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tylosin']['observed_high'])",
+   "note": "text filled by the generator"
+  },
+  {
+   "id": "tableS9.tylosin.bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f (<= %.3f); %.3f' % ({a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tylosin']['latent_order_lower'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tylosin']['latent_order_upper'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tylosin']['latent_order_upper_bound'], {a: v['order'] for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items()}['tylosin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "tableS9.tylosin.call_bounds",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f to %.3f; %.3f' % (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tylosin']['latent_order_lower'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tylosin']['latent_order_upper'], J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share']['tylosin']['latent_order_lower_limit'])"
+  },
+  {
+   "id": "panel.n",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "628",
+   "expr": "int(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='panel')['n'])",
+   "context": "{} isolates"
+  },
+  {
+   "id": "panel.agents_with_call",
+   "where": [
+    "manuscript"
+   ],
+   "text": "fourteen",
+   "expr": "len(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', panel='call'))",
+   "format": "word"
+  },
+  {
+   "id": "panel.call_below_half",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "twelve",
+   "expr": "sum(1 for r in rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', panel='call') if f(r['latent_order_lower']) < 0.5 * f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent=r['agent'], panel='panel')['latent_order_lower']))",
+   "format": "word"
+  },
+  {
+   "id": "panel.never_rose",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0",
+   "expr": "sum(1 for a in set(r['agent'] for r in C('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv')) for p, q in (('panel', 'every 2'), ('every 2', 'every 4'), ('every 4', 'call')) if rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent=a, panel=q) and f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent=a, panel=q)['latent_order_lower']) > f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent=a, panel=p)['latent_order_lower']) + 1e-12)",
+   "context": "never increased",
+   "note": "the number of coarsenings on which the guaranteed share rose; the article says it never rose"
+  },
+  {
+   "id": "panel.tiamulin.call.kappa_adj",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.400",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='call')['kappa_adj'])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "panel.tiamulin.panel.kappa_adj",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.493",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='panel')['kappa_adj'])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "panel.tiamulin.call.latent_order_lower",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.042",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='call')['latent_order_lower'])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "panel.tiamulin.panel.latent_order_lower",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.384",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='panel')['latent_order_lower'])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "panel.trimethoprim.call.kappa_adj",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.300",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='trimethoprim', panel='call')['kappa_adj'])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "panel.trimethoprim.panel.kappa_adj",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.260",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='trimethoprim', panel='panel')['kappa_adj'])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "panel.trimethoprim.call.latent_order_lower",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.022",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='trimethoprim', panel='call')['latent_order_lower'])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "panel.trimethoprim.panel.latent_order_lower",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.196",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='trimethoprim', panel='panel')['latent_order_lower'])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "panel.limit_positive_full",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "seven",
+   "expr": "sum(1 for r in rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', panel='panel') if round(f(r['latent_order_lower_limit']), 3) >= 0.001)",
+   "format": "word"
+  },
+  {
+   "id": "panel.limit_positive_call",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "two",
+   "expr": "sum(1 for r in rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', panel='call') if round(f(r['latent_order_lower_limit']), 3) >= 0.001)",
+   "format": "word"
+  },
+  {
+   "id": "trend.earlier",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "30 of 182",
+   "expr": "'%s of %s' % (row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Earlier', scope='All records')['positive'], row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Earlier', scope='All records')['n'])"
+  },
+  {
+   "id": "trend.later",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "60 of 231",
+   "expr": "'%s of %s' % (row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Later', scope='All records')['positive'], row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Later', scope='All records')['n'])"
+  },
+  {
+   "id": "trend.difference_points",
+   "where": [
+    "manuscript"
+   ],
+   "text": "9.5",
+   "expr": "100 * (f(row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Later', scope='All records')['prevalence']) - f(row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Earlier', scope='All records')['prevalence']))",
+   "format": "{:.1f}"
+  },
+  {
+   "id": "trend.composition",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "+13.1",
+   "expr": "100 * J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['composition']",
+   "format": "{:+.1f}"
+  },
+  {
+   "id": "trend.composition_low",
+   "where": [
+    "manuscript"
+   ],
+   "text": "+6.6",
+   "expr": "100 * J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['composition_ci95'][0]",
+   "format": "{:+.1f}"
+  },
+  {
+   "id": "trend.composition_high",
+   "where": [
+    "manuscript"
+   ],
+   "text": "+19.3",
+   "expr": "100 * J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['composition_ci95'][1]",
+   "format": "{:+.1f}"
+  },
+  {
+   "id": "trend.within",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "-3.6",
+   "expr": "100 * J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['within_lineage']",
+   "format": "{:+.1f}"
+  },
+  {
+   "id": "trend.within_low",
+   "where": [
+    "manuscript"
+   ],
+   "text": "-9.8",
+   "expr": "100 * J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['within_lineage_ci95'][0]",
+   "format": "{:+.1f}"
+  },
+  {
+   "id": "trend.within_high",
+   "where": [
+    "manuscript"
+   ],
+   "text": "+2.8",
+   "expr": "100 * J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['within_lineage_ci95'][1]",
+   "format": "{:+.1f}"
+  },
+  {
+   "id": "trend.nonshared",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "8.2",
+   "expr": "100 * J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['nonshared']",
+   "format": "{:.1f}",
+   "context": "{} points of the composition component|{} arose"
+  },
+  {
+   "id": "trend.composition_shared",
+   "where": [
+    "supplement"
+   ],
+   "text": "4.9",
+   "expr": "100 * J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['composition_shared']",
+   "format": "{:.1f}",
+   "context": "{} from shared lineages"
+  },
+  {
+   "id": "trend.support_earlier",
+   "where": [
+    "supplement"
+   ],
+   "text": "99.5%",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['shared_support_b']",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "trend.support_later",
+   "where": [
+    "supplement"
+   ],
+   "text": "89.6%",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['shared_support_a']",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "trend.support_mean",
+   "where": [
+    "supplement"
+   ],
+   "text": "94.5%",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['shared_support_isolate_share']",
+   "format": "{:.1%}",
+   "context": "a mean of {}",
+   "note": "added by the audit round: the gate reads the mean of the two"
+  },
+  {
+   "id": "trend.gate",
+   "where": [
+    "supplement"
+   ],
+   "text": "90%",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_decomposition.json')['shared_support_threshold']",
+   "format": "{:.0%}",
+   "context": "gate of {}"
+  },
+  {
+   "id": "trend.mlst_earlier",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "27/177",
+   "expr": "'%s/%s' % (row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Earlier', scope='MLST available')['positive'], row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Earlier', scope='MLST available')['n'])"
+  },
+  {
+   "id": "trend.mlst_later",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "4/93",
+   "expr": "'%s/%s' % (row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Later', scope='MLST available')['positive'], row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Later', scope='MLST available')['n'])"
+  },
+  {
+   "id": "trend.mlst_difference",
+   "where": [
+    "manuscript"
+   ],
+   "text": "-11.0",
+   "expr": "100 * (f(row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Later', scope='MLST available')['prevalence']) - f(row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Earlier', scope='MLST available')['prevalence']))",
+   "format": "{:+.1f}"
+  },
+  {
+   "id": "trend.typing_earlier",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "97.3%",
+   "expr": "f(row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Earlier', scope='MLST available')['n']) / f(row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Earlier', scope='All records')['n'])",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "trend.typing_later",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "40.3%",
+   "expr": "f(row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Later', scope='MLST available')['n']) / f(row('benchmarks/results_empirical/ssuis/ceftiofur_counts.csv', period='Later', scope='All records')['n'])",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "cmp.ceftiofur.share_a",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.524",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['arms']['a_available']['share']['kappa_adj']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.share_b",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.615",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.n_a",
+   "where": [
+    "supplement"
+   ],
+   "text": "674",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['arms']['a_available']['share']['n_scored']",
+   "context": "on the {} isolates"
+  },
+  {
+   "id": "cmp.ceftiofur.n_scorable",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "393",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['counts']['common_scorable']",
+   "context": "the {} isolates|the {} it scores"
+  },
+  {
+   "id": "cmp.ceftiofur.total",
+   "where": [
+    "manuscript"
+   ],
+   "text": "+0.091",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['difference_decomposition']['total_difference']",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.total_low",
+   "where": [
+    "manuscript"
+   ],
+   "text": "-0.142",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['total_difference'][0]",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.total_high",
+   "where": [
+    "manuscript"
+   ],
+   "text": "0.354",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['total_difference'][1]",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.selection",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "-0.168",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['difference_decomposition']['selection_from_a']",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.selection_low",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "-0.252",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['selection_from_a'][0]",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.selection_high",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "-0.063",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['selection_from_a'][1]",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.singletons",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "+0.041",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['difference_decomposition']['singletons_under_a']",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.singletons_low",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "-0.087",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['singletons_under_a'][0]",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.singletons_high",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.202",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['singletons_under_a'][1]",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.relabelling",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "+0.218",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['difference_decomposition']['label_difference_on_scorable']",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.relabelling_low",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.049",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "cmp.ceftiofur.relabelling_high",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "0.424",
+   "expr": "J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "cmp.relabelling_excludes_zero",
+   "where": [
+    "supplement"
+   ],
+   "text": "nine",
+   "expr": "sum(1 for a in [\"amoxicillin\", \"cefquinome\", \"ceftiofur\", \"doxycycline\", \"erythromycin\", \"lincomycin\", \"penicillin\", \"spectinomycin\", \"tetracycline\", \"tiamulin\", \"tilmicosin\", \"trimethoprim\", \"tylosin\"] if (lambda iv: iv[0] > 0 or iv[1] < 0)(J('benchmarks/results_empirical/ssuis/%s_comparison.json' % a)['paired_intervals']['label_difference_on_scorable']))",
+   "format": "word"
+  },
+  {
+   "id": "tableS11.amoxicillin.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.amoxicillin.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.amoxicillin.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.amoxicillin.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/amoxicillin_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.cefquinome.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.cefquinome.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.cefquinome.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.cefquinome.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/cefquinome_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.ceftiofur.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.ceftiofur.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.ceftiofur.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.ceftiofur.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/ceftiofur_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.doxycycline.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.doxycycline.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.doxycycline.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.doxycycline.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/doxycycline_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.erythromycin.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.erythromycin.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.erythromycin.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.erythromycin.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/erythromycin_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.lincomycin.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.lincomycin.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.lincomycin.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.lincomycin.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/lincomycin_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.penicillin.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.penicillin.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.penicillin.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.penicillin.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/penicillin_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.spectinomycin.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.spectinomycin.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.spectinomycin.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.spectinomycin.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/spectinomycin_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tetracycline.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.tetracycline.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tetracycline.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tetracycline.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tetracycline_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tiamulin.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.tiamulin.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tiamulin.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tiamulin.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tiamulin_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tilmicosin.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.tilmicosin.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tilmicosin.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tilmicosin.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tilmicosin_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.trimethoprim.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.trimethoprim.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.trimethoprim.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.trimethoprim.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/trimethoprim_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tylosin.shares",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%.3f' % J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['arms']['a_available']['share']['kappa_adj'] + ' ' + '%.3f' % J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['arms']['b_available']['share']['kappa_adj']",
+   "note": "share A and share B as two adjacent cells"
+  },
+  {
+   "id": "tableS11.tylosin.selection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['difference_decomposition']['selection_from_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['paired_intervals']['selection_from_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['paired_intervals']['selection_from_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tylosin.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['difference_decomposition']['singletons_under_a'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['paired_intervals']['singletons_under_a'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['paired_intervals']['singletons_under_a'][1]).replace('+', ''))"
+  },
+  {
+   "id": "tableS11.tylosin.relabelling",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "'%+.3f (%s to %s)' % (J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['difference_decomposition']['label_difference_on_scorable'], ('%+.3f' % J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['paired_intervals']['label_difference_on_scorable'][0]).replace('+', ''), ('%+.3f' % J('benchmarks/results_empirical/ssuis/tylosin_comparison.json')['paired_intervals']['label_difference_on_scorable'][1]).replace('+', ''))"
+  },
+  {
+   "id": "sal.n",
+   "where": [
+    "supplement"
+   ],
+   "text": "7,049",
+   "expr": "J('examples/salmonella_poultry/expected_serovar/clonal_share_result.json')['n_isolates']",
+   "format": "{:,}"
+  },
+  {
+   "id": "sal.serovars",
+   "where": [
+    "supplement"
+   ],
+   "text": "85 serovars",
+   "expr": "len(set(r['serovar'] for r in C('examples/salmonella_poultry/data/metadata.csv')))",
+   "format": "{} serovars"
+  },
+  {
+   "id": "sal.clusters",
+   "where": [
+    "supplement"
+   ],
+   "text": "534 SNP clusters",
+   "expr": "len(set(r['pds_cluster'] for r in C('examples/salmonella_poultry/data/metadata.csv')))",
+   "format": "{} SNP clusters"
+  },
+  {
+   "id": "sal.years",
+   "where": [
+    "supplement"
+   ],
+   "text": "2002-2021",
+   "expr": "'%s-%s' % (min(int(r['collection_year']) for r in C('examples/salmonella_poultry/data/metadata.csv')), max(int(r['collection_year']) for r in C('examples/salmonella_poultry/data/metadata.csv')))"
+  },
+  {
+   "id": "sal.common",
+   "where": [
+    "supplement"
+   ],
+   "text": "6,915",
+   "expr": "J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['counts']['common']",
+   "format": "{:,}"
+  },
+  {
+   "id": "sal.positive",
+   "where": [
+    "supplement"
+   ],
+   "text": "584",
+   "expr": "J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['a_available']['n_positive']",
+   "context": "{} of which"
+  },
+  {
+   "id": "sal.share_a",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.943 (0.905 to 0.982)",
+   "expr": "'%.3f (%.3f to %.3f)' % (J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['a_available']['share']['kappa_adj'], J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['a_available']['share']['observed_low'], J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['a_available']['share']['observed_high'])"
+  },
+  {
+   "id": "sal.groups_a",
+   "where": [
+    "supplement"
+   ],
+   "text": "307",
+   "expr": "J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['a_available']['share']['n_groups_repeated']",
+   "context": "over {} non-singleton SNP clusters"
+  },
+  {
+   "id": "sal.share_b",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.765 (0.731 to 0.800)",
+   "expr": "'%.3f (%.3f to %.3f)' % (J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['b_available']['share']['kappa_adj'], J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['b_available']['share']['observed_low'], J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['b_available']['share']['observed_high'])"
+  },
+  {
+   "id": "sal.groups_b",
+   "where": [
+    "supplement"
+   ],
+   "text": "64",
+   "expr": "J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['arms']['b_available']['share']['n_groups_repeated']",
+   "context": "over {} non-singleton serovars"
+  },
+  {
+   "id": "sal.total",
+   "where": [
+    "supplement"
+   ],
+   "text": "-0.178 (-0.200 to -0.154)",
+   "expr": "'%+.3f (%+.3f to %+.3f)' % (J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['difference_decomposition']['total_difference'], J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['paired_intervals']['total_difference'][0], J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['paired_intervals']['total_difference'][1])"
+  },
+  {
+   "id": "sal.singletons",
+   "where": [
+    "supplement"
+   ],
+   "text": "-0.010",
+   "expr": "J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['difference_decomposition']['singletons_under_a'] + J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['difference_decomposition']['singletons_under_b']",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "sal.relabelling",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "-0.167 (-0.186 to -0.148",
+   "expr": "'%+.3f (%+.3f to %+.3f' % (J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['difference_decomposition']['label_difference_on_scorable'], J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['paired_intervals']['label_difference_on_scorable'][0], J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['paired_intervals']['label_difference_on_scorable'][1])",
+   "note": "the manuscript closes the parenthesis after a cross-reference"
+  },
+  {
+   "id": "sal.scorable",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "6,717",
+   "expr": "J('benchmarks/results_empirical/salmonella/nalidixic_matched_comparison.json')['counts']['common_scorable']",
+   "format": "{:,}"
+  },
+  {
+   "id": "ver.interval_designs",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "224",
+   "expr": "len(rows('benchmarks/results_confirmatory/verdicts.csv', procedure='interval for the lineages in hand'))",
+   "context": "all {} designs"
+  },
+  {
+   "id": "ver.interval_meets",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "224",
+   "expr": "sum(1 for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='interval for the lineages in hand') if r['verdict'] == 'meets')",
+   "context": "met the prespecified criterion in all {} designs|met the criterion in all {} designs"
+  },
+  {
+   "id": "ver.interval_min_coverage",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "94.2%",
+   "expr": "min(f(r['rate']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='interval for the lineages in hand'))",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "ver.interval_max_coverage",
+   "where": [
+    "manuscript"
+   ],
+   "text": "100.0%",
+   "expr": "max(f(r['rate']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='interval for the lineages in hand'))",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "ver.rerun_cells",
+   "where": [
+    "supplement"
+   ],
+   "text": "five",
+   "expr": "sum(1 for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='interval for the lineages in hand') if r['study'] == '1' and r['replicates'] == '10000')",
+   "format": "word"
+  },
+  {
+   "id": "ver.rerun_replicates",
+   "where": [
+    "supplement"
+   ],
+   "text": "10,000",
+   "expr": "max(int(r['replicates']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='interval for the lineages in hand') if r['study'] == '1')",
+   "format": "{:,}"
+  },
+  {
+   "id": "ver.paired_terms",
+   "where": [
+    "supplement"
+   ],
+   "text": "25",
+   "expr": "len(rows('benchmarks/results_confirmatory/verdicts.csv', procedure='paired intervals of the comparison'))",
+   "context": "{}/{} terms"
+  },
+  {
+   "id": "ver.paired_min_coverage",
+   "where": [
+    "supplement"
+   ],
+   "text": "96.3%",
+   "expr": "min(f(r['rate']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='paired intervals of the comparison'))",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "ver.level_designs",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "31",
+   "expr": "len([r for r in C('benchmarks/results_confirmatory/verdicts.csv') if r['procedure'] in ('level of the test', 'level of the test within laboratories', 'level of the test within units')])",
+   "context": "30 of {} designs"
+  },
+  {
+   "id": "ver.level_meets",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "30",
+   "expr": "sum(1 for r in [r for r in C('benchmarks/results_confirmatory/verdicts.csv') if r['procedure'] in ('level of the test', 'level of the test within laboratories', 'level of the test within units')] if r['verdict'] == 'meets')",
+   "context": "{} of 31 designs"
+  },
+  {
+   "id": "ver.level_min",
+   "where": [
+    "manuscript"
+   ],
+   "text": "3.0%",
+   "expr": "min(f(r['rate']) for r in [r for r in C('benchmarks/results_confirmatory/verdicts.csv') if r['procedure'] in ('level of the test', 'level of the test within laboratories', 'level of the test within units')])",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "ver.level_max",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "6.1%",
+   "expr": "max(f(r['rate']) for r in [r for r in C('benchmarks/results_confirmatory/verdicts.csv') if r['procedure'] in ('level of the test', 'level of the test within laboratories', 'level of the test within units')])",
+   "format": "{:.1%}",
+   "context": "to {} of|in {} of|rate {}"
+  },
+  {
+   "id": "ver.level_fail_design",
+   "where": [
+    "supplement"
+   ],
+   "text": "trait G=1000 m=3 share=0.0 balanced normal p=0.25",
+   "expr": "[r['design'] for r in [r for r in C('benchmarks/results_confirmatory/verdicts.csv') if r['procedure'] in ('level of the test', 'level of the test within laboratories', 'level of the test within units')] if r['verdict'] != 'meets'][0]"
+  },
+  {
+   "id": "ver.level_fail_bound",
+   "where": [
+    "supplement"
+   ],
+   "text": "7.8%",
+   "expr": "[f(r['bound']) for r in [r for r in C('benchmarks/results_confirmatory/verdicts.csv') if r['procedure'] in ('level of the test', 'level of the test within laboratories', 'level of the test within units')] if r['verdict'] != 'meets'][0]",
+   "format": "{:.1%}",
+   "context": "upper confidence bound of {}"
+  },
+  {
+   "id": "ver.level_fail_replicates",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "2,000",
+   "expr": "[int(r['replicates']) for r in [r for r in C('benchmarks/results_confirmatory/verdicts.csv') if r['procedure'] in ('level of the test', 'level of the test within laboratories', 'level of the test within units')] if r['verdict'] != 'meets'][0]",
+   "format": "{:,}"
+  },
+  {
+   "id": "ver.ignoring_max",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "100.0%",
+   "expr": "max(f(r['rate']) for r in C('benchmarks/results_confirmatory/verdicts.csv') if 'ignoring' in r['procedure'])",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "ver.ignoring_units_max",
+   "where": [
+    "supplement"
+   ],
+   "text": "98.1%",
+   "expr": "max(f(r['rate']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='level of the test ignoring units'))",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "ver.followup_rate",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "5.1%",
+   "expr": "J('benchmarks/results_confirmatory/followup/078.json')['n_rejections'] / J('benchmarks/results_confirmatory/followup/078.json')['n_replicates']",
+   "format": "{:.1%}",
+   "context": "rejection rate of {}|rejected in {}|and in {} of 10,000"
+  },
+  {
+   "id": "ver.followup_replicates",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "10,000",
+   "expr": "J('benchmarks/results_confirmatory/followup/078.json')['n_replicates']",
+   "format": "{:,}"
+  },
+  {
+   "id": "ver.followup_ci",
+   "where": [
+    "supplement"
+   ],
+   "text": "4.7% to 5.6%",
+   "expr": "(lambda n, k: '%.1f%% to %.1f%%' % (100 * betainv(0.025, k, n - k + 1), 100 * betainv(0.975, k + 1, n - k)))(J('benchmarks/results_confirmatory/followup/078.json')['n_replicates'], J('benchmarks/results_confirmatory/followup/078.json')['n_rejections'])",
+   "note": "Clopper-Pearson interval, the interval kind of the protocol"
+  },
+  {
+   "id": "ver.theorem_datasets",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "587,000",
+   "expr": "sum(int(r['replicates']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='theorem 1'))",
+   "format": "{:,}"
+  },
+  {
+   "id": "ver.theorem_exceptions",
+   "where": [
+    "manuscript"
+   ],
+   "text": "0",
+   "expr": "sum(int(r['exceptions'] or 0) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='theorem 1'))",
+   "context": "Theorem 1 was satisfied in"
+  },
+  {
+   "id": "ver.theorem_study1",
+   "where": [
+    "supplement"
+   ],
+   "text": "172,000",
+   "expr": "sum(int(r['replicates']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='theorem 1', study='1'))",
+   "format": "{:,}"
+  },
+  {
+   "id": "ver.theorem_study2",
+   "where": [
+    "supplement"
+   ],
+   "text": "205,000",
+   "expr": "sum(int(r['replicates']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='theorem 1', study='2'))",
+   "format": "{:,}"
+  },
+  {
+   "id": "ver.theorem_study3",
+   "where": [
+    "supplement"
+   ],
+   "text": "210,000",
+   "expr": "sum(int(r['replicates']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='theorem 1', study='3'))",
+   "format": "{:,}"
+  },
+  {
+   "id": "ver.limit_designs",
+   "where": [
+    "manuscript"
+   ],
+   "text": "130",
+   "expr": "len(rows('benchmarks/results_confirmatory/verdicts.csv', procedure='lower limit above rho'))",
+   "context": "all {} designs"
+  },
+  {
+   "id": "ver.limit_meets",
+   "where": [
+    "manuscript"
+   ],
+   "text": "130",
+   "expr": "sum(1 for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='lower limit above rho') if r['verdict'] == 'meets')",
+   "context": "met the criterion in all {} designs"
+  },
+  {
+   "id": "ver.limit_max_rate",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "1.7%",
+   "expr": "max(f(r['rate']) for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='lower limit above rho'))",
+   "format": "{:.1%}",
+   "context": "at most {} of"
+  },
+  {
+   "id": "table2.study1.interval_for_the_lineages_in_hand",
+   "where": [
+    "supplement"
+   ],
+   "text": "175/175 (126)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='1', procedure='interval for the lineages in hand'))"
+  },
+  {
+   "id": "table2.study2.interval_for_the_lineages_in_hand",
+   "where": [
+    "supplement"
+   ],
+   "text": "17/17 (16)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='2', procedure='interval for the lineages in hand'))"
+  },
+  {
+   "id": "table2.study3.interval_for_the_lineages_in_hand",
+   "where": [
+    "supplement"
+   ],
+   "text": "32/32 (32)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='3', procedure='interval for the lineages in hand'))"
+  },
+  {
+   "id": "table2.study3.paired_intervals_of_the_comparison",
+   "where": [
+    "supplement"
+   ],
+   "text": "25/25 terms (25)",
+   "expr": "(lambda rs: '%d/%d terms (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='3', procedure='paired intervals of the comparison'))"
+  },
+  {
+   "id": "table2.study1.level_of_the_test",
+   "where": [
+    "supplement"
+   ],
+   "text": "19/20 (6)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='1', procedure='level of the test'))"
+  },
+  {
+   "id": "table2.study2.level_of_the_test_within_laboratories",
+   "where": [
+    "supplement"
+   ],
+   "text": "6/6 (6)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='2', procedure='level of the test within laboratories'))"
+  },
+  {
+   "id": "table2.study3.level_of_the_test_within_units",
+   "where": [
+    "supplement"
+   ],
+   "text": "5/5 (4)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='3', procedure='level of the test within units'))"
+  },
+  {
+   "id": "table2.study1.lower_limit_above_rho",
+   "where": [
+    "supplement"
+   ],
+   "text": "86/86 (86)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='1', procedure='lower limit above rho'))"
+  },
+  {
+   "id": "table2.study2.lower_limit_above_rho",
+   "where": [
+    "supplement"
+   ],
+   "text": "23/23 (23)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='2', procedure='lower limit above rho'))"
+  },
+  {
+   "id": "table2.study3.lower_limit_above_rho",
+   "where": [
+    "supplement"
+   ],
+   "text": "21/21 (21)",
+   "expr": "(lambda rs: '%d/%d (%d)' % (sum(1 for r in rs if r['verdict'] == 'meets'), len(rs), sum(1 for r in rs if r['stringent'] == 'True')))(rows('benchmarks/results_confirmatory/verdicts.csv', study='3', procedure='lower limit above rho'))"
+  },
+  {
+   "id": "study4.designs",
+   "where": [
+    "manuscript"
+   ],
+   "text": "16",
+   "expr": "len(set(r['design'] for r in C('benchmarks/results_confirmatory/competitors/confirmatory_rejection.csv')))",
+   "context": "In {} further designs"
+  },
+  {
+   "id": "study4.null_designs",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "8",
+   "expr": "len(J('benchmarks/results_confirmatory/competitors/confirmatory_verdict.json')['level'])",
+   "context": "{} designs without an effect"
+  },
+  {
+   "id": "study4.effect_designs",
+   "where": [
+    "manuscript"
+   ],
+   "text": "8",
+   "expr": "len(J('benchmarks/results_confirmatory/competitors/confirmatory_verdict.json')['noninferior_to_stratified'])",
+   "context": "{} designs with a weak effect"
+  },
+  {
+   "id": "study4.effect_designs_s",
+   "where": [
+    "supplement"
+   ],
+   "text": "eight",
+   "expr": "len(J('benchmarks/results_confirmatory/competitors/confirmatory_verdict.json')['noninferior_to_stratified'])",
+   "format": "word",
+   "context": "{} designs with a weak effect"
+  },
+  {
+   "id": "study4.level_all",
+   "where": [
+    "manuscript"
+   ],
+   "text": "all 8",
+   "expr": "'all %d' % sum(1 for v in J('benchmarks/results_confirmatory/competitors/confirmatory_verdict.json')['level'].values() if v)"
+  },
+  {
+   "id": "study4.noninferior_all",
+   "where": [
+    "manuscript"
+   ],
+   "text": "all 8",
+   "expr": "'all %d' % sum(1 for v in J('benchmarks/results_confirmatory/competitors/confirmatory_verdict.json')['noninferior_to_stratified'].values() if v)"
+  },
+  {
+   "id": "study4.difference_range",
+   "where": [
+    "manuscript"
+   ],
+   "text": "+0.004 to +0.142",
+   "expr": "(lambda xs: '%+.3f to %+.3f' % (min(xs), max(xs)))([f(r['difference']) for r in rows('benchmarks/results_confirmatory/competitors/confirmatory_paired.csv', procedure='strat_p') if r['design'] in J('benchmarks/results_confirmatory/competitors/confirmatory_verdict.json')['noninferior_to_stratified']])"
+  },
+  {
+   "id": "study4.pooled_max",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "100%",
+   "expr": "max(f(r['rejection']) for r in C('benchmarks/results_confirmatory/competitors/confirmatory_rejection.csv') if r['design'] in J('benchmarks/results_confirmatory/competitors/confirmatory_verdict.json')['level'] and r['procedure'] in ('anova_p', 'kw_p', 'ricc_p', 'ict_p'))",
+   "format": "{:.0%}"
+  },
+  {
+   "id": "study4.censored_lab_max",
+   "where": [
+    "supplement"
+   ],
+   "text": "44%",
+   "expr": "max(f(r['rejection']) for r in C('benchmarks/results_confirmatory/competitors/confirmatory_rejection.csv') if r['design'] in J('benchmarks/results_confirmatory/competitors/confirmatory_verdict.json')['level'] and r['procedure'] == 'cens_p')",
+   "format": "{:.0%}"
+  },
+  {
+   "id": "est.bias.package",
+   "where": [
+    "supplement"
+   ],
+   "text": "-0.0001",
+   "expr": "statistics.mean(c['clonal_share']['bias'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0])",
+   "format": "{:+.4f}"
+  },
+  {
+   "id": "est.bias.reml",
+   "where": [
+    "supplement"
+   ],
+   "text": "-0.009",
+   "expr": "statistics.mean(c['reml_lmm']['bias'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0])",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "est.bias.r2",
+   "where": [
+    "supplement"
+   ],
+   "text": "+0.119",
+   "expr": "statistics.mean(c['in_sample_r2']['bias'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0])",
+   "format": "{:+.3f}"
+  },
+  {
+   "id": "est.rmse.package",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.084",
+   "expr": "statistics.mean(c['clonal_share']['rmse'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "est.rmse.reml",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.104",
+   "expr": "statistics.mean(c['reml_lmm']['rmse'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0])",
+   "format": "{:.3f}",
+   "at_least": 2
+  },
+  {
+   "id": "est.rmse.anova",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.104",
+   "expr": "statistics.mean(c['anova_component']['rmse'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0])",
+   "format": "{:.3f}",
+   "at_least": 2
+  },
+  {
+   "id": "est.rmse.r2",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.166",
+   "expr": "statistics.mean(c['in_sample_r2']['rmse'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0])",
+   "format": "{:.3f}"
+  },
+  {
+   "id": "est.rmse.pairs.package",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.34",
+   "expr": "statistics.mean(c['clonal_share']['rmse'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0] if c['n_groups'] == 5 and c['group_size'] == 2)",
+   "format": "{:.2f}"
+  },
+  {
+   "id": "est.rmse.pairs.reml_same_target",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.27",
+   "expr": "statistics.mean(c['reml_lmm']['rmse_of_the_other_target'] for c in [c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0] if c['n_groups'] == 5 and c['group_size'] == 2)",
+   "format": "{:.2f}",
+   "note": "REML against the share of the lineages drawn, the package's target"
+  },
+  {
+   "id": "est.gauss_cells",
+   "where": [
+    "supplement"
+   ],
+   "text": "67",
+   "expr": "len([c for c in J('benchmarks/results_confirmatory/estimator_benchmark.json')['cells'] if c['law'] == 'normal' and not c['binary'] and c['share'] > 0])",
+   "context": "{} Gaussian cells|the same {} cells"
+  },
+  {
+   "id": "gate.value",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.9",
+   "expr": "float(re.search(r'DEFAULT_MIN_SHARED_SUPPORT = ([0-9.]+)', T('src/amr_clonalshare/clonality.py')).group(1))",
+   "format": "{:.1f}",
+   "context": "the gate, {} by default",
+   "note": "the default of the package; the rule of decomposition_gate.py gives 0.95 (claim gate.rule_gives), and the supplement says why the default is lower"
+  },
+  {
+   "id": "gate.floor",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.89",
+   "expr": "J('benchmarks/results_decomposition_calibration/decomposition_gate.json')['rule'].split('below ')[-1]",
+   "note": "FLOOR of benchmarks/decomposition_gate.py; checked by the gate rule string"
+  },
+  {
+   "id": "sens.rcuk",
+   "where": [
+    "supplement"
+   ],
+   "text": "124",
+   "expr": "int(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='amoxicillin', setting='baseline')['n']) - int(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='amoxicillin', setting='without_rcuk_uk')['n'])",
+   "context": "the {} isolates of the RCUK_UK"
+  },
+  {
+   "id": "sens.baseline_limit_positive",
+   "where": [
+    "supplement"
+   ],
+   "text": "seven",
+   "expr": "sum(1 for r in rows('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', setting='baseline') if round(f(r['latent_order_lower_limit']), 3) >= 0.001)",
+   "format": "word"
+  },
+  {
+   "id": "sens.limit_positive_all_three",
+   "where": [
+    "supplement"
+   ],
+   "text": "five",
+   "expr": "sum(1 for a in set(r['agent'] for r in C('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv')) if all(round(f(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent=a, setting=s)['latent_order_lower_limit']), 3) >= 0.001 for s in ('baseline', 'collection', 'without_rcuk_uk')))",
+   "format": "word"
+  },
+  {
+   "id": "sens.marbo_end_wells_baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "5.5%",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='marbofloxacin', setting='baseline')['share_end_wells'])",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "sens.marbo_end_wells_third",
+   "where": [
+    "supplement"
+   ],
+   "text": "20.8%",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='marbofloxacin', setting='third_panel')['share_end_wells'])",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "sens.marbo_share_third",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.157",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='marbofloxacin', setting='third_panel')['kappa_adj'])",
+   "format": "{:.3f}",
+   "at_least": 2
+  },
+  {
+   "id": "sens.marbo_share_baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.157",
+   "expr": "f(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='marbofloxacin', setting='baseline')['kappa_adj'])",
+   "format": "{:.3f}",
+   "at_least": 2
+  },
+  {
+   "id": "tableS12.amoxicillin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='amoxicillin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.cefquinome.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='cefquinome', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.ceftiofur.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='ceftiofur', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.doxycycline.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='doxycycline', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.enrofloxacin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='enrofloxacin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.erythromycin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='erythromycin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.florfenicol.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='florfenicol', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.lincomycin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='lincomycin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.marbofloxacin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='marbofloxacin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.penicillin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='penicillin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.spectinomycin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='spectinomycin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.tetracycline.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tetracycline', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.tiamulin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tiamulin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.tilmicosin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tilmicosin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.trimethoprim.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='trimethoprim', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.tylosin.baseline",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tylosin', setting='baseline'))"
+  },
+  {
+   "id": "tableS12.amoxicillin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='amoxicillin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.cefquinome.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='cefquinome', setting='collection'))"
+  },
+  {
+   "id": "tableS12.ceftiofur.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='ceftiofur', setting='collection'))"
+  },
+  {
+   "id": "tableS12.doxycycline.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='doxycycline', setting='collection'))"
+  },
+  {
+   "id": "tableS12.enrofloxacin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='enrofloxacin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.erythromycin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='erythromycin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.florfenicol.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='florfenicol', setting='collection'))"
+  },
+  {
+   "id": "tableS12.lincomycin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='lincomycin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.marbofloxacin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='marbofloxacin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.penicillin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='penicillin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.spectinomycin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='spectinomycin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.tetracycline.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tetracycline', setting='collection'))"
+  },
+  {
+   "id": "tableS12.tiamulin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tiamulin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.tilmicosin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tilmicosin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.trimethoprim.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='trimethoprim', setting='collection'))"
+  },
+  {
+   "id": "tableS12.tylosin.collection",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tylosin', setting='collection'))"
+  },
+  {
+   "id": "tableS12.amoxicillin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='amoxicillin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.cefquinome.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='cefquinome', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.ceftiofur.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='ceftiofur', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.doxycycline.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='doxycycline', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.enrofloxacin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='enrofloxacin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.erythromycin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='erythromycin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.florfenicol.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='florfenicol', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.lincomycin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='lincomycin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.marbofloxacin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='marbofloxacin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.penicillin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='penicillin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.spectinomycin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='spectinomycin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.tetracycline.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tetracycline', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.tiamulin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tiamulin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.tilmicosin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tilmicosin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.trimethoprim.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='trimethoprim', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS12.tylosin.without_rcuk_uk",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda r: '%.3f (%.3f to %.3f); %.3f' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high']), f(r['latent_order_lower_limit'])))(row('benchmarks/results_empirical/ssuis_sensitivity/ssuis_sensitivity_order.csv', agent='tylosin', setting='without_rcuk_uk'))"
+  },
+  {
+   "id": "tableS10.amoxicillin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='amoxicillin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.amoxicillin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='amoxicillin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.amoxicillin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='amoxicillin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.amoxicillin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='amoxicillin', panel='call'))"
+  },
+  {
+   "id": "tableS10.cefquinome.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='cefquinome', panel='panel'))"
+  },
+  {
+   "id": "tableS10.cefquinome.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='cefquinome', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.cefquinome.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='cefquinome', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.cefquinome.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='cefquinome', panel='call'))"
+  },
+  {
+   "id": "tableS10.ceftiofur.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='ceftiofur', panel='panel'))"
+  },
+  {
+   "id": "tableS10.ceftiofur.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='ceftiofur', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.ceftiofur.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='ceftiofur', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.ceftiofur.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='ceftiofur', panel='call'))"
+  },
+  {
+   "id": "tableS10.doxycycline.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='doxycycline', panel='panel'))"
+  },
+  {
+   "id": "tableS10.doxycycline.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='doxycycline', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.doxycycline.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='doxycycline', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.doxycycline.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='doxycycline', panel='call'))"
+  },
+  {
+   "id": "tableS10.enrofloxacin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='enrofloxacin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.enrofloxacin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='enrofloxacin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.enrofloxacin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='enrofloxacin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.enrofloxacin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='enrofloxacin', panel='call'))"
+  },
+  {
+   "id": "tableS10.erythromycin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='erythromycin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.erythromycin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='erythromycin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.erythromycin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='erythromycin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.erythromycin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='erythromycin', panel='call'))"
+  },
+  {
+   "id": "tableS10.florfenicol.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='florfenicol', panel='panel'))"
+  },
+  {
+   "id": "tableS10.florfenicol.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='florfenicol', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.florfenicol.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='florfenicol', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.florfenicol.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='florfenicol', panel='call'))"
+  },
+  {
+   "id": "tableS10.lincomycin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='lincomycin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.lincomycin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='lincomycin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.lincomycin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='lincomycin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.lincomycin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='lincomycin', panel='call'))"
+  },
+  {
+   "id": "tableS10.marbofloxacin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='marbofloxacin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.marbofloxacin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='marbofloxacin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.marbofloxacin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='marbofloxacin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.marbofloxacin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='marbofloxacin', panel='call'))"
+  },
+  {
+   "id": "tableS10.penicillin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='penicillin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.penicillin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='penicillin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.penicillin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='penicillin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.penicillin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='penicillin', panel='call'))"
+  },
+  {
+   "id": "tableS10.spectinomycin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='spectinomycin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.spectinomycin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='spectinomycin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.spectinomycin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='spectinomycin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.spectinomycin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='spectinomycin', panel='call'))"
+  },
+  {
+   "id": "tableS10.tetracycline.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tetracycline', panel='panel'))"
+  },
+  {
+   "id": "tableS10.tetracycline.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tetracycline', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.tetracycline.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tetracycline', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.tetracycline.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tetracycline', panel='call'))"
+  },
+  {
+   "id": "tableS10.tiamulin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.tiamulin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.tiamulin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.tiamulin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tiamulin', panel='call'))"
+  },
+  {
+   "id": "tableS10.tilmicosin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tilmicosin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.tilmicosin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tilmicosin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.tilmicosin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tilmicosin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.tilmicosin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tilmicosin', panel='call'))"
+  },
+  {
+   "id": "tableS10.trimethoprim.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='trimethoprim', panel='panel'))"
+  },
+  {
+   "id": "tableS10.trimethoprim.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='trimethoprim', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.trimethoprim.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='trimethoprim', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.trimethoprim.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='trimethoprim', panel='call'))"
+  },
+  {
+   "id": "tableS10.tylosin.panel",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tylosin', panel='panel'))"
+  },
+  {
+   "id": "tableS10.tylosin.every_2",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tylosin', panel='every 2'))"
+  },
+  {
+   "id": "tableS10.tylosin.every_4",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tylosin', panel='every 4'))"
+  },
+  {
+   "id": "tableS10.tylosin.call",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "(lambda rs: '' if not rs else (lambda r: '%.3f (%.3f to %.3f)' % (f(r['kappa_adj']), f(r['observed_low']), f(r['observed_high'])) + ' ' + '%.3f' % f(r['latent_order_lower']) + ' ' + '%.3f' % f(r['latent_order_lower_limit']))(rs[0]))(rows('benchmarks/results_empirical/ssuis_panel/ssuis_panel.csv', agent='tylosin', panel='call'))"
+  },
+  {
+   "id": "seed.n",
+   "where": [
+    "supplement"
+   ],
+   "text": "forty",
+   "expr": "len(J('benchmarks/results_empirical/seed_stability/seed_stability.json'))",
+   "format": "word"
+  },
+  {
+   "id": "seed.sd_min",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.0012",
+   "expr": "min((lambda runs: {a: statistics.pstdev([runs[s][a] for s in runs]) for a in runs['1']})(J('benchmarks/results_empirical/seed_stability/seed_stability.json')).values())",
+   "format": "{:.4f}"
+  },
+  {
+   "id": "seed.sd_max",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.0050",
+   "expr": "max((lambda runs: {a: statistics.pstdev([runs[s][a] for s in runs]) for a in runs['1']})(J('benchmarks/results_empirical/seed_stability/seed_stability.json')).values())",
+   "format": "{:.4f}"
+  },
+  {
+   "id": "seed.sd_over_own_halfwidth_max",
+   "where": [
+    "supplement"
+   ],
+   "text": "5.7%",
+   "expr": "max(sd / (0.5 * (J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share'][a]['observed_high'] - J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['clonal_share'][a]['observed_low'])) for a, sd in (lambda runs: {a: statistics.pstdev([runs[s][a] for s in runs]) for a in runs['1']})(J('benchmarks/results_empirical/seed_stability/seed_stability.json')).items())",
+   "format": "{:.1%}",
+   "context": "at most {} of the half-width",
+   "note": "replaces 'at most 0.06 of the median half-width'; the record is the run of the example at seed 42"
+  },
+  {
+   "id": "profile.seconds",
+   "where": [
+    "supplement"
+   ],
+   "text": "102",
+   "expr": "J('benchmarks/results_empirical/profile/profile.json')['phase_seconds']['total']",
+   "format": "{:.0f}",
+   "context": "took {} seconds"
+  },
+  {
+   "id": "profile.estimator_share",
+   "where": [
+    "supplement"
+   ],
+   "text": "99.7%",
+   "expr": "J('benchmarks/results_empirical/profile/profile.json')['phase_seconds']['estimators'] / J('benchmarks/results_empirical/profile/profile.json')['phase_seconds']['total']",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "profile.rss_mb",
+   "where": [
+    "supplement"
+   ],
+   "text": "318",
+   "expr": "J('benchmarks/results_empirical/profile/profile.json')['peak_rss_mb']",
+   "format": "{:.0f}",
+   "context": "{} MB"
+  },
+  {
+   "id": "mut.mutants",
+   "where": [
+    "supplement"
+   ],
+   "text": "11,345",
+   "expr": "J('tests/mutation_survivors.json')['run']['mutants']",
+   "format": "{:,}"
+  },
+  {
+   "id": "mut.killed",
+   "where": [
+    "supplement"
+   ],
+   "text": "9,792",
+   "expr": "J('tests/mutation_survivors.json')['run']['killed']",
+   "format": "{:,}"
+  },
+  {
+   "id": "mut.survived",
+   "where": [
+    "supplement"
+   ],
+   "text": "1,543",
+   "expr": "J('tests/mutation_survivors.json')['run']['survived']",
+   "format": "{:,}"
+  },
+  {
+   "id": "mut.score",
+   "where": [
+    "supplement"
+   ],
+   "text": "86.3%",
+   "expr": "J('tests/mutation_survivors.json')['run']['killed'] / J('tests/mutation_survivors.json')['run']['mutants']",
+   "format": "{:.1%}"
+  },
+  {
+   "id": "mut.on_value_lines",
+   "where": [
+    "supplement"
+   ],
+   "text": "874",
+   "expr": "J('tests/mutation_survivors.json')['value_records']['survivors_on_lines_it_runs']",
+   "context": "{} survivors lie on lines"
+  },
+  {
+   "id": "mut.equivalent",
+   "where": [
+    "supplement"
+   ],
+   "text": "221",
+   "expr": "sum(len(v['mutants']) for v in J('tests/mutation_survivors.json')['classes'].values() if v['verdict'] == 'equivalent')",
+   "context": "{} are equivalent"
+  },
+  {
+   "id": "mut.modules",
+   "where": [
+    "supplement"
+   ],
+   "text": "twelve",
+   "expr": "len(J('tests/mutation_survivors.json')['run']['modules'])",
+   "format": "word"
+  },
+  {
+   "id": "mut.commit",
+   "where": [
+    "supplement"
+   ],
+   "text": "b9a9f50",
+   "expr": "J('tests/mutation_survivors.json')['run']['commit']",
+   "at_least": 1
+  },
+  {
+   "id": "tests.suite_passed",
+   "where": [
+    "supplement"
+   ],
+   "text": "977",
+   "expr": "int(re.search(r'(\\d+) passed', T('benchmarks/results_confirmatory/campaign/pytest_%s.log' % K('checks_commit')).splitlines()[-1]).group(1))",
+   "context": "({} tests)",
+   "note": "the campaign test log of the commit named by the constant checks_commit; set it to the commit the re-issue checks ran from"
+  },
+  {
+   "id": "tests.oracles_passed",
+   "where": [
+    "supplement"
+   ],
+   "text": "21",
+   "expr": "int(re.search(r'(\\d+) passed', T('benchmarks/results_confirmatory/campaign/pytest_oracles_%s.log' % K('checks_commit')).splitlines()[-1]).group(1))",
+   "context": "the {} high-precision oracles"
+  },
+  {
+   "id": "tests.checks_commit",
+   "where": [
+    "supplement"
+   ],
+   "text": "b9a9f50",
+   "expr": "K('checks_commit')",
+   "context": "executed from commit {}",
+   "note": "the commit the empirical analyses, the example records, the test suite and the oracles ran from"
+  },
+  {
+   "id": "campaign.core_hours",
+   "where": [
+    "supplement"
+   ],
+   "text": "1,755",
+   "expr": "sum(int(l.split('|')[5]) for l in T('benchmarks/results_confirmatory/campaign/accounting.txt').splitlines() if l and not l.startswith('#')) / 3600",
+   "format": "{:,.0f}"
+  },
+  {
+   "id": "campaign.stack",
+   "where": [
+    "supplement"
+   ],
+   "text": "NumPy 2.4.4",
+   "expr": "'NumPy ' + J('benchmarks/results_confirmatory/RUN_RECEIPT_verdicts.json')['stack']['numpy']"
+  },
+  {
+   "id": "eproc.below_one",
+   "where": [
+    "supplement"
+   ],
+   "text": "eleven",
+   "expr": "sum(1 for v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['lineage_evidence']['sequential']['per_feature'].values() if v['log_e'][-1] < 0)",
+   "format": "word"
+  },
+  {
+   "id": "eproc.reached_1_over_alpha",
+   "where": [
+    "supplement"
+   ],
+   "text": "ceftiofur and penicillin",
+   "expr": "' and '.join(sorted(a for a, v in J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['lineage_evidence']['sequential']['per_feature'].items() if max(v['log_e']) >= math.log(1 / J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['lineage_evidence']['e_bh']['alpha'])))"
+  },
+  {
+   "id": "eproc.ebh_selected",
+   "where": [
+    "supplement"
+   ],
+   "text": "eleven",
+   "expr": "J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['lineage_evidence']['e_bh']['n_rejected']",
+   "format": "word"
+  },
+  {
+   "id": "eproc.by_selected",
+   "where": [
+    "supplement"
+   ],
+   "text": "thirteen",
+   "expr": "len(J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['lineage_selection']['rejected_features'])",
+   "format": "word"
+  },
+  {
+   "id": "eproc.by_threshold_16",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.0009",
+   "expr": "0.05 / (16 * sum(1.0 / i for i in range(1, 17)))",
+   "format": "{:.4f}",
+   "context": "= {}"
+  },
+  {
+   "id": "eproc.by_harmonic_16",
+   "where": [
+    "supplement"
+   ],
+   "text": "3.38",
+   "expr": "sum(1.0 / i for i in range(1, 17))",
+   "format": "{:.2f}",
+   "context": "16 x {}"
+  },
+  {
+   "id": "call_strata.column",
+   "where": [
+    "supplement"
+   ],
+   "text": "isolation_country",
+   "expr": "J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['call_strata']['column']"
+  },
+  {
+   "id": "ver.interval_point_ge95",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "sum(1 for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='interval for the lineages in hand') if f(r['rate']) >= 0.95)",
+   "context": "at least 95% in {}",
+   "note": "added after the review: point coverage beside the rule"
+  },
+  {
+   "id": "ver.interval_point_ge945",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "sum(1 for r in rows('benchmarks/results_confirmatory/verdicts.csv', procedure='interval for the lineages in hand') if f(r['rate']) >= 0.945)",
+   "context": "at least 94.5% in {}"
+  },
+  {
+   "id": "ver.interval_withheld_max",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "max((1 - x['estimable_share']) if x.get('estimable_share') is not None else (x.get('not_reported') or 0.0) for x in J('benchmarks/results_confirmatory/design_summaries.json') if x['study'] in (1, 2, 3) and x.get('coverage') is not None)",
+   "format": "{:.1%}",
+   "context": "at most {} in any design"
+  },
+  {
+   "id": "study4.strat_diff_min",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "signed(min(f(r['difference']) for r in rows('benchmarks/results_confirmatory/competitors/confirmatory_paired.csv', procedure='strat_p')))",
+   "context": "differences {} to|by {} to"
+  },
+  {
+   "id": "study4.strat_diff_max",
+   "where": [
+    "manuscript",
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "signed(max(f(r['difference']) for r in rows('benchmarks/results_confirmatory/competitors/confirmatory_paired.csv', procedure='strat_p')))",
+   "context": "to {}, the 95%|to {}, with"
+  },
+  {
+   "id": "study4.strat_low_min",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "signed(min(f(r['low']) for r in rows('benchmarks/results_confirmatory/competitors/confirmatory_paired.csv', procedure='strat_p')))",
+   "context": "lowest lower limit {}"
+  },
+  {
+   "id": "study4.strat_all_above_zero",
+   "where": [
+    "supplement"
+   ],
+   "text": "0",
+   "expr": "sum(1 for r in rows('benchmarks/results_confirmatory/competitors/confirmatory_paired.csv', procedure='strat_p') if f(r['low']) <= 0)",
+   "context": "above zero",
+   "note": "the count of paired intervals reaching zero must be 0 for the sentence to hold; the context checks the sentence"
+  },
+  {
+   "id": "gate.lowest_at_0_9",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "min(min(t['composition_lowest_coverage'], t['within_lineage_lowest_coverage']) for t in J('benchmarks/results_decomposition_calibration/decomposition_gate.json')['thresholds'] if abs(t['threshold'] - 0.9) < 1e-9)",
+   "format": "{:.1%}",
+   "context": "was {}"
+  },
+  {
+   "id": "mut.timeout",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "J('tests/mutation_survivors.json')['run']['timeout']",
+   "context": "{} exceeded their time limit"
+  },
+  {
+   "id": "mut.gaps_off_lines",
+   "where": [
+    "supplement"
+   ],
+   "text": "635",
+   "expr": "sum(c['n'] - c['n_on_lines_the_value_records_run'] for c in J('tests/mutation_survivors.json')['classes'].values() if c['verdict'] == 'gap')",
+   "format": "{:,}",
+   "context": "of the gaps, {} lie"
+  },
+  {
+   "id": "gate.lowest_at_0_95",
+   "where": [
+    "supplement"
+   ],
+   "text": "<generated>",
+   "expr": "min(min(t['composition_lowest_coverage'], t['within_lineage_lowest_coverage']) for t in J('benchmarks/results_decomposition_calibration/decomposition_gate.json')['thresholds'] if abs(t['threshold'] - 0.95) < 1e-9)",
+   "format": "{:.1%}",
+   "context": "at 0.95 it was {}"
+  },
+  {
+   "id": "gate.grid_cells",
+   "where": [
+    "supplement"
+   ],
+   "text": "720",
+   "expr": "len(J('benchmarks/results_decomposition_calibration/cells.json'))",
+   "context": "grid of {} designs"
+  },
+  {
+   "id": "mic.amox_limit",
+   "where": [
+    "supplement"
+   ],
+   "text": "0.0006",
+   "expr": "J('examples/ssuis/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['amoxicillin']['order']['latent_order_lower_limit']",
+   "format": "{:.4f}",
+   "context": "the smallest being {} for amoxicillin"
+  },
+  {
+   "id": "ecoli.n_source",
+   "where": [
+    "supplement2"
+   ],
+   "text": "499",
+   "expr": "J('examples/ecoli_swine/data/build_receipt.json')['isolates_in_data_1']",
+   "context": "sequenced {} extraintestinal|Isolates of the source study {}"
+  },
+  {
+   "id": "ecoli.n_ast",
+   "where": [
+    "supplement2"
+   ],
+   "text": "485",
+   "expr": "J('examples/ecoli_swine/data/build_receipt.json')['ast_rows_in_data_13']",
+   "context": "20 antimicrobials for {} of them|Published MIC records {}"
+  },
+  {
+   "id": "ecoli.n_readings",
+   "where": [
+    "supplement2"
+   ],
+   "text": "481",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['n_isolates']",
+   "context": "Of the {} isolates that remain|Readings for the six agents {}"
+  },
+  {
+   "id": "ecoli.n_typed",
+   "where": [
+    "supplement2"
+   ],
+   "text": "472",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n']",
+   "context": "{} carry a sequence type|Typed isolates {}"
+  },
+  {
+   "id": "ecoli.n_sts",
+   "where": [
+    "supplement2"
+   ],
+   "text": "75",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n_groups']",
+   "context": "{} STs, 27"
+  },
+  {
+   "id": "ecoli.n_singletons",
+   "where": [
+    "supplement2"
+   ],
+   "text": "27",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n_singletons_set_aside']",
+   "context": "the {} isolates in types seen once|{} of them seen once"
+  },
+  {
+   "id": "ecoli.n_scored",
+   "where": [
+    "supplement2"
+   ],
+   "text": "445",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n'] - J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n_singletons_set_aside']",
+   "context": "leaves {} isolates in|Analysed isolates {}|all {} analysed isolates"
+  },
+  {
+   "id": "ecoli.n_scored_sts",
+   "where": [
+    "supplement2"
+   ],
+   "text": "48",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n_groups'] - J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n_singletons_set_aside']",
+   "context": "isolates in {} STs|{} STs with at least two isolates"
+  },
+  {
+   "id": "ecoli.seed",
+   "where": [
+    "supplement2"
+   ],
+   "text": "20261001",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['seed']",
+   "context": "record uses seed {}"
+  },
+  {
+   "id": "ecoli.cip_share",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.197",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['ciprofloxacin']['order']['kappa_adj']",
+   "format": "{:.3f}",
+   "context": "against {} ("
+  },
+  {
+   "id": "ecoli.cip_without_share",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.135",
+   "expr": "J('examples/ecoli_swine/expected_without_st410/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['ciprofloxacin']['order']['kappa_adj']",
+   "format": "{:.3f}",
+   "context": "ciprofloxacin is then {} ("
+  },
+  {
+   "id": "ecoli.caz_lower",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.0558",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['ceftazidime']['order']['latent_order_lower']",
+   "format": "{:.4f}",
+   "context": "a lower bound of {} and|fell from {} to"
+  },
+  {
+   "id": "ecoli.caz_two_lower",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.0199",
+   "expr": "J('examples/ecoli_swine/expected_two_categories/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['ceftazidime']['order']['latent_order_lower']",
+   "format": "{:.4f}",
+   "context": "to {}: the lower bound from the full panel"
+  },
+  {
+   "id": "ecoli.caz_ratio",
+   "where": [
+    "supplement2"
+   ],
+   "text": "2.81",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['ceftazidime']['order']['latent_order_lower'] / J('examples/ecoli_swine/expected_two_categories/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['ceftazidime']['order']['latent_order_lower']",
+   "format": "{:.2f}",
+   "context": "{} times that from two categories"
+  },
+  {
+   "id": "ecoli.caz_share",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.119",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['ceftazidime']['order']['kappa_adj']",
+   "format": "{:.3f}",
+   "context": "a share of {} (95% CI"
+  },
+  {
+   "id": "ecoli.mem_share",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.497",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['meropenem']['order']['kappa_adj']",
+   "format": "{:.3f}",
+   "context": "high share ({})"
+  },
+  {
+   "id": "ecoli.mem_p",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.003",
+   "expr": "J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['meropenem']['order']['p_value']",
+   "format": "{:.3f}",
+   "context": "small p-value ({})"
+  },
+  {
+   "id": "ecoli.st410_n",
+   "where": [
+    "supplement2"
+   ],
+   "text": "73",
+   "expr": "sum(1 for a in C('examples/ecoli_swine/data/mic_long.csv') if a['agent']=='cefotaxime' and a['isolate_id'] in {m['isolate_id'] for m in C('examples/ecoli_swine/data/metadata.csv') if m['st']=='ST410'})",
+   "context": "ST410 holds {} of the"
+  },
+  {
+   "id": "ecoli.without_scored",
+   "where": [
+    "supplement2"
+   ],
+   "text": "372",
+   "expr": "J('examples/ecoli_swine/expected_without_st410/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n'] - J('examples/ecoli_swine/expected_without_st410/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n_singletons_set_aside']",
+   "context": "leaves {} isolates in|for the {} isolates that remain"
+  },
+  {
+   "id": "ecoli.without_sts",
+   "where": [
+    "supplement2"
+   ],
+   "text": "47",
+   "expr": "J('examples/ecoli_swine/expected_without_st410/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n_groups'] - J('examples/ecoli_swine/expected_without_st410/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent']['cefotaxime']['order']['n_singletons_set_aside']",
+   "context": "372 isolates in {} STs"
+  },
+  {
+   "id": "ecoli.limits_zero",
+   "where": [
+    "supplement2"
+   ],
+   "text": "six",
+   "expr": "sum(1 for a,v in J('examples/ecoli_swine/expected/clonal_share_result.json')['metadata_diagnostics']['censored_share']['per_agent'].items() if v['order']['latent_order_lower_limit']==0)",
+   "format": "word",
+   "context": "zero for all {} agents"
+  },
+  {
+   "id": "ecoli.cmp_st",
+   "where": [
+    "manuscript",
+    "supplement2"
+   ],
+   "text": "0.196",
+   "expr": "J('examples/ecoli_swine/expected_comparison/comparison.json')['arms']['a_scorable']['share']['kappa_adj']",
+   "format": "{:.3f}",
+   "context": "was {} by sequence type|the call is {} (95% CI"
+  },
+  {
+   "id": "ecoli.cmp_pg",
+   "where": [
+    "manuscript",
+    "supplement2"
+   ],
+   "text": "0.012",
+   "expr": "J('examples/ecoli_swine/expected_comparison/comparison.json')['arms']['b_scorable']['share']['kappa_adj']",
+   "format": "{:.3f}",
+   "context": "{} by phylogroup and|and {} (0.000 to 0.047) by phylogroup"
+  },
+  {
+   "id": "ecoli.cmp_st_ci",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.115 to 0.280",
+   "expr": "'%.3f to %.3f' % (J('examples/ecoli_swine/expected_comparison/comparison.json')['arms']['a_scorable']['share']['observed_low'], J('examples/ecoli_swine/expected_comparison/comparison.json')['arms']['a_scorable']['share']['observed_high'])",
+   "context": "(95% CI {}) by ST"
+  },
+  {
+   "id": "ecoli.cmp_scorable",
+   "where": [
+    "supplement2"
+   ],
+   "text": "445",
+   "expr": "J('examples/ecoli_swine/expected_comparison/comparison.json')['counts']['common_scorable']",
+   "context": "On the {} isolates in a repeated lineage"
+  },
+  {
+   "id": "ecoli.cmp_relabel",
+   "where": [
+    "supplement2"
+   ],
+   "text": "-0.184",
+   "expr": "J('examples/ecoli_swine/expected_comparison/comparison.json')['difference_decomposition']['label_difference_on_scorable']",
+   "format": "{:.3f}",
+   "context": "changes the share by {} ("
+  },
+  {
+   "id": "ecoli.cmp_total",
+   "where": [
+    "supplement2"
+   ],
+   "text": "-0.183",
+   "expr": "J('examples/ecoli_swine/expected_comparison/comparison.json')['difference_decomposition']['total_difference']",
+   "format": "{:.3f}",
+   "context": "the total difference is {}"
+  },
+  {
+   "id": "ecoli.cmp_st410",
+   "where": [
+    "supplement2"
+   ],
+   "text": "73 of 73",
+   "expr": "(lambda r: '%d of %d' % (sum(int(x['ciprofloxacin_call']) for x in r), len(r)))([x for x in C('examples/ecoli_swine/input.csv') if x['sequence_type'] == 'ST410'])",
+   "context": "ST410 ({} positive)"
+  },
+  {
+   "id": "ecoli.cmpc_pg",
+   "where": [
+    "manuscript",
+    "supplement2"
+   ],
+   "text": "0.055",
+   "expr": "J('examples/ecoli_swine/expected_comparison_clermont/comparison.json')['arms']['b_scorable']['share']['kappa_adj']",
+   "format": "{:.3f}",
+   "context": "phylogroup and {} with clonal complex 23|share by phylogroup is {} ("
+  },
+  {
+   "id": "ecoli.cmpc_relabel",
+   "where": [
+    "supplement2"
+   ],
+   "text": "-0.142",
+   "expr": "J('examples/ecoli_swine/expected_comparison_clermont/comparison.json')['difference_decomposition']['label_difference_on_scorable']",
+   "format": "{:.3f}",
+   "context": "relabelling accounts for {} ("
+  },
+  {
+   "id": "ecoli.cmpc_n_c",
+   "where": [
+    "supplement2"
+   ],
+   "text": "126",
+   "expr": "sum(1 for r in C('examples/ecoli_swine/input.csv') if r['phylogroup_clermont2013'] == 'C')",
+   "context": "{} isolates in C"
+  },
+  {
+   "id": "ecoli.per_n",
+   "where": [
+    "supplement2"
+   ],
+   "text": "197",
+   "expr": "J('examples/ecoli_swine/data/derived_receipt.json')['isolates_per_period']['2011-2013']",
+   "context": "with the {} of 2011-2013"
+  },
+  {
+   "id": "ecoli.per_cip_early",
+   "where": [
+    "supplement2"
+   ],
+   "text": "79.2%",
+   "expr": "J('examples/ecoli_swine/expected_periods/clonal_share_result.json')['metadata_diagnostics']['prevalence_decomposition']['per_feature']['ciprofloxacin']['prevalence_b']",
+   "format": "{:.1%}",
+   "context": "the share fell from {} to"
+  },
+  {
+   "id": "ecoli.per_cip_late",
+   "where": [
+    "supplement2"
+   ],
+   "text": "71.5%",
+   "expr": "J('examples/ecoli_swine/expected_periods/clonal_share_result.json')['metadata_diagnostics']['prevalence_decomposition']['per_feature']['ciprofloxacin']['prevalence_a']",
+   "format": "{:.1%}",
+   "context": "to {}, a within-phylogroup change"
+  },
+  {
+   "id": "ecoli.per_cip_within",
+   "where": [
+    "supplement2"
+   ],
+   "text": "-8.9",
+   "expr": "100 * J('examples/ecoli_swine/expected_periods/clonal_share_result.json')['metadata_diagnostics']['prevalence_decomposition']['per_feature']['ciprofloxacin']['within_lineage']",
+   "format": "{:.1f}",
+   "context": "within-phylogroup change of {} points"
+  },
+  {
+   "id": "ecoli.per_comp_max",
+   "where": [
+    "supplement2"
+   ],
+   "text": "1.7",
+   "expr": "100 * max(abs(v['composition']) for v in J('examples/ecoli_swine/expected_periods/clonal_share_result.json')['metadata_diagnostics']['prevalence_decomposition']['per_feature'].values())",
+   "format": "{:.1f}",
+   "context": "at most {} points"
+  },
+  {
+   "id": "ecoli.per_selected",
+   "where": [
+    "supplement2"
+   ],
+   "text": "no",
+   "expr": "word(J('examples/ecoli_swine/expected_periods/clonal_share_result.json')['metadata_diagnostics']['prevalence_decomposition']['family']['n_composition_discoveries'] + J('examples/ecoli_swine/expected_periods/clonal_share_result.json')['metadata_diagnostics']['prevalence_decomposition']['family']['n_within_lineage_discoveries']).replace('zero', 'no')",
+   "context": "six agents {} change is selected"
+  },
+  {
+   "id": "ecoli.per_st_support",
+   "where": [
+    "supplement2"
+   ],
+   "text": "0.82",
+   "expr": "(lambda m, r: (lambda late, early: (sum(1 for x in late if x in set(early)) / len(late) + sum(1 for x in early if x in set(late)) / len(early)) / 2)([r[i] for i in r if m[i] == '2014-2017' and r[i]], [r[i] for i in r if m[i] == '2011-2013' and r[i]]))({x['isolate_id']: x['period'] for x in C('examples/ecoli_swine/data/metadata_periods.csv')}, {x['isolate_id']: x['sequence_type'] for x in C('examples/ecoli_swine/input.csv')})",
+   "format": "{:.2f}",
+   "context": "hold {} of the isolates"
+  }
+ ]
+}

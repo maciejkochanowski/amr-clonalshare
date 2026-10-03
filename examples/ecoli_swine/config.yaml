@@ -1,0 +1,42 @@
+# Escherichia coli from diseased pigs, China, 2011-2017 (Li et al. 2024):
+# 481 isolates with readings for six agents on one broth microdilution
+# panel, typed by MLST sequence type.
+#
+#   python examples/ecoli_swine/build_tables.py <workbook of Supplementary Data 1-14>
+#   amr-clonalshare --config examples/ecoli_swine/config.yaml --results-dir out/ecoli --seed 20261001
+#
+# The run reads the recorded MICs only: per agent it reports the lineage
+# share of the recorded MIC ordering with its confidence interval and
+# permutation test, and the bounds on the lineage share of the latent MIC
+# ordering with the lower confidence limit. DATA_PROVENANCE.md documents the
+# source tables, the panel ranges and the four isolates set aside.
+
+dataset:
+  name: escherichia_coli_swine_china
+  strain_id_column: isolate_id
+  data_dir: data
+  metadata: metadata.csv
+  # The sequence type; nine isolates without one keep a blank label and are
+  # counted as untyped, and sequence types seen once are set aside by the
+  # lineage share and counted.
+  lineage_column: st
+  duplicate_policy: error
+
+  mic: mic_long.csv
+  mic_id_column: isolate_id
+  mic_antibiotic_column: agent
+  mic_value_column: measurement
+  mic_operator_column: operator
+  mic_unit_column: unit
+  # One panel read all isolates, so the readings form a single stratum.
+  mic_panel_column: panel
+  # The tested range of every agent, from the "Range" block of Supplementary
+  # Data 13; a reading on the lowest or highest well is an interval open at
+  # that end.
+  mic_wells:
+    cefotaxime: [1, 2, 4, 8, 16, 32]
+    ceftazidime: [1, 2, 4, 8, 16]
+    meropenem: [1, 2, 4, 8]
+    ciprofloxacin: [0.5, 1, 2]
+    gentamicin: [2, 4, 8]
+    tetracycline: [2, 4, 8]

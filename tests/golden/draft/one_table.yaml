@@ -1,0 +1,30 @@
+# Drafted by amr-clonalshare --init from the column names of:
+#   tests/golden/draft_data/one_table.csv
+# Every value below is a guess. Read it before running the analysis;
+# a line marked REPLACE_ME could not be guessed at all.
+dataset:
+  name: my_collection
+  data_dir: "<repository>/tests/golden/draft_data"
+  # One sheet carries the lineage beside the readings, so it is the metadata too.
+  metadata: "one_table.csv"
+  strain_id_column: "isolate_id"
+  lineage_column: "lineage"
+
+  # Susceptibility calls: S/I/R, wild-type/non-wild-type or 0/1.
+  phenotype: "one_table.csv"
+  phenotype_id_column: "isolate_id"
+  phenotype_antibiotic_column: "agent"
+  phenotype_call_column: "call"
+  phenotype_kind: clinical_sir
+
+  # Optional settings, each a column of the metadata table; remove the
+  # leading '# ' to use one.
+  # phenotype_covariate_column: "country"   # strata of the calls: lineage labels are compared within its levels
+  # mic_covariate_columns: ["country"]      # strata of the MIC readings, crossed with the panel
+  # unit_column: "farm"                      # sampling unit: labels are exchanged within units
+  # stratify_by: "period"                    # repeat every analysis within each level
+  # contrast_column: "period"                # two collections whose prevalence difference is decomposed
+  # contrast_levels: ["earlier", "later"]
+
+# censored:
+#   end_wells_censored: true   # a reading on an end well is an interval (the default)

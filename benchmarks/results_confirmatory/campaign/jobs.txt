@@ -1,0 +1,47 @@
+## .
+main=24253678
+competitors=24253679
+summaries=24253680
+empirical=24253685
+tests=24253686
+commit=ea3ad2a oracles=24253688 mutation=24253689
+## amend
+commit=9cdb473 comparison=24254290 empirical=24254291 tests=24254292 oracles=24254293
+## final
+commit=4191cd7 rerun=24254404 merge=24254405 empirical=24254407 tests=24254408 oracles=24254409
+## decide
+commit=b4b763b decide=24255304
+## mut
+commit=9877288 mutation=24255301 tests=24255302 oracles=24255303
+## emp98
+commit=98c2569 empirical=24253715
+commit=98c2569 tests=24253746 oracles=24253747
+## mut5 (mutation run of 0541e64, superseded by fin6)
+commit=0541e64 mutation=24257416 tests=24257417 oracles=24257418
+## emp5 (superseded by fin6: two S. suis scripts stopped on the calls rewritten as 0/1)
+commit=1a2d0a5 empirical=24257546 tests=24257547 oracles=24257548
+## fin6 (of record: empirical analyses, example records, tests, oracles and mutation run)
+commit=d6ef660 mutation=24258632 tests=24258633 oracles=24258634 empirical=24258635
+## reissue (of record: the goldens regenerated on the cluster's stack, then from the commit that carries them the empirical queue, the four auxiliary studies, the tests and oracles, and the mutation run)
+commit=78dabeb goldens=24271149
+commit=1d6fc28 empirical=24271475 auxiliary=24271476 checks=24271477 mutation=24271478
+# 24271477 failed (the package and mpmath were not yet installed in the environment) and 24271478 was cancelled; both run again:
+commit=1d6fc28 checks=24271613
+commit=6a7e5d4 mutation=24271614
+# (submitted from 1d6fc28; the tree had advanced to 6a7e5d4, which differs only in benchmarks/campaign/collect_reissue.py, when the job started)
+# six mutants whose test process crashed, run again alone; the line-placement of the survivors for the record:
+commit=6a7e5d4 mutation_rerun=24272513 survivor_lines=24272706
+commit=8f1b450 survivor_lines_again=24273229
+# (24272706 and 24273229 end with the status of a step then repeated by hand from the login node: the record check before the reclassification, and the reclassification from the record of 8f1b450; hence FAILED)
+## reissue, the mutation run of ef39f11 completed: two mutants whose test process crashed run again alone, and the line placement of the survivors (run twice, the second after the rerun)
+commit=ef39f11 mutation_rerun=24280349 survivor_lines=24279741 survivor_lines_again=24280350
+## release (of record: the report with the q-values and the lineage structure of the MIC shares, the E. coli periods and the comparison of sequence type with phylogroup; from one commit the empirical queue, the four auxiliary studies, the tests and oracles, the mutation run and the timing of the examples)
+commit=d1d2e6a empirical=24336597 auxiliary=24336598 checks=24336599 mutation=24336600 examples_timing=24336601
+# all five cancelled within a minute of their start: the periods of the E. coli example were then read as the later less the earlier, commit 84c69a3
+commit=84c69a3 empirical=24336603 auxiliary=24336604 checks=24336605 mutation=24336606 examples_timing=24336607
+# the line placement of the survivors, then the two mutants whose test process crashed run again alone
+commit=84c69a3 survivor_lines=24336769 mutation_rerun=24336779
+## release (the conclusion of every agent decided by its q-value, p- and q-values in every results row, the phylogroup with clonal complex 23 in phylogroup C, embedded typefaces; from one commit the empirical queue, the four auxiliary studies, the tests and oracles, the mutation run and the timing of the examples)
+commit=b9a9f50 empirical=24339198 auxiliary=24339199 checks=24339200 mutation=24339201 examples_timing=24339202
+# the line placement of the survivors, then the one mutant whose test process crashed run again alone
+commit=b9a9f50 survivor_lines=24339877 mutation_rerun=24339878

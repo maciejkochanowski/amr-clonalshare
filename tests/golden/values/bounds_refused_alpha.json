@@ -1,0 +1,4 @@
+{
+ "message": "alpha must satisfy 0 < alpha < 1",
+ "refused": "ValueError"
+}

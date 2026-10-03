@@ -1,0 +1,12 @@
+{
+ "e_value": 0.5664642400523909,
+ "log_e": -0.5683413248623874,
+ "n": 65,
+ "n_dropped_non_finite": 0,
+ "n_dropped_untyped": 0,
+ "n_groups": 14,
+ "n_splits": 25,
+ "prevalence": 0.3076923076923077,
+ "reject_01": false,
+ "reject_05": false
+}
